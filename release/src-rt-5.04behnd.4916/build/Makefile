@@ -499,12 +499,18 @@ else
 	@echo "******************** SKIP libcreduction for DESKTOP_LINUX ********************";
 endif
 
-.PHONY : libcreduction menuconfig
+.PHONY : libcreduction menuconfig kernel_menuconfig
 
 menuconfig:
 	@cd $(INC_KERNEL_BASE); \
 	$(MAKE) -C $(HOSTTOOLS_DIR)/scripts/lxdialog HOSTCC=gcc && \
 	$(CONFIG_SHELL) $(HOSTTOOLS_DIR)/scripts/Menuconfig $(TARGETS_DIR)/config.in $(PROFILE)
+
+# The target above is Broadcom's *profile* menuconfig (targets/<PROFILE>).
+# This one is the Linux kernel's own menuconfig, run through Bcmkernel.mk so it
+# inherits the full BCM environment (BRCM_CHIP, BCM_KF_*, LINUX_VER_STR, ...).
+kernel_menuconfig: $(BCMDRIVERS_AUTOGEN)
+	$(MAKE) -C $(BUILD_DIR)/build -f Bcmkernel.mk KCROSS_COMPILE="$(KCROSS_COMPILE)" menuconfig
 
 
 #
