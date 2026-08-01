@@ -158,6 +158,16 @@ static char *probe_ntfs(struct volume_id *id, char *dev)
 	return volume_id_probe_ntfs(id) ? NULL : "ntfs";
 }
 
+static char *probe_btrfs(struct volume_id *id, char *dev)
+{
+	return volume_id_probe_btrfs(id) ? NULL : "btrfs";
+}
+
+static char *probe_xfs(struct volume_id *id, char *dev)
+{
+	return volume_id_probe_xfs(id) ? NULL : "xfs";
+}
+
 #ifdef RTCONFIG_HFS
 static char *probe_hfs(struct volume_id *id, char *dev)
 {
@@ -250,6 +260,9 @@ int probe_fs(char *device, char **type, char *label, char *uuid)
 #ifdef RTCONFIG_HFS
 		probe_hfs,
 #endif
+		/* Appended last so detection of the stock filesystems is unchanged. */
+		probe_btrfs,
+		probe_xfs,
 	};
 	struct volume_id id;
 	char *fstype = NULL;

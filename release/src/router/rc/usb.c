@@ -1714,6 +1714,33 @@ int mount_r(char *mnt_dev, char *mnt_dir, char *_type)
 #endif
 			}
 
+			/* btrfs/xfs: detected by probe_fs() but not mountable by any of
+			 * the branches above.  Both are modules, and the kernel CANNOT
+			 * autoload them: rom/etc/init.d/system-config.sh deliberately sets
+			 * /proc/sys/kernel/modprobe to "/sbin/modprobeX" (an invalid path,
+			 * to stop iptables autoloading kmods with wrong parameters), so
+			 * request_module("fs-btrfs") silently fails and mount(2) returns
+			 * ENODEV.  Load them by hand instead of touching that global knob.
+			 * No extra options: btrfs compression is carried as a subvolume
+			 * property (xattr), and neither fs accepts ext's "user_xattr". */
+			if(ret != 0 && !strcmp(type, "btrfs")){
+				eval("modprobe", "btrfs");
+				ret = eval("mount", "-t", "btrfs", "-o", "nodev", mnt_dev, mnt_dir);
+				if(ret != 0){
+					syslog(LOG_INFO, "USB %s(btrfs) failed to mount!", mnt_dev);
+					TRACE_PT("USB %s(btrfs) failed to mount!\n", mnt_dev);
+				}
+			}
+
+			if(ret != 0 && !strcmp(type, "xfs")){
+				eval("modprobe", "xfs");
+				ret = eval("mount", "-t", "xfs", "-o", "nodev", mnt_dev, mnt_dir);
+				if(ret != 0){
+					syslog(LOG_INFO, "USB %s(xfs) failed to mount!", mnt_dev);
+					TRACE_PT("USB %s(xfs) failed to mount!\n", mnt_dev);
+				}
+			}
+
 #ifdef RTCONFIG_USB_CDROM
 			if(ret != 0 && !strncmp(type, "udf", 3)){
 				if (nvram_get_int("usb_fs_udf")) {
