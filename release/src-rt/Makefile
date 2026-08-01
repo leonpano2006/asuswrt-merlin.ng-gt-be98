@@ -7393,6 +7393,32 @@ get_extendno:
 	@echo $(EXTENDNO)
 
 #
+# Kernel config helpers (local addition)
+#
+# kernel-config-prep : generate $(LINUXDIR)/.config with the full BCM build
+#                      environment -- identical to what a real build produces.
+# kernel-menuconfig  : same, then open the kernel's ncurses menuconfig.
+#
+# These must be invoked from an SDK dir so that .config, target.mak,
+# platform.mak and the chip profile are all included first. That environment
+# is what makes the CONFIG_BCM_* symbols resolve; without it kconfig silently
+# drops the entire Broadcom platform support.
+#
+# setprofile is what seeds $(LINUXDIR)/.config from config_$(lowercase_B);
+# without it kconfig starts from an empty/stale config and drops CONFIG_BCM_*.
+kernel-config-prep: dummy
+	$(MAKE) setprofile
+	$(MAKE) -f build/Makefile $(CURDIR)/build/.done_pre_kernelbuild
+
+# Deliberately does NOT run setprofile: it edits whatever $(LINUXDIR)/.config
+# currently holds, so a caller can snapshot the normalised config first and get
+# a clean diff of just the edits. Run kernel-config-prep beforehand.
+kernel-menuconfig: dummy
+	$(MAKE) -f build/Makefile kernel_menuconfig
+
+.PHONY: kernel-config-prep kernel-menuconfig
+
+#
 # Generic rules
 #
 

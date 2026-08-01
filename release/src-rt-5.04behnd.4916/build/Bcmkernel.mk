@@ -73,7 +73,7 @@ export BRCM_MAINTAINENCETAG
 	CROSS_COMPILE:=$(KCROSS_COMPILE)
 
 ifeq ($(strip $(DESKTOP_LINUX)),)
-default version_info headers_install bcmkernel_headers_install olddefconfig modules modules_install clean mrproper tools/perf tools/perf_clean dtbs prepare_bcm_driver:
+default version_info headers_install bcmkernel_headers_install olddefconfig menuconfig savedefconfig modules modules_install clean mrproper tools/perf tools/perf_clean dtbs prepare_bcm_driver:
 	$(MAKE) ARCH=$(KARCH) -C $(KERNEL_DIR) $(MAKEOVERRIDES) $(MAKECMDGOALS) $(KERN_TARGET) EXTRAVERSION= LOCALVERSION=
 else
 default version_info headers_install bcmkernel_headers_install olddefconfig modules modules_install tools/perf tools/perf_clean dtbs prepare_bcm_driver:
@@ -88,4 +88,4 @@ bcm_headers_install:
 	$(Q)echo "======================================================"
 	$(Q)$(MAKE) -C $(BRCMDRIVERS_DIR) bcm_headers_install EXTRAVERSION= LOCALVERSION=
 
-.PHONY: nothing bcm_headers_install version_info headers_install default olddefconfig modules modules_install clean mrproper tools/perf tools/perf_clean dtbs
+.PHONY: nothing bcm_headers_install version_info headers_install default olddefconfig menuconfig savedefconfig modules modules_install clean mrproper tools/perf tools/perf_clean dtbs
