@@ -5133,7 +5133,11 @@ define BusyboxOptions
 	if [ "$(USB)" = "USB" ]; then \
 		if [ "$(NFS)" = "y" ]; then \
 			sed -i "/CONFIG_FEATURE_MOUNT_NFS/d" $(1); \
-			echo "CONFIG_FEATURE_MOUNT_NFS=y" >>$(1); \
+			if [ "$(HND_ROUTER_BE_4916)" = "y" ]; then \
+				echo "# CONFIG_FEATURE_MOUNT_NFS is not set" >>$(1); \
+			else \
+				echo "CONFIG_FEATURE_MOUNT_NFS=y" >>$(1); \
+			fi; \
 		fi; \
 		if [ "$(DISK_MONITOR)" = "y" ]; then \
 			sed -i "/CONFIG_FSCK/d" $(1); \

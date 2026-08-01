@@ -77,6 +77,28 @@ static char sccsid[] = "@(#)portmap.c 1.32 87/08/06 Copyr 1984 Sun Micro";
 
 #include <rpc/rpc.h>
 #include <rpc/pmap_prot.h>
+
+#ifdef PORTMAP_TIRPC
+/*
+ * Built against libtirpc (glibc >= 2.32 dropped its own Sun RPC).
+ *
+ * libtirpc's svc_soc.h defines svc_getcaller() as &xp_raddr, but there
+ * xp_raddr is a `struct sockaddr_in6` kept only "for backward ABI compat"
+ * -- sin_addr and sin6_addr sit at different offsets, and nothing in the
+ * public headers or the exported symbols guarantees it is populated at
+ * all. Silently reading a zeroed address here would weaken the access
+ * control in pmap_check.c rather than fail loudly.
+ *
+ * xp_rtaddr is the address libtirpc actually maintains (it is what
+ * svc_getrpccaller() returns): filled in svc_dg_recv() per datagram and
+ * at accept() time for vc transports. portmap only ever creates AF_INET
+ * transports via svcudp_create()/svctcp_create(), so its .buf is a
+ * struct sockaddr_in.
+ */
+#undef svc_getcaller
+#define svc_getcaller(x) ((struct sockaddr_in *)((x)->xp_rtaddr.buf))
+#endif
+
 #include <stdio.h>
 #include <unistd.h>
 #include <syslog.h>

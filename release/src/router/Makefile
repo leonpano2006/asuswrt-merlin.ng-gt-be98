@@ -9578,10 +9578,33 @@ nfs-utils-install:
 	install -D nfs-utils/support/lib/libnfs.so $(INSTALLDIR)/nfs-utils/usr/lib/libnfs.so
 	$(STRIP) $(INSTALLDIR)/nfs-utils/usr/sbin/* $(INSTALLDIR)/nfs-utils/usr/lib/libnfs.so
 
+# glibc 2.32 (the BE/4916 toolchain) dropped the built-in Sun RPC implementation,
+# so nfs-utils has to link libtirpc instead. Its configure finds libtirpc through
+# PKG_CHECK_MODULES, but common.mak pins PKG_CONFIG_LIBDIR to the staging dir and
+# libtirpc.pc only exists in the toolchain sysroot -- so feed TIRPC_CFLAGS/LIBS
+# directly, which makes PKG_CHECK_MODULES skip pkg-config entirely.
+#
+# gcc 10 also flipped the default to -fno-common, which turns nfs-utils' many
+# tentative definitions (e.g. `int v4root_needed;` in both support/export/xtab.c
+# and utils/mountd/v4root.c, with the extern in support/include/v4root.h) into
+# duplicate-symbol link errors. -fcommon restores the semantics this 2016-era
+# tree was written against.
+NFS_TIRPC_SYSROOT := $(TOOLCHAIN)/arm-buildroot-linux-gnueabi/sysroot
+ifeq ($(HND_ROUTER_BE_4916),y)
+NFS_TIRPC_CONF := --enable-tirpc
+NFS_TIRPC_ENV := TIRPC_CFLAGS="-I$(NFS_TIRPC_SYSROOT)/usr/include/tirpc" TIRPC_LIBS="-ltirpc"
+NFS_EXTRA_CFLAGS := -fcommon
+else
+NFS_TIRPC_CONF := --disable-tirpc
+NFS_TIRPC_ENV :=
+NFS_EXTRA_CFLAGS :=
+endif
+
 nfs-utils-1.3.4/stamp-h1:
-	cd nfs-utils-1.3.4 && CPPFLAGS="$(EXTRACFLAGS) -Os" knfsd_cv_bsd_signals=no \
-	CC_FOR_BUILD=$(CC) $(CONFIGURE) --enable-nfsv3 --disable-nfsv4 --disable-nfsv41 \
-	--disable-ipv6 --disable-tirpc --disable-nfsdcltrack \
+	cd nfs-utils-1.3.4 && CPPFLAGS="$(EXTRACFLAGS) -Os $(NFS_EXTRA_CFLAGS)" knfsd_cv_bsd_signals=no \
+	CC_FOR_BUILD=$(CC) $(NFS_TIRPC_ENV) \
+	$(CONFIGURE) --enable-nfsv3 --disable-nfsv4 --disable-nfsv41 \
+	--disable-ipv6 $(NFS_TIRPC_CONF) --disable-nfsdcltrack \
 	--disable-uuid --disable-gss --disable-mount --without-tcp-wrappers
 	@touch $@
 
@@ -9599,9 +9622,24 @@ nfs-utils-1.3.4-install:
 	install -D nfs-utils-1.3.4/utils/showmount/showmount $(INSTALLDIR)/nfs-utils-1.3.4/usr/sbin/showmount
 	install -D nfs-utils-1.3.4/utils/statd/statd $(INSTALLDIR)/nfs-utils-1.3.4/usr/sbin/statd
 	$(STRIP) $(INSTALLDIR)/nfs-utils-1.3.4/usr/sbin/*
+ifeq ($(HND_ROUTER_BE_4916),y)
+	# nfsd/mountd now link libtirpc (see NFS_TIRPC_CONF above); ship it.
+	# /lib, not /usr/lib -- rootprep.sh for HND_ROUTER_BE never adds /usr/lib
+	# to ld.so.conf, so only /lib is on the default search path.
+	install -D $(NFS_TIRPC_SYSROOT)/usr/lib/libtirpc.so.3.0.0 $(INSTALLDIR)/nfs-utils-1.3.4/lib/libtirpc.so.3
+endif
+
+# portmap pulls in Sun RPC too (obj-$(RTCONFIG_NFS)); same libtirpc story as
+# nfs-utils above. PORTMAP_TIRPC makes portmap.c read the caller address from
+# xp_rtaddr instead of the ABI-compat xp_raddr -- see the comment there.
+ifeq ($(HND_ROUTER_BE_4916),y)
+PORTMAP_MAKEARGS := EXTRACFLAGS="$(EXTRACFLAGS) -Os -fcommon -DPORTMAP_TIRPC -I$(NFS_TIRPC_SYSROOT)/usr/include/tirpc" LDLIBS=-ltirpc
+else
+PORTMAP_MAKEARGS := EXTRACFLAGS="$(EXTRACFLAGS) -Os"
+endif
 
 portmap: portmap/Makefile
-	$(MAKE) -C $@  EXTRACFLAGS="$(EXTRACFLAGS) -Os" NO_TCP_WRAPPER=y RPCUSER=nobody
+	$(MAKE) -C $@  $(PORTMAP_MAKEARGS) NO_TCP_WRAPPER=y RPCUSER=nobody
 
 portmap-install:
 	install -D portmap/portmap $(INSTALLDIR)/portmap/usr/sbin/portmap
