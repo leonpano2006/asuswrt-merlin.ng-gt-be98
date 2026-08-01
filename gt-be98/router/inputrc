@@ -1,0 +1,12 @@
+# Copy to /root/.inputrc on the router.
+#
+# bash built here is not linked against ncurses, so readline cannot read the
+# terminfo capabilities kdch1/kich1/kpp/knp and derives no bindings for
+# Delete, Insert, PageUp or PageDown -- Delete does nothing at all.  Entware's
+# bash is linked against ncurses, which is why it behaves.  Bind them by hand.
+# (The real fix is to link bash against the libncursesw.so.6 already shipped
+# for htop; this file works meanwhile and costs nothing.)
+"\e[3~": delete-char              # Delete
+"\e[2~": overwrite-mode           # Insert
+"\e[5~": history-search-backward  # PageUp
+"\e[6~": history-search-forward   # PageDown
