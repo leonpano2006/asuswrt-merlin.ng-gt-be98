@@ -1,0 +1,43 @@
+FROM gnuton/asuswrt-merlin-toolchains-docker:latest
+
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends ccache \
+    && rm -rf /var/lib/apt/lists/*
+
+# Insert ccache in front of the two toolchains the 4916/BE target actually uses.
+#
+# These are buildroot toolchains: `...-gcc` is a symlink to `toolchain-wrapper`,
+# a binary that derives which `...-gcc.br_real` to exec from argv[0]. Wrapping it
+# from the outside (ccache <path>/toolchain-wrapper) breaks that derivation, so
+# instead the whole bin/ is moved aside to bin.real/ and same-named shell wrappers
+# are put back in bin/. argv[0] handed to the real wrapper still ends in `-gcc`,
+# and bin.real/../.. resolves to the same toolchain root, so sysroot lookup is
+# unaffected.
+RUN set -eu; \
+    for T in /home/docker/am-toolchains/brcm-arm-hnd/crosstools-aarch64-gcc-10.3-linux-4.19-glibc-2.32-binutils-2.36.1 \
+             /home/docker/am-toolchains/brcm-arm-hnd/crosstools-arm_softfp-gcc-10.3-linux-4.19-glibc-2.32-binutils-2.36.1 ; do \
+        B="$T/usr/bin"; \
+        [ -d "$B" ] || { echo "missing $B" >&2; exit 1; }; \
+        mv "$B" "$B.real"; \
+        mkdir -p "$B"; \
+        for f in "$B.real"/*; do \
+            n=$(basename "$f"); \
+            case "$n" in \
+                *.br_real) ln -s "$B.real/$n" "$B/$n" ;; \
+                *-gcc|*-g++|*-cc|*-c++|*-gcc-10.3.0) \
+                    printf '#!/bin/sh\nexec ccache "%s/%s" "$@"\n' "$B.real" "$n" > "$B/$n"; \
+                    chmod 755 "$B/$n" ;; \
+                *) ln -s "$B.real/$n" "$B/$n" ;; \
+            esac; \
+        done; \
+    done
+
+# Persistent cache lives on a bind mount; keep it generous, this tree is large.
+ENV CCACHE_DIR=/ccache
+ENV CCACHE_MAXSIZE=60G
+ENV CCACHE_COMPILERCHECK=content
+ENV CCACHE_SLOPPINESS=time_macros,include_file_mtime,include_file_ctime,file_macro
+
+RUN mkdir -p /ccache && chown docker:docker /ccache
+
+USER docker

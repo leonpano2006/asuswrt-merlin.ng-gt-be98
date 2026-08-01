@@ -1,0 +1,64 @@
+#!/bin/sh
+# post-mount: Merlin calls this with the mounted path as $1.
+# 1) bind the USB "JFFS" partition over /jffs (subdir jffs_root, seeded once)
+# 2) restore the entware /tmp/opt link (entware lives on the same stick)
+# NOTE: at boot this executes from the UNDERLYING ubifs /jffs (the bind
+# happens below), NOT from the USB copy. Keep BOTH copies identical:
+#   mount -t ubifs ubi:jffs2 /tmp/realjffs  → /tmp/realjffs/scripts/post-mount
+#   USB overlay                              → /jffs/scripts/post-mount
+USB=/tmp/mnt/JFFS
+LOG=$USB/post-mount.log
+# swap partition on the 500GB stick (btrfs cannot host a swapfile: kernel
+# swapfile-on-btrfs support landed in 5.0, this box is 4.19)
+SWAP_UUID=00000000-0000-0000-0000-000000000000   # <-- your swap partition, "blkid" to find it
+if [ "$1" = "$USB" ]; then
+    echo "=== boot $(date): post-mount start" >> "$LOG"
+    # filesystem-agnostic guard: has a USB partition already been bound here?
+    # (was hardcoded to "ext4"; the stick is btrfs since 2026-08-01)
+    if ! grep -qE "^/dev/sd[a-z][0-9]+ /jffs " /proc/mounts; then
+        if [ ! -d "$USB/jffs_root" ]; then
+            mkdir "$USB/jffs_root"
+            cp -a /jffs/. "$USB/jffs_root/"
+        fi
+        mount --bind "$USB/jffs_root" /jffs
+    fi
+    [ -d "$USB/entware" ] && ln -nsf "$USB/entware" /tmp/opt
+    # /root is tmpfs — restore the persistent bashrc each boot
+    [ -f "$USB/home/.bashrc" ]  && cp "$USB/home/.bashrc"  /root/.bashrc
+    # .inputrc supplies the 4 readline bindings our ncurses-less bash cannot
+    # derive from terminfo (Delete/Insert/PageUp/PageDown) -- see the file
+    [ -f "$USB/home/.inputrc" ] && cp "$USB/home/.inputrc" /root/.inputrc
+
+    # Memory-pressure stack, re-armed on every boot (none of this persists):
+    # zswap = compressed RAM cache (z3fold) in FRONT of the USB swap.
+    # zram is retired (zswap+zram would double-compress) but zram.ko stays
+    # in the image as fallback: modprobe zram / mkswap / swapon as before.
+    {
+        if [ -e /sys/module/zswap/parameters/enabled ]; then
+            modprobe z3fold
+            echo z3fold > /sys/module/zswap/parameters/zpool
+            # zstd (better ratio) when the kernel has it, lzo otherwise
+            if grep -q "^name *: zstd" /proc/crypto; then
+                echo zstd > /sys/module/zswap/parameters/compressor
+            else
+                echo lzo  > /sys/module/zswap/parameters/compressor
+            fi
+            echo 20     > /sys/module/zswap/parameters/max_pool_percent
+            echo Y      > /sys/module/zswap/parameters/enabled
+        fi
+        # busybox swapon has no -U/-L, and there is no /dev/disk/by-uuid,
+        # so resolve the UUID through blkid. Falls back to the old stick's
+        # swapfile so this script works on either disk.
+        SWAPDEV=$(blkid 2>/dev/null | grep -i "\"$SWAP_UUID\"" | cut -d: -f1 | head -n1)
+        if [ -n "$SWAPDEV" ] && ! grep -q "$SWAPDEV" /proc/swaps; then
+            swapon "$SWAPDEV"
+        elif [ -f "$USB/swap8g" ] && ! grep -q swap8g /proc/swaps; then
+            swapon "$USB/swap8g"
+        fi
+        # firmware default swappiness=0 would starve zswap until near-OOM
+        echo 60 > /proc/sys/vm/swappiness
+    } >> "$LOG" 2>&1
+    echo "=== $(date): post-mount done; swaps/zswap:" >> "$LOG"
+    cat /proc/swaps >> "$LOG" 2>&1
+    grep -H . /sys/module/zswap/parameters/enabled >> "$LOG" 2>&1
+fi
