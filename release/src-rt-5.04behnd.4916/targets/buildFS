@@ -121,9 +121,68 @@ else
 fi
 parl_wait
 
+# Upgrade the aarch64 (64-bit) layer to the glibc set shipped in
+# fs.src/lib/aarch64-linux-gnu (Debian multiarch layout). The SDK's partial
+# glibc-2.32 set (/lib64 plus the /lib/ld-linux-aarch64.so.1 it copies over
+# the fs.src symlink above) is replaced with symlinks so every consumer —
+# including a stale ld.so.cache hit on /lib64 — resolves into the new set.
+if [ -f $ROOTFS/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1 ]; then
+	ln -snfv aarch64-linux-gnu/ld-linux-aarch64.so.1 $ROOTFS/lib/ld-linux-aarch64.so.1
+	if [ -d $ROOTFS/lib64 ]; then
+		for f in $ROOTFS/lib64/*.so*; do
+			[ -e "$f" ] || continue
+			b=$(basename $f)
+			if [ -f $ROOTFS/lib/aarch64-linux-gnu/$b ]; then
+				ln -snfv ../lib/aarch64-linux-gnu/$b $f
+			fi
+		done
+	fi
+fi
+
 if [ "$BUILD_OPEN_PLATFORM" == "y" ]; then
    mkdir -p $ROOTFS/lib/ops
    ln -s /local/modsw/tr157du/Broadcom/OPS_HOSTEE/lib $ROOTFS/lib/ops/plugins
+fi
+
+# GNU coreutils (fs.src/usr/gnu) integration, done AFTER all other rootfs
+# population so busybox applet links can't clobber it:
+#  1) tools busybox doesn't ship at all -> add /usr/bin symlink
+#  2) explicit override list -> repoint the existing applet link to GNU.
+#     Excluded on purpose: date (busybox -D used by rc scripts), df (scripts
+#     parse its output), cp/mv/rm/ln (boot-path heavy, no gain).
+if [ -x $ROOTFS/usr/gnu/bin/coreutils ]; then
+	for t in $ROOTFS/usr/gnu/bin/*; do
+		b=$(basename $t)
+		[ "$b" = "coreutils" ] && continue
+		if [ ! -e $ROOTFS/bin/$b ] && [ ! -e $ROOTFS/usr/bin/$b ] && \
+		   [ ! -e $ROOTFS/sbin/$b ] && [ ! -e $ROOTFS/usr/sbin/$b ]; then
+			ln -snfv /usr/gnu/bin/$b $ROOTFS/usr/bin/$b
+		fi
+	done
+	for b in uname sort head tail wc cut tr comm od seq du stat ls \
+	         md5sum sha1sum sha256sum; do
+		for d in bin usr/bin sbin usr/sbin; do
+			if [ -e $ROOTFS/$d/$b ] || [ -L $ROOTFS/$d/$b ]; then
+				ln -snfv /usr/gnu/bin/$b $ROOTFS/$d/$b
+			fi
+		done
+	done
+fi
+
+# ebtables/libebtc rebuilt with GCC 16.1 against glibc 2.43 live in fs.src,
+# but the SDK installs its own gcc-10/glibc-2.32 build afterwards. Stash the
+# fs.src copies before the rootfs is assembled and restore them here, so the
+# whole 64-bit world is uniformly 2.43+gcc16.
+if [ -f $FSSRC_DIR/usr/sbin/ebtables ]; then
+	cp -av $FSSRC_DIR/usr/sbin/ebtables $ROOTFS/usr/sbin/ebtables
+	cp -av $FSSRC_DIR/usr/lib/libebtc.so* $ROOTFS/usr/lib/
+fi
+
+# Real GNU bash must own /bin/bash: busybox ships a "bash" alias applet
+# (ash in a trenchcoat) and its install step runs after fs.src is copied,
+# clobbering the fs.src symlink. Repoint it after everything else.
+if [ -x $ROOTFS/usr/bin/bash ]; then
+	ln -snfv /usr/bin/bash $ROOTFS/bin/bash
 fi
 
 
