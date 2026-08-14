@@ -4932,7 +4932,10 @@ else
 endif
 
 mtd-utils-install:
-	$(MAKE) WITHOUT_XATTR=1 WITHOUT_LZO=1 DESTDIR=$(INSTALLDIR)/mtd-utils -C mtd-utils install
+	$(MAKE) CPPFLAGS="-I$(STAGEDIR)/usr/include" \
+		CFLAGS="-I$(TOP)/mtd-utils/include -I$(TOP)/mtd-utils/ubi-utils/include $(MUSL_CFLAGS)" \
+		LDFLAGS="-L$(STAGEDIR)/usr/lib" \
+		WITHOUT_XATTR=1 WITHOUT_LZO=1 DESTDIR=$(INSTALLDIR)/mtd-utils -C mtd-utils install
 
 mtd-utils-clean:
 	$(MAKE) -C mtd-utils clean
