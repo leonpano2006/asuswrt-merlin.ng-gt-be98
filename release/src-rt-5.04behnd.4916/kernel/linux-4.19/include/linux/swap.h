@@ -682,5 +682,11 @@ static inline bool mem_cgroup_swap_full(struct page *page)
 }
 #endif
 
+
+#ifdef CONFIG_ZSWAP
+extern u64 zswap_pool_total_size;
+extern atomic_t zswap_stored_pages;
+#endif
+
 #endif /* __KERNEL__*/
 #endif /* _LINUX_SWAP_H */
