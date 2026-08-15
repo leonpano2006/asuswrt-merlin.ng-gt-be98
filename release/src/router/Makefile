@@ -3682,6 +3682,7 @@ ifeq ($(HND_ROUTER),y)
 	-mkdir $(SRCBASE)/image
 endif
 	@$(MAKE) -C www install INSTALLDIR=$(INSTALLDIR)/www TOMATO_EXPERIMENTAL=$(TOMATO_EXPERIMENTAL)
+	@find www $(INSTALLDIR)/www -maxdepth 1 -name "core.*" -type f -delete 2>/dev/null || true
 
 ifeq ($(HND_ROUTER),y)
 fsbuild:
