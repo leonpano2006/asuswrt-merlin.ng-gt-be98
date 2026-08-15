@@ -1,0 +1,3 @@
+kernel/lib/zstd/zstd_compress.ko
+kernel/lib/zstd/zstd_decompress.ko
+kernel/lib/zstd/zstd_common.ko
