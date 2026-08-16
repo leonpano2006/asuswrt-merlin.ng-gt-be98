@@ -15,7 +15,7 @@ explicitly marked otherwise.
 ## What's in the branch
 
 `gt-be98-102.7` (the default branch) is based on gnuton's `DEV_3006.102.7_2`
-and carries nineteen self-contained commits.  Most are not GT-BE98-specific
+and carries twenty-one self-contained commits.  Most are not GT-BE98-specific
 and should apply to any HND 5.04 BE / 4916 target.
 
 **Original series** (from the 102.6 era, cherry-picked forward):
@@ -43,6 +43,7 @@ and should apply to any HND 5.04 BE / 4916 target.
 | `userland: ship 64-bit nano 8.6 and iperf3 3.19` | Replaces the 32-bit in-tree builds | See *64-bit layer* below |
 | `buildFS: retire /lib64; teach ld.so.conf the multiarch dirs` | Full Debian-multiarch layout — `ldd` shows `/lib/aarch64-linux-gnu/...` | The vendor's only /lib64 consumer (ebtables) is long since replaced |
 | `mm/zswap: backport the 6.5 pool shrinking mechanism` | zswap keeps its own LRU; **zsmalloc gains writeback** and becomes the default zpool | Hand-port of f999f38b4e6f; see *Backports* |
+| `mm: zswap hysteresis (5.6) and zsmalloc chain-size series (6.2)` | Pool-full hysteresis (`accept_threshold_percent`, shrink moves to a workqueue) + zspage chains up to 8 pages for better density | Stitched into the LRU port |
 
 To rebase onto a newer upstream branch/tag:
 
@@ -304,6 +305,8 @@ Worked examples:
 * **zstd 1.5.2 (6.6 → 4.19):** a leaf library — no struct exposure at
   all.  4.19 compat (missing `fallthrough` macro, `size_t` include chain)
   is kept *inside* `lib/zstd/`.
+* **zswap hysteresis (5.6 → 4.19):** 4.19ism worth noting —
+  `totalram_pages` is a variable here, not a function.
 * **zswap LRU / zsmalloc writeback (6.5 → 4.19):** every touched struct
   (`zswap_pool`, `zswap_entry`) is private to `mm/zswap.c`, so this one is
   blob-safe by construction.  4.19 shrinks synchronously from the store
