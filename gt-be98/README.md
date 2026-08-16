@@ -15,7 +15,7 @@ explicitly marked otherwise.
 ## What's in the branch
 
 `gt-be98-102.7` (the default branch) is based on gnuton's `DEV_3006.102.7_2`
-and carries sixteen self-contained commits.  Most are not GT-BE98-specific
+and carries nineteen self-contained commits.  Most are not GT-BE98-specific
 and should apply to any HND 5.04 BE / 4916 target.
 
 **Original series** (from the 102.6 era, cherry-picked forward):
@@ -41,6 +41,8 @@ and should apply to any HND 5.04 BE / 4916 target.
 | `sched/psi: backport pressure stall information` | `/proc/pressure/{cpu,memory,io}` on 4.19 — see *Backports* below for the blob-safety technique | Verified live |
 | `build: strip stray core dumps from the www rootfs` | A crashing build helper shipped 48 MB cores **inside the firmware image** | See gotchas |
 | `userland: ship 64-bit nano 8.6 and iperf3 3.19` | Replaces the 32-bit in-tree builds | See *64-bit layer* below |
+| `buildFS: retire /lib64; teach ld.so.conf the multiarch dirs` | Full Debian-multiarch layout — `ldd` shows `/lib/aarch64-linux-gnu/...` | The vendor's only /lib64 consumer (ebtables) is long since replaced |
+| `mm/zswap: backport the 6.5 pool shrinking mechanism` | zswap keeps its own LRU; **zsmalloc gains writeback** and becomes the default zpool | Hand-port of f999f38b4e6f; see *Backports* |
 
 To rebase onto a newer upstream branch/tag:
 
@@ -302,6 +304,11 @@ Worked examples:
 * **zstd 1.5.2 (6.6 → 4.19):** a leaf library — no struct exposure at
   all.  4.19 compat (missing `fallthrough` macro, `size_t` include chain)
   is kept *inside* `lib/zstd/`.
+* **zswap LRU / zsmalloc writeback (6.5 → 4.19):** every touched struct
+  (`zswap_pool`, `zswap_entry`) is private to `mm/zswap.c`, so this one is
+  blob-safe by construction.  4.19 shrinks synchronously from the store
+  path, so the LRU reclaim slots into `zswap_shrink()`; the entry header
+  becomes unconditional so the swp_entry can be recovered for writeback.
 
 When auditing, build once with `CONFIG_DEBUG_INFO=y` (remember to answer
 its four child symbols in `config_base` — see gotchas) and diff
@@ -314,8 +321,17 @@ its four child symbols in `config_base` — see gotchas) and diff
 The firmware's own userland is 32-bit ARM (glibc 2.32).  `buildFS`
 overlays a 64-bit layer from `targets/fs.src/`: glibc 2.43 (built from
 source, `--enable-kernel=4.19`), GNU coreutils (single-binary), bash,
-htop, zstd, btrfs-progs, xfsprogs, ebtables, nano, iperf3, and the
-supporting libraries.  **The payload is not in git** — only the buildFS
+htop, zstd, btrfs-progs, xfsprogs, ebtables, nano, iperf3, compsize, and
+the supporting libraries.  Current state: glibc **2.44**
+(`--enable-kernel=4.19`), gcc **16.2.0** throughout, coreutils 9.11.
+The layer's `ldd` carries a dual-arch `RTLDLIST` (aarch64 + the vendor's
+32-bit `ld-linux.so.3`) so it can resolve both worlds — that tweak is
+baked into the layer build script; hand-edits to fs.src die on the next
+clean rebuild, so bake every tweak into the pipeline.
+compsize note: Debian's 1.5-1.1 NMU patch (FTBFS #1091561) addresses the
+same kerncompat include break we hit; building with
+`-DBTRFS_FLAT_INCLUDES=1` plus a two-line shim for `btrfs/{ioctl,ctree}.h`
+(pointing at the kernel uapi headers) is functionally equivalent.  **The payload is not in git** — only the buildFS
 hook is.  Build your own, or the hook is inert.
 
 Build pipeline for layer binaries (no cross toolchain needed):
