@@ -14,8 +14,11 @@ explicitly marked otherwise.
 
 ## What's in the branch
 
-Six commits, each self-contained. The first four are not GT-BE98-specific and
-should apply to any HND 5.04 BE / 4916 target.
+`gt-be98-102.7` (the default branch) is based on gnuton's `DEV_3006.102.7_2`
+and carries sixteen self-contained commits.  Most are not GT-BE98-specific
+and should apply to any HND 5.04 BE / 4916 target.
+
+**Original series** (from the 102.6 era, cherry-picked forward):
 
 | Commit | What | Notes |
 |---|---|---|
@@ -26,11 +29,24 @@ should apply to any HND 5.04 BE / 4916 target.
 | `kernel: GT-BE98 config` | btrfs, XFS, zram/zswap, WireGuard, overlayfs, namespaces | Opinionated |
 | `GT-BE98: local build settings` | ROG UI on, NFS off, build tag | **Drop this one when rebasing** |
 
-To rebase onto a newer upstream tag:
+**102.7-era additions:**
+
+| Commit | What | Notes |
+|---|---|---|
+| `kernel: enable madvise/fadvise syscalls and JFFS2 xattrs` | Broadcom disables `ADVISE_SYSCALLS`; that also kills THP (madvise mode has no entry point) and allocator memory release | Verified: THP works end-to-end after this |
+| `build: give mtd-utils-install the stage include/lib paths` | Upstream bug: any **clean-tree** build dies at install-time recompile of `mkfs.ubifs` | Bites every fresh clone |
+| `kernel: expose zswap stats in /proc/meminfo` | Backport of 5.19 `f6498b776d28` (minimal: no vmstat half) | htop's zswap display works on 4.19 |
+| `zswap: default to zstd compressor and z3fold zpool` | Kernel defaults match what boot scripts set by hand | |
+| `lib/zstd: upgrade to zstd 1.5.2` | Kernel zstd 1.3.1 → 1.5.2 (from linux 6.6 LTS) + all three callers ported | zswap/btrfs/squashfs hot paths |
+| `sched/psi: backport pressure stall information` | `/proc/pressure/{cpu,memory,io}` on 4.19 — see *Backports* below for the blob-safety technique | Verified live |
+| `build: strip stray core dumps from the www rootfs` | A crashing build helper shipped 48 MB cores **inside the firmware image** | See gotchas |
+| `userland: ship 64-bit nano 8.6 and iperf3 3.19` | Replaces the 32-bit in-tree builds | See *64-bit layer* below |
+
+To rebase onto a newer upstream branch/tag:
 
 ```sh
-git fetch upstream --tags
-git rebase --onto <new-tag> <old-tag> gt-be98
+git fetch origin <new-branch-or-tag>
+git rebase --onto <new> <old-base> gt-be98-102.7
 ```
 
 ---
@@ -241,6 +257,11 @@ firmware image.
 | `mount(2)` returns ENODEV for a filesystem that exists as a module | `/proc/sys/kernel/modprobe` is `/sbin/modprobeX` — see below |
 | No ROG UI in your build | `ROG_UI=n` in `release/src-rt/target.mak` (`.config` is regenerated from it every build) |
 | USB stick mounts nowhere and nothing is logged | btrfs/XFS on stock firmware — the fix is the first commit in this branch |
+| Clean-tree build dies on `lzo/lzo1x.h` then `libubi.h` in mkfs.ubifs | `mtd-utils-install` passes no include paths; fixed in this branch |
+| Image mysteriously MBs too big | `du targets/96813GW/fs/www` — a crashing build helper drops 48 MB `core.<pid>` files there and they get packed in; guard is in this branch |
+| Build stops at `syncconfig` with "Error in reading or end of file" | A **new** Kconfig symbol has no answer in `config_base` — every new symbol (and its children: `PSI_DEFAULT_DISABLED`, the four `DEBUG_INFO_*`) needs an explicit line |
+| Config edit "didn't take" | `config_gt-be98` = `config_base` + appended block; **last occurrence wins**. Also `KernelConfig` in src-rt/Makefile force-disables PPP_FILTER / XFRM_MIGRATE / NET_KEY_MIGRATE unconditionally |
+| 64-bit binary dies `Function not implemented` on another device | The layer glibc is built `--enable-kernel=4.19`: pre-4.19 fallbacks are compiled out. It never runs on older kernels |
 
 **About `modprobeX`:** `rom/etc/init.d/system-config.sh` deliberately sets
 `/proc/sys/kernel/modprobe` to `/sbin/modprobeX`, an invalid path. Broadcom's
@@ -249,6 +270,79 @@ parameters. The side effect is that the kernel's `request_module()` always
 fails, so **any** modular filesystem returns `ENODEV` from `mount(2)`. Don't
 "fix" the global knob — that brings the iptables problem back. Load the module
 explicitly at the call site, which is what `rc/usb.c` now does.
+
+---
+
+## Backports and the prebuilt-blob rule
+
+The SDK links **114 prebuilt Broadcom kernel objects** (ethernet, wifi,
+packet accelerators) compiled against a fixed kernel configuration.  Any
+change that moves a field in `task_struct`, `mm_struct`, `struct page`,
+or renumbers page-flag / vm-event enums **bricks the boot** — there is no
+automatic rollback on BCM6813.  Every backport in this branch obeys one
+doctrine, enforced with `pahole`:
+
+> All pre-existing struct member offsets must be byte-identical
+> before and after.  New fields go into alignment holes.
+
+Worked examples:
+
+* **PSI (4.20 → 4.19):** upstream adds `psi_flags` (4 bytes) to
+  `task_struct`.  Here it lives in the alignment hole after
+  `pagefault_disabled` (offset 1908), and the `:1` wake flag packs into a
+  half-empty bitfield word (offset 932, 28 spare bits).  pahole confirms:
+  size 2688 unchanged, all 150 pre-existing offsets identical.  The
+  `mm/filemap.c` hunks were *dropped* — they need `PG_workingset`, and a
+  mid-enum page flag renumbers bits the blobs test with baked-in
+  constants.  Reclaim/compaction/swap stalls are counted; pagecache
+  thrash is not.
+* **zswap meminfo (5.19 → 4.19):** the vmstat half was dropped for the
+  same reason (`vm_event_item` growth resizes a per-cpu array); the
+  meminfo half is pure read-out.
+* **zstd 1.5.2 (6.6 → 4.19):** a leaf library — no struct exposure at
+  all.  4.19 compat (missing `fallthrough` macro, `size_t` include chain)
+  is kept *inside* `lib/zstd/`.
+
+When auditing, build once with `CONFIG_DEBUG_INFO=y` (remember to answer
+its four child symbols in `config_base` — see gotchas) and diff
+`pahole -C task_struct vmlinux` before/after.
+
+---
+
+## The 64-bit userland layer
+
+The firmware's own userland is 32-bit ARM (glibc 2.32).  `buildFS`
+overlays a 64-bit layer from `targets/fs.src/`: glibc 2.43 (built from
+source, `--enable-kernel=4.19`), GNU coreutils (single-binary), bash,
+htop, zstd, btrfs-progs, xfsprogs, ebtables, nano, iperf3, and the
+supporting libraries.  **The payload is not in git** — only the buildFS
+hook is.  Build your own, or the hook is inert.
+
+Build pipeline for layer binaries (no cross toolchain needed):
+
+```sh
+# any aarch64 host, e.g. a container:
+docker run --rm -v $PWD:/w ubuntu:24.04 bash -c '
+  apt-get update -qq && apt-get install -y gcc make libc6-dev
+  # A53 safety: never emit ARMv8.1+ instructions (no LSE!)
+  export CFLAGS="-O2 -mcpu=cortex-a53+crypto+crc" ...'
+```
+
+Rules learned the hard way:
+
+* The router CPU (Brahma-B53) is **ARMv8.0-A only** — treat it as a
+  Cortex-A53.  `-mcpu=cortex-a53+crypto+crc`, always.  Anything built
+  with defaults on a modern arm64 host may SIGILL.
+* glibc symbol ceiling is **2.43** — build in `ubuntu:26.04` or older.
+  (Caveat: some gnulib-based packages fail against 2.43 headers with
+  `_Generic` errors — `ubuntu:24.04` builds them fine and the output
+  still runs.)
+* `PATH` on the router puts `/usr/sbin` before `/usr/bin` — when a
+  64-bit tool replaces an in-tree 32-bit one, disable the 32-bit build
+  in `target.mak` or it shadows yours.
+* ncurses: unversioned references bind fine to a versioned library, the
+  reverse does not.  The layer carries Debian-style versioned
+  libncursesw/libtinfo with `.so.6` pointing at them.
 
 ---
 
