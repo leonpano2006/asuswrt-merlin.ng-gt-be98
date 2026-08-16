@@ -128,15 +128,11 @@ parl_wait
 # including a stale ld.so.cache hit on /lib64 — resolves into the new set.
 if [ -f $ROOTFS/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1 ]; then
 	ln -snfv aarch64-linux-gnu/ld-linux-aarch64.so.1 $ROOTFS/lib/ld-linux-aarch64.so.1
-	if [ -d $ROOTFS/lib64 ]; then
-		for f in $ROOTFS/lib64/*.so*; do
-			[ -e "$f" ] || continue
-			b=$(basename $f)
-			if [ -f $ROOTFS/lib/aarch64-linux-gnu/$b ]; then
-				ln -snfv ../lib/aarch64-linux-gnu/$b $f
-			fi
-		done
-	fi
+	# The vendor's only /lib64 consumer (their 64-bit ebtables) has been
+	# replaced by our own build, whose loader default paths are the
+	# multiarch dirs.  Remove /lib64 outright so ld.so.cache never offers
+	# it and ldd shows the Debian-style path.
+	rm -rf $ROOTFS/lib64
 fi
 
 if [ "$BUILD_OPEN_PLATFORM" == "y" ]; then
