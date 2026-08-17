@@ -135,6 +135,18 @@ if [ -f $ROOTFS/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1 ]; then
 	rm -rf $ROOTFS/lib64
 fi
 
+# 32-bit glibc upgrade: fs.src/lib/glibc244-armel stages our softfp
+# glibc 2.44 (vendor ABI: gnueabi + v7/VFPv3-D16 codegen, slibdir=/lib so
+# the loader's baked search path stays /lib:/usr/lib -- flat like the
+# vendor world, self-sufficient at early boot with no ld.so.cache
+# dependency; a triplet-dir attempt failed exactly there).  The vendor
+# rootfs population above laid down the 2.32 set flat in /lib; overwrite
+# every name we ship.  libcrypt.so.1 stays vendor (dropped upstream).
+if [ -d $ROOTFS/lib/glibc244-armel ]; then
+	cp -a $ROOTFS/lib/glibc244-armel/. $ROOTFS/lib/
+	rm -rf $ROOTFS/lib/glibc244-armel
+fi
+
 if [ "$BUILD_OPEN_PLATFORM" == "y" ]; then
    mkdir -p $ROOTFS/lib/ops
    ln -s /local/modsw/tr157du/Broadcom/OPS_HOSTEE/lib $ROOTFS/lib/ops/plugins
