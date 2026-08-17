@@ -147,6 +147,7 @@ if [ -d $ROOTFS/lib/glibc244-armel ]; then
 	rm -rf $ROOTFS/lib/glibc244-armel
 fi
 
+
 if [ "$BUILD_OPEN_PLATFORM" == "y" ]; then
    mkdir -p $ROOTFS/lib/ops
    ln -s /local/modsw/tr157du/Broadcom/OPS_HOSTEE/lib $ROOTFS/lib/ops/plugins
@@ -694,7 +695,7 @@ fi
 	fi
 fi
 
-if [ "$BUILD_NAME" == "GT-BE19000AI" ] || [ "$BUILD_NAME" == "GT-BE96_AI" ]; then
+if [ "$BUILD_NAME" == "GT-BE19000AI" ] || [ "$BUILD_NAME" == "GT-BE96_AI" ] || [ "$BUILD_NAME" == "GT-BE98" ]; then
 	rm -rf $TARGETS_DIR/$ROOTFS/lib/modules/$LINUX_VER_STR/extra/wl.ko
 	rm -rf $TARGETS_DIR/$ROOTFS/lib/modules/$LINUX_VER_STR/kernel/drivers/cdrom
 	rm -rf $TARGETS_DIR/$ROOTFS/lib/modules/$LINUX_VER_STR/kernel/drivers/mtd
