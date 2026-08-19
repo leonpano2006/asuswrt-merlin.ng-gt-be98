@@ -34,10 +34,10 @@ if [ "$BRCM_IKOS" == "y" ]; then
     #-noF			do not compress fragment blocks
     #-noX			do not compress extended attributes
 else
-    (ulimit -t 900 ; $HOSTTOOLS_DIR/mksquashfs $TARGET_FS $PROFILE_DIR/$sqshimg_name -noappend -all-root -comp xz)
+    (ulimit -t 900 ; $HOSTTOOLS_DIR/mksquashfs $TARGET_FS $PROFILE_DIR/$sqshimg_name -noappend -all-root -comp zstd -Xcompression-level 22 -b 524288 -no-xattrs)
     if [ $? -ne 0 ]; then
         echo "mksquashfs failed once"
-        (ulimit -t 900 ; $HOSTTOOLS_DIR/mksquashfs $TARGET_FS $PROFILE_DIR/$sqshimg_name -noappend -all-root -comp xz)
+        (ulimit -t 900 ; $HOSTTOOLS_DIR/mksquashfs $TARGET_FS $PROFILE_DIR/$sqshimg_name -noappend -all-root -comp zstd -Xcompression-level 22 -b 524288 -no-xattrs)
         if [ $? -ne 0 ]; then
             echo "mksquashfs failed twice"
             touch ${SUBSHELL_ERR_PREFIX}.$$
