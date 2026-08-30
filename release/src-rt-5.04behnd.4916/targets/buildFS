@@ -136,7 +136,8 @@ if [ -f $ROOTFS/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1 ]; then
 fi
 
 # 32-bit glibc upgrade: fs.src/lib/glibc244-armel stages our softfp
-# glibc 2.44 (vendor ABI: gnueabi + v7/VFPv3-D16 codegen, slibdir=/lib so
+# glibc 2.44 (vendor ABI: gnueabi softfp, A53/v8 codegen since 2026-08-17,
+# slibdir=/lib so
 # the loader's baked search path stays /lib:/usr/lib -- flat like the
 # vendor world, self-sufficient at early boot with no ld.so.cache
 # dependency; a triplet-dir attempt failed exactly there).  The vendor
@@ -168,8 +169,14 @@ if [ -x $ROOTFS/usr/gnu/bin/coreutils ]; then
 			ln -snfv /usr/gnu/bin/$b $ROOTFS/usr/bin/$b
 		fi
 	done
+	#  tar/find/xargs joined the list 2026-08-30: audited every in-image
+	#  caller (httpd hardcodes /bin/tar for jffs backup/restore, cfg_client/
+	#  cfg_server AiMesh streams, libwebapi -X excludes, acme.sh/brcmsysinfo
+	#  scripts, find only ever used with -name, xargs bare) -- all busybox
+	#  usage is a GNU-compatible subset.
 	for b in uname sort head tail wc cut tr comm od seq du stat ls \
-	         md5sum sha1sum sha256sum; do
+	         md5sum sha1sum sha256sum tar find xargs; do
+		[ -x $ROOTFS/usr/gnu/bin/$b ] || continue  # only once the layer ships it
 		for d in bin usr/bin sbin usr/sbin; do
 			if [ -e $ROOTFS/$d/$b ] || [ -L $ROOTFS/$d/$b ]; then
 				ln -snfv /usr/gnu/bin/$b $ROOTFS/$d/$b
