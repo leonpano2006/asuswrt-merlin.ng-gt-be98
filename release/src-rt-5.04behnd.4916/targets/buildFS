@@ -175,7 +175,7 @@ if [ -x $ROOTFS/usr/gnu/bin/coreutils ]; then
 	#  scripts, find only ever used with -name, xargs bare) -- all busybox
 	#  usage is a GNU-compatible subset.
 	for b in uname sort head tail wc cut tr comm od seq du stat ls \
-	         md5sum sha1sum sha256sum tar find xargs; do
+	         md5sum sha1sum sha256sum tar find xargs jq sqlite3 socat; do
 		[ -x $ROOTFS/usr/gnu/bin/$b ] || continue  # only once the layer ships it
 		for d in bin usr/bin sbin usr/sbin; do
 			if [ -e $ROOTFS/$d/$b ] || [ -L $ROOTFS/$d/$b ]; then
