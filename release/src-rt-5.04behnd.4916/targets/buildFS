@@ -219,8 +219,10 @@ fi
 # a single link touched; the vendor 32-bit multicall is kept alongside as
 # dropbearmulti32 -- the manual escape hatch
 # (/usr/bin/dropbearmulti32 dropbear -p 22).
+# (2026-08-31 v34: the 32-bit fallback copy is dropped -- real escape
+# routes are the other UBI slot and the WebUI flash path; reclaims ~360KB.)
 if [ -f $FSSRC_DIR/usr/bin/dropbearmulti ]; then
-	mv $ROOTFS/usr/bin/dropbearmulti $ROOTFS/usr/bin/dropbearmulti32
+	rm -f $ROOTFS/usr/bin/dropbearmulti $ROOTFS/usr/bin/dropbearmulti32
 	install -m 755 $FSSRC_DIR/usr/bin/dropbearmulti $ROOTFS/usr/bin/dropbearmulti
 fi
 
