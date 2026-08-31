@@ -211,6 +211,19 @@ if [ -f $FSSRC_DIR/bin/busybox ]; then
 	chmod 4755 $ROOTFS/bin/busybox
 fi
 
+# dropbear64 takeover (2026-08-31, after a :2222 soak + full battery: key/
+# password/scp roundtrip, dropbearkey/dbclient/scp applets, and rc's exact
+# startup args -j -k -W).  The aarch64 2026.94 build takes the CANONICAL
+# name, so the vendor applet link farm (scp/dbclient/dropbearkey ->
+# dropbearmulti, dropbear -> ../bin/dropbearmulti) resolves to it without
+# a single link touched; the vendor 32-bit multicall is kept alongside as
+# dropbearmulti32 -- the manual escape hatch
+# (/usr/bin/dropbearmulti32 dropbear -p 22).
+if [ -f $FSSRC_DIR/usr/bin/dropbearmulti ]; then
+	mv $ROOTFS/usr/bin/dropbearmulti $ROOTFS/usr/bin/dropbearmulti32
+	install -m 755 $FSSRC_DIR/usr/bin/dropbearmulti $ROOTFS/usr/bin/dropbearmulti
+fi
+
 
 
 # Create directories as needed
