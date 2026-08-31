@@ -201,6 +201,16 @@ if [ -x $ROOTFS/usr/bin/bash ]; then
 	ln -snfv /usr/bin/bash $ROOTFS/bin/bash
 fi
 
+# Rebuilt busybox: same in-tree hybrid 1.25.1 source, armel softfp with
+# A53/v8 codegen, GCC 15.2 vs the SDK's 10.3, canary+FORTIFY, builtin
+# crypt (drops the vendor-libcrypt GLIBC_PRIVATE link snag).  Binary-only
+# swap AFTER busybox-install so the applet link farm stays vendor-managed;
+# A/B-battery + chroot verified on-router 2026-08-31.  setuid like vendor.
+if [ -f $FSSRC_DIR/bin/busybox ]; then
+	cp $FSSRC_DIR/bin/busybox $ROOTFS/bin/busybox
+	chmod 4755 $ROOTFS/bin/busybox
+fi
+
 
 
 # Create directories as needed

@@ -34,6 +34,8 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+int f_exists(const char *path);
+
 static int system_file(char *path)
 {
 	if (!path)
