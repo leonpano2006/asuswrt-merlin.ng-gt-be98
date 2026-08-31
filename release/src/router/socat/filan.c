@@ -974,14 +974,14 @@ const char *getfiletypestring(int st_mode) {
 }
 
 static int printtime(FILE *outfile, time_t time) {
-   const char *s;
+   char *s;
 
    if (filan_rawoutput) {
       fprintf(outfile, "\t"F_time, time);
    } else {
       fputc('\t', outfile);
       s = asctime(localtime(&time));
-      if (strchr(s, '\n'))  *strchr(s, '\n') = '\0';
+      { char *nl = strchr(s, '\n'); if (nl) *nl = '\0'; }
       fputs(s, outfile);
    }
    return 0;

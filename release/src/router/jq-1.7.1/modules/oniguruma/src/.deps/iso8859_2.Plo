@@ -1,0 +1,10 @@
+iso8859_2.lo: iso8859_2.c \
+ /home/docker/am-toolchains/brcm-arm-hnd/crosstools-arm_softfp-gcc-10.3-linux-4.19-glibc-2.32-binutils-2.36.1/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdc-predef.h \
+ regenc.h config.h \
+ /home/docker/am-toolchains/brcm-arm-hnd/crosstools-arm_softfp-gcc-10.3-linux-4.19-glibc-2.32-binutils-2.36.1/lib/gcc/arm-buildroot-linux-gnueabi/10.3.0/include/stddef.h \
+ oniguruma.h
+/home/docker/am-toolchains/brcm-arm-hnd/crosstools-arm_softfp-gcc-10.3-linux-4.19-glibc-2.32-binutils-2.36.1/arm-buildroot-linux-gnueabi/sysroot/usr/include/stdc-predef.h:
+regenc.h:
+config.h:
+/home/docker/am-toolchains/brcm-arm-hnd/crosstools-arm_softfp-gcc-10.3-linux-4.19-glibc-2.32-binutils-2.36.1/lib/gcc/arm-buildroot-linux-gnueabi/10.3.0/include/stddef.h:
+oniguruma.h:

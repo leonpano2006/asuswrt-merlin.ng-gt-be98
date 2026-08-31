@@ -548,8 +548,10 @@ typedef struct {
 } st_str_end_key;
 
 static int
-str_end_cmp(st_str_end_key* x, st_str_end_key* y)
+str_end_cmp(st_data_t arg_x, st_data_t arg_y)
 {
+  st_str_end_key* x = (st_str_end_key* )arg_x;
+  st_str_end_key* y = (st_str_end_key* )arg_y;
   UChar *p, *q;
   int c;
 
@@ -569,8 +571,9 @@ str_end_cmp(st_str_end_key* x, st_str_end_key* y)
 }
 
 static int
-str_end_hash(st_str_end_key* x)
+str_end_hash(st_data_t arg_x)
 {
+  st_str_end_key* x = (st_str_end_key* )arg_x;
   UChar *p;
   unsigned val = 0;
 
@@ -635,8 +638,10 @@ typedef struct {
 } st_callout_name_key;
 
 static int
-callout_name_table_cmp(st_callout_name_key* x, st_callout_name_key* y)
+callout_name_table_cmp(st_data_t arg_x, st_data_t arg_y)
 {
+  st_callout_name_key* x = (st_callout_name_key* )arg_x;
+  st_callout_name_key* y = (st_callout_name_key* )arg_y;
   UChar *p, *q;
   int c;
 
@@ -658,8 +663,9 @@ callout_name_table_cmp(st_callout_name_key* x, st_callout_name_key* y)
 }
 
 static int
-callout_name_table_hash(st_callout_name_key* x)
+callout_name_table_hash(st_data_t arg_x)
 {
+  st_callout_name_key* x = (st_callout_name_key* )arg_x;
   UChar *p;
   unsigned int val = 0;
 
@@ -752,8 +758,12 @@ typedef st_data_t HashDataType;   /* 1.6 st.h doesn't define st_data_t type */
 
 #ifdef ONIG_DEBUG
 static int
-i_print_name_entry(UChar* key, NameEntry* e, void* arg)
+i_print_name_entry(st_data_t arg_key, st_data_t arg_e, st_data_t arg_arg)
 {
+  UChar* key = (UChar* )arg_key;
+  NameEntry* e = (NameEntry* )arg_e;
+  void* arg = (void* )arg_arg;
+  (void )key;
   int i;
   FILE* fp = (FILE* )arg;
 
@@ -787,8 +797,10 @@ onig_print_names(FILE* fp, regex_t* reg)
 #endif /* ONIG_DEBUG */
 
 static int
-i_free_name_entry(UChar* key, NameEntry* e, void* arg ARG_UNUSED)
+i_free_name_entry(st_data_t arg_key, st_data_t arg_e, st_data_t arg ARG_UNUSED)
 {
+  UChar* key = (UChar* )arg_key;
+  NameEntry* e = (NameEntry* )arg_e;
   xfree(e->name);
   if (IS_NOT_NULL(e->back_refs)) xfree(e->back_refs);
   xfree(key);
@@ -844,8 +856,10 @@ typedef struct {
 } INamesArg;
 
 static int
-i_names(UChar* key ARG_UNUSED, NameEntry* e, INamesArg* arg)
+i_names(st_data_t key ARG_UNUSED, st_data_t arg_e, st_data_t arg_arg)
 {
+  NameEntry* e = (NameEntry* )arg_e;
+  INamesArg* arg = (INamesArg* )arg_arg;
   int r = (*(arg->func))(e->name,
                          e->name + e->name_len,
                          e->back_num,
@@ -877,8 +891,10 @@ onig_foreach_name(regex_t* reg,
 }
 
 static int
-i_renumber_name(UChar* key ARG_UNUSED, NameEntry* e, GroupNumMap* map)
+i_renumber_name(st_data_t key ARG_UNUSED, st_data_t arg_e, st_data_t arg_map)
 {
+  NameEntry* e = (NameEntry* )arg_e;
+  GroupNumMap* map = (GroupNumMap* )arg_map;
   int i;
 
   if (e->back_num > 1) {
@@ -1368,9 +1384,11 @@ static int CalloutNameIDCounter;
 #ifdef USE_ST_LIBRARY
 
 static int
-i_free_callout_name_entry(st_callout_name_key* key, CalloutNameEntry* e,
-                          void* arg ARG_UNUSED)
+i_free_callout_name_entry(st_data_t arg_key, st_data_t arg_e,
+                          st_data_t arg ARG_UNUSED)
 {
+  st_callout_name_key* key = (st_callout_name_key* )arg_key;
+  CalloutNameEntry* e = (CalloutNameEntry* )arg_e;
   if (IS_NOT_NULL(e)) {
     xfree(e->name);
   }
@@ -1864,8 +1882,10 @@ typedef intptr_t   CalloutTagVal;
 #define CALLOUT_TAG_LIST_FLAG_TAG_EXIST     (1<<0)
 
 static int
-i_callout_callout_list_set(UChar* key, CalloutTagVal e, void* arg)
+i_callout_callout_list_set(st_data_t key ARG_UNUSED, st_data_t arg_e, st_data_t arg_arg)
 {
+  CalloutTagVal e = (CalloutTagVal )arg_e;
+  void* arg = (void* )arg_arg;
   int num;
   RegexExt* ext = (RegexExt* )arg;
 
@@ -1920,8 +1940,10 @@ onig_callout_tag_is_exist_at_callout_num(regex_t* reg, int callout_num)
 }
 
 static int
-i_free_callout_tag_entry(UChar* key, CalloutTagVal e, void* arg ARG_UNUSED)
+i_free_callout_tag_entry(st_data_t arg_key, st_data_t e ARG_UNUSED, st_data_t arg)
 {
+  UChar* key = (UChar* )arg_key;
+  (void )arg;
   xfree(key);
   return ST_DELETE;
 }

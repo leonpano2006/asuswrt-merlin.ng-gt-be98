@@ -32,17 +32,18 @@ struct st_table_entry {
      *
      */
 
-static int numcmp(long, long);
-static int numhash(long);
+static int numcmp(st_data_t, st_data_t);
+static int numhash(st_data_t);
 static struct st_hash_type type_numhash = {
     numcmp,
     numhash,
 };
 
 /* extern int strcmp(const char *, const char *); */
-static int strhash(const char *);
+static int strcmp_st(st_data_t, st_data_t);
+static int strhash(st_data_t);
 static struct st_hash_type type_strhash = {
-    strcmp,
+    strcmp_st,
     strhash,
 };
 
@@ -487,7 +488,7 @@ st_cleanup_safe(table, never)
 int
 st_foreach(table, func, arg)
      st_table *table;
-     int (*func)();
+     int (*func)(st_data_t, st_data_t, st_data_t);
      st_data_t arg;
 {
   st_table_entry *ptr, *last, *tmp;
@@ -535,9 +536,16 @@ st_foreach(table, func, arg)
 }
 
 static int
-strhash(string)
-     register const char *string;
+strcmp_st(st_data_t x, st_data_t y)
 {
+  return strcmp((const char *)x, (const char *)y);
+}
+
+static int
+strhash(arg)
+     st_data_t arg;
+{
+  register const char *string = (const char *)arg;
   register int c;
 
 #ifdef HASH_ELFHASH
@@ -574,15 +582,13 @@ strhash(string)
 }
 
 static int
-numcmp(x, y)
-     long x, y;
+numcmp(st_data_t x, st_data_t y)
 {
   return x != y;
 }
 
 static int
-numhash(n)
-     long n;
+numhash(st_data_t n)
 {
-  return n;
+  return (int )n;
 }
