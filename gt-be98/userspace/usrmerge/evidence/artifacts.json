@@ -1,0 +1,22 @@
+{
+  "base36-rootfs": {
+    "bytes": 75694080,
+    "sha256": "3305ef71b45a49ff343e279c3608b2c49ef1e48eab787808d00db1f4e184192f"
+  },
+  "kernel36": {
+    "bytes": 12773384,
+    "sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4"
+  },
+  "guest-busybox": {
+    "bytes": 1914704,
+    "sha256": "52151e7f322f926b64049cdaa1410dc3ea6485525e0624b05813791c219ae933"
+  },
+  "rootfs-usrmerge": {
+    "bytes": 75788288,
+    "sha256": "ae91a2ec08b5cf17ba6d1820730afa42329c0093c262a4ace4a8ec563aaa1a78",
+    "difference_bytes": 94208,
+    "compression": "zstd",
+    "level": 22,
+    "block_size": 524288
+  }
+}

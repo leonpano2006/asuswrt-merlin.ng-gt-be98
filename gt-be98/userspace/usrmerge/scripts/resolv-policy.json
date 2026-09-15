@@ -1,0 +1,5 @@
+{
+  "lib/libresolv.so.2": "2fbd8076ffba303f0c1ce7d4d6494eedf984065675abccd6ae71f90a60dde396",
+  "usr/lib/libresolv.so.2": "c02dd7d69a5486c22561e2274e5a74ff57d3603008b1b7ff8adbd422b98ae5d3",
+  "reason": "Keep /lib version from the active glibc 2.44 set; discard obsolete shadow /usr/lib copy only from the new candidate. Original #36 image remains intact."
+}

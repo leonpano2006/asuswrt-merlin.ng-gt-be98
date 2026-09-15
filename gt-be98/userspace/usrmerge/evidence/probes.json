@@ -1,0 +1,83 @@
+[
+  {
+    "output": "bootguard-provider.so",
+    "source": "bootguard-provider.c",
+    "sha256": "256cdf7d41a6084d00ed1a28a928ef1db4260af33a4a1095146d723acf59bd47",
+    "source_sha256": "1f47f3f92c7ed2907e4a0b546ddbb79b8ef15f58b3c050375cf9436f94271d69",
+    "flags": [
+      "-shared",
+      "-fPIC",
+      "-Wl,-soname,bootguard-provider.so"
+    ],
+    "compiler": "arm-buildroot-linux-gnueabi",
+    "version": "10.3.0"
+  },
+  {
+    "output": "guardcheck",
+    "source": "guardcheck.c",
+    "sha256": "c5a864b78f3c028bcd778a0076b298d1a7bf7c8353aec343303f128d4320b8a2",
+    "source_sha256": "3dcc946d2f17c66dadaab284ce844218661821d9a6e92866e55cc7d441665dd7",
+    "flags": [
+      "-L${PROBES}",
+      "-Wl,--no-as-needed",
+      "-l:bootguard-provider.so"
+    ],
+    "compiler": "arm-buildroot-linux-gnueabi",
+    "version": "10.3.0"
+  },
+  {
+    "output": "identity-probe",
+    "source": "identity-probe.c",
+    "sha256": "0b6137f050c1b2764c4eb6d950af667d404c8f0ea8abf2ef054280e93555387a",
+    "source_sha256": "be15991181ea3923f70f6e7c7e199205d6d9c69142dbd3430f646b0c55a58bee",
+    "flags": [
+      "-ldl"
+    ],
+    "compiler": "arm-buildroot-linux-gnueabi",
+    "version": "10.3.0"
+  },
+  {
+    "output": "abi-probe-armel",
+    "source": "abi-probe.c",
+    "sha256": "8510e11103d32c8172fad34fa5e92029b7b7312eedeeec3fd234f7aa3f1e54da",
+    "source_sha256": "a01e3dfbef56ceec5f0ee103e88a9f454f42c24fcef27bdd6b6dd081872102cb",
+    "flags": [
+      "-mcpu=cortex-a53",
+      "-mfpu=crypto-neon-fp-armv8",
+      "-mfloat-abi=softfp",
+      "-pthread",
+      "-lm"
+    ],
+    "compiler": "arm-buildroot-linux-gnueabi",
+    "version": "10.3.0"
+  },
+  {
+    "output": "abi-probe-aarch64",
+    "source": "abi-probe.c",
+    "sha256": "a7a14275714d3ab60239f009fd8d12881b6d3a43eb09f51da9f231aa0535a33e",
+    "source_sha256": "a01e3dfbef56ceec5f0ee103e88a9f454f42c24fcef27bdd6b6dd081872102cb",
+    "flags": [
+      "-mcpu=cortex-a53",
+      "-pthread",
+      "-lm"
+    ],
+    "compiler": "aarch64-buildroot-linux-gnu",
+    "version": "10.3.0"
+  },
+  {
+    "output": "abi-probe-armhf",
+    "source": "abi-probe.c",
+    "sha256": "2c85ee23010aaa0d180c17d2fb38a0f8316045c39c5c8bac431e0ca030d1b1eb",
+    "source_sha256": "a01e3dfbef56ceec5f0ee103e88a9f454f42c24fcef27bdd6b6dd081872102cb",
+    "flags": [
+      "--sysroot=${ARMHF_SYSROOT}",
+      "-mcpu=cortex-a53",
+      "-mfpu=crypto-neon-fp-armv8",
+      "-mfloat-abi=hard",
+      "-pthread",
+      "-lm"
+    ],
+    "compiler": "arm-linux-gnueabihf",
+    "version": "13.3.0"
+  }
+]

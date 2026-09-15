@@ -1,0 +1,25 @@
+{
+  "decisions": {
+    "bin/bash": "existing_alias_to_destination",
+    "lib/libnmpapi.so": "identical_file",
+    "lib/libresolv.so.2": "keep_lib_copy_matched_to_active_glibc",
+    "lib/libws.so": "identical_file"
+  },
+  "rewritten_relative_links": [
+    {
+      "path": "lib/libexpat.so",
+      "old": "../usr/lib/libexpat.so.1",
+      "new": "libexpat.so.1"
+    }
+  ],
+  "preserved_regular_paths": 3478,
+  "failures": [],
+  "glibc_rebuild_installed": false,
+  "ubuntu_package_installed": false,
+  "source_unchanged": true,
+  "kernel_modules_unchanged": 182,
+  "directory_modes_preserved": true,
+  "ubuntu_26_04_aliases_identical": true,
+  "original_rootfs_sha256": "3305ef71b45a49ff343e279c3608b2c49ef1e48eab787808d00db1f4e184192f",
+  "merged_rootfs_sha256": "ae91a2ec08b5cf17ba6d1820730afa42329c0093c262a4ace4a8ec563aaa1a78"
+}
