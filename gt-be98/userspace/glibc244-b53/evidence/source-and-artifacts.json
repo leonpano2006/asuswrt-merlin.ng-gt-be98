@@ -1,0 +1,33 @@
+{
+  "git": "https://sourceware.org/git/glibc.git",
+  "commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3",
+  "version": "2.44",
+  "tracked_source_changes": false,
+  "artifacts": [
+    {
+      "file": "glibc-2.44-b53-runtime.tar.gz",
+      "bytes": 12318670,
+      "sha256": "bf0c138359cf07bb0c9bf66ad87db32c0ce5a748b2fc5a125358edcca92d862b"
+    },
+    {
+      "file": "glibc-2.44-b53-runtime.tar.zst",
+      "bytes": 4655269,
+      "sha256": "594a4411e6ed55dccf5f61b5530d6b7ea3fa9ffcffb6a1a6a561602d4ca72197"
+    },
+    {
+      "file": "glibc-2.44-b53-stages.tar.gz",
+      "bytes": 115241253,
+      "sha256": "668acaa097d5a2079d10477c75cedbd18e4f95c9ddb032049500f9d752205095"
+    },
+    {
+      "file": "glibc-2.44-source.tar.zst",
+      "bytes": 28495541,
+      "sha256": "7da00a661753593cea116be8814503b2d3891da56d6fac6aa2cf0ce2e1c6d061"
+    },
+    {
+      "file": "smoke-tests.tar.gz",
+      "bytes": 29096,
+      "sha256": "13750d728c8acbb57ca3d1a8fc546710df92c6a3afb136a38ab435aeb27b9ddc"
+    }
+  ]
+}

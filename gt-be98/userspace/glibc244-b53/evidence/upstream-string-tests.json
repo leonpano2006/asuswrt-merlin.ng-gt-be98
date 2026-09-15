@@ -1,0 +1,36 @@
+{
+  "scope": "Six selected upstream glibc string tests under qemu-aarch64 -cpu cortex-a53; not the full glibc test suite",
+  "tests": [
+    {
+      "test": "string/test-memcpy",
+      "result": "PASS",
+      "result_sha256": "3e76d2e3447ccb51c5ebfed3e30b05fbf33e3d1b1557a54d882c89a276650a69"
+    },
+    {
+      "test": "string/test-memmove",
+      "result": "PASS",
+      "result_sha256": "6d3ded348746d11d54eb060b51b56b58ca5aa43299cdbe1b90a0ede8f2264131"
+    },
+    {
+      "test": "string/test-memset",
+      "result": "PASS",
+      "result_sha256": "e9963d1ca944c4d235cf0e6447eccf0fe5589d1bbb068d4d7fbd40b0be69d476"
+    },
+    {
+      "test": "string/test-memcmp",
+      "result": "PASS",
+      "result_sha256": "4d3ab6077157d2489f4d5f67f85baae71ac84cd0ba0a085c8e81c0d8fff6f92c"
+    },
+    {
+      "test": "string/test-strlen",
+      "result": "PASS",
+      "result_sha256": "9f2cd07a70af6d9a03c9fdbf7059b5eaa4ec3f9b3e842aa9671e98dd7603d7a8"
+    },
+    {
+      "test": "string/test-strcmp",
+      "result": "PASS",
+      "result_sha256": "c3a0f5a2b0da059fde163faa77853c90d1007e9b95606d27a6924aff9b72ba2b"
+    }
+  ],
+  "selected_check_exit_code": 0
+}

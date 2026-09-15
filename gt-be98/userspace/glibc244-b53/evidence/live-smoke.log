@@ -1,0 +1,36 @@
+LIVE_EXISTING_LIBC_BEFORE
+64a81c930425f5e326cb5d56f7725483b41f41da7e6c44f63f7b8fe867f9a0b8  /lib/aarch64-linux-gnu/libc.so.6
+a2f22a7233ae70c779a4dd1f9de4797dd09d3778b093fb617fb75402a5c5c5e8  /lib/libc.so.6
+7b295993ded4a7e191c897aa16f79d21674c1e0763055743e33f10e15f96b050  /lib/arm-linux-gnueabihf/libc.so.6
+LIVE_ABI aarch64
+GLIBC_VERSION 2.44
+ABI_BITS 64 HWCAP 0x8ff HWCAP2 0x0
+PASS memory_alignment_overlap_and_allocator
+PASS pthread_tls_mutex
+PASS floating_point_libm
+PASS kernel_calls_and_numeric_resolver
+PASS gconv_utf8_utf16
+GLIBC_B53_SMOKE_COMPLETE
+LIVE_ABI armel
+GLIBC_VERSION 2.44
+ABI_BITS 32 HWCAP 0x37b0d6 HWCAP2 0x1f
+PASS memory_alignment_overlap_and_allocator
+PASS pthread_tls_mutex
+PASS floating_point_libm
+PASS kernel_calls_and_numeric_resolver
+PASS gconv_utf8_utf16
+GLIBC_B53_SMOKE_COMPLETE
+LIVE_ABI armhf
+GLIBC_VERSION 2.44
+ABI_BITS 32 HWCAP 0x37b0d6 HWCAP2 0x1f
+PASS memory_alignment_overlap_and_allocator
+PASS pthread_tls_mutex
+PASS floating_point_libm
+PASS kernel_calls_and_numeric_resolver
+PASS gconv_utf8_utf16
+GLIBC_B53_SMOKE_COMPLETE
+LIVE_EXISTING_LIBC_AFTER
+64a81c930425f5e326cb5d56f7725483b41f41da7e6c44f63f7b8fe867f9a0b8  /lib/aarch64-linux-gnu/libc.so.6
+a2f22a7233ae70c779a4dd1f9de4797dd09d3778b093fb617fb75402a5c5c5e8  /lib/libc.so.6
+7b295993ded4a7e191c897aa16f79d21674c1e0763055743e33f10e15f96b050  /lib/arm-linux-gnueabihf/libc.so.6
+GLIBC_B53_LIVE_COMPLETE

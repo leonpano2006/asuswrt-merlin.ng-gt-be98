@@ -1,0 +1,254 @@
+[
+  {
+    "package": "binutils-arm-linux-gnueabi",
+    "version": "2.42-4ubuntu2.10",
+    "file": "binutils-arm-linux-gnueabi_2.42-4ubuntu2.10_arm64.deb",
+    "sha256": "fb7b407cf38c1e6f2f2aed42002b6e9dbd9dbec9ec92bd137ffd561d5dc5a4f1"
+  },
+  {
+    "package": "binutils-arm-linux-gnueabihf",
+    "version": "2.42-4ubuntu2.10",
+    "file": "binutils-arm-linux-gnueabihf_2.42-4ubuntu2.10_arm64.deb",
+    "sha256": "9e2bc44d39632a146aeb29d0755de20c2863dc46b2d9e076dabf125c724e3253"
+  },
+  {
+    "package": "cpp-13-arm-linux-gnueabi",
+    "version": "13.3.0-6ubuntu2~24.04cross1",
+    "file": "cpp-13-arm-linux-gnueabi_13.3.0-6ubuntu2~24.04cross1_arm64.deb",
+    "sha256": "83637394b3f4a0c4d6b14f9bad7d9b9e9887ea206956260da4d21e1f420353a6"
+  },
+  {
+    "package": "cpp-13-arm-linux-gnueabihf",
+    "version": "13.3.0-6ubuntu2~24.04.1cross1",
+    "file": "cpp-13-arm-linux-gnueabihf_13.3.0-6ubuntu2~24.04.1cross1_arm64.deb",
+    "sha256": "09282655086a58ff6ed2972da4b9fee1ec82d1880a100e9dc05666b3e70ede56"
+  },
+  {
+    "package": "cpp-arm-linux-gnueabi",
+    "version": "4:13.2.1-2ubuntu1",
+    "file": "cpp-arm-linux-gnueabi_4%3a13.2.1-2ubuntu1_arm64.deb",
+    "sha256": "0fb2b2c7c988b1a99793916d4170aad1d445882c4dbc215882c741c5610bd12e"
+  },
+  {
+    "package": "cpp-arm-linux-gnueabihf",
+    "version": "4:13.2.0-7ubuntu1",
+    "file": "cpp-arm-linux-gnueabihf_4%3a13.2.0-7ubuntu1_arm64.deb",
+    "sha256": "add25c7db232d570bb69f050fb35ef351e2060fbeb078611988d22bdcdaa06e0"
+  },
+  {
+    "package": "g++-13-arm-linux-gnueabi",
+    "version": "13.3.0-6ubuntu2~24.04cross1",
+    "file": "g++-13-arm-linux-gnueabi_13.3.0-6ubuntu2~24.04cross1_arm64.deb",
+    "sha256": "bb6bf89ceaf02159fb43976b54f196752f7d022d45fffa226e7466942170b153"
+  },
+  {
+    "package": "g++-13-arm-linux-gnueabihf",
+    "version": "13.3.0-6ubuntu2~24.04.1cross1",
+    "file": "g++-13-arm-linux-gnueabihf_13.3.0-6ubuntu2~24.04.1cross1_arm64.deb",
+    "sha256": "2ac320b27d8326d190e98a3fd0eef7189cbf9196ae82be00ba01b119d78882c6"
+  },
+  {
+    "package": "g++-arm-linux-gnueabi",
+    "version": "4:13.2.1-2ubuntu1",
+    "file": "g++-arm-linux-gnueabi_4%3a13.2.1-2ubuntu1_arm64.deb",
+    "sha256": "6ff32973f2cf7ca7587d9a7fe4df40506b7775adb881f4dd67bee1e9c589a816"
+  },
+  {
+    "package": "g++-arm-linux-gnueabihf",
+    "version": "4:13.2.0-7ubuntu1",
+    "file": "g++-arm-linux-gnueabihf_4%3a13.2.0-7ubuntu1_arm64.deb",
+    "sha256": "7007d387dc7d9a6a4cc9c83b27d6bb69a1e6fa7c1c7e584080911a324f310051"
+  },
+  {
+    "package": "gcc-13-arm-linux-gnueabi-base",
+    "version": "13.3.0-6ubuntu2~24.04cross1",
+    "file": "gcc-13-arm-linux-gnueabi-base_13.3.0-6ubuntu2~24.04cross1_arm64.deb",
+    "sha256": "b7b56dc32654dcaded1c71a93e7d68610ba8f2df474fe9b68f3a39546cfae9fb"
+  },
+  {
+    "package": "gcc-13-arm-linux-gnueabi",
+    "version": "13.3.0-6ubuntu2~24.04cross1",
+    "file": "gcc-13-arm-linux-gnueabi_13.3.0-6ubuntu2~24.04cross1_arm64.deb",
+    "sha256": "78001aa1e6618e1eb8108d2fcfa294b9ca50831d670a40bd9b16edd3bb196d1c"
+  },
+  {
+    "package": "gcc-13-arm-linux-gnueabihf-base",
+    "version": "13.3.0-6ubuntu2~24.04.1cross1",
+    "file": "gcc-13-arm-linux-gnueabihf-base_13.3.0-6ubuntu2~24.04.1cross1_arm64.deb",
+    "sha256": "c7df064a29eca7f045be713ff76dd989d501e1e763c9f44dfce1e2b5dfb5bced"
+  },
+  {
+    "package": "gcc-13-arm-linux-gnueabihf",
+    "version": "13.3.0-6ubuntu2~24.04.1cross1",
+    "file": "gcc-13-arm-linux-gnueabihf_13.3.0-6ubuntu2~24.04.1cross1_arm64.deb",
+    "sha256": "a21e6b2642dacc519034b732339c53a6d397f5624b72e1099fca8f345f2f62ab"
+  },
+  {
+    "package": "gcc-13-cross-base-ports",
+    "version": "13.3.0-6ubuntu2~24.04cross1",
+    "file": "gcc-13-cross-base-ports_13.3.0-6ubuntu2~24.04cross1_all.deb",
+    "sha256": "bc1619682b8d3a214c1e1efbb90f35c43d58a9bdbd6cf97352d349b43c9d167d"
+  },
+  {
+    "package": "gcc-13-cross-base",
+    "version": "13.3.0-6ubuntu2~24.04.1cross1",
+    "file": "gcc-13-cross-base_13.3.0-6ubuntu2~24.04.1cross1_all.deb",
+    "sha256": "02676468c2f71d57be2fbd6e6f74462ab419a49db15a1b1f031b2460a2954cd3"
+  },
+  {
+    "package": "gcc-14-cross-base-ports",
+    "version": "14.2.0-4ubuntu2~24.04cross1",
+    "file": "gcc-14-cross-base-ports_14.2.0-4ubuntu2~24.04cross1_all.deb",
+    "sha256": "0982a9286b88c050b8124c961318cbebf0cb3a1e1858428debafa369e86701f2"
+  },
+  {
+    "package": "gcc-14-cross-base",
+    "version": "14.2.0-4ubuntu2~24.04.1cross1",
+    "file": "gcc-14-cross-base_14.2.0-4ubuntu2~24.04.1cross1_all.deb",
+    "sha256": "ed29eff7b53f6c6b10c42bb9539487d1867f119e84f5f678c02411a34b5c09f3"
+  },
+  {
+    "package": "gcc-arm-linux-gnueabi",
+    "version": "4:13.2.1-2ubuntu1",
+    "file": "gcc-arm-linux-gnueabi_4%3a13.2.1-2ubuntu1_arm64.deb",
+    "sha256": "c075f1b141db2fd9b250a55c954124c680c56587fbaeec6ee85b58e150d8a505"
+  },
+  {
+    "package": "gcc-arm-linux-gnueabihf",
+    "version": "4:13.2.0-7ubuntu1",
+    "file": "gcc-arm-linux-gnueabihf_4%3a13.2.0-7ubuntu1_arm64.deb",
+    "sha256": "cd847b1f6aaf4f8d3115f2151e6927299984a7857b60bd07d443233c0e72ec9b"
+  },
+  {
+    "package": "libasan8-armel-cross",
+    "version": "14.2.0-4ubuntu2~24.04cross1",
+    "file": "libasan8-armel-cross_14.2.0-4ubuntu2~24.04cross1_all.deb",
+    "sha256": "9d0cac2ee810dfb217e3c6412dd485bc2384051df1a382951ed3b998e42408d3"
+  },
+  {
+    "package": "libasan8-armhf-cross",
+    "version": "14.2.0-4ubuntu2~24.04.1cross1",
+    "file": "libasan8-armhf-cross_14.2.0-4ubuntu2~24.04.1cross1_all.deb",
+    "sha256": "e48604e1bc28072cfb3e041983b59469160e6fd0e67f79d79b300a825ab0b5a5"
+  },
+  {
+    "package": "libatomic1-armel-cross",
+    "version": "14.2.0-4ubuntu2~24.04cross1",
+    "file": "libatomic1-armel-cross_14.2.0-4ubuntu2~24.04cross1_all.deb",
+    "sha256": "fec2f12bce03d0fb63c455115daac7100270c7000ba76f20c6ab2ef51c030ccd"
+  },
+  {
+    "package": "libatomic1-armhf-cross",
+    "version": "14.2.0-4ubuntu2~24.04.1cross1",
+    "file": "libatomic1-armhf-cross_14.2.0-4ubuntu2~24.04.1cross1_all.deb",
+    "sha256": "b801dc5ce6115c76a118b839dc148f1a9e1d47529fe20323b9dbfe973d770d11"
+  },
+  {
+    "package": "libc6-armel-cross",
+    "version": "2.39-0ubuntu8cross1",
+    "file": "libc6-armel-cross_2.39-0ubuntu8cross1_all.deb",
+    "sha256": "84fc815c7b901834f38375ecf35b92d5e322a58a77f507fab344b7003b0e5651"
+  },
+  {
+    "package": "libc6-armhf-cross",
+    "version": "2.39-0ubuntu8cross1",
+    "file": "libc6-armhf-cross_2.39-0ubuntu8cross1_all.deb",
+    "sha256": "4c61c413e2cc45ce2c5703a1564d1886f45c98ddbbd33d9f8b05736dee045ce1"
+  },
+  {
+    "package": "libc6-dev-armel-cross",
+    "version": "2.39-0ubuntu8cross1",
+    "file": "libc6-dev-armel-cross_2.39-0ubuntu8cross1_all.deb",
+    "sha256": "15b70523530a360ce28219256bf2b2a49a981de50f98956635281026d5b21eb8"
+  },
+  {
+    "package": "libc6-dev-armhf-cross",
+    "version": "2.39-0ubuntu8cross1",
+    "file": "libc6-dev-armhf-cross_2.39-0ubuntu8cross1_all.deb",
+    "sha256": "31bb0a43b89d9e6e9d4f2b81d53376ad01e397653e6a834e00ac4129e0e48c44"
+  },
+  {
+    "package": "libgcc-13-dev-armel-cross",
+    "version": "13.3.0-6ubuntu2~24.04cross1",
+    "file": "libgcc-13-dev-armel-cross_13.3.0-6ubuntu2~24.04cross1_all.deb",
+    "sha256": "1032f785493740bbc7f308380b515a34a8cee770eac05524610c93372aa78b06"
+  },
+  {
+    "package": "libgcc-13-dev-armhf-cross",
+    "version": "13.3.0-6ubuntu2~24.04.1cross1",
+    "file": "libgcc-13-dev-armhf-cross_13.3.0-6ubuntu2~24.04.1cross1_all.deb",
+    "sha256": "930c595a54ba1f1096463a9f8ab4757b5d1f12f267a99521aa4505ca302e7988"
+  },
+  {
+    "package": "libgcc-s1-armel-cross",
+    "version": "14.2.0-4ubuntu2~24.04cross1",
+    "file": "libgcc-s1-armel-cross_14.2.0-4ubuntu2~24.04cross1_all.deb",
+    "sha256": "15db4f01db4727b5502d3bb579566f0256db1e5f1cc00d7e9fde4d33114925cf"
+  },
+  {
+    "package": "libgcc-s1-armhf-cross",
+    "version": "14.2.0-4ubuntu2~24.04.1cross1",
+    "file": "libgcc-s1-armhf-cross_14.2.0-4ubuntu2~24.04.1cross1_all.deb",
+    "sha256": "1fdbacca10af62652762869a21f07b545d5211257b5b78f245aceefd611e3ce7"
+  },
+  {
+    "package": "libgomp1-armel-cross",
+    "version": "14.2.0-4ubuntu2~24.04cross1",
+    "file": "libgomp1-armel-cross_14.2.0-4ubuntu2~24.04cross1_all.deb",
+    "sha256": "993ab8c63a3a45b4cba52ba74e666079e7b109393d2bae96f6d82d79803387b8"
+  },
+  {
+    "package": "libgomp1-armhf-cross",
+    "version": "14.2.0-4ubuntu2~24.04.1cross1",
+    "file": "libgomp1-armhf-cross_14.2.0-4ubuntu2~24.04.1cross1_all.deb",
+    "sha256": "c38abffe07d06f39294c91ff24189f525c7096d7388b426cfb442f017d2169ce"
+  },
+  {
+    "package": "libstdc++-13-dev-armel-cross",
+    "version": "13.3.0-6ubuntu2~24.04cross1",
+    "file": "libstdc++-13-dev-armel-cross_13.3.0-6ubuntu2~24.04cross1_all.deb",
+    "sha256": "a51e46a89a1c70937256ba88103e8ebcf13e6d1ec77e4996664001d0f9dd23ee"
+  },
+  {
+    "package": "libstdc++-13-dev-armhf-cross",
+    "version": "13.3.0-6ubuntu2~24.04.1cross1",
+    "file": "libstdc++-13-dev-armhf-cross_13.3.0-6ubuntu2~24.04.1cross1_all.deb",
+    "sha256": "4d96ce9ffee19ca696e1ba7ba01629babe9055113ee4ef972256fd8eceaaa732"
+  },
+  {
+    "package": "libstdc++6-armel-cross",
+    "version": "14.2.0-4ubuntu2~24.04cross1",
+    "file": "libstdc++6-armel-cross_14.2.0-4ubuntu2~24.04cross1_all.deb",
+    "sha256": "fb86c73219c5200b4f569b332112cfba30a62912568d925ae9776804377c850d"
+  },
+  {
+    "package": "libstdc++6-armhf-cross",
+    "version": "14.2.0-4ubuntu2~24.04.1cross1",
+    "file": "libstdc++6-armhf-cross_14.2.0-4ubuntu2~24.04.1cross1_all.deb",
+    "sha256": "e70ac5c5b20361838346e76e255fe297a654ec96803eec4289b25474b702d915"
+  },
+  {
+    "package": "libubsan1-armel-cross",
+    "version": "14.2.0-4ubuntu2~24.04cross1",
+    "file": "libubsan1-armel-cross_14.2.0-4ubuntu2~24.04cross1_all.deb",
+    "sha256": "b595306daae84bbd44659e9305a0fb726102b34eb82e30044502bb87806e3136"
+  },
+  {
+    "package": "libubsan1-armhf-cross",
+    "version": "14.2.0-4ubuntu2~24.04.1cross1",
+    "file": "libubsan1-armhf-cross_14.2.0-4ubuntu2~24.04.1cross1_all.deb",
+    "sha256": "1fab91263674c5a7323d8c38f9acf4e366ea89f53cb55667b07740351d8d1e7f"
+  },
+  {
+    "package": "linux-libc-dev-armel-cross",
+    "version": "6.8.0-25.25cross1",
+    "file": "linux-libc-dev-armel-cross_6.8.0-25.25cross1_all.deb",
+    "sha256": "96d7da58f98fe9a8850a97fca0482f8f97285cf316926e64c6f8b807cc6744d2"
+  },
+  {
+    "package": "linux-libc-dev-armhf-cross",
+    "version": "6.8.0-25.25cross1",
+    "file": "linux-libc-dev-armhf-cross_6.8.0-25.25cross1_all.deb",
+    "sha256": "1f83b9a486063b2daef0f21baf856b0cbb0b64eecf83b180434ab9190f6be8d8"
+  }
+]

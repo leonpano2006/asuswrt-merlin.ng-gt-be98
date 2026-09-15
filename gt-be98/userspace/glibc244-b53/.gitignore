@@ -1,0 +1,9 @@
+/builds/
+/source/
+/downloads/
+/toolchains/
+/packages/
+__pycache__/
+/tests/libc-smoke-aarch64
+/tests/libc-smoke-armel
+/tests/libc-smoke-armhf

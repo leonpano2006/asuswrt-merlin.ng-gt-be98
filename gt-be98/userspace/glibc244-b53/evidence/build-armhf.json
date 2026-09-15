@@ -1,0 +1,32 @@
+{
+  "source_commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3",
+  "glibc": "2.44",
+  "abi": "armhf",
+  "cpu_requested": "b53",
+  "cpu_resolved": "cortex-a53",
+  "flags": [
+    "-O2",
+    "-g",
+    "-mcpu=cortex-a53",
+    "-mfpu=crypto-neon-fp-armv8",
+    "-mfloat-abi=hard"
+  ],
+  "cc": "${WORK}/toolchains/arm32-ubuntu/usr/bin/arm-linux-gnueabihf-gcc --sysroot=${WORK}/toolchains/arm32-ubuntu",
+  "cxx": "${WORK}/toolchains/arm32-ubuntu/usr/bin/arm-linux-gnueabihf-g++ --sysroot=${WORK}/toolchains/arm32-ubuntu",
+  "compiler_version": "13.3.0",
+  "headers": "${WORKSPACE}/github-push-20260915/dependency-sdks/arm32/arm-buildroot-linux-gnueabi/sysroot/usr/include",
+  "kernel_header_version_sha256": "49aa7756dd75da60de5f0733cf0a4178a589a3a46120d7bae83d5d78f8188c92",
+  "configuration": {
+    "host": "arm-linux-gnueabihf",
+    "cpu_flags": [
+      "-mcpu=cortex-a53",
+      "-mfpu=crypto-neon-fp-armv8",
+      "-mfloat-abi=hard"
+    ],
+    "slibdir": "/lib/arm-linux-gnueabihf",
+    "rtlddir": "/lib/arm-linux-gnueabihf",
+    "libdir": "/usr/lib/arm-linux-gnueabihf"
+  },
+  "minimum_kernel": "4.19",
+  "host_library_dir": "${WORK}/toolchains/arm32-ubuntu/usr/lib/aarch64-linux-gnu"
+}

@@ -1,0 +1,35 @@
+{
+  "device": "GT-BE98 / BCM6813 Brahma-B53",
+  "midr": "0x420f1000",
+  "architecture_baseline": "ARMv8.0-A",
+  "aarch64_hwcap": "0x8ff",
+  "aarch64_hwcap2": "0x0",
+  "arm32_hwcap": "0x37b0d6",
+  "arm32_hwcap2": "0x1f",
+  "cpu_mapping": {
+    "b53": "cortex-a53",
+    "brahma-b53": "cortex-a53"
+  },
+  "aarch64_extensions": [
+    "fp",
+    "asimd",
+    "aes",
+    "pmull",
+    "sha1",
+    "sha2",
+    "crc32"
+  ],
+  "lse_advertised": false,
+  "sve_advertised": false,
+  "test_kernel": "4.19.294 #36",
+  "live_test_abis": [
+    "aarch64",
+    "armel",
+    "armhf"
+  ],
+  "all_live_smokes_passed": true,
+  "existing_system_glibc_hashes_unchanged": true,
+  "system_installation_performed": false,
+  "source_commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3",
+  "glibc_version": "2.44"
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "abi": "aarch64",
+    "library": "libc.so.6",
+    "old_symbols": 2777,
+    "new_symbols": 2777,
+    "missing": [],
+    "added": [],
+    "new_sha256": "28de8a9816280aed2038b435d824900f565c088a79a2789028c197773a5dc34b"
+  },
+  {
+    "abi": "aarch64",
+    "library": "libm.so.6",
+    "old_symbols": 1341,
+    "new_symbols": 1341,
+    "missing": [],
+    "added": [],
+    "new_sha256": "f716b776c8c902194cca6ffafc32080cccb723c0c67288fe190c85f7895a6bfa"
+  },
+  {
+    "abi": "aarch64",
+    "library": "libresolv.so.2",
+    "old_symbols": 67,
+    "new_symbols": 67,
+    "missing": [],
+    "added": [],
+    "new_sha256": "2381c57238e5d154e0414639f85e3c187377d3ae23a9421e1af84629132558eb"
+  },
+  {
+    "abi": "armel",
+    "library": "libc.so.6",
+    "old_symbols": 2900,
+    "new_symbols": 2900,
+    "missing": [],
+    "added": [],
+    "new_sha256": "4da295b81a9bb1038e434ff373faff6c0b84a0d95a5d312848e2e477199c380a"
+  },
+  {
+    "abi": "armel",
+    "library": "libm.so.6",
+    "old_symbols": 998,
+    "new_symbols": 998,
+    "missing": [],
+    "added": [],
+    "new_sha256": "38ac568586cf848c0cc1dc4fef20e4e2d15c1ece3979700b8d5eb0e076e89a18"
+  },
+  {
+    "abi": "armel",
+    "library": "libresolv.so.2",
+    "old_symbols": 67,
+    "new_symbols": 67,
+    "missing": [],
+    "added": [],
+    "new_sha256": "23dd9c21e728cb8ad49a7fe6ee52ba6d205404df8be4705cd521d45a63188b72"
+  },
+  {
+    "abi": "armhf",
+    "library": "libc.so.6",
+    "old_symbols": 2900,
+    "new_symbols": 2900,
+    "missing": [],
+    "added": [],
+    "new_sha256": "21274f27fbe78eb97a0a3f59a0f89c5c52d9dcee2cf18ff88562e00a29d97611"
+  },
+  {
+    "abi": "armhf",
+    "library": "libm.so.6",
+    "old_symbols": 998,
+    "new_symbols": 998,
+    "missing": [],
+    "added": [],
+    "new_sha256": "c4b882ab0cd9d0a18e0adff638b97394451a016707d38de1e6ff045e62e3c53b"
+  },
+  {
+    "abi": "armhf",
+    "library": "libresolv.so.2",
+    "old_symbols": 67,
+    "new_symbols": 67,
+    "missing": [],
+    "added": [],
+    "new_sha256": "8d2762f601884c070f7d1162728ee05048c76456705066a71ec6a4f6067798b6"
+  }
+]

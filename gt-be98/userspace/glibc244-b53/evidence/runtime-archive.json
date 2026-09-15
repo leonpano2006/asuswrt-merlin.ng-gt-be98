@@ -1,0 +1,6 @@
+{
+  "file": "glibc-2.44-b53-runtime.tar.zst",
+  "bytes": 4655269,
+  "sha256": "594a4411e6ed55dccf5f61b5530d6b7ea3fa9ffcffb6a1a6a561602d4ca72197",
+  "compression": "zstd level 22"
+}
