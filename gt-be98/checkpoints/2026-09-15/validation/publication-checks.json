@@ -1,0 +1,32 @@
+{
+  "image": "verify-image.pkgtb",
+  "bytes": 88112204,
+  "sha256": "901009cb11b3b3a75b151d58f61f578220ad3a6d7b57bf1a0a2eebdff3a6d4f8",
+  "original_sha256": "dd805a4fea08b25383672c70cecb8f5318e9fc3099d06c06f7b8c6fe132b2f6b",
+  "kernel_sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4",
+  "bootfs_sha256": "4f6ed980daecb18655d59ded76fd9dad3eec332171ed6d259f296683f2fdbb10",
+  "rootfs_sha256": "3305ef71b45a49ff343e279c3608b2c49ef1e48eab787808d00db1f4e184192f",
+  "reserved_blocks": [
+    107,
+    605
+  ],
+  "available_blocks_input": 734,
+  "remaining_blocks": 22,
+  "rootfs_codec": "zstd",
+  "rootfs_block_bytes": 524288,
+  "rootfs_level": "external build input; not inferred from superblock",
+  "kernel_codec": "lzo",
+  "signatures_verified": true,
+  "has_loader_update": false,
+  "commits_new_slot": false,
+  "validation": "Offline repack of the saved #35 image with tested #36 kernel/rootfs inputs; no device write",
+  "why_image_sha_differs": "FIT timestamps and RSA-PSS random salt differ on repack; extracted kernel/rootfs hashes equal tested inputs",
+  "syntax_checks": {
+    "python": 4,
+    "shell": 17,
+    "C_and_Cxx": 14
+  },
+  "kernel_recompiled_for_publication": true,
+  "kernel_source_equal_to_hardware_tested_build": true,
+  "kernel_recompile_details": "dependency-build.json and dependency-qemu-{memcg,docker}.json; separate build, not the kernel used by this recorded image repack"
+}

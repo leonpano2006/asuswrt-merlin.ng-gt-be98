@@ -194,6 +194,20 @@ if [ -f $FSSRC_DIR/usr/sbin/ebtables ]; then
 	cp -av $FSSRC_DIR/usr/lib/libebtc.so* $ROOTFS/usr/lib/
 fi
 
+# Leon next: loader-visible SONAME entries for the 64-bit ebtables layer.
+# Keep this after SDK population and the ebtables restore above.
+if [ "$BUILD_NAME" = "GT-BE98" ]; then
+    if [ -f $ROOTFS/lib/aarch64-linux-gnu/libebtc.so.0.0.0 ]; then
+        ln -snf libebtc.so.0.0.0 $ROOTFS/lib/aarch64-linux-gnu/libebtc.so.0
+        ln -snf libebtc.so.0.0.0 $ROOTFS/lib/aarch64-linux-gnu/libebtc.so
+    fi
+    # The old staging copied a host x86-64 libexpat.so here. Use the
+    # existing ARM runtime library already required by avahi-daemon.
+    if [ -f $ROOTFS/usr/lib/libexpat.so.1.5.2 ]; then
+        ln -snf ../usr/lib/libexpat.so.1 $ROOTFS/lib/libexpat.so
+    fi
+fi
+
 # Real GNU bash must own /bin/bash: busybox ships a "bash" alias applet
 # (ash in a trenchcoat) and its install step runs after fs.src is copied,
 # clobbering the fs.src symlink. Repoint it after everything else.

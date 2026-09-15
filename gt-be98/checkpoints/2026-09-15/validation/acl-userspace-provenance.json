@@ -1,0 +1,18 @@
+{
+  "origin": "local aarch64 Ubuntu packages; kept existing firmware glibc 2.44",
+  "package_versions": "acl\t2.3.2-1build1.1\nlibacl1:arm64\t2.3.2-1build1.1\n",
+  "files": {
+    "/usr/bin/getfacl": {
+      "sha256": "611abe0c35edcd779a91e645696ac890706f3a14c1dfe9f0fa6bed8d7bedfa32",
+      "bytes": 67752
+    },
+    "/usr/bin/setfacl": {
+      "sha256": "9cf98bc25ad250309eaf348c70294ead0fe40827bce952d3c05b6e27ca64e09d",
+      "bytes": 67744
+    },
+    "/usr/lib/aarch64-linux-gnu/libacl.so.1.1.2302": {
+      "sha256": "c2620a549ea1cb2137e3a77a453f2ec4916c8caa65d108d408fa140facb34104",
+      "bytes": 67432
+    }
+  }
+}

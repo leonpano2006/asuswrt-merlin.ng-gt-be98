@@ -1,0 +1,23 @@
+{
+  "image": "${WORKSPACE}/leon-memcg-20260915/GT-BE98_leon-trial36-memcg_zstd22.pkgtb",
+  "bytes": 88112204,
+  "sha256": "a0455015bb848534987756857af53548bbcf726408bd902bf9345ef91a11684f",
+  "bootfs_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+  "rootfs_sha256": "3305ef71b45a49ff343e279c3608b2c49ef1e48eab787808d00db1f4e184192f",
+  "bootfs_bytes": 12417164,
+  "rootfs_bytes": 75694080,
+  "bootfs_reserved_blocks": 107,
+  "rootfs_reserved_blocks": 605,
+  "remaining_blocks": 22,
+  "kernel_sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4",
+  "rootfs_compression": "zstd",
+  "rootfs_level": 22,
+  "unchanged_regular_files": 3477,
+  "changed_files": [
+    "rom/leon-trial.txt",
+    "lib/modules/4.19.294/kernel/fs/btrfs/btrfs.ko"
+  ],
+  "added_files": [],
+  "nonkernel_bootfs_payloads_unchanged": true,
+  "commits_new_slot": false
+}

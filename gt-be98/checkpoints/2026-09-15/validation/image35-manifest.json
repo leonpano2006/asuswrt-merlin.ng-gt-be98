@@ -1,0 +1,28 @@
+{
+  "image": "${WORKSPACE}/leon-acl-20260915/GT-BE98_leon-trial35-btrfs-acl_zstd22.pkgtb",
+  "bytes": 88068896,
+  "sha256": "dd805a4fea08b25383672c70cecb8f5318e9fc3099d06c06f7b8c6fe132b2f6b",
+  "bootfs_sha256": "61403034cd7f49f25210f7e6154e421a784519b36874b618a34c0e2c3a25c291",
+  "rootfs_sha256": "8717c2fd70d1ad683abfc420528fa96f83a78e4aa935503bcf6e8c058ffaabe1",
+  "bootfs_bytes": 12373856,
+  "rootfs_bytes": 75694080,
+  "bootfs_reserved_blocks": 106,
+  "rootfs_reserved_blocks": 605,
+  "remaining_blocks": 17,
+  "kernel_sha256": "5dd8d504a24d3d91d95be06446bbdb20ad278b42677f2b2dfa240c4d0d7e36dd",
+  "rootfs_compression": "zstd",
+  "rootfs_level": 22,
+  "unchanged_regular_files": 3474,
+  "changed_files": [
+    "rom/leon-trial.txt",
+    "lib/modules/4.19.294/kernel/fs/btrfs/btrfs.ko"
+  ],
+  "added_files": [
+    "lib/aarch64-linux-gnu/libacl.so.1.1.2302",
+    "lib/aarch64-linux-gnu/libacl.so.1",
+    "usr/bin/getfacl",
+    "usr/bin/setfacl"
+  ],
+  "nonkernel_bootfs_payloads_unchanged": true,
+  "commits_new_slot": false
+}
