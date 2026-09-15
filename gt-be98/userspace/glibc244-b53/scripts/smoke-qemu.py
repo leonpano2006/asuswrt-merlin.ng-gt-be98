@@ -12,6 +12,9 @@ p = argparse.ArgumentParser(description=__doc__)
 p.add_argument('--work', type=Path, required=True)
 args = p.parse_args()
 r = args.work.resolve()
+(r / 'evidence').mkdir(parents=True, exist_ok=True)
+if not (r / 'tests/libc-smoke.c').is_file():
+    p.error('copy tests/libc-smoke.c into the work directory first')
 records = []
 for abi in ['aarch64', 'armel', 'armhf']:
     cfg = json.loads((r / 'builds' / abi / 'configuration.json').read_text())

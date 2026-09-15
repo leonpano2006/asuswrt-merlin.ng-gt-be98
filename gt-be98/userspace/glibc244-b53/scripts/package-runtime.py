@@ -14,6 +14,7 @@ p = argparse.ArgumentParser(description=__doc__)
 p.add_argument('--work', type=Path, required=True)
 args = p.parse_args()
 r = args.work.resolve()
+(r / 'evidence').mkdir(parents=True, exist_ok=True)
 root = r / 'packages/runtime'
 root.mkdir(parents=True, exist_ok=False)
 records = []
