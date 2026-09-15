@@ -1,0 +1,14 @@
+[
+  {
+    "step": "make",
+    "returncode": 0,
+    "elapsed_seconds": 2.39,
+    "log_sha256": "37e7ee411ec7015231ee1edb8de87f6ca03c2f27ecd4393bf3168d14869f3d27"
+  },
+  {
+    "step": "install",
+    "returncode": 0,
+    "elapsed_seconds": 16.66,
+    "log_sha256": "99567088cd6202b113cc62796ae3c0828b4fd66fbd73f026a68e6a1f3099f7b5"
+  }
+]

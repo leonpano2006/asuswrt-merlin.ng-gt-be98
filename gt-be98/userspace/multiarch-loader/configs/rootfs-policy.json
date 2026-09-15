@@ -1,0 +1,1165 @@
+{
+  "source_inventory_sha256": "2577901a0c2f230f3ca15f678cab45e4b4608917ba05864f65fbef6b5d94c322",
+  "input_squashfs_sha256": "9d13b0b5789843e691cf08f2083c189dbc61f48eeb5d433795183e455b4aa026",
+  "aliases": {
+    "usr/lib/ld-linux.so.3": {
+      "target": "arm-linux-gnueabi/ld-linux.so.3",
+      "keep_reason": "ELF PT_INTERP ABI entry point"
+    },
+    "usr/lib/leon-trial-bootguard.so": {
+      "target": "arm-linux-gnueabi/leon-trial-bootguard.so",
+      "keep_reason": "Static trial init preloads this absolute path"
+    },
+    "usr/lib/libBrokenLocale.so.1": {
+      "target": "arm-linux-gnueabi/libBrokenLocale.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libFLAC.so.8": {
+      "target": "arm-linux-gnueabi/libFLAC.so.8",
+      "keep_reason": null
+    },
+    "usr/lib/libamas-utils.so": {
+      "target": "arm-linux-gnueabi/libamas-utils.so",
+      "keep_reason": null
+    },
+    "usr/lib/libanl.so.1": {
+      "target": "arm-linux-gnueabi/libanl.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libarcher.so": {
+      "target": "arm-linux-gnueabi/libarcher.so",
+      "keep_reason": null
+    },
+    "usr/lib/libasc.so": {
+      "target": "arm-linux-gnueabi/libasc.so",
+      "keep_reason": null
+    },
+    "usr/lib/libasd.so": {
+      "target": "arm-linux-gnueabi/libasd.so",
+      "keep_reason": "ASUS asd loads this absolute path"
+    },
+    "usr/lib/libasuslog.so": {
+      "target": "arm-linux-gnueabi/libasuslog.so",
+      "keep_reason": null
+    },
+    "usr/lib/libasusnatnl.so": {
+      "target": "arm-linux-gnueabi/libasusnatnl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libatalk.so.6.0.0": {
+      "target": "arm-linux-gnueabi/libatalk.so.6.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libavahi-common.so.3.5.4": {
+      "target": "arm-linux-gnueabi/libavahi-common.so.3.5.4",
+      "keep_reason": null
+    },
+    "usr/lib/libavahi-core.so.7.1.0": {
+      "target": "arm-linux-gnueabi/libavahi-core.so.7.1.0",
+      "keep_reason": null
+    },
+    "usr/lib/libavcodec.so.58": {
+      "target": "arm-linux-gnueabi/libavcodec.so.58",
+      "keep_reason": null
+    },
+    "usr/lib/libavformat.so.58": {
+      "target": "arm-linux-gnueabi/libavformat.so.58",
+      "keep_reason": null
+    },
+    "usr/lib/libavutil.so.56": {
+      "target": "arm-linux-gnueabi/libavutil.so.56",
+      "keep_reason": null
+    },
+    "usr/lib/libawsiot_ipc.so": {
+      "target": "arm-linux-gnueabi/libawsiot_ipc.so",
+      "keep_reason": null
+    },
+    "usr/lib/libbcm.so": {
+      "target": "arm-linux-gnueabi/libbcm.so",
+      "keep_reason": null
+    },
+    "usr/lib/libbcm_boardctl.so": {
+      "target": "arm-linux-gnueabi/libbcm_boardctl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libbcm_flashutil.so": {
+      "target": "arm-linux-gnueabi/libbcm_flashutil.so",
+      "keep_reason": null
+    },
+    "usr/lib/libbcm_util.so": {
+      "target": "arm-linux-gnueabi/libbcm_util.so",
+      "keep_reason": null
+    },
+    "usr/lib/libbcmcrypto.so": {
+      "target": "arm-linux-gnueabi/libbcmcrypto.so",
+      "keep_reason": null
+    },
+    "usr/lib/libbcmmcast.so": {
+      "target": "arm-linux-gnueabi/libbcmmcast.so",
+      "keep_reason": null
+    },
+    "usr/lib/libbdmf.so": {
+      "target": "arm-linux-gnueabi/libbdmf.so",
+      "keep_reason": null
+    },
+    "usr/lib/libblkid.so.1.0": {
+      "target": "arm-linux-gnueabi/libblkid.so.1.0",
+      "keep_reason": null
+    },
+    "usr/lib/libblobmsg_json.so": {
+      "target": "arm-linux-gnueabi/libblobmsg_json.so",
+      "keep_reason": null
+    },
+    "usr/lib/libblogctl.so": {
+      "target": "arm-linux-gnueabi/libblogctl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libbp3hal.so": {
+      "target": "arm-linux-gnueabi/libbp3hal.so",
+      "keep_reason": null
+    },
+    "usr/lib/libbridgeutil.so": {
+      "target": "arm-linux-gnueabi/libbridgeutil.so",
+      "keep_reason": null
+    },
+    "usr/lib/libbwdpi.so": {
+      "target": "arm-linux-gnueabi/libbwdpi.so",
+      "keep_reason": null
+    },
+    "usr/lib/libbwdpi_sql.so": {
+      "target": "arm-linux-gnueabi/libbwdpi_sql.so",
+      "keep_reason": null
+    },
+    "usr/lib/libc.so.6": {
+      "target": "arm-linux-gnueabi/libc.so.6",
+      "keep_reason": null
+    },
+    "usr/lib/libc_malloc_debug.so.0": {
+      "target": "arm-linux-gnueabi/libc_malloc_debug.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libcap-ng.so.0.0.0": {
+      "target": "arm-linux-gnueabi/libcap-ng.so.0.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libceshared.so": {
+      "target": "arm-linux-gnueabi/libceshared.so",
+      "keep_reason": null
+    },
+    "usr/lib/libcfgmnt.so": {
+      "target": "arm-linux-gnueabi/libcfgmnt.so",
+      "keep_reason": null
+    },
+    "usr/lib/libcjson.so.1.7.13": {
+      "target": "arm-linux-gnueabi/libcjson.so.1.7.13",
+      "keep_reason": null
+    },
+    "usr/lib/libcodb.so": {
+      "target": "arm-linux-gnueabi/libcodb.so",
+      "keep_reason": null
+    },
+    "usr/lib/libcom_err.so.2.1": {
+      "target": "arm-linux-gnueabi/libcom_err.so.2.1",
+      "keep_reason": null
+    },
+    "usr/lib/libconn_diag.so": {
+      "target": "arm-linux-gnueabi/libconn_diag.so",
+      "keep_reason": null
+    },
+    "usr/lib/libcrypt.so.1": {
+      "target": "arm-linux-gnueabi/libcrypt.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libcrypto.so.1.1": {
+      "target": "arm-linux-gnueabi/libcrypto.so.1.1",
+      "keep_reason": null
+    },
+    "usr/lib/libcurl.so.4.8.0": {
+      "target": "arm-linux-gnueabi/libcurl.so.4.8.0",
+      "keep_reason": null
+    },
+    "usr/lib/libdaemon.so.0.5.0": {
+      "target": "arm-linux-gnueabi/libdaemon.so.0.5.0",
+      "keep_reason": null
+    },
+    "usr/lib/libdb-4.8.so": {
+      "target": "arm-linux-gnueabi/libdb-4.8.so",
+      "keep_reason": null
+    },
+    "usr/lib/libdisk.so": {
+      "target": "arm-linux-gnueabi/libdisk.so",
+      "keep_reason": null
+    },
+    "usr/lib/libdl.so.2": {
+      "target": "arm-linux-gnueabi/libdl.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libdns_app_client.so": {
+      "target": "arm-linux-gnueabi/libdns_app_client.so",
+      "keep_reason": null
+    },
+    "usr/lib/libdrop_ambient.so.0.0.0": {
+      "target": "arm-linux-gnueabi/libdrop_ambient.so.0.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libe2p.so.2.3": {
+      "target": "arm-linux-gnueabi/libe2p.so.2.3",
+      "keep_reason": null
+    },
+    "usr/lib/libethctl.so": {
+      "target": "arm-linux-gnueabi/libethctl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libethswctl.so": {
+      "target": "arm-linux-gnueabi/libethswctl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libev.so.4.0.0": {
+      "target": "arm-linux-gnueabi/libev.so.4.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libevent-2.0.so.5": {
+      "target": "arm-linux-gnueabi/libevent-2.0.so.5",
+      "keep_reason": null
+    },
+    "usr/lib/libexif.so.12": {
+      "target": "arm-linux-gnueabi/libexif.so.12",
+      "keep_reason": null
+    },
+    "usr/lib/libexpat.so.1.5.2": {
+      "target": "arm-linux-gnueabi/libexpat.so.1.5.2",
+      "keep_reason": null
+    },
+    "usr/lib/libext2fs.so.2.4": {
+      "target": "arm-linux-gnueabi/libext2fs.so.2.4",
+      "keep_reason": null
+    },
+    "usr/lib/libfcctl.so": {
+      "target": "arm-linux-gnueabi/libfcctl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libfdt-1.7.0.so": {
+      "target": "arm-linux-gnueabi/libfdt-1.7.0.so",
+      "keep_reason": null
+    },
+    "usr/lib/libgcc_s.so.1": {
+      "target": "arm-linux-gnueabi/libgcc_s.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libgcrypt.so.11.8.0": {
+      "target": "arm-linux-gnueabi/libgcrypt.so.11.8.0",
+      "keep_reason": null
+    },
+    "usr/lib/libgdbm.so.3.0.0": {
+      "target": "arm-linux-gnueabi/libgdbm.so.3.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libgen_util.so": {
+      "target": "arm-linux-gnueabi/libgen_util.so",
+      "keep_reason": null
+    },
+    "usr/lib/libgpg-error.so.0.8.0": {
+      "target": "arm-linux-gnueabi/libgpg-error.so.0.8.0",
+      "keep_reason": null
+    },
+    "usr/lib/libhttpdshared.so": {
+      "target": "arm-linux-gnueabi/libhttpdshared.so",
+      "keep_reason": null
+    },
+    "usr/lib/libiconv.so.2.5.1": {
+      "target": "arm-linux-gnueabi/libiconv.so.2.5.1",
+      "keep_reason": null
+    },
+    "usr/lib/libid3tag.so.0": {
+      "target": "arm-linux-gnueabi/libid3tag.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libip4tc.so": {
+      "target": "arm-linux-gnueabi/libip4tc.so",
+      "keep_reason": null
+    },
+    "usr/lib/libip6tc.so": {
+      "target": "arm-linux-gnueabi/libip6tc.so",
+      "keep_reason": null
+    },
+    "usr/lib/libipaddr.so": {
+      "target": "arm-linux-gnueabi/libipaddr.so",
+      "keep_reason": null
+    },
+    "usr/lib/libipset.so.13.1.0": {
+      "target": "arm-linux-gnueabi/libipset.so.13.1.0",
+      "keep_reason": null
+    },
+    "usr/lib/libiptc.so": {
+      "target": "arm-linux-gnueabi/libiptc.so",
+      "keep_reason": null
+    },
+    "usr/lib/libiqctl.so": {
+      "target": "arm-linux-gnueabi/libiqctl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libjansson.so": {
+      "target": "arm-linux-gnueabi/libjansson.so",
+      "keep_reason": null
+    },
+    "usr/lib/libjpeg.so": {
+      "target": "arm-linux-gnueabi/libjpeg.so",
+      "keep_reason": null
+    },
+    "usr/lib/libjq.so.1.0.4": {
+      "target": "arm-linux-gnueabi/libjq.so.1.0.4",
+      "keep_reason": null
+    },
+    "usr/lib/libjson-c.so.2.0.2": {
+      "target": "arm-linux-gnueabi/libjson-c.so.2.0.2",
+      "keep_reason": null
+    },
+    "usr/lib/libletsencrypt.so": {
+      "target": "arm-linux-gnueabi/libletsencrypt.so",
+      "keep_reason": null
+    },
+    "usr/lib/liblightsql.so": {
+      "target": "arm-linux-gnueabi/liblightsql.so",
+      "keep_reason": null
+    },
+    "usr/lib/liblldpctl.so.4.8.0": {
+      "target": "arm-linux-gnueabi/liblldpctl.so.4.8.0",
+      "keep_reason": null
+    },
+    "usr/lib/liblz4.so.1.9.2": {
+      "target": "arm-linux-gnueabi/liblz4.so.1.9.2",
+      "keep_reason": null
+    },
+    "usr/lib/liblzo2.so.2": {
+      "target": "arm-linux-gnueabi/liblzo2.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libm.so.6": {
+      "target": "arm-linux-gnueabi/libm.so.6",
+      "keep_reason": null
+    },
+    "usr/lib/libmemusage.so": {
+      "target": "arm-linux-gnueabi/libmemusage.so",
+      "keep_reason": null
+    },
+    "usr/lib/libmnl.so.0.2.0": {
+      "target": "arm-linux-gnueabi/libmnl.so.0.2.0",
+      "keep_reason": null
+    },
+    "usr/lib/libmssl.so": {
+      "target": "arm-linux-gnueabi/libmssl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libneon.so.27.3.2": {
+      "target": "arm-linux-gnueabi/libneon.so.27.3.2",
+      "keep_reason": null
+    },
+    "usr/lib/libnetfilter_conntrack.so.3": {
+      "target": "arm-linux-gnueabi/libnetfilter_conntrack.so.3",
+      "keep_reason": null
+    },
+    "usr/lib/libnetfilter_cttimeout.so.1": {
+      "target": "arm-linux-gnueabi/libnetfilter_cttimeout.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libnetfilter_queue.so.1": {
+      "target": "arm-linux-gnueabi/libnetfilter_queue.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmp.so.35.0.0": {
+      "target": "arm-linux-gnueabi/libnetsnmp.so.35.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmpagent.so.35.0.0": {
+      "target": "arm-linux-gnueabi/libnetsnmpagent.so.35.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmphelpers.so.35.0.0": {
+      "target": "arm-linux-gnueabi/libnetsnmphelpers.so.35.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmpmibs.so.35.0.0": {
+      "target": "arm-linux-gnueabi/libnetsnmpmibs.so.35.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libnfnetlink.so.0": {
+      "target": "arm-linux-gnueabi/libnfnetlink.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-3.so.200.20.0": {
+      "target": "arm-linux-gnueabi/libnl-3.so.200.20.0",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-cli-3.so.200.20.0": {
+      "target": "arm-linux-gnueabi/libnl-cli-3.so.200.20.0",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-genl-3.so.200.20.0": {
+      "target": "arm-linux-gnueabi/libnl-genl-3.so.200.20.0",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-idiag-3.so.200.20.0": {
+      "target": "arm-linux-gnueabi/libnl-idiag-3.so.200.20.0",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-nf-3.so.200.20.0": {
+      "target": "arm-linux-gnueabi/libnl-nf-3.so.200.20.0",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-route-3.so.200.20.0": {
+      "target": "arm-linux-gnueabi/libnl-route-3.so.200.20.0",
+      "keep_reason": null
+    },
+    "usr/lib/libnmpapi.so": {
+      "target": "arm-linux-gnueabi/libnmpapi.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnsl.so.1": {
+      "target": "arm-linux-gnueabi/libnsl.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libnss_compat.so.2": {
+      "target": "arm-linux-gnueabi/libnss_compat.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libnss_db.so.2": {
+      "target": "arm-linux-gnueabi/libnss_db.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libnss_dns.so.2": {
+      "target": "arm-linux-gnueabi/libnss_dns.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libnss_files.so.2": {
+      "target": "arm-linux-gnueabi/libnss_files.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libnss_hesiod.so.2": {
+      "target": "arm-linux-gnueabi/libnss_hesiod.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libnss_mdns4.so.2": {
+      "target": "arm-linux-gnueabi/libnss_mdns4.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libnss_mdns4_minimal.so.2": {
+      "target": "arm-linux-gnueabi/libnss_mdns4_minimal.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libnt.so": {
+      "target": "arm-linux-gnueabi/libnt.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnvram.so": {
+      "target": "arm-linux-gnueabi/libnvram.so",
+      "keep_reason": null
+    },
+    "usr/lib/libogg.so.0": {
+      "target": "arm-linux-gnueabi/libogg.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libonig.so.5.4.0": {
+      "target": "arm-linux-gnueabi/libonig.so.5.4.0",
+      "keep_reason": null
+    },
+    "usr/lib/libovpn.so": {
+      "target": "arm-linux-gnueabi/libovpn.so",
+      "keep_reason": null
+    },
+    "usr/lib/libpam.so.2": {
+      "target": "arm-linux-gnueabi/libpam.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libpasswd.so": {
+      "target": "arm-linux-gnueabi/libpasswd.so",
+      "keep_reason": null
+    },
+    "usr/lib/libpcprofile.so": {
+      "target": "arm-linux-gnueabi/libpcprofile.so",
+      "keep_reason": null
+    },
+    "usr/lib/libpcre.so.1.0.1": {
+      "target": "arm-linux-gnueabi/libpcre.so.1.0.1",
+      "keep_reason": null
+    },
+    "usr/lib/libpcreposix.so.0.0.1": {
+      "target": "arm-linux-gnueabi/libpcreposix.so.0.0.1",
+      "keep_reason": null
+    },
+    "usr/lib/libpng16.so.16.37.0": {
+      "target": "arm-linux-gnueabi/libpng16.so.16.37.0",
+      "keep_reason": null
+    },
+    "usr/lib/libptcsrv.so": {
+      "target": "arm-linux-gnueabi/libptcsrv.so",
+      "keep_reason": null
+    },
+    "usr/lib/libpthread.so.0": {
+      "target": "arm-linux-gnueabi/libpthread.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libpwrctl.so": {
+      "target": "arm-linux-gnueabi/libpwrctl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libqrencode.so.4.1.1": {
+      "target": "arm-linux-gnueabi/libqrencode.so.4.1.1",
+      "keep_reason": null
+    },
+    "usr/lib/librdpactl.so": {
+      "target": "arm-linux-gnueabi/librdpactl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libresolv.so.2": {
+      "target": "arm-linux-gnueabi/libresolv.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/librt.so.1": {
+      "target": "arm-linux-gnueabi/librt.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libshared.so": {
+      "target": "arm-linux-gnueabi/libshared.so",
+      "keep_reason": null
+    },
+    "usr/lib/libshn_pctrl.so": {
+      "target": "arm-linux-gnueabi/libshn_pctrl.so",
+      "keep_reason": "DPI libbwdpi uses this absolute path"
+    },
+    "usr/lib/libshn_utils.so": {
+      "target": "arm-linux-gnueabi/libshn_utils.so",
+      "keep_reason": null
+    },
+    "usr/lib/libsmartsync_api.so": {
+      "target": "arm-linux-gnueabi/libsmartsync_api.so",
+      "keep_reason": null
+    },
+    "usr/lib/libsmbclient.so.0": {
+      "target": "arm-linux-gnueabi/libsmbclient.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libsqlite3.so.0.8.6": {
+      "target": "arm-linux-gnueabi/libsqlite3.so.0.8.6",
+      "keep_reason": null
+    },
+    "usr/lib/libssl.so.1.1": {
+      "target": "arm-linux-gnueabi/libssl.so.1.1",
+      "keep_reason": null
+    },
+    "usr/lib/libstdc++.so.6": {
+      "target": "arm-linux-gnueabi/libstdc++.so.6",
+      "keep_reason": null
+    },
+    "usr/lib/libsys_util.so": {
+      "target": "arm-linux-gnueabi/libsys_util.so",
+      "keep_reason": null
+    },
+    "usr/lib/libthread_db.so.1": {
+      "target": "arm-linux-gnueabi/libthread_db.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libtmctl.so": {
+      "target": "arm-linux-gnueabi/libtmctl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libubox.so": {
+      "target": "arm-linux-gnueabi/libubox.so",
+      "keep_reason": null
+    },
+    "usr/lib/libusb-0.1.so.4": {
+      "target": "arm-linux-gnueabi/libusb-0.1.so.4",
+      "keep_reason": null
+    },
+    "usr/lib/libusb-1.0.so.0": {
+      "target": "arm-linux-gnueabi/libusb-1.0.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libutil.so.1": {
+      "target": "arm-linux-gnueabi/libutil.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libuuid.so.1.2": {
+      "target": "arm-linux-gnueabi/libuuid.so.1.2",
+      "keep_reason": null
+    },
+    "usr/lib/libvlanctl.so": {
+      "target": "arm-linux-gnueabi/libvlanctl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libvorbis.so.0": {
+      "target": "arm-linux-gnueabi/libvorbis.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libwebapi.so": {
+      "target": "arm-linux-gnueabi/libwebapi.so",
+      "keep_reason": null
+    },
+    "usr/lib/libwlc_nt_client.so": {
+      "target": "arm-linux-gnueabi/libwlc_nt_client.so",
+      "keep_reason": null
+    },
+    "usr/lib/libwlcsm.so": {
+      "target": "arm-linux-gnueabi/libwlcsm.so",
+      "keep_reason": null
+    },
+    "usr/lib/libwpa_client.so": {
+      "target": "arm-linux-gnueabi/libwpa_client.so",
+      "keep_reason": null
+    },
+    "usr/lib/libws.so": {
+      "target": "arm-linux-gnueabi/libws.so",
+      "keep_reason": null
+    },
+    "usr/lib/libxml2.so.2": {
+      "target": "arm-linux-gnueabi/libxml2.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libxtables.so": {
+      "target": "arm-linux-gnueabi/libxtables.so",
+      "keep_reason": null
+    },
+    "usr/lib/libz.so.1": {
+      "target": "arm-linux-gnueabi/libz.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libzebra.so.0.0.0": {
+      "target": "arm-linux-gnueabi/libzebra.so.0.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/mod_access.so": {
+      "target": "arm-linux-gnueabi/mod_access.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_aicloud_auth.so": {
+      "target": "arm-linux-gnueabi/mod_aicloud_auth.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_aicloud_invite.so": {
+      "target": "arm-linux-gnueabi/mod_aicloud_invite.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_aicloud_sharelink.so": {
+      "target": "arm-linux-gnueabi/mod_aicloud_sharelink.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_aidisk_access.so": {
+      "target": "arm-linux-gnueabi/mod_aidisk_access.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_alias.so": {
+      "target": "arm-linux-gnueabi/mod_alias.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_auth.so": {
+      "target": "arm-linux-gnueabi/mod_auth.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_captive_portal_uam.so": {
+      "target": "arm-linux-gnueabi/mod_captive_portal_uam.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_compress.so": {
+      "target": "arm-linux-gnueabi/mod_compress.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_create_captcha_image.so": {
+      "target": "arm-linux-gnueabi/mod_create_captcha_image.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_dirlisting.so": {
+      "target": "arm-linux-gnueabi/mod_dirlisting.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_indexfile.so": {
+      "target": "arm-linux-gnueabi/mod_indexfile.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_query_field_json.so": {
+      "target": "arm-linux-gnueabi/mod_query_field_json.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_redirect.so": {
+      "target": "arm-linux-gnueabi/mod_redirect.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_rewrite.so": {
+      "target": "arm-linux-gnueabi/mod_rewrite.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_smbdav.so": {
+      "target": "arm-linux-gnueabi/mod_smbdav.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_staticfile.so": {
+      "target": "arm-linux-gnueabi/mod_staticfile.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_userdir.so": {
+      "target": "arm-linux-gnueabi/mod_userdir.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_usertrack.so": {
+      "target": "arm-linux-gnueabi/mod_usertrack.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/mod_webdav.so": {
+      "target": "arm-linux-gnueabi/mod_webdav.so",
+      "keep_reason": "Installed lighttpd constructs module paths from its /usr/lib default"
+    },
+    "usr/lib/openvpn-plugin-auth-pam.so": {
+      "target": "arm-linux-gnueabi/openvpn-plugin-auth-pam.so",
+      "keep_reason": "ASUS VPN configuration uses this absolute plugin path"
+    },
+    "usr/lib/pam_unix.so": {
+      "target": "arm-linux-gnueabi/pam_unix.so",
+      "keep_reason": "OpenPAM searches /usr/lib for PAM modules"
+    },
+    "usr/lib/ipsec": {
+      "target": "arm-linux-gnueabi/ipsec",
+      "keep_reason": "Existing private plugin directory referenced by its installed consumer"
+    },
+    "usr/lib/l2tp": {
+      "target": "arm-linux-gnueabi/l2tp",
+      "keep_reason": "Existing private plugin directory referenced by its installed consumer"
+    },
+    "usr/lib/libnl": {
+      "target": "arm-linux-gnueabi/libnl",
+      "keep_reason": "Existing private plugin directory referenced by its installed consumer"
+    },
+    "usr/lib/netatalk": {
+      "target": "arm-linux-gnueabi/netatalk",
+      "keep_reason": "Existing private plugin directory referenced by its installed consumer"
+    },
+    "usr/lib/pppd": {
+      "target": "arm-linux-gnueabi/pppd",
+      "keep_reason": "Existing private plugin directory referenced by its installed consumer"
+    },
+    "usr/lib/xtables": {
+      "target": "arm-linux-gnueabi/xtables",
+      "keep_reason": "Existing private plugin directory referenced by its installed consumer"
+    },
+    "usr/lib/libatalk.so.6": {
+      "target": "arm-linux-gnueabi/libatalk.so.6",
+      "keep_reason": null
+    },
+    "usr/lib/libavahi-common.so.3": {
+      "target": "arm-linux-gnueabi/libavahi-common.so.3",
+      "keep_reason": null
+    },
+    "usr/lib/libavahi-core.so.7": {
+      "target": "arm-linux-gnueabi/libavahi-core.so.7",
+      "keep_reason": null
+    },
+    "usr/lib/libblkid.so": {
+      "target": "arm-linux-gnueabi/libblkid.so",
+      "keep_reason": null
+    },
+    "usr/lib/libblkid.so.1": {
+      "target": "arm-linux-gnueabi/libblkid.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libcap-ng.so": {
+      "target": "arm-linux-gnueabi/libcap-ng.so",
+      "keep_reason": null
+    },
+    "usr/lib/libcap-ng.so.0": {
+      "target": "arm-linux-gnueabi/libcap-ng.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libcjson.so": {
+      "target": "arm-linux-gnueabi/libcjson.so",
+      "keep_reason": null
+    },
+    "usr/lib/libcjson.so.1": {
+      "target": "arm-linux-gnueabi/libcjson.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libcom_err.so": {
+      "target": "arm-linux-gnueabi/libcom_err.so",
+      "keep_reason": null
+    },
+    "usr/lib/libcom_err.so.2": {
+      "target": "arm-linux-gnueabi/libcom_err.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libcrypto.so": {
+      "target": "arm-linux-gnueabi/libcrypto.so",
+      "keep_reason": null
+    },
+    "usr/lib/libcurl.so": {
+      "target": "arm-linux-gnueabi/libcurl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libcurl.so.4": {
+      "target": "arm-linux-gnueabi/libcurl.so.4",
+      "keep_reason": null
+    },
+    "usr/lib/libdaemon.so": {
+      "target": "arm-linux-gnueabi/libdaemon.so",
+      "keep_reason": null
+    },
+    "usr/lib/libdaemon.so.0": {
+      "target": "arm-linux-gnueabi/libdaemon.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libdb-4.so": {
+      "target": "arm-linux-gnueabi/libdb-4.so",
+      "keep_reason": null
+    },
+    "usr/lib/libdb.so": {
+      "target": "arm-linux-gnueabi/libdb.so",
+      "keep_reason": null
+    },
+    "usr/lib/libdrop_ambient.so": {
+      "target": "arm-linux-gnueabi/libdrop_ambient.so",
+      "keep_reason": null
+    },
+    "usr/lib/libdrop_ambient.so.0": {
+      "target": "arm-linux-gnueabi/libdrop_ambient.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libe2p.so": {
+      "target": "arm-linux-gnueabi/libe2p.so",
+      "keep_reason": null
+    },
+    "usr/lib/libe2p.so.2": {
+      "target": "arm-linux-gnueabi/libe2p.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libev.so.4": {
+      "target": "arm-linux-gnueabi/libev.so.4",
+      "keep_reason": null
+    },
+    "usr/lib/libevent.so": {
+      "target": "arm-linux-gnueabi/libevent.so",
+      "keep_reason": null
+    },
+    "usr/lib/libexpat.so": {
+      "target": "arm-linux-gnueabi/libexpat.so",
+      "keep_reason": null
+    },
+    "usr/lib/libexpat.so.1": {
+      "target": "arm-linux-gnueabi/libexpat.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libext2fs.so": {
+      "target": "arm-linux-gnueabi/libext2fs.so",
+      "keep_reason": null
+    },
+    "usr/lib/libext2fs.so.2": {
+      "target": "arm-linux-gnueabi/libext2fs.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libfdt.so": {
+      "target": "arm-linux-gnueabi/libfdt.so",
+      "keep_reason": null
+    },
+    "usr/lib/libfdt.so.1": {
+      "target": "arm-linux-gnueabi/libfdt.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libgcrypt.so.11": {
+      "target": "arm-linux-gnueabi/libgcrypt.so.11",
+      "keep_reason": null
+    },
+    "usr/lib/libgdbm.so": {
+      "target": "arm-linux-gnueabi/libgdbm.so",
+      "keep_reason": null
+    },
+    "usr/lib/libgdbm.so.3": {
+      "target": "arm-linux-gnueabi/libgdbm.so.3",
+      "keep_reason": null
+    },
+    "usr/lib/libgpg-error.so.0": {
+      "target": "arm-linux-gnueabi/libgpg-error.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libiconv.so": {
+      "target": "arm-linux-gnueabi/libiconv.so",
+      "keep_reason": null
+    },
+    "usr/lib/libiconv.so.2": {
+      "target": "arm-linux-gnueabi/libiconv.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/libip4tc.so.0": {
+      "target": "arm-linux-gnueabi/libip4tc.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libip4tc.so.0.0.0": {
+      "target": "arm-linux-gnueabi/libip4tc.so.0.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libip6tc.so.0": {
+      "target": "arm-linux-gnueabi/libip6tc.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libip6tc.so.0.0.0": {
+      "target": "arm-linux-gnueabi/libip6tc.so.0.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libipset.so": {
+      "target": "arm-linux-gnueabi/libipset.so",
+      "keep_reason": null
+    },
+    "usr/lib/libipset.so.13": {
+      "target": "arm-linux-gnueabi/libipset.so.13",
+      "keep_reason": null
+    },
+    "usr/lib/libiptc.so.0": {
+      "target": "arm-linux-gnueabi/libiptc.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libiptc.so.0.0.0": {
+      "target": "arm-linux-gnueabi/libiptc.so.0.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libjansson.so.4": {
+      "target": "arm-linux-gnueabi/libjansson.so.4",
+      "keep_reason": null
+    },
+    "usr/lib/libjq.so": {
+      "target": "arm-linux-gnueabi/libjq.so",
+      "keep_reason": null
+    },
+    "usr/lib/libjq.so.1": {
+      "target": "arm-linux-gnueabi/libjq.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libjson-c.so": {
+      "target": "arm-linux-gnueabi/libjson-c.so",
+      "keep_reason": null
+    },
+    "usr/lib/libjson-c.so.2": {
+      "target": "arm-linux-gnueabi/libjson-c.so.2",
+      "keep_reason": null
+    },
+    "usr/lib/liblldpctl.so": {
+      "target": "arm-linux-gnueabi/liblldpctl.so",
+      "keep_reason": null
+    },
+    "usr/lib/liblldpctl.so.4": {
+      "target": "arm-linux-gnueabi/liblldpctl.so.4",
+      "keep_reason": null
+    },
+    "usr/lib/liblz4.so": {
+      "target": "arm-linux-gnueabi/liblz4.so",
+      "keep_reason": null
+    },
+    "usr/lib/liblz4.so.1": {
+      "target": "arm-linux-gnueabi/liblz4.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/liblzo2.so": {
+      "target": "arm-linux-gnueabi/liblzo2.so",
+      "keep_reason": null
+    },
+    "usr/lib/libmnl.so": {
+      "target": "arm-linux-gnueabi/libmnl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libmnl.so.0": {
+      "target": "arm-linux-gnueabi/libmnl.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libneon.so": {
+      "target": "arm-linux-gnueabi/libneon.so",
+      "keep_reason": null
+    },
+    "usr/lib/libneon.so.27": {
+      "target": "arm-linux-gnueabi/libneon.so.27",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmp.so": {
+      "target": "arm-linux-gnueabi/libnetsnmp.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmp.so.35": {
+      "target": "arm-linux-gnueabi/libnetsnmp.so.35",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmpagent.so": {
+      "target": "arm-linux-gnueabi/libnetsnmpagent.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmpagent.so.35": {
+      "target": "arm-linux-gnueabi/libnetsnmpagent.so.35",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmphelpers.so": {
+      "target": "arm-linux-gnueabi/libnetsnmphelpers.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmphelpers.so.35": {
+      "target": "arm-linux-gnueabi/libnetsnmphelpers.so.35",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmpmibs.so": {
+      "target": "arm-linux-gnueabi/libnetsnmpmibs.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnetsnmpmibs.so.35": {
+      "target": "arm-linux-gnueabi/libnetsnmpmibs.so.35",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-3.so": {
+      "target": "arm-linux-gnueabi/libnl-3.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-3.so.200": {
+      "target": "arm-linux-gnueabi/libnl-3.so.200",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-cli-3.so": {
+      "target": "arm-linux-gnueabi/libnl-cli-3.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-cli-3.so.200": {
+      "target": "arm-linux-gnueabi/libnl-cli-3.so.200",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-genl-3.so": {
+      "target": "arm-linux-gnueabi/libnl-genl-3.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-genl-3.so.200": {
+      "target": "arm-linux-gnueabi/libnl-genl-3.so.200",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-idiag-3.so": {
+      "target": "arm-linux-gnueabi/libnl-idiag-3.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-idiag-3.so.200": {
+      "target": "arm-linux-gnueabi/libnl-idiag-3.so.200",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-nf-3.so": {
+      "target": "arm-linux-gnueabi/libnl-nf-3.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-nf-3.so.200": {
+      "target": "arm-linux-gnueabi/libnl-nf-3.so.200",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-route-3.so": {
+      "target": "arm-linux-gnueabi/libnl-route-3.so",
+      "keep_reason": null
+    },
+    "usr/lib/libnl-route-3.so.200": {
+      "target": "arm-linux-gnueabi/libnl-route-3.so.200",
+      "keep_reason": null
+    },
+    "usr/lib/libonig.so": {
+      "target": "arm-linux-gnueabi/libonig.so",
+      "keep_reason": null
+    },
+    "usr/lib/libonig.so.4": {
+      "target": "arm-linux-gnueabi/libonig.so.4",
+      "keep_reason": null
+    },
+    "usr/lib/libonig.so.5": {
+      "target": "arm-linux-gnueabi/libonig.so.5",
+      "keep_reason": null
+    },
+    "usr/lib/libpcre.so": {
+      "target": "arm-linux-gnueabi/libpcre.so",
+      "keep_reason": null
+    },
+    "usr/lib/libpcre.so.1": {
+      "target": "arm-linux-gnueabi/libpcre.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libpcreposix.so": {
+      "target": "arm-linux-gnueabi/libpcreposix.so",
+      "keep_reason": null
+    },
+    "usr/lib/libpcreposix.so.0": {
+      "target": "arm-linux-gnueabi/libpcreposix.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libpng.so": {
+      "target": "arm-linux-gnueabi/libpng.so",
+      "keep_reason": null
+    },
+    "usr/lib/libpng16.so": {
+      "target": "arm-linux-gnueabi/libpng16.so",
+      "keep_reason": null
+    },
+    "usr/lib/libpng16.so.16": {
+      "target": "arm-linux-gnueabi/libpng16.so.16",
+      "keep_reason": null
+    },
+    "usr/lib/libqrencode.so": {
+      "target": "arm-linux-gnueabi/libqrencode.so",
+      "keep_reason": null
+    },
+    "usr/lib/libqrencode.so.4": {
+      "target": "arm-linux-gnueabi/libqrencode.so.4",
+      "keep_reason": null
+    },
+    "usr/lib/libsmbclient.so": {
+      "target": "arm-linux-gnueabi/libsmbclient.so",
+      "keep_reason": null
+    },
+    "usr/lib/libsqlite3.so": {
+      "target": "arm-linux-gnueabi/libsqlite3.so",
+      "keep_reason": null
+    },
+    "usr/lib/libsqlite3.so.0": {
+      "target": "arm-linux-gnueabi/libsqlite3.so.0",
+      "keep_reason": null
+    },
+    "usr/lib/libssl.so": {
+      "target": "arm-linux-gnueabi/libssl.so",
+      "keep_reason": null
+    },
+    "usr/lib/libusb-0.1.so.4.4.4": {
+      "target": "arm-linux-gnueabi/libusb-0.1.so.4.4.4",
+      "keep_reason": null
+    },
+    "usr/lib/libusb-1.0.so": {
+      "target": "arm-linux-gnueabi/libusb-1.0.so",
+      "keep_reason": null
+    },
+    "usr/lib/libusb-1.0.so.0.2.0": {
+      "target": "arm-linux-gnueabi/libusb-1.0.so.0.2.0",
+      "keep_reason": null
+    },
+    "usr/lib/libusb.so": {
+      "target": "arm-linux-gnueabi/libusb.so",
+      "keep_reason": null
+    },
+    "usr/lib/libuuid.so": {
+      "target": "arm-linux-gnueabi/libuuid.so",
+      "keep_reason": null
+    },
+    "usr/lib/libuuid.so.1": {
+      "target": "arm-linux-gnueabi/libuuid.so.1",
+      "keep_reason": null
+    },
+    "usr/lib/libxml2.so": {
+      "target": "arm-linux-gnueabi/libxml2.so",
+      "keep_reason": null
+    },
+    "usr/lib/libxtables.so.7": {
+      "target": "arm-linux-gnueabi/libxtables.so.7",
+      "keep_reason": null
+    },
+    "usr/lib/libxtables.so.7.0.0": {
+      "target": "arm-linux-gnueabi/libxtables.so.7.0.0",
+      "keep_reason": null
+    },
+    "usr/lib/libzebra.so": {
+      "target": "arm-linux-gnueabi/libzebra.so",
+      "keep_reason": null
+    },
+    "usr/lib/libzebra.so.0": {
+      "target": "arm-linux-gnueabi/libzebra.so.0",
+      "keep_reason": null
+    }
+  },
+  "original_alias_count": 289,
+  "keep_count": 32,
+  "runtime_manifest_sha256": "ab5b0c6b1a002351a5b3967a218186e086be2dc8bbe89b5413f4cd82198396ce"
+}

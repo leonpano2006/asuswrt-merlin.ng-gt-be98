@@ -1,0 +1,70 @@
+{
+  "armel": {
+    "diagnostics": [
+      "dl_dst_lib=\"lib/arm-linux-gnueabi\"",
+      "path.prefix=\"/usr\"",
+      "path.rtld=\"/lib/ld-linux.so.3\"",
+      "path.sysconfdir=\"/etc\"",
+      "path.system_dirs[0x0]=\"/lib/arm-linux-gnueabi/\"",
+      "path.system_dirs[0x1]=\"/usr/lib/arm-linux-gnueabi/\"",
+      "path.system_dirs[0x2]=\"/lib/\"",
+      "path.system_dirs[0x3]=\"/usr/lib/\"",
+      "version.release=\"stable\"",
+      "version.version=\"2.43\""
+    ],
+    "loader_links": [],
+    "ld_so_conf": []
+  },
+  "armhf": {
+    "diagnostics": [
+      "dl_dst_lib=\"lib/arm-linux-gnueabihf\"",
+      "path.prefix=\"/usr\"",
+      "path.rtld=\"/lib/ld-linux-armhf.so.3\"",
+      "path.sysconfdir=\"/etc\"",
+      "path.system_dirs[0x0]=\"/lib/arm-linux-gnueabihf/\"",
+      "path.system_dirs[0x1]=\"/usr/lib/arm-linux-gnueabihf/\"",
+      "path.system_dirs[0x2]=\"/lib/\"",
+      "path.system_dirs[0x3]=\"/usr/lib/\"",
+      "version.release=\"stable\"",
+      "version.version=\"2.43\""
+    ],
+    "loader_links": [
+      {
+        "path": "usr/lib/ld-linux-armhf.so.3",
+        "target": "arm-linux-gnueabihf/ld-linux-armhf.so.3"
+      }
+    ],
+    "ld_so_conf": [
+      [
+        "etc/ld.so.conf.d/arm-linux-gnueabihf.conf",
+        "# Multiarch support\n/usr/local/lib/arm-linux-gnueabihf\n/usr/lib/arm-linux-gnueabihf\n"
+      ]
+    ]
+  },
+  "aarch64": {
+    "diagnostics": [
+      "dl_dst_lib=\"lib/aarch64-linux-gnu\"",
+      "path.prefix=\"/usr\"",
+      "path.rtld=\"/lib/ld-linux-aarch64.so.1\"",
+      "path.sysconfdir=\"/etc\"",
+      "path.system_dirs[0x0]=\"/lib/aarch64-linux-gnu/\"",
+      "path.system_dirs[0x1]=\"/usr/lib/aarch64-linux-gnu/\"",
+      "path.system_dirs[0x2]=\"/lib/\"",
+      "path.system_dirs[0x3]=\"/usr/lib/\"",
+      "version.release=\"stable\"",
+      "version.version=\"2.43\""
+    ],
+    "loader_links": [
+      {
+        "path": "usr/lib/ld-linux-aarch64.so.1",
+        "target": "aarch64-linux-gnu/ld-linux-aarch64.so.1"
+      }
+    ],
+    "ld_so_conf": [
+      [
+        "etc/ld.so.conf.d/aarch64-linux-gnu.conf",
+        "# Multiarch support\n/usr/local/lib/aarch64-linux-gnu\n/usr/lib/aarch64-linux-gnu\n"
+      ]
+    ]
+  }
+}

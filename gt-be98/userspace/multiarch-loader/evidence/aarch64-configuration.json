@@ -1,0 +1,31 @@
+{
+  "source_commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3",
+  "glibc": "2.44",
+  "abi": "aarch64",
+  "cpu_requested": "b53",
+  "cpu_resolved": "cortex-a53",
+  "flags": [
+    "-O2",
+    "-g",
+    "-mcpu=cortex-a53+crypto+crc",
+    "-U_TIME_BITS",
+    "-U_FILE_OFFSET_BITS"
+  ],
+  "cc": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/xgcc -B/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/ -B/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/aarch64-unknown-linux-gnu/libgcc/ --sysroot=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/sysroot",
+  "cxx": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/xg++ -B/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/ -B/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/aarch64-unknown-linux-gnu/libgcc/ --sysroot=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/sysroot",
+  "compiler_version": "16.2.0",
+  "headers": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/github-push-20260915/dependency-sdks/arm64/aarch64-buildroot-linux-gnu/sysroot/usr/include",
+  "kernel_header_version_sha256": "49aa7756dd75da60de5f0733cf0a4178a589a3a46120d7bae83d5d78f8188c92",
+  "configuration": {
+    "host": "aarch64-unknown-linux-gnu",
+    "cpu_flags": [
+      "-mcpu=cortex-a53+crypto+crc"
+    ],
+    "slibdir": "/lib/aarch64-linux-gnu",
+    "rtlddir": "/lib",
+    "libdir": "/usr/lib/aarch64-linux-gnu"
+  },
+  "minimum_kernel": "4.19",
+  "source_tree_sha256": "242f632e2eb82ac282a01b4d28085e11bb26651748346d010f6fc4e8e29ecab4",
+  "ubuntu_patch_sha256": "2c1da2d290b3720a1cd1e5b14a777e7c977b7fb6e8dc2116b8ff8d5db7d9ef74"
+}

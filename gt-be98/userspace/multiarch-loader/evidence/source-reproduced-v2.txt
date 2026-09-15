@@ -1,0 +1,6 @@
+patching file Makeconfig
+Hunk #1 succeeded at 152 (offset -1 lines).
+Hunk #2 succeeded at 665 (offset -1 lines).
+patching file elf/Makefile
+patching file elf/ldconfig.c
+Pinned glibc 2.44 source with Ubuntu multiarch patch prepared

@@ -1,0 +1,1950 @@
+Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+Linux version 4.19.294 (docker@2fbcc3225bf9) (gcc version 10.3.0 (Buildroot 2021.02.4)) #36 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026
+Machine model: linux,dummy-virt
+earlycon: pl11 at MMIO32 0x0000000009000000 (options '')
+bootconsole [pl11] enabled
+On node 0 totalpages: 262144
+  DMA32 zone: 4096 pages used for memmap
+  DMA32 zone: 0 pages reserved
+  DMA32 zone: 262144 pages, LIFO batch:63
+psci: probing for conduit method from DT.
+psci: PSCIv1.1 detected in firmware.
+psci: Using standard PSCI v0.2 function IDs
+psci: Trusted OS migration not required
+psci: SMC Calling Convention v1.0
+percpu: Embedded 32 pages/cpu s94168 r8192 d28712 u131072
+pcpu-alloc: s94168 r8192 d28712 u131072 alloc=32*4096
+pcpu-alloc: [0] 0 [0] 1 
+Detected VIPT I-cache on CPU0
+CPU features: enabling workaround for ARM erratum 843419
+CPU features: enabling workaround for ARM erratum 845719
+Built 1 zonelists, mobility grouping on.  Total pages: 258048
+Kernel command line: console=ttyAMA0 earlycon=pl011,mmio32,0x09000000 rdinit=/init panic=0 oops=panic nokaslr loglevel=8 initcall_debug initcall_blacklist=bcm_pmc_drv_reg,bcm_ubus_drv_init,pmc_xrdp_init,pmc_wan_initcall,bcmbca_vreg_sync_drv_reg
+blacklisting initcall bcm_pmc_drv_reg
+blacklisting initcall bcm_ubus_drv_init
+blacklisting initcall pmc_xrdp_init
+blacklisting initcall pmc_wan_initcall
+blacklisting initcall bcmbca_vreg_sync_drv_reg
+Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+Memory: 940996K/1048576K available (8638K kernel code, 570K rwdata, 1876K rodata, 1344K init, 740K bss, 107580K reserved, 0K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+rcu: Preemptible hierarchical RCU implementation.
+rcu: 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+	Tasks RCU enabled.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
+Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=62500)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+/cpus/cpu-map: empty cluster
+calling  cpu_suspend_init+0x0/0x58 @ 1
+initcall cpu_suspend_init+0x0/0x58 returned 0 after 0 usecs
+calling  asids_init+0x0/0xe0 @ 1
+ASID allocator initialised with 32768 entries
+initcall asids_init+0x0/0xe0 returned 0 after 0 usecs
+calling  spawn_ksoftirqd+0x0/0x48 @ 1
+initcall spawn_ksoftirqd+0x0/0x48 returned 0 after 0 usecs
+calling  migration_init+0x0/0x4c @ 1
+initcall migration_init+0x0/0x4c returned 0 after 0 usecs
+calling  check_cpu_stall_init+0x0/0x2c @ 1
+initcall check_cpu_stall_init+0x0/0x2c returned 0 after 0 usecs
+calling  srcu_bootup_announce+0x0/0x40 @ 1
+rcu: Hierarchical SRCU implementation.
+initcall srcu_bootup_announce+0x0/0x40 returned 0 after 0 usecs
+calling  rcu_spawn_gp_kthread+0x0/0x150 @ 1
+initcall rcu_spawn_gp_kthread+0x0/0x150 returned 0 after 976 usecs
+calling  cpu_stop_init+0x0/0xb4 @ 1
+initcall cpu_stop_init+0x0/0xb4 returned 0 after 976 usecs
+calling  init_zero_pfn+0x0/0x28 @ 1
+initcall init_zero_pfn+0x0/0x28 returned 0 after 0 usecs
+calling  its_pmsi_init+0x0/0x154 @ 1
+initcall its_pmsi_init+0x0/0x154 returned 0 after 0 usecs
+calling  its_pci_msi_init+0x0/0x154 @ 1
+initcall its_pci_msi_init+0x0/0x154 returned 0 after 0 usecs
+calling  dummy_timer_register+0x0/0x34 @ 1
+initcall dummy_timer_register+0x0/0x34 returned 0 after 0 usecs
+calling  bcm_arch_early_init+0x0/0xb4 @ 1
+Boot Device: NAND 2K Page
+Boot Device: NAND 2K Page
+Boot Device: NAND 2K Page
+uboot_max_len missing, using defaults 16384
+uboot env missing
+Failed to retrieve boot CFE version from dtb!
+BoardId [], NVRAM_ULBOARDSTUFFOPTION=0 
+Boot Device: NAND 2K Page
+initcall bcm_arch_early_init+0x0/0xb4 returned 0 after 1953 usecs
+calling  initialize_ptr_random+0x0/0xb0 @ 1
+initcall initialize_ptr_random+0x0/0xb0 returned 0 after 0 usecs
+smp: Bringing up secondary CPUs ...
+Detected VIPT I-cache on CPU1
+CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+smp: Brought up 1 node, 2 CPUs
+SMP: Total of 2 processors activated.
+CPU features: detected: 32-bit EL0 Support
+CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+CPU: All CPU(s) started at EL1
+alternatives: patching kernel code
+devtmpfs: initialized
+calling  ipc_ns_init+0x0/0x3c @ 1
+initcall ipc_ns_init+0x0/0x3c returned 0 after 976 usecs
+calling  init_mmap_min_addr+0x0/0x18 @ 1
+initcall init_mmap_min_addr+0x0/0x18 returned 0 after 0 usecs
+calling  pci_realloc_setup_params+0x0/0x3c @ 1
+initcall pci_realloc_setup_params+0x0/0x3c returned 0 after 0 usecs
+calling  net_ns_init+0x0/0x13c @ 1
+initcall net_ns_init+0x0/0x13c returned 0 after 976 usecs
+calling  fpsimd_init+0x0/0xd8 @ 1
+initcall fpsimd_init+0x0/0xd8 returned 0 after 0 usecs
+calling  enable_mrs_emulation+0x0/0x24 @ 1
+initcall enable_mrs_emulation+0x0/0x24 returned 0 after 0 usecs
+calling  map_entry_trampoline+0x0/0x1e4 @ 1
+initcall map_entry_trampoline+0x0/0x1e4 returned 0 after 0 usecs
+calling  wq_sysfs_init+0x0/0x40 @ 1
+initcall wq_sysfs_init+0x0/0x40 returned 0 after 0 usecs
+calling  ksysfs_init+0x0/0xb4 @ 1
+initcall ksysfs_init+0x0/0xb4 returned 0 after 0 usecs
+calling  rcu_set_runtime_mode+0x0/0x14 @ 1
+initcall rcu_set_runtime_mode+0x0/0x14 returned 0 after 0 usecs
+calling  rcu_spawn_tasks_kthread+0x0/0x58 @ 1
+initcall rcu_spawn_tasks_kthread+0x0/0x58 returned 0 after 0 usecs
+calling  dma_init_reserved_memory+0x0/0x64 @ 1
+initcall dma_init_reserved_memory+0x0/0x64 returned -12 after 0 usecs
+calling  init_jiffies_clocksource+0x0/0x24 @ 1
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+initcall init_jiffies_clocksource+0x0/0x24 returned 0 after 976 usecs
+calling  futex_init+0x0/0x128 @ 1
+futex hash table entries: 512 (order: 3, 32768 bytes)
+initcall futex_init+0x0/0x128 returned 0 after 0 usecs
+calling  cgroup_wq_init+0x0/0x40 @ 1
+initcall cgroup_wq_init+0x0/0x40 returned 0 after 0 usecs
+calling  cgroup1_wq_init+0x0/0x40 @ 1
+initcall cgroup1_wq_init+0x0/0x40 returned 0 after 0 usecs
+calling  cma_init_reserved_areas+0x0/0x1a4 @ 1
+initcall cma_init_reserved_areas+0x0/0x1a4 returned 0 after 0 usecs
+calling  fsnotify_init+0x0/0x58 @ 1
+initcall fsnotify_init+0x0/0x58 returned 0 after 0 usecs
+calling  filelock_init+0x0/0xbc @ 1
+initcall filelock_init+0x0/0xbc returned 0 after 0 usecs
+calling  init_script_binfmt+0x0/0x24 @ 1
+initcall init_script_binfmt+0x0/0x24 returned 0 after 976 usecs
+calling  init_elf_binfmt+0x0/0x24 @ 1
+initcall init_elf_binfmt+0x0/0x24 returned 0 after 0 usecs
+calling  init_compat_elf_binfmt+0x0/0x24 @ 1
+initcall init_compat_elf_binfmt+0x0/0x24 returned 0 after 0 usecs
+calling  configfs_init+0x0/0xb4 @ 1
+initcall configfs_init+0x0/0xb4 returned 0 after 0 usecs
+calling  debugfs_init+0x0/0x74 @ 1
+initcall debugfs_init+0x0/0x74 returned 0 after 0 usecs
+calling  prandom_init_early+0x0/0x120 @ 1
+initcall prandom_init_early+0x0/0x120 returned 0 after 0 usecs
+calling  pinctrl_init+0x0/0xc0 @ 1
+pinctrl core: initialized pinctrl subsystem
+initcall pinctrl_init+0x0/0xc0 returned 0 after 976 usecs
+calling  gpiolib_dev_init+0x0/0xec @ 1
+initcall gpiolib_dev_init+0x0/0xec returned 0 after 0 usecs
+calling  regulator_init+0x0/0xb0 @ 1
+probe of reg-dummy returned 1 after 2000 usecs
+initcall regulator_init+0x0/0xb0 returned 0 after 2929 usecs
+calling  component_debug_init+0x0/0x30 @ 1
+initcall component_debug_init+0x0/0x30 returned 0 after 0 usecs
+calling  free_raw_capacity+0x0/0x30 @ 1
+initcall free_raw_capacity+0x0/0x30 returned 0 after 0 usecs
+calling  cpuidle_init+0x0/0x58 @ 1
+initcall cpuidle_init+0x0/0x58 returned 0 after 0 usecs
+calling  sock_init+0x0/0xb0 @ 1
+size of sk_buff 576
+offset of cb in sk_buff 400
+initcall sock_init+0x0/0xb0 returned 0 after 976 usecs
+calling  net_inuse_init+0x0/0x30 @ 1
+initcall net_inuse_init+0x0/0x30 returned 0 after 0 usecs
+calling  net_defaults_init+0x0/0x30 @ 1
+initcall net_defaults_init+0x0/0x30 returned 0 after 0 usecs
+calling  init_default_flow_dissectors+0x0/0x54 @ 1
+initcall init_default_flow_dissectors+0x0/0x54 returned 0 after 0 usecs
+calling  netlink_proto_init+0x0/0x168 @ 1
+NET: Registered protocol family 16
+initcall netlink_proto_init+0x0/0x168 returned 0 after 1953 usecs
+calling  bcm_otp_drv_reg+0x0/0x50 @ 1
+OTP driver initcall
+OTP driver scanning DT
+initcall bcm_otp_drv_reg+0x0/0x50 returned 0 after 0 usecs
+calling  bcm_strap_drv_reg+0x0/0x194 @ 1
+Strap driver initcall
+Failed to find strap dts node
+Strap Register: 0xffffffff
+initcall bcm_strap_drv_reg+0x0/0x194 returned 0 after 976 usecs
+calling  debug_monitors_init+0x0/0x40 @ 1
+initcall debug_monitors_init+0x0/0x40 returned 0 after 0 usecs
+calling  irq_sysfs_init+0x0/0xe8 @ 1
+initcall irq_sysfs_init+0x0/0xe8 returned 0 after 976 usecs
+calling  init_per_zone_wmark_min+0x0/0x80 @ 1
+initcall init_per_zone_wmark_min+0x0/0x80 returned 0 after 0 usecs
+calling  bdi_class_init+0x0/0x68 @ 1
+initcall bdi_class_init+0x0/0x68 returned 0 after 0 usecs
+calling  mm_sysfs_init+0x0/0x38 @ 1
+initcall mm_sysfs_init+0x0/0x38 returned 0 after 0 usecs
+calling  gpiolib_sysfs_init+0x0/0xb0 @ 1
+initcall gpiolib_sysfs_init+0x0/0xb0 returned 0 after 0 usecs
+calling  pcibus_class_init+0x0/0x24 @ 1
+initcall pcibus_class_init+0x0/0x24 returned 0 after 0 usecs
+calling  pci_driver_init+0x0/0x34 @ 1
+initcall pci_driver_init+0x0/0x34 returned 0 after 0 usecs
+calling  amba_init+0x0/0x1c @ 1
+initcall amba_init+0x0/0x1c returned 0 after 0 usecs
+calling  tty_class_init+0x0/0x50 @ 1
+initcall tty_class_init+0x0/0x50 returned 0 after 0 usecs
+calling  regmap_initcall+0x0/0x18 @ 1
+initcall regmap_initcall+0x0/0x18 returned 0 after 0 usecs
+calling  syscon_init+0x0/0x24 @ 1
+initcall syscon_init+0x0/0x24 returned 0 after 0 usecs
+calling  spi_init+0x0/0x9c @ 1
+initcall spi_init+0x0/0x9c returned 0 after 0 usecs
+calling  i2c_init+0x0/0xac @ 1
+initcall i2c_init+0x0/0xac returned 0 after 0 usecs
+calling  init_menu+0x0/0x1c @ 1
+cpuidle: using governor menu
+initcall init_menu+0x0/0x1c returned 0 after 976 usecs
+calling  bcmbca_gpio_drv_reg+0x0/0x20 @ 1
+initcall bcmbca_gpio_drv_reg+0x0/0x20 returned 0 after 0 usecs
+calling  bcmbca_led_ctrl_drv_reg+0x0/0x20 @ 1
+initcall bcmbca_led_ctrl_drv_reg+0x0/0x20 returned 0 after 0 usecs
+calling  bcmbca_cled_ctrl_drv_reg+0x0/0x20 @ 1
+initcall bcmbca_cled_ctrl_drv_reg+0x0/0x20 returned 0 after 0 usecs
+calling  bcmbca_pinctrl_drv_reg+0x0/0x20 @ 1
+initcall bcmbca_pinctrl_drv_reg+0x0/0x20 returned 0 after 0 usecs
+initcall bcm_pmc_drv_reg blacklisted
+initcall bcm_ubus_drv_init blacklisted
+calling  kobject_uevent_init+0x0/0x20 @ 1
+initcall kobject_uevent_init+0x0/0x20 returned 0 after 0 usecs
+calling  debug_traps_init+0x0/0x54 @ 1
+initcall debug_traps_init+0x0/0x54 returned 0 after 0 usecs
+calling  reserve_memblock_reserved_regions+0x0/0x120 @ 1
+initcall reserve_memblock_reserved_regions+0x0/0x120 returned 0 after 0 usecs
+calling  alloc_vectors_page+0x0/0xc0 @ 1
+initcall alloc_vectors_page+0x0/0xc0 returned 0 after 0 usecs
+calling  vdso_init+0x0/0x108 @ 1
+initcall vdso_init+0x0/0x108 returned 0 after 0 usecs
+calling  arm64_dma_init+0x0/0x90 @ 1
+DMA: preallocated 256 KiB pool for atomic allocations
+initcall arm64_dma_init+0x0/0x90 returned 0 after 0 usecs
+calling  pl011_init+0x0/0x50 @ 1
+Serial: AMBA PL011 UART driver
+initcall pl011_init+0x0/0x50 returned 0 after 976 usecs
+calling  bcm_misc_hw_init+0x0/0x10 @ 1
+initcall bcm_misc_hw_init+0x0/0x10 returned 0 after 0 usecs
+calling  bcm_rsvmem_init+0x0/0x30 @ 1
+initcall bcm_rsvmem_init+0x0/0x30 returned 0 after 0 usecs
+calling  bcmbca_extintr_drv_reg+0x0/0x20 @ 1
+initcall bcmbca_extintr_drv_reg+0x0/0x20 returned 0 after 0 usecs
+initcall pmc_xrdp_init blacklisted
+initcall pmc_wan_initcall blacklisted
+calling  of_platform_default_populate_init+0x0/0xbc @ 1
+9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 39, base_baud = 0) is a PL011 rev1
+console [ttyAMA0] enabled
+console [ttyAMA0] enabled
+bootconsole [pl11] disabled
+bootconsole [pl11] disabled
+probe of 9000000.pl011 returned 1 after 5000 usecs
+initcall of_platform_default_populate_init+0x0/0xbc returned 0 after 10742 usecs
+calling  topology_init+0x0/0x80 @ 1
+initcall topology_init+0x0/0x80 returned 0 after 0 usecs
+calling  uid_cache_init+0x0/0x94 @ 1
+initcall uid_cache_init+0x0/0x94 returned 0 after 0 usecs
+calling  param_sysfs_init+0x0/0x240 @ 1
+initcall param_sysfs_init+0x0/0x240 returned 0 after 2929 usecs
+calling  user_namespace_sysctl_init+0x0/0x4c @ 1
+initcall user_namespace_sysctl_init+0x0/0x4c returned 0 after 976 usecs
+calling  pm_sysrq_init+0x0/0x24 @ 1
+initcall pm_sysrq_init+0x0/0x24 returned 0 after 0 usecs
+calling  crash_save_vmcoreinfo_init+0x0/0x570 @ 1
+initcall crash_save_vmcoreinfo_init+0x0/0x570 returned 0 after 0 usecs
+calling  cgroup_sysfs_init+0x0/0x28 @ 1
+initcall cgroup_sysfs_init+0x0/0x28 returned 0 after 0 usecs
+calling  cgroup_namespaces_init+0x0/0x8 @ 1
+initcall cgroup_namespaces_init+0x0/0x8 returned 0 after 0 usecs
+calling  oom_init+0x0/0x3c @ 1
+initcall oom_init+0x0/0x3c returned 0 after 0 usecs
+calling  default_bdi_init+0x0/0xa4 @ 1
+initcall default_bdi_init+0x0/0xa4 returned 0 after 0 usecs
+calling  percpu_enable_async+0x0/0x14 @ 1
+initcall percpu_enable_async+0x0/0x14 returned 0 after 0 usecs
+calling  kcompactd_init+0x0/0x64 @ 1
+initcall kcompactd_init+0x0/0x64 returned 0 after 0 usecs
+calling  init_user_reserve+0x0/0x30 @ 1
+initcall init_user_reserve+0x0/0x30 returned 0 after 0 usecs
+calling  init_admin_reserve+0x0/0x30 @ 1
+initcall init_admin_reserve+0x0/0x30 returned 0 after 0 usecs
+calling  init_reserve_notifier+0x0/0x8 @ 1
+initcall init_reserve_notifier+0x0/0x8 returned 0 after 0 usecs
+calling  swap_init_sysfs+0x0/0x74 @ 1
+initcall swap_init_sysfs+0x0/0x74 returned 0 after 0 usecs
+calling  swapfile_init+0x0/0x54 @ 1
+initcall swapfile_init+0x0/0x54 returned 0 after 0 usecs
+calling  hugetlb_init+0x0/0x4a8 @ 1
+HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+initcall hugetlb_init+0x0/0x4a8 returned 0 after 0 usecs
+calling  ksm_init+0x0/0x190 @ 1
+initcall ksm_init+0x0/0x190 returned 0 after 0 usecs
+calling  hugepage_init+0x0/0x158 @ 1
+initcall hugepage_init+0x0/0x158 returned 0 after 0 usecs
+calling  mem_cgroup_init+0x0/0xe8 @ 1
+initcall mem_cgroup_init+0x0/0xe8 returned 0 after 0 usecs
+calling  mem_cgroup_swap_init+0x0/0x98 @ 1
+initcall mem_cgroup_swap_init+0x0/0x98 returned 0 after 0 usecs
+calling  crypto_wq_init+0x0/0x40 @ 1
+initcall crypto_wq_init+0x0/0x40 returned 0 after 0 usecs
+calling  cryptomgr_init+0x0/0x1c @ 1
+initcall cryptomgr_init+0x0/0x1c returned 0 after 0 usecs
+calling  cryptd_init+0x0/0xf8 @ 1
+cryptd: max_cpu_qlen set to 1000
+initcall cryptd_init+0x0/0xf8 returned 0 after 0 usecs
+calling  zstd_mod_init+0x0/0x4c @ 1
+initcall zstd_mod_init+0x0/0x4c returned 0 after 0 usecs
+calling  init_bio+0x0/0xc8 @ 1
+initcall init_bio+0x0/0xc8 returned 0 after 976 usecs
+calling  blk_settings_init+0x0/0x30 @ 1
+initcall blk_settings_init+0x0/0x30 returned 0 after 0 usecs
+calling  blk_ioc_init+0x0/0x3c @ 1
+initcall blk_ioc_init+0x0/0x3c returned 0 after 0 usecs
+calling  blk_softirq_init+0x0/0xa4 @ 1
+initcall blk_softirq_init+0x0/0xa4 returned 0 after 0 usecs
+calling  blk_mq_init+0x0/0x38 @ 1
+initcall blk_mq_init+0x0/0x38 returned 0 after 0 usecs
+calling  genhd_device_init+0x0/0x9c @ 1
+initcall genhd_device_init+0x0/0x9c returned 0 after 976 usecs
+calling  gpiolib_debugfs_init+0x0/0x38 @ 1
+initcall gpiolib_debugfs_init+0x0/0x38 returned 0 after 0 usecs
+calling  pci_slot_init+0x0/0x60 @ 1
+initcall pci_slot_init+0x0/0x60 returned 0 after 0 usecs
+calling  regulator_fixed_voltage_init+0x0/0x20 @ 1
+initcall regulator_fixed_voltage_init+0x0/0x20 returned 0 after 0 usecs
+calling  misc_init+0x0/0xe8 @ 1
+initcall misc_init+0x0/0xe8 returned 0 after 0 usecs
+calling  register_cpu_capacity_sysctl+0x0/0xa0 @ 1
+initcall register_cpu_capacity_sysctl+0x0/0xa0 returned 0 after 0 usecs
+calling  phy_init+0x0/0x6c @ 1
+initcall phy_init+0x0/0x6c returned 0 after 0 usecs
+calling  serio_init+0x0/0x44 @ 1
+initcall serio_init+0x0/0x44 returned 0 after 0 usecs
+calling  input_init+0x0/0x120 @ 1
+initcall input_init+0x0/0x120 returned 0 after 976 usecs
+calling  power_supply_class_init+0x0/0x5c @ 1
+initcall power_supply_class_init+0x0/0x5c returned 0 after 0 usecs
+calling  mmc_init+0x0/0x48 @ 1
+initcall mmc_init+0x0/0x48 returned 0 after 0 usecs
+calling  leds_init+0x0/0x60 @ 1
+initcall leds_init+0x0/0x60 returned 0 after 0 usecs
+calling  iio_init+0x0/0xa4 @ 1
+initcall iio_init+0x0/0xa4 returned 0 after 0 usecs
+calling  proto_init+0x0/0x1c @ 1
+initcall proto_init+0x0/0x1c returned 0 after 976 usecs
+calling  net_dev_init+0x0/0x204 @ 1
+initcall net_dev_init+0x0/0x204 returned 0 after 2929 usecs
+calling  neigh_init+0x0/0xa0 @ 1
+initcall neigh_init+0x0/0xa0 returned 0 after 0 usecs
+calling  fib_notifier_init+0x0/0x1c @ 1
+initcall fib_notifier_init+0x0/0x1c returned 0 after 0 usecs
+calling  fib_rules_init+0x0/0xd0 @ 1
+initcall fib_rules_init+0x0/0xd0 returned 0 after 976 usecs
+calling  pktsched_init+0x0/0x134 @ 1
+initcall pktsched_init+0x0/0x134 returned 0 after 0 usecs
+calling  tc_filter_init+0x0/0x120 @ 1
+initcall tc_filter_init+0x0/0x120 returned 0 after 0 usecs
+calling  tc_action_init+0x0/0x84 @ 1
+initcall tc_action_init+0x0/0x84 returned 0 after 0 usecs
+calling  genl_init+0x0/0x4c @ 1
+initcall genl_init+0x0/0x4c returned 0 after 976 usecs
+calling  bcm_timers_init+0x0/0x20 @ 1
+initcall bcm_timers_init+0x0/0x20 returned 0 after 0 usecs
+calling  bcmbca_leds_drv_reg+0x0/0x20 @ 1
+initcall bcmbca_leds_drv_reg+0x0/0x20 returned 0 after 0 usecs
+calling  button_init+0x0/0x20 @ 1
+initcall button_init+0x0/0x20 returned 0 after 0 usecs
+calling  kerSysInitDyingGaspHandler+0x0/0x80 @ 1
+initcall kerSysInitDyingGaspHandler+0x0/0x80 returned 0 after 0 usecs
+calling  remap_ubus_masters_biu+0x0/0xc0 @ 1
+initcall remap_ubus_masters_biu+0x0/0xc0 returned 0 after 0 usecs
+calling  __init_gbpm+0x0/0x24 @ 1
+Broadcom GBPMv0.1 initialized
+initcall __init_gbpm+0x0/0x24 returned 0 after 0 usecs
+calling  __init_iqos+0x0/0x20 @ 1
+Broadcom IQoS v1.0 initialized
+initcall __init_iqos+0x0/0x20 returned 0 after 0 usecs
+calling  bcmLog_init+0x0/0x90 @ 1
+Broadcom Logger v0.1
+initcall bcmLog_init+0x0/0x90 returned 0 after 0 usecs
+calling  bcmnet_ioctl_init+0x0/0x268 @ 1
+Char device /dev/bcmnet(252) registered
+Assigning idx[1] for lo
+initcall bcmnet_ioctl_init+0x0/0x268 returned 0 after 976 usecs
+calling  bcm_sysfs_init+0x0/0x20 @ 1
+initcall bcm_sysfs_init+0x0/0x20 returned 0 after 0 usecs
+calling  bcm_skb_free_init+0x0/0x28 @ 1
+skb_free_task created successfully with start budget 32, period 10ms
+initcall bcm_skb_free_init+0x0/0x28 returned 0 after 0 usecs
+calling  bcm_sw_gso_init+0x0/0x8 @ 1
+initcall bcm_sw_gso_init+0x0/0x8 returned 0 after 0 usecs
+calling  __init_blog+0x0/0x164 @ 1
+[0;34mBLOG v3.0 Initialized[0m
+initcall __init_blog+0x0/0x164 returned 0 after 0 usecs
+calling  __init_blog_rule+0x0/0x64 @ 1
+BLOG Rule v1.0 Initialized
+initcall __init_blog_rule+0x0/0x64 returned 0 after 0 usecs
+calling  bcm_tcp_init+0x0/0x3c @ 1
+bcm_tcp_task created successfully with budget 256 ,cpumask:0x0
+initcall bcm_tcp_init+0x0/0x3c returned 0 after 976 usecs
+calling  watchdog_init+0x0/0xac @ 1
+initcall watchdog_init+0x0/0xac returned 0 after 976 usecs
+calling  bcmbca_legacy_leds_drv_reg+0x0/0x24 @ 1
+initcall bcmbca_legacy_leds_drv_reg+0x0/0x24 returned 0 after 0 usecs
+initcall bcmbca_vreg_sync_drv_reg blacklisted
+calling  create_debug_debugfs_entry+0x0/0x30 @ 1
+initcall create_debug_debugfs_entry+0x0/0x30 returned 0 after 0 usecs
+calling  clocksource_done_booting+0x0/0x5c @ 1
+clocksource: Switched to clocksource arch_sys_counter
+initcall clocksource_done_booting+0x0/0x5c returned 0 after 1153 usecs
+calling  init_pipe_fs+0x0/0x5c @ 1
+initcall init_pipe_fs+0x0/0x5c returned 0 after 53 usecs
+calling  inotify_user_setup+0x0/0x5c @ 1
+initcall inotify_user_setup+0x0/0x5c returned 0 after 18 usecs
+calling  eventpoll_init+0x0/0xd8 @ 1
+initcall eventpoll_init+0x0/0xd8 returned 0 after 85 usecs
+calling  anon_inode_init+0x0/0x6c @ 1
+initcall anon_inode_init+0x0/0x6c returned 0 after 72 usecs
+calling  proc_locks_init+0x0/0x38 @ 1
+initcall proc_locks_init+0x0/0x38 returned 0 after 15 usecs
+calling  proc_cmdline_init+0x0/0x34 @ 1
+initcall proc_cmdline_init+0x0/0x34 returned 0 after 8 usecs
+calling  proc_consoles_init+0x0/0x38 @ 1
+initcall proc_consoles_init+0x0/0x38 returned 0 after 11 usecs
+calling  proc_cpuinfo_init+0x0/0x30 @ 1
+initcall proc_cpuinfo_init+0x0/0x30 returned 0 after 8 usecs
+calling  proc_devices_init+0x0/0x38 @ 1
+initcall proc_devices_init+0x0/0x38 returned 0 after 8 usecs
+calling  proc_interrupts_init+0x0/0x38 @ 1
+initcall proc_interrupts_init+0x0/0x38 returned 0 after 8 usecs
+calling  proc_loadavg_init+0x0/0x34 @ 1
+initcall proc_loadavg_init+0x0/0x34 returned 0 after 7 usecs
+calling  proc_meminfo_init+0x0/0x34 @ 1
+initcall proc_meminfo_init+0x0/0x34 returned 0 after 7 usecs
+calling  proc_stat_init+0x0/0x30 @ 1
+initcall proc_stat_init+0x0/0x30 returned 0 after 7 usecs
+calling  proc_uptime_init+0x0/0x34 @ 1
+initcall proc_uptime_init+0x0/0x34 returned 0 after 8 usecs
+calling  proc_version_init+0x0/0x34 @ 1
+initcall proc_version_init+0x0/0x34 returned 0 after 8 usecs
+calling  proc_softirqs_init+0x0/0x34 @ 1
+initcall proc_softirqs_init+0x0/0x34 returned 0 after 10 usecs
+calling  proc_kcore_init+0x0/0xac @ 1
+initcall proc_kcore_init+0x0/0xac returned 0 after 394 usecs
+calling  proc_kmsg_init+0x0/0x30 @ 1
+initcall proc_kmsg_init+0x0/0x30 returned 0 after 13 usecs
+calling  proc_page_init+0x0/0x6c @ 1
+initcall proc_page_init+0x0/0x6c returned 0 after 19 usecs
+calling  init_ramfs_fs+0x0/0x3c @ 1
+initcall init_ramfs_fs+0x0/0x3c returned 0 after 18 usecs
+calling  init_hugetlbfs_fs+0x0/0x190 @ 1
+initcall init_hugetlbfs_fs+0x0/0x190 returned 0 after 453 usecs
+calling  blk_scsi_ioctl_init+0x0/0xa0 @ 1
+initcall blk_scsi_ioctl_init+0x0/0xa0 returned 0 after 16 usecs
+calling  chr_dev_init+0x0/0xc0 @ 1
+initcall chr_dev_init+0x0/0xc0 returned 0 after 6416 usecs
+calling  thermal_init+0x0/0xc4 @ 1
+initcall thermal_init+0x0/0xc4 returned 0 after 1244 usecs
+calling  sysctl_core_init+0x0/0x40 @ 1
+initcall sysctl_core_init+0x0/0x40 returned 0 after 91 usecs
+calling  eth_offload_init+0x0/0x20 @ 1
+initcall eth_offload_init+0x0/0x20 returned 0 after 34 usecs
+calling  ipv4_offload_init+0x0/0x80 @ 1
+initcall ipv4_offload_init+0x0/0x80 returned 0 after 65 usecs
+calling  inet_init+0x0/0x254 @ 1
+NET: Registered protocol family 2
+IP idents hash table entries: 16384 (order: 5, 131072 bytes)
+tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+UDP hash table entries: 512 (order: 2, 16384 bytes)
+UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+initcall inet_init+0x0/0x254 returned 0 after 6128 usecs
+calling  af_unix_init+0x0/0x64 @ 1
+NET: Registered protocol family 1
+initcall af_unix_init+0x0/0x64 returned 0 after 154 usecs
+calling  ipv6_offload_init+0x0/0x84 @ 1
+initcall ipv6_offload_init+0x0/0x84 returned 0 after 65 usecs
+calling  bcm_tcp_accel_init+0x0/0x28 @ 1
+Assigning idx[2] for blogtcp_local
+blogtcp_local netdev registered successfully 
+initcall bcm_tcp_accel_init+0x0/0x28 returned 0 after 959 usecs
+calling  pci_apply_final_quirks+0x0/0x144 @ 1
+PCI: CLS 0 bytes, default 64
+initcall pci_apply_final_quirks+0x0/0x144 returned 0 after 173 usecs
+calling  populate_rootfs+0x0/0x140 @ 1
+Trying to unpack rootfs image as initramfs...
+Freeing initrd memory: 74972K
+initcall populate_rootfs+0x0/0x140 returned 0 after 221825 usecs
+calling  register_kernel_offset_dumper+0x0/0x28 @ 1
+initcall register_kernel_offset_dumper+0x0/0x28 returned 0 after 10 usecs
+calling  cpuinfo_regs_init+0x0/0xc4 @ 1
+initcall cpuinfo_regs_init+0x0/0xc4 returned 0 after 523 usecs
+calling  register_cpu_hwcaps_dumper+0x0/0x2c @ 1
+initcall register_cpu_hwcaps_dumper+0x0/0x2c returned 0 after 8 usecs
+calling  register_mem_limit_dumper+0x0/0x2c @ 1
+initcall register_mem_limit_dumper+0x0/0x2c returned 0 after 7 usecs
+calling  ptdump_init+0x0/0x70 @ 1
+initcall ptdump_init+0x0/0x70 returned 0 after 62 usecs
+calling  cpu_feature_match_SHA1_init+0x0/0x30 @ 1
+initcall cpu_feature_match_SHA1_init+0x0/0x30 returned 0 after 753 usecs
+calling  cpu_feature_match_SHA2_init+0x0/0x34 @ 1
+initcall cpu_feature_match_SHA2_init+0x0/0x34 returned 0 after 1607 usecs
+calling  cpu_feature_match_SHA512_init+0x0/0x34 @ 1
+initcall cpu_feature_match_SHA512_init+0x0/0x34 returned -19 after 9 usecs
+calling  cpu_feature_match_AES_init+0x0/0x30 @ 1
+initcall cpu_feature_match_AES_init+0x0/0x30 returned 0 after 854 usecs
+calling  aes_mod_init+0x0/0x30 @ 1
+initcall aes_mod_init+0x0/0x30 returned 0 after 709 usecs
+calling  cpu_feature_match_AES_init+0x0/0xc4 @ 1
+initcall cpu_feature_match_AES_init+0x0/0xc4 returned 0 after 4961 usecs
+calling  aes_init+0x0/0xb4 @ 1
+initcall aes_init+0x0/0xb4 returned 0 after 1791 usecs
+calling  sha256_mod_init+0x0/0x70 @ 1
+initcall sha256_mod_init+0x0/0x70 returned 0 after 1667 usecs
+calling  sha512_mod_init+0x0/0x20 @ 1
+initcall sha512_mod_init+0x0/0x20 returned 0 after 1429 usecs
+calling  aes_init+0x0/0x1c @ 1
+initcall aes_init+0x0/0x1c returned 0 after 1481 usecs
+calling  proc_execdomains_init+0x0/0x34 @ 1
+initcall proc_execdomains_init+0x0/0x34 returned 0 after 35 usecs
+calling  register_warn_debugfs+0x0/0x34 @ 1
+initcall register_warn_debugfs+0x0/0x34 returned 0 after 47 usecs
+calling  cpuhp_sysfs_init+0x0/0xa8 @ 1
+initcall cpuhp_sysfs_init+0x0/0xa8 returned 0 after 94 usecs
+calling  ioresources_init+0x0/0x6c @ 1
+initcall ioresources_init+0x0/0x6c returned 0 after 64 usecs
+calling  psi_proc_init+0x0/0x7c @ 1
+initcall psi_proc_init+0x0/0x7c returned 0 after 42 usecs
+calling  timekeeping_init_ops+0x0/0x24 @ 1
+initcall timekeeping_init_ops+0x0/0x24 returned 0 after 77 usecs
+calling  init_clocksource_sysfs+0x0/0x38 @ 1
+initcall init_clocksource_sysfs+0x0/0x38 returned 0 after 156 usecs
+calling  init_timer_list_procfs+0x0/0x40 @ 1
+initcall init_timer_list_procfs+0x0/0x40 returned 0 after 49 usecs
+calling  alarmtimer_init+0x0/0xec @ 1
+probe of alarmtimer returned 1 after 46 usecs
+initcall alarmtimer_init+0x0/0xec returned 0 after 423 usecs
+calling  init_posix_timers+0x0/0x3c @ 1
+initcall init_posix_timers+0x0/0x3c returned 0 after 54 usecs
+calling  clockevents_init_sysfs+0x0/0xe0 @ 1
+initcall clockevents_init_sysfs+0x0/0xe0 returned 0 after 158 usecs
+calling  sched_clock_syscore_init+0x0/0x24 @ 1
+initcall sched_clock_syscore_init+0x0/0x24 returned 0 after 27 usecs
+calling  proc_modules_init+0x0/0x34 @ 1
+initcall proc_modules_init+0x0/0x34 returned 0 after 25 usecs
+calling  kallsyms_init+0x0/0x30 @ 1
+initcall kallsyms_init+0x0/0x30 returned 0 after 51 usecs
+calling  pid_namespaces_init+0x0/0x3c @ 1
+initcall pid_namespaces_init+0x0/0x3c returned 0 after 53 usecs
+calling  ikconfig_init+0x0/0x44 @ 1
+initcall ikconfig_init+0x0/0x44 returned 0 after 42 usecs
+calling  seccomp_sysctl_init+0x0/0x34 @ 1
+initcall seccomp_sysctl_init+0x0/0x34 returned 0 after 110 usecs
+calling  utsname_sysctl_init+0x0/0x20 @ 1
+initcall utsname_sysctl_init+0x0/0x20 returned 0 after 176 usecs
+calling  system_trusted_keyring_init+0x0/0x68 @ 1
+Initialise system trusted keyrings
+initcall system_trusted_keyring_init+0x0/0x68 returned 0 after 503 usecs
+calling  kswapd_init+0x0/0x58 @ 1
+initcall kswapd_init+0x0/0x58 returned 0 after 545 usecs
+calling  extfrag_debug_init+0x0/0x94 @ 1
+initcall extfrag_debug_init+0x0/0x94 returned 0 after 181 usecs
+calling  mm_compute_batch_init+0x0/0x64 @ 1
+initcall mm_compute_batch_init+0x0/0x64 returned 0 after 24 usecs
+calling  slab_proc_init+0x0/0x30 @ 1
+initcall slab_proc_init+0x0/0x30 returned 0 after 27 usecs
+calling  workingset_init+0x0/0xb4 @ 1
+workingset: timestamp_bits=46 max_order=18 bucket_order=0
+initcall workingset_init+0x0/0xb4 returned 0 after 129 usecs
+calling  proc_vmalloc_init+0x0/0x38 @ 1
+initcall proc_vmalloc_init+0x0/0x38 returned 0 after 11 usecs
+calling  memblock_init_debugfs+0x0/0x8c @ 1
+initcall memblock_init_debugfs+0x0/0x8c returned 0 after 62 usecs
+calling  procswaps_init+0x0/0x34 @ 1
+initcall procswaps_init+0x0/0x34 returned 0 after 10 usecs
+calling  init_frontswap+0x0/0xa4 @ 1
+initcall init_frontswap+0x0/0xa4 returned 0 after 79 usecs
+calling  slab_sysfs_init+0x0/0x124 @ 1
+initcall slab_sysfs_init+0x0/0x124 returned 0 after 3948 usecs
+calling  fcntl_init+0x0/0x3c @ 1
+initcall fcntl_init+0x0/0x3c returned 0 after 88 usecs
+calling  proc_filesystems_init+0x0/0x34 @ 1
+initcall proc_filesystems_init+0x0/0x34 returned 0 after 11 usecs
+calling  start_dirtytime_writeback+0x0/0x3c @ 1
+initcall start_dirtytime_writeback+0x0/0x3c returned 0 after 36 usecs
+calling  blkdev_init+0x0/0x28 @ 1
+initcall blkdev_init+0x0/0x28 returned 0 after 105 usecs
+calling  dio_init+0x0/0x3c @ 1
+initcall dio_init+0x0/0x3c returned 0 after 75 usecs
+calling  dnotify_init+0x0/0x8c @ 1
+initcall dnotify_init+0x0/0x8c returned 0 after 170 usecs
+calling  init_sys32_ioctl+0x0/0x34 @ 1
+initcall init_sys32_ioctl+0x0/0x34 returned 0 after 389 usecs
+calling  mbcache_init+0x0/0x40 @ 1
+initcall mbcache_init+0x0/0x40 returned 0 after 62 usecs
+calling  init_devpts_fs+0x0/0x3c @ 1
+initcall init_devpts_fs+0x0/0x3c returned 0 after 40 usecs
+calling  ext4_init_fs+0x0/0x184 @ 1
+initcall ext4_init_fs+0x0/0x184 returned 0 after 542 usecs
+calling  journal_init+0x0/0x12c @ 1
+initcall journal_init+0x0/0x12c returned 0 after 405 usecs
+calling  init_squashfs_fs+0x0/0x84 @ 1
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+initcall init_squashfs_fs+0x0/0x84 returned 0 after 145 usecs
+calling  init_jffs2_fs+0x0/0xd4 @ 1
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+initcall init_jffs2_fs+0x0/0xd4 returned 0 after 919 usecs
+calling  init_autofs_fs+0x0/0x38 @ 1
+initcall init_autofs_fs+0x0/0x38 returned 0 after 1353 usecs
+calling  fuse_init+0x0/0x148 @ 1
+fuse init (API version 7.27)
+initcall fuse_init+0x0/0x148 returned 0 after 1016 usecs
+calling  ipc_init+0x0/0x30 @ 1
+initcall ipc_init+0x0/0x30 returned 0 after 118 usecs
+calling  ipc_sysctl_init+0x0/0x20 @ 1
+initcall ipc_sysctl_init+0x0/0x20 returned 0 after 19 usecs
+calling  init_mqueue_fs+0x0/0xbc @ 1
+initcall init_mqueue_fs+0x0/0xbc returned 0 after 336 usecs
+calling  key_proc_init+0x0/0x84 @ 1
+initcall key_proc_init+0x0/0x84 returned 0 after 24 usecs
+calling  crypto_algapi_init+0x0/0x18 @ 1
+initcall crypto_algapi_init+0x0/0x18 returned 0 after 14 usecs
+calling  seqiv_module_init+0x0/0x1c @ 1
+initcall seqiv_module_init+0x0/0x1c returned 0 after 22 usecs
+calling  echainiv_module_init+0x0/0x1c @ 1
+initcall echainiv_module_init+0x0/0x1c returned 0 after 10 usecs
+calling  rsa_init+0x0/0x60 @ 1
+initcall rsa_init+0x0/0x60 returned 0 after 1412 usecs
+calling  crypto_cmac_module_init+0x0/0x1c @ 1
+initcall crypto_cmac_module_init+0x0/0x1c returned 0 after 9 usecs
+calling  hmac_module_init+0x0/0x1c @ 1
+initcall hmac_module_init+0x0/0x1c returned 0 after 7 usecs
+calling  crypto_null_mod_init+0x0/0x68 @ 1
+initcall crypto_null_mod_init+0x0/0x68 returned 0 after 3801 usecs
+calling  md4_mod_init+0x0/0x1c @ 1
+initcall md4_mod_init+0x0/0x1c returned 0 after 1877 usecs
+calling  md5_mod_init+0x0/0x1c @ 1
+initcall md5_mod_init+0x0/0x1c returned 0 after 1589 usecs
+calling  sha1_generic_mod_init+0x0/0x1c @ 1
+initcall sha1_generic_mod_init+0x0/0x1c returned 0 after 1651 usecs
+calling  sha256_generic_mod_init+0x0/0x20 @ 1
+initcall sha256_generic_mod_init+0x0/0x20 returned 0 after 2452 usecs
+calling  sha512_generic_mod_init+0x0/0x20 @ 1
+initcall sha512_generic_mod_init+0x0/0x20 returned 0 after 430 usecs
+calling  crypto_ecb_module_init+0x0/0x1c @ 1
+initcall crypto_ecb_module_init+0x0/0x1c returned 0 after 10 usecs
+calling  crypto_cbc_module_init+0x0/0x1c @ 1
+initcall crypto_cbc_module_init+0x0/0x1c returned 0 after 6 usecs
+calling  crypto_module_init+0x0/0x1c @ 1
+initcall crypto_module_init+0x0/0x1c returned 0 after 6 usecs
+calling  crypto_ctr_module_init+0x0/0x58 @ 1
+initcall crypto_ctr_module_init+0x0/0x58 returned 0 after 68 usecs
+calling  crypto_gcm_module_init+0x0/0xcc @ 1
+initcall crypto_gcm_module_init+0x0/0xcc returned 0 after 60 usecs
+calling  crypto_ccm_module_init+0x0/0x88 @ 1
+initcall crypto_ccm_module_init+0x0/0x88 returned 0 after 29 usecs
+calling  des_generic_mod_init+0x0/0x20 @ 1
+initcall des_generic_mod_init+0x0/0x20 returned 0 after 363 usecs
+calling  aes_init+0x0/0x1c @ 1
+initcall aes_init+0x0/0x1c returned 0 after 183 usecs
+calling  arc4_init+0x0/0x20 @ 1
+initcall arc4_init+0x0/0x20 returned 0 after 1809 usecs
+calling  deflate_mod_init+0x0/0x50 @ 1
+initcall deflate_mod_init+0x0/0x50 returned 0 after 471 usecs
+calling  crc32c_mod_init+0x0/0x1c @ 1
+initcall crc32c_mod_init+0x0/0x1c returned 0 after 158 usecs
+calling  crypto_authenc_module_init+0x0/0x1c @ 1
+initcall crypto_authenc_module_init+0x0/0x1c returned 0 after 7 usecs
+calling  crypto_authenc_esn_module_init+0x0/0x1c @ 1
+initcall crypto_authenc_esn_module_init+0x0/0x1c returned 0 after 6 usecs
+calling  lzo_mod_init+0x0/0x4c @ 1
+initcall lzo_mod_init+0x0/0x4c returned 0 after 421 usecs
+calling  drbg_init+0x0/0x1d4 @ 1
+initcall drbg_init+0x0/0x1d4 returned 0 after 1240 usecs
+calling  jent_mod_init+0x0/0x3c @ 1
+initcall jent_mod_init+0x0/0x3c returned 0 after 724 usecs
+calling  ghash_mod_init+0x0/0x1c @ 1
+initcall ghash_mod_init+0x0/0x1c returned 0 after 306 usecs
+calling  asymmetric_key_init+0x0/0x20 @ 1
+Key type asymmetric registered
+initcall asymmetric_key_init+0x0/0x20 returned 0 after 110 usecs
+calling  x509_key_init+0x0/0x1c @ 1
+Asymmetric key parser 'x509' registered
+initcall x509_key_init+0x0/0x1c returned 0 after 166 usecs
+calling  proc_genhd_init+0x0/0x64 @ 1
+initcall proc_genhd_init+0x0/0x64 returned 0 after 37 usecs
+calling  noop_init+0x0/0x1c @ 1
+io scheduler noop registered (default)
+initcall noop_init+0x0/0x1c returned 0 after 165 usecs
+calling  deadline_init+0x0/0x1c @ 1
+io scheduler mq-deadline registered
+initcall deadline_init+0x0/0x1c returned 0 after 91 usecs
+calling  kyber_init+0x0/0x1c @ 1
+io scheduler kyber registered
+initcall kyber_init+0x0/0x1c returned 0 after 111 usecs
+calling  libcrc32c_mod_init+0x0/0x34 @ 1
+initcall libcrc32c_mod_init+0x0/0x34 returned 0 after 73 usecs
+calling  init_kmp+0x0/0x1c @ 1
+initcall init_kmp+0x0/0x1c returned 0 after 60 usecs
+calling  init_bm+0x0/0x1c @ 1
+initcall init_bm+0x0/0x1c returned 0 after 21 usecs
+calling  init_fsm+0x0/0x1c @ 1
+initcall init_fsm+0x0/0x1c returned 0 after 11 usecs
+calling  percpu_counter_startup+0x0/0x84 @ 1
+initcall percpu_counter_startup+0x0/0x84 returned 0 after 144 usecs
+calling  sg_pool_init+0x0/0xec @ 1
+initcall sg_pool_init+0x0/0xec returned 0 after 412 usecs
+calling  mod_init+0x0/0x8 @ 1
+initcall mod_init+0x0/0x8 returned 0 after 3 usecs
+calling  bgpio_driver_init+0x0/0x20 @ 1
+initcall bgpio_driver_init+0x0/0x20 returned 0 after 151 usecs
+calling  pci_proc_init+0x0/0x8c @ 1
+initcall pci_proc_init+0x0/0x8c returned 0 after 36 usecs
+calling  pcie_portdrv_init+0x0/0x3c @ 1
+initcall pcie_portdrv_init+0x0/0x3c returned 0 after 59 usecs
+calling  of_fixed_factor_clk_driver_init+0x0/0x20 @ 1
+initcall of_fixed_factor_clk_driver_init+0x0/0x20 returned 0 after 59 usecs
+calling  of_fixed_clk_driver_init+0x0/0x20 @ 1
+initcall of_fixed_clk_driver_init+0x0/0x20 returned 0 after 53 usecs
+calling  gpio_clk_driver_init+0x0/0x20 @ 1
+initcall gpio_clk_driver_init+0x0/0x20 returned 0 after 62 usecs
+calling  n_null_init+0x0/0x28 @ 1
+initcall n_null_init+0x0/0x28 returned 0 after 20 usecs
+calling  pty_init+0x0/0x36c @ 1
+initcall pty_init+0x0/0x36c returned 0 after 4119 usecs
+calling  sysrq_init+0x0/0x90 @ 1
+initcall sysrq_init+0x0/0x90 returned 0 after 126 usecs
+calling  hwrng_modinit+0x0/0x9c @ 1
+initcall hwrng_modinit+0x0/0x9c returned 0 after 191 usecs
+calling  iproc_rng200_driver_init+0x0/0x20 @ 1
+initcall iproc_rng200_driver_init+0x0/0x20 returned 0 after 76 usecs
+calling  cavium_rng_pf_driver_init+0x0/0x28 @ 1
+initcall cavium_rng_pf_driver_init+0x0/0x28 returned 0 after 28 usecs
+calling  cavium_rng_vf_driver_init+0x0/0x28 @ 1
+initcall cavium_rng_vf_driver_init+0x0/0x28 returned 0 after 22 usecs
+calling  bcmbca_trng_driver_init+0x0/0x24 @ 1
+initcall bcmbca_trng_driver_init+0x0/0x24 returned 0 after 54 usecs
+calling  topology_sysfs_init+0x0/0x40 @ 1
+initcall topology_sysfs_init+0x0/0x40 returned 0 after 50 usecs
+calling  cacheinfo_sysfs_init+0x0/0x38 @ 1
+cacheinfo: Unable to detect cache hierarchy for CPU 0
+initcall cacheinfo_sysfs_init+0x0/0x38 returned -2 after 575 usecs
+calling  brd_init+0x0/0x200 @ 1
+brd: module loaded
+initcall brd_init+0x0/0x200 returned 0 after 14043 usecs
+calling  loop_init+0x0/0x180 @ 1
+loop: module loaded
+initcall loop_init+0x0/0x180 returned 0 after 5777 usecs
+calling  init_mtd+0x0/0x12c @ 1
+initcall init_mtd+0x0/0x12c returned 0 after 174 usecs
+calling  ofpart_parser_init+0x0/0x3c @ 1
+initcall ofpart_parser_init+0x0/0x3c returned 0 after 45 usecs
+calling  cmdline_parser_init+0x0/0x38 @ 1
+initcall cmdline_parser_init+0x0/0x38 returned 0 after 10 usecs
+calling  map_rom_init+0x0/0x20 @ 1
+initcall map_rom_init+0x0/0x20 returned 0 after 31 usecs
+calling  m25p80_driver_init+0x0/0x20 @ 1
+initcall m25p80_driver_init+0x0/0x20 returned 0 after 66 usecs
+calling  iproc_nand_driver_init+0x0/0x20 @ 1
+initcall iproc_nand_driver_init+0x0/0x20 returned 0 after 125 usecs
+calling  bcm63138_nand_driver_init+0x0/0x20 @ 1
+initcall bcm63138_nand_driver_init+0x0/0x20 returned 0 after 54 usecs
+calling  bcm6368_nand_driver_init+0x0/0x20 @ 1
+initcall bcm6368_nand_driver_init+0x0/0x20 returned 0 after 56 usecs
+calling  brcmstb_nand_driver_init+0x0/0x20 @ 1
+initcall brcmstb_nand_driver_init+0x0/0x20 returned 0 after 52 usecs
+calling  bcm63xx_nand_driver_init+0x0/0x20 @ 1
+initcall bcm63xx_nand_driver_init+0x0/0x20 returned 0 after 81 usecs
+calling  spinand_drv_init+0x0/0x20 @ 1
+initcall spinand_drv_init+0x0/0x20 returned 0 after 17 usecs
+calling  ubi_gluebi_init+0x0/0x24 @ 1
+initcall ubi_gluebi_init+0x0/0x24 returned 0 after 59 usecs
+calling  spidev_init+0x0/0xcc @ 1
+initcall spidev_init+0x0/0xcc returned 0 after 60 usecs
+calling  bcmbca_hsspi_driver_init+0x0/0x20 @ 1
+initcall bcmbca_hsspi_driver_init+0x0/0x20 returned 0 after 55 usecs
+calling  dummy_init_module+0x0/0xf8 @ 1
+Assigning idx[3] for dummy0
+initcall dummy_init_module+0x0/0xf8 returned 0 after 888 usecs
+calling  ifb_init_module+0x0/0xf4 @ 1
+Assigning idx[4] for ifb0
+Assigning idx[5] for ifb1
+initcall ifb_init_module+0x0/0xf4 returned 0 after 903 usecs
+calling  imq_init_module+0x0/0x200 @ 1
+Assigning idx[6] for imq0
+Assigning idx[7] for imq1
+Assigning idx[8] for imq2
+IMQ driver loaded successfully. (numdevs = 3, numqueues = 1, imq_dev_accurate_stats = 1)
+	Hooking IMQ after NAT on PREROUTING.
+	Hooking IMQ before NAT on POSTROUTING.
+initcall imq_init_module+0x0/0x200 returned 0 after 1281 usecs
+calling  macvlan_init_module+0x0/0x90 @ 1
+initcall macvlan_init_module+0x0/0x90 returned 0 after 71 usecs
+calling  net_olddevs_init+0x0/0x90 @ 1
+initcall net_olddevs_init+0x0/0x90 returned 0 after 84 usecs
+calling  fixed_mdio_bus_init+0x0/0x11c @ 1
+initcall fixed_mdio_bus_init+0x0/0x11c returned 0 after 597 usecs
+calling  veth_init+0x0/0x1c @ 1
+initcall veth_init+0x0/0x1c returned 0 after 6 usecs
+calling  ppp_init+0x0/0x134 @ 1
+PPP generic driver version 2.4.2
+initcall ppp_init+0x0/0x134 returned 0 after 546 usecs
+calling  ppp_async_init+0x0/0x44 @ 1
+initcall ppp_async_init+0x0/0x44 returned 0 after 13 usecs
+calling  bsdcomp_init+0x0/0x3c @ 1
+PPP BSD Compression module registered
+initcall bsdcomp_init+0x0/0x3c returned 0 after 125 usecs
+calling  deflate_init+0x0/0x5c @ 1
+PPP Deflate Compression module registered
+initcall deflate_init+0x0/0x5c returned 0 after 109 usecs
+calling  ppp_mppe_init+0x0/0xc8 @ 1
+PPP MPPE Compression module registered
+initcall ppp_mppe_init+0x0/0xc8 returned 0 after 194 usecs
+calling  ppp_sync_init+0x0/0x44 @ 1
+initcall ppp_sync_init+0x0/0x44 returned 0 after 11 usecs
+calling  pppox_init+0x0/0x1c @ 1
+NET: Registered protocol family 24
+initcall pppox_init+0x0/0x1c returned 0 after 60 usecs
+calling  pppoe_init+0x0/0xa0 @ 1
+initcall pppoe_init+0x0/0xa0 returned 0 after 104 usecs
+calling  pptp_init_module+0x0/0xe4 @ 1
+PPTP driver version 0.8.5
+initcall pptp_init_module+0x0/0xe4 returned 0 after 303 usecs
+calling  serport_init+0x0/0x40 @ 1
+initcall serport_init+0x0/0x40 returned 0 after 11 usecs
+calling  input_leds_init+0x0/0x1c @ 1
+initcall input_leds_init+0x0/0x1c returned 0 after 8 usecs
+calling  evdev_init+0x0/0x1c @ 1
+initcall evdev_init+0x0/0x1c returned 0 after 7 usecs
+calling  atkbd_init+0x0/0x28 @ 1
+initcall atkbd_init+0x0/0x28 returned 0 after 249 usecs
+calling  psmouse_init+0x0/0x9c @ 1
+initcall psmouse_init+0x0/0x9c returned 0 after 175 usecs
+calling  i2c_dev_init+0x0/0xdc @ 1
+i2c /dev entries driver
+initcall i2c_dev_init+0x0/0xdc returned 0 after 113 usecs
+calling  watchdog_gov_noop_register+0x0/0x1c @ 1
+initcall watchdog_gov_noop_register+0x0/0x1c returned 0 after 74 usecs
+calling  bcm96xxx_wdt_driver_init+0x0/0x20 @ 1
+initcall bcm96xxx_wdt_driver_init+0x0/0x20 returned 0 after 69 usecs
+calling  mmc_pwrseq_simple_driver_init+0x0/0x20 @ 1
+initcall mmc_pwrseq_simple_driver_init+0x0/0x20 returned 0 after 59 usecs
+calling  mmc_pwrseq_emmc_driver_init+0x0/0x20 @ 1
+initcall mmc_pwrseq_emmc_driver_init+0x0/0x20 returned 0 after 53 usecs
+calling  mmc_blk_init+0x0/0x10c @ 1
+initcall mmc_blk_init+0x0/0x10c returned 0 after 90 usecs
+calling  mmc_test_init+0x0/0x20 @ 1
+initcall mmc_test_init+0x0/0x20 returned 0 after 18 usecs
+calling  sdhci_drv_init+0x0/0x2c @ 1
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+initcall sdhci_drv_init+0x0/0x2c returned 0 after 141 usecs
+calling  sdhci_pltfm_drv_init+0x0/0x20 @ 1
+sdhci-pltfm: SDHCI platform and OF driver helper
+initcall sdhci_pltfm_drv_init+0x0/0x20 returned 0 after 77 usecs
+calling  sdhci_bcm63xx_driver_init+0x0/0x20 @ 1
+initcall sdhci_bcm63xx_driver_init+0x0/0x20 returned 0 after 64 usecs
+calling  timer_led_trigger_init+0x0/0x1c @ 1
+initcall timer_led_trigger_init+0x0/0x1c returned 0 after 75 usecs
+calling  defon_led_trigger_init+0x0/0x1c @ 1
+initcall defon_led_trigger_init+0x0/0x1c returned 0 after 21 usecs
+calling  hid_init+0x0/0x78 @ 1
+hidraw: raw HID events driver (C) Jiri Kosina
+initcall hid_init+0x0/0x78 returned 0 after 196 usecs
+calling  hid_generic_init+0x0/0x28 @ 1
+initcall hid_generic_init+0x0/0x28 returned 0 after 60 usecs
+calling  binder_init+0x0/0x2a8 @ 1
+initcall binder_init+0x0/0x2a8 returned 0 after 1247 usecs
+calling  sock_diag_init+0x0/0x4c @ 1
+initcall sock_diag_init+0x0/0x4c returned 0 after 80 usecs
+calling  llc_init+0x0/0x34 @ 1
+initcall llc_init+0x0/0x34 returned 0 after 10 usecs
+calling  snap_init+0x0/0x44 @ 1
+initcall snap_init+0x0/0x44 returned 0 after 69 usecs
+calling  blackhole_init+0x0/0x1c @ 1
+initcall blackhole_init+0x0/0x1c returned 0 after 9 usecs
+calling  police_init_module+0x0/0x20 @ 1
+initcall police_init_module+0x0/0x20 returned 0 after 94 usecs
+calling  gact_init_module+0x0/0x2c @ 1
+GACT probability NOT on
+initcall gact_init_module+0x0/0x2c returned 0 after 104 usecs
+calling  mirred_init_module+0x0/0x68 @ 1
+Mirror/redirect action on
+initcall mirred_init_module+0x0/0x68 returned 0 after 101 usecs
+calling  sample_init_module+0x0/0x20 @ 1
+initcall sample_init_module+0x0/0x20 returned 0 after 31 usecs
+calling  pedit_init_module+0x0/0x20 @ 1
+initcall pedit_init_module+0x0/0x20 returned 0 after 30 usecs
+calling  simp_init_module+0x0/0x40 @ 1
+Simple TC action Loaded
+initcall simp_init_module+0x0/0x40 returned 0 after 94 usecs
+calling  skbedit_init_module+0x0/0x20 @ 1
+initcall skbedit_init_module+0x0/0x20 returned 0 after 34 usecs
+calling  csum_init_module+0x0/0x20 @ 1
+initcall csum_init_module+0x0/0x20 returned 0 after 30 usecs
+calling  vlan_init_module+0x0/0x20 @ 1
+initcall vlan_init_module+0x0/0x20 returned 0 after 33 usecs
+calling  connmark_init_module+0x0/0x20 @ 1
+initcall connmark_init_module+0x0/0x20 returned 0 after 32 usecs
+calling  skbmod_init_module+0x0/0x20 @ 1
+initcall skbmod_init_module+0x0/0x20 returned 0 after 26 usecs
+calling  cbq_module_init+0x0/0x1c @ 1
+initcall cbq_module_init+0x0/0x1c returned 0 after 14 usecs
+calling  htb_module_init+0x0/0x1c @ 1
+initcall htb_module_init+0x0/0x1c returned 0 after 6 usecs
+calling  ingress_module_init+0x0/0x4c @ 1
+initcall ingress_module_init+0x0/0x4c returned 0 after 19 usecs
+calling  dsmark_module_init+0x0/0x1c @ 1
+initcall dsmark_module_init+0x0/0x1c returned 0 after 5 usecs
+calling  sfq_module_init+0x0/0x1c @ 1
+initcall sfq_module_init+0x0/0x1c returned 0 after 5 usecs
+calling  tbf_module_init+0x0/0x1c @ 1
+initcall tbf_module_init+0x0/0x1c returned 0 after 6 usecs
+calling  prio_module_init+0x0/0x1c @ 1
+initcall prio_module_init+0x0/0x1c returned 0 after 6 usecs
+calling  fq_codel_module_init+0x0/0x1c @ 1
+initcall fq_codel_module_init+0x0/0x1c returned 0 after 20 usecs
+calling  cake_module_init+0x0/0x1c @ 1
+initcall cake_module_init+0x0/0x1c returned 0 after 6 usecs
+calling  init_u32+0x0/0x9c @ 1
+u32 classifier
+    Performance counters on
+    input device check on
+    Actions configured
+initcall init_u32+0x0/0x9c returned 0 after 207 usecs
+calling  init_route4+0x0/0x1c @ 1
+initcall init_route4+0x0/0x1c returned 0 after 19 usecs
+calling  init_fw+0x0/0x1c @ 1
+initcall init_fw+0x0/0x1c returned 0 after 6 usecs
+calling  init_basic+0x0/0x1c @ 1
+initcall init_basic+0x0/0x1c returned 0 after 6 usecs
+calling  cls_flow_init+0x0/0x1c @ 1
+initcall cls_flow_init+0x0/0x1c returned 0 after 5 usecs
+calling  cls_fl_init+0x0/0x1c @ 1
+initcall cls_fl_init+0x0/0x1c returned 0 after 5 usecs
+calling  cls_mall_init+0x0/0x1c @ 1
+initcall cls_mall_init+0x0/0x1c returned 0 after 5 usecs
+calling  nfnetlink_init+0x0/0x88 @ 1
+initcall nfnetlink_init+0x0/0x88 returned 0 after 85 usecs
+calling  nfnetlink_queue_init+0x0/0xb0 @ 1
+initcall nfnetlink_queue_init+0x0/0xb0 returned 0 after 153 usecs
+calling  nfnetlink_log_init+0x0/0xb8 @ 1
+initcall nfnetlink_log_init+0x0/0xb8 returned 0 after 143 usecs
+calling  nf_conntrack_standalone_init+0x0/0xa4 @ 1
+initcall nf_conntrack_standalone_init+0x0/0xa4 returned 0 after 1443 usecs
+calling  nf_ct_proto_gre_init+0x0/0x58 @ 1
+initcall nf_ct_proto_gre_init+0x0/0x58 returned 0 after 64 usecs
+calling  ctnetlink_init+0x0/0xb8 @ 1
+initcall ctnetlink_init+0x0/0xb8 returned 0 after 79 usecs
+calling  nf_conntrack_pptp_init+0x0/0x1c @ 1
+initcall nf_conntrack_pptp_init+0x0/0x1c returned 0 after 102 usecs
+calling  nf_log_common_init+0x0/0x8 @ 1
+initcall nf_log_common_init+0x0/0x8 returned 0 after 2 usecs
+calling  nf_nat_init+0x0/0x100 @ 1
+initcall nf_nat_init+0x0/0x100 returned 0 after 100 usecs
+calling  nf_conncount_modinit+0x0/0x98 @ 1
+initcall nf_conncount_modinit+0x0/0x98 returned 0 after 137 usecs
+calling  xt_init+0x0/0x130 @ 1
+initcall xt_init+0x0/0x130 returned 0 after 79 usecs
+calling  tcpudp_mt_init+0x0/0x20 @ 1
+initcall tcpudp_mt_init+0x0/0x20 returned 0 after 59 usecs
+calling  mark_mt_init+0x0/0x60 @ 1
+initcall mark_mt_init+0x0/0x60 returned 0 after 40 usecs
+calling  connmark_mt_init+0x0/0x68 @ 1
+initcall connmark_mt_init+0x0/0x68 returned 0 after 44 usecs
+calling  xt_set_init+0x0/0x58 @ 1
+initcall xt_set_init+0x0/0x58 returned 0 after 19 usecs
+calling  xt_nat_init+0x0/0x20 @ 1
+initcall xt_nat_init+0x0/0x20 returned 0 after 6 usecs
+calling  classify_tg_init+0x0/0x20 @ 1
+initcall classify_tg_init+0x0/0x20 returned 0 after 6 usecs
+calling  xt_ct_tg_init+0x0/0x64 @ 1
+initcall xt_ct_tg_init+0x0/0x64 returned 0 after 18 usecs
+calling  dscp_tg_init+0x0/0x20 @ 1
+initcall dscp_tg_init+0x0/0x20 returned 0 after 6 usecs
+calling  imq_init+0x0/0x20 @ 1
+initcall imq_init+0x0/0x20 returned 0 after 5 usecs
+calling  log_tg_init+0x0/0x20 @ 1
+initcall log_tg_init+0x0/0x20 returned 0 after 5 usecs
+calling  netmap_tg_init+0x0/0x20 @ 1
+initcall netmap_tg_init+0x0/0x20 returned 0 after 5 usecs
+calling  nflog_tg_init+0x0/0x1c @ 1
+initcall nflog_tg_init+0x0/0x1c returned 0 after 5 usecs
+calling  nfqueue_tg_init+0x0/0x20 @ 1
+initcall nfqueue_tg_init+0x0/0x20 returned 0 after 6 usecs
+calling  redirect_tg_init+0x0/0x20 @ 1
+initcall redirect_tg_init+0x0/0x20 returned 0 after 6 usecs
+calling  tcpmss_tg_init+0x0/0x20 @ 1
+initcall tcpmss_tg_init+0x0/0x20 returned 0 after 6 usecs
+calling  addrtype_mt_init+0x0/0x20 @ 1
+initcall addrtype_mt_init+0x0/0x20 returned 0 after 6 usecs
+calling  connbytes_mt_init+0x0/0x1c @ 1
+initcall connbytes_mt_init+0x0/0x1c returned 0 after 5 usecs
+calling  connlimit_mt_init+0x0/0x1c @ 1
+initcall connlimit_mt_init+0x0/0x1c returned 0 after 6 usecs
+calling  conntrack_mt_init+0x0/0x20 @ 1
+initcall conntrack_mt_init+0x0/0x20 returned 0 after 6 usecs
+calling  dscp_mt_init+0x0/0x20 @ 1
+initcall dscp_mt_init+0x0/0x20 returned 0 after 6 usecs
+calling  helper_mt_init+0x0/0x1c @ 1
+initcall helper_mt_init+0x0/0x1c returned 0 after 6 usecs
+calling  iprange_mt_init+0x0/0x20 @ 1
+initcall iprange_mt_init+0x0/0x20 returned 0 after 6 usecs
+calling  limit_mt_init+0x0/0x1c @ 1
+initcall limit_mt_init+0x0/0x1c returned 0 after 5 usecs
+calling  mac_mt_init+0x0/0x1c @ 1
+initcall mac_mt_init+0x0/0x1c returned 0 after 5 usecs
+calling  multiport_mt_init+0x0/0x20 @ 1
+initcall multiport_mt_init+0x0/0x20 returned 0 after 6 usecs
+calling  policy_mt_init+0x0/0x20 @ 1
+initcall policy_mt_init+0x0/0x20 returned 0 after 5 usecs
+calling  recent_mt_init+0x0/0x94 @ 1
+initcall recent_mt_init+0x0/0x94 returned 0 after 193 usecs
+calling  state_mt_init+0x0/0x1c @ 1
+initcall state_mt_init+0x0/0x1c returned 0 after 5 usecs
+calling  statistic_mt_init+0x0/0x1c @ 1
+initcall statistic_mt_init+0x0/0x1c returned 0 after 5 usecs
+calling  string_mt_init+0x0/0x1c @ 1
+initcall string_mt_init+0x0/0x1c returned 0 after 6 usecs
+calling  tcpmss_mt_init+0x0/0x20 @ 1
+initcall tcpmss_mt_init+0x0/0x20 returned 0 after 6 usecs
+calling  time_mt_init+0x0/0x5c @ 1
+xt_time: kernel timezone is -0000
+initcall time_mt_init+0x0/0x5c returned 0 after 66 usecs
+calling  u32_mt_init+0x0/0x1c @ 1
+initcall u32_mt_init+0x0/0x1c returned 0 after 6 usecs
+calling  init+0x0/0x20 @ 1
+initcall init+0x0/0x20 returned 0 after 6 usecs
+calling  ip_set_init+0x0/0xb4 @ 1
+initcall ip_set_init+0x0/0xb4 returned 0 after 73 usecs
+calling  bitmap_ip_init+0x0/0x1c @ 1
+initcall bitmap_ip_init+0x0/0x1c returned 0 after 55 usecs
+calling  bitmap_ipmac_init+0x0/0x1c @ 1
+initcall bitmap_ipmac_init+0x0/0x1c returned 0 after 35 usecs
+calling  bitmap_port_init+0x0/0x1c @ 1
+initcall bitmap_port_init+0x0/0x1c returned 0 after 8 usecs
+calling  hash_ip_init+0x0/0x1c @ 1
+initcall hash_ip_init+0x0/0x1c returned 0 after 6 usecs
+calling  hash_ipmac_init+0x0/0x1c @ 1
+initcall hash_ipmac_init+0x0/0x1c returned 0 after 6 usecs
+calling  hash_ipmark_init+0x0/0x1c @ 1
+initcall hash_ipmark_init+0x0/0x1c returned 0 after 6 usecs
+calling  hash_ipport_init+0x0/0x1c @ 1
+initcall hash_ipport_init+0x0/0x1c returned 0 after 6 usecs
+calling  hash_ipportip_init+0x0/0x1c @ 1
+initcall hash_ipportip_init+0x0/0x1c returned 0 after 5 usecs
+calling  hash_ipportnet_init+0x0/0x1c @ 1
+initcall hash_ipportnet_init+0x0/0x1c returned 0 after 6 usecs
+calling  hash_mac_init+0x0/0x1c @ 1
+initcall hash_mac_init+0x0/0x1c returned 0 after 6 usecs
+calling  hash_net_init+0x0/0x1c @ 1
+initcall hash_net_init+0x0/0x1c returned 0 after 5 usecs
+calling  hash_netport_init+0x0/0x1c @ 1
+initcall hash_netport_init+0x0/0x1c returned 0 after 6 usecs
+calling  hash_netiface_init+0x0/0x1c @ 1
+initcall hash_netiface_init+0x0/0x1c returned 0 after 6 usecs
+calling  hash_netnet_init+0x0/0x1c @ 1
+initcall hash_netnet_init+0x0/0x1c returned 0 after 6 usecs
+calling  hash_netportnet_init+0x0/0x1c @ 1
+initcall hash_netportnet_init+0x0/0x1c returned 0 after 6 usecs
+calling  list_set_init+0x0/0x1c @ 1
+initcall list_set_init+0x0/0x1c returned 0 after 6 usecs
+calling  gre_offload_init+0x0/0x58 @ 1
+initcall gre_offload_init+0x0/0x58 returned 0 after 24 usecs
+calling  sysctl_ipv4_init+0x0/0x60 @ 1
+initcall sysctl_ipv4_init+0x0/0x60 returned 0 after 116 usecs
+calling  gre_init+0x0/0x48 @ 1
+gre: GRE over IPv4 demultiplexor driver
+initcall gre_init+0x0/0x48 returned 0 after 101 usecs
+calling  ipgre_init+0x0/0x118 @ 1
+ip_gre: GRE over IPv4 tunneling driver
+Assigning idx[9] for gre0
+Assigning idx[10] for gretap0
+Assigning idx[11] for erspan0
+initcall ipgre_init+0x0/0x118 returned 0 after 1826 usecs
+calling  vti_init+0x0/0x140 @ 1
+IPv4 over IPsec tunneling driver
+Assigning idx[12] for ip_vti0
+initcall vti_init+0x0/0x140 returned 0 after 592 usecs
+calling  xfrm4_beet_init+0x0/0x20 @ 1
+initcall xfrm4_beet_init+0x0/0x20 returned 0 after 56 usecs
+calling  tunnel4_init+0x0/0x64 @ 1
+initcall tunnel4_init+0x0/0x64 returned 0 after 16 usecs
+calling  xfrm4_transport_init+0x0/0x20 @ 1
+initcall xfrm4_transport_init+0x0/0x20 returned 0 after 9 usecs
+calling  xfrm4_mode_tunnel_init+0x0/0x20 @ 1
+initcall xfrm4_mode_tunnel_init+0x0/0x20 returned 0 after 5 usecs
+calling  nf_nat_l3proto_ipv4_init+0x0/0x5c @ 1
+initcall nf_nat_l3proto_ipv4_init+0x0/0x5c returned 0 after 93 usecs
+calling  nf_defrag_init+0x0/0x1c @ 1
+initcall nf_defrag_init+0x0/0x1c returned 0 after 6 usecs
+calling  nf_log_ipv4_init+0x0/0x68 @ 1
+initcall nf_log_ipv4_init+0x0/0x68 returned 0 after 62 usecs
+calling  nf_nat_helper_pptp_init+0x0/0x88 @ 1
+initcall nf_nat_helper_pptp_init+0x0/0x88 returned 0 after 38 usecs
+calling  nf_nat_proto_gre_init+0x0/0x20 @ 1
+initcall nf_nat_proto_gre_init+0x0/0x20 returned 0 after 6 usecs
+calling  ip_tables_init+0x0/0xa4 @ 1
+initcall ip_tables_init+0x0/0xa4 returned 0 after 137 usecs
+calling  iptable_filter_init+0x0/0x60 @ 1
+initcall iptable_filter_init+0x0/0x60 returned 0 after 1112 usecs
+calling  iptable_mangle_init+0x0/0xf0 @ 1
+initcall iptable_mangle_init+0x0/0xf0 returned 0 after 201 usecs
+calling  iptable_nat_init+0x0/0x58 @ 1
+initcall iptable_nat_init+0x0/0x58 returned 0 after 287 usecs
+calling  iptable_raw_init+0x0/0xb0 @ 1
+initcall iptable_raw_init+0x0/0xb0 returned 0 after 78 usecs
+calling  masquerade_tg_init+0x0/0x48 @ 1
+initcall masquerade_tg_init+0x0/0x48 returned 0 after 57 usecs
+calling  reject_tg_init+0x0/0x1c @ 1
+initcall reject_tg_init+0x0/0x1c returned 0 after 6 usecs
+calling  init+0x0/0x1c @ 1
+initcall init+0x0/0x1c returned 0 after 5 usecs
+calling  init+0x0/0x64 @ 1
+initcall init+0x0/0x64 returned 0 after 20 usecs
+calling  cubictcp_register+0x0/0x60 @ 1
+initcall cubictcp_register+0x0/0x60 returned 0 after 28 usecs
+calling  inet6_init+0x0/0x340 @ 1
+NET: Registered protocol family 10
+Segment Routing with IPv6
+initcall inet6_init+0x0/0x340 returned 0 after 5972 usecs
+calling  ah6_init+0x0/0x88 @ 1
+initcall ah6_init+0x0/0x88 returned 0 after 156 usecs
+calling  esp6_init+0x0/0x88 @ 1
+initcall esp6_init+0x0/0x88 returned 0 after 30 usecs
+calling  ipcomp6_init+0x0/0x88 @ 1
+initcall ipcomp6_init+0x0/0x88 returned 0 after 31 usecs
+calling  xfrm6_tunnel_init+0x0/0xf0 @ 1
+initcall xfrm6_tunnel_init+0x0/0xf0 returned 0 after 165 usecs
+calling  tunnel6_init+0x0/0x7c @ 1
+initcall tunnel6_init+0x0/0x7c returned 0 after 16 usecs
+calling  xfrm6_transport_init+0x0/0x20 @ 1
+initcall xfrm6_transport_init+0x0/0x20 returned 0 after 7 usecs
+calling  xfrm6_mode_tunnel_init+0x0/0x20 @ 1
+initcall xfrm6_mode_tunnel_init+0x0/0x20 returned 0 after 6 usecs
+calling  xfrm6_beet_init+0x0/0x20 @ 1
+initcall xfrm6_beet_init+0x0/0x20 returned 0 after 5 usecs
+calling  ip6_tables_init+0x0/0xa4 @ 1
+initcall ip6_tables_init+0x0/0xa4 returned 0 after 51 usecs
+calling  ip6table_filter_init+0x0/0x60 @ 1
+initcall ip6table_filter_init+0x0/0x60 returned 0 after 1640 usecs
+calling  ip6table_mangle_init+0x0/0xf0 @ 1
+initcall ip6table_mangle_init+0x0/0xf0 returned 0 after 80 usecs
+calling  ip6table_raw_init+0x0/0xb0 @ 1
+initcall ip6table_raw_init+0x0/0xb0 returned 0 after 82 usecs
+calling  ip6table_nat_init+0x0/0x58 @ 1
+initcall ip6table_nat_init+0x0/0x58 returned 0 after 104 usecs
+calling  nf_nat_l3proto_ipv6_init+0x0/0x58 @ 1
+initcall nf_nat_l3proto_ipv6_init+0x0/0x58 returned 0 after 18 usecs
+calling  nf_defrag_init+0x0/0x5c @ 1
+initcall nf_defrag_init+0x0/0x5c returned 0 after 143 usecs
+calling  nf_log_ipv6_init+0x0/0x68 @ 1
+initcall nf_log_ipv6_init+0x0/0x68 returned 0 after 28 usecs
+calling  rt_mt6_init+0x0/0x1c @ 1
+initcall rt_mt6_init+0x0/0x1c returned 0 after 11 usecs
+calling  masquerade_tg6_init+0x0/0x48 @ 1
+initcall masquerade_tg6_init+0x0/0x48 returned 0 after 66 usecs
+calling  ip6t_npt_init+0x0/0x20 @ 1
+initcall ip6t_npt_init+0x0/0x20 returned 0 after 6 usecs
+calling  reject_tg6_init+0x0/0x1c @ 1
+initcall reject_tg6_init+0x0/0x1c returned 0 after 5 usecs
+calling  vti6_tunnel_init+0x0/0x110 @ 1
+Assigning idx[13] for ip6_vti0
+initcall vti6_tunnel_init+0x0/0x110 returned 0 after 1067 usecs
+calling  sit_init+0x0/0xe4 @ 1
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+Assigning idx[14] for sit0
+initcall sit_init+0x0/0xe4 returned 0 after 819 usecs
+calling  ip6_tunnel_init+0x0/0xf4 @ 1
+Assigning idx[15] for ip6tnl0
+initcall ip6_tunnel_init+0x0/0xf4 returned 0 after 767 usecs
+calling  ip6gre_init+0x0/0xd8 @ 1
+ip6_gre: GRE over IPv6 tunneling driver
+Assigning idx[16] for ip6gre0
+initcall ip6gre_init+0x0/0xd8 returned 0 after 834 usecs
+calling  packet_init+0x0/0x94 @ 1
+NET: Registered protocol family 17
+initcall packet_init+0x0/0x94 returned 0 after 163 usecs
+calling  ipsec_pfkey_init+0x0/0x84 @ 1
+NET: Registered protocol family 15
+initcall ipsec_pfkey_init+0x0/0x84 returned 0 after 133 usecs
+calling  br_init+0x0/0xf0 @ 1
+bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+initcall br_init+0x0/0xf0 returned 0 after 479 usecs
+calling  ebtables_init+0x0/0x54 @ 1
+initcall ebtables_init+0x0/0x54 returned 0 after 17 usecs
+calling  ebtable_broute_init+0x0/0x34 @ 1
+initcall ebtable_broute_init+0x0/0x34 returned 0 after 349 usecs
+calling  ebtable_filter_init+0x0/0x1c @ 1
+initcall ebtable_filter_init+0x0/0x1c returned 0 after 88 usecs
+calling  ebtable_nat_init+0x0/0x1c @ 1
+initcall ebtable_nat_init+0x0/0x1c returned 0 after 22 usecs
+calling  ebt_arp_init+0x0/0x1c @ 1
+initcall ebt_arp_init+0x0/0x1c returned 0 after 6 usecs
+calling  ebt_ip_init+0x0/0x1c @ 1
+initcall ebt_ip_init+0x0/0x1c returned 0 after 5 usecs
+calling  ebt_ip6_init+0x0/0x1c @ 1
+initcall ebt_ip6_init+0x0/0x1c returned 0 after 5 usecs
+calling  ebt_limit_init+0x0/0x1c @ 1
+initcall ebt_limit_init+0x0/0x1c returned 0 after 11 usecs
+calling  ebt_mark_m_init+0x0/0x1c @ 1
+initcall ebt_mark_m_init+0x0/0x1c returned 0 after 17 usecs
+calling  ebt_pkttype_init+0x0/0x1c @ 1
+initcall ebt_pkttype_init+0x0/0x1c returned 0 after 5 usecs
+calling  ebt_stp_init+0x0/0x1c @ 1
+initcall ebt_stp_init+0x0/0x1c returned 0 after 5 usecs
+calling  ebt_vlan_init+0x0/0x1c @ 1
+initcall ebt_vlan_init+0x0/0x1c returned 0 after 6 usecs
+calling  ebt_arpreply_init+0x0/0x1c @ 1
+initcall ebt_arpreply_init+0x0/0x1c returned 0 after 6 usecs
+calling  ebt_mark_init+0x0/0x1c @ 1
+initcall ebt_mark_init+0x0/0x1c returned 0 after 14 usecs
+calling  ebt_dnat_init+0x0/0x1c @ 1
+initcall ebt_dnat_init+0x0/0x1c returned 0 after 6 usecs
+calling  ebt_redirect_init+0x0/0x1c @ 1
+initcall ebt_redirect_init+0x0/0x1c returned 0 after 6 usecs
+calling  ebt_snat_init+0x0/0x1c @ 1
+initcall ebt_snat_init+0x0/0x1c returned 0 after 5 usecs
+calling  ebt_log_init+0x0/0x1c @ 1
+initcall ebt_log_init+0x0/0x1c returned 0 after 5 usecs
+calling  l2tp_init+0x0/0x8c @ 1
+l2tp_core: L2TP core driver, V2.0
+initcall l2tp_init+0x0/0x8c returned 0 after 118 usecs
+calling  pppol2tp_init+0x0/0x90 @ 1
+l2tp_ppp: PPPoL2TP kernel driver, V2.0
+initcall pppol2tp_init+0x0/0x90 returned 0 after 113 usecs
+calling  vlan_proto_init+0x0/0xb0 @ 1
+8021q: 802.1Q VLAN Support v1.8
+initcall vlan_proto_init+0x0/0xb0 returned 0 after 200 usecs
+calling  sctp_init+0x0/0x420 @ 1
+sctp: Hash tables configured (bind 256/256)
+initcall sctp_init+0x0/0x420 returned 0 after 1273 usecs
+calling  psample_module_init+0x0/0x1c @ 1
+initcall psample_module_init+0x0/0x1c returned 0 after 98 usecs
+calling  brcm_board_init+0x0/0x1cc @ 1
+brcmboard registered
+brcmboard: brcm_board_init entry
+ERROR - Invalid number of MAC addresses (0) is configured.
+initcall brcm_board_init+0x0/0x1cc returned 0 after 904 usecs
+calling  bcm63000_i2c_driver_init+0x0/0x20 @ 1
+initcall bcm63000_i2c_driver_init+0x0/0x20 returned 0 after 76 usecs
+calling  bootstate_module_init+0x0/0x54 @ 1
+initcall bootstate_module_init+0x0/0x54 returned 0 after 78 usecs
+calling  detect_init+0x0/0x1c0 @ 1
+
+Optical detection module loaded.
+initcall detect_init+0x0/0x1c0 returned 0 after 359 usecs
+calling  bcmgps_init+0x0/0x30 @ 1
+Broadcom GPS GPIO driver
+initcall bcmgps_init+0x0/0x30 returned 0 after 100 usecs
+calling  bcm_sfp_init+0x0/0x2c @ 1
+initcall bcm_sfp_init+0x0/0x2c returned 0 after 71 usecs
+calling  bcm_memc_platform_driver_init+0x0/0x28 @ 1
+initcall bcm_memc_platform_driver_init+0x0/0x28 returned -19 after 476 usecs
+calling  reset_button_init+0x0/0x94 @ 1
+initcall reset_button_init+0x0/0x94 returned 0 after 29 usecs
+calling  bcm_ubus_dcm_module_init+0x0/0x24 @ 1
+initcall bcm_ubus_dcm_module_init+0x0/0x24 returned 0 after 60 usecs
+calling  bcm_br_hooks_init+0x0/0x40 @ 1
+Bridge Broadcom hooks registered
+initcall bcm_br_hooks_init+0x0/0x40 returned 0 after 655 usecs
+calling  ebt_blog_mt_init+0x0/0x3c @ 1
+ebt_blog registered
+initcall ebt_blog_mt_init+0x0/0x3c returned 0 after 46 usecs
+calling  ebt_ftos_init+0x0/0x3c @ 1
+ebt_ftos registered
+initcall ebt_ftos_init+0x0/0x3c returned 0 after 45 usecs
+calling  ebt_ip_init+0x0/0x1c @ 1
+initcall ebt_ip_init+0x0/0x1c returned 0 after 8 usecs
+calling  ebt_ip6_init+0x0/0x1c @ 1
+initcall ebt_ip6_init+0x0/0x1c returned 0 after 5 usecs
+calling  ebt_qos_map_init+0x0/0x3c @ 1
+ebt_qos_map registered
+initcall ebt_qos_map_init+0x0/0x3c returned 0 after 50 usecs
+calling  ebt_skbvlan_m_init+0x0/0x1c @ 1
+initcall ebt_skbvlan_m_init+0x0/0x1c returned 0 after 5 usecs
+calling  ebt_skiplog_init+0x0/0x1c @ 1
+initcall ebt_skiplog_init+0x0/0x1c returned 0 after 6 usecs
+calling  ebt_time_init+0x0/0x3c @ 1
+ebt_time registered
+initcall ebt_time_init+0x0/0x3c returned 0 after 44 usecs
+calling  ebt_u32_init+0x0/0x1c @ 1
+initcall ebt_u32_init+0x0/0x1c returned 0 after 5 usecs
+calling  ebt_dscp_init+0x0/0x3c @ 1
+ebt_dscp registered
+initcall ebt_dscp_init+0x0/0x3c returned 0 after 45 usecs
+calling  ebt_skb_priority_init+0x0/0x1c @ 1
+initcall ebt_skb_priority_init+0x0/0x1c returned 0 after 5 usecs
+calling  ebt_vtag_init+0x0/0x3c @ 1
+ebt_vtag registered
+initcall ebt_vtag_init+0x0/0x3c returned 0 after 44 usecs
+calling  ebt_wmm_mark_init+0x0/0x3c @ 1
+ebt_wmm_mark registered
+initcall ebt_wmm_mark_init+0x0/0x3c returned 0 after 49 usecs
+calling  ebt_reject_init+0x0/0x3c @ 1
+ebt_reject registered
+initcall ebt_reject_init+0x0/0x3c returned 0 after 47 usecs
+calling  ebt_fsmark_init+0x0/0x1c @ 1
+initcall ebt_fsmark_init+0x0/0x1c returned 0 after 5 usecs
+calling  fsmark_tg_init+0x0/0x24 @ 1
+initcall fsmark_tg_init+0x0/0x24 returned 0 after 8 usecs
+calling  mac_mt_init_extend+0x0/0x1c @ 1
+initcall mac_mt_init_extend+0x0/0x1c returned 0 after 5 usecs
+calling  mark_mt_init+0x0/0x24 @ 1
+initcall mark_mt_init+0x0/0x24 returned 0 after 7 usecs
+calling  of_platform_driver_init+0x0/0x20 @ 1
+initcall of_platform_driver_init+0x0/0x20 returned 0 after 62 usecs
+calling  of_platform_driver_init+0x0/0x20 @ 1
+initcall of_platform_driver_init+0x0/0x20 returned 0 after 126 usecs
+calling  of_platform_driver_init+0x0/0x24 @ 1
+initcall of_platform_driver_init+0x0/0x24 returned 0 after 79 usecs
+calling  of_platform_driver_init+0x0/0x20 @ 1
+initcall of_platform_driver_init+0x0/0x20 returned 0 after 54 usecs
+calling  of_platform_driver_init+0x0/0x20 @ 1
+initcall of_platform_driver_init+0x0/0x20 returned 0 after 54 usecs
+calling  of_platform_driver_init+0x0/0x20 @ 1
+initcall of_platform_driver_init+0x0/0x20 returned 0 after 57 usecs
+calling  of_platform_driver_init+0x0/0x20 @ 1
+initcall of_platform_driver_init+0x0/0x20 returned 0 after 53 usecs
+calling  ephy_led_platform_driver_init+0x0/0x20 @ 1
+initcall ephy_led_platform_driver_init+0x0/0x20 returned 0 after 52 usecs
+calling  of_platform_driver_init+0x0/0x20 @ 1
+initcall of_platform_driver_init+0x0/0x20 returned 0 after 52 usecs
+calling  kernel_panic_sysctls_init+0x0/0x30 @ 1
+initcall kernel_panic_sysctls_init+0x0/0x30 returned 0 after 27 usecs
+calling  kernel_panic_sysfs_init+0x0/0x30 @ 1
+initcall kernel_panic_sysfs_init+0x0/0x30 returned 0 after 45 usecs
+calling  init_oops_id+0x0/0x40 @ 1
+initcall init_oops_id+0x0/0x40 returned 0 after 17 usecs
+calling  kernel_exit_sysctls_init+0x0/0x30 @ 1
+initcall kernel_exit_sysctls_init+0x0/0x30 returned 0 after 10 usecs
+calling  kernel_exit_sysfs_init+0x0/0x30 @ 1
+initcall kernel_exit_sysfs_init+0x0/0x30 returned 0 after 10 usecs
+calling  pm_qos_power_init+0x0/0xcc @ 1
+initcall pm_qos_power_init+0x0/0xcc returned 0 after 1196 usecs
+calling  printk_late_init+0x0/0x150 @ 1
+initcall printk_late_init+0x0/0x150 returned 0 after 40 usecs
+calling  tk_debug_sleep_time_init+0x0/0x4c @ 1
+initcall tk_debug_sleep_time_init+0x0/0x4c returned 0 after 18 usecs
+calling  load_system_certificate_list+0x0/0x118 @ 1
+Loading compiled-in X.509 certificates
+initcall load_system_certificate_list+0x0/0x118 returned 0 after 96 usecs
+calling  fault_around_debugfs+0x0/0x44 @ 1
+initcall fault_around_debugfs+0x0/0x44 returned 0 after 16 usecs
+calling  max_swapfiles_check+0x0/0x8 @ 1
+initcall max_swapfiles_check+0x0/0x8 returned 0 after 2 usecs
+calling  init_zswap+0x0/0x44c @ 1
+zswap: default zpool zsmalloc not available
+zswap: pool creation failed
+initcall init_zswap+0x0/0x44c returned 0 after 4752 usecs
+calling  split_huge_pages_debugfs+0x0/0x60 @ 1
+initcall split_huge_pages_debugfs+0x0/0x60 returned 0 after 17 usecs
+calling  check_early_ioremap_leak+0x0/0x5c @ 1
+initcall check_early_ioremap_leak+0x0/0x5c returned 0 after 65 usecs
+calling  set_hardened_usercopy+0x0/0x80 @ 1
+initcall set_hardened_usercopy+0x0/0x80 returned 1 after 9 usecs
+calling  ubifs_init+0x0/0xcc @ 1
+initcall ubifs_init+0x0/0xcc returned 0 after 1243 usecs
+calling  init_root_keyring+0x0/0x14 @ 1
+initcall init_root_keyring+0x0/0x14 returned 0 after 1840 usecs
+calling  prandom_init_late+0x0/0x44 @ 1
+initcall prandom_init_late+0x0/0x44 returned 0 after 27 usecs
+calling  pci_resource_alignment_sysfs_init+0x0/0x28 @ 1
+initcall pci_resource_alignment_sysfs_init+0x0/0x28 returned 0 after 27 usecs
+calling  pci_sysfs_init+0x0/0x60 @ 1
+initcall pci_sysfs_init+0x0/0x60 returned 0 after 17 usecs
+calling  clk_debug_init+0x0/0x11c @ 1
+initcall clk_debug_init+0x0/0x11c returned 0 after 210 usecs
+calling  deferred_probe_initcall+0x0/0xb0 @ 1
+initcall deferred_probe_initcall+0x0/0xb0 returned 0 after 366 usecs
+calling  ubi_init+0x0/0x258 @ 1
+initcall ubi_init+0x0/0x258 returned 0 after 1136 usecs
+calling  vxlan_init_module+0x0/0x84 @ 1
+initcall vxlan_init_module+0x0/0x84 returned 0 after 235 usecs
+calling  of_fdt_raw_init+0x0/0x80 @ 1
+initcall of_fdt_raw_init+0x0/0x80 returned 0 after 1185 usecs
+calling  tcp_congestion_default+0x0/0x24 @ 1
+initcall tcp_congestion_default+0x0/0x24 returned 0 after 144 usecs
+calling  bcm_blxparms_init_late+0x0/0xec @ 1
+initcall bcm_blxparms_init_late+0x0/0xec returned 0 after 48 usecs
+calling  bcm_arm_cpuidle_init+0x0/0x58 @ 1
+initcall bcm_arm_cpuidle_init+0x0/0x58 returned 0 after 438 usecs
+calling  pmc_sysfs_init+0x0/0x4b4 @ 1
+initcall pmc_sysfs_init+0x0/0x4b4 returned 0 after 1379 usecs
+calling  xport_proc_init+0x0/0x100 @ 1
+initcall xport_proc_init+0x0/0x100 returned 0 after 34 usecs
+calling  mac_init+0x0/0x60 @ 1
+initcall mac_init+0x0/0x60 returned 0 after 15 usecs
+calling  phy_proc_init+0x0/0x108 @ 1
+initcall phy_proc_init+0x0/0x108 returned 0 after 31 usecs
+calling  phy_init+0x0/0x28 @ 1
+initcall phy_init+0x0/0x28 returned 0 after 202 usecs
+calling  clk_disable_unused+0x0/0x120 @ 1
+initcall clk_disable_unused+0x0/0x120 returned 0 after 99 usecs
+calling  regulator_init_complete+0x0/0x6c @ 1
+initcall regulator_init_complete+0x0/0x6c returned 0 after 54 usecs
+Freeing unused kernel memory: 1344K
+Checked W+X mappings: passed, no W+X pages found
+Run /init as init process
+QEMU_LAB_INIT_REACHED
+LAB_BUSYBOX_WITHOUT_CACHE_PASS
+LAB_NOCACHE_LINKER_SUMMARY count=312 failed=0
+dl_dst_lib="lib/arm-linux-gnueabi"
+path.system_dirs[0x0]="/lib/arm-linux-gnueabi/"
+path.system_dirs[0x1]="/usr/lib/arm-linux-gnueabi/"
+path.system_dirs[0x2]="/lib/"
+path.system_dirs[0x3]="/usr/lib/"
+version.version="2.44"
+dl_dst_lib="lib/arm-linux-gnueabihf"
+path.system_dirs[0x0]="/lib/arm-linux-gnueabihf/"
+path.system_dirs[0x1]="/usr/lib/arm-linux-gnueabihf/"
+path.system_dirs[0x2]="/lib/"
+path.system_dirs[0x3]="/usr/lib/"
+version.version="2.44"
+dl_dst_lib="lib/aarch64-linux-gnu"
+path.system_dirs[0x0]="/lib/aarch64-linux-gnu/"
+path.system_dirs[0x1]="/usr/lib/aarch64-linux-gnu/"
+path.system_dirs[0x2]="/lib/"
+path.system_dirs[0x3]="/usr/lib/"
+version.version="2.44"
+LAB_MULTIARCH_LIBRARY zlib /usr/lib/arm-linux-gnueabi/libz.so.1
+LAB_MULTIARCH_LIBRARY expat /usr/lib/arm-linux-gnueabi/libexpat.so.1
+LAB_MULTIARCH_LIBRARY json-c /usr/lib/arm-linux-gnueabi/libjson-c.so.2
+LAB_MULTIARCH_LIBRARY libcap-ng /usr/lib/arm-linux-gnueabi/libcap-ng.so.0
+LAB_GCC15_LIBRARY_PROBE_PASS zlib=1.2.12 expat=expat_2.0.1 pointer=4 time=4 offset=4
+LAB_USERSPACE_BEGIN /lib/ld-linux-aarch64.so.1 --version
+ld.so (GNU libc) stable release version 2.44.
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.
+There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+LAB_USERSPACE_PASS /lib/ld-linux-aarch64.so.1 --version
+LAB_USERSPACE_BEGIN /lib/ld-linux.so.3 --version
+ld.so (GNU libc) stable release version 2.44.
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.
+There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+LAB_USERSPACE_PASS /lib/ld-linux.so.3 --version
+LAB_USERSPACE_BEGIN /bin/busybox echo armel-busybox-runs
+armel-busybox-runs
+LAB_USERSPACE_PASS /bin/busybox echo armel-busybox-runs
+LAB_USERSPACE_BEGIN /usr/bin/bash --version
+GNU bash, version 5.3.15(1)-release (aarch64-unknown-linux-gnu)
+Copyright (C) 2025 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+LAB_USERSPACE_PASS /usr/bin/bash --version
+LAB_USERSPACE_BEGIN /usr/gnu/bin/coreutils --coreutils-prog=ls --version
+ls (GNU coreutils) 9.11
+Copyright (C) 2026 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Richard M. Stallman and David MacKenzie.
+LAB_USERSPACE_PASS /usr/gnu/bin/coreutils --coreutils-prog=ls --version
+LAB_USERSPACE_BEGIN /usr/gnu/bin/tar --version
+tar (GNU tar) 1.35
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by John Gilmore and Jay Fenlason.
+LAB_USERSPACE_PASS /usr/gnu/bin/tar --version
+LAB_USERSPACE_BEGIN /usr/gnu/bin/find --version
+find (GNU findutils) 4.11.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Eric B. Decker, James Youngman, Bernhard Voelker,
+and Kevin Dalley.
+Features enabled: D_TYPE O_NOFOLLOW(enabled) LEAF_OPTIMISATION FTS(FTS_CWDFD) CBO(level=1) 
+LAB_USERSPACE_PASS /usr/gnu/bin/find --version
+LAB_USERSPACE_BEGIN /usr/gnu/bin/xargs --version
+xargs (GNU findutils) 4.11.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Eric B. Decker, James Youngman, Bernhard Voelker,
+and Kevin Dalley.
+LAB_USERSPACE_PASS /usr/gnu/bin/xargs --version
+LAB_USERSPACE_BEGIN /usr/gnu/bin/jq --version
+jq-
+LAB_USERSPACE_PASS /usr/gnu/bin/jq --version
+LAB_USERSPACE_BEGIN /usr/gnu/bin/sqlite3 --version
+3.42.0 2023-05-16 12:36:15 831d0fb2836b71c9bc51067c49fee4b8f18047814f2ff22d817d25195cf350b0
+LAB_USERSPACE_PASS /usr/gnu/bin/sqlite3 --version
+LAB_USERSPACE_BEGIN /usr/gnu/bin/socat -V
+socat by Gerhard Rieger and contributors - see www.dest-unreach.org
+socat version 1.7.3.2 on Aug 31 2026 05:23:15
+   running on Linux version #36 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026, release 4.19.294, machine aarch64
+features:
+  #define WITH_STDIO 1
+  #define WITH_FDNUM 1
+  #define WITH_FILE 1
+  #define WITH_CREAT 1
+  #define WITH_GOPEN 1
+  #undef WITH_TERMIOS
+  #define WITH_PIPE 1
+  #undef WITH_UNIX
+  #undef WITH_ABSTRACT_UNIXSOCKET
+  #define WITH_IP4 1
+  #define WITH_IP6 1
+  #define WITH_RAWIP 1
+  #define WITH_GENERICSOCKET 1
+  #define WITH_INTERFACE 1
+  #define WITH_TCP 1
+  #define WITH_UDP 1
+  #undef WITH_SCTP
+  #define WITH_LISTEN 1
+  #undef WITH_SOCKS4
+  #undef WITH_SOCKS4A
+  #undef WITH_PROXY
+  #define WITH_SYSTEM 1
+  #define WITH_EXEC 1
+  #undef WITH_READLINE
+  #undef WITH_TUN
+  #define WITH_PTY 1
+  #undef WITH_OPENSSL
+  #undef WITH_FIPS
+  #undef WITH_LIBWRAP
+  #define WITH_SYCLS 1
+  #define WITH_FILAN 1
+  #define WITH_RETRY 1
+  #define WITH_MSGLEVEL 0 /*debug*/
+LAB_USERSPACE_PASS /usr/gnu/bin/socat -V
+LAB_USERSPACE_BEGIN /usr/bin/htop --version
+htop 3.5.3-3.5.3
+LAB_USERSPACE_PASS /usr/bin/htop --version
+LAB_USERSPACE_BEGIN /usr/bin/nano --version
+ GNU nano, version 9.2
+ (C) 2026 the Free Software Foundation and various contributors
+ Compiled options: --disable-libmagic --disable-nls --enable-utf8
+LAB_USERSPACE_PASS /usr/bin/nano --version
+LAB_USERSPACE_BEGIN /usr/bin/iperf3 --version
+iperf 3.21 (cJSON 1.7.15)
+Linux (none) 4.19.294 #36 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026 aarch64
+Optional features available: CPU affinity setting, IPv6 flow label, TCP congestion algorithm setting, sendfile / zerocopy, socket pacing, bind to device, support IPv4 don't fragment, POSIX threads, GSO/GRO support
+LAB_USERSPACE_PASS /usr/bin/iperf3 --version
+LAB_USERSPACE_BEGIN /usr/bin/zstd --version
+*** Zstandard CLI (64-bit) v1.5.7, by Yann Collet ***
+LAB_USERSPACE_PASS /usr/bin/zstd --version
+LAB_USERSPACE_BEGIN /usr/sbin/btrfs version
+btrfs-progs v7.1
+-EXPERIMENTAL -INJECT -STATIC +LZO +ZSTD -UDEV +FSVERITY -ZONED CRYPTO=builtin
+LAB_USERSPACE_PASS /usr/sbin/btrfs version
+LAB_USERSPACE_BEGIN /usr/sbin/mkfs.xfs -V
+mkfs.xfs version 7.1.1
+LAB_USERSPACE_PASS /usr/sbin/mkfs.xfs -V
+LAB_USERSPACE_BEGIN /usr/sbin/ebtables --version
+ebtables v2.0.11 (legacy) (December 2011)
+LAB_USERSPACE_PASS /usr/sbin/ebtables --version
+LAB_USERSPACE_BEGIN /usr/bin/getconf GNU_LIBC_VERSION
+glibc 2.44
+LAB_USERSPACE_PASS /usr/bin/getconf GNU_LIBC_VERSION
+LAB_USERSPACE_BEGIN /usr/bin/ldd /usr/bin/bash
+	linux-vdso.so.1 (0x0000007f9e6c8000)
+	libtinfo.so.6 => /usr/lib/aarch64-linux-gnu/libtinfo.so.6 (0x0000007f9e630000)
+	libc.so.6 => /usr/lib/aarch64-linux-gnu/libc.so.6 (0x0000007f9e480000)
+	/lib/ld-linux-aarch64.so.1 (0x0000007f9e68b000)
+LAB_USERSPACE_PASS /usr/bin/ldd /usr/bin/bash
+LAB_USERSPACE_BEGIN /usr/bin/ldd /bin/busybox
+	libm.so.6 => /usr/lib/arm-linux-gnueabi/libm.so.6 (0xf7e10000)
+	libgcc_s.so.1 => /usr/lib/arm-linux-gnueabi/libgcc_s.so.1 (0xf7de0000)
+	libc.so.6 => /usr/lib/arm-linux-gnueabi/libc.so.6 (0xf7c50000)
+	/lib/ld-linux.so.3 (0xf7e9b000)
+LAB_USERSPACE_PASS /usr/bin/ldd /bin/busybox
+LAB_USERSPACE_BEGIN /bin/bash -c test "$BASH_VERSION"; printf "shell-path-ok\n"
+shell-path-ok
+LAB_USERSPACE_PASS /bin/bash -c test "$BASH_VERSION"; printf "shell-path-ok\n"
+LAB_USERSPACE_BEGIN /bin/tar --version
+tar (GNU tar) 1.35
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by John Gilmore and Jay Fenlason.
+LAB_USERSPACE_PASS /bin/tar --version
+LAB_USERSPACE_BEGIN /usr/bin/sha256sum /bin/busybox /usr/bin/bash
+73cc3ca6beba4672e94053551cc7c5fe2dd92698e580f91a031cbff959600b4e  /bin/busybox
+77ef4dd37eda8f3a23a6dc33d9e4cd17d8440d78ab15d8b7dc54f07b3387fdf0  /usr/bin/bash
+LAB_USERSPACE_PASS /usr/bin/sha256sum /bin/busybox /usr/bin/bash
+LAB_USERSPACE_BEGIN /usr/bin/dropbearmulti dropbear -V
+Dropbear v2026.94
+LAB_USERSPACE_PASS /usr/bin/dropbearmulti dropbear -V
+LAB_USERSPACE_BEGIN /usr/sbin/avahi-daemon --version
+avahi-daemon 0.8
+LAB_USERSPACE_PASS /usr/sbin/avahi-daemon --version
+LAB_USERSPACE_BEGIN /usr/sbin/ip link add labveth0 type veth peer name labveth1
+Assigning idx[17] for labveth1
+Assigning idx[18] for labveth0
+LAB_USERSPACE_PASS /usr/sbin/ip link add labveth0 type veth peer name labveth1
+LAB_USERSPACE_BEGIN /usr/sbin/ip link set labveth0 up
+IPv6: ADDRCONF(NETDEV_UP): labveth0: link is not ready
+LAB_USERSPACE_PASS /usr/sbin/ip link set labveth0 up
+LAB_USERSPACE_BEGIN /usr/sbin/ip link set labveth1 up
+IPv6: ADDRCONF(NETDEV_UP): labveth1: link is not ready
+IPv6: ADDRCONF(NETDEV_CHANGE): labveth1: link becomes ready
+IPv6: ADDRCONF(NETDEV_CHANGE): labveth0: link becomes ready
+LAB_USERSPACE_PASS /usr/sbin/ip link set labveth1 up
+LAB_USERSPACE_BEGIN /usr/sbin/ip link add link labveth0 name labmac0 type macvlan mode bridge
+Assigning idx[19] for labmac0
+netdev path : labmac0 -> labveth0
+LAB_USERSPACE_PASS /usr/sbin/ip link add link labveth0 name labmac0 type macvlan mode bridge
+LAB_USERSPACE_BEGIN /usr/sbin/ip link set labmac0 up
+device labveth0 entered promiscuous mode
+LAB_USERSPACE_PASS /usr/sbin/ip link set labmac0 up
+LAB_USERSPACE_BEGIN /usr/sbin/ip -d link show labmac0
+19: labmac0@labveth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/ether 22:c8:18:73:e5:b7 brd ff:ff:ff:ff:ff:ff promiscuity 0 minmtu 68 maxmtu 65535 
+    macvlan mode bridge addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+LAB_USERSPACE_PASS /usr/sbin/ip -d link show labmac0
+LAB_USERSPACE_BEGIN /usr/sbin/ip link del labmac0
+device labveth0 left promiscuous mode
+Freeing devid[2067] for labmac0
+LAB_USERSPACE_PASS /usr/sbin/ip link del labmac0
+LAB_USERSPACE_BEGIN /usr/sbin/ip link del labveth0
+Freeing devid[2066] for labveth0
+Freeing devid[2065] for labveth1
+LAB_USERSPACE_PASS /usr/sbin/ip link del labveth0
+LAB_USERSPACE_COMPLETE
+LAB_ABI_BEGIN aarch64
+LAB_ABI_PASS bits=64 glibc=2.44 hwcap=8ff
+LAB_ABI_BEGIN armel
+LAB_ABI_PASS bits=32 glibc=2.44 hwcap=37b0d6
+LAB_ABI_BEGIN armhf
+LAB_ABI_PASS bits=32 glibc=2.44 hwcap=37b0d6
+LAB_LINKER_SUMMARY count=312 failed=0
+Syntax OK
+Linux strongSwan U5.9.13/K4.19.294
+University of Applied Sciences Rapperswil, Switzerland
+LAB_LEGACY_PLUGIN_CONSUMERS_PASS
+LAB_IDENTITY exe=/usr/sbin/rc result=0 preload_env=absent
+LAB_IDENTITY exe=/usr/sbin/rc result=0 preload_env=absent
+LAB_USRMERGE_IDENTITY_PASS
+raid6_pq: loading out-of-tree module taints kernel.
+calling  init_module+0x0/0x1000 [raid6_pq] @ 955
+raid6: int64x1  gen()  1527 MB/s
+raid6: int64x1  xor()  1216 MB/s
+raid6: int64x2  gen()  3003 MB/s
+raid6: int64x2  xor()  1691 MB/s
+raid6: int64x4  gen()  3480 MB/s
+raid6: int64x4  xor()  2359 MB/s
+raid6: int64x8  gen()  3492 MB/s
+raid6: int64x8  xor()  1751 MB/s
+raid6: neonx1   gen()  2652 MB/s
+raid6: neonx1   xor()  1478 MB/s
+raid6: neonx2   gen()  4097 MB/s
+raid6: neonx2   xor()  2236 MB/s
+raid6: neonx4   gen()  4601 MB/s
+raid6: neonx4   xor()  2509 MB/s
+raid6: neonx8   gen()  3476 MB/s
+raid6: neonx8   xor()  2503 MB/s
+raid6: using algorithm neonx4 gen() 4601 MB/s
+raid6: .... xor() 2509 MB/s, rmw enabled
+raid6: using neon recovery algorithm
+initcall init_module+0x0/0x1000 [raid6_pq] returned 0 after 265725 usecs
+calling  calibrate_xor_blocks+0x0/0xee4 [xor] @ 956
+xor: measuring software checksum speed
+   8regs     :  5448.000 MB/sec
+   8regs_prefetch:  5280.000 MB/sec
+   32regs    :  6540.000 MB/sec
+   32regs_prefetch:  6592.000 MB/sec
+xor: using function: 32regs_prefetch (6592.000 MB/sec)
+initcall calibrate_xor_blocks+0x0/0xee4 [xor] returned 0 after 38880 usecs
+calling  init_btrfs_fs+0x0/0x124 [btrfs] @ 957
+Btrfs loaded, crc32c=crc32c-generic
+initcall init_btrfs_fs+0x0/0x124 [btrfs] returned 0 after 3205 usecs
+LAB_USRMERGE_MODULE_PATHS_PASS
+LAB_INIT_GUARD_WITHOUT_CACHE_BEGIN
+LEON_DIAG 23.103 BEGIN version=#36 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026 data_mount=-1 errno=19
+LEON_DIAG 23.107 ROOT_SLOT other
+LEON_DIAG 23.107 LOGGER_PID 962
+LEON_DIAG 23.108 EXEC_NORMAL_GUARDED_RC
+LEON_DIAG 23.111 KERNEL 7,22,0,-;blacklisting initcall bcm_pmc_drv_reg
+
+LEON_DIAG 23.112 KERNEL 7,23,0,-;blacklisting initcall bcm_ubus_drv_init
+
+LEON_DIAG 23.112 KERNEL 7,24,0,-;blacklisting initcall pmc_xrdp_init
+
+LEON_DIAG 23.112 KERNEL 7,25,0,-;blacklisting initcall pmc_wan_initcall
+
+LEON_DIAG 23.113 KERNEL 7,26,0,-;blacklisting initcall bcmbca_vreg_sync_drv_reg
+
+LEON_DIAG 23.114 KERNEL 7,45,23460,-;calling  cpu_suspend_init+0x0/0x58 @ 1
+
+LEON_DIAG 23.114 KERNEL 7,46,23804,-;initcall cpu_suspend_init+0x0/0x58 returned 0 after 0 usecs
+
+LEON_DIAG 23.115 KERNEL 7,47,23952,-;calling  asids_init+0x0/0xe0 @ 1
+
+LEON_DIAG 23.115 KERNEL 7,49,24133,-;initcall asids_init+0x0/0xe0 returned 0 after 0 usecs
+
+LEON_DIAG 23.115 KERNEL 7,50,24299,-;calling  spawn_ksoftirqd+0x0/0x48 @ 1
+
+LEON_DIAG 23.116 KERNEL 7,51,24801,-;initcall spawn_ksoftirqd+0x0/0x48 returned 0 after 0 usecs
+
+LEON_DIAG 23.116 KERNEL 7,52,24899,-;calling  migration_init+0x0/0x4c @ 1
+
+LEON_DIAG 23.117 KERNEL 7,53,24982,-;initcall migration_init+0x0/0x4c returned 0 after 0 usecs
+
+LEON_DIAG 23.117 KERNEL 7,54,25075,-;calling  check_cpu_stall_init+0x0/0x2c @ 1
+
+LEON_DIAG 23.117 KERNEL 7,55,25157,-;initcall check_cpu_stall_init+0x0/0x2c returned 0 after 0 usecs
+
+LEON_DIAG 23.118 KERNEL 7,56,25259,-;calling  srcu_bootup_announce+0x0/0x40 @ 1
+
+LEON_DIAG 23.118 KERNEL 7,58,25983,-;initcall srcu_bootup_announce+0x0/0x40 returned 0 after 0 usecs
+
+LEON_DIAG 23.118 KERNEL 7,59,26633,-;calling  rcu_spawn_gp_kthread+0x0/0x150 @ 1
+
+LEON_DIAG 23.119 KERNEL 7,60,27460,-;initcall rcu_spawn_gp_kthread+0x0/0x150 returned 0 after 976 usecs
+
+LEON_DIAG 23.119 KERNEL 7,61,27574,-;calling  cpu_stop_init+0x0/0xb4 @ 1
+
+LEON_DIAG 23.119 KERNEL 7,62,28382,-;initcall cpu_stop_init+0x0/0xb4 returned 0 after 976 usecs
+
+LEON_DIAG 23.120 KERNEL 7,63,28480,-;calling  init_zero_pfn+0x0/0x28 @ 1
+
+LEON_DIAG 23.120 KERNEL 7,64,28545,-;initcall init_zero_pfn+0x0/0x28 returned 0 after 0 usecs
+
+LEON_DIAG 23.121 KERNEL 7,65,28637,-;calling  its_pmsi_init+0x0/0x154 @ 1
+
+LEON_DIAG 23.121 KERNEL 7,66,28765,-;initcall its_pmsi_init+0x0/0x154 returned 0 after 0 usecs
+
+LEON_DIAG 23.121 KERNEL 7,67,28857,-;calling  its_pci_msi_init+0x0/0x154 @ 1
+
+LEON_DIAG 23.122 KERNEL 7,68,28958,-;initcall its_pci_msi_init+0x0/0x154 returned 0 after 0 usecs
+
+LEON_DIAG 23.122 KERNEL 7,69,29054,-;calling  dummy_timer_register+0x0/0x34 @ 1
+
+LEON_DIAG 23.122 KERNEL 7,70,29765,-;initcall dummy_timer_register+0x0/0x34 returned 0 after 0 usecs
+
+LEON_DIAG 23.123 KERNEL 7,71,29887,-;calling  bcm_arch_early_init+0x0/0xb4 @ 1
+
+LEON_DIAG 23.123 KERNEL 7,80,32260,-;initcall bcm_arch_early_init+0x0/0xb4 returned 0 after 1953 usecs
+
+LEON_DIAG 23.124 KERNEL 7,81,32375,-;calling  initialize_ptr_random+0x0/0xb0 @ 1
+
+LEON_DIAG 23.124 KERNEL 7,82,32514,-;initcall initialize_ptr_random+0x0/0xb0 returned 0 after 0 usecs
+
+LEON_DIAG 23.125 KERNEL 7,93,54369,-;calling  ipc_ns_init+0x0/0x3c @ 1
+
+LEON_DIAG 23.125 KERNEL 7,94,54682,-;initcall ipc_ns_init+0x0/0x3c returned 0 after 976 usecs
+
+LEON_DIAG 23.125 KERNEL 7,95,54787,-;calling  init_mmap_min_addr+0x0/0x18 @ 1
+
+LEON_DIAG 23.126 KERNEL 7,96,54860,-;initcall init_mmap_min_addr+0x0/0x18 returned 0 after 0 usecs
+
+LEON_DIAG 23.126 KERNEL 7,97,54963,-;calling  pci_realloc_setup_params+0x0/0x3c @ 1
+
+LEON_DIAG 23.127 KERNEL 7,98,55050,-;initcall pci_realloc_setup_params+0x0/0x3c returned 0 after 0 usecs
+
+LEON_DIAG 23.127 KERNEL 7,99,55183,-;calling  net_ns_init+0x0/0x13c @ 1
+
+LEON_DIAG 23.127 KERNEL 7,100,56278,-;initcall net_ns_init+0x0/0x13c returned 0 after 976 usecs
+
+LEON_DIAG 23.128 KERNEL 7,101,56449,-;calling  fpsimd_init+0x0/0xd8 @ 1
+
+LEON_DIAG 23.128 KERNEL 7,102,56552,-;initcall fpsimd_init+0x0/0xd8 returned 0 after 0 usecs
+
+LEON_DIAG 23.128 KERNEL 7,103,56664,-;calling  enable_mrs_emulation+0x0/0x24 @ 1
+
+LEON_DIAG 23.129 KERNEL 7,104,56832,-;initcall enable_mrs_emulation+0x0/0x24 returned 0 after 0 usecs
+
+LEON_DIAG 23.129 KERNEL 7,105,56937,-;calling  map_entry_trampoline+0x0/0x1e4 @ 1
+
+LEON_DIAG 23.129 KERNEL 7,106,57205,-;initcall map_entry_trampoline+0x0/0x1e4 returned 0 after 0 usecs
+
+LEON_DIAG 23.130 KERNEL 7,107,57334,-;calling  wq_sysfs_init+0x0/0x40 @ 1
+
+LEON_DIAG 23.130 KERNEL 7,108,57510,-;initcall wq_sysfs_init+0x0/0x40 returned 0 after 0 usecs
+
+LEON_DIAG 23.130 KERNEL 7,109,57605,-;calling  ksysfs_init+0x0/0xb4 @ 1
+
+LEON_DIAG 23.131 KERNEL 7,110,57723,-;initcall ksysfs_init+0x0/0xb4 returned 0 after 0 usecs
+LEON_TRIAL: blocked automatic boot metadata write: commit
+
+LEON_TRIAL: blocked automatic boot metadata write: commit
+LEON_DIAG 23.131 KERNEL 7,111,57857,-;calling  rcu_set_runtime_mode+0x0/0x14 @ 1
+LEON_TRIAL: blocked automatic boot metadata write: setBootImageState
+
+LEON_TRIAL: blocked automatic boot metadata write: setImgValidStatus
+LEON_TRIAL: blocked automatic boot metadata write: setImgSeqNum
+LEON_DIAG 23.132 KERNEL 7,112,57966,-;initcall rcu_set_runtime_mode+0x0/0x14 returned 0 after 0 usecs
+LEON_TRIAL: blocked automatic boot metadata write: setNandMetadata
+
+LEON_TRIAL: blocked automatic boot metadata write: setEmmcMetadata
+LEON_DIAG 23.132 KERNEL 7,113,58070,-;calling  rcu_spawn_tasks_kthread+0x0/0x58 @ 1
+
+LEON_DIAG 23.133 KERNEL 7,114,58311,-;initcall rcu_spawn_tasks_kthread+0x0/0x58 returned 0 after 0 usecs
+
+LEON_DIAG 23.133 KERNEL 7,115,58423,-;calling  dma_init_reserved_memory+0x0/0x64 @ 1
+
+LEON_DIAG 23.134 KERNEL 7,116,58527,-;initcall dma_init_reserved_memory+0x0/0x64 returned -12 after 0 usecs
+
+LEON_DIAG 23.134 KERNEL 7,117,58641,-;calling  init_jiffies_clocksource+0x0/0x24 @ 1
+
+LEON_DIAG 23.135 KERNEL 7,119,58966,-;initcall init_jiffies_clocksource+0x0/0x24 returned 0 after 976 usecs
+
+LEON_DIAG 23.135 KERNEL 7,120,59078,-;calling  futex_init+0x0/0x128 @ 1
+
+LEON_DIAG 23.135 KERNEL 7,122,59442,-;initcall futex_init+0x0/0x128 returned 0 after 0 usecs
+
+LEON_DIAG 23.136 KERNEL 7,123,59531,-;calling  cgroup_wq_init+0x0/0x40 @ 1
+
+LEON_DIAG 23.136 KERNEL 7,124,59625,-;initcall cgroup_wq_init+0x0/0x40 returned 0 after 0 usecs
+
+LEON_DIAG 23.136 KERNEL 7,125,59719,-;calling  cgroup1_wq_init+0x0/0x40 @ 1
+
+LEON_DIAG 23.137 KERNEL 7,126,59804,-;initcall cgroup1_wq_init+0x0/0x40 returned 0 after 0 usecs
+
+LEON_DIAG 23.137 KERNEL 7,127,59901,-;calling  cma_init_reserved_areas+0x0/0x1a4 @ 1
+
+LEON_DIAG 23.138 KERNEL 7,128,60061,-;initcall cma_init_reserved_areas+0x0/0x1a4 returned 0 after 0 usecs
+
+LEON_DIAG 23.138 KERNEL 7,129,60255,-;calling  fsnotify_init+0x0/0x58 @ 1
+
+LEON_DIAG 23.138 KERNEL 7,130,60557,-;initcall fsnotify_init+0x0/0x58 returned 0 after 0 usecs
+
+LEON_DIAG 23.139 KERNEL 7,131,60651,-;calling  filelock_init+0x0/0xbc @ 1
+
+LEON_DIAG 23.139 KERNEL 7,132,60754,-;initcall filelock_init+0x0/0xbc returned 0 after 0 usecs
+
+LEON_DIAG 23.139 KERNEL 7,133,60849,-;calling  init_script_binfmt+0x0/0x24 @ 1
+
+LEON_DIAG 23.140 KERNEL 7,134,61048,-;initcall init_script_binfmt+0x0/0x24 returned 0 after 976 usecs
+
+LEON_DIAG 23.140 KERNEL 7,135,61157,-;calling  init_elf_binfmt+0x0/0x24 @ 1
+
+LEON_DIAG 23.140 KERNEL 7,136,61227,-;initcall init_elf_binfmt+0x0/0x24 returned 0 after 0 usecs
+
+LEON_DIAG 23.141 KERNEL 7,137,61324,-;calling  init_compat_elf_binfmt+0x0/0x24 @ 1
+
+LEON_DIAG 23.141 KERNEL 7,138,61403,-;initcall init_compat_elf_binfmt+0x0/0x24 returned 0 after 0 usecs
+
+LEON_DIAG 23.141 KERNEL 7,139,61509,-;calling  configfs_init+0x0/0xb4 @ 1
+
+LEON_DIAG 23.142 KERNEL 7,140,61610,-;initcall configfs_init+0x0/0xb4 returned 0 after 0 usecs
+
+LEON_DIAG 23.142 KERNEL 7,141,61703,-;calling  debugfs_init+0x0/0x74 @ 1
+
+LEON_DIAG 23.142 KERNEL 7,142,61785,-;initcall debugfs_init+0x0/0x74 returned 0 after 0 usecs
+
+LEON_DIAG 23.143 KERNEL 7,143,61879,-;calling  prandom_init_early+0x0/0x120 @ 1
+
+LEON_DIAG 23.143 KERNEL 7,144,61990,-;initcall prandom_init_early+0x0/0x120 returned 0 after 0 usecs
+
+LEON_DIAG 23.143 KERNEL 7,145,62120,-;calling  pinctrl_init+0x0/0xc0 @ 1
+
+LEON_DIAG 23.144 KERNEL 7,147,63260,-;initcall pinctrl_init+0x0/0xc0 returned 0 after 976 usecs
+
+LEON_DIAG 23.144 KERNEL 7,148,63359,-;calling  gpiolib_dev_init+0x0/0xec @ 1
+
+LEON_DIAG 23.144 KERNEL 7,149,63547,-;initcall gpiolib_dev_init+0x0/0xec returned 0 after 0 usecs
+
+LEON_DIAG 23.145 KERNEL 7,150,63645,-;calling  regulator_init+0x0/0xb0 @ 1
+
+LEON_DIAG 23.145 KERNEL 7,152,66957,-;initcall regulator_init+0x0/0xb0 returned 0 after 2929 usecs
+
+LEON_DIAG 23.145 KERNEL 7,153,67060,-;calling  component_debug_init+0x0/0x30 @ 1
+
+LEON_DIAG 23.146 KERNEL 7,154,67151,-;initcall component_debug_init+0x0/0x30 returned 0 after 0 usecs
+
+LEON_DIAG 23.146 KERNEL 7,155,67311,-;calling  free_raw_capacity+0x0/0x30 @ 1
+
+LEON_DIAG 23.146 KERNEL 7,156,67388,-;initcall free_raw_capacity+0x0/0x30 returned 0 after 0 usecs
+
+LEON_DIAG 23.147 KERNEL 7,157,67485,-;calling  cpuidle_init+0x0/0x58 @ 1
+
+LEON_DIAG 23.147 KERNEL 7,158,67615,-;initcall cpuidle_init+0x0/0x58 returned 0 after 0 usecs
+
+LEON_DIAG 23.147 KERNEL 7,159,67706,-;calling  sock_init+0x0/0xb0 @ 1
+
+LEON_DIAG 23.148 KERNEL 7,162,68470,-;initcall sock_init+0x0/0xb0 returned 0 after 976 usecs
+
+LEON_DIAG 23.148 KERNEL 7,163,68565,-;calling  net_inuse_init+0x0/0x30 @ 1
+
+LEON_DIAG 23.148 KERNEL 7,164,68671,-;initcall net_inuse_init+0x0/0x30 returned 0 after 0 usecs
+
+LEON_DIAG 23.149 KERNEL 7,165,68766,-;calling  net_defaults_init+0x0/0x30 @ 1
+
+LEON_DIAG 23.149 KERNEL 7,166,68846,-;initcall net_defaults_init+0x0/0x30 returned 0 after 0 usecs
+
+LEON_DIAG 23.150 KERNEL 7,167,68945,-;calling  init_default_flow_dissectors+0x0/0x54 @ 1
+
+LEON_DIAG 23.150 KERNEL 7,168,69084,-;initcall init_default_flow_dissectors+0x0/0x54 returned 0 after 0 usecs
+
+LEON_DIAG 23.150 KERNEL 7,169,69212,-;calling  netlink_proto_init+0x0/0x168 @ 1
+
+LEON_DIAG 23.151 KERNEL 7,171,70429,-;initcall netlink_proto_init+0x0/0x168 returned 0 after 1953 usecs
+
+LEON_DIAG 23.151 KERNEL 7,172,70566,-;calling  bcm_otp_drv_reg+0x0/0x50 @ 1
+
+LEON_DIAG 23.151 KERNEL 7,175,70926,-;initcall bcm_otp_drv_reg+0x0/0x50 returned 0 after 0 usecs
+
+LEON_DIAG 23.152 KERNEL 7,176,71024,-;calling  bcm_strap_drv_reg+0x0/0x194 @ 1
+
+LEON_DIAG 23.152 KERNEL 7,180,71741,-;initcall bcm_strap_drv_reg+0x0/0x194 returned 0 after 976 usecs
+
+LEON_DIAG 23.152 KERNEL 7,181,71896,-;calling  debug_monitors_init+0x0/0x40 @ 1
+
+LEON_DIAG 23.153 KERNEL 7,182,72125,-;initcall debug_monitors_init+0x0/0x40 returned 0 after 0 usecs
+
+LEON_DIAG 23.153 KERNEL 7,183,72233,-;calling  irq_sysfs_init+0x0/0xe8 @ 1
+
+LEON_DIAG 23.153 KERNEL 7,184,72445,-;initcall irq_sysfs_init+0x0/0xe8 returned 0 after 976 usecs
+
+LEON_DIAG 23.154 KERNEL 7,185,72545,-;calling  init_per_zone_wmark_min+0x0/0x80 @ 1
+
+LEON_DIAG 23.154 KERNEL 7,186,72887,-;initcall init_per_zone_wmark_min+0x0/0x80 returned 0 after 0 usecs
+
+LEON_DIAG 23.155 KERNEL 7,187,72996,-;calling  bdi_class_init+0x0/0x68 @ 1
+
+LEON_DIAG 23.155 KERNEL 7,188,73130,-;initcall bdi_class_init+0x0/0x68 returned 0 after 0 usecs
+
+LEON_DIAG 23.155 KERNEL 7,189,73229,-;calling  mm_sysfs_init+0x0/0x38 @ 1
+
+LEON_DIAG 23.156 KERNEL 7,190,73303,-;initcall mm_sysfs_init+0x0/0x38 returned 0 after 0 usecs
+
+LAB_PASS trial_init_argv0_metadata_write_guard_and_no_exec_inheritance
+LEON_DIAG 23.156 KERNEL 7,191,73396,-;calling  gpiolib_sysfs_init+0x0/0xb0 @ 1
+QEMU_USRMERGE_COMPLETE
+
+LEON_DIAG 23.156 KERNEL 7,192,73527,-;initcall gpiolib_sysfs_init+0x0/0xb0 returned 0 after 0 usecs
+
+LEON_DIAG 23.157 KERNEL 7,193,73629,-;calling  pcibus_class_init+0x0/0x24 @ 1
+
+LEON_DIAG 23.157 KERNEL 7,194,73731,-;initcall pcibus_class_init+0x0/0x24 returned 0 after 0 usecs
+
+LEON_DIAG 23.157 KERNEL 7,195,73830,-;calling  pci_driver_init+0x0/0x34 @ 1
+
+UBIFS error (pid: 1): cannot open "ubi:data", error -19
+alarmtimer alarmtimer: shutdown
+LEON_DIAG 23.158 KERNEL 7,196,73942,-;initcall pci_driver_init+0x0/0x34 returned 0 after 0 usecsuart-pl011 9000000.pl011: shutdown
+
+
+reg-dummy reg-dummy: shutdown
+LEON_DIAG 23.158 KERNEL 7,197,74038,-;calling  amba_init+0x0/0x1c @ 1reboot: Power down

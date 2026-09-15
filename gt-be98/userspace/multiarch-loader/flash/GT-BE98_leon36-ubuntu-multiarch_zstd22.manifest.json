@@ -1,0 +1,42 @@
+{
+  "image": "GT-BE98_leon36-ubuntu-multiarch_zstd22.pkgtb",
+  "bytes": 88333388,
+  "sha256": "67f896ed532531a345805dc14303b23b203d4545fb8cb11a5ab5df12d8c7a23d",
+  "original_sha256": "d20e532d4dab0777761007a967da3d897d0fa2ea3fab9fdc4b304e89f00cc364",
+  "rootfs_sha256": "4f2a9673173a0c32b85a2b1256eaafab4ca96312f134df86e38ae1a58595a88e",
+  "rootfs_bytes": 75915264,
+  "bootfs_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+  "bootfs_bytes": 12417164,
+  "kernel_sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4",
+  "kernel_version": "#36",
+  "rootfs_compression": "zstd",
+  "rootfs_level": 22,
+  "kernel_compression": "lzo",
+  "signed_bootfs_unchanged": true,
+  "bootfs_signature_verified": true,
+  "all_other_payloads_unchanged": true,
+  "loader_update_selected": false,
+  "reserved_blocks": [
+    107,
+    607
+  ],
+  "available_blocks_input": 734,
+  "remaining_blocks": 20,
+  "target_slot": 1,
+  "commit_requested": false,
+  "capacity_observation": "previous hardware trial; recheck before flashing",
+  "payloads": {
+    "/images/bootfs_6813_a0+": {
+      "before_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+      "after_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+      "bytes": 12417164,
+      "offset": 960
+    },
+    "/images/nand_squashfs": {
+      "before_sha256": "9d13b0b5789843e691cf08f2083c189dbc61f48eeb5d433795183e455b4aa026",
+      "after_sha256": "4f2a9673173a0c32b85a2b1256eaafab4ca96312f134df86e38ae1a58595a88e",
+      "bytes": 75915264,
+      "offset": 12418124
+    }
+  }
+}

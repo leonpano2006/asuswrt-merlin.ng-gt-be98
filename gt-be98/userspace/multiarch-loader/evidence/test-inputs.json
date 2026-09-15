@@ -1,0 +1,38 @@
+{
+  "kernel": {
+    "bytes": 12773384,
+    "sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4"
+  },
+  "static_busybox": {
+    "bytes": 1914704,
+    "sha256": "52151e7f322f926b64049cdaa1410dc3ea6485525e0624b05813791c219ae933"
+  },
+  "library_probe": {
+    "bytes": 70948,
+    "sha256": "5ad09ffcc965b3b94b45a17d5b1c6a66aed5f2f533db19a1befb3f98a7fbafa0"
+  },
+  "probes": {
+    "identity_probe_command": [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-gcc-15",
+      "--sysroot=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain",
+      "-O2",
+      "-mcpu=cortex-a53",
+      "-mfpu=neon-fp-armv8",
+      "-mfloat-abi=softfp",
+      "-U_TIME_BITS",
+      "-U_FILE_OFFSET_BITS",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/multiarch-loader-20260916/scripts/identity-probe.c",
+      "-ldl",
+      "-o",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/multiarch-loader-20260916/saved-inputs/probes/identity-probe"
+    ],
+    "files": {
+      "bootguard-provider.so": "256cdf7d41a6084d00ed1a28a928ef1db4260af33a4a1095146d723acf59bd47",
+      "guardcheck": "c5a864b78f3c028bcd778a0076b298d1a7bf7c8353aec343303f128d4320b8a2",
+      "abi-probe-armel": "8510e11103d32c8172fad34fa5e92029b7b7312eedeeec3fd234f7aa3f1e54da",
+      "abi-probe-aarch64": "a7a14275714d3ab60239f009fd8d12881b6d3a43eb09f51da9f231aa0535a33e",
+      "abi-probe-armhf": "2c85ee23010aaa0d180c17d2fb38a0f8316045c39c5c8bac431e0ca030d1b1eb",
+      "identity-probe": "29a7e8c33c97a85f9988a8b35aa698285a3e8ed713feef699cef4923ebcc467f"
+    }
+  }
+}

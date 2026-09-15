@@ -1,0 +1,752 @@
+[
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libBrokenLocale.so.1",
+    "input_sha256": "4d6b3e328a10fed0a60c510dfc68c318693c774e15a5701e8b096ac022c2546c",
+    "output_sha256": "fc315a9df45c4e63f22902b149d5de59a366a3e581a5ebf92988b2ff3a4faffb",
+    "bytes": 67576,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libanl.so.1",
+    "input_sha256": "715e450bff095c73af84b34f85003e5c088346634d40ccf90cfb4f82123faee3",
+    "output_sha256": "4375b071b390c6d6464272f9868140fe6db87c736aa7107914b5f5d2f5e17fa7",
+    "bytes": 67496,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libc.so.6",
+    "input_sha256": "64a81c930425f5e326cb5d56f7725483b41f41da7e6c44f63f7b8fe867f9a0b8",
+    "output_sha256": "4180356811836a05e1910d6718cc64f3a6bac7efe58fb76c1ce75b253626598a",
+    "bytes": 1716560,
+    "public_exports_preserved": 2801,
+    "new_public_exports": [],
+    "needed": [
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libc_malloc_debug.so.0",
+    "input_sha256": "246babf2a4d01dc79a7ba80969d1c20abd32976863636bbbe081f9407dc8d4b5",
+    "output_sha256": "d92e2fc2df871a9aea6a4516aecfc28ec90d36204acb31bbd22e354ad7a3dad8",
+    "bytes": 70304,
+    "public_exports_preserved": 33,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libdl.so.2",
+    "input_sha256": "db83a03390ffa3b55f75022391fd7375eb533286d5030e2dd52e6bf8f3b948b5",
+    "output_sha256": "6d7daa1f83a57790e7bef67e5cb98dcfe06f736daffb8e9fdb673436c782f86a",
+    "bytes": 67496,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libm.so.6",
+    "input_sha256": "a35f2b5d3dacccabaa52054b6451110013c69e2958a14ee9d2c95d45dd4fa3ba",
+    "output_sha256": "b13d06670cdedd4f8fa54bb79b213381924a5d93f653ea25fb89630063141c3b",
+    "bytes": 723032,
+    "public_exports_preserved": 1359,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libmemusage.so",
+    "input_sha256": "74e1ef1249680368f6f36c8f8e332caa802912f7b1be006828758677549c0fd7",
+    "output_sha256": "c7495fd0223927bd75cac4e3ad447299cfe17a234c26da087097c657bcc7153a",
+    "bytes": 67792,
+    "public_exports_preserved": 8,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libmvec.so.1",
+    "input_sha256": "bb32d59b85be39cb62d53e385afddc35ec3ba16eb0e663d07cc6ca99148875c6",
+    "output_sha256": "a24694da724825e029573bb5ad2f6f1db2d72b96603e492af4b03a3f0d9f7b6a",
+    "bytes": 264256,
+    "public_exports_preserved": 207,
+    "new_public_exports": [],
+    "needed": [
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libnsl.so.1",
+    "input_sha256": "89b628ed2d1b0b2597cfc72784467b4bc52424bcd47d919cf78e3455941b001b",
+    "output_sha256": "a69e4379d97242d655af1053699ccefe9b2e62bcb1f8a88cda7d7c924da59115",
+    "bytes": 133952,
+    "public_exports_preserved": 122,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libnss_compat.so.2",
+    "input_sha256": "abc484a42ecfde30d711c7659ef0f489fbe81778efe2f256364f42c61d89378a",
+    "output_sha256": "58b399b13e3b4f753b89a492874ae01a738343ec3d16661d03394a9e7939d215",
+    "bytes": 68248,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libnss_db.so.2",
+    "input_sha256": "c06013c3864839144cc24ef57ba1fdffef90890d7a9640f88c15762384880787",
+    "output_sha256": "bb774edee70e595871d7bcacd082bcc0c16f07f34f260f96cb8d55a2d1c4d0e4",
+    "bytes": 67832,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libnss_dns.so.2",
+    "input_sha256": "8e4e6b415903dac92ef813b3637a0fe5c89cf4367ae902fe3a5cd0845d220499",
+    "output_sha256": "ddc11b401e8ed84d9ec214e5b7ecbbd2e8a00bbf935476f09b399a2e7f891a16",
+    "bytes": 67496,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libresolv.so.2",
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libnss_files.so.2",
+    "input_sha256": "d934359143b7b9299fe7ae7af5e259780fb3515d1785a0fb1912a7f793d7f1d1",
+    "output_sha256": "00214ab518e84f74fd007343a201c9efacb7b93cca53cc6ff23dc2715fecd62a",
+    "bytes": 67496,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libnss_hesiod.so.2",
+    "input_sha256": "651753a7608ff36666ef0c0992b4f0437f676f7f33e117405065a66902bf303f",
+    "output_sha256": "b39684263856137b93c67a11fbd22531590bbdec8b466ceb0037102a9e1b35d7",
+    "bytes": 67776,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libresolv.so.2",
+      "libnss_files.so.2",
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libpcprofile.so",
+    "input_sha256": "1118211a063128c0dc31e742842db7a17a00cfb0d32b9bffe81a4b5c5f0a4941",
+    "output_sha256": "de8f8b9e01a94f19a3af285f1a24ef64c838907192dcda23a8e73e572d9ad479",
+    "bytes": 67528,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libpthread.so.0",
+    "input_sha256": "c05c6939dc602da703ac53a10e9def67151f46590b809a828f409773eeb3698c",
+    "output_sha256": "aa17b4220612e693d4084d757b0dd16908de9b65beff320fc3e0ad59ebb35dec",
+    "bytes": 67496,
+    "public_exports_preserved": 10,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libresolv.so.2",
+    "input_sha256": "01d16a056a0957dbdb94cf33de440bf6074b433cb169bbe0c46416d13422e1b7",
+    "output_sha256": "582a6e0644723c2419c642a14e33590e6202429f13ea6476bae8730b3e210fcd",
+    "bytes": 68176,
+    "public_exports_preserved": 68,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/librt.so.1",
+    "input_sha256": "2ce093d7ca2d0c897621459976a774e5be25f2540c486973a9241e6b384f26dc",
+    "output_sha256": "04f8b25768be0b5a3ae7461f6d8989473a1a303d1395da474996892b841e3e24",
+    "bytes": 67584,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libthread_db.so.1",
+    "input_sha256": "a3bc82b324f19afda1b48d1d494efead02d73e9c95cc0bd098b8e7382ec87550",
+    "output_sha256": "695bd7b8afa72ca8a785c88680e9d49b249aa7fe8c3ac576d5636c63e0dbae4a",
+    "bytes": 68288,
+    "public_exports_preserved": 41,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libutil.so.1",
+    "input_sha256": "e303f49c263a698739e35d03704dfb416e34f54133afb33bab9b3e29facc49da",
+    "output_sha256": "b827e44abb734c935c34804b99cd96992872b637fd714dd01e625503b63fd774",
+    "bytes": 67496,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1",
+    "input_sha256": "0809f0bb9ce68e5d67ba46dbcde7d5cf9e688e937117ba764a2b39afc18bf6c2",
+    "output_sha256": "e4f1f413994e1f7b3e462e66665e6a0b688ebf0e4a3764c55758a610aeb67426",
+    "bytes": 200512,
+    "public_exports_preserved": 12,
+    "new_public_exports": [],
+    "needed": []
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/sbin/ldconfig",
+    "input_sha256": "0372875c0e002b7ee3522d03d1a53fb220ce21cdbb3101faf19ee63859c41d2f",
+    "output_sha256": "00a0453b46925c1e2d711461d55120d7915844d0418ce7b71c3e98f05b67bb85",
+    "bytes": 926104,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": []
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libBrokenLocale.so.1",
+    "input_sha256": "e14689f84e7dba7b9c3e80ef73b74ed2def26e38659411d85ff031b98e81acc2",
+    "output_sha256": "420196a76e7e9e04d9bd9baca87c25cc1d32250aa6845eea9fc13af7c1bccd92",
+    "bytes": 66956,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libanl.so.1",
+    "input_sha256": "8f662e1538b54f581af374b2b2b935bec9522a3a810462502a382900afc892d1",
+    "output_sha256": "2c6c148b252d8e4f96681a35542a7768872287e596d9d72f128b2cfd9895b333",
+    "bytes": 66952,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libc.so.6",
+    "input_sha256": "a2f22a7233ae70c779a4dd1f9de4797dd09d3778b093fb617fb75402a5c5c5e8",
+    "output_sha256": "71aa729b56b22bdb0e90b8882afc4d4a76de52f0769edc89bdaa8cca84d2bfe9",
+    "bytes": 1516080,
+    "public_exports_preserved": 2938,
+    "new_public_exports": [],
+    "needed": [
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libc_malloc_debug.so.0",
+    "input_sha256": "eebdca4a44ac3008a12a688028cfcf8879a063dc39a1f0c8b9e9c5943ca4efee",
+    "output_sha256": "f7413f50dd743e159bc4bc33a32ffb0ff72801cca5cb79fc23a3e795c2e6ef0b",
+    "bytes": 68388,
+    "public_exports_preserved": 35,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libdl.so.2",
+    "input_sha256": "65f3ecdc289e671122be4afb0e69a4d305735432969b71193b1f1eddc1cd5d7d",
+    "output_sha256": "b84c453245c996dfa706715460c6c14354d76ac7dcd3a1f3b49acbaa1155b0f7",
+    "bytes": 66952,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libm.so.6",
+    "input_sha256": "a1e219a7425a74c05dae881582fe81db075cc28d68540328b99d2c2d89e6a433",
+    "output_sha256": "cbc86204d37d47a6022fa66ea2e9e6c2cce0bd3e24ee87e8d36cc6a616e82caa",
+    "bytes": 460276,
+    "public_exports_preserved": 1017,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libmemusage.so",
+    "input_sha256": "afcef5276b7e98aa0f71cadd3f21cfe456ceb3525ab515500f06f31d78c8b699",
+    "output_sha256": "1356433566080a85c174d653368fa5eb57f06f64187ad62826c64089d928b657",
+    "bytes": 67108,
+    "public_exports_preserved": 8,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libnsl.so.1",
+    "input_sha256": "65003a89df8766b45fe77662922573c0a8b1dd7a726e51f1d633b9d763549053",
+    "output_sha256": "d05fc2cd21f9ff2676a2b54bfe08ef4637dec2145e5af3ebe672dfb785dadc39",
+    "bytes": 67384,
+    "public_exports_preserved": 122,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libnss_compat.so.2",
+    "input_sha256": "d48e5febb6f50192383135d6e00a16973d643d7b79d0ffe356bf3d3e24e52b95",
+    "output_sha256": "e50de1c9c9e064a9c909ac22349b12b3f6e8f47c500e1f07e5bc7b5f0376899f",
+    "bytes": 67304,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libnss_db.so.2",
+    "input_sha256": "7b9f55503ad0a77370e452018b1b0eb86c7a3293cb7fda87106b95219e07b506",
+    "output_sha256": "ffafc7819690812e0e858d723b0457a7eb9dbc283691814017ea3dff7df6d8fe",
+    "bytes": 67068,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libnss_dns.so.2",
+    "input_sha256": "ee1a903d027808c960f6255b5faa4cba88c8d3e147aa65273beff2d12372ac60",
+    "output_sha256": "43c9305e14b3a82fa0633355219af210ca49cbad312f31e0bc48aa0db8e2e271",
+    "bytes": 66952,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libnss_files.so.2",
+    "input_sha256": "9fb64442ad00469a315a0d2cbd92b50dee71d2a305a27448665c083662abeb00",
+    "output_sha256": "a2d3121281de8ab394d7eadfde52036539d167f38657035f888a6407f43422c6",
+    "bytes": 66952,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libnss_hesiod.so.2",
+    "input_sha256": "f6bb62dcf091124000f36b47fbcfd167ae071535956901a51a454b3ddc283227",
+    "output_sha256": "1caa68f404738595af64f3c63b7e7e1e8e0968daaa7bce23178ec5dccd379360",
+    "bytes": 67060,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libresolv.so.2",
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libpcprofile.so",
+    "input_sha256": "8d90c54bd45cf93731f6b5db54a750388062cc64a3f7dc861fbd4f77b39623a2",
+    "output_sha256": "20731554371ac6d84813a5e09692b6bd4244f18088b0d854fe50f1c781aba633",
+    "bytes": 66916,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libpthread.so.0",
+    "input_sha256": "372ce87d838c34387d2fc020fb968a5df4e0aa1a29824c2515bae5e18647a48a",
+    "output_sha256": "a5b1b01a3261696c07390ce01793bf78d51e094a6021b12ca605625af34faef1",
+    "bytes": 66952,
+    "public_exports_preserved": 14,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libresolv.so.2",
+    "input_sha256": "2fbd8076ffba303f0c1ce7d4d6494eedf984065675abccd6ae71f90a60dde396",
+    "output_sha256": "c7818a4aa645ae79620997e963cc9ab0f429766e250cf170483083d8d065a3dc",
+    "bytes": 67300,
+    "public_exports_preserved": 69,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/librt.so.1",
+    "input_sha256": "779cde1a9765fd8479089daa2d0f3e5afb6378135d7779549a15c4e618f70dca",
+    "output_sha256": "d5b76f5b00a7dac9e3a355b1028c4edd6cbaf4b6ee2d84091f5ce4051d48f436",
+    "bytes": 67020,
+    "public_exports_preserved": 4,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libthread_db.so.1",
+    "input_sha256": "86d38c78a25efbca8369985156e4a44cf54e5ebd21e8782e18cc0e2f7009dee8",
+    "output_sha256": "120ba8ec4ffef99b76e1bbb005612e3cdfe3e434a4c7274f7f59dddc7cea70ba",
+    "bytes": 67316,
+    "public_exports_preserved": 41,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libutil.so.1",
+    "input_sha256": "fcabfd22858775f1bbcd42dc5a2bf74e291fc7eb2545eb85ed56affd3832522a",
+    "output_sha256": "46490deb1877c94ab0e563064960dae910eea16ac2e265b69f90659aa3dacfb4",
+    "bytes": 66952,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/ld-linux.so.3",
+    "input_sha256": "24a3ae47cfe7e1050ae3dc7992cd995d89aa79f4cba79c3c90861e2efc7fe062",
+    "output_sha256": "46b4992f7cdf26c0ea9c4c079fe315f63bcb00e9bd2dadd0b66052ad16421421",
+    "bytes": 198972,
+    "public_exports_preserved": 12,
+    "new_public_exports": [],
+    "needed": []
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libBrokenLocale.so.1",
+    "input_sha256": "41da59a489e53d24e01b9f928906c9335619fa7021fd8f7d54bdd09868ba6bd4",
+    "output_sha256": "9b87d91a2c19499d84cc4f159ae0df13e8efbbd767cce9b2ec8e3942c8472dd4",
+    "bytes": 66956,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libanl.so.1",
+    "input_sha256": "b7925b793a0c7a47607b2b687536bf453d367d6fbb8c2696af396be7da9560fb",
+    "output_sha256": "59ad53ef9cab91d4f18155bcd37e604e063b075a116133fdfd526d33f200dab9",
+    "bytes": 67100,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libc.so.6",
+    "input_sha256": "7b295993ded4a7e191c897aa16f79d21674c1e0763055743e33f10e15f96b050",
+    "output_sha256": "eb94319f7eeddd8b9b227615a2f65486ac1d12034a73863e3297113847d7d7b4",
+    "bytes": 1122868,
+    "public_exports_preserved": 2938,
+    "new_public_exports": [],
+    "needed": [
+      "ld-linux-armhf.so.3"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libc_malloc_debug.so.0",
+    "input_sha256": "18507ebd5172b4e6e6224ab62290645278183eac553fb94998bdc0594b6c5de5",
+    "output_sha256": "8a4383650269db29f0e4e9e12b4a2782b91b9c25a05fb5c75f8cde236b67d75f",
+    "bytes": 68392,
+    "public_exports_preserved": 35,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux-armhf.so.3"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libdl.so.2",
+    "input_sha256": "cb224ae1dfb21aaa7f97a03c4df4726a0b3457122f4d6cf36c77f5292d803409",
+    "output_sha256": "b19c5c8a3835908425374f9cabd4440f9fca1b745a279cc6be7b3a81629f50eb",
+    "bytes": 66952,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libm.so.6",
+    "input_sha256": "84d072daef1cfc28045d6cc746d59d17dac364eca908c0d9a3a89c51fa7136d4",
+    "output_sha256": "1ace168fdb2366408111b619c3b0ade84f87d2608e92d37c652958dbc1fc45cd",
+    "bytes": 460280,
+    "public_exports_preserved": 1017,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libmemusage.so",
+    "input_sha256": "5711439929185ebda0235446de21afba3211ce828737115b8ffb0d87f257f728",
+    "output_sha256": "08f51c9b26153732f5eae65087c42697c7ee0414ec970e0e2d5769d68687f31c",
+    "bytes": 67112,
+    "public_exports_preserved": 8,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux-armhf.so.3"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libnsl.so.1",
+    "input_sha256": "8f5a39c059e61bb06d5740b0902aab3fd6b15162318b5545c1dc1e8dfa6267c0",
+    "output_sha256": "cdd1183b13b574ddf35f7195f46b0ecf5f2f6fa67df2061c5fc55eb8683171df",
+    "bytes": 67384,
+    "public_exports_preserved": 122,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libnss_compat.so.2",
+    "input_sha256": "d5418ba189845ee6491361f1027c966772a702b63812ed2e5266360c95e267f2",
+    "output_sha256": "111685874744c4f90bc04705cf9f079f926a11c55878fcc1acc24c71eca0301d",
+    "bytes": 67304,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libnss_db.so.2",
+    "input_sha256": "6a16e8aa99cb8accf0814fe06d29340bb77d88f6037804b5a15260070c562b4a",
+    "output_sha256": "1e7770dd7811cca37a44fe8bc98beb376a1ee2f570ec5012940e57537ab5e3ba",
+    "bytes": 67212,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libnss_dns.so.2",
+    "input_sha256": "8bba7c6e6dd129faa7b83c0dc6281406c0eb53685c13acdf4be844aabef31338",
+    "output_sha256": "7f32d87529b03a38634ebf1cc2a26ba8dd5fac12a9c9108892f411412edc649b",
+    "bytes": 66952,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libnss_files.so.2",
+    "input_sha256": "f78b04d2cacb40a46ee2edd406d077c7cb706db595b52e2dab17aa5fcc220f6f",
+    "output_sha256": "3feffd8f5d3cb1d6b3fae266fff2849fdea3d329114e3a38872c090afb40c93b",
+    "bytes": 66952,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libnss_hesiod.so.2",
+    "input_sha256": "fe445e8bf69fc6476f2e4aee1571662aa06968ba6f9ffef2e5df0ca2c396378a",
+    "output_sha256": "e1c9d2521b34e9e314548a77ceb3db4bc54b3b729b55bb2902d9c6d20c28ad11",
+    "bytes": 67060,
+    "public_exports_preserved": 0,
+    "new_public_exports": [],
+    "needed": [
+      "libresolv.so.2",
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libpcprofile.so",
+    "input_sha256": "0a088654bc7d24db8a801ee6dd32bf34d9bf6399b2ccaf8b1c9a8a0da01bee13",
+    "output_sha256": "6b394639a8bdd525d6b08c903a385bef847c8b6df5fcb46c8d753fa122a4864b",
+    "bytes": 66920,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libpthread.so.0",
+    "input_sha256": "f180d873a6d3f0dc18e0a41a4419ec08091b1f1f26956aa4c9dd77fc0c1fbe44",
+    "output_sha256": "c55157f939b8a7b7b5aa4b04a4313cf0f12093c40fc18be31b51da65930601dd",
+    "bytes": 66952,
+    "public_exports_preserved": 14,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libresolv.so.2",
+    "input_sha256": "ad04dc1e01c803095626b9b942496ab469b145fdbf5a37ceda0bca4c700d6c87",
+    "output_sha256": "9a61546879a75549df164cd988c5fb9854a4aa536d30ce2ae4ee9f7b4a8240c7",
+    "bytes": 67304,
+    "public_exports_preserved": 69,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/librt.so.1",
+    "input_sha256": "5555e4b0e318675766cef2989f07029d91cc483d603e1b371e9db30f6e0a196a",
+    "output_sha256": "1cd20f9076f86ec02b29315052c3179190300bbebc4d7b589702711ce82e3a83",
+    "bytes": 67020,
+    "public_exports_preserved": 4,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux-armhf.so.3"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libthread_db.so.1",
+    "input_sha256": "dac1c6f390b0d07119574026d9d8f27c4b89d8edbfd12a9e11b6c0a138f04c76",
+    "output_sha256": "005797cf44359f2802c8bb4051f3ecf104c1d5001c024d656107412a2ecfecc7",
+    "bytes": 67316,
+    "public_exports_preserved": 41,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libutil.so.1",
+    "input_sha256": "c952ad2f692f3998628c33a7dd8cbb2f50ee21a566d36a020dba9e6713329f30",
+    "output_sha256": "4a3c191762f63b39abb8ba645dd8ccc8bcf5ce40ad183644c2d2b00aa61b06f9",
+    "bytes": 66952,
+    "public_exports_preserved": 2,
+    "new_public_exports": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/ld-linux-armhf.so.3",
+    "input_sha256": "1a1157fefd26dcd058d2f4df21c3fafcb9b379227eb4757a9ab6d75a2d30f3a2",
+    "output_sha256": "8bd38ace9612c5c0abd2b1c6a23b7b0e81b63fb671ed29905c2363d162006afe",
+    "bytes": 133440,
+    "public_exports_preserved": 12,
+    "new_public_exports": [],
+    "needed": []
+  }
+]

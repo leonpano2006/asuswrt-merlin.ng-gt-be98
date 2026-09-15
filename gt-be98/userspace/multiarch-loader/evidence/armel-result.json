@@ -1,0 +1,20 @@
+[
+  {
+    "step": "configure",
+    "returncode": 0,
+    "elapsed_seconds": 3.0,
+    "log_sha256": "439377040ce9c4b5ba641ce6d12e40315d623f6a88d297e1f2e30b48497b25ee"
+  },
+  {
+    "step": "make",
+    "returncode": 0,
+    "elapsed_seconds": 120.75,
+    "log_sha256": "8d697bb7af495fa81585e2c5a1a9d9ff7dd82f2fdb6607fd0b181c8baa5cebf1"
+  },
+  {
+    "step": "install",
+    "returncode": 0,
+    "elapsed_seconds": 29.29,
+    "log_sha256": "0e4d8a21f4a3242c32b8d47e1ff226d98cc25b26827f15dc46e82757ee39a25c"
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "abi": "aarch64",
+    "emulator": "qemu-aarch64",
+    "cpu": "cortex-a53",
+    "returncode": 0,
+    "output": [
+      "GLIBC_VERSION 2.44",
+      "ABI_BITS 64 HWCAP 0x8fb HWCAP2 0x0",
+      "PASS memory_alignment_overlap_and_allocator",
+      "PASS pthread_tls_mutex",
+      "PASS floating_point_libm",
+      "PASS kernel_calls_and_numeric_resolver",
+      "PASS gconv_utf8_utf16",
+      "GLIBC_B53_SMOKE_COMPLETE"
+    ],
+    "binary_sha256": "74fc397fbbc5f950df27f74284fa13c1a312b0b54c82251e162ba2759cc2e755"
+  },
+  {
+    "abi": "armel",
+    "emulator": "qemu-arm",
+    "cpu": "max",
+    "returncode": 0,
+    "output": [
+      "GLIBC_VERSION 2.44",
+      "ABI_BITS 32 HWCAP 0xfdfb0d7 HWCAP2 0x7f",
+      "PASS memory_alignment_overlap_and_allocator",
+      "PASS pthread_tls_mutex",
+      "PASS floating_point_libm",
+      "PASS kernel_calls_and_numeric_resolver",
+      "PASS gconv_utf8_utf16",
+      "GLIBC_B53_SMOKE_COMPLETE"
+    ],
+    "binary_sha256": "10021705a01400dc29d1cb1f08368ae121dfbf3378ea0e2c8f6feb8947d1bf47"
+  },
+  {
+    "abi": "armhf",
+    "emulator": "qemu-arm",
+    "cpu": "max",
+    "returncode": 0,
+    "output": [
+      "GLIBC_VERSION 2.44",
+      "ABI_BITS 32 HWCAP 0xfdfb0d7 HWCAP2 0x7f",
+      "PASS memory_alignment_overlap_and_allocator",
+      "PASS pthread_tls_mutex",
+      "PASS floating_point_libm",
+      "PASS kernel_calls_and_numeric_resolver",
+      "PASS gconv_utf8_utf16",
+      "GLIBC_B53_SMOKE_COMPLETE"
+    ],
+    "binary_sha256": "ed94459e383a6faa008044258cde726bb9f5dd6016b7eb83a7979ccb906e10b7"
+  }
+]

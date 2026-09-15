@@ -1,0 +1,21 @@
+{
+  "base_commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3",
+  "source_archive_sha256": "af06b544fb9f689b9b1d172854841b734f6e57f3b3b9283a0e2dc677f16d67ec",
+  "ubuntu_packaging": "2.43-2ubuntu2",
+  "adaptation": "Preserve glibc 2.44 ldconfig_parse_config callback API while using Ubuntu trusted-dir enumeration; other changes retain Ubuntu logic.",
+  "upstream_patches": {
+    "local-ld-multiarch.diff": "f7c72262826010174c8e432e93bee93254bf60beb96d0294f0418dfc9472b51a",
+    "local-ldconfig-multiarch.diff": "214e510b8ac7624f2dac8983f2abc7db0a0c72e18f8c2abd0af0bb63d633ee58",
+    "local-ldconfig-ignore-ld.so.diff": "d7f3513bf212a124f085bded16f012933c164fe3c500fc54b51b9d4a8787f613"
+  },
+  "patch": {
+    "file": "patches/ubuntu-multiarch-glibc244.patch",
+    "sha256": "2c1da2d290b3720a1cd1e5b14a777e7c977b7fb6e8dc2116b8ff8d5db7d9ef74"
+  },
+  "patched_files": {
+    "Makeconfig": "143a3c7145df2b5fb6a25d34fdecd8a65729052ec769471de29d36f8c6b4a123",
+    "elf/Makefile": "7ad737d2cad7a506c49aa4fa1a06e9742d8714cdf7d8273e9b22241419a40bc3",
+    "elf/ldconfig.c": "38aa9e790f401ae6b1defa6216e6405c26fb9699af67bf614f155024a4803255"
+  },
+  "source_tree_sha256": "242f632e2eb82ac282a01b4d28085e11bb26651748346d010f6fc4e8e29ecab4"
+}

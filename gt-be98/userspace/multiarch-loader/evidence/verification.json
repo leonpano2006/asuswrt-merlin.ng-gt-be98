@@ -1,0 +1,68 @@
+{
+  "status": "offline-verified",
+  "glibc": "2.44",
+  "loader_paths_and_LIB_token_match_ubuntu": {
+    "armel": [
+      "dl_dst_lib=\"lib/arm-linux-gnueabi\"",
+      "path.prefix=\"/usr\"",
+      "path.rtld=\"/lib/ld-linux.so.3\"",
+      "path.sysconfdir=\"/etc\"",
+      "path.system_dirs[0x0]=\"/lib/arm-linux-gnueabi/\"",
+      "path.system_dirs[0x1]=\"/usr/lib/arm-linux-gnueabi/\"",
+      "path.system_dirs[0x2]=\"/lib/\"",
+      "path.system_dirs[0x3]=\"/usr/lib/\""
+    ],
+    "armhf": [
+      "dl_dst_lib=\"lib/arm-linux-gnueabihf\"",
+      "path.prefix=\"/usr\"",
+      "path.rtld=\"/lib/ld-linux-armhf.so.3\"",
+      "path.sysconfdir=\"/etc\"",
+      "path.system_dirs[0x0]=\"/lib/arm-linux-gnueabihf/\"",
+      "path.system_dirs[0x1]=\"/usr/lib/arm-linux-gnueabihf/\"",
+      "path.system_dirs[0x2]=\"/lib/\"",
+      "path.system_dirs[0x3]=\"/usr/lib/\""
+    ],
+    "aarch64": [
+      "dl_dst_lib=\"lib/aarch64-linux-gnu\"",
+      "path.prefix=\"/usr\"",
+      "path.rtld=\"/lib/ld-linux-aarch64.so.1\"",
+      "path.sysconfdir=\"/etc\"",
+      "path.system_dirs[0x0]=\"/lib/aarch64-linux-gnu/\"",
+      "path.system_dirs[0x1]=\"/usr/lib/aarch64-linux-gnu/\"",
+      "path.system_dirs[0x2]=\"/lib/\"",
+      "path.system_dirs[0x3]=\"/usr/lib/\""
+    ]
+  },
+  "aliases_before": 289,
+  "aliases_retained": 32,
+  "aliases_removed": 257,
+  "glibc_runtime_files": 62,
+  "public_ABI_preserved": true,
+  "unchanged_modules": 182,
+  "integrated_recipe_identical": true,
+  "squashfs_matches_staging": true,
+  "squashfs_bytes": 75915264,
+  "squashfs_sha256": "4f2a9673173a0c32b85a2b1256eaafab4ca96312f134df86e38ae1a58595a88e",
+  "inventory_sha256": "560901ece4b8b6d64d440a044c417babc3b4a53106236c905ea071b4c6d7f17d",
+  "qemu_kernel": "4.19.294 #36",
+  "no_cache_executables_passed": 312,
+  "cached_executables_passed": 312,
+  "userspace_commands_passed": 34,
+  "abi_probes_passed": [
+    "aarch64",
+    "armel",
+    "armhf"
+  ],
+  "library_functional_probe_passed": true,
+  "legacy_plugin_consumers": [
+    "lighttpd -tt",
+    "iptables tcp help",
+    "ipsec --version"
+  ],
+  "identity_check_passed": true,
+  "pid1_metadata_guard_without_cache_passed": true,
+  "libc_smoke_3_abis_passed": true,
+  "router_modified": false,
+  "hardware_boot_tested": false,
+  "firmware_commit_performed": false
+}
