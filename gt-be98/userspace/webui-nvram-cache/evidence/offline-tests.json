@@ -1,0 +1,54 @@
+{
+  "assembler_matches_patch": true,
+  "cases": [
+    {
+      "variant": "original",
+      "case": "remove",
+      "exit": 1,
+      "stdout": "offline set rc=0\nremove: FAIL: expected NULL (pointer=0x3501b168)\n",
+      "stderr": ""
+    },
+    {
+      "variant": "fixed",
+      "case": "remove",
+      "exit": 0,
+      "stdout": "offline set rc=0\nremove: PASS (pointer=(nil))\nre-add: PASS\n",
+      "stderr": ""
+    },
+    {
+      "variant": "fixed",
+      "case": "remove-held",
+      "exit": 0,
+      "stdout": "offline set rc=0\nremove-held: PASS (pointer=(nil))\nre-add: PASS\n",
+      "stderr": ""
+    },
+    {
+      "variant": "fixed",
+      "case": "grow",
+      "exit": 0,
+      "stdout": "offline set rc=0\ngrow: PASS (100 reads)\n",
+      "stderr": ""
+    },
+    {
+      "variant": "fixed",
+      "case": "empty",
+      "exit": 0,
+      "stdout": "offline set rc=0\nempty: PASS (100 reads)\n",
+      "stderr": ""
+    },
+    {
+      "variant": "fixed",
+      "case": "stable",
+      "exit": 0,
+      "stdout": "offline set rc=0\nstable: PASS (100 reads)\n",
+      "stderr": ""
+    },
+    {
+      "variant": "fixed",
+      "case": "absent",
+      "exit": 0,
+      "stdout": "absent: PASS\n",
+      "stderr": ""
+    }
+  ]
+}

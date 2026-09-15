@@ -1,0 +1,10 @@
+{
+  "input_sha256": "6eb214a9e4de1269d5467c8ac5d9f3ed4fdfda535d6546ea222fba44d0e35c46",
+  "output_sha256": "45066c6af9c9a8b843057b6d7bc341a49e3b90fae3d381d06a5f99bb54517b00",
+  "bytes": 35912,
+  "patch_site": "0x56ac",
+  "trampoline": "0x7810",
+  "trampoline_hex": "13f6ffeb0600a0e1eaf4ffeb0040a0e1000054e398f7ff0aa0f7ffea",
+  "source_assembly": "cache-get-refresh.S",
+  "changes": "Re-find the cache entry after update/removal before dereferencing it."
+}

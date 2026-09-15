@@ -1,0 +1,43 @@
+{
+  "applied_utc": "2026-09-15T19:52:11Z",
+  "last_observed_utc": "2026-09-15T19:55:26Z",
+  "kernel": "4.19.294 #36",
+  "original_sha256": "6eb214a9e4de1269d5467c8ac5d9f3ed4fdfda535d6546ea222fba44d0e35c46",
+  "patched_sha256": "45066c6af9c9a8b843057b6d7bc341a49e3b90fae3d381d06a5f99bb54517b00",
+  "httpd_pids_after_restart": [
+    32561,
+    32562
+  ],
+  "faults_before": 3,
+  "faults_after": 3,
+  "native_offline_cases_passed": [
+    "remove",
+    "grow"
+  ],
+  "browser_verified": [
+    "login",
+    "GameDashboard.asp live traffic/client data",
+    "Tools_Sysinfo.asp live memory/connections/wireless clients"
+  ],
+  "wireless_up": [
+    "wl0",
+    "wl1",
+    "wl2",
+    "wl3"
+  ],
+  "acceleration_mode": "L2 & L3",
+  "kernel_taint": 4097,
+  "firmware_slots_modified": false,
+  "firmware_commit_performed": false,
+  "booted_slot": 1,
+  "next_normal_boot_slot": 2,
+  "commit_flags": [
+    0,
+    1
+  ],
+  "usb_hotfix": true,
+  "startup_hook_installed": true,
+  "startup_reboot_tested": false,
+  "image_repacked": false,
+  "user_symptom_confirmation": "pending"
+}
