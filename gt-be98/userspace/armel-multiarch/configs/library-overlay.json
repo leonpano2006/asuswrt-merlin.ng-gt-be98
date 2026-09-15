@@ -1,0 +1,22 @@
+[
+  {
+    "component": "zlib",
+    "target": "usr/lib/arm-linux-gnueabi/libz.so.1",
+    "input_sha256": "a9453dda70c1b030e73aa2f129f7d47298bf532fd9bf016f274020ece6450b49"
+  },
+  {
+    "component": "expat",
+    "target": "usr/lib/arm-linux-gnueabi/libexpat.so.1.5.2",
+    "input_sha256": "5537e7284dbf7766110f570dfac09a73e186e3811166bbac23a1e8dbc9c13836"
+  },
+  {
+    "component": "json-c",
+    "target": "usr/lib/arm-linux-gnueabi/libjson-c.so.2.0.2",
+    "input_sha256": "1681416f8e77b5dd29b1e0f6527a931a64607df9a9253ab8736aec899a0c71f1"
+  },
+  {
+    "component": "libcap-ng",
+    "target": "usr/lib/arm-linux-gnueabi/libcap-ng.so.0.0.0",
+    "input_sha256": "afc4db41aabf89a1279b53a33af8bdbbb432404ddb3e5797069301d672b79c0c"
+  }
+]

@@ -1,0 +1,28 @@
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on armel-multiarch-20260915/build/rootfs.squashfs, block size 524288.
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 524288
+	compressed data, compressed metadata, compressed fragments,
+	compressed xattrs, compressed ids
+	duplicates are removed
+Filesystem size 74024.31 Kbytes (72.29 Mbytes)
+	34.84% of uncompressed filesystem size (212477.48 Kbytes)
+Inode table size 40741 bytes (39.79 Kbytes)
+	24.40% of uncompressed inode table size (166997 bytes)
+Directory table size 49617 bytes (48.45 Kbytes)
+	48.55% of uncompressed directory table size (102192 bytes)
+Number of duplicate files found 361
+Number of inodes 4864
+Number of files 3481
+Number of fragments 206
+Number of symbolic links 1067
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 316
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	root (0)
+Number of gids 1
+	root (0)

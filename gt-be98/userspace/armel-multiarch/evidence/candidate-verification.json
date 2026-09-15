@@ -1,0 +1,16 @@
+{
+  "source_unchanged": true,
+  "integrated_recipe_identical": true,
+  "squashfs_matches_staging": true,
+  "original_file_paths_preserved_bytewise": 4169,
+  "original_paths_to_four_rebuilt_libraries": 10,
+  "unchanged_modules": 182,
+  "flat_armel_elf_files_remaining": 0,
+  "webui_fix_preserved": true,
+  "squashfs_bytes": 75804672,
+  "squashfs_sha256": "9d13b0b5789843e691cf08f2083c189dbc61f48eeb5d433795183e455b4aa026",
+  "inventory_sha256": "81bb2ce4b1c70d188b82023c9d4a0784a702a66b06e8e4a92bc9495bce51a106",
+  "firmware_packaged": false,
+  "hardware_boot_tested": false,
+  "router_modified": false
+}

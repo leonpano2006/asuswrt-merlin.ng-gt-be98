@@ -191,7 +191,7 @@ static struct json_object* json_object_new(enum json_type o_type)
 {
   struct json_object *jso;
 
-  jso = (struct json_object*)calloc(sizeof(struct json_object), 1);
+  jso = (struct json_object*)calloc(1, sizeof(struct json_object));
   if(!jso) return NULL;
   jso->o_type = o_type;
   jso->_ref_count = 1;
@@ -563,6 +563,7 @@ int64_t json_object_get_int64(struct json_object *jso)
     return jso->o.c_boolean;
   case json_type_string:
 	if (json_parse_int64(jso->o.c_string.str, &cint) == 0) return cint;
+	/* fall through */
   default:
     return 0;
   }

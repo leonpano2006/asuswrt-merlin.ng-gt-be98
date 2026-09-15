@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "file": "arraylist.c",
+      "before_sha256": "50f0d784543c9a42400923c6dc7ef4d76530f18d32ea54f2ed795a552e9421b4",
+      "after_sha256": "060f7aff05e389ccaf0b0b65f79d57724354592ab7d5147d39a4746bacf66d59"
+    },
+    {
+      "file": "json_object.c",
+      "before_sha256": "31eb34d824c5cbd592d667e24a34c3065f5781aa74bf25bc1a357274ce2ce099",
+      "after_sha256": "99ef444039c6508fda9f570439c33e0566e6c732fe8ace7f753f3bd514049601"
+    },
+    {
+      "file": "json_tokener.c",
+      "before_sha256": "81422183dad7125b3d478351c48af5cc8b5b698ed96fde8c28507ecd995ab0bc",
+      "after_sha256": "61d93cb5782eeec6cf9fe5a185d6fad09c16ff9bab40fc30eaf8be28b9096b3b"
+    },
+    {
+      "file": "linkhash.c",
+      "before_sha256": "8f955e2d0b34da584809289b796f4a6302306d08e826ca0c25882e7d6f22a18c",
+      "after_sha256": "b5356a4563f28a99acfcfaa493aba0d411a4f1f9948a2e5aa54dbcec03422942"
+    }
+  ]
+}

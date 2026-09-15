@@ -1,0 +1,6 @@
+{
+  "packages": 22,
+  "signature_verified": true,
+  "compiler": "Ubuntu GCC 15.2 arm-linux-gnueabi",
+  "host": "aarch64"
+}

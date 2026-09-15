@@ -38,5 +38,27 @@
   "firmware_packaged": false,
   "candidate_firmware_boot_tested": false,
   "flash_requested_by_this_checkpoint": false,
-  "firmware_commit_requested": false
+  "firmware_commit_requested": false,
+  "required_postprocessing": {
+    "name": "armel multiarch and Ubuntu GCC 15 library rebuilds",
+    "checkpoint": "../armel-multiarch",
+    "checkpoint_files": {
+      "scripts/migrate-rootfs.py": "3d09d29631e890d0318d594150575e465be98837b2b85c132c087492e8e3de9d",
+      "scripts/apply-libraries.py": "b7629eb78ec24a44bcf0b7b0b4c1dc8ec12f21cadf2007890e6d9514ba753b96",
+      "configs/library-overlay.json": "f1266e143af244789eda8f484a00e24e82c8d131f1b0e6ae149c0dc7fb96ee27"
+    },
+    "tested_libraries": {
+      "libcap-ng.so.0.0.0": "71cd77662d7b3700be9a09476b446ffea3219c111ede41ddd478990557258a14",
+      "libexpat.so.1.5.2": "ba084805fad75d0c2f9402d2e12aa08ea2f0a615fa2d7319e55413d0bba52fc3",
+      "libjson-c.so.2.0.2": "84f8abcc2a6e2217bdce1ec9e5206220ba9e0af9f821ab3f80ad6cd1f5064638",
+      "libz.so.1": "f8f7306275848a151401749dae094b86fc1372b0e80883f8027d2c93cb98b832"
+    },
+    "qemu_kernel": "4.19.294 #36",
+    "qemu_dynamic_executables_passed": 312,
+    "abi_probes": [
+      "armel",
+      "armhf",
+      "aarch64"
+    ]
+  }
 }

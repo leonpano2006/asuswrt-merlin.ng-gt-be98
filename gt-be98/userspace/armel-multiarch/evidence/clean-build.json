@@ -1,0 +1,70 @@
+{
+  "compiler": "arm-linux-gnueabi-gcc-15 (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+  "cflags": "-O2 -fPIC -std=gnu11 -mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=softfp -U_TIME_BITS -U_FILE_OFFSET_BITS",
+  "ldflags": "-static-libgcc",
+  "components": {
+    "zlib": {
+      "source_directory": "zlib",
+      "shared_libraries": [
+        {
+          "path": "zlib/libz.so.1.2.12",
+          "sha256": "5a427e9ca14e728562598bc79aa20c8b76cabae0b6474561e49f7e718eaef000"
+        }
+      ],
+      "installed": {
+        "file": "libz.so.1",
+        "sha256": "f8f7306275848a151401749dae094b86fc1372b0e80883f8027d2c93cb98b832",
+        "bytes": 132736
+      }
+    },
+    "expat": {
+      "source_directory": "expat-2.0.1",
+      "shared_libraries": [
+        {
+          "path": "expat/.libs/libexpat.so.1.5.2",
+          "sha256": "f71c560187fafc9ee6fa7557c75ded93d43a4afdc059401d5dc210f828c61035"
+        }
+      ],
+      "installed": {
+        "file": "libexpat.so.1.5.2",
+        "sha256": "ba084805fad75d0c2f9402d2e12aa08ea2f0a615fa2d7319e55413d0bba52fc3",
+        "bytes": 132652
+      }
+    },
+    "json-c": {
+      "source_directory": "json-c",
+      "shared_libraries": [
+        {
+          "path": "json-c/.libs/libjson-c.so.2.0.2",
+          "sha256": "033c22d53f11561b8ac93d261c9c5545e01aeb92c2c5d7e3d36b509cc5291866"
+        }
+      ],
+      "installed": {
+        "file": "libjson-c.so.2.0.2",
+        "sha256": "84f8abcc2a6e2217bdce1ec9e5206220ba9e0af9f821ab3f80ad6cd1f5064638",
+        "bytes": 67096
+      }
+    },
+    "libcap-ng": {
+      "source_directory": "libcap-ng",
+      "shared_libraries": [
+        {
+          "path": "libcap-ng/src/.libs/libcap-ng.so.0.0.0",
+          "sha256": "2be0f2c2848e9424b684e49ca067651d1bc4b6d45a8283bb7298bf2d7253d7e1"
+        },
+        {
+          "path": "libcap-ng/src/.libs/libdrop_ambient.so.0.0.0",
+          "sha256": "4e46ee0e2fd81c3dcc2527b2a7e913c4219035f23fd38c24586434afa9a9533e"
+        }
+      ],
+      "installed": {
+        "file": "libcap-ng.so.0.0.0",
+        "sha256": "71cd77662d7b3700be9a09476b446ffea3219c111ede41ddd478990557258a14",
+        "bytes": 67072
+      }
+    }
+  },
+  "source_archive_sha256": "59a43da5764cca137ed76717b732a62dffbf1beff741d396cd3c44f515780b3a",
+  "source_commit": "7885374aeadefdcfae7a342fb90ab2655b7a2c51",
+  "four_outputs_identical_to_qemu_tested": true
+}

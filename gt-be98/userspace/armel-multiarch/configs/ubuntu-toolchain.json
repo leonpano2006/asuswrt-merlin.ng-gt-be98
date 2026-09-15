@@ -1,0 +1,225 @@
+{
+  "signing_fingerprint": "F6ECB3762474EDA9D21B7022871920D1991BC93C",
+  "release": {
+    "cache_name": "resolute-InRelease",
+    "url": "https://ports.ubuntu.com/ubuntu-ports/dists/resolute/InRelease",
+    "bytes": 135549,
+    "sha256": "45f95ce276cdba3e41870516a130e03c58b8b7a79e9546b0efe9e526d255740c"
+  },
+  "indices": [
+    {
+      "cache_name": "resolute-main-arm64-Packages.xz",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/dists/resolute/main/binary-arm64/Packages.xz",
+      "bytes": 1468492,
+      "sha256": "537715817d9ed77cc919f5123edb91a48d9ae97abf05588a8f18208cc7227e08",
+      "release_path": "main/binary-arm64/Packages.xz"
+    },
+    {
+      "cache_name": "resolute-universe-arm64-Packages.xz",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/dists/resolute/universe/binary-arm64/Packages.xz",
+      "bytes": 16202372,
+      "sha256": "0a68c22478773d9681e098a3a1e650464aa707c4a557b4c3020678d92dfb53c0",
+      "release_path": "universe/binary-arm64/Packages.xz"
+    }
+  ],
+  "packages": [
+    {
+      "cache_name": "gcc-15-arm-linux-gnueabi_15.2.0-16ubuntu1cross2_arm64.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-15-cross-ports/gcc-15-arm-linux-gnueabi_15.2.0-16ubuntu1cross2_arm64.deb",
+      "bytes": 22573322,
+      "sha256": "66b76be2ddf120febb0c23d98337663566e157737d6dd2487d2fe278ba93d80b",
+      "package": "gcc-15-arm-linux-gnueabi",
+      "version": "15.2.0-16ubuntu1cross2",
+      "filename": "pool/universe/g/gcc-15-cross-ports/gcc-15-arm-linux-gnueabi_15.2.0-16ubuntu1cross2_arm64.deb"
+    },
+    {
+      "cache_name": "cpp-15-arm-linux-gnueabi_15.2.0-16ubuntu1cross2_arm64.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-15-cross-ports/cpp-15-arm-linux-gnueabi_15.2.0-16ubuntu1cross2_arm64.deb",
+      "bytes": 11691468,
+      "sha256": "d7b6f7e5a8e797de23a45951b10080271e966643ef5e851155ef7396116f8709",
+      "package": "cpp-15-arm-linux-gnueabi",
+      "version": "15.2.0-16ubuntu1cross2",
+      "filename": "pool/universe/g/gcc-15-cross-ports/cpp-15-arm-linux-gnueabi_15.2.0-16ubuntu1cross2_arm64.deb"
+    },
+    {
+      "cache_name": "gcc-15-arm-linux-gnueabi-base_15.2.0-16ubuntu1cross2_arm64.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-15-cross-ports/gcc-15-arm-linux-gnueabi-base_15.2.0-16ubuntu1cross2_arm64.deb",
+      "bytes": 39300,
+      "sha256": "46921332dbeee29f61b93e909bb5508f5c40b8267772b09c8e030df28b49caf7",
+      "package": "gcc-15-arm-linux-gnueabi-base",
+      "version": "15.2.0-16ubuntu1cross2",
+      "filename": "pool/universe/g/gcc-15-cross-ports/gcc-15-arm-linux-gnueabi-base_15.2.0-16ubuntu1cross2_arm64.deb"
+    },
+    {
+      "cache_name": "libgcc-15-dev-armel-cross_15.2.0-16ubuntu1cross2_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-15-cross-ports/libgcc-15-dev-armel-cross_15.2.0-16ubuntu1cross2_all.deb",
+      "bytes": 903294,
+      "sha256": "37b787e25b8307398dbb7243116135e96f2e8d6f270040aafd9490531c97d1fb",
+      "package": "libgcc-15-dev-armel-cross",
+      "version": "15.2.0-16ubuntu1cross2",
+      "filename": "pool/universe/g/gcc-15-cross-ports/libgcc-15-dev-armel-cross_15.2.0-16ubuntu1cross2_all.deb"
+    },
+    {
+      "cache_name": "libgcc-s1-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-16-cross-ports/libgcc-s1-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "bytes": 52348,
+      "sha256": "932788a9e778484375ec3ba8283d44afdaa51ece221503fa97ad87a0274f8977",
+      "package": "libgcc-s1-armel-cross",
+      "version": "16-20260322-1ubuntu1cross1",
+      "filename": "pool/universe/g/gcc-16-cross-ports/libgcc-s1-armel-cross_16-20260322-1ubuntu1cross1_all.deb"
+    },
+    {
+      "cache_name": "libc6-armel-cross_2.43-2ubuntu2cross1_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/c/cross-toolchain-base-ports/libc6-armel-cross_2.43-2ubuntu2cross1_all.deb",
+      "bytes": 1174450,
+      "sha256": "146efe1a989348b48630a184b8a09851d1af57b05ebae7e0ced363dde3d884f0",
+      "package": "libc6-armel-cross",
+      "version": "2.43-2ubuntu2cross1",
+      "filename": "pool/universe/c/cross-toolchain-base-ports/libc6-armel-cross_2.43-2ubuntu2cross1_all.deb"
+    },
+    {
+      "cache_name": "libc6-dev-armel-cross_2.43-2ubuntu2cross1_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/c/cross-toolchain-base-ports/libc6-dev-armel-cross_2.43-2ubuntu2cross1_all.deb",
+      "bytes": 1599778,
+      "sha256": "f70be4eb234feef3770753029cf34d16934047ac08d08de41837f06ff53bead0",
+      "package": "libc6-dev-armel-cross",
+      "version": "2.43-2ubuntu2cross1",
+      "filename": "pool/universe/c/cross-toolchain-base-ports/libc6-dev-armel-cross_2.43-2ubuntu2cross1_all.deb"
+    },
+    {
+      "cache_name": "linux-libc-dev-armel-cross_7.0.0-13.13cross1_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/c/cross-toolchain-base-ports/linux-libc-dev-armel-cross_7.0.0-13.13cross1_all.deb",
+      "bytes": 1500550,
+      "sha256": "fdd754dfc5d230707d3180b815bfc9270c14875feaed7e2cb3199108543b9698",
+      "package": "linux-libc-dev-armel-cross",
+      "version": "7.0.0-13.13cross1",
+      "filename": "pool/universe/c/cross-toolchain-base-ports/linux-libc-dev-armel-cross_7.0.0-13.13cross1_all.deb"
+    },
+    {
+      "cache_name": "binutils-arm-linux-gnueabi_2.46-3ubuntu2_arm64.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/b/binutils/binutils-arm-linux-gnueabi_2.46-3ubuntu2_arm64.deb",
+      "bytes": 1578446,
+      "sha256": "3817eea9d1ef8e5f19990feeed6cce1bd0365186f9d2c5a868dce5f75a62e003",
+      "package": "binutils-arm-linux-gnueabi",
+      "version": "2.46-3ubuntu2",
+      "filename": "pool/universe/b/binutils/binutils-arm-linux-gnueabi_2.46-3ubuntu2_arm64.deb"
+    },
+    {
+      "cache_name": "binutils-common_2.46-3ubuntu2_arm64.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/b/binutils/binutils-common_2.46-3ubuntu2_arm64.deb",
+      "bytes": 221614,
+      "sha256": "18e619412ee478765b370ae73bda3ef54dd0aaa1028953f804b082368e3b0cd4",
+      "package": "binutils-common",
+      "version": "2.46-3ubuntu2",
+      "filename": "pool/main/b/binutils/binutils-common_2.46-3ubuntu2_arm64.deb"
+    },
+    {
+      "cache_name": "libsframe3_2.46-3ubuntu2_arm64.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/b/binutils/libsframe3_2.46-3ubuntu2_arm64.deb",
+      "bytes": 21544,
+      "sha256": "8f423b964f7f77946eca229256ebaef5e260546f5b458a1438ee2ab86e6ac689",
+      "package": "libsframe3",
+      "version": "2.46-3ubuntu2",
+      "filename": "pool/main/b/binutils/libsframe3_2.46-3ubuntu2_arm64.deb"
+    },
+    {
+      "cache_name": "libcc1-0_16-20260322-1ubuntu1_arm64.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/g/gcc-16/libcc1-0_16-20260322-1ubuntu1_arm64.deb",
+      "bytes": 51318,
+      "sha256": "be244d570f0ba743103d00a6d6f2a2352b3ec55fa2aac2bdf807988395dc6c68",
+      "package": "libcc1-0",
+      "version": "16-20260322-1ubuntu1",
+      "filename": "pool/main/g/gcc-16/libcc1-0_16-20260322-1ubuntu1_arm64.deb"
+    },
+    {
+      "cache_name": "gcc-16-base_16-20260322-1ubuntu1_arm64.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/g/gcc-16/gcc-16-base_16-20260322-1ubuntu1_arm64.deb",
+      "bytes": 38310,
+      "sha256": "7aaed4a4fb1d47792c66e1323a6662ee1b184fb7993aacaa1cc82ba55a1716e0",
+      "package": "gcc-16-base",
+      "version": "16-20260322-1ubuntu1",
+      "filename": "pool/main/g/gcc-16/gcc-16-base_16-20260322-1ubuntu1_arm64.deb"
+    },
+    {
+      "cache_name": "gcc-15-cross-base-ports_15.2.0-16ubuntu1cross2_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-15-cross-ports/gcc-15-cross-base-ports_15.2.0-16ubuntu1cross2_all.deb",
+      "bytes": 34394,
+      "sha256": "88e3d72b2c231fead0fa6cbc7962065b1e368871335501a4c932e5b1e260c4ce",
+      "package": "gcc-15-cross-base-ports",
+      "version": "15.2.0-16ubuntu1cross2",
+      "filename": "pool/universe/g/gcc-15-cross-ports/gcc-15-cross-base-ports_15.2.0-16ubuntu1cross2_all.deb"
+    },
+    {
+      "cache_name": "gcc-16-cross-base-ports_16-20260322-1ubuntu1cross1_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-16-cross-ports/gcc-16-cross-base-ports_16-20260322-1ubuntu1cross1_all.deb",
+      "bytes": 33892,
+      "sha256": "5daa4be31c1296415844a94c90a9a5297dde6fab6ddc86a22e19ae483cc6a7ea",
+      "package": "gcc-16-cross-base-ports",
+      "version": "16-20260322-1ubuntu1cross1",
+      "filename": "pool/universe/g/gcc-16-cross-ports/gcc-16-cross-base-ports_16-20260322-1ubuntu1cross1_all.deb"
+    },
+    {
+      "cache_name": "libgomp1-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-16-cross-ports/libgomp1-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "bytes": 145054,
+      "sha256": "da40a0a814ad29f7856d521ecdeedb6027d6f97fbcbc9062c8329b25e758b936",
+      "package": "libgomp1-armel-cross",
+      "version": "16-20260322-1ubuntu1cross1",
+      "filename": "pool/universe/g/gcc-16-cross-ports/libgomp1-armel-cross_16-20260322-1ubuntu1cross1_all.deb"
+    },
+    {
+      "cache_name": "libatomic1-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-16-cross-ports/libatomic1-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "bytes": 11368,
+      "sha256": "3f1a3694e9dfdfbf77d5fffc145f525659bbda530b8d1c32cbecee0338c20347",
+      "package": "libatomic1-armel-cross",
+      "version": "16-20260322-1ubuntu1cross1",
+      "filename": "pool/universe/g/gcc-16-cross-ports/libatomic1-armel-cross_16-20260322-1ubuntu1cross1_all.deb"
+    },
+    {
+      "cache_name": "libasan8-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-16-cross-ports/libasan8-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "bytes": 3003180,
+      "sha256": "1063c25ee86f929459b72117c2329660ead67258b0e74962a57d50b70b8b216b",
+      "package": "libasan8-armel-cross",
+      "version": "16-20260322-1ubuntu1cross1",
+      "filename": "pool/universe/g/gcc-16-cross-ports/libasan8-armel-cross_16-20260322-1ubuntu1cross1_all.deb"
+    },
+    {
+      "cache_name": "libubsan1-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-16-cross-ports/libubsan1-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "bytes": 1207312,
+      "sha256": "cb5c1636449b7d98fb6e7bd1548e35eff2c7117ba78c409eaa2e368207dfd85a",
+      "package": "libubsan1-armel-cross",
+      "version": "16-20260322-1ubuntu1cross1",
+      "filename": "pool/universe/g/gcc-16-cross-ports/libubsan1-armel-cross_16-20260322-1ubuntu1cross1_all.deb"
+    },
+    {
+      "cache_name": "g++-15-arm-linux-gnueabi_15.2.0-16ubuntu1cross2_arm64.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-15-cross-ports/g++-15-arm-linux-gnueabi_15.2.0-16ubuntu1cross2_arm64.deb",
+      "bytes": 13146818,
+      "sha256": "d3dc08dbf990fe37657177bb953da0aac3bb7e0e883f30c99b082fd2aec424c2",
+      "package": "g++-15-arm-linux-gnueabi",
+      "version": "15.2.0-16ubuntu1cross2",
+      "filename": "pool/universe/g/gcc-15-cross-ports/g++-15-arm-linux-gnueabi_15.2.0-16ubuntu1cross2_arm64.deb"
+    },
+    {
+      "cache_name": "libstdc++-15-dev-armel-cross_15.2.0-16ubuntu1cross2_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-15-cross-ports/libstdc++-15-dev-armel-cross_15.2.0-16ubuntu1cross2_all.deb",
+      "bytes": 2920218,
+      "sha256": "cd4ff03e2a8d46ba8596b29d3058932ce57091937a7cf7f7bdca693808da87b5",
+      "package": "libstdc++-15-dev-armel-cross",
+      "version": "15.2.0-16ubuntu1cross2",
+      "filename": "pool/universe/g/gcc-15-cross-ports/libstdc++-15-dev-armel-cross_15.2.0-16ubuntu1cross2_all.deb"
+    },
+    {
+      "cache_name": "libstdc++6-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-16-cross-ports/libstdc++6-armel-cross_16-20260322-1ubuntu1cross1_all.deb",
+      "bytes": 717460,
+      "sha256": "fda84660be094e5254e05dca858391ba8fb391a1faf18db1fe853a9f81d512d1",
+      "package": "libstdc++6-armel-cross",
+      "version": "16-20260322-1ubuntu1cross1",
+      "filename": "pool/universe/g/gcc-16-cross-ports/libstdc++6-armel-cross_16-20260322-1ubuntu1cross1_all.deb"
+    }
+  ]
+}

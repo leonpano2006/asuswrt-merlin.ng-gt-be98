@@ -1,0 +1,86 @@
+{
+  "checkpoint": "gt-be98-armel-multiarch-20260915",
+  "status": "offline-candidate-qemu-verified",
+  "source_commit": "7885374aeadefdcfae7a342fb90ab2655b7a2c51",
+  "source_archive_sha256": "59a43da5764cca137ed76717b732a62dffbf1beff741d396cd3c44f515780b3a",
+  "baseline_inventory_sha256": "c91a049eb7a2af9b883bcb16946663645d106bab94b6b742285fc5e4801ba268",
+  "base_rootfs_sha256": "af038997f690e9378941810a6323f681de521cf23a85199d2f832dfbe57176f2",
+  "base_rootfs_bytes": 75788288,
+  "target_abi": "arm-linux-gnueabi (AArch32, soft-float calling convention)",
+  "host_abi": "aarch64-linux-gnu",
+  "compiler": "Ubuntu GCC 15.2.0-16ubuntu1cross2",
+  "cpu": "B53 treated as Cortex-A53",
+  "glibc": "existing 2.44 retained for all ABIs",
+  "compiler_policy": "configs/ubuntu-toolchain.json",
+  "library_policy": "configs/library-overlay.json",
+  "validation": {
+    "source_unchanged": true,
+    "integrated_recipe_identical": true,
+    "squashfs_matches_staging": true,
+    "original_file_paths_preserved_bytewise": 4169,
+    "original_paths_to_four_rebuilt_libraries": 10,
+    "unchanged_modules": 182,
+    "flat_armel_elf_files_remaining": 0,
+    "webui_fix_preserved": true,
+    "squashfs_bytes": 75804672,
+    "squashfs_sha256": "9d13b0b5789843e691cf08f2083c189dbc61f48eeb5d433795183e455b4aa026",
+    "inventory_sha256": "81bb2ce4b1c70d188b82023c9d4a0784a702a66b06e8e4a92bc9495bce51a106",
+    "firmware_packaged": false,
+    "hardware_boot_tested": false,
+    "router_modified": false
+  },
+  "external_test_inputs": {
+    "Image36": {
+      "bytes": 12773384,
+      "sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4"
+    },
+    "busybox-static": {
+      "bytes": 1914704,
+      "sha256": "52151e7f322f926b64049cdaa1410dc3ea6485525e0624b05813791c219ae933"
+    },
+    "usrmerge-probes/abi-probe-aarch64": {
+      "bytes": 14456,
+      "sha256": "a7a14275714d3ab60239f009fd8d12881b6d3a43eb09f51da9f231aa0535a33e"
+    },
+    "usrmerge-probes/abi-probe-armel": {
+      "bytes": 8852,
+      "sha256": "8510e11103d32c8172fad34fa5e92029b7b7312eedeeec3fd234f7aa3f1e54da"
+    },
+    "usrmerge-probes/abi-probe-armhf": {
+      "bytes": 8672,
+      "sha256": "2c85ee23010aaa0d180c17d2fb38a0f8316045c39c5c8bac431e0ca030d1b1eb"
+    },
+    "usrmerge-probes/bootguard-provider.so": {
+      "bytes": 7240,
+      "sha256": "256cdf7d41a6084d00ed1a28a928ef1db4260af33a4a1095146d723acf59bd47"
+    },
+    "usrmerge-probes/guardcheck": {
+      "bytes": 8628,
+      "sha256": "c5a864b78f3c028bcd778a0076b298d1a7bf7c8353aec343303f128d4320b8a2"
+    },
+    "usrmerge-probes/identity-probe": {
+      "bytes": 8272,
+      "sha256": "0b6137f050c1b2764c4eb6d950af667d404c8f0ea8abf2ef054280e93555387a"
+    },
+    "usrmerge-probes/manifest.json": {
+      "bytes": 2521,
+      "sha256": "3d293063368a652df58b71184011e4ba4e3f26154d7b82ef7c36f1f3360f197e"
+    }
+  },
+  "compression": {
+    "type": "zstd",
+    "level": 22,
+    "block_size": 524288,
+    "all_root": true
+  },
+  "next_candidate": "../next-candidate/scripts/prepare-rootfs.py",
+  "preserved_runtime_dependencies": [
+    "../docker-network-local (USB /usr/local and Docker bridge/NAT)",
+    "../webui-nvram-cache (already integrated before armel migration)"
+  ],
+  "firmware_packaged": false,
+  "hardware_boot_tested": false,
+  "router_modified": false,
+  "firmware_commit_performed": false,
+  "systemd_installed": false
+}

@@ -1,50 +1,65 @@
 # Next GT-BE98 userspace candidate
 
-The next firmware candidate must include the verified NVRAM cache getter fix
-from `699d70ef091de2de2d9d5409601084d1410a6fa6` directly in its rootfs. This is
-a candidate checkpoint; no new firmware image or hardware flash is requested.
+The next candidate combines the verified Web UI NVRAM cache fix with
+[armel multiarch and Ubuntu GCC 15 library rebuilds](../armel-multiarch/README.md).
+The final offline SquashFS passed QEMU checks using the exact #36 kernel.
+No new flashable firmware or physical boot trial has been performed.
 
-`candidate.json` pins the previously flashed runtime-dirs SquashFS and the
-patch generator/input/output hashes. `prepare-rootfs.py` extracts that exact
-baseline into a new offline directory and applies the fix. Its full inventory
-comparison requires exactly one changed path, `usr/lib/libnvram.so`, with
-unchanged mode and no added/removed files. Kernel modules and previous
-userspace/layout changes are therefore preserved. The generator and tests
-remain in the adjacent `webui-nvram-cache` directory, avoiding duplicate code.
+The preparation pipeline is mandatory and ordered:
 
-From this directory in the firmware repository:
+1. Extract the exact runtime-dirs SquashFS pinned in `candidate.json`.
+2. Apply the NVRAM getter lifetime fix from
+   `699d70ef091de2de2d9d5409601084d1410a6fa6`. The base-stage inventory comparison
+   requires exactly one changed file: `usr/lib/libnvram.so`.
+3. Move armel libraries and private plugins into `/usr/lib/arm-linux-gnueabi`,
+   preserving old ABI paths as links and adding ld.so.conf.d fragments.
+4. Overlay the tested Ubuntu GCC 15 builds of zlib, Expat, json-c and libcap-ng.
+   Check input/output hashes, ELF ABI, SONAME and exported symbol compatibility.
+
+`prepare-base-rootfs.py` preserves the independently checked first two stages.
+`prepare-rootfs.py` is the complete candidate entry point. It requires all four
+libraries; it does not silently omit the new multiarch/compiler changes.
+The rootfs output must be a new offline directory.
+
+From this directory in the firmware repository, after following the adjacent
+armel checkpoint's compiler and library build instructions:
 
 ```sh
 python3 scripts/prepare-rootfs.py \
   --base-squashfs /path/to/verified-runtime-dirs-rootfs.squashfs \
   --patch-script ../webui-nvram-cache/scripts/patch-nvram.py \
-  --output rootfs --report evidence/staged-rootfs.json
+  --rebuilt ../armel-multiarch/build/libraries/rebuilt \
+  --output rootfs --report evidence/integrated-candidate.json
 ```
 
-Use this prepared rootfs for the next SquashFS, after all legacy installers
-and userspace overlays. Preserve zstd level 22, 512 KiB blocks and root
-ownership. Recalculate compressed size/UBI capacity and perform the usual
-packaging, signature-preservation and boot validation when producing the next
-image. The previous packer's exact rootfs hash describes the old image and
-must be reviewed for the newly produced artifact; do not remove its checks.
+Run this after all legacy installers and userspace overlays. The staged
+candidate and the integrated recipe produce identical file/link inventories.
+All 182 kernel modules, glibc 2.44, previous Leon userspace, merged /usr,
+/run layout, and the PID1 boot-metadata guard are preserved. Systemd is not
+installed by this checkpoint.
 
-The patched library is already validated by offline regressions, native
-isolated tests and the live management-service overlay. The user confirmed
-normal operation. The next complete firmware is not yet packaged or boot
-tested. The separately rebuilt B53 glibc package is not added by this item;
-the baseline's tested glibc 2.44 remains in place.
+Package SquashFS with zstd level 22, 512 KiB blocks and root ownership. The
+validated SquashFS is 75,804,672 bytes, SHA-256
+`9d13b0b5789843e691cf08f2083c189dbc61f48eeb5d433795183e455b4aa026`.
+The 16 KiB increase over the base is not a substitute for checking the final
+PKGTB/UBI size. Complete firmware packaging must preserve the verified signed
+#36 bootfs, update reviewed artifact pins and repeat size/boot checks. Do not
+remove the packer's exact-input checks or change firmware commit metadata.
 
-Once this rootfs is used, the library is available without a USB fix mount.
-The current USB helper also detects the already-patched hash and does not
-overlay/restart it. This checkpoint leaves the running router and its
-uncommitted slot-1 / committed slot-2 rollback state unchanged.
+QEMU passed all 312 dynamic-program dependency checks, 34 userspace command
+checks, armel/armhf/aarch64 ABI probes, the four rebuilt-library functional
+checks, module paths and the existing init/rollback guard probes. QEMU does
+not establish full physical-board service or accelerator behavior.
+
+The NVRAM patch is now part of the rootfs at its canonical armel location,
+reachable through the old `/usr/lib/libnvram.so` link. Its existing USB helper
+recognizes the patched bytes and avoids a redundant overlay/restart. The
+running router remains on #36 with the existing trial/rollback state.
 
 ## USB runtime dependency: Docker networking
 
-The running router now also uses the verified
-[Docker networking and USB /usr/local checkpoint](../docker-network-local/README.md).
-Its binaries, bridge/NAT configuration and Merlin hook integration reside on
-the USB, outside this SquashFS. Keep that runtime checkpoint with this candidate
-when restoring or deploying the device. See its install manifest and validation
-record for exact dependencies and tested limits. The staged firmware rootfs and
-its Web UI patch are unchanged by this USB integration.
+Keep the verified [Docker networking and USB /usr/local checkpoint](../docker-network-local/README.md)
+with this candidate when restoring or deploying the device. Its Docker
+binaries, bridge/NAT configuration and Merlin hook integration reside on USB,
+outside the SquashFS. Existing container data and user customizations remain
+part of that runtime checkpoint.
