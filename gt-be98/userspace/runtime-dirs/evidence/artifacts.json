@@ -1,0 +1,18 @@
+{
+  "source-usrmerge-rootfs": {
+    "sha256": "ae91a2ec08b5cf17ba6d1820730afa42329c0093c262a4ace4a8ec563aaa1a78",
+    "bytes": 75788288
+  },
+  "rootfs-runtime-dirs": {
+    "sha256": "af038997f690e9378941810a6323f681de521cf23a85199d2f832dfbe57176f2",
+    "bytes": 75788288,
+    "compression": "zstd",
+    "level": 22,
+    "block_size": 524288,
+    "rootfs_reserved_ubi_blocks": 606
+  },
+  "runtime-probe": {
+    "sha256": "1f375d9e2215e96a58285e8570c66ab43179178ea1299324ca3461e4c39724f4",
+    "bytes": 14400
+  }
+}

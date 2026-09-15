@@ -1,0 +1,15 @@
+{
+  "observed_kernel": "4.19.294",
+  "run_exists": false,
+  "var_mount": {
+    "fstype": "tmpfs",
+    "options": "rw,relatime"
+  },
+  "var_run": {
+    "uid": 0,
+    "gid": 0,
+    "mode": "0755"
+  },
+  "var_lock_mode": "0777",
+  "actions": "Read-only SSH inspection; no router files modified."
+}

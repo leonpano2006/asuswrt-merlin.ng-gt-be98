@@ -1,0 +1,21 @@
+{
+  "added": {
+    "run": {
+      "mode": 41471,
+      "link": "var/run"
+    },
+    "media": {
+      "mode": 16877
+    },
+    "srv": {
+      "mode": 16877
+    }
+  },
+  "preserved_entries": 4564,
+  "existing_entries_unchanged": true,
+  "source_unchanged": true,
+  "init_changed": false,
+  "runtime_backend": "Existing ASUS /var tmpfs, /var/run root:root 0755",
+  "var_lock_changed": false,
+  "router_modified": false
+}
