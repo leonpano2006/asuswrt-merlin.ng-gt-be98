@@ -1,7 +1,7 @@
 # GT-BE98 runtime directory compatibility
 
-2026-09-15. Offline extension of the validated merged-/usr candidate at
-commit `94dccfe7d0954b4c5fe989efa8412a8d06dd5b13`.
+2026-09-15. Extension of the validated merged-/usr candidate at commit
+`94dccfe7d0954b4c5fe989efa8412a8d06dd5b13`, now verified in a hardware trial.
 
 Added paths:
 
@@ -32,8 +32,7 @@ It does not claim complete Ubuntu filesystem or init compatibility.
 The transformation adds only these three entries. All 4,564 preexisting
 entries retain their type, mode, file content and symlink target. No init,
 glibc, kernel, module, mount configuration, forwarding or boot-commit code
-changes. Router access was read-only inspection; no live installation or
-flash was performed.
+changes. The subsequent, explicitly requested hardware flash is described below.
 
 ## Validation
 
@@ -53,13 +52,56 @@ offline Cortex-A53 QEMU:
 
 The test mounts a disposable `/var` tmpfs and creates its initial directories
 according to the source/live layout. It does not exercise the entire ASUS
-hardware startup sequence. Runner/DHD function still requires a later real
-hardware trial. No extra live safety or throughput claim is made.
+hardware startup sequence. The subsequent hardware observations below cover
+service startup and actual acceleration activity, not a throughput benchmark.
 
 The candidate is 75,788,288 bytes (72.28 MiB), zstd 22, 512 KiB blocks:
 the same rounded SquashFS size as the preceding usrmerge image. Its rootfs
-reservation remains 606 UBI blocks. This is a rootfs component, not a PKGTB
-firmware file; a later trial needs fresh slot/capacity checks.
+reservation remains 606 UBI blocks. The rootfs component was subsequently
+packed into an 88,206,412-byte PKGTB (84.12 MiB), preserving the signed #36
+bootfs and every other original payload bytewise. The bootfs signature was
+verified with the existing public key; no private key or re-signing was needed.
+
+## Hardware trial and current rollback state
+
+The router first returned to committed #35 in slot 2. The native inactive-slot
+flasher then wrote the new image to slot 1 after checks of the model, booted
+slot, both commit flags, fallback/loader hashes, image hash and fresh capacity.
+Readback verified the new rootfs and unchanged fallback/physical loader before
+selecting PART1_ONCE (6). No firmware commit was performed.
+
+Current state: **slot 1 runs the new layout on kernel #36; slot 1 commit=0,
+slot 2 commit=1; a normal reboot returns to #35 in slot 2**. Metadata sequences
+remain 47/46. This is a trial, not a confirmed default image. Never run an
+inactive-slot flasher while booted here: it would target the #35 fallback.
+
+The five-minute boot logger ended normally at 306.783 seconds. No recorded
+kernel faults; taint stays 4097 (existing P+O). PID 1 is `/usr/sbin/rc`, the
+existing metadata guard is loaded only where intended, HTTP returns 200,
+SSH/watchdog are running and all four Wi-Fi interfaces report up. The runtime
+PID/socket and all three ABI probes passed on the physical router.
+
+Docker was restored to its pre-flash running state without adding autostart.
+Its client works through `/run/docker.sock`; memory/swap limits remain enabled.
+A cached hello-world container passed with network disabled, 32 MiB memory,
+32 MiB combined memory+swap and pids=32; no test containers remain.
+
+Runner reports enabled L2/L3 hardware acceleration. Over 20 seconds, aggregate
+L2 hardware hits rose 244079 -> 251583 and bytes 81974296 -> 85215844, with
+zero runner flow/command errors. Flow ageing means these sums are not exact
+traffic-rate measurements. No full-rate throughput test was performed.
+
+The preexisting OpenVPN server did not automatically return during this boot.
+`service start_vpnserver1` restored `tun21` and server state 2, errno 0, without
+changing configuration. After that restoration, normalized IPv4/IPv6 firewall
+hashes, forwarding sysctls and every interface's bridge/master relation match
+the pre-flash baseline. Future VPN autostart behavior was not changed here.
+
+See `flash/evidence/live-summary.json`, `flash/evidence/readback.txt`, and
+`flash/evidence/network-comparison-final.json`. `flash/scripts` records the
+guarded procedure used for this exact transition. Its state/hash checks are
+intentionally specific; it is not a command to repeat blindly on the current
+slot layout. Complete firmware and raw evidence are backed up on ML350.
 
 ## Reproduction
 

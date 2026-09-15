@@ -1,0 +1,107 @@
+SAMPLE=1
+2026-09-15 19:20:44 UTC
+273.78 783.54
+cpu  8969 0 20623 77628 748 0 159 0 0 0
+cpu0 1689 0 4221 20762 159 0 123 0 0 0
+cpu1 1613 0 2909 22213 348 0 14 0 0 0
+cpu2 1723 0 4784 20239 204 0 17 0 0 0
+cpu3 3942 0 8707 14412 36 0 4 0 0 0
+TABLE=l2list header=1 rows=174 parse_errors=0 flows_with_hw_counters=142 HW_TotHits=244079 HW_TotalBytes=81974296
+TABLE=nflist header=1 rows=0 parse_errors=0 flows_with_hw_counters=0 HW_TotHits=0 HW_TotalBytes=0
+PKT_RUNNER[0]:
+status         : 1
+activates      : 719
+deactivates    : 559
+failures       : 0
+l3_errors      : 0
+l2_errors      : 0
+mc_errors      : 0
+hash_collision : 0
+no_free_idx    : 0
+flushes        : 0
+active         : 160
+ucast_active   : 160
+mcast_active   : 0
+max_flows      : 17408
+Flow_idx_in_use: 160
+----------------------------
+HOST_IP_ADDR_TABLE Stats:
+ipv4_add_fail  : 0
+ipv6_add_fail  : 0
+ipv4_del_fail  : 0
+ipv6_del_fail  : 1
+----------------------------
+CMDLIST Stats:
+Success        : 720
+Errors         : 0
+Unsupported    : 0
+Overflow       : 0
+Invalid Target : 0
+SAMPLE=2
+2026-09-15 19:21:04 UTC
+293.81 857.34
+cpu  9158 0 21060 84944 750 0 162 0 0 0
+cpu0 1741 0 4343 22577 159 0 125 0 0 0
+cpu1 1668 0 3001 24056 348 0 14 0 0 0
+cpu2 1782 0 4900 22049 204 0 18 0 0 0
+cpu3 3966 0 8815 16262 37 0 4 0 0 0
+TABLE=l2list header=1 rows=175 parse_errors=0 flows_with_hw_counters=149 HW_TotHits=251583 HW_TotalBytes=85215844
+TABLE=nflist header=1 rows=0 parse_errors=0 flows_with_hw_counters=0 HW_TotHits=0 HW_TotalBytes=0
+PKT_RUNNER[0]:
+status         : 1
+activates      : 762
+deactivates    : 594
+failures       : 0
+l3_errors      : 0
+l2_errors      : 0
+mc_errors      : 0
+hash_collision : 0
+no_free_idx    : 0
+flushes        : 0
+active         : 168
+ucast_active   : 168
+mcast_active   : 0
+max_flows      : 17408
+Flow_idx_in_use: 168
+----------------------------
+HOST_IP_ADDR_TABLE Stats:
+ipv4_add_fail  : 0
+ipv6_add_fail  : 0
+ipv4_del_fail  : 0
+ipv6_del_fail  : 1
+----------------------------
+CMDLIST Stats:
+Success        : 763
+Errors         : 0
+Unsupported    : 0
+Overflow       : 0
+Invalid Target : 0
+FINAL_ACCELERATION_STATUS
+	Flow Refresh Timer Interval  = 10000 millisecs
+	TCP Flow Idle Timer          = 60 s
+	UDP Flow Idle Timer          = 120 s
+	L2 Flow Idle Timer           = 120 s
+	Mcast Flow Idle Timer        = 120 s
+	Other Flow Idle Timer        = 120 s
+	Pkt-HW Activate Deferral rate = 1
+	Pkt-HW Idle Deactivate = 0
+	Pkt-SW Activate Deferral count = 0
+	Flow Low Pkt Rate = 10
+	Acceleration Mode: <L2 & L3>
+	MCast Acceleration IPv4<Enabled> IPv6<Enabled>
+	IPv6 Learning <Enabled>
+	L2TP Learning <Enabled>
+	GRE Learning <Enabled>
+	4o6 Fragmentation <Enabled>
+	TCP Ack Prioritization <Enabled>
+	ToS Multi Flow <Enabled>
+	Notify Processing Mode <Hybrid>
+	Rx Pkt Length Mode <Enabled>
+	OVS Flow Learning <Disabled>
+	HW Acceleration <Enabled>
+	Tx Thread <Enabled>
+	Tx Thread Idle Delay <8> yield loops
+	Flow Ucast Learning Enabled  : Max<16383>, Active<178>, Cumulative [ 956 - 778 ]
+	Flow Mcast Learning Enabled  : Max<1152>, Active<0>, Cumulative [ 0 - 0 ]
+	Pure LLC Acceleration: <Disabled>
+IPV4_FORWARDING=0

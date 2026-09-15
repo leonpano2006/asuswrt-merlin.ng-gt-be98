@@ -1,0 +1,72 @@
+{
+  "status": "live_trial_verified",
+  "kernel": "4.19.294 #36",
+  "image_sha256": "1452a5da6e7edcecd211fa85deef99aa2b6a007232f074911eb2dc4c5e5cc1da",
+  "rootfs_sha256": "af038997f690e9378941810a6323f681de521cf23a85199d2f832dfbe57176f2",
+  "image_bytes": 88206412,
+  "booted_slot": 1,
+  "next_normal_boot_slot": 2,
+  "fallback_kernel": "#35",
+  "commit_flags": [
+    0,
+    1
+  ],
+  "sequences": [
+    47,
+    46
+  ],
+  "fallback_and_loader_unchanged": true,
+  "available_ubi_blocks": 21,
+  "boot_logger_done_seconds": 306.783,
+  "fault_count": 0,
+  "taint": 4097,
+  "http_status": 200,
+  "wireless_up": [
+    "wl0",
+    "wl1",
+    "wl2",
+    "wl3"
+  ],
+  "pid1_exe": "/usr/sbin/rc",
+  "runtime_and_abi_probes_pass": true,
+  "docker": {
+    "running": true,
+    "socket": "/run/docker.sock",
+    "memory_limit": true,
+    "swap_limit": true,
+    "hello_world_pass": true,
+    "container_memory_bytes": 33554432,
+    "container_memory_plus_swap_bytes": 33554432,
+    "container_network": "none",
+    "image_pull": "never",
+    "containers_remaining": 0,
+    "autostart_added": false
+  },
+  "acceleration": {
+    "enabled": true,
+    "mode": "L2 & L3",
+    "sample_interval_seconds": 20,
+    "l2_hw_hits": [
+      244079,
+      251583
+    ],
+    "l2_hw_bytes": [
+      81974296,
+      85215844
+    ],
+    "runner_flow_errors": 0,
+    "throughput_benchmark_performed": false
+  },
+  "network_rules_sysctls_interface_masters_match_before": true,
+  "openvpn_server1": {
+    "native_start_needed_after_reboot": true,
+    "command": "service start_vpnserver1",
+    "interface": "tun21",
+    "state": 2,
+    "errno": 0,
+    "configuration_changed": false,
+    "autostart_behavior_not_changed": true
+  },
+  "test_directory_removed": true,
+  "firmware_commit_performed": false
+}
