@@ -1,0 +1,96 @@
+{
+  "status": "hardware_trial_verified",
+  "image_sha256": "d20e532d4dab0777761007a967da3d897d0fa2ea3fab9fdc4b304e89f00cc364",
+  "image_bytes": 88222796,
+  "rootfs_sha256": "9d13b0b5789843e691cf08f2083c189dbc61f48eeb5d433795183e455b4aa026",
+  "kernel": "4.19.294 #36",
+  "booted_slot": 1,
+  "normal_reboot_slot": 2,
+  "fallback_kernel": "#35",
+  "commit_flags": [
+    0,
+    1
+  ],
+  "sequences": [
+    47,
+    46
+  ],
+  "firmware_commit_performed": false,
+  "fallback_and_physical_loader_unchanged": true,
+  "available_ubi_blocks": 21,
+  "abi_probes": [
+    "aarch64",
+    "armel",
+    "armhf"
+  ],
+  "glibc": "2.44",
+  "dynamic_executable_checks": {
+    "count": 312,
+    "failed": 0
+  },
+  "gcc15_library_probes": [
+    "zlib",
+    "expat",
+    "json-c",
+    "libcap-ng"
+  ],
+  "all_four_resolved_from_armel_triplet": true,
+  "web_ui": {
+    "authenticated_login": true,
+    "GameDashboard.asp": "live traffic and 43 online clients observed",
+    "Tools_Sysinfo.asp": "live CPU/memory/connections/wireless clients and Runner enabled observed",
+    "integrated_nvram_fix_hash_verified": true
+  },
+  "boot_logger_complete_seconds": 306.247,
+  "kernel_or_userspace_faults_found": 0,
+  "loaded_modules": 88,
+  "module_set_unchanged": true,
+  "taint": 4097,
+  "wireless_up": [
+    "wl0",
+    "wl1",
+    "wl2",
+    "wl3"
+  ],
+  "acceleration": {
+    "enabled": true,
+    "mode": "L2 & L3",
+    "l2_hw_hits": [
+      307178,
+      322720
+    ],
+    "l2_hw_bytes": [
+      222275090,
+      238713353
+    ],
+    "sample_seconds": 20,
+    "runner_flow_errors": 0,
+    "command_errors": 0,
+    "throughput_benchmark_performed": false
+  },
+  "docker": {
+    "version": "29.8.0",
+    "prefix": "/usr/local",
+    "restored_running": true,
+    "autostart_added": false,
+    "default_bridge_dns_http": true,
+    "container_package_install": true,
+    "https_status": 200,
+    "tls_verify_result": 0,
+    "custom_network_dns_http": true,
+    "lan_published_port_18098": true,
+    "memory_limit_bytes": 33554432,
+    "memory_plus_swap_limit_bytes": 33554432,
+    "pids_limit": 32,
+    "test_resources_removed": true,
+    "initial_harness_correction": "Alpine 3.23 has no httpd applet; rerun custom networking using cached busybox:1.37.0 HTTP server succeeded"
+  },
+  "startup_hook_and_config_files_unchanged": 18,
+  "vpn_server1": {
+    "state": 2,
+    "errno": 0,
+    "automatically_restored": true
+  },
+  "network_comparison": "network-comparison.json",
+  "systemd_installed": false
+}

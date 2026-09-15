@@ -3,10 +3,11 @@
 This checkpoint moves the existing 32-bit soft-float userspace libraries into
 `/usr/lib/arm-linux-gnueabi` and rebuilds four shared libraries with Ubuntu
 GCC 15.2, targeting B53 as Cortex-A53. It is integrated into
-`../next-candidate/scripts/prepare-rootfs.py`. The offline SquashFS passed
-QEMU validation with the exact #36 kernel. It has not been packaged as a new
-flashable firmware or booted on the router. No boot commit or systemd change
-is included.
+`../next-candidate/scripts/prepare-rootfs.py`. The SquashFS passed QEMU
+validation with the exact #36 kernel, then was packaged and tested on the
+physical GT-BE98. The new image is running as an uncommitted slot-1 trial;
+normal reboot selects the committed #35 fallback in slot 2. See the
+[hardware trial record](flash/README.md). No systemd change is included.
 
 ## Layout
 
@@ -125,7 +126,7 @@ A generic upstream `make install` does not automatically infer this firmware's
 multiarch policy. Local USB packages should instead set prefix `/usr/local`
 and the applicable `/usr/local/lib/<triplet>` explicitly when supported.
 
-## Validation and packaging boundary
+## Validation and hardware trial
 
 The exact #36 kernel, emulated Cortex-A53 and read-only candidate SquashFS
 passed 312 dynamic-executable dependency checks, 34 userspace command checks,
@@ -147,8 +148,17 @@ the intentional configuration change. The integrated recipe and extracted
 SquashFS match the tested staging inventory. The new SquashFS is 75,804,672
 bytes (16 KiB larger than its base), zstd level 22 with 512 KiB blocks.
 
-No flashable PKGTB or hardware trial is produced here. Complete firmware
-packaging must preserve the signed bootfs and boot metadata guard, recheck
-image/UBI capacity, and retain rollback. The verified Docker networking and
+The resulting PKGTB is 88,222,796 bytes. Its signed bootfs is bytewise
+unchanged and its signature verifies. The inactive slot was written from
+the #35 fallback; complete image readback passed before arming slot 1 once.
+All 312 dependency checks, three ABI probes and four library functional
+tests also passed on the physical router. Web UI login and live updates,
+four radios, Docker DNS/HTTP/HTTPS and LAN port publishing worked. Runner
+hardware counters increased without errors during observation; maximum
+throughput was not benchmarked. All 88 loaded modules match the baseline.
+
+The hardware trial preserves both the fallback bytes and its commit flag.
+It does not commit the new firmware. The verified Docker networking and
 USB `/usr/local` checkpoint remains an external runtime dependency. Systemd
-is a separate future init change after this layout is validated on hardware.
+remains a separate future init change. Detailed evidence, cold-boot network
+differences and the guarded packaging/deployment scripts are in `flash/`.

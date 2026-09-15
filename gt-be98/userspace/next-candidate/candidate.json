@@ -1,6 +1,6 @@
 {
   "candidate": "gt-be98-next-userspace-20260915",
-  "status": "queued-for-next-firmware",
+  "status": "hardware-trial-verified-uncommitted",
   "base_commit": "5bcedfc400aa58e1c2183fb0ef71c99180c4ee89",
   "base_rootfs_sha256": "af038997f690e9378941810a6323f681de521cf23a85199d2f832dfbe57176f2",
   "base_rootfs_bytes": 75788288,
@@ -35,9 +35,9 @@
     "bootfs_policy": "preserve the previously verified signed #36 bootfs bytewise",
     "fresh_size_and_ubi_capacity_check_required": true
   },
-  "firmware_packaged": false,
-  "candidate_firmware_boot_tested": false,
-  "flash_requested_by_this_checkpoint": false,
+  "firmware_packaged": true,
+  "candidate_firmware_boot_tested": true,
+  "flash_requested_by_this_checkpoint": true,
   "firmware_commit_requested": false,
   "required_postprocessing": {
     "name": "armel multiarch and Ubuntu GCC 15 library rebuilds",
@@ -60,5 +60,19 @@
       "armhf",
       "aarch64"
     ]
+  },
+  "hardware_trial": {
+    "status": "hardware-trial-verified-uncommitted",
+    "record": "../armel-multiarch/flash/evidence/live-summary.json",
+    "image": "../armel-multiarch/flash/GT-BE98_leon36-armel-multiarch-gcc15_zstd22.pkgtb",
+    "image_sha256": "d20e532d4dab0777761007a967da3d897d0fa2ea3fab9fdc4b304e89f00cc364",
+    "image_bytes": 88222796,
+    "booted_slot": 1,
+    "normal_reboot_slot": 2,
+    "commit_flags": [
+      0,
+      1
+    ],
+    "firmware_commit_performed": false
   }
 }

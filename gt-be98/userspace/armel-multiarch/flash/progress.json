@@ -1,0 +1,22 @@
+{
+  "phase": "hardware-trial-verified-uncommitted",
+  "image_sha256": "d20e532d4dab0777761007a967da3d897d0fa2ea3fab9fdc4b304e89f00cc364",
+  "image_bytes": 88222796,
+  "target_slot": 1,
+  "fallback_slot": 2,
+  "preflash_backup_verified": true,
+  "new_image_written": true,
+  "firmware_commit_performed": false,
+  "readback_verified": true,
+  "trial_boot_armed": true,
+  "hardware_boot_tested": true,
+  "hardware_checks_passed": true,
+  "booted_slot": 1,
+  "normal_reboot_slot": 2,
+  "commit_flags": [
+    0,
+    1
+  ],
+  "test_resources_removed": true,
+  "evidence": "evidence/live-summary.json"
+}

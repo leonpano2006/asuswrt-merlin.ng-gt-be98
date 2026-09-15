@@ -1,0 +1,23 @@
+/usr/lib/arm-linux-gnueabi/libz.so.1: OK
+/usr/lib/arm-linux-gnueabi/libexpat.so.1.5.2: OK
+/usr/lib/arm-linux-gnueabi/libjson-c.so.2.0.2: OK
+/usr/lib/arm-linux-gnueabi/libcap-ng.so.0.0.0: OK
+LAB_MULTIARCH_LIBRARY zlib /usr/lib/arm-linux-gnueabi/libz.so.1
+LAB_MULTIARCH_LIBRARY expat /usr/lib/arm-linux-gnueabi/libexpat.so.1
+LAB_MULTIARCH_LIBRARY json-c /usr/lib/arm-linux-gnueabi/libjson-c.so.2
+LAB_MULTIARCH_LIBRARY libcap-ng /usr/lib/arm-linux-gnueabi/libcap-ng.so.0
+LAB_GCC15_LIBRARY_PROBE_PASS zlib=1.2.12 expat=expat_2.0.1 pointer=4 time=4 offset=4
+LAB_ABI_PASS bits=64 glibc=2.44 hwcap=8ff
+LAB_ABI_PASS bits=32 glibc=2.44 hwcap=37b0d6
+LAB_ABI_PASS bits=32 glibc=2.44 hwcap=37b0d6
+LIVE_LINKER_SUMMARY count=312 failed=0
+	libz.so.1 (libc6,soft-float) => /usr/lib/arm-linux-gnueabi/libz.so.1
+	libz.so.1 (libc6,soft-float) => /lib/libz.so.1
+	libz.so.1 (libc6,AArch64) => /usr/lib/aarch64-linux-gnu/libz.so.1
+	libjson-c.so.2 (libc6,soft-float) => /usr/lib/arm-linux-gnueabi/libjson-c.so.2
+	libjson-c.so.2 (libc6,soft-float) => /lib/libjson-c.so.2
+	libexpat.so.1 (libc6,soft-float) => /usr/lib/arm-linux-gnueabi/libexpat.so.1
+	libexpat.so.1 (libc6,soft-float) => /lib/libexpat.so.1
+	libcap-ng.so.0 (libc6,soft-float) => /usr/lib/arm-linux-gnueabi/libcap-ng.so.0
+	libcap-ng.so.0 (libc6,soft-float) => /lib/libcap-ng.so.0
+ARMEL_MULTIARCH_LIVE_LIBRARIES_PASS

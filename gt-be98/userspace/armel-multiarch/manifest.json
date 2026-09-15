@@ -1,6 +1,6 @@
 {
   "checkpoint": "gt-be98-armel-multiarch-20260915",
-  "status": "offline-candidate-qemu-verified",
+  "status": "hardware-trial-verified-uncommitted",
   "source_commit": "7885374aeadefdcfae7a342fb90ab2655b7a2c51",
   "source_archive_sha256": "59a43da5764cca137ed76717b732a62dffbf1beff741d396cd3c44f515780b3a",
   "baseline_inventory_sha256": "c91a049eb7a2af9b883bcb16946663645d106bab94b6b742285fc5e4801ba268",
@@ -25,9 +25,9 @@
     "squashfs_bytes": 75804672,
     "squashfs_sha256": "9d13b0b5789843e691cf08f2083c189dbc61f48eeb5d433795183e455b4aa026",
     "inventory_sha256": "81bb2ce4b1c70d188b82023c9d4a0784a702a66b06e8e4a92bc9495bce51a106",
-    "firmware_packaged": false,
-    "hardware_boot_tested": false,
-    "router_modified": false
+    "firmware_packaged": true,
+    "hardware_boot_tested": true,
+    "router_modified": true
   },
   "external_test_inputs": {
     "Image36": {
@@ -78,9 +78,23 @@
     "../docker-network-local (USB /usr/local and Docker bridge/NAT)",
     "../webui-nvram-cache (already integrated before armel migration)"
   ],
-  "firmware_packaged": false,
-  "hardware_boot_tested": false,
-  "router_modified": false,
+  "firmware_packaged": true,
+  "hardware_boot_tested": true,
+  "router_modified": true,
   "firmware_commit_performed": false,
-  "systemd_installed": false
+  "systemd_installed": false,
+  "hardware_trial": {
+    "status": "hardware-trial-verified-uncommitted",
+    "record": "flash/evidence/live-summary.json",
+    "image": "flash/GT-BE98_leon36-armel-multiarch-gcc15_zstd22.pkgtb",
+    "image_sha256": "d20e532d4dab0777761007a967da3d897d0fa2ea3fab9fdc4b304e89f00cc364",
+    "image_bytes": 88222796,
+    "booted_slot": 1,
+    "normal_reboot_slot": 2,
+    "commit_flags": [
+      0,
+      1
+    ],
+    "firmware_commit_performed": false
+  }
 }

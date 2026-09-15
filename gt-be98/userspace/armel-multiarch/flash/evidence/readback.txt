@@ -1,0 +1,43 @@
+NEW_BOOTFS=2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f
+NEW_ROOTFS=9d13b0b5789843e691cf08f2083c189dbc61f48eeb5d433795183e455b4aa026
+FALLBACK_BOOTFS=61403034cd7f49f25210f7e6154e421a784519b36874b618a34c0e2c3a25c291
+FALLBACK_ROOTFS=f6dd764de8cd5b0a5724193f771b180950c0c716f8120b9095bf54cda5cf2347
+LOADER=5721efb444680b250a40295fdad605f303749a0140468eba1f0f695f268517c3
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: Second
+  Reboot Partition: Second
+
+  First  partition type           : pureUBI/GPT
+  First  partition sequence number: 47
+  First  partition image tag      : $imageversion:  $
+  First  partition commit flag    : 0
+B>Second partition type           : pureUBI/GPT
+B>Second partition sequence number: 46
+B>Second partition image tag      : $imageversion:  $
+B>Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2
+VERIFIED_NEW_IMAGE_FALLBACK_AND_LOADER
+21

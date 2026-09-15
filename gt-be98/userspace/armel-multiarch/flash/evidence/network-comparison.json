@@ -1,0 +1,49 @@
+{
+  "network_matches_before": false,
+  "removed": [
+    "INTERFACE wl0 master=../br0",
+    "INTERFACE wl1 master=../br0",
+    "INTERFACE wl2 master=../br0",
+    "INTERFACE wl3 master=../br0",
+    "INTERFACE wl3.2 master=../br0",
+    "RULESET_SHA256 iptables-save dde89cd7952f8d64ff0a3d0443b321a0fece047ac42aa0716a15e82f1d15d230  -"
+  ],
+  "added": [
+    "INTERFACE br52 master=",
+    "INTERFACE eth0.52 master=../br52",
+    "INTERFACE eth1.52 master=../br52",
+    "INTERFACE eth2.52 master=../br52",
+    "INTERFACE eth3.52 master=../br52",
+    "INTERFACE wl0 master=",
+    "INTERFACE wl0.0 master=../br0",
+    "INTERFACE wl0.52 master=../br52",
+    "INTERFACE wl1 master=",
+    "INTERFACE wl1.0 master=../br0",
+    "INTERFACE wl1.52 master=../br52",
+    "INTERFACE wl2 master=",
+    "INTERFACE wl2.0 master=../br0",
+    "INTERFACE wl2.52 master=../br52",
+    "INTERFACE wl3 master=",
+    "INTERFACE wl3.0 master=../br0",
+    "INTERFACE wl3.2 master=../br52",
+    "INTERFACE wl3.52 master=../br52",
+    "RULESET_SHA256 iptables-save 0340cf60b957c65f4f247eb67052e7ce8fb97c56b629ea9e80c1e2d36c1c9655  -"
+  ],
+  "modules_match_before": true,
+  "modules_before": 88,
+  "modules_after": 88,
+  "removed_modules": [],
+  "added_modules": [],
+  "interface_masters_match_previous_36_cold_boot": true,
+  "current_nvram_lan1_contains_vlan52": true,
+  "ipv4_rules_review": {
+    "baseline_reconstructed_hash": "dde89cd7952f8d64ff0a3d0443b321a0fece047ac42aa0716a15e82f1d15d230",
+    "difference": "four duplicate LAN-to-LAN MASQUERADE entries and twelve empty, unreferenced NWFF/URLFF/URLFI chains are absent after reboot",
+    "docker_rules_preserved": true,
+    "remaining_rules_and_policies_identical": true,
+    "exact_pre_reboot_ruleset_identical": false
+  },
+  "ipv6_rules_match": true,
+  "forwarding_matches": true,
+  "vpn_server1_automatically_restored": true
+}

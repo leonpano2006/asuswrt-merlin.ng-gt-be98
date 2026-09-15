@@ -2,8 +2,10 @@
 
 The next candidate combines the verified Web UI NVRAM cache fix with
 [armel multiarch and Ubuntu GCC 15 library rebuilds](../armel-multiarch/README.md).
-The final offline SquashFS passed QEMU checks using the exact #36 kernel.
-No new flashable firmware or physical boot trial has been performed.
+The final SquashFS passed QEMU checks using the exact #36 kernel, then was
+packaged and tested on the physical GT-BE98. It is running as an uncommitted
+slot-1 trial with the committed #35 fallback retained in slot 2. See the
+[hardware trial record](../armel-multiarch/flash/README.md).
 
 The preparation pipeline is mandatory and ordered:
 
@@ -42,9 +44,10 @@ Package SquashFS with zstd level 22, 512 KiB blocks and root ownership. The
 validated SquashFS is 75,804,672 bytes, SHA-256
 `9d13b0b5789843e691cf08f2083c189dbc61f48eeb5d433795183e455b4aa026`.
 The 16 KiB increase over the base is not a substitute for checking the final
-PKGTB/UBI size. Complete firmware packaging must preserve the verified signed
-#36 bootfs, update reviewed artifact pins and repeat size/boot checks. Do not
-remove the packer's exact-input checks or change firmware commit metadata.
+PKGTB/UBI size. The tested PKGTB is 88,222,796 bytes with 21 UBI eraseblocks
+remaining. It preserves the signed #36 bootfs bytewise; signature and complete
+image readback checks passed. Future packaging must repeat these checks.
+Do not remove the packer's exact-input checks or change firmware commit metadata.
 
 QEMU passed all 312 dynamic-program dependency checks, 34 userspace command
 checks, armel/armhf/aarch64 ABI probes, the four rebuilt-library functional
@@ -54,7 +57,16 @@ not establish full physical-board service or accelerator behavior.
 The NVRAM patch is now part of the rootfs at its canonical armel location,
 reachable through the old `/usr/lib/libnvram.so` link. Its existing USB helper
 recognizes the patched bytes and avoids a redundant overlay/restart. The
-running router remains on #36 with the existing trial/rollback state.
+hardware trial confirmed httpd maps the canonical armel library without a
+USB bind overlay. Authenticated Dashboard and System Information pages update
+normally. Physical tests also passed all 312 executable dependency checks,
+the three ABI probes and the four rebuilt-library functional checks.
+
+The four radios and Runner acceleration are active. Docker DNS, HTTP, HTTPS,
+service-name resolution and a published LAN port passed after reboot. The
+boot log completed without a detected kernel/userspace fault. The firmware
+has not been committed: slot 1 is commit=0 and slot 2 is commit=1; normal
+reboot currently returns to #35.
 
 ## USB runtime dependency: Docker networking
 

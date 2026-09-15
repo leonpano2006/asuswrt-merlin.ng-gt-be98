@@ -1,0 +1,30 @@
+sha256:1087dfd14fa77fe3bd102f39d42ee9c7e183876bd1a65f38fe2c18198ae976b4 ["alpine@sha256:fd791d74b68913cbb027c6546007b3f0d3bc45125f797758156952bc2d6daf40"]
+write /dev/stdout: broken pipe
+Server:		127.0.0.11
+Address:	127.0.0.11:53
+
+Non-authoritative answer:
+
+Non-authoritative answer:
+Name:	leon-armel-multiarch-http
+Address: 172.31.0.2
+
+GT-BE98-armel-multiarch-network-ok
+Server:		127.0.0.11
+Address:	127.0.0.11:53
+
+Non-authoritative answer:
+Name:	example.com
+Address: 2606:4700:10::ac42:93f3
+Name:	example.com
+Address: 2606:4700:10::6814:179a
+
+Non-authoritative answer:
+Name:	example.com
+Address: 104.20.23.154
+Name:	example.com
+Address: 172.66.147.243
+
+CUSTOM_NETWORK_DNS_HTTP_PASS
+PID=17916 memory=33554432 swap=33554432 pids=32 ports={"8080/tcp":[{"HostIp":"192.168.100.10","HostPort":"18098"}]}
+LAN_PORT_READY
