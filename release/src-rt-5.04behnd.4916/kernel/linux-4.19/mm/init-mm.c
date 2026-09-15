@@ -38,3 +38,10 @@ struct mm_struct init_mm = {
 	.cpu_bitmap	= { [BITS_TO_LONGS(NR_CPUS)] = 0},
 	INIT_MM_CONTEXT(init_mm)
 };
+
+#ifdef CONFIG_GTBE98_MEMCG_ABI
+#include <linux/export.h>
+/* init_mm is static and has no dynamic owner slot following its cpumask. */
+struct task_struct __rcu *gtbe98_init_mm_owner;
+EXPORT_SYMBOL_GPL(gtbe98_init_mm_owner);
+#endif

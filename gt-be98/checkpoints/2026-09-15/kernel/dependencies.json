@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/leonpano2006/am-toolchains-aarch64",
+  "release": "v2021.02.4-1",
+  "host_architecture": "aarch64",
+  "generator": "Buildroot 2021.02.4",
+  "compiler_version": "10.3.0",
+  "target_glibc": "2.32",
+  "binutils": "2.36.1",
+  "sdks": {
+    "kernel_and_aarch64_helpers": {
+      "asset": "crosstools-aarch64-gcc-10.3-linux-4.19-glibc-2.32-binutils-2.36.1_aarch64-host_sdk.tar.zst",
+      "sha256": "6f6271e8de379f93cbcf9e77b48b35404cd9c177d478c978dc54ec58e3e6dcdf",
+      "compiler": "bin/aarch64-buildroot-linux-gnu-gcc"
+    },
+    "asus_rc_init_and_guard": {
+      "asset": "crosstools-arm_softfp-gcc-10.3-linux-4.19-glibc-2.32-binutils-2.36.1_aarch64-host_sdk.tar.zst",
+      "sha256": "5e0d2eced49caf55210a1deb6957e4136f7b48a9f329a5c764a38d80bd12be9b",
+      "compiler": "bin/arm-buildroot-linux-gnueabi-gcc"
+    }
+  },
+  "relocation": "Run relocate-sdk.sh inside each extracted SDK; retain the vendor usr -> . compatibility link where required.",
+  "scope": "This firmware repository consumes the external SDK release; Buildroot sources and SDK binaries remain in the toolchain repository. USB GCC 16.2 is a distinct userspace toolchain."
+}

@@ -240,7 +240,7 @@ struct lruvec {
 	atomic_long_t			inactive_age;
 	/* Refaults at the time of last reclaim cycle */
 	unsigned long			refaults;
-#ifdef CONFIG_MEMCG
+#if defined(CONFIG_MEMCG) && !defined(CONFIG_GTBE98_MEMCG_ABI)
 	struct pglist_data *pgdat;
 #endif
 };
@@ -775,7 +775,11 @@ extern void lruvec_init(struct lruvec *lruvec);
 
 static inline struct pglist_data *lruvec_pgdat(struct lruvec *lruvec)
 {
-#ifdef CONFIG_MEMCG
+#ifdef CONFIG_GTBE98_MEMCG_ABI
+	/* This ABI option is restricted to a single memory node. */
+	extern struct pglist_data contig_page_data;
+	return &contig_page_data;
+#elif defined(CONFIG_MEMCG)
 	return lruvec->pgdat;
 #else
 	return container_of(lruvec, struct pglist_data, lruvec);

@@ -1,0 +1,15 @@
+{
+  "common_types": 1153,
+  "changed": [
+    "structure cgroup",
+    "structure cgroup_root",
+    "structure css_set",
+    "structure page",
+    "structure task_struct"
+  ],
+  "existing_members_preserved_except_cgroup_internals": true,
+  "task_size": 2688,
+  "mm_size": 848,
+  "kmem_cache_size": 240,
+  "MEMCG_KMEM": false
+}

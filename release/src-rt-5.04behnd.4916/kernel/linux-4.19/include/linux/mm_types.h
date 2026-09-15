@@ -439,7 +439,7 @@ struct mm_struct {
 		spinlock_t			ioctx_lock;
 		struct kioctx_table __rcu	*ioctx_table;
 #endif
-#ifdef CONFIG_MEMCG
+#if defined(CONFIG_MEMCG) && !defined(CONFIG_GTBE98_MEMCG_ABI)
 		/*
 		 * "owner" points to a task that is regarded as the canonical
 		 * user/owner of this mm. All of the following must be true in
@@ -506,6 +506,29 @@ struct mm_struct {
 };
 
 extern struct mm_struct init_mm;
+
+#ifdef CONFIG_MEMCG
+#ifdef CONFIG_GTBE98_MEMCG_ABI
+extern struct task_struct __rcu *gtbe98_init_mm_owner;
+
+/* fork.c allocates one aligned owner pointer AFTER the dynamic cpumask.
+ * The mm object, its existing members and cpu_bitmap offset are unchanged.
+ * The slot has exactly the mm lifetime; ownership/RCU rules are unchanged.
+ * init_mm is statically allocated and uses separate zero-initialized storage.
+ */
+static inline struct task_struct __rcu **mm_owner_slot(struct mm_struct *mm)
+{
+	if (mm == &init_mm)
+		return &gtbe98_init_mm_owner;
+	return (struct task_struct __rcu **)((char *)mm +
+		 sizeof(struct mm_struct) + cpumask_size());
+}
+#define mm_owner(mm) (*mm_owner_slot(mm))
+#else
+#define mm_owner(mm) ((mm)->owner)
+#endif
+#endif
+
 
 /* Pointer magic because the dynamic array size confuses some compilers. */
 static inline void mm_init_cpumask(struct mm_struct *mm)

@@ -813,7 +813,7 @@ static void memcg_check_events(struct mem_cgroup *memcg, struct page *page)
 struct mem_cgroup *mem_cgroup_from_task(struct task_struct *p)
 {
 	/*
-	 * mm_update_next_owner() may clear mm->owner to NULL
+	 * mm_update_next_owner() may clear mm_owner(mm) to NULL
 	 * if it races with swapoff, page migration, etc.
 	 * So this can be called with p == NULL.
 	 */
@@ -849,7 +849,7 @@ struct mem_cgroup *get_mem_cgroup_from_mm(struct mm_struct *mm)
 		if (unlikely(!mm))
 			memcg = root_mem_cgroup;
 		else {
-			memcg = mem_cgroup_from_task(rcu_dereference(mm->owner));
+			memcg = mem_cgroup_from_task(rcu_dereference(mm_owner(mm)));
 			if (unlikely(!memcg))
 				memcg = root_mem_cgroup;
 		}
@@ -1151,8 +1151,10 @@ out:
 	 * we have to be prepared to initialize lruvec->zone here;
 	 * and if offlined then reonlined, we need to reinitialize it.
 	 */
+#ifndef CONFIG_GTBE98_MEMCG_ABI
 	if (unlikely(lruvec->pgdat != pgdat))
 		lruvec->pgdat = pgdat;
+#endif
 	return lruvec;
 }
 
@@ -4348,7 +4350,7 @@ static struct cftype mem_cgroup_legacy_files[] = {
 		.write = mem_cgroup_reset,
 		.read_u64 = mem_cgroup_read_u64,
 	},
-#if defined(CONFIG_SLAB) || defined(CONFIG_SLUB_DEBUG)
+#if defined(CONFIG_MEMCG_KMEM) && (defined(CONFIG_SLAB) || defined(CONFIG_SLUB_DEBUG))
 	{
 		.name = "kmem.slabinfo",
 		.seq_start = memcg_slab_start,
@@ -5235,7 +5237,7 @@ static int mem_cgroup_can_attach(struct cgroup_taskset *tset)
 	if (!mm)
 		return 0;
 	/* We move charges only when we move a owner of the mm */
-	if (mm->owner == p) {
+	if (mm_owner(mm) == p) {
 		VM_BUG_ON(mc.from);
 		VM_BUG_ON(mc.to);
 		VM_BUG_ON(mc.precharge);

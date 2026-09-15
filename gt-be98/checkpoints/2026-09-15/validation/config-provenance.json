@@ -1,0 +1,14 @@
+[
+  {
+    "file": "acl35.config",
+    "tested_sha256": "d494096655d694acf8c291920572a67517f53d6ccfc9f1717e0233d3c47ab979",
+    "published_sha256": "7cb051228c0621552f1aa2c7a4cf783c19850e948ffa7a60dd8ffaed1e2600e1",
+    "only_change": "trailing spaces removed from generated comments; config values unchanged"
+  },
+  {
+    "file": "memcg36.config",
+    "tested_sha256": "105b578404571d68400b570a79cd16f2eac35a9be3d47e476f41b2335e5e2aa9",
+    "published_sha256": "2c7700f254490809ce73b984a4dc6e710844383568869d89bdab151013cc68a8",
+    "only_change": "trailing spaces removed from generated comments; config values unchanged"
+  }
+]

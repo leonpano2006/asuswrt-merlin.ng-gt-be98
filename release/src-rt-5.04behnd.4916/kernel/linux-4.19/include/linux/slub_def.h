@@ -108,7 +108,7 @@ struct kmem_cache {
 	struct kobject kobj;	/* For sysfs */
 	struct work_struct kobj_remove_work;
 #endif
-#ifdef CONFIG_MEMCG
+#if defined(CONFIG_MEMCG) && !defined(CONFIG_GTBE98_MEMCG_ABI)
 	struct memcg_cache_params memcg_params;
 	/* for propagation, maximum size of a stored attr */
 	unsigned int max_attr_size;

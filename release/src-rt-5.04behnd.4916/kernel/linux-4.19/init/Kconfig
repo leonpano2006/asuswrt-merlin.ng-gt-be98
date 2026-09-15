@@ -736,7 +736,7 @@ config MEMCG_SWAP_ENABLED
 
 config MEMCG_KMEM
 	bool
-	depends on MEMCG && !SLOB
+	depends on MEMCG && !SLOB && !GTBE98_MEMCG_ABI
 	default y
 
 config BLK_CGROUP
@@ -931,6 +931,34 @@ config CGROUP_DEBUG
 config SOCK_CGROUP_DATA
 	bool
 	default n
+
+config GTBE98_MEMCG_ABI
+	bool "Preserve Leon GT-BE98 layouts for userspace memory accounting"
+	depends on ARM64 && BCM96813 && SMP && SLUB && CGROUP_PIDS
+	depends on !GCC_PLUGIN_RANDSTRUCT && !NEED_MULTIPLE_NODES
+	default n
+	help
+	  Experimental memory and swap controller support for Leon #35.
+	  Preserve the task, mm, page and SLUB layouts used by vendor blobs.
+	  Kernel slab accounting is disabled. Requires the checked core
+	  cgroup ABI configuration and MEMCG; compile-time checks enforce it.
+
+config GTBE98_CGROUP_ABI
+	bool "Preserve Leon GT-BE98 task layout for core cgroups"
+	depends on ARM64 && BCM96813 && SMP && CGROUP_PIDS
+	depends on !CGROUP_SCHED && !CPUSETS && !BLK_CGROUP
+	depends on !MEMCG || GTBE98_MEMCG_ABI
+	depends on !CGROUP_BPF && !CGROUP_NET_PRIO && !CGROUP_NET_CLASSID
+	default n
+	help
+	  Experimental support for the Leon #32 GT-BE98 configuration.
+	  Place the core cgroup task members in verified alignment padding,
+	  preserving offsets required by existing vendor binary modules.
+	  Build-time checks reject changes to the checked task layout.
+
+	  Also permits devices, freezer, CPU accounting and seccomp.
+	  Memory accounting additionally requires GTBE98_MEMCG_ABI.
+	  CPU scheduling and I/O controllers remain unsupported.
 
 endif # CGROUPS
 

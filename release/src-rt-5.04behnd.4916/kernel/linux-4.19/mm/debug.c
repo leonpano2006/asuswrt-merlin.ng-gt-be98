@@ -161,7 +161,7 @@ void dump_mm(const struct mm_struct *mm)
 		mm->ioctx_table,
 #endif
 #ifdef CONFIG_MEMCG
-		mm->owner,
+		mm_owner(mm),
 #endif
 		mm->exe_file,
 #ifdef CONFIG_MMU_NOTIFIER

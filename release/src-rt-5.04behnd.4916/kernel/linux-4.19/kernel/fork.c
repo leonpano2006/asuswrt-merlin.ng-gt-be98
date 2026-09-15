@@ -101,6 +101,8 @@
 
 #include <trace/events/sched.h>
 
+#include "gtbe98_cgroup_abi.h"
+
 #define CREATE_TRACE_POINTS
 #include <trace/events/task.h>
 
@@ -758,6 +760,8 @@ void __init fork_init(void)
 			useroffset, usersize, NULL);
 #endif
 
+	gtbe98_cgroup_abi_check();
+
 	/* do the arch specific task caches init */
 	arch_task_cache_init();
 
@@ -916,15 +920,15 @@ static __always_inline void mm_clear_owner(struct mm_struct *mm,
 					   struct task_struct *p)
 {
 #ifdef CONFIG_MEMCG
-	if (mm->owner == p)
-		WRITE_ONCE(mm->owner, NULL);
+	if (mm_owner(mm) == p)
+		WRITE_ONCE(mm_owner(mm), NULL);
 #endif
 }
 
 static void mm_init_owner(struct mm_struct *mm, struct task_struct *p)
 {
 #ifdef CONFIG_MEMCG
-	mm->owner = p;
+	mm_owner(mm) = p;
 #endif
 }
 
@@ -2402,6 +2406,12 @@ void __init proc_caches_init(void)
 	 * can have, taking hotplug into account (nr_cpu_ids).
 	 */
 	mm_size = sizeof(struct mm_struct) + cpumask_size();
+#ifdef CONFIG_GTBE98_MEMCG_ABI
+	/* Keep cpu_bitmap and the usercopy whitelist at their old offsets. */
+	BUILD_BUG_ON(sizeof(struct mm_struct) % sizeof(void *));
+	BUILD_BUG_ON(sizeof(unsigned long) != sizeof(void *));
+	mm_size += sizeof(struct task_struct *);
+#endif
 
 	mm_cachep = kmem_cache_create_usercopy("mm_struct",
 			mm_size, ARCH_MIN_MMSTRUCT_ALIGN,

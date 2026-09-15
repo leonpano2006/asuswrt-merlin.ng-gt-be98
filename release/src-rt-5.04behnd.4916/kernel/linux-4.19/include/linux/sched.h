@@ -647,6 +647,21 @@ struct task_struct {
 	unsigned int			rt_priority;
 
 	const struct sched_class	*sched_class;
+#ifdef CONFIG_GTBE98_CGROUP_ABI
+	/*
+	 * Leon #32 ARM64 has a 48-byte alignment hole before se (144..191).
+	 * Use 24 bytes for cgroups and 16 for optional seccomp state.
+	 * Locking, initialization and lifetime are the normal cgroup rules.
+	 * kernel/gtbe98_cgroup_abi.h checks the original non-bitfield layout.
+	 */
+	/* Control Group info protected by css_set_lock: */
+	struct css_set __rcu		*cgroups;
+	/* cg_list protected by css_set_lock and tsk->alloc_lock: */
+	struct list_head		cg_list;
+#ifdef CONFIG_SECCOMP
+	struct seccomp			seccomp;
+#endif
+#endif
 	struct sched_entity		se;
 	struct sched_rt_entity		rt;
 #ifdef CONFIG_CGROUP_SCHED
@@ -734,7 +749,7 @@ struct task_struct {
 #ifndef TIF_RESTORE_SIGMASK
 	unsigned			restore_sigmask:1;
 #endif
-#ifdef CONFIG_MEMCG
+#if defined(CONFIG_MEMCG) && !defined(CONFIG_GTBE98_MEMCG_ABI)
 	unsigned			in_user_fault:1;
 #ifdef CONFIG_MEMCG_KMEM
 	unsigned			memcg_kmem_skip_account:1;
@@ -750,6 +765,11 @@ struct task_struct {
 #ifdef CONFIG_BLK_CGROUP
 	/* to be used once the psi infrastructure lands upstream. */
 	unsigned			use_memdelay:1;
+#endif
+
+#ifdef CONFIG_GTBE98_MEMCG_ABI
+	/* Append to the existing bitfield word: never shift vendor-visible bits. */
+	unsigned			in_user_fault:1;
 #endif
 
 	unsigned long			atomic_flags; /* Flags requiring atomic access. */
@@ -897,7 +917,9 @@ struct task_struct {
 	kuid_t				loginuid;
 	unsigned int			sessionid;
 #endif
+#if !defined(CONFIG_GTBE98_CGROUP_ABI) || !defined(CONFIG_SECCOMP)
 	struct seccomp			seccomp;
+#endif
 
 	/* Thread group tracking: */
 	u64				parent_exec_id;
@@ -992,7 +1014,7 @@ struct task_struct {
 	int				cpuset_mem_spread_rotor;
 	int				cpuset_slab_spread_rotor;
 #endif
-#ifdef CONFIG_CGROUPS
+#if defined(CONFIG_CGROUPS) && !defined(CONFIG_GTBE98_CGROUP_ABI)
 	/* Control Group info protected by css_set_lock: */
 	struct css_set __rcu		*cgroups;
 	/* cg_list protected by css_set_lock and tsk->alloc_lock: */
@@ -1171,7 +1193,7 @@ struct task_struct {
 	struct kcov			*kcov;
 #endif
 
-#ifdef CONFIG_MEMCG
+#if defined(CONFIG_MEMCG) && !defined(CONFIG_GTBE98_MEMCG_ABI)
 	struct mem_cgroup		*memcg_in_oom;
 	gfp_t				memcg_oom_gfp_mask;
 	int				memcg_oom_order;
@@ -1232,6 +1254,22 @@ struct task_struct {
 
 	/* CPU-specific state of this task: */
 	struct thread_struct		thread;
+
+#ifdef CONFIG_GTBE98_MEMCG_ABI
+	/* ARM64 only: thread ends at 2640; the original 2688-byte task has
+	 * 48 bytes of trailing alignment padding. Keep every old offset.
+	 * x86's variable-sized thread_struct must still remain last.
+	 */
+	struct mem_cgroup		*memcg_in_oom;
+	gfp_t				memcg_oom_gfp_mask;
+	int				memcg_oom_order;
+
+	/* Number of pages to reclaim on returning to userland: */
+	unsigned int			memcg_nr_pages_over_high;
+
+	/* Used by memcontrol for targeted memcg charge: */
+	struct mem_cgroup		*active_memcg;
+#endif
 
 	/*
 	 * WARNING: on x86, 'thread_struct' contains a variable-sized

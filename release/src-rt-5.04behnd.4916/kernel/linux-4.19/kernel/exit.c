@@ -461,7 +461,7 @@ retry:
 	 * If the exiting or execing task is not the owner, it's
 	 * someone else's problem.
 	 */
-	if (mm->owner != p)
+	if (mm_owner(mm) != p)
 		return;
 	/*
 	 * The current owner is exiting/execing and there are no other
@@ -469,7 +469,7 @@ retry:
 	 * freed task structure.
 	 */
 	if (atomic_read(&mm->mm_users) <= 1) {
-		mm->owner = NULL;
+		mm_owner(mm) = NULL;
 		return;
 	}
 
@@ -509,7 +509,7 @@ retry:
 	 * most likely racing with swapoff (try_to_unuse()) or /proc or
 	 * ptrace or page migration (get_task_mm()).  Mark owner as NULL.
 	 */
-	mm->owner = NULL;
+	mm_owner(mm) = NULL;
 	return;
 
 assign_new_owner:
@@ -517,7 +517,7 @@ assign_new_owner:
 	get_task_struct(c);
 	/*
 	 * The task_lock protects c->mm from changing.
-	 * We always want mm->owner->mm == mm
+	 * We always want mm_owner(mm)->mm == mm
 	 */
 	task_lock(c);
 	/*
@@ -530,7 +530,7 @@ assign_new_owner:
 		put_task_struct(c);
 		goto retry;
 	}
-	mm->owner = c;
+	mm_owner(mm) = c;
 	task_unlock(c);
 	put_task_struct(c);
 }

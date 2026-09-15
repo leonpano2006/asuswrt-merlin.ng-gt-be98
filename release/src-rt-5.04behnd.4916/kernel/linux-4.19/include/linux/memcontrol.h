@@ -385,8 +385,10 @@ out:
 	 * we have to be prepared to initialize lruvec->pgdat here;
 	 * and if offlined then reonlined, we need to reinitialize it.
 	 */
+#ifndef CONFIG_GTBE98_MEMCG_ABI
 	if (unlikely(lruvec->pgdat != pgdat))
 		lruvec->pgdat = pgdat;
+#endif
 	return lruvec;
 }
 
@@ -471,7 +473,7 @@ static inline bool mm_match_cgroup(struct mm_struct *mm,
 	bool match = false;
 
 	rcu_read_lock();
-	task_memcg = mem_cgroup_from_task(rcu_dereference(mm->owner));
+	task_memcg = mem_cgroup_from_task(rcu_dereference(mm_owner(mm)));
 	if (task_memcg)
 		match = mem_cgroup_is_descendant(task_memcg, memcg);
 	rcu_read_unlock();
@@ -761,7 +763,7 @@ static inline void count_memcg_event_mm(struct mm_struct *mm,
 		return;
 
 	rcu_read_lock();
-	memcg = mem_cgroup_from_task(rcu_dereference(mm->owner));
+	memcg = mem_cgroup_from_task(rcu_dereference(mm_owner(mm)));
 	if (likely(memcg))
 		count_memcg_events(memcg, idx, 1);
 	rcu_read_unlock();
@@ -783,7 +785,7 @@ static inline void memcg_memory_event_mm(struct mm_struct *mm,
 		return;
 
 	rcu_read_lock();
-	memcg = mem_cgroup_from_task(rcu_dereference(mm->owner));
+	memcg = mem_cgroup_from_task(rcu_dereference(mm_owner(mm)));
 	if (likely(memcg))
 		memcg_memory_event(memcg, event);
 	rcu_read_unlock();

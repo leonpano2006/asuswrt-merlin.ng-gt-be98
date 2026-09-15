@@ -1,0 +1,22 @@
+{
+  "GTBE98_MEMCG_ABI": [
+    null,
+    "y"
+  ],
+  "MEMCG": [
+    null,
+    "y"
+  ],
+  "MEMCG_SWAP": [
+    null,
+    "y"
+  ],
+  "MEMCG_SWAP_ENABLED": [
+    null,
+    "y"
+  ],
+  "PAGE_COUNTER": [
+    null,
+    "y"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "base_commit": "b4101d004fdf5eac0a4d3f94fd787786c167e0c7",
+  "all_patch_target_files_match_tested_trial36_source": true,
+  "files": [
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/include/linux/memcontrol.h",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/include/linux/mm_types.h",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/include/linux/mmzone.h",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/include/linux/sched.h",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/include/linux/slub_def.h",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/init/Kconfig",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/kernel/exit.c",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/kernel/fork.c",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/kernel/gtbe98_cgroup_abi.h",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/mm/debug.c",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/mm/init-mm.c",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/mm/memcontrol.c",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/mm/slab_common.c",
+    "release/src-rt-5.04behnd.4916/kernel/linux-4.19/mm/slub.c"
+  ]
+}
