@@ -1,0 +1,42 @@
+{
+  "candidate": "gt-be98-next-userspace-20260915",
+  "status": "queued-for-next-firmware",
+  "base_commit": "5bcedfc400aa58e1c2183fb0ef71c99180c4ee89",
+  "base_rootfs_sha256": "af038997f690e9378941810a6323f681de521cf23a85199d2f832dfbe57176f2",
+  "base_rootfs_bytes": 75788288,
+  "required_changes": [
+    {
+      "name": "NVRAM cache getter lifetime fix",
+      "commit": "699d70ef091de2de2d9d5409601084d1410a6fa6",
+      "generator": "../webui-nvram-cache/scripts/patch-nvram.py",
+      "generator_sha256": "28e7abaabc0065edf3fe79fb696c88f7d737deeb43d447ba586ef0904840b07b",
+      "target": "usr/lib/libnvram.so",
+      "input_sha256": "6eb214a9e4de1269d5467c8ac5d9f3ed4fdfda535d6546ea222fba44d0e35c46",
+      "output_sha256": "45066c6af9c9a8b843057b6d7bc341a49e3b90fae3d381d06a5f99bb54517b00",
+      "mode": "0755",
+      "bytes": 35912,
+      "offline_tests_passed": true,
+      "live_hotfix_tests_passed": true,
+      "user_confirmed_normal": true
+    }
+  ],
+  "inherited": [
+    "kernel #36 cgroup and memcg/swap configuration with blob ABI preservation",
+    "previous validated Leon userspace including glibc 2.44",
+    "merged /usr and preserved ABI loader entry paths",
+    "/run -> var/run, /media and /srv",
+    "PID1 metadata-write guard and unchanged signed bootfs"
+  ],
+  "packaging": {
+    "compression": "zstd",
+    "level": 22,
+    "block_size": 524288,
+    "all_root": true,
+    "bootfs_policy": "preserve the previously verified signed #36 bootfs bytewise",
+    "fresh_size_and_ubi_capacity_check_required": true
+  },
+  "firmware_packaged": false,
+  "candidate_firmware_boot_tested": false,
+  "flash_requested_by_this_checkpoint": false,
+  "firmware_commit_requested": false
+}
