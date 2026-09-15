@@ -1,0 +1,39 @@
+#!/usr/bin/bash
+# Merlin rebuilds iptables outside Docker. Reconcile through the daemon so
+# published ports and user-defined networks come from Docker's current state.
+set -euo pipefail
+export PATH=/usr/local/libexec/docker/iptables/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+case "${1:---check}" in --check|--force) ;; *) exit 2;; esac
+mode=${1:---check}
+case "$(uname -v)" in '#35 '*|'#36 '*) ;; *) exit 0;; esac
+pidfile=/var/run/leon-docker/dockerd.pid
+[ -f "$pidfile" ] || exit 0
+pid=$(cat "$pidfile")
+case "$pid" in ''|*[!0-9]*) exit 1;; esac
+[ /proc/"$pid"/exe -ef /usr/local/bin/dockerd ] || exit 0
+lock=/var/run/leon-docker/firewall-reconcile.lock
+mkdir "$lock" 2>/dev/null || exit 0
+trap 'rmdir "$lock"' EXIT
+# firewall-start and nat-start may arrive close together.
+sleep 2
+healthy() {
+    [ "$(cat /proc/sys/net/ipv4/ip_forward)" = 1 ] &&
+    iptables --wait -C FORWARD -j DOCKER-USER &&
+    iptables --wait -C FORWARD -j DOCKER-FORWARD &&
+    iptables --wait -t nat -C PREROUTING -m addrtype --dst-type LOCAL -j DOCKER &&
+    iptables --wait -t nat -C POSTROUTING -s 172.30.98.0/24 ! -o docker0 -j MASQUERADE
+}
+if [ "$mode" = --check ] && healthy 2>/dev/null; then exit 0; fi
+[ "$(docker info --format '{{.LiveRestoreEnabled}}')" = true ] || {
+    echo 'Refusing firewall reconciliation without live restore.' >&2
+    exit 1
+}
+for attempt in 1 2 3; do
+    echo "$(date -Iseconds): Docker firewall reconciliation $attempt"
+    docker-stop
+    docker-start
+    sleep 1
+    if healthy; then exit 0; fi
+done
+echo 'Docker firewall rules remain incomplete; inspect dockerd.log.' >&2
+exit 1

@@ -38,3 +38,13 @@ Once this rootfs is used, the library is available without a USB fix mount.
 The current USB helper also detects the already-patched hash and does not
 overlay/restart it. This checkpoint leaves the running router and its
 uncommitted slot-1 / committed slot-2 rollback state unchanged.
+
+## USB runtime dependency: Docker networking
+
+The running router now also uses the verified
+[Docker networking and USB /usr/local checkpoint](../docker-network-local/README.md).
+Its binaries, bridge/NAT configuration and Merlin hook integration reside on
+the USB, outside this SquashFS. Keep that runtime checkpoint with this candidate
+when restoring or deploying the device. See its install manifest and validation
+record for exact dependencies and tested limits. The staged firmware rootfs and
+its Web UI patch are unchanged by this USB integration.

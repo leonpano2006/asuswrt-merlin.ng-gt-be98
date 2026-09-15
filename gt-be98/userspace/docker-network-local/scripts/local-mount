@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+# USB-backed /usr/local; safe to call repeatedly from USB and service hooks.
+set -eu
+export PATH=/usr/bin:/usr/sbin:/bin:/sbin
+source_dir=/jffs/usr-local
+target=/usr/local
+awk '$2=="/jffs" && $3=="btrfs"{ok=1}END{exit !ok}' /proc/mounts || exit 0
+[ -d "$source_dir" ] && [ ! -L "$source_dir" ] || exit 0
+[ -d "$target" ] && [ ! -L "$target" ] || exit 0
+if awk '$2=="/usr/local"{ok=1}END{exit !ok}' /proc/mounts; then
+    [ "$source_dir" -ef "$target" ] || {
+        echo '/usr/local already has another mount; refusing to cover it.' >&2
+        exit 1
+    }
+else
+    mount --bind "$source_dir" "$target"
+fi
+[ "$source_dir" -ef "$target" ]

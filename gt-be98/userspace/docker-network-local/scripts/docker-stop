@@ -1,0 +1,28 @@
+#!/usr/bin/bash
+set -eu
+pidfile=/var/run/leon-docker/dockerd.pid
+if [ ! -f "$pidfile" ]; then
+  printf 'Docker trial has no PID file; no process was signalled.\n'
+  exit 0
+fi
+daemon_pid=$(cat "$pidfile")
+case "$daemon_pid" in ''|*[!0-9]*) echo 'Invalid Docker PID file' >&2; exit 90;; esac
+if [ ! /proc/"$daemon_pid"/exe -ef /usr/local/bin/dockerd ]; then
+  printf 'PID does not refer to this Docker installation; refusing to signal it.\n' >&2
+  exit 91
+fi
+kill -TERM "$daemon_pid"
+for ((attempt=0; attempt<30; attempt++)); do
+  if ! kill -0 "$daemon_pid" 2>/dev/null; then
+    # Docker leaves its Unix socket behind on some clean shutdown paths.
+    # This PID was verified against our binary before signalling it.
+    if [ ! -f "$pidfile" ] && [ -S /var/run/docker.sock ]; then
+      rm /var/run/docker.sock
+    fi
+    printf 'DOCKER_STOPPED\n'
+    exit 0
+  fi
+  sleep 1
+done
+printf 'Docker is still shutting down; no force kill was sent.\n' >&2
+exit 92

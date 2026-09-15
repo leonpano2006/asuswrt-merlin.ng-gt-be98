@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-15",
+  "firmware": "GT-BE98 4.19.294 #36, merged /usr and /run -> var/run",
+  "required_prior_git": "03bf2f1df4fe71a8f11235fa48416b2418dcc90d",
+  "docker": "29.8.0 official static AArch64 binaries, unchanged hashes",
+  "binary_prefix": "/usr/local",
+  "usb_source": "/jffs/usr-local",
+  "data_root": "/jffs/docker/data",
+  "config": "/jffs/docker/config/daemon.json",
+  "iptables": {
+    "version": "1.8.13",
+    "backend": "legacy",
+    "source": "https://www.netfilter.org/projects/iptables/files/iptables-1.8.13.tar.xz",
+    "source_sha256": "1afcd33da9e8f913ace6a2126788162e207e26f5d5e29c6573c0e581ffc58b99",
+    "scope": "private Docker PATH; vendor /usr/sbin/iptables remains 1.4.15",
+    "linkage": "fully static; no ELF interpreter or dynamic dependencies"
+  },
+  "compiler": "gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "cflags": "-O2 -mcpu=cortex-a53",
+  "native_build_host": "AArch64 DGX",
+  "autostart": false,
+  "files_sha256": {
+    "configs/daemon.json": "a3d089b97f18560b16f3f7a38e79b0fbd13896e2f76a857e3babe82d59c825c2",
+    "configs/docker-binaries.sha256": "6f59408f9fe141687a00f27125ea1926545446537361f334c9972c138a4db4db",
+    "build/xtables-legacy-multi": "5fbfa1f4a2e5da232012b61962f4ded31f6a0776334b82870a02200b4ff0a431",
+    "build/docker-root-view": "ed6cbb7872f82caab6c177e3711b1192194c08605f3240299054752c11b3afef",
+    "scripts/docker-start": "565bf25909022b3a60f724e09d266ca0454bdc552054a90d84001a5e260f3fce",
+    "scripts/docker-stop": "cffde820ac91ed4ae73e73b6c17505012db751edb68c1a39fafaa3f8726f9418",
+    "scripts/docker-firewall-reconcile": "6a8a6a22f49c5e3b44bd114a4bb8b287ea6e5a33c39cd5cc8bcc1ac23f0177d3",
+    "scripts/local-mount": "c800a3ea4c213a1d90e9441a346b7b854f23486ae0c3bd42f259dbd7930401f1",
+    "scripts/firewall-hook.sh": "ae16430a85fbb0f26e1560386d95e5a60d1c2313a3ef2c4bc672f22475c9a87f"
+  }
+}

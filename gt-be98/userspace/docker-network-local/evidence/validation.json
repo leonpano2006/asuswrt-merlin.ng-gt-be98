@@ -1,0 +1,60 @@
+{
+  "date_utc": "2026-09-15T20:33:16Z",
+  "result": "passed",
+  "default_bridge": "172.30.98.0/24",
+  "user_bridge_pool": "172.31.0.0/16 split into /24",
+  "uplink": "br0 via 192.168.100.1 (AP mode)",
+  "checks": {
+    "default_container_dns_http": true,
+    "fresh_image_pull_alpine_3_23": true,
+    "container_apk_install": true,
+    "https_status": 200,
+    "tls_verify_result": 0,
+    "user_network_service_dns": true,
+    "user_network_external_dns_http": true,
+    "lan_published_port_18098": true,
+    "live_restore_pid_before": 17128,
+    "live_restore_pid_after": 17128,
+    "docker_nat_rule_deletion_recovered": true,
+    "port_access_after_recovery": true,
+    "forwards_default_policy": "ACCEPT",
+    "br_netfilter_loaded": false,
+    "kernel_taint_before": 4097,
+    "kernel_taint_after": 4097,
+    "hardware_activation_success_before": 30160,
+    "hardware_activation_success_after": 32925,
+    "hardware_activation_failure_after": 0,
+    "qemu_cpu": "cortex-a53",
+    "native_root_view_probe": "PASS",
+    "login_docker_path": "/usr/local/bin/docker",
+    "test_containers_and_network_removed": true,
+    "all_vendor_iptables_rules_and_policies_preserved": true,
+    "loaded_module_set_unchanged": true,
+    "loaded_module_count": 88
+  },
+  "limits": [
+    "IPv4 bridge networking tested; uplink has no IPv6 routing.",
+    "Hardware acceleration counters checked; no 2.5G/10G throughput benchmark.",
+    "No router reboot or firmware flash performed; USB mount hook is syntax-checked and idempotence-tested.",
+    "Kernel #35 fallback helper retained; new setup not boot-tested on #35.",
+    "Docker daemon startup remains manual; hooks only reconcile an already-running daemon.",
+    "Existing CPU quota/cpuset/blkio limitations remain."
+  ],
+  "boot_state": {
+    "booted_partition": 1,
+    "committed_partition": 2,
+    "next_reboot_partition": 2,
+    "sequences": [
+      47,
+      46
+    ],
+    "changed": false
+  },
+  "diagnosed_build_issue": {
+    "component": "DGX custom GCC 16.1 libgcc",
+    "function": "version_lock_lock_exclusive",
+    "unsupported_instruction": "casal (LSE)",
+    "resolution": "build with GCC 13 and Cortex-A53 flags; verify under QEMU before deployment",
+    "compiler_16_runtime_rebuilt": false
+  }
+}
