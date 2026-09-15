@@ -1,0 +1,85 @@
+{
+  "base_commit": "b4101d004fdf5eac0a4d3f94fd787786c167e0c7",
+  "source_preparation": "git archive of tracked platform source plus release/src/router root files and fltr; overlay the reviewed kernel source and checkpoint scripts",
+  "toolchain": "kernel/dependencies.json pins external am-toolchains-aarch64 v2021.02.4-1; both archive SHA-256 values matched GitHub release asset digests",
+  "native_host": "aarch64",
+  "jobs": 4,
+  "modified_kernel_sources_equal_to_hardware_tested_36": true,
+  "builds": {
+    "prepared": {
+      "returncode": 0,
+      "config_before": "105b578404571d68400b570a79cd16f2eac35a9be3d47e476f41b2335e5e2aa9",
+      "config_after": "105b578404571d68400b570a79cd16f2eac35a9be3d47e476f41b2335e5e2aa9",
+      "log_sha256": "417a777903f6d8680b68f188f5b9c8439db534bf2cd64eb1fe0faad8925728d9"
+    },
+    "lib": {
+      "returncode": 0,
+      "config_before": "105b578404571d68400b570a79cd16f2eac35a9be3d47e476f41b2335e5e2aa9",
+      "config_after": "105b578404571d68400b570a79cd16f2eac35a9be3d47e476f41b2335e5e2aa9",
+      "log_sha256": "31d694276b01c65153f0324c9f00d9ea9a0beeff5a8269ce79621273e9a57e03"
+    },
+    "crypto": {
+      "returncode": 0,
+      "config_before": "105b578404571d68400b570a79cd16f2eac35a9be3d47e476f41b2335e5e2aa9",
+      "config_after": "105b578404571d68400b570a79cd16f2eac35a9be3d47e476f41b2335e5e2aa9",
+      "log_sha256": "3eb44d65a540d5aebb599b88ecdf0a38fb4b0b2ec1e5d4e4d284fa3e01722668"
+    },
+    "btrfs": {
+      "returncode": 0,
+      "config_before": "105b578404571d68400b570a79cd16f2eac35a9be3d47e476f41b2335e5e2aa9",
+      "config_after": "105b578404571d68400b570a79cd16f2eac35a9be3d47e476f41b2335e5e2aa9",
+      "log_sha256": "0f4f7590260f62c710333a450d15ad6bae2dbec505c8f06604ab5d6f0e924b7c"
+    }
+  },
+  "kernel_sha256": "465bdd8959be6ae5c8820debfb79c8e52ecffeb834c870f9ec42c0f9742b301a",
+  "module_inputs": {
+    "replaced_modules": [
+      {
+        "path": "modules/raid6_pq.ko",
+        "sha256": "93553361eb5a5c0ec8d9f14797ee062932529e5fb3223a21116a584e6b4caf95"
+      },
+      {
+        "path": "modules/xor.ko",
+        "sha256": "dc6fd642be563897ffb6ce447eba33717bbe53140d8c5969864ef85d8702091d"
+      },
+      {
+        "path": "modules/btrfs.ko",
+        "sha256": "a76726fbbc7f0b3b2a12dafba5a551758d1a5131d74b2bd255c7d37cb2878db9"
+      }
+    ],
+    "initramfs_sha256": "eaf3ad3183ebbcd9a9b75ae14b2314478a6f1df3ddfccfb2a631c42d199ecdd6"
+  },
+  "helper_builds": [
+    {
+      "name": "init",
+      "architecture": "arm32",
+      "sha256": "e09bebbaf976a53ef46a8329c1b78f86976621418efa59699a01b8d65d169bb7",
+      "source_sha256": "8f0eeeb4c2633394b14f62e1dc4ae471bb97963368413fa47f5c7f59db7a85ab"
+    },
+    {
+      "name": "leon-trial-bootguard.so",
+      "architecture": "arm32",
+      "sha256": "40d2c9592a2d7b84ae22986da01d1d896f168000f21397c60162f82d49f200cd",
+      "source_sha256": "d1197cb3a36d2683c813c8932252ef9216a5cb7c27139b59e817c7c3235e370b"
+    },
+    {
+      "name": "docker-root-view",
+      "architecture": "arm64",
+      "sha256": "deec9088435ab06efb98b530368890ce90bfb527447b9abebaaa8f9d800aae3a",
+      "source_sha256": "84b347a228f643d49aa4b753ced19abcf003f140d510a82520d9680c465d85ef"
+    }
+  ],
+  "feature_configs": [
+    {
+      "file": "platform.config",
+      "source": "tested Leon #32 build feature configuration",
+      "sha256": "ccfdc8a356c591c78f00ab9dded177ab86467789c984a1021cd737d4a83bf2a0"
+    },
+    {
+      "file": "router.config",
+      "source": "tested Leon #32 build feature configuration",
+      "sha256": "d70aeb0db247dea87e10af20f4976a83c754dc04c499a95498708b615e972157"
+    }
+  ],
+  "scope": "Kernel Image, lib/crypto/Btrfs modules and init/guard/Docker helpers rebuilt from source with released SDKs. QEMU uses the newly rebuilt kernel and three rebuilt modules; remaining guest fixtures retain their recorded existing payloads. This new build was not flashed or hardware-tested and is not claimed byte-identical to the previously tested image. A complete firmware/rootfs build and full modules target remain outside this check."
+}

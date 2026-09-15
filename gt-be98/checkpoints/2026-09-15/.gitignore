@@ -1,0 +1,14 @@
+builds/
+__pycache__/
+*.pyc
+*.pkgtb
+*.squashfs
+*.cpio*
+*.ko
+*.o
+*.so
+gcc162-usb/obj/
+gcc162-usb/stage/
+gcc162-usb/sysroot/
+gcc162-usb/gcc-16.2.0/
+gcc162-usb/*.log

@@ -15,7 +15,7 @@ explicitly marked otherwise.
 ## What's in the branch
 
 `gt-be98-102.7` (the default branch) is based on gnuton's `DEV_3006.102.7_2`
-and carries twenty-one self-contained commits.  Most are not GT-BE98-specific
+and carries the Leon userspace and kernel backports described below.  Most are not GT-BE98-specific
 and should apply to any HND 5.04 BE / 4916 target.
 
 **Original series** (from the 102.6 era, cherry-picked forward):
@@ -108,21 +108,18 @@ The baseline is the *normalised* config rather than raw git, because the build's
 `olddefconfig` pass collapses duplicate lines and drops prompt-less symbols —
 diffing against git would bury your edits in that noise.
 
-> ### Do not enable `CONFIG_CGROUPS` (or anything that changes core struct layout)
->
-> It bricks the boot, and **there is no automatic rollback** (see below).
->
-> This SDK links **114 prebuilt binary Broadcom kernel objects** — `dhd.o`
-> (wifi), `pktrunner.o` (accel), `bcm_enet.o` (ethernet), `bdmf.o`, `hnd.o`,
-> `emf.o`, `igs.o`, `bcm_mpm.o` — all compiled by Broadcom against a
-> `CGROUPS=n` kernel. Enabling `CGROUPS`/`MEMCG` changes the layout of
-> `struct page` and `struct task_struct`, so those blobs read the wrong offsets
-> and panic before console output. The entire datapath (NIC → accelerator →
-> wifi) is binary-only, so **Docker and containers are permanently impossible
-> on this box.**
->
-> Namespaces (`NET_NS`, `PID_NS`, `IPC_NS`, `UTS_NS`) are fine — they don't
-> touch those structures — and are enabled in this branch.
+### Cgroups and containers: updated 2026-09-15
+
+The earlier conclusion that containers were permanently impossible was
+superseded by measured ABI-preserving patches. The [validated checkpoint](checkpoints/2026-09-15/README.md)
+contains core cgroups/seccomp, Btrfs ACL, Docker on USB and the #36 memcg
+trial. Existing blob-facing layouts are protected by compile-time checks.
+Use the saved configurations and verification procedure; arbitrary cgroup
+options can still move fields consumed by proprietary objects.
+
+#35 is the confirmed fallback. #36 passed one-time boot and memory-limit
+tests but was not committed as a boot image at the checkpoint. CPU quota,
+cpuset, blkio, slab accounting and container networking remain unverified.
 
 ---
 
@@ -142,33 +139,19 @@ hnd-write /path/to/image.pkgtb && reboot
   shrink the `jffs2` UBI volume (back it up first — on Broadcom it is *not*
   auto-recreated; that rc code is MTK-only).
 
-> ### BCM6813 has NO automatic rollback of any kind
->
-> The dual image is a **manual A/B switch**, not a self-healing one. Verified in
-> the U-Boot source, three independent reasons:
->
-> 1. **The fallback code is compiled out.**
->    `CONFIG_BCM_BOOTSTATE_FALLBACK_SUPPORT` is `default n` and appears only in
->    the `963178/963158/963138/94912` defconfigs. `bcm96813_defconfig` has only
->    `CONFIG_BCM_BOOTSTATE=y`, so `check_image_fallback_needed()` is absent from
->    the BE98's TPL and image selection degenerates to
->    `selected_img_idx = committed`, forever.
-> 2. **Even where it exists it is not a "three strikes" counter.** There is no
->    counter anywhere in that code. It is a one-shot "did the last boot reach
->    steady state" test that requires a watchdog-tagged software reset. An early
->    kernel panic followed by a power cycle does not produce one.
-> 3. **`try_another` only retries the other slot when the image fails to
->    *load*** — bad UBI volume, or missing FIT magic. A structurally valid image
->    whose kernel panics later never engages it.
->
-> The only in-band switch is `bcm_bootstate 2` (`BOOT_SET_OLD_IMAGE`), which
-> needs a *running* system and is therefore useless when bricked. Recovery is
-> always physical **rescue mode**: unplug, hold the reset pinhole, plug in while
-> holding ~10 s until the power LED blinks slowly, then TFTP a known-good
-> `.pkgtb`. Keep one on hand before you flash anything experimental.
->
-> Note the BE98 has exactly **one 1 Gbps port** (the rest are 2.5G/10G); U-Boot
-> likely brings up only that PHY, so use it for the TFTP recovery.
+### Trial boot and rollback: updated 2026-09-15
+
+The installed 2023 bootloader differs from this source tree. One-time
+PART1_ONCE/PART2_ONCE trials with the PID1 metadata guard did automatically
+return to the committed image after failed boots. The earlier blanket
+no-rollback claim below this heading was incorrect for that procedure.
+
+`hnd-write` above commits an image and is **not** the verified trial path.
+See the [trial procedure and init fix](checkpoints/2026-09-15/trial/README.md)
+for native inactive-slot writing, readback hashes, actual UBI sizing and
+separate one-time selection. Keep a known-good physical rescue image.
+When running an uncommitted trial, the inactive slot may be the only good
+fallback: return to that slot before attempting another inactive-slot write.
 
 **Verify a flash by fingerprint, not by version string.** A local build leaves
 `EXTENDNO=0`, so consecutive self-builds are indistinguishable in the web UI.
@@ -252,7 +235,7 @@ firmware image.
 |---|---|
 | Build dies with configure-detection nonsense, or BFD internal error | Top-level `-j`. Poisoned tree — `git clean -xfd` and rebuild |
 | `make menuconfig` loses all `CONFIG_BCM_*` | Ran it outside the SDK environment. Use `kconfig.sh` |
-| Kernel panics before console output | Something changed `struct page` / `struct task_struct`. Almost always `CGROUPS` |
+| Kernel panics during trial boot | Check diagnostics and blob-facing ABI; the first #34 failure was a loader-based rc launch, fixed in the checkpoint |
 | `hnd-write` returns 99 | Success |
 | `hnd-write` returns 5 | Out of UBI space; shrink the jffs2 volume |
 | Flashed image "didn't take" | `EXTENDNO=0` — check `uname -a`, not the version string |
@@ -281,8 +264,8 @@ explicitly at the call site, which is what `rc/usb.c` now does.
 The SDK links **114 prebuilt Broadcom kernel objects** (ethernet, wifi,
 packet accelerators) compiled against a fixed kernel configuration.  Any
 change that moves a field in `task_struct`, `mm_struct`, `struct page`,
-or renumbers page-flag / vm-event enums **bricks the boot** — there is no
-automatic rollback on BCM6813.  Every backport in this branch obeys one
+or renumbers page-flag / vm-event enums can **break boot**. Rollback depends on the installed bootloader and
+the one-time procedure documented above.  Every backport in this branch obeys one
 doctrine, enforced with `pahole`:
 
 > All pre-existing struct member offsets must be byte-identical

@@ -1,0 +1,29 @@
+{
+  "running_firmware": 36,
+  "booted_slot": 1,
+  "committed_firmware": 35,
+  "committed_slot": 2,
+  "next_normal_boot_slot": 2,
+  "sequence": [
+    47,
+    46
+  ],
+  "commit_flags": [
+    0,
+    1
+  ],
+  "memory_limit": true,
+  "swap_limit": true,
+  "kernel_slab_accounting": false,
+  "live_memory_limit_bytes": 33554432,
+  "live_memsw_limit_bytes": 33554432,
+  "live_observed_usage_bytes": 13180928,
+  "containers_remaining": 0,
+  "hardware_acceleration_enabled": true,
+  "network_settings_unchanged": true,
+  "kernel_fault_count": 0,
+  "taint": 4097,
+  "dedicated_logger_complete_seconds": 306.417,
+  "real_hardware_oom_stress_test": false,
+  "qemu_oom_and_swap_tests_passed": true
+}
