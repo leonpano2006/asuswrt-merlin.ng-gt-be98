@@ -1,0 +1,60 @@
+#!/bin/sh
+set -eu
+export PATH=/usr/sbin:/usr/bin:/sbin:/bin
+unset LD_PRELOAD LD_LIBRARY_PATH
+mkdir -p /tmp/etc /tmp/home/root /tmp/var /var/lib /var/log /var/cache /run/lock /run/leon-systemd-trial
+chmod 700 /run/leon-systemd-trial
+ln -s /run /var/run
+ln -s /run/lock /var/lock
+for entry in /rom/etc/*; do
+    name=${entry##*/}
+    ln -s "/rom/etc/$name" "/tmp/etc/$name"
+done
+for name in systemd passwd group machine-id os-release fstab mtab; do
+    rm -f "/tmp/etc/$name"
+done
+mkdir -p /tmp/etc/systemd
+cat > /tmp/etc/passwd <<'EOF'
+root:x:0:0:root:/root:/bin/sh
+nobody:x:65534:65534:nobody:/:/bin/false
+EOF
+cat > /tmp/etc/group <<'EOF'
+root:x:0:
+systemd-journal:x:190:
+nogroup:x:65534:
+EOF
+if [ "$1" = hardware ] && [ -f /data/leon-systemd-trial/machine-id ]; then
+    cp /data/leon-systemd-trial/machine-id /tmp/etc/machine-id
+else
+    tr -d '-' < /proc/sys/kernel/random/boot_id > /tmp/etc/machine-id
+    if [ "$1" = hardware ]; then
+        cp /tmp/etc/machine-id /data/leon-systemd-trial/machine-id
+        chmod 600 /data/leon-systemd-trial/machine-id
+    fi
+fi
+grep -Eq '^[0-9a-f]{32}$' /tmp/etc/machine-id
+printf 'ID=asuswrt-leon\nNAME="GT-BE98 systemd trial"\n' > /tmp/etc/os-release
+: > /tmp/etc/fstab
+ln -s /proc/self/mounts /tmp/etc/mtab
+cat > /tmp/etc/systemd/journald.conf <<'EOF'
+[Journal]
+Storage=volatile
+RuntimeMaxUse=8M
+ForwardToSyslog=no
+ForwardToKMsg=yes
+MaxLevelKMsg=info
+EOF
+cat > /tmp/etc/systemd/system.conf <<'EOF'
+[Manager]
+DefaultTimeoutStartSec=300s
+DefaultTimeoutStopSec=180s
+DefaultTasksMax=infinity
+DefaultCPUAccounting=no
+DefaultMemoryAccounting=no
+DefaultTasksAccounting=no
+RuntimeWatchdogSec=0
+RebootWatchdogSec=0
+EOF
+/usr/sbin/ldconfig
+/usr/libexec/leon-cgroup-prepare
+echo LEON_SYSTEMD_EARLY_CONFIGURATION_READY

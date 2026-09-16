@@ -1,0 +1,42 @@
+{
+  "source_sdk": "systemd-lab-20260916",
+  "source_record": {
+    "native_host": "aarch64",
+    "compiler_version": "16.2.0",
+    "glibc": "2.44",
+    "cpu": "cortex-a53+crc+crypto",
+    "compiler": [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/xgcc",
+      "-B/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/",
+      "-B/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/gcc-runtime/aarch64-linux-gnu/libgcc/",
+      "-mcpu=cortex-a53+crc+crypto",
+      "--sysroot=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk",
+      "-B/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/",
+      "-isystem",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/include",
+      "-L/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu",
+      "-Wl,-rpath-link,/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu",
+      "-Wl,-rpath-link,/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu"
+    ],
+    "existing_router_libraries": {
+      "libmount.so.1.1.0": "f3285493172c0cedfc18b0736343d3b4e115a260ddc3eaa25ee3206271e5ada8",
+      "libblkid.so.1.1.0": "b552cdced9bd0b7f5b9d154e37a060e57b0434a1a9add593f4d5697d8813bb9b",
+      "libgcc_s.so.1": "6d09e1ec7dd32c9423b4b443c7571d3f1f472a328b822ea51afd1c229e698f55"
+    },
+    "new_sysroot_only": true
+  },
+  "compiler_version": "16.2.0",
+  "native_aarch64": true,
+  "glibc": "2.44",
+  "cpu": "cortex-a53+crc+crypto",
+  "libraries": {
+    "libc.so": "cf5d6c74565de8a3e39b94ca1da75acedbb1f0d44dfc1633969477ae058badc3",
+    "libm.so": "6ac3ae424587b35f0222aa16e83f430c1e5c7c17cd4179f7cea5e67b4e9c77cf",
+    "libmount.so.1.1.0": "f3285493172c0cedfc18b0736343d3b4e115a260ddc3eaa25ee3206271e5ada8",
+    "libblkid.so.1.1.0": "b552cdced9bd0b7f5b9d154e37a060e57b0434a1a9add593f4d5697d8813bb9b",
+    "libgcc_s.so.1": "6d09e1ec7dd32c9423b4b443c7571d3f1f472a328b822ea51afd1c229e698f55",
+    "libcap.so.2.76": "52a874336941f770bd5d00d6b1573b81aa3579a470ce5a24a192a2b8f53175f1",
+    "libpsx.so.2.76": "59c0a9fc694847d88d9b57fd932dff6903c1468b8a41cdb2064a81118c682274",
+    "libcrypt.so.2.0.0": "179f0b9c956d8c22151dc1df80ff6daca77080d55639efa4f9aabbef44216d3f"
+  }
+}

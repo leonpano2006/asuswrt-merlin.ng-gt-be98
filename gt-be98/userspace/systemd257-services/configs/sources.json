@@ -1,0 +1,10 @@
+{
+  "systemd": {
+    "tag": "v257.13",
+    "commit": "70b5d110be7702afc4dbce012f60d49506d513da",
+    "url": "https://codeload.github.com/systemd/systemd/tar.gz/70b5d110be7702afc4dbce012f60d49506d513da",
+    "filename": "systemd-70b5d110be7702afc4dbce012f60d49506d513da.tar.gz",
+    "sha256": "5adcf82e930c1554c964d07d2827095dafede19ebed0e4fd3dd028b099878253",
+    "bytes": 16555832
+  }
+}

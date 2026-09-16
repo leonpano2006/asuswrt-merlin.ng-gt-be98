@@ -1,0 +1,28 @@
+[Unit]
+Description=ASUS scheduled tasks (BusyBox cron)
+DefaultDependencies=no
+RequiresMountsFor=/run /var
+After=systemd-journald.service
+PartOf=asus-rc.service
+Conflicts=shutdown.target
+Before=shutdown.target
+JobTimeoutSec=20
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
+[Service]
+Type=exec
+ExecStartPre=/usr/libexec/leon-service-owner-check crond
+ExecStart=/usr/sbin/crond -f -l 9
+Restart=always
+RestartSec=2
+TimeoutStartSec=10
+TimeoutStopSec=10
+# ASUS cron restarts after timezone changes. Preserve jobs already running,
+# matching the old killall_tk("crond") behavior. Global shutdown drains them.
+KillMode=process
+TasksMax=infinity
+TasksAccounting=no
+MemoryAccounting=no
+StandardOutput=journal
+StandardError=journal

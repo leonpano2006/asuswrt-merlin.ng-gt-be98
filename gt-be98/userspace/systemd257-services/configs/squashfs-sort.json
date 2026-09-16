@@ -1,0 +1,4 @@
+{
+  "strategy": "systemd-first",
+  "reason": "Group related systemd ELF files into adjacent zstd blocks; preserve every file and all UBI reserve"
+}

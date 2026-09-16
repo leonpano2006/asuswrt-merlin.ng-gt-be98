@@ -4686,11 +4686,6 @@ void stop_hotplug2(void)
 void
 stop_infosvr()
 {
-	int delegated = leon_rc_infosvr(0);
-	if (delegated != 0) {
-		if (delegated < 0) perror("systemd infosvr stop");
-		return;
-	}
 	killall_tk("infosvr");
 }
 
@@ -4705,11 +4700,6 @@ start_infosvr()
 		return 0;
 #endif
 
-	int delegated = leon_rc_infosvr(1);
-	if (delegated != 0) {
-		if (delegated < 0) perror("systemd infosvr start");
-		return delegated < 0 ? -1 : 0;
-	}
 	return _eval(infosvr_argv, NULL, 0, &pid);
 }
 
@@ -14941,11 +14931,6 @@ stop_usbled(void)
 #ifdef RTCONFIG_CROND
 void start_cron(void)
 {
-	int delegated = leon_rc_crond(1);
-	if (delegated != 0) {
-		if (delegated < 0) perror("systemd crond start");
-		return;
-	}
 	stop_cron();
 	eval("crond", "-l", "9");
 }
@@ -14953,11 +14938,6 @@ void start_cron(void)
 
 void stop_cron(void)
 {
-	int delegated = leon_rc_crond(0);
-	if (delegated != 0) {
-		if (delegated < 0) perror("systemd crond stop");
-		return;
-	}
 	killall_tk("crond");
 }
 #endif
@@ -15485,9 +15465,7 @@ void check_services(void)
 	_check(pids("hotplug2"), "hotplug2", start_hotplug2);
 #endif
 #ifdef RTCONFIG_CROND
-	/* systemd is the only supervisor after ownership is transferred. */
-	if (!leon_rc_managed())
-		_check(pids("crond"), "crond", start_cron);
+	_check(pids("crond"), "crond", start_cron);
 #endif
 	_check(no_need_watchdog(), "watchdog", start_watchdog);
 

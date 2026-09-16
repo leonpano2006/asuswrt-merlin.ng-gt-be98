@@ -1,0 +1,16 @@
+{
+  "rehearsal": "systemd257-v5",
+  "services_rehearsal": "services257-v5",
+  "production_matches_tested_paths": true,
+  "image": "GT-BE98_leon36-systemd257-services_zstd22.pkgtb",
+  "image_sha256": "c9a12f9dbf111fe900451b2756168f1f3506ce59235e1424b6963610cbfffba6",
+  "image_bytes": 90950732,
+  "rootfs_bytes": 78532608,
+  "rootfs_sha256": "c747a67c8db642e35ff8f2be4c89c11d86b1e6637538dfbecb428bc2fd1b5951",
+  "compression": "zstd level 22, 1 MiB blocks, tailends",
+  "sort_policy": {
+    "strategy": "systemd-first",
+    "reason": "Group related systemd ELF files into adjacent zstd blocks; preserve every file and all UBI reserve"
+  },
+  "flashed": false
+}

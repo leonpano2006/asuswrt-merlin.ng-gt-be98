@@ -1,0 +1,221 @@
+{
+  "files": {
+    "usr/lib/systemd/systemd": {
+      "sha256": "4478e1f8f3926e1a19a69b9daa869482c44ec0673661906df14c0d0355efc087",
+      "bytes": 133456,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000e0d92504c000)",
+        "\tlibsystemd-core-257.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-core-257.so (0x0000e0d924dc0000)",
+        "\tlibsystemd-shared-257.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so (0x0000e0d924a70000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000e0d9248c0000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/ld-linux-aarch64.so.1 (0x0000e0d925010000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000e0d9247f0000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000e0d924750000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000e0d924720000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000e0d9246d0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000e0d924650000)"
+      ],
+      "build_id_sha1": "d4177d66b062f912f4014ba16ed78579fe619c4c",
+      "gcc_switches": [
+        "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O2 -Oz -Oz -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fno-common -fstack-protector -fltrans",
+        ""
+      ],
+      "isa_evidence": "systemd-object-flags.json; LTO does not retain the object command-line sections in final ELF"
+    },
+    "usr/lib/systemd/systemd-executor": {
+      "sha256": "441bd2017f4b80d7d6d96e9897bd44162f9dfd3906b333f23eb01c1ce3618fbf",
+      "bytes": 133464,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000ff6356d3c000)",
+        "\tlibsystemd-core-257.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-core-257.so (0x0000ff6356ab0000)",
+        "\tlibsystemd-shared-257.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so (0x0000ff6356760000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000ff63565b0000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/ld-linux-aarch64.so.1 (0x0000ff6356d00000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000ff63564e0000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000ff6356440000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000ff6356410000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000ff63563c0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000ff6356340000)"
+      ],
+      "build_id_sha1": "a7710771b02af541d3d8047b69038fd846866c15",
+      "gcc_switches": [
+        "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O2 -Oz -Oz -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fno-common -fstack-protector -fltrans",
+        ""
+      ],
+      "isa_evidence": "systemd-object-flags.json; LTO does not retain the object command-line sections in final ELF"
+    },
+    "usr/lib/systemd/systemd-shutdown": {
+      "sha256": "ed3b2a200ba43d35ca54792e806af380d8a3d1b32c190db83318cb3b7d190011",
+      "bytes": 67920,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000ecceda9ec000)",
+        "\tlibsystemd-shared-257.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so (0x0000ecceda640000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000ecceda5a0000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000ecceda3f0000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/ld-linux-aarch64.so.1 (0x0000ecceda9b0000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000ecceda3c0000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000ecceda370000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000ecceda2a0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000ecceda220000)"
+      ],
+      "build_id_sha1": "f7691f2db92a83168e53f4af299896ab7e608ae5",
+      "gcc_switches": [
+        "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O2 -Oz -Oz -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fno-common -fstack-protector -fltrans",
+        ""
+      ],
+      "isa_evidence": "systemd-object-flags.json; LTO does not retain the object command-line sections in final ELF"
+    },
+    "usr/lib/systemd/systemd-journald": {
+      "sha256": "efee580c583d6e7e7d10432c3c3bc359af17c7d412984465b35b6bcac6fa5842",
+      "bytes": 201760,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000f9722509c000)",
+        "\tlibsystemd-shared-257.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so (0x0000f97224cf0000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000f97224b40000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/ld-linux-aarch64.so.1 (0x0000f97225060000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000f97224b10000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000f97224ac0000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000f97224a20000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000f97224950000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000f972248d0000)"
+      ],
+      "build_id_sha1": "15fcf2ca1b63fa220f6410ba17c08fb881d4ebe5",
+      "gcc_switches": [
+        "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O2 -Oz -Oz -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fno-common -fstack-protector -fltrans",
+        ""
+      ],
+      "isa_evidence": "systemd-object-flags.json; LTO does not retain the object command-line sections in final ELF"
+    },
+    "usr/bin/systemctl": {
+      "sha256": "51629680c494386977509fbf67d3b3cfc83ba2f6bdff72cc6a4404347cf96e77",
+      "bytes": 264640,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000f7f0e39bc000)",
+        "\tlibsystemd-shared-257.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so (0x0000f7f0e3610000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000f7f0e3460000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/ld-linux-aarch64.so.1 (0x0000f7f0e3980000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000f7f0e3430000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000f7f0e33e0000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000f7f0e3340000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000f7f0e3270000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000f7f0e31f0000)"
+      ],
+      "build_id_sha1": "a578791633aa0d07e642325e9cc74650437e4f91",
+      "gcc_switches": [
+        "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O2 -Oz -Oz -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fno-common -fstack-protector -fltrans",
+        ""
+      ],
+      "isa_evidence": "systemd-object-flags.json; LTO does not retain the object command-line sections in final ELF"
+    },
+    "usr/bin/journalctl": {
+      "sha256": "853ebdd5c629d2b7a6e7fb22b014799909c8f6c606641b4218165504b9b4eed7",
+      "bytes": 133552,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000f6ac0dd6c000)",
+        "\tlibsystemd-shared-257.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so (0x0000f6ac0d9c0000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000f6ac0d810000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/ld-linux-aarch64.so.1 (0x0000f6ac0dd30000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000f6ac0d7e0000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000f6ac0d790000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000f6ac0d6f0000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000f6ac0d620000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000f6ac0d5a0000)"
+      ],
+      "build_id_sha1": "9bee88ea3991e4bdd4e9ed566daf3b0716723510",
+      "gcc_switches": [
+        "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O2 -Oz -Oz -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fno-common -fstack-protector -fltrans",
+        ""
+      ],
+      "isa_evidence": "systemd-object-flags.json; LTO does not retain the object command-line sections in final ELF"
+    },
+    "usr/bin/systemd-notify": {
+      "sha256": "b6716398edb0dfeb70833481b901158bf608960b45d30b824610573705555f1d",
+      "bytes": 68024,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000e25de207c000)",
+        "\tlibsystemd-shared-257.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so (0x0000e25de1cd0000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000e25de1b20000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/ld-linux-aarch64.so.1 (0x0000e25de2040000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000e25de1af0000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000e25de1aa0000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000e25de1a00000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000e25de1930000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000e25de18b0000)"
+      ],
+      "build_id_sha1": "e09319a667846b2884b65a495906362ede1cceee",
+      "gcc_switches": [
+        "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -Os -Oz -Oz -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fno-common -fstack-protector -fltrans",
+        ""
+      ],
+      "isa_evidence": "systemd-object-flags.json; LTO does not retain the object command-line sections in final ELF"
+    },
+    "usr/bin/systemd-run": {
+      "sha256": "b5f9fb9aa6fafac469d16f05f93f8746cb833beeae754ae17e6ab8dac2761a07",
+      "bytes": 133552,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000ec36a853a000)",
+        "\tlibsystemd-shared-257.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so (0x0000ec36a8180000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000ec36a7fd0000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/ld-linux-aarch64.so.1 (0x0000ec36a84f0000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000ec36a7fa0000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000ec36a7f50000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000ec36a7eb0000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000ec36a7de0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000ec36a7d60000)"
+      ],
+      "build_id_sha1": "d31b04124ead9a46503ac4544bfaaeea1ee868f0",
+      "gcc_switches": [
+        "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -Os -Oz -Oz -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fno-common -fstack-protector -fltrans",
+        ""
+      ],
+      "isa_evidence": "systemd-object-flags.json; LTO does not retain the object command-line sections in final ELF"
+    },
+    "usr/lib/aarch64-linux-gnu/systemd/libsystemd-core-257.so": {
+      "sha256": "430aca2a5df8048f27774d7824980fb1e3767576e482f7fee2d4c12b24262326",
+      "bytes": 2166344,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000e44022938000)",
+        "\tlibsystemd-shared-257.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so (0x0000e44022350000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000e44022280000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000e440221e0000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000e44022030000)",
+        "\t/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/ld-linux-aarch64.so.1 (0x0000e440228f0000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000e44022000000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000e44021fb0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000e44021f30000)"
+      ],
+      "build_id_sha1": "c45d044ff0da77355cb34a14ee8e35396008c77b",
+      "gcc_switches": [
+        "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O2 -Oz -Oz -fno-openmp -fno-openacc -fcf-protection=none -fno-common -fPIC -fstack-protector -fltrans",
+        ""
+      ],
+      "isa_evidence": "systemd-object-flags.json; LTO does not retain the object command-line sections in final ELF"
+    },
+    "usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so": {
+      "sha256": "096365f593bfe9e1646d0116cceefc1eb84982056e3a65219b83d533bd7aa983",
+      "bytes": 3353928,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000f6a4423bc000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000f6a441fe0000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000f6a441f90000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000f6a441ef0000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000f6a441e20000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000f6a441c70000)",
+        "\t/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/lib/ld-linux-aarch64.so.1 (0x0000f6a442380000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000f6a441bf0000)"
+      ],
+      "build_id_sha1": "78f704d4dfc1f585cc258a23f2685c32e8033141",
+      "gcc_switches": [
+        "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O2 -Oz -Oz -fno-openmp -fno-openacc -fcf-protection=none -fno-common -fPIC -fstack-protector -fltrans",
+        ""
+      ],
+      "isa_evidence": "systemd-object-flags.json; LTO does not retain the object command-line sections in final ELF"
+    }
+  },
+  "regular_files": 10,
+  "bytes": 6656640,
+  "version": "systemd 257 (257.13-gt-be98)\n-PAM -AUDIT -SELINUX -APPARMOR -IMA +IPE -SMACK -SECCOMP -GCRYPT -GNUTLS -OPENSSL -ACL -BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC -KMOD -LIBCRYPTSETUP -LIBCRYPTSETUP_PLUGINS -LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB -ZSTD -BPF_FRAMEWORK -BTF -XKBCOMMON -UTMP -SYSVINIT -LIBARCHIVE\n",
+  "compiler": "GCC 16.2.0",
+  "sysroot_glibc": "2.44",
+  "mcpu": "cortex-a53+crc+crypto"
+}

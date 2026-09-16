@@ -1,0 +1,18 @@
+[Unit]
+Description=Drain ASUS cron jobs before storage shutdown
+DefaultDependencies=no
+After=systemd-journald.service tmp.mount var.mount run.mount tmp-mnt.mount data.mount jffs.mount usr-local.mount tmp-mnt-JFFS.mount
+Before=asus-rc.service shutdown.target
+PartOf=asus-rc.service
+Conflicts=shutdown.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/true
+ExecStop=/usr/libexec/leon-cron-drain
+TimeoutStopSec=25
+TasksAccounting=no
+MemoryAccounting=no
+StandardOutput=journal
+StandardError=journal

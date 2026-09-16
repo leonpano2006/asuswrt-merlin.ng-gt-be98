@@ -1,0 +1,27 @@
+#!/bin/busybox sh
+set -eu
+export PATH=/usr/bin:/usr/sbin:/bin:/sbin
+group=$(systemctl show asus-crond.service -p ControlGroup --value)
+[ -n "$group" ] || exit 0
+case "$group" in /system.slice/asus-crond.service) ;; *) exit 1;; esac
+procs=
+for hierarchy in unified systemd; do
+    candidate="/sys/fs/cgroup/$hierarchy$group/cgroup.procs"
+    if [ -f "$candidate" ]; then procs=$candidate; break; fi
+done
+[ -n "$procs" ] || exit 0
+occupied() { [ -f "$procs" ] && grep -q '[0-9]' "$procs"; }
+if occupied; then
+    # The daemon is already stopped. Use systemd's ownership of the cgroup,
+    # not process-name matching or a stale list of arbitrary PIDs.
+    systemctl kill --kill-whom=all --signal=TERM asus-crond.service || ! occupied
+    i=0
+    while occupied && [ "$i" -lt 15 ]; do i=$((i+1)); sleep 1; done
+    if occupied; then
+        systemctl kill --kill-whom=all --signal=KILL asus-crond.service || ! occupied
+        i=0
+        while occupied && [ "$i" -lt 5 ]; do i=$((i+1)); sleep 1; done
+    fi
+    ! occupied
+fi
+echo LEON_CRON_JOBS_DRAINED

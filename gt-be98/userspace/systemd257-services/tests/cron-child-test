@@ -1,0 +1,4 @@
+#!/bin/busybox sh
+trap 'echo terminated > /run/cron-child-terminated; exit 0' TERM
+echo $$ > /run/cron-child-pid
+while :; do sleep 1; done

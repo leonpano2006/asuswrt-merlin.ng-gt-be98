@@ -1,0 +1,21 @@
+#!/bin/busybox sh
+set -eu
+# Select the existing container controllers before PID 1 starts. Upstream
+# systemd follows hierarchies already mounted by early boot. Its own manager
+# uses the separate hybrid cgroup2 mount; Docker retains the v1 controllers.
+# Never move a running system between hierarchies.
+if [ -e /run/systemd/private ]; then
+    echo 'cgroup preparation is only valid before systemd starts' >&2
+    exit 1
+fi
+if /bin/busybox awk '$2 == "/sys/fs/cgroup" {found=1} END {exit !found}' /proc/mounts; then
+    echo 'unexpected pre-existing cgroup hierarchy' >&2
+    exit 1
+fi
+/bin/busybox mount -t tmpfs -o nosuid,nodev,noexec,mode=0755 tmpfs /sys/fs/cgroup
+for controller in cpuacct memory devices freezer pids; do
+    /bin/busybox awk -v name="$controller" '$1 == name && $4 == 1 {ok=1} END {exit !ok}' /proc/cgroups
+    /bin/busybox mkdir -p "/sys/fs/cgroup/$controller"
+    /bin/busybox mount -t cgroup -o "nosuid,nodev,noexec,$controller" cgroup "/sys/fs/cgroup/$controller"
+done
+echo LEON_CGROUP_V1_CONTROLLERS_PREPARED

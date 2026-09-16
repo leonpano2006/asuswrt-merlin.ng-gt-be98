@@ -9,14 +9,14 @@
 #include <time.h>
 #include <unistd.h>
 
-/* Use fixed service names and argv, clear the child
+/* Only this service is delegated in phase 1. Use fixed argv, clear the child
  * signal mask, and protect waitpid from init.c's SIGCHLD reaper. The unit's
  * JobTimeoutSec bounds the job; this separate deadline bounds its client. */
-static int request_unit(const char *unit, int start, int restart)
+int leon_rc_haveged(int start)
 {
     extern char **environ;
     char *args[] = { "/usr/bin/systemctl", "--no-ask-password", "--no-pager",
-                     "--job-mode=fail", NULL, (char *)unit, NULL };
+                     "--job-mode=fail", NULL, "asus-haveged.service", NULL };
     posix_spawnattr_t attr;
     sigset_t empty, block, previous;
     struct timespec begin, now, pause = { .tv_nsec = 100000000 };
@@ -26,7 +26,7 @@ static int request_unit(const char *unit, int start, int restart)
     if (start != 0 && start != 1) { errno = EINVAL; return -1; }
     if (!leon_rc_managed()) return 0;
     if (geteuid() != 0 || !leon_rc_is_manager()) { errno = EPERM; return -1; }
-    args[4] = start ? (restart ? "restart" : "start") : "stop";
+    args[4] = start ? "start" : "stop";
     if (clock_gettime(CLOCK_MONOTONIC, &begin)) return -1;
     sigemptyset(&empty);
     sigemptyset(&block); sigaddset(&block, SIGCHLD);
@@ -60,20 +60,4 @@ static int request_unit(const char *unit, int start, int restart)
     if (sigprocmask(SIG_SETMASK, &previous, NULL) && !error) error = errno;
     if (error) { errno = error; return -1; }
     return 1;
-}
-
-int leon_rc_haveged(int start)
-{
-    return request_unit("asus-haveged.service", start, 0);
-}
-
-int leon_rc_crond(int start)
-{
-    /* ASUS start_cron() also refreshes the daemon after timezone changes. */
-    return request_unit("asus-crond.service", start, 1);
-}
-
-int leon_rc_infosvr(int start)
-{
-    return request_unit("asus-infosvr.service", start, 0);
 }

@@ -1,0 +1,33 @@
+{
+  "parent": "rmerlin-httpd-fix-20260917",
+  "changed_or_removed_paths": [
+    "usr/bin/journalctl",
+    "usr/bin/systemctl",
+    "usr/bin/systemd-notify",
+    "usr/bin/systemd-run",
+    "usr/lib/aarch64-linux-gnu/systemd/libsystemd-core-255.so",
+    "usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-255.so",
+    "usr/lib/systemd/system/asus-rc.service",
+    "usr/lib/systemd/systemd",
+    "usr/lib/systemd/systemd-executor",
+    "usr/lib/systemd/systemd-journald",
+    "usr/lib/systemd/systemd-shutdown",
+    "usr/libexec/leon-systemd-prepare",
+    "usr/sbin/rc",
+    "usr/share/leon-upstream.json"
+  ],
+  "added_paths": [
+    "usr/lib/aarch64-linux-gnu/systemd/libsystemd-core-257.so",
+    "usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so",
+    "usr/lib/systemd/system/asus-cron-cleanup.service",
+    "usr/lib/systemd/system/asus-crond.service",
+    "usr/lib/systemd/system/asus-infosvr.service",
+    "usr/libexec/leon-cgroup-prepare",
+    "usr/libexec/leon-cron-drain",
+    "usr/libexec/leon-service-owner-check"
+  ],
+  "unchanged_kernel_modules": 182,
+  "production_init_sha256": "d28e8bfa21f9c95ac8c9672e3d12686147759c2ea88ef65a1f81c75cb00c0c2f",
+  "rc_sha256": "5191c8a0bc759add07c915682375b986d89d81574535ab910beddbec24e7b87d",
+  "httpd_a3_retained": true
+}

@@ -1,0 +1,32 @@
+{
+  "strategy": "systemd-first",
+  "rootfs_bytes": 78532608,
+  "sha256": "c747a67c8db642e35ff8f2be4c89c11d86b1e6637538dfbecb428bc2fd1b5951",
+  "elapsed_seconds": 10.42,
+  "command": [
+    "mksquashfs",
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/build/production-rootfs",
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/build/layout-systemd-first.squashfs",
+    "-noappend",
+    "-all-root",
+    "-comp",
+    "zstd",
+    "-Xcompression-level",
+    "22",
+    "-b",
+    "1048576",
+    "-tailends",
+    "-sort",
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/build/layout-systemd-first.sort",
+    "-processors",
+    "4",
+    "-mem",
+    "512M",
+    "-no-progress",
+    "-exit-on-error",
+    "-mkfs-time",
+    "1789560000"
+  ],
+  "reserved_blocks": 734,
+  "available_blocks": 734
+}

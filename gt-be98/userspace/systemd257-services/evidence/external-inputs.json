@@ -1,0 +1,969 @@
+{
+  "files": {
+    "leon-cgroup-20260915/archive/worktree/release/src/router/bwdpi_source/include/tdts/tmcfg.h": {
+      "sha256": "177ab24a804dc6ea2e40d795134a98af01fe5cf6e97ef53c46866df898944504",
+      "bytes": 10430
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/bwdpi_source/include/udb/tmcfg_udb.h": {
+      "sha256": "78eac6ead13073bd010ea287f94e3b6da0497fe05c1fdb990c959ff1c9ec1a6b",
+      "bytes": 11416
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/json-c/json_config.h": {
+      "sha256": "8d813790eeb6efec103a6b4a3e21319b61cd20ea3c39d158b9736d89bf3cba84",
+      "bytes": 163
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/asn1.h": {
+      "sha256": "851313b1176baa3d6896aaeeebef56216ebdd38dcdabb39b3eca36b6645352bc",
+      "bytes": 33627
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/asn1err.h": {
+      "sha256": "b89b16216ddd35f028f5bfd3fe0db4f2ead6c9415e7749b7115b0393b427ef2f",
+      "bytes": 14687
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/bio.h": {
+      "sha256": "78b055555957eec2bfb4ce5f91b27bdcfdf73128026be9ce85fcca0126fdcd3d",
+      "bytes": 34907
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/bioerr.h": {
+      "sha256": "ad29fe4ef37fd7c4b256b690caf9371a74e29981f6561b94436dac54a61bf74b",
+      "bytes": 6400
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/bn.h": {
+      "sha256": "8f79b29c5ad479186acaae962a598d9868dc434fd5fa49a008eecfaff1b998ca",
+      "bytes": 22135
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/bnerr.h": {
+      "sha256": "8098ab9545307d6e2c9cc28ae995d6fda0e8959b6167cc03d67716b02abb27ff",
+      "bytes": 4969
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/buffer.h": {
+      "sha256": "a4fa292b903cb8c2ce1761ba4980cf5bdfb66dcadcbb5c8aecc45b012bc64c23",
+      "bytes": 1600
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/buffererr.h": {
+      "sha256": "722f6ea87711b7c0cb6ee29c15762c2839e5ad17b9ef579b6e81b6121f035c30",
+      "bytes": 820
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/conf.h": {
+      "sha256": "e54341e30523dadc09d821366f5afb13c9286d540b34c1945406918ed588fa21",
+      "bytes": 5601
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/conferr.h": {
+      "sha256": "abfe26485cd43a80e0c476e628979612ad28a635577baf68eee476850425a498",
+      "bytes": 3429
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/crypto.h": {
+      "sha256": "d2cd84e695e68051fe67fa7cf901ccba4fadccc71a6b30090df20a01b91d3ec7",
+      "bytes": 17239
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/cryptoerr.h": {
+      "sha256": "e752d7d3da32a6c009cf264450726367fd69e7c2a4c185d580ce650021d68e7a",
+      "bytes": 2261
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/dh.h": {
+      "sha256": "d9052195b4448b556c72c399c1be5159be3dc9b906c65768fb720732cbf61c54",
+      "bytes": 13689
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/dherr.h": {
+      "sha256": "dcc1265700e5616a715d8de85d7e7f0fca6ee67fee02a715262a2f7aa07c4238",
+      "bytes": 4100
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/dsa.h": {
+      "sha256": "1525e5adf242643a7d36312580314f5ce61ecadf82223a49ff5c32220d78f9b9",
+      "bytes": 10051
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/dsaerr.h": {
+      "sha256": "65ea8b47cb25ae82d611337cd47da7c1c5cdb9451982beec9d841413d4a923a9",
+      "bytes": 2972
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/e_os2.h": {
+      "sha256": "87c55abdb4755ffc04cd5e35a36d8b1ff2f19f3d8b9c7ef10357a78ff887503b",
+      "bytes": 8920
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/ec.h": {
+      "sha256": "4e624064531986560789f8509dfd10bc5ed82eb65599e03ed3bfed57be6df199",
+      "bytes": 63684
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/ecerr.h": {
+      "sha256": "85a3b64c0644420a18295c8001a06bad5d7c3e84d4f871c925a1b45fb89ef182",
+      "bytes": 15821
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/evp.h": {
+      "sha256": "9d963bdda81802988170663ccfcef437aea69042f42aef3a11ab4a217b800aef",
+      "bytes": 76828
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/evperr.h": {
+      "sha256": "45d68b462f25239488c020bee5fbf69700b0cd7b4dc2b3ba7015bddc499476a4",
+      "bytes": 11453
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/lhash.h": {
+      "sha256": "1036e20aba00e0585b96b91a00ae7792dc12501160e117d1f824833de7fe3752",
+      "bytes": 9271
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/obj_mac.h": {
+      "sha256": "81ebca20cc370ccf72f3103d1231c6a42e064730bb22261a97d86ddd0e7bc08a",
+      "bytes": 217522
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/objects.h": {
+      "sha256": "4018d7c54e6f19c3230af063f4dbc8523f1450528a4af15a97a0a1ff3fb3ba38",
+      "bytes": 6633
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/objectserr.h": {
+      "sha256": "0ec7330c122ae2b3174df95ddecea65ff661a6152cd0192529dd1411ef3f62a1",
+      "bytes": 1316
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/opensslconf.h": {
+      "sha256": "8bc7955927ba5e94d46f2ae9ff853f5663dafac7758cb24b0246861da75e2791",
+      "bytes": 5112
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/opensslv.h": {
+      "sha256": "0ca12c2aba8bfbe24c4c06861e9d57b939c5e72d1c08f3798a442d698deb7599",
+      "bytes": 4102
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/ossl_typ.h": {
+      "sha256": "46f541a1cc49bf08908ab3bde05e2683fc56ea268ca3e7f2e27628653ecb4a14",
+      "bytes": 6266
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/pem.h": {
+      "sha256": "32d62036d0c35d03fe7f7ddaaffe3caeafcf984ec16e4db7ed19d3e202e9d7ba",
+      "bytes": 15468
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/pemerr.h": {
+      "sha256": "d91c6016f3c1ba70683b92fde55500ec334777defb6486c41b0a9c4e402aa295",
+      "bytes": 5222
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/pkcs7.h": {
+      "sha256": "cdc3505c9bb9168a6fad434dd9d9a49ad630b9ae9216bd665b11051e04a709bc",
+      "bytes": 11590
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/pkcs7err.h": {
+      "sha256": "ecee11e9fbddab20f78a018009e6a2daf287ff5df00679298b137fe9996d9386",
+      "bytes": 5110
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/rsa.h": {
+      "sha256": "7864e95b61605f26f15e4f8f05df45c6c8527107871f06293a6213afdae14864",
+      "bytes": 22348
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/rsaerr.h": {
+      "sha256": "e032a933b1a4c13ec901d7561ad23ace01881b60cdcc86af0e4cb0a25a2a3252",
+      "bytes": 9075
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/safestack.h": {
+      "sha256": "57665dabb37f4f0bd853539d93c64cb8adf37fd9552dc9fad215cc8f47a991c4",
+      "bytes": 8139
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/sha.h": {
+      "sha256": "0bb6745481ac56b67f450d09033e813bf8f6a5f2025e90d5eb539eab1ad5e323",
+      "bytes": 3831
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/stack.h": {
+      "sha256": "45ba803bbe14007e494bb24b2ca954f6362ef700a10480efa3d2f3acb159deec",
+      "bytes": 3095
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/symhacks.h": {
+      "sha256": "0c9e026a5932a2432e3cdf7defb789610c4272010e51e5ff0471809eabb7aa2d",
+      "bytes": 1311
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/x509.h": {
+      "sha256": "f1b8b356d649da24236d5aabdfafe047b516b2008d8d5d09da5e99fbc4b4a98c",
+      "bytes": 43326
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/x509_vfy.h": {
+      "sha256": "f621ac4c38a89bd010656ca00937773126a7ef348b29a14b04cc5ec5c095b531",
+      "bytes": 32451
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/x509err.h": {
+      "sha256": "622499b9aaa546957c802da9aee36794c24c9c7d2e105ae69b47841ecdac6b7a",
+      "bytes": 6803
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/x509v3.h": {
+      "sha256": "a7e78a1858697e75940b416ba1fb6f4e135722e88c0c280af8a979975c5443da",
+      "bytes": 33441
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/x509v3err.h": {
+      "sha256": "3d17dcca277cd6f6373a30a6e07e1a2c44024a0b980ccccc2533d78bf0c22776",
+      "bytes": 8901
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmdefs.h": {
+      "sha256": "b94e82e72347f1981dae65e442a008b3e3f9f560708070779bfb334c8f41c650",
+      "bytes": 27538
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmnvram.h": {
+      "sha256": "3146169ec90a3402a7ada6b457518fee969dd6d61170b49e69e2e1c369cd0fd6",
+      "bytes": 11278
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmparams.h": {
+      "sha256": "319efc145716d92e30a279be03178a1108ac998e3d36c8c9f770d6d72439ea13",
+      "bytes": 1367
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/typedefs.h": {
+      "sha256": "d046de19fc9778f708ec26b61d16e1748a5a24dd0ad724d42b2e0c92243001c8",
+      "bytes": 9297
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/shared/bcmwifi/include/bcmwifi_channels.h": {
+      "sha256": "a3d5ecc398d2e08d96b7deb9673f340c0524efa34ebf826999aa73e29c6eb409",
+      "bytes": 40005
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/router-sysdep/bcm_flashutil/bcm_flashutil.h": {
+      "sha256": "3009bed6fb5419c6f932eb729debae4d83a24344cf6bb36b228b29ce3555eb29",
+      "bytes": 8834
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/router-sysdep/bcm_flashutil/bcm_imgif.h": {
+      "sha256": "618d3fa974c43935444edba10438ee4505821b913fada3f82f0ba5d1645eeb38",
+      "bytes": 3212
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/router-sysdep/bcm_flashutil/bcm_imgutil_def.h": {
+      "sha256": "0d6c96edec475b76618f87782e38601821a4f1d3c73fe56194d3e91879b65b38",
+      "bytes": 4325
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/router-sysdep/bcm_flashutil/cms_image.h": {
+      "sha256": "305d13c2b73034faf70c320efd7c2913b4330230e14aba0c67d58a53aeb96415",
+      "bytes": 14024
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/shared/opensource/include/bcm963xx/bcm_hwdefs.h": {
+      "sha256": "f1ab77270f9893f84b74dfabfb825a0f839df2cb6ea111fd4ed8d11dc3dc9e4b",
+      "bytes": 27038
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/cms.h": {
+      "sha256": "17fabfe320feec4179b243eb07dac70267081aad4c549f16dda4aa403590b8c4",
+      "bytes": 15915
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/cms_params.h": {
+      "sha256": "4897b27549993caa1ba2ac24318712343745ba0e55acdac86a60ed4d26a98509",
+      "bytes": 8495
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/cms_retcodes.h": {
+      "sha256": "a52b2e5d80be0cdaea582f18484708ce3b591f23da97ce2edbefa08a468bac6c",
+      "bytes": 15026
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/cms_version.h": {
+      "sha256": "dc62bfa22272c2a8622a5436830c480c5a9c11cb86e99600e3aca1b412c988ab",
+      "bytes": 185
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/linux/number_defs.h": {
+      "sha256": "1743691cd950cced8829fb951358cb628187845426dc8e551ebbc9eba9a85549",
+      "bytes": 2243
+    },
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/linux/os_defs.h": {
+      "sha256": "21e7a2adb8d247c6baec061d0b0d2f76506628fac4ba3e7900d4b5548c10d1de",
+      "bytes": 6644
+    },
+    "rmerlin-integration-20260916/build/management-libs/libovpn.so": {
+      "sha256": "a60b3dc03ac5e75d01674376dfc829fb394a54ba1a7f14b0b75df72277608e23",
+      "bytes": 407476
+    },
+    "rmerlin-integration-20260916/build/management-libs/libshared.so": {
+      "sha256": "2e9e378b8ceb2afe88e8e939a53029a1d6ff4a6a5ce3856c00a079e1f5a05db7",
+      "bytes": 2469268
+    },
+    "rmerlin-integration-20260916/build/management-rc/agg_brcm.o": {
+      "sha256": "22327ccf3d8ad86f0cc1a0a934b5842927028906f7414f2d30f6d1fec545ccee",
+      "bytes": 13264
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas-ssd-broadcom.o": {
+      "sha256": "bebe978ec31ae07d5b64970d5cef822d62470358ada3a34a7ace9ce6b0a99695",
+      "bytes": 31452
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas-ssd-cd-broadcom.o": {
+      "sha256": "301ead877d69206638ef2dfced0b49a64fcd8a47ac63b7b9de522cc48f05a741",
+      "bytes": 13236
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas_apg.o": {
+      "sha256": "7d7b069651829dd148dae0f9c2800a31b36fbcf77e3f871f0aabd1ceb1e70951",
+      "bytes": 111000
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas_bhctrl.o": {
+      "sha256": "611368754c01b6fa3af01f0e999a29b4a2f237cb5d633c93054dfc8ae638ec4f",
+      "bytes": 156844
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas_ipc.o": {
+      "sha256": "934fe13227282432037656d975df39889f155d0bc16099bdfdaddb7e03ee87c3",
+      "bytes": 20360
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas_lanctrl.o": {
+      "sha256": "8cb675d7eb71b235e0441d115533633369f62a16b042bb24f67dbcabee020c88",
+      "bytes": 28460
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas_lib.o": {
+      "sha256": "86298872508f1f0be469ba0e82a707575dc70dc0993001ceaa70edd491521483",
+      "bytes": 103428
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas_misc.o": {
+      "sha256": "a13d1853e8e2906b91d50b05a8c71aff43a562a1634fb8726b5a9daa077330d6",
+      "bytes": 16284
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas_ssd.o": {
+      "sha256": "56d9c895e41032e973e6af00b0a171b6a6d7d11625e593d00cd682b1f3943b54",
+      "bytes": 39704
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas_ssd_cd.o": {
+      "sha256": "b1b2c7ff568b0b886c1a72cf2075cb5fc31e56fcdccdb103bb5df77f2db4b14b",
+      "bytes": 21672
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas_status.o": {
+      "sha256": "88944da94b47e4ead039e0e33bbf566caf43cbe2d09f01c242c8a3ac45916c49",
+      "bytes": 85968
+    },
+    "rmerlin-integration-20260916/build/management-rc/amas_wlcconnect.o": {
+      "sha256": "80b25dd8e938b09429261a20c14c6a738394c44da2b67ea3dac4df06b49154bf",
+      "bytes": 272564
+    },
+    "rmerlin-integration-20260916/build/management-rc/arpreq.o": {
+      "sha256": "66311ff416cdefee7bbfe1a213916f3c00db42c68f65d19322ea13f865204035",
+      "bytes": 22164
+    },
+    "rmerlin-integration-20260916/build/management-rc/asus_ddns.o": {
+      "sha256": "113403c23dd66ce0a918285f84e3383c5b5bd74b0c92afbd8b42478bb138db28",
+      "bytes": 62340
+    },
+    "rmerlin-integration-20260916/build/management-rc/ate-broadcom.o": {
+      "sha256": "ba029843eae7213b0d18fd1e67a00b8ad6d6ad2f99fc614d7cd3a6ad359b8944",
+      "bytes": 89700
+    },
+    "rmerlin-integration-20260916/build/management-rc/ate.o": {
+      "sha256": "f672e2bcefe47b299cb331ca8223fbca5b69e2f5476825fd392f1e3f062ccb30",
+      "bytes": 128892
+    },
+    "rmerlin-integration-20260916/build/management-rc/auth.o": {
+      "sha256": "a1bb49e642f02f1c11528e20706ecb97c454b22bf973af1212945b00563a8928",
+      "bytes": 37120
+    },
+    "rmerlin-integration-20260916/build/management-rc/broadcom.o": {
+      "sha256": "58464cf629310b8bccd184b6ebc9e1750d167d03a548dcb30a446c4948d78778",
+      "bytes": 301520
+    },
+    "rmerlin-integration-20260916/build/management-rc/bwdpi.o": {
+      "sha256": "40d4e595f04d931e435fa8d9faf31e3b04007ce66a0f1fa32b749d47af42032b",
+      "bytes": 6288
+    },
+    "rmerlin-integration-20260916/build/management-rc/bwdpi_check.o": {
+      "sha256": "95d338086b592a424d9d1252126b983b3a36fac28bfc4f9b0a43d5515f8c9b1c",
+      "bytes": 4964
+    },
+    "rmerlin-integration-20260916/build/management-rc/bwdpi_db_10.o": {
+      "sha256": "bd8722e2ca54d0a908d30a5c770759eb0d5f5ff11011429c957e6b267dfcce54",
+      "bytes": 3544
+    },
+    "rmerlin-integration-20260916/build/management-rc/bwdpi_wred_alive.o": {
+      "sha256": "5fda93fec2bca485a6975803920ebdef3cd6d96ec4d0d479e672eb4408962d12",
+      "bytes": 5128
+    },
+    "rmerlin-integration-20260916/build/management-rc/check_watchdog.o": {
+      "sha256": "ae9ba2fbb5843ea2c70689b6d914f309b472d21935417392e5349179a9002e91",
+      "bytes": 17520
+    },
+    "rmerlin-integration-20260916/build/management-rc/common.o": {
+      "sha256": "2cce206eae664fe5a806ee47fcd6292f4fb56940b68e18b262b50e236ad0af0c",
+      "bytes": 171680
+    },
+    "rmerlin-integration-20260916/build/management-rc/conn_diag-broadcom.o": {
+      "sha256": "8e032b1e370cc59e0462f5fbecd8d5e7951ed62922762258efb5beb8f3a8b229",
+      "bytes": 37340
+    },
+    "rmerlin-integration-20260916/build/management-rc/conn_diag.o": {
+      "sha256": "dd5849b6fc29a3ca458fc2293ab47ce649f42fecb06431f5d5cc57aecbd20b94",
+      "bytes": 166780
+    },
+    "rmerlin-integration-20260916/build/management-rc/conn_diag_log.o": {
+      "sha256": "18facedcd7fb9d0f0be731625cb2647852249faa3028e3c70c9d3c023f7139b7",
+      "bytes": 37812
+    },
+    "rmerlin-integration-20260916/build/management-rc/dhcpc_vc_query.o": {
+      "sha256": "eb53305311fcca01a6a0b9e9787f39ebc5a608ff365ae51d4e8bfd2fe601583a",
+      "bytes": 4000
+    },
+    "rmerlin-integration-20260916/build/management-rc/dns_dpi_check.o": {
+      "sha256": "89e2527e29f3c40e3cce27c38e930c6396f08831e445098afc643360ad54db19",
+      "bytes": 6912
+    },
+    "rmerlin-integration-20260916/build/management-rc/dnsfilter.o": {
+      "sha256": "5af88ae43cae1c36dd380b48f7053e3f38c96309c82f82f7a1216852bfe08da7",
+      "bytes": 61876
+    },
+    "rmerlin-integration-20260916/build/management-rc/dslited.o": {
+      "sha256": "858c03c35cf66edd4280c4cd14c27b693d52daa628604b39559687800a8d1899",
+      "bytes": 15280
+    },
+    "rmerlin-integration-20260916/build/management-rc/erp_monitor.o": {
+      "sha256": "8940acec5e8ac92aeae88b309bf050840a619d21df3435120365bba800b11001",
+      "bytes": 102812
+    },
+    "rmerlin-integration-20260916/build/management-rc/firewall.o": {
+      "sha256": "41aedc137ac5170dae20f567a3b3d46f4b8b98368d22afaeee26d4c953a19d82",
+      "bytes": 512456
+    },
+    "rmerlin-integration-20260916/build/management-rc/firewall_sdn.o": {
+      "sha256": "cb582c520aa1a394e915366acbad698d87323df4c43affcf4c3081b769df2c45",
+      "bytes": 168016
+    },
+    "rmerlin-integration-20260916/build/management-rc/format.o": {
+      "sha256": "7b2e6108fd288cf1ee39ac54c1c5c57944ab1da72f4507c707c8f847450cdd81",
+      "bytes": 34684
+    },
+    "rmerlin-integration-20260916/build/management-rc/frs_service.o": {
+      "sha256": "632cbe8b190139a351ed48af6b8797bf33a46bab89ea58d59b6f726c4f49ce6e",
+      "bytes": 78956
+    },
+    "rmerlin-integration-20260916/build/management-rc/fwupg_flashing.o": {
+      "sha256": "8a094db6f34c2b917b680fd529e96d02b7f76fe32cbc6e88ed10b18e1d0711be",
+      "bytes": 17164
+    },
+    "rmerlin-integration-20260916/build/management-rc/gpy211_war.o": {
+      "sha256": "0fd8382a787e10bf3ed8a0c56a25f290d5d1ceae8f9cbd8cd166d7a6628a9810",
+      "bytes": 7756
+    },
+    "rmerlin-integration-20260916/build/management-rc/hostapd_config_be.o": {
+      "sha256": "a5f8128868f3bedc234ddb44f619e88618c913c823f484c5836628c056952e53",
+      "bytes": 173308
+    },
+    "rmerlin-integration-20260916/build/management-rc/hour_monitor.o": {
+      "sha256": "6db3bf3b7e3f822c23110f74e05279c5a5604c3a7fdf18208be43ff0f7f4b0ba",
+      "bytes": 29348
+    },
+    "rmerlin-integration-20260916/build/management-rc/ic.o": {
+      "sha256": "9c26baf1e5c1b6fe0a81ed512b68d4ad3aedd604e58b75471040a010ffd952eb",
+      "bytes": 63248
+    },
+    "rmerlin-integration-20260916/build/management-rc/init-broadcom.o": {
+      "sha256": "170c20cfdd3d96c3e9488f5886704eb0f8706c2b103c5599e92ab0b18852a2a7",
+      "bytes": 977464
+    },
+    "rmerlin-integration-20260916/build/management-rc/init.o": {
+      "sha256": "341c18663a0f3c2b3f09aa5006d8012c72250e09e3fa24799cd98b03e94768cb",
+      "bytes": 397736
+    },
+    "rmerlin-integration-20260916/build/management-rc/interface.o": {
+      "sha256": "caef4ded2ecdcf322cbd758588b4004026b08a3215edb3c3443023acc1297c37",
+      "bytes": 66736
+    },
+    "rmerlin-integration-20260916/build/management-rc/lan.o": {
+      "sha256": "28a8bcbed8c4fcf6a5bcc3d9528f27114c9862b27badb97a80cb0dcaa83dc950",
+      "bytes": 379700
+    },
+    "rmerlin-integration-20260916/build/management-rc/ledg.o": {
+      "sha256": "e081ea3fcd976a4458979683de659bb3407bf9b5a63b1595a2d6989e06ba3ff4",
+      "bytes": 24388
+    },
+    "rmerlin-integration-20260916/build/management-rc/linklist.o": {
+      "sha256": "2ab24b347da7ea17b55d7f1475be3c7f8f91cda8114d75ad5e03bdb8645c8bac",
+      "bytes": 13496
+    },
+    "rmerlin-integration-20260916/build/management-rc/mtd.o": {
+      "sha256": "74b5afc98a528feecfbda953b27c008c70966fb384179626b9b48631806714c4",
+      "bytes": 79284
+    },
+    "rmerlin-integration-20260916/build/management-rc/natnl_api.o": {
+      "sha256": "1ec08aa88ff8fb23e3595731d5f57b8445fca819ccfb032a6bda1849197b6b96",
+      "bytes": 21888
+    },
+    "rmerlin-integration-20260916/build/management-rc/nbr_monitor.o": {
+      "sha256": "a90a378db9fa226d5f9fe1e46f24be929a86a664b5100d3bc78e007e14bf2c18",
+      "bytes": 17324
+    },
+    "rmerlin-integration-20260916/build/management-rc/netool.o": {
+      "sha256": "5f91b52df20b624cb04038a8429a8386ccc5f6f2b2e72d5509b0b9db52b74f3b",
+      "bytes": 85144
+    },
+    "rmerlin-integration-20260916/build/management-rc/nt_mail.o": {
+      "sha256": "e85e5d943182865f9db1e170bd0948c6a976aa6a3b1d45eb2f5c26f076343e2a",
+      "bytes": 8192
+    },
+    "rmerlin-integration-20260916/build/management-rc/ntp.o": {
+      "sha256": "dac34672c4974e69d256a76665f465f178f67253d00d52fdfdcf10a582ae1fa4",
+      "bytes": 33412
+    },
+    "rmerlin-integration-20260916/build/management-rc/ntpd.o": {
+      "sha256": "892803aa1106cacc11d002021beb9ea5ce30ef09fd2bd0c722b7868e7688e9cf",
+      "bytes": 19584
+    },
+    "rmerlin-integration-20260916/build/management-rc/obd-broadcom.o": {
+      "sha256": "0fc0aa89e157969c2115b4a612c7d18fa5f5497471bfc52717911eb226be24b8",
+      "bytes": 19108
+    },
+    "rmerlin-integration-20260916/build/management-rc/obd.o": {
+      "sha256": "bf3cabb104526e36d08ee6dfeea2391a8f663ed2659023e77dfe6b8b8e8ff2fc",
+      "bytes": 19660
+    },
+    "rmerlin-integration-20260916/build/management-rc/obd_eth.o": {
+      "sha256": "24583cdd5e5f80bee7e051f2cd4e2ade0ed8435207e857c32217f32d734f3fbf",
+      "bytes": 30928
+    },
+    "rmerlin-integration-20260916/build/management-rc/obd_monitor.o": {
+      "sha256": "30973d86e8a4b2d3ff1710b24b1051ac2ec4fd7ddb9f8121108a5450b6b7c551",
+      "bytes": 27284
+    },
+    "rmerlin-integration-20260916/build/management-rc/ocnvcd.o": {
+      "sha256": "f938f3a5b3758da81ab971990ee759e47ad581f80974f29c7b4717835df429d3",
+      "bytes": 26164
+    },
+    "rmerlin-integration-20260916/build/management-rc/openvpn.o": {
+      "sha256": "28d004d4c7c47555d4f2c1b0a95a12599e28e4459125a6d16421c7a1d0456098",
+      "bytes": 19244
+    },
+    "rmerlin-integration-20260916/build/management-rc/ovpn.o": {
+      "sha256": "293cb1ad041ebe3ee9bf7f3af2bad44fbc5fc31d913dd65eb21a65fa51b489ff",
+      "bytes": 18780
+    },
+    "rmerlin-integration-20260916/build/management-rc/pc.o": {
+      "sha256": "7b4594455fa28156e777472cafe2c1bb6c519d73ddb830ffe4fae74be21fd109",
+      "bytes": 102148
+    },
+    "rmerlin-integration-20260916/build/management-rc/pc_block.o": {
+      "sha256": "2bc3fd6883b1c65a2c6178eb2491eb4f384324b1a4ba124d85f7e874a81cb025",
+      "bytes": 57684
+    },
+    "rmerlin-integration-20260916/build/management-rc/pc_reward.o": {
+      "sha256": "316b26a597315508ebea59908625923e52424ffefcb51a102290e46ad0f2be98",
+      "bytes": 42888
+    },
+    "rmerlin-integration-20260916/build/management-rc/pc_tmp.o": {
+      "sha256": "c8c8932ba1105a8474d00f7e3c4d28372701e55ce15b21ac714f2ad613ca10d6",
+      "bytes": 31620
+    },
+    "rmerlin-integration-20260916/build/management-rc/pctime.o": {
+      "sha256": "ac6979a2c70da65aae6bb8cfccd55a038c6fd718e0dc9f17ba9b1938a1e40707",
+      "bytes": 26064
+    },
+    "rmerlin-integration-20260916/build/management-rc/ppp.o": {
+      "sha256": "cad2e52a52ee9923163cd0ae6d496fb75c21ecd9368c1381c59a36eace32292e",
+      "bytes": 44540
+    },
+    "rmerlin-integration-20260916/build/management-rc/pppd.o": {
+      "sha256": "3816358f57200bdae72ffff6774f0420a2b5eeb1fb124dcdff5ccc2b9a03dd16",
+      "bytes": 52084
+    },
+    "rmerlin-integration-20260916/build/management-rc/pressure.o": {
+      "sha256": "b5cc13868b80777b0945623ab7d3a43d766f55eb6af7126700f096b48f0860fd",
+      "bytes": 43340
+    },
+    "rmerlin-integration-20260916/build/management-rc/private.o": {
+      "sha256": "d7dd69bcb219f15615e06baa6a4725d3847b39b01f1c179764c463c9c0abcd9f",
+      "bytes": 95904
+    },
+    "rmerlin-integration-20260916/build/management-rc/psta_monitor.o": {
+      "sha256": "7e91a418de7b3056b366468dda31683ad37821d98effd8ae0621514bae561aee",
+      "bytes": 12224
+    },
+    "rmerlin-integration-20260916/build/management-rc/pwdec.o": {
+      "sha256": "5b16bc5725ace43d5d46db4c515278167ba4a8e9d485eb5e98967985f0b1dcd5",
+      "bytes": 4644
+    },
+    "rmerlin-integration-20260916/build/management-rc/qos.o": {
+      "sha256": "ebc4eb999eb235856993fdf1c5f5c09de6c437b8af8a06b236e6cab8c352590d",
+      "bytes": 229100
+    },
+    "rmerlin-integration-20260916/build/management-rc/rc-client.o": {
+      "sha256": "1742309edf953d6d1bc2327e43d2f812fc4419c34d177c9ee0d58cee46c6b766",
+      "bytes": 16588
+    },
+    "rmerlin-integration-20260916/build/management-rc/rc-legacy.o": {
+      "sha256": "e531469100924fda77e351006f5583a31c0da076085dd20702f0a452882abb88",
+      "bytes": 6432
+    },
+    "rmerlin-integration-20260916/build/management-rc/rc-manager.o": {
+      "sha256": "fede721191cf8a91d230efd14b9e1ca260ccb49e6e15c0f24aece9a00caf71b6",
+      "bytes": 20884
+    },
+    "rmerlin-integration-20260916/build/management-rc/rc.o": {
+      "sha256": "076bc463f599e6f784b9ff190b3bc54fd946efad84ba4c98a599c49d9099a9d9",
+      "bytes": 278972
+    },
+    "rmerlin-integration-20260916/build/management-rc/rmd.o": {
+      "sha256": "cf836d31245fb07c27fd87d3696a50d157d73a2d455314068fa8f873b7eb6caa",
+      "bytes": 34824
+    },
+    "rmerlin-integration-20260916/build/management-rc/roamast-broadcom.o": {
+      "sha256": "7d9ab8f7471c6b7930be1df47754b0974d797305952a60f3737fb17b12634342",
+      "bytes": 59296
+    },
+    "rmerlin-integration-20260916/build/management-rc/roamast.o": {
+      "sha256": "29831d42be11b03e4b2c9a6f7de9e149378cb9e81a329a4d4645ed02a6f2b3c2",
+      "bytes": 126648
+    },
+    "rmerlin-integration-20260916/build/management-rc/rtkmonitor.o": {
+      "sha256": "d6afcb85b603ac6406b0d5ffd4d195f7fa8c40d7a6fd6b8775158673cc3ceab4",
+      "bytes": 7044
+    },
+    "rmerlin-integration-20260916/build/management-rc/s46comm.o": {
+      "sha256": "7cc148e8994ad6d82ba4fe270c6b016f144ef4531369903c8570ea10b08b9247",
+      "bytes": 31148
+    },
+    "rmerlin-integration-20260916/build/management-rc/sched_daemon.o": {
+      "sha256": "f4a26ef5a2285c64dc43e9040e1c407871b0c91a5207173f98aad98c9e8c53fb",
+      "bytes": 77124
+    },
+    "rmerlin-integration-20260916/build/management-rc/sdn-interface-broadcom.o": {
+      "sha256": "ff53288434025130c87f142f1c554df5d872727d52cc9663f8a0c86631498ba5",
+      "bytes": 4160
+    },
+    "rmerlin-integration-20260916/build/management-rc/sdn.o": {
+      "sha256": "5b20a11b14ef40744482b754dd6b994a408aaf6e22e9ca488ba23829cceb2465",
+      "bytes": 115676
+    },
+    "rmerlin-integration-20260916/build/management-rc/snmpd.o": {
+      "sha256": "84a3f7ab49695365a239b9606a31c774180943898033497136f3ffe6b82511c8",
+      "bytes": 25612
+    },
+    "rmerlin-integration-20260916/build/management-rc/ssh.o": {
+      "sha256": "0c235213c84a82506c776d8b73c32d5bb81a739190f9755be2149d8c4acafb8e",
+      "bytes": 19816
+    },
+    "rmerlin-integration-20260916/build/management-rc/tcode_brcm.o": {
+      "sha256": "3df11e7d3ac7b9da44c7f6020fc095c60048d7f341e100ef67226377a646a4be",
+      "bytes": 33056
+    },
+    "rmerlin-integration-20260916/build/management-rc/tcode_rc.o": {
+      "sha256": "7fe275f4c1260415fea8207fb2ac305daaedbdeaf6d609cacac6af00014e07cc",
+      "bytes": 5200
+    },
+    "rmerlin-integration-20260916/build/management-rc/tcpcheck.o": {
+      "sha256": "e6643d116af6b64e158d70c421cb6c94825733b9fd82a608af36ae7ff2f9d7ab",
+      "bytes": 40988
+    },
+    "rmerlin-integration-20260916/build/management-rc/timemachine.o": {
+      "sha256": "979e3e42bd72e8254422452c153e9f24fd372aca02a67304b641caff5a8be890",
+      "bytes": 59488
+    },
+    "rmerlin-integration-20260916/build/management-rc/tpvpn.o": {
+      "sha256": "236164ff49ee35203f264e3a67d70573dda7cdbf9524cdd2d8deb97253ea6931",
+      "bytes": 28740
+    },
+    "rmerlin-integration-20260916/build/management-rc/ubifs.o": {
+      "sha256": "c7b9696191c065a2c0dce6142f17d192466aa170c7e5dd247702ec3313778ba5",
+      "bytes": 29692
+    },
+    "rmerlin-integration-20260916/build/management-rc/udhcpc.o": {
+      "sha256": "80dfb8b665251ae9100271b002fd2c0a6d5165dc8bbc2f7ea814ce69c807bf1a",
+      "bytes": 191068
+    },
+    "rmerlin-integration-20260916/build/management-rc/usb.o": {
+      "sha256": "dfed7ee6eba1c99c4ab78b82ba4dfa300af7aee9881b837a21dafbd853ed12eb",
+      "bytes": 354848
+    },
+    "rmerlin-integration-20260916/build/management-rc/usb_devices.o": {
+      "sha256": "212390c502ec2ed7da094904026bb58a701f36bab3bb29f2518c538a57860e4d",
+      "bytes": 627232
+    },
+    "rmerlin-integration-20260916/build/management-rc/usbled.o": {
+      "sha256": "8db1b9df781e7f3eeecbdb52c12acb926e95292f4bdb7557b0647db045e10333",
+      "bytes": 38768
+    },
+    "rmerlin-integration-20260916/build/management-rc/v6plusd.o": {
+      "sha256": "2fcb0074856ae0de40cb1421b95b614fb4b897d49b46de26c6d2d19054c4431c",
+      "bytes": 28480
+    },
+    "rmerlin-integration-20260916/build/management-rc/vpn.o": {
+      "sha256": "8b43710859dd84b509c13cc0a469aba1e3337f444dc0a125100230a5df02ce05",
+      "bytes": 52228
+    },
+    "rmerlin-integration-20260916/build/management-rc/vpnc_fusion.o": {
+      "sha256": "f499d4cdd1520f3417b7245de76dfe9ee1610173978ef0708db6b9d4d2876f64",
+      "bytes": 190568
+    },
+    "rmerlin-integration-20260916/build/management-rc/vpnc_legacy.o": {
+      "sha256": "251ef46f6e8b88bdbaea96402a2cc6068b7b7478d0f9e5b5ef95c7836bc44edc",
+      "bytes": 80972
+    },
+    "rmerlin-integration-20260916/build/management-rc/wan.o": {
+      "sha256": "39175396b5342f9391637e1e19a179b6e8cb6bd31a8299d5cdec22a7490ab039",
+      "bytes": 311296
+    },
+    "rmerlin-integration-20260916/build/management-rc/wanduck.o": {
+      "sha256": "33be6846c78b0043559bae4ffab7f4015d1a39a9867cc78d66eadff749b35bab",
+      "bytes": 252836
+    },
+    "rmerlin-integration-20260916/build/management-rc/watchdog.o": {
+      "sha256": "0aa0e04f3df8bda18af21d7c3ed673d7ad2b2d54add8afb53d21d230dd04e55e",
+      "bytes": 304448
+    },
+    "rmerlin-integration-20260916/build/management-rc/wireguard.o": {
+      "sha256": "cfa5c74895f071a02c95849ad7a34051100f79682652525d318bdbbbd35e2828",
+      "bytes": 245844
+    },
+    "rmerlin-integration-20260916/build/management-rc/wireless.o": {
+      "sha256": "14bec0bce154f40fe09d1a8e41fb2d817401aa05e7e14e5eb565644b9d550dad",
+      "bytes": 46220
+    },
+    "rmerlin-integration-20260916/build/management-rc/wps-broadcom.o": {
+      "sha256": "b98ce3b5402690d98c6c875487d79d4f45a0840429d3cd3a36c30e74d87adfee",
+      "bytes": 104488
+    },
+    "rmerlin-integration-20260916/build/management-rc/wpsaide.o": {
+      "sha256": "2c05cb3adc991ed8ecfba5e87ce42ec8919ae04d16a7691ce857e6d025d2d99a",
+      "bytes": 19560
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/amas-utils/amas-utils.h": {
+      "sha256": "cbcc91cbfddc92adf98e89545e3daa33154348d68601b7431d839ee9a65e2baa",
+      "bytes": 9526
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/asus_include/bwdpi_common.h": {
+      "sha256": "b0315a18b8524cf524b4d5dae48b83d272a8b2208a424c35d15a2641e0c0d5f8",
+      "bytes": 8100
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/include/udb/ioctl/udb_ioctl_common.h": {
+      "sha256": "51e519ff7e2247e1107e0d637fc42104757969bef84166ea52e8c4c10cd3d7ae",
+      "bytes": 5671
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/include/udb/ioctl/udb_ioctl_mesh.h": {
+      "sha256": "98157c99c4a5c33e5253735c83ebb9f0366ad63451ea4d403594d214c3c6bcad",
+      "bytes": 2812
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/conf_app.h": {
+      "sha256": "adab68763e219098740480384fc5138def7bdc6978263fdaedeecb454c14abf6",
+      "bytes": 6583
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/ioc_common.h": {
+      "sha256": "fc230745ad29823052b71a1bafd4180fb971178c841e76fdc12dae8e9f7734e0",
+      "bytes": 3087
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/ioc_mesh.h": {
+      "sha256": "63f23fa2fb2f3b8e914e4056ae8beaf7780a8d540842a5b8fc5bd83b2d328493",
+      "bytes": 1981
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/linux/list.h": {
+      "sha256": "008217e211cf3d6b17fa0419a399c3120e8f08e3146a8efd7a2d078dbeee588c",
+      "bytes": 23630
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/linux/poison.h": {
+      "sha256": "e342d3a507eb5e4b4ee45f6b6e978e040a7f49dc89f6a07dc02f42d55f367441",
+      "bytes": 4406
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_clientlist.h": {
+      "sha256": "657267852e1c791f82779c1ab089d632137ac1f4cab97557f9662f219968376a",
+      "bytes": 913
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_event.h": {
+      "sha256": "bd3ff063db5126dc4a3296c84eb34ce13ca93b49c07e946c9a40def1622b719c",
+      "bytes": 4498
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_lib.h": {
+      "sha256": "acad5088389b3afcc1a900ac639137cc386af0abc47948508a7ac15a9fe513f3",
+      "bytes": 2507
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_slavelist.h": {
+      "sha256": "c2ab9cc347c6f034cec9b04d742a013576bdd3907b3fb6fea3fb5f4f03cef7e9",
+      "bytes": 6899
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/arraylist.h": {
+      "sha256": "b0d5cd2b060e1092a50b7ea01fe2bd94bac6b59948f5149e12f487fd2a8f72e3",
+      "bytes": 1089
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/bits.h": {
+      "sha256": "70c6a71ce7ffaa5270140cd2882312d39cfb87cf47fdd76e8ab56b3ef68a3def",
+      "bytes": 693
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/debug.h": {
+      "sha256": "953be7c1ee8f7756e36bf9c3c20c3d48aa04e02c93cc8b2dba4fc65dcf2fa363",
+      "bytes": 1629
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json.h": {
+      "sha256": "3afeaf3fc819d3c46316ab3d9b30133f8d48724da00c2f0d2617a59bc78e2cdc",
+      "bytes": 699
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_c_version.h": {
+      "sha256": "774ba0ec937299092c85cb821448f82b17726cdcab91a9f4ec63f835e38c352a",
+      "bytes": 682
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_inttypes.h": {
+      "sha256": "f68206a3cb3f74b923a684f8b3d6449e5b08d68f48158388e8ea8e4e6b208323",
+      "bytes": 580
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_object.h": {
+      "sha256": "1fa963d10f5919a111b219e9cf2af53bd3c62840c503fb83fbdcf9f5914f0b7e",
+      "bytes": 21475
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_object_iterator.h": {
+      "sha256": "1197fb5b98a3a1f9215b9ea0cd921a365357df42feee6a6670e794e78f2574e8",
+      "bytes": 8187
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_tokener.h": {
+      "sha256": "c5a91185da2d3f3c2d45875fdaa189952b7d6a136db5ef85a367188b4fe464b7",
+      "bytes": 6858
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_util.h": {
+      "sha256": "dbe7037b01bf07222505eb0d24dadcd90675168c58b4a1d4a55f2ad3629fed82",
+      "bytes": 1046
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/linkhash.h": {
+      "sha256": "a4e212d017870da0b6fcb60faad85781ab3580ef08879d42c5e6415869adf59a",
+      "bytes": 6790
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libasuslog/libasuslog.h": {
+      "sha256": "4607532a48fa5bc97e0a394bbd0de86f5305eb564ee49919f261587a4f13da99",
+      "bytes": 1241
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libdisk/disk_io_tools.h": {
+      "sha256": "3327abb0c71959800b9a2da795e0b299c144d94bf5505f42ce0dfcf0a6e137a8",
+      "bytes": 1842
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libdisk/disk_share.h": {
+      "sha256": "9354c512f58a9ba6748ac82ec66322c5f97eeaa2131af7151d533165e8a3162b",
+      "bytes": 3678
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libdisk/usb_info.h": {
+      "sha256": "c4dea6292b25e30694c4580de2b959c8029e3ef998694eec9de0947e2fbed3f1",
+      "bytes": 6797
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libletsencrypt/letsencrypt_config.h": {
+      "sha256": "7ccb47bab58d599c19c9bb77a73a6318a194629b53f9bd9072cb6ff0b224a9f9",
+      "bytes": 1753
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libletsencrypt/letsencrypt_control.h": {
+      "sha256": "2c7cac5ac7a1bb99b65e7f487394e207d260b1e30d847c2152136551f10e4a72",
+      "bytes": 389
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/amvpn_routing.h": {
+      "sha256": "9d65b164b1e61bc5e7f24215813a6c0dc19a7682fdd5b1a1994304545a274356",
+      "bytes": 1602
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_config.h": {
+      "sha256": "9306b1c2b66fb843e16bfd9d7f03fd3d56cdce81f454d0afe9637319174603a1",
+      "bytes": 5677
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_control.h": {
+      "sha256": "23af539dc6407e92d2c0e64a7d5ccdc650aa909eb9d7c9311046d5f0321cbe04",
+      "bytes": 1766
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_setup.h": {
+      "sha256": "1302d0bcce784902a7a1392bf988f524b11de7f796aead1a3648609634d759dc",
+      "bytes": 1729
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/nt_center/lib/libnt.h": {
+      "sha256": "86d8e64a7352209908344b72ad5ecaae3daaec7544eac88764f5d878e91e7199",
+      "bytes": 3109
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/nt_center/lib/nt_common.h": {
+      "sha256": "ffe03916a00b9123920646fe1efc0d64ea9d12d8b097f2e8edf05855887712f4",
+      "bytes": 8105
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/nt_center/lib/nt_db.h": {
+      "sha256": "b4927b6b8a66915e3ad00e12fe435d92bcd92a3525149144906a2e1435228790",
+      "bytes": 160
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/nt_center/lib/nt_eInfo.h": {
+      "sha256": "429a5fb3dde32498a260342bb5f9479137bad42f14dad0a4c9d81ee5db15d761",
+      "bytes": 9501
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/amas_lib.h": {
+      "sha256": "8e92dd9ec4c064998e2a65bb1f65c7fb77a44e13aba3bb04025710c10de3bb8d",
+      "bytes": 2845
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/firewall_sdn.h": {
+      "sha256": "26f26f3a4f207f8f25713aca17c1f917e8001e57e9cd8882c4dffac0f7c4f323",
+      "bytes": 2293
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ic.h": {
+      "sha256": "0bfd32ef6f6294f0a850f1a2786a9427e8efa6872c8ba8a95a91b44d5ffc8aed",
+      "bytes": 1495
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/linklist.h": {
+      "sha256": "fe78b3a27865a46bfa1a680c1a7d31e9585482eaef7cf78ba457399c9bb5a463",
+      "bytes": 1342
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pc.h": {
+      "sha256": "1862124da2776db03f27c034921720d804c160ae5fcc6022afd10f7234b42915",
+      "bytes": 4127
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-bridge.h": {
+      "sha256": "33d5198888896570ab5f693fe3b69aec67b5a361516c1f1eae0b4317ff20de06",
+      "bytes": 1019
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-services.c": {
+      "sha256": "c32cc0e4e94a7a90b5979d81af847cc78e359219f156291fe959cdd0df0e92ee",
+      "bytes": 2984
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-services.h": {
+      "sha256": "f879d482114ad5f55a3a9624affc703b99630073f308f8ff86734b8568cd2ad1",
+      "bytes": 345
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc.h": {
+      "sha256": "aba63d69d64d52050d0e477178256f095623028b5a04006838e6964098912752",
+      "bytes": 136893
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc_ipsec.h": {
+      "sha256": "9d9a242a2959be8cade9ba90d8a02a89e4379f67b9c47facb5abd15e4f160ea3",
+      "bytes": 6446
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sdn.h": {
+      "sha256": "8820f72aabbd3438b8c73114288d3403bb1af21f049cf2728a4fe2363210e3ba",
+      "bytes": 1844
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/services.c": {
+      "sha256": "b0ec4918e7d0b71d562fbc3b9af6aeb824747f7260b6acc10ff646bbda538b9f",
+      "bytes": 721836
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sysdeps.h": {
+      "sha256": "a31bee995b38bc677facefd91306054f578836fe37c33f4e2b8b5bb60fc8057e",
+      "bytes": 4856
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/amas_apg_shared.h": {
+      "sha256": "31c71fb3e95b8c721d0796abe54aee3526e4d82aaa4b474a0ece77d387ec903d",
+      "bytes": 18268
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/amas_wgn_shared.h": {
+      "sha256": "a6e07228bae1c85d45f38980cda405f029da3cc3cf38a1a34ca2991703eb4c9e",
+      "bytes": 5597
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/flash_mtd.h": {
+      "sha256": "bb985b64c0f9297fe21e05cb72957f73c0d0a9063e8020dd302ed33c07d3b24d",
+      "bytes": 1712
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/model.h": {
+      "sha256": "05c4414e9d7689f72d786877993129f220d7a6d1374be40f69bb3fa7d8adb458",
+      "bytes": 6397
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/mtlan_utils.h": {
+      "sha256": "16b5e320355404d86e8127e7340bf7368cc5afc5c19053b4b209a11ccea42540",
+      "bytes": 7468
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/network_utility.h": {
+      "sha256": "e4ce63a34679244efddb9042ec87f8f4127c6876c312ea20e718f5f5ca64b8e7",
+      "bytes": 1026
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/rtconfig.h": {
+      "sha256": "c6694c1a31b68dc6177f04a3e41e4bc4de8964de27ebd19ccc5cad0537ff7747",
+      "bytes": 19919
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/rtstate.h": {
+      "sha256": "8d8b7f185069ff18e7094b20d2169d03b36c5b9319e0cb3329e0724a0957ae74",
+      "bytes": 14260
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sched_v2.h": {
+      "sha256": "3d4d0a5de093fef330bce4a779d9d4e2185711c460bf48a6e60cee0cf335f084",
+      "bytes": 4239
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/shared.h": {
+      "sha256": "50b7a16aa170f2b992405033d896f84d7a632fdab9f0fbbd72b449dda8d2e215",
+      "bytes": 196922
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/shutils.h": {
+      "sha256": "4057d6a223eeafd9b85f08bab19d32dcd61a61ddaaa7a90ea4ca67801a4e85f7",
+      "bytes": 23739
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/vpn_utils.h": {
+      "sha256": "17d8dec8adccb3a64e6a4a0ff9c9e4959f917a4d24d3529023721d95380ddef9",
+      "bytes": 4626
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/sqlite/sqlite3.h": {
+      "sha256": "1184605a375f9ccabd6efb340a3b82baf5bdd0aa1ba77e7132df35c58839b5d4",
+      "bytes": 625519
+    },
+    "rmerlin-ipsec-fix-20260916/build/rc_ipsec.o": {
+      "sha256": "5edba3ec6455cad758e8e9f29253208c4493b6f85e31ecdfa943d886322aa911",
+      "bytes": 269340
+    }
+  },
+  "count": 238,
+  "parent_git_commit": "0f9e311424bcaacc118f581d3602ba15ec2675dc",
+  "requires_parent_checkpoints": [
+    "rmerlin-integration-20260916",
+    "rmerlin-ipsec-fix-20260916",
+    "rmerlin-httpd-fix-20260917",
+    "systemd-lab-20260916",
+    "a53-runtimes-20260916",
+    "gcc162-usb",
+    "leon-cgroup-20260915",
+    "multiarch-loader-20260916"
+  ],
+  "notes": "Full SDK saved privately; GCC toolchains remain dependencies, not firmware-repository binaries"
+}

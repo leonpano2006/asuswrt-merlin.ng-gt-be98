@@ -1,0 +1,119 @@
+--- a/release/src/router/rc/services.c
++++ b/release/src/router/rc/services.c
+@@ -4686,6 +4686,11 @@
+ void
+ stop_infosvr()
+ {
++	int delegated = leon_rc_infosvr(0);
++	if (delegated != 0) {
++		if (delegated < 0) perror("systemd infosvr stop");
++		return;
++	}
+ 	killall_tk("infosvr");
+ }
+ 
+@@ -4700,6 +4705,11 @@
+ 		return 0;
+ #endif
+ 
++	int delegated = leon_rc_infosvr(1);
++	if (delegated != 0) {
++		if (delegated < 0) perror("systemd infosvr start");
++		return delegated < 0 ? -1 : 0;
++	}
+ 	return _eval(infosvr_argv, NULL, 0, &pid);
+ }
+ 
+@@ -14931,6 +14941,11 @@
+ #ifdef RTCONFIG_CROND
+ void start_cron(void)
+ {
++	int delegated = leon_rc_crond(1);
++	if (delegated != 0) {
++		if (delegated < 0) perror("systemd crond start");
++		return;
++	}
+ 	stop_cron();
+ 	eval("crond", "-l", "9");
+ }
+@@ -14938,6 +14953,11 @@
+ 
+ void stop_cron(void)
+ {
++	int delegated = leon_rc_crond(0);
++	if (delegated != 0) {
++		if (delegated < 0) perror("systemd crond stop");
++		return;
++	}
+ 	killall_tk("crond");
+ }
+ #endif
+@@ -15465,7 +15485,9 @@
+ 	_check(pids("hotplug2"), "hotplug2", start_hotplug2);
+ #endif
+ #ifdef RTCONFIG_CROND
+-	_check(pids("crond"), "crond", start_cron);
++	/* systemd is the only supervisor after ownership is transferred. */
++	if (!leon_rc_managed())
++		_check(pids("crond"), "crond", start_cron);
+ #endif
+ 	_check(no_need_watchdog(), "watchdog", start_watchdog);
+ 
+--- a/release/src/router/rc/rc-services.c
++++ b/release/src/router/rc/rc-services.c
+@@ -9,14 +9,14 @@
+ #include <time.h>
+ #include <unistd.h>
+ 
+-/* Only this service is delegated in phase 1. Use fixed argv, clear the child
++/* Use fixed service names and argv, clear the child
+  * signal mask, and protect waitpid from init.c's SIGCHLD reaper. The unit's
+  * JobTimeoutSec bounds the job; this separate deadline bounds its client. */
+-int leon_rc_haveged(int start)
++static int request_unit(const char *unit, int start, int restart)
+ {
+     extern char **environ;
+     char *args[] = { "/usr/bin/systemctl", "--no-ask-password", "--no-pager",
+-                     "--job-mode=fail", NULL, "asus-haveged.service", NULL };
++                     "--job-mode=fail", NULL, (char *)unit, NULL };
+     posix_spawnattr_t attr;
+     sigset_t empty, block, previous;
+     struct timespec begin, now, pause = { .tv_nsec = 100000000 };
+@@ -26,7 +26,7 @@
+     if (start != 0 && start != 1) { errno = EINVAL; return -1; }
+     if (!leon_rc_managed()) return 0;
+     if (geteuid() != 0 || !leon_rc_is_manager()) { errno = EPERM; return -1; }
+-    args[4] = start ? "start" : "stop";
++    args[4] = start ? (restart ? "restart" : "start") : "stop";
+     if (clock_gettime(CLOCK_MONOTONIC, &begin)) return -1;
+     sigemptyset(&empty);
+     sigemptyset(&block); sigaddset(&block, SIGCHLD);
+@@ -61,3 +61,19 @@
+     if (error) { errno = error; return -1; }
+     return 1;
+ }
++
++int leon_rc_haveged(int start)
++{
++    return request_unit("asus-haveged.service", start, 0);
++}
++
++int leon_rc_crond(int start)
++{
++    /* ASUS start_cron() also refreshes the daemon after timezone changes. */
++    return request_unit("asus-crond.service", start, 1);
++}
++
++int leon_rc_infosvr(int start)
++{
++    return request_unit("asus-infosvr.service", start, 0);
++}
+--- a/release/src/router/rc/rc-services.h
++++ b/release/src/router/rc/rc-services.h
+@@ -4,4 +4,6 @@
+ /* 0: legacy init owns it; 1: systemd completed the request; -1: error.
+  * A managed error must never fall through to the legacy launcher. */
+ int leon_rc_haveged(int start);
++int leon_rc_crond(int start);
++int leon_rc_infosvr(int start);
+ #endif

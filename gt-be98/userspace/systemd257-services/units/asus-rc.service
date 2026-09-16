@@ -1,0 +1,27 @@
+[Unit]
+Description=ASUS hardware and legacy service manager
+DefaultDependencies=no
+After=systemd-journald.service tmp.mount var.mount run.mount tmp-mnt.mount data.mount jffs.mount usr-local.mount tmp-mnt-JFFS.mount
+RequiresMountsFor=/tmp /var /run /tmp/mnt
+Requires=systemd-journald.service asus-cron-cleanup.service
+After=asus-cron-cleanup.service
+Conflicts=shutdown.target
+Before=shutdown.target
+FailureAction=reboot
+
+[Service]
+Type=notify
+NotifyAccess=main
+RuntimeDirectory=leon-rc
+RuntimeDirectoryMode=0700
+ExecStart=/usr/libexec/leon-rc-broker /usr/sbin/rc
+KillMode=mixed
+TimeoutStartSec=300
+TimeoutStopSec=180
+Restart=no
+Delegate=yes
+TasksMax=infinity
+TasksAccounting=no
+MemoryAccounting=no
+StandardOutput=journal+console
+StandardError=journal+console

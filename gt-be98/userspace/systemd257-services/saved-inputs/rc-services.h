@@ -4,6 +4,4 @@
 /* 0: legacy init owns it; 1: systemd completed the request; -1: error.
  * A managed error must never fall through to the legacy launcher. */
 int leon_rc_haveged(int start);
-int leon_rc_crond(int start);
-int leon_rc_infosvr(int start);
 #endif
