@@ -1,0 +1,9 @@
+{
+  "archive": "systemd-rc-compat-backup.tar",
+  "bytes": 275056640,
+  "sha256": "eef532b28dafcc97c1773b611792f0c3ff2f268754caaa64c54c38f815e1e3d1",
+  "verified_members": 1765,
+  "includes_code_patch_rc_objects_headers_final_guest": true,
+  "external_dependencies": "evidence/build-dependencies.json",
+  "router_modified": false
+}

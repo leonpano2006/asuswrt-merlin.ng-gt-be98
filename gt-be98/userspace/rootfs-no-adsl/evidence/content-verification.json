@@ -1,0 +1,19 @@
+{
+  "removed": {
+    "rom/etc/adsl1/adsl_phy.bin": {
+      "mode": 436,
+      "kind": "file",
+      "sha256": "bea8e7fdd61d00ed7ad51054cddcfaea264c0247359f2181ecd02bdf44580011",
+      "bytes": 1162836
+    }
+  },
+  "added_paths": [],
+  "changed_remaining_paths": [],
+  "remaining_inventory_sha256": "e3b20b4d4bf3d46a9e4fd2f9de06f02d637386b316f0d3d09da49714fd831339",
+  "all_paths": 4609,
+  "regular_files": 3482,
+  "module_files_unchanged": 182,
+  "all_remaining_contents_modes_links_match": true,
+  "all_remaining_timestamps_match": true,
+  "original_source_unchanged": true
+}

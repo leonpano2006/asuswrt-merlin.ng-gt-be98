@@ -1,0 +1,105 @@
+{
+  "native_host": "aarch64",
+  "target_runtime": "glibc 2.44",
+  "compiler_inputs_match_prior_verified_archive": true,
+  "verified_external_files": 6838,
+  "native_compiler_archive_on_ml350": {
+    "path": "/home/leonpano/amng-out/a53-runtimes-20260916/a53-runtimes-backup.tar",
+    "sha256": "9789859663846922442a0a11057cba93738364f556e2c417544a436f3636db23",
+    "provides": [
+      "native GCC 16.2 compiler and source",
+      "original glibc 2.44 SDKs",
+      "A53 libgcc objects",
+      "ARMEL compiler wrappers"
+    ]
+  },
+  "armel_test_compiler": {
+    "driver": "armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-gcc-15",
+    "sha256": "e365a6b1721565fe88f9d11a9d28b144d9c12b0279c82fece55ac5c660ab2c59",
+    "configuration": {
+      "abi": "armel",
+      "triplet": "arm-linux-gnueabi",
+      "sysroot": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel",
+      "flags": [
+        "-mcpu=cortex-a53+crypto",
+        "-march=armv8-a+crc+crypto",
+        "-mfpu=crypto-neon-fp-armv8",
+        "-mfloat-abi=softfp"
+      ],
+      "cc": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cc",
+      "cxx": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cxx",
+      "host_library_dir": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/lib/aarch64-linux-gnu",
+      "tools": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-",
+      "compiler_version": "15.2.0",
+      "glibc": "2.44",
+      "glibc_source_commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3"
+    },
+    "archive_on_ml350": "/home/leonpano/amng-out/armel-multiarch-20260915/armel-multiarch-backup.tar",
+    "archive_sha256": "422b47fa80ee39008226ecbc1e79725e16af69d4ba1b0d3b5098666d1aa4e21d"
+  },
+  "new_isolated_sdk_saved_in_this_backup": true,
+  "full_recompile_requires_prior_compiler_archives_and_host_tools": true,
+  "saved_guest_can_be_retested_without_compilers": true,
+  "host_tools": {
+    "meson": {
+      "path": "/usr/bin/meson",
+      "sha256": "86ce39b460ec729602cd68281c44fce77779aaf7fe0bca39a840d73fe63033e0",
+      "version": "1.3.2"
+    },
+    "ninja": {
+      "path": "/usr/bin/ninja",
+      "sha256": "6e1421e278aab982b02cb43c68957ae8d3580444ad865323ff2823e243d7ed30",
+      "version": "1.11.1"
+    },
+    "python3": {
+      "path": "/usr/bin/python3.12",
+      "sha256": "c86f21d0da9290ece2d7d49a3f7ed52aed59cb029abdf0ea25c79634f6cbe960",
+      "version": "Python 3.12.3"
+    },
+    "autoconf": {
+      "path": "/usr/bin/autoconf",
+      "sha256": "6e1333c24e8f3bd9bd5e38c513cc47f9c8cc7dbb3dd30b0354b628ba0f4580dd",
+      "version": "autoconf (GNU Autoconf) 2.71"
+    },
+    "automake": {
+      "path": "/usr/bin/automake-1.16",
+      "sha256": "d408da48b279eff2996bb9a4c298b76645fdc61770af8da0e8fff3b5c60c804b",
+      "version": "automake (GNU automake) 1.16.5"
+    },
+    "make": {
+      "path": "/usr/bin/make",
+      "sha256": "abbecc214fcadef6530d1cc137bde7ceb74cae3f6b992c7d10a8669a7314c7e0",
+      "version": "GNU Make 4.3"
+    },
+    "aarch64-linux-gnu-as": {
+      "path": "/usr/bin/aarch64-linux-gnu-as",
+      "sha256": "1ffda50efb6d91b6b05ef933aced099595c36577594c0296c91161f2d13db374",
+      "version": "GNU assembler (GNU Binutils for Ubuntu) 2.42"
+    },
+    "aarch64-linux-gnu-ld": {
+      "path": "/usr/bin/aarch64-linux-gnu-ld.bfd",
+      "sha256": "1e4d3369b76845fa8e099b83513bf28f6f722e046f9b2cde1378c9e27f96d19c",
+      "version": "GNU ld (GNU Binutils for Ubuntu) 2.42"
+    },
+    "aarch64-linux-gnu-strip": {
+      "path": "/usr/bin/aarch64-linux-gnu-strip",
+      "sha256": "3a69e3786ea2884baf4d9811e509ba6d16be03d5d6f541103b8de317a2465fca",
+      "version": "GNU strip (GNU Binutils for Ubuntu) 2.42"
+    },
+    "pkg-config": {
+      "path": "/usr/bin/pkgconf",
+      "sha256": "b21b58e97876992968c82d823d74034abbc6a4176f8c9d5f2e0400f343e73fc1",
+      "version": "1.8.1"
+    },
+    "mksquashfs": {
+      "path": "/usr/bin/mksquashfs",
+      "sha256": "4bc5c66a81a1d86a5743e1c1ced12b6362e1b56c088d8241ef9ed5a3b8659317",
+      "version": "mksquashfs version 4.6.1 (2023/03/25)"
+    },
+    "qemu-system-aarch64": {
+      "path": "/usr/bin/qemu-system-aarch64",
+      "sha256": "e19e11bd054ccf0f3cfcea8e0acdcc4288de6abd2ed6c30f743092c362eb2673",
+      "version": "QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.18)"
+    }
+  }
+}

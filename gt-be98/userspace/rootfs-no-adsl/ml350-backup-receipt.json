@@ -1,0 +1,8 @@
+{
+  "host": "ML350",
+  "path": "/home/leonpano/amng-out/rootfs-no-adsl-20260916/rootfs-no-adsl-backup.tar",
+  "bytes": 518328320,
+  "sha256": "e54531059a2a00a7dffbb0d2660c960e20d8a021598b4e0c0e5aed817e507bec",
+  "verified_members": 40,
+  "router_modified": false
+}

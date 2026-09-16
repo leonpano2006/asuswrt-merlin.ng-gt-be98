@@ -1,0 +1,17 @@
+[
+  "make",
+  "-s",
+  "-f",
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/build/print-parent.mk",
+  "leon-print-parent",
+  "SRCBASE=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src",
+  "HND_SRC=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916",
+  "CROSS_COMPILE=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/github-push-20260915/dependency-sdks/arm32/bin/arm-buildroot-linux-gnueabi-",
+  "HND_ROUTER=y",
+  "HND_ROUTER_BE=y",
+  "HND_ROUTER_BE_4916=y",
+  "CUR_CHIP_PROFILE=6813",
+  "PROFILE=96813GW",
+  "BUILD_NAME=GT-BE98",
+  "TOPBUILD=y"
+]

@@ -1,0 +1,81 @@
+{
+  "libshared_sha256": "4e8298baebb5fcfbe46566bc4fb544b90bfe9e4abb2cb039042d1116b0b747eb",
+  "disassembly_command": [
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-objdump",
+    "-d",
+    "--start-address=0x44df4",
+    "--stop-address=0x45128",
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rootfs-no-adsl-20260916/build/unpacked-rootfs/usr/lib/arm-linux-gnueabi/libshared.so"
+  ],
+  "notify_internal_address": "0x44df4",
+  "kill_call_address": "0x45020",
+  "preceding_arm_instructions": [
+    "mov r1, #10",
+    "mov r0, #1"
+  ],
+  "meaning": "Installed ARMEL libshared notification code calls kill(1, SIGUSR1).",
+  "dynamic_consumers": [
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libletsencrypt.so",
+      "imports": [
+        "notify_rc",
+        "notify_rc_and_wait_1min"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libovpn.so",
+      "imports": [
+        "notify_rc"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libwebapi.so",
+      "imports": [
+        "notify_rc",
+        "notify_rc_and_wait"
+      ]
+    },
+    {
+      "path": "usr/sbin/cfg_client",
+      "imports": [
+        "notify_rc",
+        "notify_rc_and_wait",
+        "notify_rc_and_wait_1min",
+        "notify_rc_and_wait_2min"
+      ]
+    },
+    {
+      "path": "usr/sbin/cfg_server",
+      "imports": [
+        "notify_rc",
+        "notify_rc_and_wait",
+        "notify_rc_and_wait_1min",
+        "notify_rc_and_wait_2min"
+      ]
+    },
+    {
+      "path": "usr/sbin/httpd",
+      "imports": [
+        "notify_rc",
+        "notify_rc_after_period_wait",
+        "notify_rc_and_wait",
+        "notify_rc_and_wait_2min"
+      ]
+    },
+    {
+      "path": "usr/sbin/rc",
+      "imports": [
+        "notify_rc",
+        "notify_rc_after_period_wait",
+        "notify_rc_after_wait",
+        "notify_rc_and_wait",
+        "notify_rc_and_wait_1min",
+        "notify_rc_and_wait_2min"
+      ]
+    }
+  ],
+  "consumer_count": 7,
+  "source_search_scope": "Archived release/src/router/shared C files have declarations, no notify_rc implementation.",
+  "limitations": "Import scan does not enumerate direct kill/syscall calls or runtime dlsym users.",
+  "next_work": "Explicit ASUS manager identity, notification endpoint and shutdown contract; do not globally falsify getpid()."
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "label": "zstd22-1m-tailends",
+    "bytes": 74629120,
+    "sha256": "14c5186e30974498079f6edc59bdaed02e8bafed590c9d663d688b3def673e1f",
+    "seconds": 10.854,
+    "command": [
+      "nice",
+      "-n",
+      "10",
+      "mksquashfs",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rootfs-no-adsl-20260916/build/staged-rootfs",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rootfs-no-adsl-20260916/build/zstd22-1m-tailends.squashfs",
+      "-noappend",
+      "-all-root",
+      "-comp",
+      "zstd",
+      "-Xcompression-level",
+      "22",
+      "-b",
+      "1048576",
+      "-processors",
+      "4",
+      "-mem",
+      "512M",
+      "-mkfs-time",
+      "1789556948",
+      "-no-progress",
+      "-exit-on-error",
+      "-tailends"
+    ],
+    "rootfs_reserved_ubi_blocks": 596,
+    "saved_vs_installed_bytes": 2392064,
+    "saved_vs_compression_only_bytes": 679936
+  }
+]

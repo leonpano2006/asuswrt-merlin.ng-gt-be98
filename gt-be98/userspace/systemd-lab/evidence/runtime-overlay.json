@@ -1,0 +1,274 @@
+{
+  "files": {
+    "usr/lib/systemd/systemd": {
+      "sha256": "288dda5d880d9400344a56ba7b747dffcc120fee8ee6ce7d392e2d0503dd4f56",
+      "bytes": 133568,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000fe234433c000)",
+        "\tlibsystemd-core-255.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-core-255.so (0x0000fe23440e0000)",
+        "\tlibsystemd-shared-255.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-255.so (0x0000fe2343df0000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000fe2343c40000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000fe2344300000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000fe2343b70000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000fe2343ad0000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000fe2343aa0000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000fe2343a50000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000fe23439d0000)"
+      ],
+      "build_id_sha1": "ed69d81571e06d96e734c39ac30214278d7ba117",
+      "gcc_switches": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -Os -std=gnu11 -fno-common -fstack-protector -fstack-protector-strong -fstrict-flex-arrays=3 -ftrivial-auto-var-init=zero -fno-strict-aliasing -fstrict-flex-arrays=1 -fvisibility=hidden -ffunction-sections -fdata-sections --param=ssp-buffer-size=4",
+        ""
+      ]
+    },
+    "usr/lib/systemd/systemd-executor": {
+      "sha256": "a4b519b5087e20ba337ce211b9a17e485e03fde0c5abfce09bc31f05dbd1e94b",
+      "bytes": 133584,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000f64e8a0ac000)",
+        "\tlibsystemd-core-255.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-core-255.so (0x0000f64e89e40000)",
+        "\tlibsystemd-shared-255.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-255.so (0x0000f64e89b50000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000f64e899a0000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000f64e8a060000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000f64e898d0000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000f64e89830000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000f64e89800000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000f64e897b0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000f64e89730000)"
+      ],
+      "build_id_sha1": "29ea4f163e59c047aeb0757461e6a0b81bb3597f",
+      "gcc_switches": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -Os -std=gnu11 -fno-common -fstack-protector -fstack-protector-strong -fstrict-flex-arrays=3 -ftrivial-auto-var-init=zero -fno-strict-aliasing -fstrict-flex-arrays=1 -fvisibility=hidden -ffunction-sections -fdata-sections --param=ssp-buffer-size=4",
+        ""
+      ]
+    },
+    "usr/lib/systemd/systemd-shutdown": {
+      "sha256": "abe7066181bc9d69c81420acd7e8eeea1c8baed062940bf856454165639266a9",
+      "bytes": 68032,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000e63e720e9000)",
+        "\tlibsystemd-shared-255.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-255.so (0x0000e63e71d90000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000e63e71cf0000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000e63e71b40000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000e63e720a0000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000e63e71b10000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000e63e71ac0000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000e63e719f0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000e63e71970000)"
+      ],
+      "build_id_sha1": "28c61e10392d57e5a7308feaa1d7aa81071bc52f",
+      "gcc_switches": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -Os -std=gnu11 -fno-common -fstack-protector -fstack-protector-strong -fstrict-flex-arrays=3 -ftrivial-auto-var-init=zero -fno-strict-aliasing -fstrict-flex-arrays=1 -fvisibility=hidden -ffunction-sections -fdata-sections --param=ssp-buffer-size=4",
+        ""
+      ]
+    },
+    "usr/lib/systemd/systemd-journald": {
+      "sha256": "17d07ef891d2d8e3833063210176e7d621e39468799551aec9539cf0a2b607dc",
+      "bytes": 202136,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000f78781f8c000)",
+        "\tlibsystemd-shared-255.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-255.so (0x0000f78781c40000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000f78781a90000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000f78781f50000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000f78781a60000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000f78781a10000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000f78781970000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000f787818a0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000f78781820000)"
+      ],
+      "build_id_sha1": "1f2007640699a28734752d71162c3c1a63eedb31",
+      "gcc_switches": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -Os -std=gnu11 -fno-common -fstack-protector -fstack-protector-strong -fstrict-flex-arrays=3 -ftrivial-auto-var-init=zero -fno-strict-aliasing -fstrict-flex-arrays=1 -fvisibility=hidden -ffunction-sections -fdata-sections --param=ssp-buffer-size=4",
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -Os -std=gnu11 -fno-common -fstack-protector -fstack-protector-strong -fstrict-flex-arrays=3 -ftrivial-auto-var-init=zero -fPIC -fno-strict-aliasing -fstrict-flex-arrays=1 -fvisibility=hidden -ffunction-sections -fdata-sections --param=ssp-buffer-size=4",
+        ""
+      ]
+    },
+    "usr/bin/systemctl": {
+      "sha256": "e45e34f6eab1af4f24233be3828964e6d5f2bea6789650fb05c2988592e78360",
+      "bytes": 264744,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000ea4a7d01b000)",
+        "\tlibsystemd-shared-255.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-255.so (0x0000ea4a7ccc0000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000ea4a7cb10000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000ea4a7cfd0000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000ea4a7cae0000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000ea4a7ca90000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000ea4a7c9f0000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000ea4a7c920000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000ea4a7c8a0000)"
+      ],
+      "build_id_sha1": "431448e02351f074e1bce24818066bb8e2977e13",
+      "gcc_switches": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -Os -std=gnu11 -fno-common -fstack-protector -fstack-protector-strong -fstrict-flex-arrays=3 -ftrivial-auto-var-init=zero -fno-strict-aliasing -fstrict-flex-arrays=1 -fvisibility=hidden -ffunction-sections -fdata-sections --param=ssp-buffer-size=4",
+        ""
+      ]
+    },
+    "usr/bin/journalctl": {
+      "sha256": "63625ef84afab4dfe7de980e723db8bd72297b4b9d0bec916cad062fbc25f38d",
+      "bytes": 68128,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000f01292eec000)",
+        "\tlibsystemd-shared-255.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-255.so (0x0000f01292b90000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000f012929e0000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000f01292ea0000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000f012929b0000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000f01292960000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000f012928c0000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000f012927f0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000f01292770000)"
+      ],
+      "build_id_sha1": "bc82fc161a8d5403eb97c8d01fd4286d2957d17a",
+      "gcc_switches": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -Os -std=gnu11 -fno-common -fstack-protector -fstack-protector-strong -fstrict-flex-arrays=3 -ftrivial-auto-var-init=zero -fno-strict-aliasing -fstrict-flex-arrays=1 -fvisibility=hidden -ffunction-sections -fdata-sections --param=ssp-buffer-size=4",
+        ""
+      ]
+    },
+    "usr/bin/systemd-notify": {
+      "sha256": "9e681df9ca4f6544a625fa8ddd5604ececfc74d30029271f9909f4d328e3ed22",
+      "bytes": 68120,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000f2545de38000)",
+        "\tlibsystemd-shared-255.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-255.so (0x0000f2545dae0000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000f2545d930000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000f2545ddf0000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000f2545d900000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000f2545d8b0000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000f2545d810000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000f2545d740000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000f2545d6c0000)"
+      ],
+      "build_id_sha1": "9908a13411e82ac86e4a422466c5e32a94fd6ae9",
+      "gcc_switches": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -Os -std=gnu11 -fno-common -fstack-protector -fstack-protector-strong -fstrict-flex-arrays=3 -ftrivial-auto-var-init=zero -fno-strict-aliasing -fstrict-flex-arrays=1 -fvisibility=hidden -ffunction-sections -fdata-sections --param=ssp-buffer-size=4",
+        ""
+      ]
+    },
+    "usr/bin/systemd-run": {
+      "sha256": "482d7a45747b84a6a039ce1560f6c83b1074e27f3bd38d3a33355657147518ba",
+      "bytes": 68120,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000fc24ceec8000)",
+        "\tlibsystemd-shared-255.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-255.so (0x0000fc24ceb70000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000fc24ce9c0000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000fc24cee80000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000fc24ce990000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000fc24ce940000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000fc24ce8a0000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000fc24ce7d0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000fc24ce750000)"
+      ],
+      "build_id_sha1": "dd4fb778827987d80244e97030fe1339aa464464",
+      "gcc_switches": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -Os -std=gnu11 -fno-common -fstack-protector -fstack-protector-strong -fstrict-flex-arrays=3 -ftrivial-auto-var-init=zero -fno-strict-aliasing -fstrict-flex-arrays=1 -fvisibility=hidden -ffunction-sections -fdata-sections --param=ssp-buffer-size=4",
+        ""
+      ]
+    },
+    "usr/lib/aarch64-linux-gnu/systemd/libsystemd-core-255.so": {
+      "sha256": "782d021edba7b20230316ca8035a70bd00a35001bbb9368aa1f7749c5a872f8b",
+      "bytes": 1969800,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000eb092d6ec000)",
+        "\tlibsystemd-shared-255.so => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-255.so (0x0000eb092d1a0000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000eb092d0d0000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000eb092d030000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000eb092ce80000)",
+        "\t/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000eb092d6b0000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000eb092ce50000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000eb092ce00000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000eb092cd80000)"
+      ],
+      "build_id_sha1": "1e6055a9cf3997397a2cff21a950ee514a50984b",
+      "gcc_switches": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -Os -std=gnu11 -fno-common -fstack-protector -fstack-protector-strong -fstrict-flex-arrays=3 -ftrivial-auto-var-init=zero -fPIC -fno-strict-aliasing -fstrict-flex-arrays=1 -fvisibility=hidden -ffunction-sections -fdata-sections -fvisibility=default --param=ssp-buffer-size=4",
+        ""
+      ]
+    },
+    "usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-255.so": {
+      "sha256": "8f636b318017e6e30e244d1d448c1bdda53ddf3ad8aed92d1519ce475a998553",
+      "bytes": 3026000,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000fa18ac73f000)",
+        "\tlibcap.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcap.so.2 (0x0000fa18ac3b0000)",
+        "\tlibcrypt.so.2 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/overlay/usr/lib/aarch64-linux-gnu/libcrypt.so.2 (0x0000fa18ac360000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000fa18ac2c0000)",
+        "\tlibm.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libm.so.6 (0x0000fa18ac1f0000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000fa18ac040000)",
+        "\t/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000fa18ac6f0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000fa18abfc0000)"
+      ],
+      "build_id_sha1": "1f7cdaaf86e0e97e42bfb0c12a3c0424a2abf544",
+      "gcc_switches": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -Os -std=gnu11 -fno-common -fstack-protector -fstack-protector-strong -fstrict-flex-arrays=3 -ftrivial-auto-var-init=zero -fPIC -fno-strict-aliasing -fstrict-flex-arrays=1 -fvisibility=hidden -ffunction-sections -fdata-sections -fvisibility=default --param=ssp-buffer-size=4",
+        ""
+      ]
+    },
+    "usr/lib/aarch64-linux-gnu/libcap.so.2.76": {
+      "sha256": "6ffd41b1ceb7c1c17f5eacbc33980a8fe9fc7050748a342b60150c3e0eedceb1",
+      "bytes": 68472,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000effac9186000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000effac8f40000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000effac9140000)"
+      ],
+      "build_id_sha1": "f713acdf3f8c2ee77d54424fc1af913309d26996",
+      "gcc_switches": [
+        "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -Os -fPIC",
+        ""
+      ]
+    },
+    "usr/lib/aarch64-linux-gnu/libcrypt.so.2.0.0": {
+      "sha256": "c82c216ad78e95e21b1132724e34bb8b7a42d3c3a3591ffad23d2f7f249fbe5d",
+      "bytes": 198808,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000ea9d7c76c000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000ea9d7c510000)",
+        "\t/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000ea9d7c730000)"
+      ],
+      "build_id_sha1": "f51bc60c381a32e1c2dca3a172c94f6137e610a7",
+      "gcc_switches": [
+        "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -Os -fno-plt -fPIC",
+        ""
+      ]
+    },
+    "usr/gnu/bin/mount": {
+      "sha256": "a36b26eea986ff7cd2523da3b2d4bd3596268885842b4089a4b6574906716817",
+      "bytes": 69408,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000eb00e45f7000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000eb00e44f0000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000eb00e4470000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000eb00e42c0000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000eb00e45b0000)"
+      ],
+      "build_id_sha1": "d760b886c888b17b006c21cab156ab69c7d76d0d",
+      "gcc_switches": [
+        "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -Os -fsigned-char -fno-common",
+        "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -Os -fsigned-char -fno-common -fPIC",
+        ""
+      ]
+    },
+    "usr/gnu/bin/umount": {
+      "sha256": "680d631e29b9d6482ab37fef3c1893de7d462c6cea7c39ed5800467e2735faa1",
+      "bytes": 69216,
+      "loader_dependencies": [
+        "\tlinux-vdso.so.1 (0x0000fc2a63c9d000)",
+        "\tlibmount.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libmount.so.1 (0x0000fc2a63b90000)",
+        "\tlibblkid.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/usr/lib/aarch64-linux-gnu/libblkid.so.1 (0x0000fc2a63b10000)",
+        "\tlibc.so.6 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/aarch64-linux-gnu/libc.so.6 (0x0000fc2a63960000)",
+        "\t/lib/ld-linux-aarch64.so.1 => /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sdk/lib/ld-linux-aarch64.so.1 (0x0000fc2a63c50000)"
+      ],
+      "build_id_sha1": "2a7dc08a12244953cbeb0e3b4e6ae02d1f2f417a",
+      "gcc_switches": [
+        "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -Os -fsigned-char -fno-common",
+        "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -Os -fsigned-char -fno-common -fPIC",
+        ""
+      ]
+    }
+  },
+  "regular_files": 14,
+  "bytes": 6408136,
+  "version": "systemd 255 (255.22-gt-be98-lab)\n-PAM -AUDIT -SELINUX -APPARMOR -IMA -SMACK -SECCOMP -GCRYPT -GNUTLS -OPENSSL -ACL -BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC -KMOD -LIBCRYPTSETUP -LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB -ZSTD -BPF_FRAMEWORK -XKBCOMMON -UTMP -SYSVINIT default-hierarchy=legacy\n",
+  "compiler": "GCC 16.2.0",
+  "sysroot_glibc": "2.44",
+  "mcpu": "cortex-a53+crc+crypto"
+}

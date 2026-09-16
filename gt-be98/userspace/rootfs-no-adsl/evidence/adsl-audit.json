@@ -1,0 +1,42 @@
+{
+  "model": "GT-BE98",
+  "official_specification": "https://rog.asus.com/networking/rog-rapture-gt-be98-model/spec/",
+  "hardware_observation": "Official interfaces list Ethernet WAN/LAN and USB; no DSL/RJ11 port.",
+  "target": "rom/etc/adsl1/adsl_phy.bin",
+  "target_bytes": 1162836,
+  "target_sha256": "bea8e7fdd61d00ed7ad51054cddcfaea264c0247359f2181ecd02bdf44580011",
+  "kernel_disabled": [
+    "CONFIG_BCM_ADSL",
+    "CONFIG_BCM_XTMCFG",
+    "CONFIG_BCM_XTMRT"
+  ],
+  "rootfs_regular_files": 3483,
+  "static_consumer_scan_files": 3482,
+  "references": {
+    "adsl_phy.bin": [],
+    "/etc/adsl1": [],
+    "adsl1": [
+      "rom/etc/make_static_devnodes.sh",
+      "rom/etc/mdev.conf"
+    ],
+    "xdslctl": [],
+    "adsldd": []
+  },
+  "kernel_references": [],
+  "remaining_adsl1_references": "Generic bcmadsl1 device-node definitions; not firmware paths.",
+  "source_template_identical_copies": {
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/targets/96813GW/fs/rom/etc/adsl1/adsl_phy.bin": "bea8e7fdd61d00ed7ad51054cddcfaea264c0247359f2181ecd02bdf44580011",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/targets/96813GW/fs.install/rom/etc/adsl1/adsl_phy.bin": "bea8e7fdd61d00ed7ad51054cddcfaea264c0247359f2181ecd02bdf44580011"
+  },
+  "preserve": [
+    "CONFIG_BCM_DSL_XRDP",
+    "BUILD_DSL_RUNNER",
+    "RTCONFIG_DSLITE",
+    "all modules",
+    "Ethernet/PPPoE",
+    "Wi-Fi",
+    "Runner/RDPA"
+  ],
+  "conclusion": "Remove only this unused DSL line-PHY payload in the GT-BE98 candidate.",
+  "limitation": "Static evidence and QEMU cannot replace testing real Broadcom hardware."
+}

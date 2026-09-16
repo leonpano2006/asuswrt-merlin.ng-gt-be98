@@ -1,0 +1,9 @@
+{
+  "host": "ML350",
+  "path": "/home/leonpano/amng-out/systemd-lab-20260916/systemd-lab-backup.tar",
+  "bytes": 504514560,
+  "sha256": "fb517552deba2cccf2d3c5377484eb2a8ccac68f6443821d92d3f78b5e9a76f0",
+  "verified_members": 2783,
+  "router_modified": false,
+  "flashable_package_created": false
+}

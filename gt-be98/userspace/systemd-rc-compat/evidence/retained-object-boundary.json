@@ -1,0 +1,264 @@
+[
+  {
+    "object": "lan.o",
+    "imports": [
+      "getpid",
+      "kill"
+    ]
+  },
+  {
+    "object": "wan.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "common.o",
+    "imports": [
+      "kill",
+      "getpid",
+      "syscall"
+    ]
+  },
+  {
+    "object": "ntp.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "netool.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "ate-broadcom.o",
+    "imports": [
+      "kill",
+      "reboot"
+    ]
+  },
+  {
+    "object": "obd-broadcom.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "amas-ssd-broadcom.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "prebuild/private.o",
+    "imports": [
+      "kill",
+      "getpid"
+    ]
+  },
+  {
+    "object": "usbled.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "usb_devices.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "pc.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "pc_block.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "frs_service.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "psta_monitor.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "obd.o",
+    "imports": [
+      "getpid",
+      "kill"
+    ]
+  },
+  {
+    "object": "obd_eth.o",
+    "imports": [
+      "kill",
+      "getpid"
+    ]
+  },
+  {
+    "object": "obd_monitor.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "rmd.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "wpsaide.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "bwdpi_check.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "bwdpi_wred_alive.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "bwdpi_db_10.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "hour_monitor.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "dns_dpi_check.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "amas_lib.o",
+    "imports": [
+      "getpid",
+      "syscall"
+    ]
+  },
+  {
+    "object": "v6plusd.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "ocnvcd.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "dslited.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "roamast.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "gpy211_war.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "erp_monitor.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "amas_wlcconnect.o",
+    "imports": [
+      "getpid",
+      "kill"
+    ]
+  },
+  {
+    "object": "amas_bhctrl.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "amas_status.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "amas_misc.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "amas_lanctrl.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "amas_ssd.o",
+    "imports": [
+      "getpid",
+      "kill"
+    ]
+  },
+  {
+    "object": "amas_ssd_cd.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "conn_diag.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "ledg.o",
+    "imports": [
+      "getpid"
+    ]
+  },
+  {
+    "object": "rtkmonitor.o",
+    "imports": [
+      "getpid"
+    ]
+  }
+]

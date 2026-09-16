@@ -1,0 +1,11 @@
+{
+  "archive": "rootfs-no-adsl-backup.tar",
+  "bytes": 518328320,
+  "sha256": "e54531059a2a00a7dffbb0d2660c960e20d8a021598b4e0c0e5aed817e507bec",
+  "verified_members": 40,
+  "includes_exact_original_rootfs_image": true,
+  "includes_original_and_selected_qemu_inputs": true,
+  "includes_original_pkgtb_and_candidate": true,
+  "unpacked_source_restore": "Extract the saved original rootfs.squashfs to a53-runtimes-20260916/build/unpacked-rootfs with unsquashfs, preserving mode/link/mtime.",
+  "includes_only_selected_no_adsl_candidate": true
+}

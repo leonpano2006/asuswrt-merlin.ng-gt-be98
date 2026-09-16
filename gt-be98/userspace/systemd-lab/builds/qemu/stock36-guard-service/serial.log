@@ -1,0 +1,295 @@
+Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+Linux version 4.19.294 (docker@2fbcc3225bf9) (gcc version 10.3.0 (Buildroot 2021.02.4)) #36 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026
+Machine model: linux,dummy-virt
+earlycon: pl11 at MMIO32 0x0000000009000000 (options '')
+bootconsole [pl11] enabled
+/cpus/cpu-map: empty cluster
+uboot_max_len missing, using defaults 16384
+uboot env missing
+Failed to retrieve boot CFE version from dtb!
+BoardId [], NVRAM_ULBOARDSTUFFOPTION=0 
+size of sk_buff 576
+offset of cb in sk_buff 400
+OTP driver initcall
+OTP driver scanning DT
+Failed to find strap dts node
+Strap Register: 0xffffffff
+Broadcom IQoS v1.0 initialized
+Broadcom Logger v0.1
+skb_free_task created successfully with start budget 32, period 10ms
+[0;34mBLOG v3.0 Initialized[0m
+BLOG Rule v1.0 Initialized
+bcm_tcp_task created successfully with budget 256 ,cpumask:0x0
+blogtcp_local netdev registered successfully 
+cacheinfo: Unable to detect cache hierarchy for CPU 0
+ERROR - Invalid number of MAC addresses (0) is configured.
+zswap: default zpool zsmalloc not available
+zswap: pool creation failed
+QEMU_LAB_INIT_REACHED
+LAB_SYSTEMD_EXEC_PID1
+systemd 255.22-gt-be98-lab running in system mode (-PAM -AUDIT -SELINUX -APPARMOR -IMA -SMACK -SECCOMP -GCRYPT -GNUTLS -OPENSSL -ACL -BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC -KMOD -LIBCRYPTSETUP -LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB -ZSTD -BPF_FRAMEWORK -XKBCOMMON -UTMP -SYSVINIT default-hierarchy=legacy)
+Detected virtualization qemu.
+Detected architecture arm64.
+
+Welcome to [1mGT-BE98 offline systemd lab[0m!
+
+No hostname configured, using default hostname.
+Hostname set to <localhost>.
+[[0;32m  OK  [0m] Listening on [0;1;39mJournal Socket (/dev/log)[0m.
+[[0;32m  OK  [0m] Listening on [0;1;39mJournal Socket[0m.
+         Starting [0;1;39mOffline lab journal[0m...
+[[0;32m  OK  [0m] Started [0;1;39mOffline lab journal[0m.
+         Starting [0;1;39mOffline systemd integration checks[0m...
++ export PATH=/usr/bin:/usr/sbin:/bin:/sbin
++ export SYSTEMD_PAGER=cat SYSTEMD_COLORS=0
++ exec
++ trap echo LAB_SYSTEMD_CHECK_FAILURE; /bin/busybox poweroff -f EXIT
++ readlink /proc/1/exe
++ test /usr/lib/systemd/systemd = /usr/lib/systemd/systemd
++ test -d /run/systemd/system
++ test -S /run/systemd/private
++ echo LAB_SYSTEMD_PID1_PASS
+LAB_SYSTEMD_PID1_PASS
++ test -d /run
++ test ! -L /run
++ readlink /var/run
++ test /run = /run
++ awk $2 == "/run" && $3 == "tmpfs" {ok=1} END {exit !ok} /proc/mounts
++ echo LAB_SYSTEMD_RUN_LAYOUT_PASS
+LAB_SYSTEMD_RUN_LAYOUT_PASS
++ systemctl start leon-guard.service
+         Starting [0;1;39mOffline ARMEL trial-guard integration probe[0m...
+LEON_TRIAL: blocked automatic boot metadata write: commit
+LEON_TRIAL: blocked automatic boot metadata write: commit
+LEON_TRIAL: blocked automatic boot metadata write: setBootImageState
+LEON_TRIAL: blocked automatic boot metadata write: setImgValidStatus
+LEON_TRIAL: blocked automatic boot metadata write: setImgSeqNum
+LEON_TRIAL: blocked automatic boot metadata write: setNandMetadata
+LEON_TRIAL: blocked automatic boot metadata write: setEmmcMetadata
+LAB_SYSTEMD_ARMEL_GUARD_SERVICE_PASS
+[[0;32m  OK  [0m] Finished [0;1;39mOffline ARMEL trial-guard integration probe[0m.
++ systemctl show leon-guard.service -p ExecMainStatus --value
++ test 0 = 0
++ systemctl stop leon-guard.service
+leon-guard.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mOffline ARMEL trial-guard integration probe[0m.
++ echo LAB_SYSTEMD_TRIAL_GUARD_BOUNDARY_PASS
+LAB_SYSTEMD_TRIAL_GUARD_BOUNDARY_PASS
++ systemctl start leon-worker.service
+[0;1;38;5;185mcgroup compatibility translation between legacy and unified hierarchy settings activated. See cgroup-compat debug messages for details.[0m
+[[0;32m  OK  [0m] Started [0;1;39mRestart and cgroup integration probe[0m.
++ systemctl show leon-worker.service -p MainPID --value
++ first=228
++ test 228 -gt 1
++ systemctl is-active leon-worker.service
++ test active = active
++ systemctl restart leon-worker.service
+         Stopping [0;1;39mRestart and cgroup integration probe[0m...
+leon-worker.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mRestart and cgroup integration probe[0m.
+[[0;32m  OK  [0m] Started [0;1;39mRestart and cgroup integration probe[0m.
++ systemctl show leon-worker.service -p MainPID --value
++ second=238
++ test 238 -gt 1
++ test 228 != 238
++ echo LAB_SYSTEMD_SERVICE_RESTART_PASS
+LAB_SYSTEMD_SERVICE_RESTART_PASS
++ systemctl show leon-worker.service -p ControlGroup --value
++ cg=/system.slice/leon-worker.service
++ test -n /system.slice/leon-worker.service
++ test -d /sys/fs/cgroup/memory/system.slice/leon-worker.service
++ test -d /sys/fs/cgroup/pids/system.slice/leon-worker.service
++ cat /sys/fs/cgroup/memory/system.slice/leon-worker.service/memory.limit_in_bytes
++ test 67108864 = 67108864
++ cat /sys/fs/cgroup/pids/system.slice/leon-worker.service/pids.max
++ test 16 = 16
++ systemctl show leon-worker.service -p Delegate --value
++ test yes = yes
++ echo LAB_SYSTEMD_V1_MEMORY_PIDS_DELEGATION_PASS
+LAB_SYSTEMD_V1_MEMORY_PIDS_DELEGATION_PASS
++ systemctl kill --kill-whom=main --signal=KILL leon-worker.service
+leon-worker.service: Sent signal SIGKILL to main process 238 (sleep) on client request.
+[0;1;38;5;185mleon-worker.service: Main process exited, code=killed, status=9/KILL[0m
++ i=0
++ :
++ systemctl show leon-worker.service -p MainPID --value
+[0;1;38;5;185mleon-worker.service: Failed with result 'signal'.[0m
+leon-worker.service: Scheduled restart job, restart counter is at 1.
++ third=0
++ [ 0 -gt 1 ]
+[[0;32m  OK  [0m] Started [0;1;39mRestart and cgroup integration probe[0m.
++ i=1
++ test 1 -lt 30
++ sleep 1
++ :
++ systemctl show leon-worker.service -p MainPID --value
++ third=261
++ [ 261 -gt 1 ]
++ [ 261 != 238 ]
++ break
++ systemctl show leon-worker.service -p NRestarts --value
++ test 1 -ge 1
++ echo LAB_SYSTEMD_SERVICE_RECOVERY_PASS
+LAB_SYSTEMD_SERVICE_RECOVERY_PASS
++ systemctl stop leon-worker.service
+         Stopping [0;1;39mRestart and cgroup integration probe[0m...
+leon-worker.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mRestart and cgroup integration probe[0m.
++ systemctl show leon-worker.service -p ActiveState --value
++ test inactive = inactive
++ test ! -d /proc/261
++ echo LAB_SYSTEMD_SERVICE_STOP_PASS
+LAB_SYSTEMD_SERVICE_STOP_PASS
++ journalctl --sync
++ journalctl --no-pager -o cat -u leon-worker.service
++ grep -q LEON_WORKER_STARTED /run/leon-worker-journal.txt
++ echo LAB_SYSTEMD_JOURNAL_PASS
+LAB_SYSTEMD_JOURNAL_PASS
++ systemctl daemon-reexec
+[0;1;39mReexecuting requested from client PID 282 ('systemctl') (unit leon-check.service)...[0m
+[0;1;39mReexecuting.[0m
+systemd 255.22-gt-be98-lab running in system mode (-PAM -AUDIT -SELINUX -APPARMOR -IMA -SMACK -SECCOMP -GCRYPT -GNUTLS -OPENSSL -ACL -BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC -KMOD -LIBCRYPTSETUP -LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB -ZSTD -BPF_FRAMEWORK -XKBCOMMON -UTMP -SYSVINIT default-hierarchy=legacy)
+Detected virtualization qemu.
+Detected architecture arm64.
++ i=0
++ systemctl show --property=Version --value
+255.22-gt-be98-lab
++ readlink /proc/1/exe
++ test /usr/lib/systemd/systemd = /usr/lib/systemd/systemd
++ echo LAB_SYSTEMD_REEXEC_PASS
+LAB_SYSTEMD_REEXEC_PASS
++ echo LAB_SYSTEMD_CONFIGURATION_MOUNTS
+LAB_SYSTEMD_CONFIGURATION_MOUNTS
++ awk $5 ~ /^\/(tmp|etc)/ {print} /proc/self/mountinfo
+21 15 0:16 / /tmp rw,relatime shared:9 - tmpfs tmpfs rw
++ systemctl show systemd-journald.service -p MainPID --value
++ readlink /proc/1/fd/0
++ target=/dev/null
++ readlink /proc/1/fd/1
++ target=/dev/null
++ readlink /proc/1/fd/10
++ target=anon_inode:inotify
++ readlink /proc/1/fd/12
++ target=anon_inode:[eventpoll]
++ readlink /proc/1/fd/13
++ target=/proc/1/mountinfo
++ readlink /proc/1/fd/14
++ target=anon_inode:inotify
++ readlink /proc/1/fd/15
++ target=/proc/swaps
++ readlink /proc/1/fd/16
++ target=socket:[1646]
++ readlink /proc/1/fd/17
++ target=socket:[1647]
++ readlink /proc/1/fd/18
++ target=anon_inode:[timerfd]
++ readlink /proc/1/fd/19
++ target=socket:[1650]
++ readlink /proc/1/fd/2
++ target=/dev/null
++ readlink /proc/1/fd/20
++ target=/proc/pressure/memory
++ readlink /proc/1/fd/3
++ target=/dev/console
++ readlink /proc/1/fd/34
++ target=socket:[1473]
++ readlink /proc/1/fd/36
++ target=socket:[1475]
++ readlink /proc/1/fd/37
++ target=socket:[1477]
++ readlink /proc/1/fd/38
++ target=socket:[1478]
++ readlink /proc/1/fd/39
++ target=socket:[1485]
++ readlink /proc/1/fd/4
++ target=anon_inode:[eventpoll]
++ readlink /proc/1/fd/40
++ target=socket:[1483]
++ readlink /proc/1/fd/41
++ target=socket:[1507]
++ readlink /proc/1/fd/42
++ target=socket:[1510]
++ readlink /proc/1/fd/43
++ target=socket:[1500]
++ readlink /proc/1/fd/5
++ target=anon_inode:[signalfd]
++ readlink /proc/1/fd/6
++ target=/sys/fs/cgroup/systemd
++ readlink /proc/1/fd/7
++ target=anon_inode:[timerfd]
++ readlink /proc/1/fd/8
++ target=/usr/lib/systemd/systemd-executor
++ readlink /proc/1/cwd
++ target=/
++ readlink /proc/204/fd/0
++ target=/dev/null
++ readlink /proc/204/fd/1
++ target=/dev/null
++ readlink /proc/204/fd/10
++ target=/proc/sys/kernel/hostname
++ readlink /proc/204/fd/11
++ target=anon_inode:[signalfd]
++ readlink /proc/204/fd/12
++ target=anon_inode:[signalfd]
++ readlink /proc/204/fd/13
++ target=anon_inode:[signalfd]
++ readlink /proc/204/fd/14
++ target=socket:[446]
++ readlink /proc/204/fd/15
++ target=/proc/pressure/memory
++ readlink /proc/204/fd/16
++ target=/run/log/journal/b71c4c2e09ab4c88ae609ebfb9372301/system.journal
++ readlink /proc/204/fd/17
++ target=anon_inode:[timerfd]
++ readlink /proc/204/fd/2
++ target=/dev/null
++ readlink /proc/204/fd/3
++ target=socket:[1500]
++ readlink /proc/204/fd/4
++ target=socket:[1507]
++ readlink /proc/204/fd/5
++ target=socket:[1510]
++ readlink /proc/204/fd/6
++ target=/dev/kmsg
++ readlink /proc/204/fd/7
++ target=anon_inode:[eventpoll]
++ readlink /proc/204/fd/8
++ target=/dev/kmsg
++ readlink /proc/204/fd/9
++ target=socket:[440]
++ readlink /proc/204/cwd
++ target=/
++ echo LAB_SYSTEMD_ALL_PASS
+LAB_SYSTEMD_ALL_PASS
++ trap - EXIT
++ systemctl --no-block poweroff
+         Unmounting [0;1;39m/var[0m...
+leon-check.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mOffline systemd integration checks[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mSystem Shutdown[0m.
+var.mount: Deactivated successfully.
+[[0;32m  OK  [0m] Unmounted [0;1;39m/var[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mUnmount All Filesystems[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mLate Shutdown Services[0m.
+systemd-poweroff.service: Deactivated successfully.
+[[0;32m  OK  [0m] Finished [0;1;39mSystem Power Off[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mSystem Power Off[0m.
+[0;1;39mShutting down.[0m
+Syncing filesystems and block devices.
+Sending SIGTERM to remaining processes...
+Sending SIGKILL to remaining processes...
+Unmounting file systems.
+Unmounting '/tmp'.
+All filesystems unmounted.
+Deactivating swaps.
+All swaps deactivated.
+Detaching loop devices.
+All loop devices detached.
+Stopping MD devices.
+All MD devices stopped.
+Detaching DM devices.
+All DM devices detached.
+All filesystems, swaps, loop devices, MD devices and DM devices detached.
+Syncing filesystems and block devices.
+Powering off.
+reboot: Power down

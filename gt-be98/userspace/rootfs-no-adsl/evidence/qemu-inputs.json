@@ -1,0 +1,8 @@
+{
+  "original_guest_sha256": "4a4bebee33080471d2a204269095d7869c7c0169a4fe9d76dae8117b9d337dae",
+  "candidate_sha256": "14c5186e30974498079f6edc59bdaed02e8bafed590c9d663d688b3def673e1f",
+  "guest_sha256": "6f901d92223b8f5934b66fe883cc85db15034b3f6ffda26f11aa44d73c8a6675",
+  "regular_files_hashed_in_kernel": 3482,
+  "prior_runtime_tests_preserved": true,
+  "router_modified": false
+}

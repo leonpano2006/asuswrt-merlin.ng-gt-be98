@@ -1,0 +1,39 @@
+{
+  "systemd": {
+    "tag": "v255.22",
+    "commit": "356c54394add8c6a1d52773852c23656590dc33b",
+    "url": "https://codeload.github.com/systemd/systemd-stable/tar.gz/356c54394add8c6a1d52773852c23656590dc33b",
+    "filename": "systemd-356c54394add8c6a1d52773852c23656590dc33b.tar.gz",
+    "bytes": 15366760,
+    "sha256": "eab5eb92e82d7a0a7350dfc424ca05d975ad8415fad9754dd3e5a40259c702e8"
+  },
+  "libcap": {
+    "version": "2.76",
+    "url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.76.tar.xz",
+    "filename": "libcap-2.76.tar.xz",
+    "bytes": 199200,
+    "sha256": "629da4ab29900d0f7fcc36227073743119925fd711c99a1689bbf5c9b40c8e6f"
+  },
+  "libxcrypt": {
+    "version": "4.4.38",
+    "url": "https://codeload.github.com/besser82/libxcrypt/tar.gz/refs/tags/v4.4.38",
+    "filename": "libxcrypt-4.4.38.tar.gz",
+    "bytes": 529995,
+    "sha256": "9fb45586b2e83727934fbe046a4fef4804017577f1d048f91d56d0d830a5a98e"
+  },
+  "gperf": {
+    "version": "3.1",
+    "url": "https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz",
+    "filename": "gperf-3.1.tar.gz",
+    "bytes": 1215925,
+    "sha256": "588546b945bba4b70b6a3a616e80b4ab466e3f33024a352fc2198112cdbb3ae2"
+  },
+  "util-linux": {
+    "version": "2.42.2",
+    "url": "https://www.kernel.org/pub/linux/utils/util-linux/v2.42/util-linux-2.42.2.tar.xz",
+    "filename": "util-linux-2.42.2.tar.xz",
+    "bytes": 10658220,
+    "sha256": "03a05d3adf9602ef128f2da05b84b3205ce60c351e5737c0370f74000679ce8a",
+    "usage": "headers for existing rootfs libmount/libblkid and native mount/umount tools; existing runtime libraries preserved"
+  }
+}

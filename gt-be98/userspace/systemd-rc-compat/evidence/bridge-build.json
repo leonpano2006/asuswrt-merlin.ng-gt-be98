@@ -1,0 +1,122 @@
+{
+  "commands": [
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cc",
+      "-std=gnu11",
+      "-Os",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-frecord-gcc-switches",
+      "-Wl,--build-id=sha1",
+      "-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src",
+      "-fPIC",
+      "-shared",
+      "-Wl,-soname,libleon-rc-notify.so",
+      "-ldl",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src/notify-compat.c",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src/rc-client.c",
+      "-o",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/build/armel/libleon-rc-notify.so"
+    ],
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armhf/wrappers/cc",
+      "-std=gnu11",
+      "-Os",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-frecord-gcc-switches",
+      "-Wl,--build-id=sha1",
+      "-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src",
+      "-fPIC",
+      "-shared",
+      "-Wl,-soname,libleon-rc-notify.so",
+      "-ldl",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src/notify-compat.c",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src/rc-client.c",
+      "-o",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/build/armhf/libleon-rc-notify.so"
+    ],
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/wrappers/cc",
+      "-std=gnu11",
+      "-Os",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-frecord-gcc-switches",
+      "-Wl,--build-id=sha1",
+      "-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src",
+      "-fPIC",
+      "-shared",
+      "-Wl,-soname,libleon-rc-notify.so",
+      "-ldl",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src/notify-compat.c",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src/rc-client.c",
+      "-o",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/build/aarch64/libleon-rc-notify.so"
+    ],
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/wrappers/cc",
+      "-std=gnu11",
+      "-Os",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-frecord-gcc-switches",
+      "-Wl,--build-id=sha1",
+      "-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src/rc-broker.c",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src/rc-client.c",
+      "-o",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/build/aarch64/leon-rc-broker"
+    ],
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/wrappers/cc",
+      "-std=gnu11",
+      "-Os",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-frecord-gcc-switches",
+      "-Wl,--build-id=sha1",
+      "-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src/rcctl.c",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/src/rc-client.c",
+      "-o",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/build/aarch64/leon-rcctl"
+    ]
+  ],
+  "files": {
+    "usr/libexec/leon-rc-broker": {
+      "bytes": 68176,
+      "sha256": "640385f102b6a4badd75f3a0a622465dd0b806e043656c50fcd610374cb6c8ee"
+    },
+    "usr/sbin/leon-rcctl": {
+      "bytes": 67952,
+      "sha256": "66ffcdc93a7f0d575c8f4167828ec47d83a9aa41987dc0c7d7cf9947f143afc0"
+    },
+    "usr/lib/arm-linux-gnueabi/libcrypt.so.1": {
+      "bytes": 263860,
+      "sha256": "c51a50ce39fe06895bbe79e38cad642c75f3e1b5946fa8e42349ada2cd258d59"
+    },
+    "usr/lib/arm-linux-gnueabi/libleon-rc-notify.so": {
+      "bytes": 67268,
+      "sha256": "555ed02326ffaea7447558a21b15c9b92130466466f39ed051957439b8dd89e2"
+    },
+    "usr/lib/arm-linux-gnueabihf/libleon-rc-notify.so": {
+      "bytes": 67272,
+      "sha256": "0d45d006ead6c116a7fe27dd60f54fe33d058b497e33f7c27cc64fc8997193bd"
+    },
+    "usr/lib/aarch64-linux-gnu/libleon-rc-notify.so": {
+      "bytes": 67904,
+      "sha256": "4e7dcdb0948a9262d6dc4b0ecf7f7050b4ef767becd9f7458544dedcd74b1987"
+    }
+  }
+}

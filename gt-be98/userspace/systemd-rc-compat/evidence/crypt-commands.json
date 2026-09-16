@@ -1,0 +1,21 @@
+[
+  [
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-lab-20260916/sources/libxcrypt-4.4.38/configure",
+    "--prefix=/usr",
+    "--libdir=/usr/lib/arm-linux-gnueabi",
+    "--host=arm-linux-gnueabi",
+    "--build=aarch64-linux-gnu",
+    "--enable-obsolete-api=yes",
+    "--disable-static",
+    "--disable-werror"
+  ],
+  [
+    "make",
+    "-j4"
+  ],
+  [
+    "make",
+    "DESTDIR=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-compat-20260916/build/crypt-stage",
+    "install"
+  ]
+]

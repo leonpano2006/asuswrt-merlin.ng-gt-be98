@@ -1,0 +1,210 @@
+[
+  {
+    "source": "ai_service.c",
+    "identity_checks": 2,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "2dd0013fb961494965ce6d6030c9f46957b1ca34fcba2c6bd31f202f348b86ea",
+    "after_sha256": "825f165422240ef21cab6055e874fc0b3de0290dc76cc00e1568fc60bf58e8fc"
+  },
+  {
+    "source": "alt_watchdog.c",
+    "identity_checks": 2,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "87a35b7777ba67e3cbbbed6b63e4444aebc8516a44537bb14485af11f61285bd",
+    "after_sha256": "9594a20751f5d448a8c0dc71dbab27d64a5176f4955be1b0b13566f0fc302b25"
+  },
+  {
+    "source": "btnsetup.c",
+    "identity_checks": 0,
+    "pid1_signals": 3,
+    "reboot_calls": 0,
+    "before_sha256": "46a11314775dfabdfb5b0133e9f0f2611fd66b625be46487015b5c20bfd34955",
+    "after_sha256": "1b120caef62d8a660c2a7c06e4630f7d4120cecb77317f589ceae98a2077a8bd"
+  },
+  {
+    "source": "firewall.c",
+    "identity_checks": 1,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "5c75be6085ea557bbcce66c55ea4d9a7d893ae8c68d0944bfe052fa3aee4f32f",
+    "after_sha256": "f53dd1ccfd997e22e4849417f9003f5ea7d13aff0c7a1a781607ac09fe9c6ac3"
+  },
+  {
+    "source": "fwupg_flashing.c",
+    "identity_checks": 0,
+    "pid1_signals": 0,
+    "reboot_calls": 1,
+    "before_sha256": "c8cd49e5bf3b95a3d18c1f3bba4af4ab3ee65e680a619b174cf5a76cccf2ea08",
+    "after_sha256": "aa4ff16969bb0d7bdd0f2ae141e4dc377a9aa584d686682e755f19e3958c48a3"
+  },
+  {
+    "source": "init.c",
+    "identity_checks": 0,
+    "pid1_signals": 4,
+    "reboot_calls": 7,
+    "before_sha256": "2d85fcb01f128efa97543b8197523f51409f81ce713ae31ef03153620f7d67e1",
+    "after_sha256": "0c1d4a34b7086c1a57c8236224648e799d501f278424b82ccdc6240b999e95b6"
+  },
+  {
+    "source": "jffs2.c",
+    "identity_checks": 0,
+    "pid1_signals": 0,
+    "reboot_calls": 2,
+    "before_sha256": "7248e23870ae1077063abedd49b3cf939e68d71fab6eadc5eac4246517a7a2d5",
+    "after_sha256": "266139a1b43f52233a7ee154279530ad760986a46b36ec8ca820dea9291a1fdb"
+  },
+  {
+    "source": "mtd.c",
+    "identity_checks": 0,
+    "pid1_signals": 1,
+    "reboot_calls": 0,
+    "before_sha256": "7373df1005ed7322a5959799e545cf57b955dfa4a22679d1837b1448e8cc45a3",
+    "after_sha256": "f9570cbda80a3b904c99fae315a2eeb052bc897ce23459ee6707a5dc5e2c8966"
+  },
+  {
+    "source": "natnl_api.c",
+    "identity_checks": 4,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "4f42e319c89b839a78932799d0947e7c2d846ad6052934e47b802f9ade535691",
+    "after_sha256": "4d1545e37fd5bc760217ac236cb06ea3a12a54280d574d7e118386d02af639a1"
+  },
+  {
+    "source": "ntpd.c",
+    "identity_checks": 2,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "41914e48d53d24ef09f6b650b9770dba67266a0a9f07925fe3b12d787c1e4191",
+    "after_sha256": "a2a33bd9adc9d0e3bec5b1c903ec5c04f76c1d842b69c6aebb26cc7fff9b6260"
+  },
+  {
+    "source": "qmacc.c",
+    "identity_checks": 1,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "a7bd960342cea280ece7940c90e706f61e81fdd133dd0318f1a8ef99246226ca",
+    "after_sha256": "7346a02bac213f36f807e97f4c8d6ef069558a0583de9bf6dd0e5505f5fa1e5e"
+  },
+  {
+    "source": "rc.c",
+    "identity_checks": 1,
+    "pid1_signals": 3,
+    "reboot_calls": 1,
+    "before_sha256": "4dfebf7192806bc745b8f83847f5be50d58503c05bfb8954290b819de5ef4e5a",
+    "after_sha256": "8ec363a413698edda8f889b2e9476faf7a92a559081b94e7f640bf86fedf4a1f"
+  },
+  {
+    "source": "sched_daemon.c",
+    "identity_checks": 0,
+    "pid1_signals": 1,
+    "reboot_calls": 0,
+    "before_sha256": "394c5d19c1a8190f0c29c267a2e12adf274e56c0fcb14fd8ae5d5f340bb70f62",
+    "after_sha256": "044f6f949612d42e1f8ba5b7142c77b56574b26ec7bb78fe212a0ae9ce7b6bd7"
+  },
+  {
+    "source": "sdn.c",
+    "identity_checks": 1,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "e97f0a3f4550d9b6f3817f669b9d3ee82ddf39cbb31655dc6874f25459259b96",
+    "after_sha256": "b4de9a05f2664d66549ea2e5c86537b62e4038c3524632810f3eb60f684f5291"
+  },
+  {
+    "source": "services.c",
+    "identity_checks": 70,
+    "pid1_signals": 9,
+    "reboot_calls": 0,
+    "before_sha256": "327f3b27cac184cb62f94b4b1d6989cfe7ef0b52e8aad532950ca4724a310100",
+    "after_sha256": "0d6819b23693ed1403345339a620d706da598539789b775414841ae4d85790fb"
+  },
+  {
+    "source": "snmpd.c",
+    "identity_checks": 1,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "5bc7ecc5c8c1f9499026e6655a1b444772e4ebbca600213d1b8e0f4552bc88a8",
+    "after_sha256": "99a2a62670021f027e081bc72f5c01cc57e66150e9f3d494a76565ac2aca82e1"
+  },
+  {
+    "source": "ssh.c",
+    "identity_checks": 2,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "79cacf5ec327bfcd8fd77a5c73e1f5dcb79dbac854427930bb9cb097852fd9c0",
+    "after_sha256": "d256ed705f18d6495fdadb031bd897fb276df3f65ad4a6c304ae2a8277334413"
+  },
+  {
+    "source": "sysdeps/init-broadcom.c",
+    "identity_checks": 0,
+    "pid1_signals": 0,
+    "reboot_calls": 3,
+    "before_sha256": "5a305cb407ab96220d464189ccd3d3462f01bba9e20d9e5bc332d76b77b489ab",
+    "after_sha256": "f163864857a94291d822418dd8f13c58f2be6ac57363e62560ad24cbe419fced"
+  },
+  {
+    "source": "sysdeps/wps-broadcom.c",
+    "identity_checks": 2,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "cb559bca421529fda526bc9e16c61c462a17cd887ccbddc4f0f56b48024396fb",
+    "after_sha256": "849c946df1fc06facc2eac56caa906920656b4d1501ce4dc62bebc584184f6fb"
+  },
+  {
+    "source": "timemachine.c",
+    "identity_checks": 3,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "92b814b35ba586bc3310d673483381ff65779efb1b8e98b9ad14588142dcf9d0",
+    "after_sha256": "0840762f40c96fbf758299c57aa62062d25035f24c02a932625986aa189316d4"
+  },
+  {
+    "source": "udhcpc.c",
+    "identity_checks": 1,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "8e31a0be5dcc9d0a971288e6af40b6c37b4620f2aaf1f523482348905d8d5440",
+    "after_sha256": "17fd82c9bcbdb5ab458c3831342dd7ef944e6f35bfe9665b7de2b657216ccfb1"
+  },
+  {
+    "source": "usb.c",
+    "identity_checks": 23,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "b368c229ccc89b620c182a614a23069f7b333a1951c85e42d6b56cce5cddaffd",
+    "after_sha256": "e5597e79c216259926c5ac05a5f2b054e3aaee346b95f39278a47f0e1973516f"
+  },
+  {
+    "source": "vpn.c",
+    "identity_checks": 2,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "42b006b6f5435597d93483df87cfe796ea40e0f04136d9968343627e70ab3998",
+    "after_sha256": "d79ccb798a3381b4703d8afade41a2542387120f4711f333708b26218309bd94"
+  },
+  {
+    "source": "wanduck.c",
+    "identity_checks": 0,
+    "pid1_signals": 0,
+    "reboot_calls": 1,
+    "before_sha256": "7edb434d9a445dab515d34867e913e6dae7baa73c304c51280129179793f976c",
+    "after_sha256": "d39b9d78d6ab2ea245c767d9148945889dfb30af22c906cc724b2e0e9bdea4df"
+  },
+  {
+    "source": "watchdog.c",
+    "identity_checks": 0,
+    "pid1_signals": 3,
+    "reboot_calls": 2,
+    "before_sha256": "76d9e4157ed7c718ec21a3cf2cae2eb5a825e6343ac4729d8e17caec39dae95c",
+    "after_sha256": "449329a0bd38292ca941197c337b57c9a556f91e43f26fb549c713b9b3da4f17"
+  },
+  {
+    "source": "wtfast.c",
+    "identity_checks": 1,
+    "pid1_signals": 0,
+    "reboot_calls": 0,
+    "before_sha256": "678b290d0db081cb9d4275f3a7212f1052e87a744aaf7119597722a73dbe6b8f",
+    "after_sha256": "4394681371539c70a2b3d7644aba18fe507791ab1f3095622bf9fd85ef3c42ab"
+  }
+]

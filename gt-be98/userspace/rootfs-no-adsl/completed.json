@@ -1,0 +1,25 @@
+{
+  "status": "no-adsl-candidate-offline-verified",
+  "image": "candidate/GT-BE98_leon36-a53-runtimes_no-adsl_zstd22-1m-tailends.pkgtb",
+  "image_bytes": 87047244,
+  "image_sha256": "4c280ec6dd8620e86e4d3dbad6e9b29ee0a3ea325cae6f31326b5d43981cdcb0",
+  "rootfs_sha256": "14c5186e30974498079f6edc59bdaed02e8bafed590c9d663d688b3def673e1f",
+  "rootfs_bytes": 74629120,
+  "saved_vs_installed_bytes": 2392064,
+  "saved_vs_compression_only_bytes": 679936,
+  "rootfs_saved_ubi_blocks_vs_installed": 19,
+  "additional_ubi_blocks_vs_compression_only": 6,
+  "hypothetical_free_ubi_blocks": 31,
+  "hypothetical_free_ubi_bytes": 3936256,
+  "qemu_result": "builds/qemu/no-adsl-zstd22-1m-tailends/result.json",
+  "removed_files": [
+    "rom/etc/adsl1/adsl_phy.bin"
+  ],
+  "remaining_contents_modes_links_timestamps_unchanged": true,
+  "all_182_modules_unchanged": true,
+  "signed_bootfs_unchanged": true,
+  "router_modified": false,
+  "flashed": false,
+  "firmware_commit_performed": false,
+  "hardware_tested": false
+}

@@ -1,0 +1,24 @@
+{
+  "node_id": "TA_kwDOAmCth9oAKDVmZjBiNzllMDc3ZGUxZmNlMzgyODk0YTFhNDM4NDc5YzMwZWY3OGY",
+  "sha": "5ff0b79e077de1fce382894a1a438479c30ef78f",
+  "url": "https://api.github.com/repos/systemd/systemd-stable/git/tags/5ff0b79e077de1fce382894a1a438479c30ef78f",
+  "tagger": {
+    "name": "Luca Boccassi",
+    "email": "luca.boccassi@gmail.com",
+    "date": "2025-06-26T08:45:16Z"
+  },
+  "object": {
+    "sha": "356c54394add8c6a1d52773852c23656590dc33b",
+    "type": "commit",
+    "url": "https://api.github.com/repos/systemd/systemd-stable/git/commits/356c54394add8c6a1d52773852c23656590dc33b"
+  },
+  "tag": "v255.22",
+  "message": "systemd-stable v255.22\n-----BEGIN PGP SIGNATURE-----\n\niQJMBAABCgA2FiEErCSqx93EIPGOymuRKGv37813JB4FAmhdCJwYHGx1Y2EuYm9j\nY2Fzc2lAZ21haWwuY29tAAoJEChr9+/NdyQeXDYQAI5mMgIzHH4oLr9eq9CFkWL4\nH6qfF/Qu9XQKwmva1KV+BR1s9iN+2Me811nM/gjtqHUXPFpLxNuI0P0ufncoAQ01\nz0+rH5BbTENuTz4aPWcos4dI70Jgk0wTq13leG213+Day/4mPSIi70BFb+3NdPH1\nmyplzNI4pidL5DPW+gcDMA238fy3zUYvVMrRFPCi37uapN0vkxPCa/9gk8JPDWFE\niK3xD3TQAjU6s/C+feeGaKR/N/jVWYCS4lpB/s4ozePthZd6TUakxIbX2JRykYzV\nxVM46S8yO2hd+ahwl7xpb9+6OtQPvnQeNKo68bffEMFuFGZ2cdzyJlrJ2DxEqzq/\n7lT3U5a8HSu1Hz9/XLIzEi4Xjg5TWBWlvLVAPKA9RWpkHl7SgQ1RdJkelvL5i71E\ny6Xxvcs39cWqb/Lyi8jiBsJzuCjsOVoppCgl2bTboeY/JGSM11fYEfN/X6grYkt2\nCtcbN8JEJZI3bqcZwbX6VkG/hZFk/bxMNy2utZ65TM4fIE21GdXVqW/EoXK0kCAT\n0IREc+AHETBgrdeLGL379QAfDPUNOv6bNHTKygBPeGKvv6jXOb89YUSm16R7SwFz\n4yWb41ziTNTQ9dl9G3o47INrvN7CeKsE7Sgq/HDkgsrgxEudYV3H3u7gmOEgg7MV\ne05s/67tL0kf2r/vPGo/\n=dXQ3\n-----END PGP SIGNATURE-----\n",
+  "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJMBAABCgA2FiEErCSqx93EIPGOymuRKGv37813JB4FAmhdCJwYHGx1Y2EuYm9j\nY2Fzc2lAZ21haWwuY29tAAoJEChr9+/NdyQeXDYQAI5mMgIzHH4oLr9eq9CFkWL4\nH6qfF/Qu9XQKwmva1KV+BR1s9iN+2Me811nM/gjtqHUXPFpLxNuI0P0ufncoAQ01\nz0+rH5BbTENuTz4aPWcos4dI70Jgk0wTq13leG213+Day/4mPSIi70BFb+3NdPH1\nmyplzNI4pidL5DPW+gcDMA238fy3zUYvVMrRFPCi37uapN0vkxPCa/9gk8JPDWFE\niK3xD3TQAjU6s/C+feeGaKR/N/jVWYCS4lpB/s4ozePthZd6TUakxIbX2JRykYzV\nxVM46S8yO2hd+ahwl7xpb9+6OtQPvnQeNKo68bffEMFuFGZ2cdzyJlrJ2DxEqzq/\n7lT3U5a8HSu1Hz9/XLIzEi4Xjg5TWBWlvLVAPKA9RWpkHl7SgQ1RdJkelvL5i71E\ny6Xxvcs39cWqb/Lyi8jiBsJzuCjsOVoppCgl2bTboeY/JGSM11fYEfN/X6grYkt2\nCtcbN8JEJZI3bqcZwbX6VkG/hZFk/bxMNy2utZ65TM4fIE21GdXVqW/EoXK0kCAT\n0IREc+AHETBgrdeLGL379QAfDPUNOv6bNHTKygBPeGKvv6jXOb89YUSm16R7SwFz\n4yWb41ziTNTQ9dl9G3o47INrvN7CeKsE7Sgq/HDkgsrgxEudYV3H3u7gmOEgg7MV\ne05s/67tL0kf2r/vPGo/\n=dXQ3\n-----END PGP SIGNATURE-----\n",
+    "payload": "object 356c54394add8c6a1d52773852c23656590dc33b\ntype commit\ntag v255.22\ntagger Luca Boccassi <luca.boccassi@gmail.com> 1750927516 +0100\n\nsystemd-stable v255.22\n",
+    "verified_at": "2025-06-26T08:48:42Z"
+  }
+}

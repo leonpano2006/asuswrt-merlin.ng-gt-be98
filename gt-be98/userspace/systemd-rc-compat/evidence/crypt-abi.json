@@ -1,0 +1,386 @@
+{
+  "old_exports": {
+    "encrypt_r@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_WEAK",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_r@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_WEAK",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": null
+    },
+    "fcrypt@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_WEAK",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "setkey@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "GLIBC_2.4@GLIBC_2.4": {
+      "type": "STT_OBJECT",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": 0
+    },
+    "crypt@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": null
+    },
+    "setkey_r@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_WEAK",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "encrypt@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    }
+  },
+  "new_exports": {
+    "OW_CRYPT_1.0@OW_CRYPT_1.0": {
+      "type": "STT_OBJECT",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": 0
+    },
+    "xcrypt_r@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "xcrypt_gensalt_r@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": null
+    },
+    "setkey@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "GLIBC_2.4@GLIBC_2.4": {
+      "type": "STT_OBJECT",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": 0
+    },
+    "encrypt_r@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_checksalt@XCRYPT_4.3": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": null
+    },
+    "XCRYPT_2.0@XCRYPT_2.0": {
+      "type": "STT_OBJECT",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": 0
+    },
+    "setkey_r@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_gensalt_r@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_rn@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": null
+    },
+    "crypt_rn@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_r@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_r@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": null
+    },
+    "XCRYPT_4.3@XCRYPT_4.3": {
+      "type": "STT_OBJECT",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": 0
+    },
+    "crypt_ra@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": null
+    },
+    "XCRYPT_4.4@XCRYPT_4.4": {
+      "type": "STT_OBJECT",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": 0
+    },
+    "crypt_gensalt_rn@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_ra@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_gensalt_rn@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": null
+    },
+    "crypt_gensalt_rn@OW_CRYPT_1.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_gensalt@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_gensalt@OW_CRYPT_1.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_gensalt@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": null
+    },
+    "encrypt@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "xcrypt@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_preferred_method@XCRYPT_4.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": null
+    },
+    "xcrypt_gensalt@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "fcrypt@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_gensalt_ra@OW_CRYPT_1.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_gensalt_ra@GLIBC_2.4": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": true,
+      "object_size": null
+    },
+    "crypt_gensalt_ra@XCRYPT_2.0": {
+      "type": "FUNCTION",
+      "binding": "STB_GLOBAL",
+      "visibility": "STV_DEFAULT",
+      "hidden_version": false,
+      "object_size": null
+    }
+  },
+  "missing": [],
+  "old_sha256": "50efa54b898167e3bfbf2673c2f682a74ddc455e686328839d79915d0ca422c5",
+  "new_sha256": "c51a50ce39fe06895bbe79e38cad642c75f3e1b5946fa8e42349ada2cd258d59",
+  "metadata_changes": {
+    "encrypt_r@GLIBC_2.4": {
+      "old": {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": true,
+        "object_size": null
+      },
+      "new": {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": true,
+        "object_size": null
+      }
+    },
+    "crypt_r@GLIBC_2.4": {
+      "old": {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      "new": {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": true,
+        "object_size": null
+      }
+    },
+    "fcrypt@GLIBC_2.4": {
+      "old": {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": true,
+        "object_size": null
+      },
+      "new": {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": true,
+        "object_size": null
+      }
+    },
+    "crypt@GLIBC_2.4": {
+      "old": {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      "new": {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": true,
+        "object_size": null
+      }
+    },
+    "setkey_r@GLIBC_2.4": {
+      "old": {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": true,
+        "object_size": null
+      },
+      "new": {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": true,
+        "object_size": null
+      }
+    }
+  },
+  "compatibility_rule": "Preserve callable/object ABI and old version resolution. A weak export may become global; crypt/crypt_r retain GLIBC_2.4 aliases while the default version becomes XCRYPT_2.0."
+}
