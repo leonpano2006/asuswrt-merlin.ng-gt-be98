@@ -1,0 +1,21 @@
+[Unit]
+Description=ASUS hardware and legacy service manager
+DefaultDependencies=no
+After=systemd-journald.service tmp.mount var.mount run.mount
+RequiresMountsFor=/tmp /var /run
+Requires=systemd-journald.service
+Conflicts=shutdown.target
+Before=shutdown.target
+
+[Service]
+Type=notify
+NotifyAccess=main
+RuntimeDirectory=leon-rc
+RuntimeDirectoryMode=0700
+ExecStart=/usr/libexec/leon-rc-broker /usr/sbin/rc
+KillMode=mixed
+TimeoutStartSec=300
+TimeoutStopSec=180
+Restart=no
+StandardOutput=journal
+StandardError=journal

@@ -1,0 +1,1988 @@
+--- a/release/src/router/rc/Makefile
++++ b/release/src/router/rc/Makefile
+@@ -1306,6 +1306,10 @@
+ 	@$(CC) -o $@ $(OBJS_WPS_PBCD) $(LDFLAGS)
+ endif
+ 
++CFLAGS += -D_GNU_SOURCE -DLEON_WRAP_LIBC
++OBJS += rc-client.o rc-manager.o rc-legacy.o
++LDFLAGS2 += -Wl,--wrap=kill,--wrap=reboot,--export-dynamic-symbol=leon_rc_is_manager
++
+ rc: $(OBJS) $(if $(RTCONFIG_CONNDIAG),libconn_diag.so,) $(if $(RTCONFIG_ENERGY_SAVE),libes.so,) $(if $(RTCONFIG_BCM_AFC),libbcm_afc.so,)
+ 	@echo " [rc] CC $@"
+ 	@$(CC) -o $@ $^ $(LDFLAGS2) $(CFLAGS)
+--- a/release/src/router/rc/ai_service.c
++++ b/release/src/router/rc/ai_service.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+ 	Services support for AI Board
+ */
+@@ -1237,7 +1238,7 @@
+ 	strlcpy(username, nvram_safe_get("http_username"), sizeof(username));
+ 	char *tftpd_argv[] = { "in.tftpd", "-4lcvs", "-u", username, "--address", ip, tftpdir, NULL };
+ 	
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc_after_wait("start_ai_tftpd");
+ 		return;
+ 	}
+@@ -1254,7 +1255,7 @@
+ 
+ void stop_ai_tftpd(int force)
+ {
+-	if(!force && getpid() != 1){
++	if(!force && !leon_rc_is_manager()){
+ 		notify_rc_after_wait("stop_ai_tftpd");
+ 		return;
+ 	}
+--- a/release/src/router/rc/alt_watchdog.c
++++ b/release/src/router/rc/alt_watchdog.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ #include <stdio.h>
+ #include <unistd.h>
+ #include <ev.h>
+@@ -45,7 +46,7 @@
+         return;
+ #endif
+ #if 0
+-	if(getpid() != 1) { //not rc init process
++	if(!leon_rc_is_manager()) { //not rc init process
+ 		notify_rc("start_nfcm");
+ 		return;
+ 	}
+@@ -61,7 +62,7 @@
+ void alt_stop_nfcm()
+ {
+ #if 0
+-	if(getpid() != 1) { //not rc init process
++	if(!leon_rc_is_manager()) { //not rc init process
+ 		notify_rc("stop_nfcm");
+ 		return;
+ 	}
+--- a/release/src/router/rc/btnsetup.c
++++ b/release/src/router/rc/btnsetup.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * This program is free software; you can redistribute it and/or
+  * modify it under the terms of the GNU General Public License as
+@@ -1058,9 +1059,9 @@
+     	shutdown(fd, 2);
+     	close(fd);
+ 
+-	//if (flag) kill(1, SIGHUP);
+-	//else kill(1, SIGTERM);
+-	kill(1, SIGTERM);
++	//if (flag) leon_rc_signal(SIGHUP);
++	//else leon_rc_signal(SIGTERM);
++	leon_rc_signal(SIGTERM);
+ }
+ 
+ char pdubuf[INFO_PDU_LENGTH];	
+--- a/release/src/router/rc/firewall.c
++++ b/release/src/router/rc/firewall.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * This program is free software; you can redistribute it and/or
+  * modify it under the terms of the GNU General Public License as
+@@ -8859,7 +8860,7 @@
+ 	if (!is_routing_enabled())
+ 		return -1;
+ 
+-	if (getpid() != 1 && getuid() != 0) {
++	if (!leon_rc_is_manager() && getuid() != 0) {
+ 		snprintf(tmp, sizeof(tmp), "start_firewall %d %d", wanunit, lanunit);
+ 		notify_rc(tmp);
+ 		return 0;
+--- a/release/src/router/rc/fwupg_flashing.c
++++ b/release/src/router/rc/fwupg_flashing.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * This program is free software; you can redistribute it and/or
+  * modify it under the terms of the GNU General Public License as
+@@ -92,7 +93,7 @@
+ 
+ 	sleep(2);
+ 	printf("eval_bcm_flasher done, going reboot...\n");
+-	reboot(RB_AUTOBOOT);
++	leon_rc_reboot(RB_AUTOBOOT);
+ 
+ 	return 0;
+ }
+--- a/release/src/router/rc/init.c
++++ b/release/src/router/rc/init.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ 
+ /*
+ 
+@@ -2670,7 +2671,7 @@
+ 			_dprintf("Erase NVRAM...\n");
+ 			system("mtd-erase -d nvram");
+ 			sleep(1);
+-			reboot(RB_AUTOBOOT);
++			leon_rc_reboot(RB_AUTOBOOT);
+ 		}
+ #endif
+ #endif
+@@ -3117,6 +3118,8 @@
+ 	RGB_LED_STATUS_T rgb_cfg = { 0 };
+ #endif
+ 
++	if (leon_rc_shutdown_gate(rb)) { perror("ASUS shutdown gate"); _exit(1); }
++
+ 	_dprintf("shutdn rb=%d\n", rb);
+ 
+ 	sigemptyset(&ss);
+@@ -3162,12 +3165,12 @@
+ 	_dprintf("REBOOT: soft-reboot timestamp=%ld\n", now);
+ 
+ 	_dprintf("TERM\n");
+-	kill(-1, SIGTERM);
++	if (!leon_rc_managed()) kill(-1, SIGTERM);
+ 	sleep(3);
+ 	sync();
+ 
+ 	_dprintf("KILL\n");
+-	kill(-1, SIGKILL);
++	if (!leon_rc_managed()) kill(-1, SIGKILL);
+ 	sleep(1);
+ 	sync();
+ 
+@@ -3186,9 +3189,10 @@
+ 		mtd_erase_misc2();
+ #endif
+ 	printf("\nStopping bcm_boot_launcher ...\n");
+-	system("bcm_boot_launcher stop");
+-#endif
+-	reboot(rb ? RB_AUTOBOOT : RB_HALT_SYSTEM);
++	leon_rc_system("bcm_boot_launcher stop");
++#endif
++	if (leon_rc_managed()) _exit(0); /* systemd finishes global shutdown */
++	leon_rc_reboot(rb ? RB_AUTOBOOT : RB_HALT_SYSTEM);
+ 
+ 	do {
+ 		sleep(1);
+@@ -21772,14 +21776,14 @@
+ 			_dprintf("force set watchdog as 20s\n");
+ 			nvram_set("watchdog", "20000");
+ 			nvram_commit();
+-			reboot(0);
++			leon_rc_reboot(0);
+ 		}
+ 
+ 	case MODEL_RTAC66U:
+ 		if (nvram_match("regulation_domain_5G", "EU") && !nvram_match("watchdog", "0")) {
+ 			nvram_set("watchdog", "0");
+ 			nvram_commit();
+-			reboot(0);
++			leon_rc_reboot(0);
+ 		}
+ 
+ #ifdef RTCONFIG_DUALWAN
+@@ -24638,7 +24642,7 @@
+ 
+ 			nvram_unset("ctf_fa_mode");
+ 			nvram_commit();
+-			reboot(RB_AUTOBOOT);
++			leon_rc_reboot(RB_AUTOBOOT);
+ 			return;
+ 		}
+ 	} else {
+@@ -24743,7 +24747,7 @@
+ 		printf("wdt:%d\n", wdt);
+ 
+ 		snprintf(tmp, sizeof(tmp), "wdtctl -d -t %d start", wdt);
+-		system(tmp);
++		leon_rc_system(tmp);
+ 	}
+ }
+ #endif
+@@ -24997,7 +25001,7 @@
+ #ifdef HND_ROUTER
+ 	_dprintf("\nLaunch boot...\n");
+ 
+-	system("bcm_boot_launcher start");
++	leon_rc_system("bcm_boot_launcher start");
+ 	start_hw_wdt();
+ #endif
+ 
+@@ -25006,7 +25010,7 @@
+ #endif
+ 
+ #define MKNOD(name,mode,dev)		if (mknod(name,mode,dev))		perror("## mknod " name)
+-#define MOUNT(src,dest,type,flag,data)	if (mount(src,dest,type,flag,data))	perror("## mount " src)
++#define MOUNT(src,dest,type,flag,data)	if (leon_rc_mount(src,dest,type,flag,data))	perror("## mount " src)
+ #define MKDIR(pathname,mode)		if (mkdir(pathname,mode))		perror("## mkdir " pathname)
+ 
+ #ifdef RTCONFIG_RTK_NAND
+@@ -25036,7 +25040,7 @@
+ 		system("rm /hw_setting/nvram.bin");
+ 		system("rm /hw_setting2/nvram.bin");
+ 		sleep(1);
+-		reboot(RB_AUTOBOOT);
++		leon_rc_reboot(RB_AUTOBOOT);
+ 	}
+ #endif
+ #endif
+@@ -25119,7 +25123,7 @@
+ #ifdef DSL_AX82U
+ 	if (is_ax5400_i1()) noconsole = 1; else
+ #endif
+-	stime(&tm);
++	if (!leon_rc_managed()) stime(&tm);
+ 
+ 	if(nvram_match("noconsole", "1")) {
+ 		noconsole = 1;
+@@ -25171,12 +25175,12 @@
+ 	mkdir("/var/lock", 0777);
+ 	mkdir("/var/tmp/dhcp", 0777);
+ 	mkdir("/home/root", 0700);
+-	chmod("/tmp", 0777);
++	chmod("/tmp", leon_rc_managed() ? 01777 : 0777);
+ #ifdef RTCONFIG_USB
+ 	chmod(POOL_MOUNT_ROOT, 0777);
+ #endif
+ 	f_write("/etc/hosts", NULL, 0, 0, 0644);			// blank
+-	f_write("/etc/fstab", NULL, 0, 0, 0644);			// !!TB - blank
++	if (!leon_rc_managed()) f_write("/etc/fstab", NULL, 0, 0, 0644);			// !!TB - blank
+ 	f_write("/tmp/settings", NULL, 0, 0, 0644);
+ 
+ 	//umask(022);
+@@ -25885,7 +25889,7 @@
+ 
+ 	if (console_init()) noconsole = 1;
+ 
+-	stime(&tm);
++	if (!leon_rc_managed()) stime(&tm);
+ 
+ 	f_write("/tmp/settings", NULL, 0, 0, 0644);
+ 
+@@ -26071,7 +26075,7 @@
+ #ifdef CUSTOM_NAND_SINGLE_IMAGE
+ 	return 1;
+ #endif
+-	_dprintf("%s: boot(%d), reboot(%d)\n", __func__, boot, reboot);
++	_dprintf("%s: boot(%d), leon_rc_reboot(%d)\n", __func__, boot, reboot);
+ 	
+ 	return boot == reboot;
+ }
+@@ -26143,6 +26147,8 @@
+ 	int newexec = 0;
+ #endif
+ 
++	if (leon_rc_manager_enter(argc, argv)) { perror("ASUS rc manager entry"); return 1; }
++
+ 	_dprintf("init_main start.\n");
+ #if defined(RTCONFIG_HND_ROUTER_BE_4916)
+ #if defined(RTCONFIG_FLASH_TYPE_EMMC)
+@@ -26408,6 +26414,10 @@
+ 		case SIGHUP:		/* RESTART */
+ 		case SIGINT:		/* STOP */
+ 		case SIGTERM:		/* REBOOT */
++			if (leon_rc_managed() && (state == SIGTERM || state == SIGQUIT) &&
++			    leon_rc_shutdown_gate(state == SIGTERM)) {
++				perror("ASUS shutdown ordering"); return 1;
++			}
+ 			stop_mcsd();
+ #if defined(RTCONFIG_USB_MODEM) && (defined(RTCONFIG_JFFS2) || defined(RTCONFIG_BRCM_NAND_JFFS2) || defined(RTCONFIG_UBIFS) || defined(RTCONFIG_JFFS_PARTITION))
+ 		_dprintf("modem data: save the data during the signal %d.\n", state);
+@@ -26830,7 +26840,7 @@
+ 						nvram_commit();
+ 						dbG("device failed %d times, reboot...\n",dev_fail_count);
+ 						logmessage("ATE", "device failed %d times, reboot...\n",dev_fail_count);
+-						kill(1, SIGTERM);
++						leon_rc_signal(SIGTERM);
+ 					}
+ 					else {
+ 						nvram_set("dev_fail_count", "0");
+@@ -26963,7 +26973,7 @@
+ #ifdef RTBE96U
+ 					if (!dhd_probe_check())	// dhd probe check ok, perfrom normal reboot
+ #endif
+-					kill(1, SIGTERM);
++					leon_rc_signal(SIGTERM);
+ 				}
+ 				else {
+ 					dbG("System boot up success %d times\n", boot_check);
+@@ -27104,7 +27114,7 @@
+ 
+ #if defined(RTBE92U) && defined(AVS_EN_WAR)
+ 			if (nvram_match("sys_reboot_reason", "config_avs")) {
+-				kill(1, SIGTERM);
++				leon_rc_signal(SIGTERM);
+ 			}
+ #endif
+ 
+@@ -27168,6 +27178,8 @@
+ 			break;
+ 		}
+ 
++		if (leon_rc_ready()) { perror("ASUS readiness notification"); return 1; }
++
+ 		if (!(g_reboot || g_upgrade) && !nvram_get_int("asus_mfg")) {
+ 			chld_reap(0);	/* Periodically reap zombies. */
+ 			check_services();
+@@ -27206,6 +27218,9 @@
+ {
+ 	int reboot = (strstr(argv[0], "reboot") != NULL);
+ 	int def_reset_wait = 30;
++
++	/* systemd owns the deadline; do not fork a delayed SysRq reset. */
++	if (leon_rc_managed()) return leon_rc_signal(reboot ? SIGTERM : SIGQUIT);
+ 
+ 	nvram_set("sys_reboot_reason", "rbt_manual");
+ 	if(nvram_match("ahs_rbt_act", "1"))
+@@ -27220,7 +27235,7 @@
+ #ifdef RTCONFIG_HND_ROUTER_AX
+ 	nvram_set_int("wlready", 0);
+ #endif
+-	kill(1, reboot ? SIGTERM : SIGQUIT);
++	leon_rc_signal(reboot ? SIGTERM : SIGQUIT);
+ 
+ #if defined(RTN14U) || defined(RTN65U) || defined(RTAC52U) || defined(RTAC51U) || defined(RTN11P) || defined(RTN300) || defined(RTN54U) || defined(RTCONFIG_QCA) || defined(RTAC1200HP) || defined(RTN56UB1) || defined(RTAC54U) || defined(RTN56UB2) || defined(RTAC85U) || defined(RTAC85P) || defined(RTN800HP) || defined(RTACRH26) || defined(TUFAC1750)
+ 	def_reset_wait = 50;
+--- a/release/src/router/rc/jffs2.c
++++ b/release/src/router/rc/jffs2.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+ 
+ 	Tomato Firmware
+@@ -353,7 +354,7 @@
+ #endif
+ 		_dprintf("%s: rebooting because DUT had ever erased jffs2 %d times (ever %d times)\n", __func__, jffs2_auto_erase, jffs2_ever_erase);
+ 		logmessage("jffs2", "rebooting because DUT had ever erased jffs2 %d times (ever %d times)", jffs2_auto_erase, jffs2_ever_erase);
+-		reboot(RB_AUTOBOOT);
++		leon_rc_reboot(RB_AUTOBOOT);
+ 		return;
+ 	}
+ 	else
+@@ -441,7 +442,7 @@
+ 		mtd_erase(JFFS2_MTD_NAME);
+ 		nvram_set("jffs2_clean_fs", "1");
+ 		nvram_commit();
+-		reboot(RB_AUTOBOOT);
++		leon_rc_reboot(RB_AUTOBOOT);
+ 	}
+ #ifdef TEST_INTEGRITY
+ 	int test;
+--- a/release/src/router/rc/mtd.c
++++ b/release/src/router/rc/mtd.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+ 
+ 	Copyright 2005, Broadcom Corporation
+@@ -1438,7 +1439,7 @@
+ 
+ 				if (nvram_get_int("ate_upgrade_reboot")) {
+ 					_dprintf("[ATE] REBOOT...\n");
+-					kill(1, SIGTERM);
++					leon_rc_signal(SIGTERM);
+ 				}
+ #endif
+ 			}
+--- a/release/src/router/rc/natnl_api.c
++++ b/release/src/router/rc/natnl_api.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ #include <shared.h>
+ #include "rc.h"
+ #include "mastiff.h"
+@@ -26,7 +27,7 @@
+ 	if(nvram_get_int("aae_disable_force"))
+ 		return;
+ 
+-	if( getpid()!=1 ) {
++	if( !leon_rc_is_manager() ) {
+ 		notify_rc("start_aae");
+ 		return;
+ 	}
+@@ -41,7 +42,7 @@
+ 
+ void stop_aae()
+ {
+-	if( getpid()!=1 ) {
++	if( !leon_rc_is_manager() ) {
+ 		notify_rc("stop_aae");
+ 		return;
+ 	}
+@@ -126,7 +127,7 @@
+ 
+ 	stop_aae();
+ 	
+-	if( getpid()!=1 ) {
++	if( !leon_rc_is_manager() ) {
+ 		notify_rc("start_mastiff");
+ 		return;
+ 	}
+@@ -148,7 +149,7 @@
+ 
+ void stop_mastiff()
+ {
+-	if( getpid()!=1 ) {
++	if( !leon_rc_is_manager() ) {
+ 		notify_rc("stop_mastiff");
+ 		return;
+ 	}
+--- a/release/src/router/rc/ntpd.c
++++ b/release/src/router/rc/ntpd.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * This program is free software; you can redistribute it and/or
+  * modify it under the terms of the GNU General Public License as
+@@ -38,7 +39,7 @@
+ 	int ret, index = 6;
+ 	pid_t pid;
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_ntpd");
+ 		return 0;
+ 	}
+@@ -68,7 +69,7 @@
+ 
+ void stop_ntpd(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_ntpd");
+ 		return;
+ 	}
+--- a/release/src/router/rc/qmacc.c
++++ b/release/src/router/rc/qmacc.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ #include "rc.h"
+ 
+ void start_qmacc(void)
+@@ -7,7 +8,7 @@
+ 
+ 	stop_qmacc();
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_qmacc");
+ 		return;
+ 	}
+--- /dev/null
++++ b/release/src/router/rc/rc-bridge.h
+@@ -0,0 +1,24 @@
++/* SPDX-License-Identifier: GPL-2.0-or-later */
++#ifndef LEON_RC_BRIDGE_H
++#define LEON_RC_BRIDGE_H
++#include <stdint.h>
++#include <sys/types.h>
++#define LEON_RC_DIR "/run/leon-rc"
++#define LEON_RC_SOCKET LEON_RC_DIR "/control"
++#define LEON_RC_MAGIC UINT32_C(0x4c524331)
++enum leon_rc_op { LEON_PING=1, LEON_SIGNAL, LEON_HELLO, LEON_READY, LEON_STATE, LEON_NOTIFY_CHECK };
++struct leon_rc_message { uint32_t magic, op; int32_t value, error; };
++_Static_assert(sizeof(struct leon_rc_message) == 16, "wire layout");
++int leon_rc_managed(void);
++int leon_rc_preload_ready(void);
++int leon_rc_exchange(unsigned int op, int value, int *result);
++int leon_rc_signal(int sig);
++int leon_rc_reboot(int command);
++int leon_rc_manager_enter(int argc, char **argv);
++int leon_rc_is_manager(void);
++int leon_rc_ready(void);
++int leon_rc_system(const char *command);
++int leon_rc_shutdown_gate(int rebooting);
++int leon_rc_mount(const char *source, const char *target, const char *type,
++                  unsigned long flags, const void *data);
++#endif
+--- /dev/null
++++ b/release/src/router/rc/rc-client.c
+@@ -0,0 +1,84 @@
++/* SPDX-License-Identifier: GPL-2.0-or-later */
++#define _GNU_SOURCE
++#include "rc-bridge.h"
++#include <dlfcn.h>
++#include <errno.h>
++#include <poll.h>
++#include <signal.h>
++#include <string.h>
++#include <sys/reboot.h>
++#include <sys/socket.h>
++#include <sys/un.h>
++#include <unistd.h>
++#ifdef LEON_WRAP_LIBC
++int __real_kill(pid_t, int);
++int __real_reboot(int);
++#define legacy_kill __real_kill
++#define legacy_reboot __real_reboot
++#else
++#define legacy_kill kill
++#define legacy_reboot reboot
++#endif
++
++int leon_rc_managed(void)
++{
++    /* Under systemd, a missing broker is an error, never a fallback to PID 1. */
++    return access("/run/systemd/system", F_OK) == 0;
++}
++
++int leon_rc_preload_ready(void)
++{
++    uint32_t (*version)(void) = dlsym(RTLD_DEFAULT, "leon_rc_notify_protocol");
++    if (!version || version() != LEON_RC_MAGIC) { errno = ELIBBAD; return -1; }
++    return 0;
++}
++
++int leon_rc_exchange(unsigned int op, int value, int *result)
++{
++    struct sockaddr_un address = { .sun_family = AF_UNIX };
++    struct leon_rc_message message = { LEON_RC_MAGIC, op, value, 0 }, reply;
++    struct ucred peer;
++    struct timeval timeout = { .tv_sec = 2 };
++    socklen_t size = sizeof(peer);
++    int fd, saved;
++    ssize_t n;
++    strcpy(address.sun_path, LEON_RC_SOCKET);
++    fd = socket(AF_UNIX, SOCK_SEQPACKET | SOCK_CLOEXEC, 0);
++    if (fd < 0) return -1;
++    if (setsockopt(fd, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof(timeout)) ||
++        setsockopt(fd, SOL_SOCKET, SO_SNDTIMEO, &timeout, sizeof(timeout)) ||
++        connect(fd, (struct sockaddr *)&address, sizeof(address)) ||
++        getsockopt(fd, SOL_SOCKET, SO_PEERCRED, &peer, &size)) goto fail;
++    if (peer.uid != 0) { errno = EACCES; goto fail; }
++    n = send(fd, &message, sizeof(message), MSG_NOSIGNAL);
++    if (n != sizeof(message)) { if (n >= 0) errno = EIO; goto fail; }
++    do { n = recv(fd, &reply, sizeof(reply), MSG_TRUNC); } while (n < 0 && errno == EINTR);
++    if (n != sizeof(reply) || reply.magic != LEON_RC_MAGIC || reply.op != op) {
++        if (n >= 0) errno = EPROTO;
++        goto fail;
++    }
++    if (reply.error) { errno = reply.error; goto fail; }
++    if (result) *result = reply.value;
++    close(fd);
++    return 0;
++fail:
++    saved = errno;
++    close(fd);
++    errno = saved;
++    return -1;
++}
++
++int leon_rc_signal(int sig)
++{
++    if (!leon_rc_managed()) return legacy_kill(1, sig);
++    return leon_rc_exchange(LEON_SIGNAL, sig, NULL);
++}
++
++int leon_rc_reboot(int command)
++{
++    if (!leon_rc_managed()) return legacy_reboot(command);
++    if ((unsigned int)command == RB_AUTOBOOT) return leon_rc_signal(SIGTERM);
++    if ((unsigned int)command == RB_HALT_SYSTEM || (unsigned int)command == RB_POWER_OFF) return leon_rc_signal(SIGQUIT);
++    errno = EINVAL;
++    return -1;
++}
+--- /dev/null
++++ b/release/src/router/rc/rc-legacy.c
+@@ -0,0 +1,15 @@
++/* SPDX-License-Identifier: GPL-2.0-or-later */
++#include "rc-bridge.h"
++#include <errno.h>
++int __real_kill(pid_t, int);
++/* Linker wrappers cover static calls from retained RC objects as well as source.
++ * They do not rewrite objects or affect calls from unrelated executables/DSOs. */
++int __wrap_kill(pid_t pid, int signal)
++{
++    if (leon_rc_managed()) {
++        if (pid == 1) return leon_rc_signal(signal);
++        if (pid == -1) { errno = EPERM; return -1; }
++    }
++    return __real_kill(pid,signal);
++}
++int __wrap_reboot(int command) { return leon_rc_reboot(command); }
+--- /dev/null
++++ b/release/src/router/rc/rc-manager.c
+@@ -0,0 +1,122 @@
++/* SPDX-License-Identifier: GPL-2.0-or-later */
++#define _GNU_SOURCE
++#include "rc-bridge.h"
++#include <errno.h>
++#include <mntent.h>
++#include <signal.h>
++#include <spawn.h>
++#include <stdlib.h>
++#include <sys/wait.h>
++#include <stdio.h>
++#include <string.h>
++#include <sys/mount.h>
++#include <sys/prctl.h>
++#include <unistd.h>
++
++static pid_t manager_pid;
++static int ready_sent;
++
++int leon_rc_manager_enter(int argc, char **argv)
++{
++    sigset_t mask;
++    /* init.c's SIGCHLD handler raises SIGALRM during sysinit, before the
++     * legacy main loop blocks initsigs. A non-PID-1 manager must block it
++     * from entry so it remains pending for that loop instead of terminating. */
++    static const int signals[] = { SIGHUP, SIGINT, SIGQUIT, SIGTERM, SIGUSR1, SIGUSR2, SIGALRM };
++    unsigned int i;
++    if (!leon_rc_managed()) return getpid() == 1 ? 0 : (errno = EPERM, -1);
++    if (leon_rc_preload_ready()) return -1;
++    if (argc != 2 || strcmp(argv[1], "--leon-systemd")) { errno = EINVAL; return -1; }
++    sigemptyset(&mask);
++    for (i=0; i<sizeof(signals)/sizeof(signals[0]); i++) sigaddset(&mask, signals[i]);
++    if (sigprocmask(SIG_BLOCK, &mask, NULL) ||
++        prctl(PR_SET_CHILD_SUBREAPER, 1, 0, 0, 0) ||
++        leon_rc_exchange(LEON_HELLO, 0, NULL)) return -1;
++    manager_pid = getpid();
++    return 0;
++}
++
++int leon_rc_is_manager(void)
++{
++    /* A fork child inherits the stored PID, so it does not inherit this role. */
++    return getpid() == 1 || (manager_pid > 1 && getpid() == manager_pid);
++}
++
++int leon_rc_ready(void)
++{
++    if (!leon_rc_managed() || ready_sent) return 0;
++    if (!leon_rc_is_manager()) { errno = EPERM; return -1; }
++    if (leon_rc_exchange(LEON_READY, 0, NULL)) return -1;
++    ready_sent = 1;
++    return 0;
++}
++
++int leon_rc_shutdown_gate(int rebooting)
++{
++    int stopping = 0, i;
++    if (!leon_rc_managed()) return 0;
++    if (!leon_rc_is_manager()) { errno = EPERM; return -1; }
++    if (leon_rc_exchange(LEON_STATE, 0, &stopping)) return -1;
++    if (!stopping && leon_rc_signal(rebooting ? SIGTERM : SIGQUIT)) return -1;
++    /* Other units (including USB consumers) stop before the ASUS unit drains. */
++    for (i=0; i<120; i++) {
++        if (leon_rc_exchange(LEON_STATE, 0, &stopping)) return -1;
++        if (stopping) return 0;
++        sleep(1);
++    }
++    errno = ETIMEDOUT;
++    return -1;
++}
++
++int leon_rc_mount(const char *source, const char *target, const char *type,
++                  unsigned long flags, const void *data)
++{
++    static const char *const protected[] = { "/proc", "/sys", "/dev", "/tmp", "/var", "/run", "/dev/pts", "/dev/shm" };
++    unsigned int i;
++    if (leon_rc_managed()) for (i=0; i<sizeof(protected)/sizeof(protected[0]); i++) {
++        if (!strcmp(target, protected[i])) {
++            struct mntent *entry;
++            FILE *mounts = setmntent("/proc/self/mounts", "r");
++            int found = 0, same = 0;
++            if (!mounts) return -1;
++            while ((entry = getmntent(mounts))) if (!strcmp(entry->mnt_dir, target)) {
++                found = 1;
++                same = type && !strcmp(entry->mnt_type, type);
++            }
++            endmntent(mounts);
++            if (found) {
++                if (same && !(flags & (MS_REMOUNT | MS_BIND | MS_MOVE))) return 0;
++                errno = EBUSY;
++                return -1;
++            }
++        }
++    }
++    return mount(source, target, type, flags, data);
++}
++
++/* system() inherits the manager signal mask; BSP daemons must start unblocked. */
++int leon_rc_system(const char *command)
++{
++    extern char **environ;
++    posix_spawnattr_t attr;
++    sigset_t empty, block, previous;
++    pid_t pid, waited;
++    int error, status;
++    char *const args[] = { "/bin/sh", "-c", (char *)command, NULL };
++    if (!leon_rc_managed()) return system(command);
++    sigemptyset(&empty); sigemptyset(&block); sigaddset(&block, SIGCHLD);
++    error = posix_spawnattr_init(&attr);
++    if (error) { errno = error; return -1; }
++    posix_spawnattr_setsigmask(&attr, &empty);
++    posix_spawnattr_setflags(&attr, POSIX_SPAWN_SETSIGMASK);
++    if (sigprocmask(SIG_BLOCK, &block, &previous)) { posix_spawnattr_destroy(&attr); return -1; }
++    error = posix_spawn(&pid, "/bin/sh", NULL, &attr, args, environ);
++    posix_spawnattr_destroy(&attr);
++    if (!error) {
++        do { waited = waitpid(pid, &status, 0); } while (waited < 0 && errno == EINTR);
++        if (waited < 0) error = errno;
++    }
++    sigprocmask(SIG_SETMASK, &previous, NULL);
++    if (error) { errno = error; return -1; }
++    return status;
++}
+--- a/release/src/router/rc/rc.c
++++ b/release/src/router/rc/rc.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+ 
+ 	Tomato Firmware
+@@ -2748,7 +2749,7 @@
+ 		system(cp_cmd);
+ 		sync();
+ 		dbg("%s: Got Q6 crashdump in run-in mode, reboot instead!\n", __func__);
+-		reboot(RB_AUTOBOOT);
++		leon_rc_reboot(RB_AUTOBOOT);
+ 	} else {
+ 		system("restart_wireless &");
+ 		dbg("%s: gzip /dev/%s to %s done, copy it to /jffs and restart_wireless\n", __func__, devicename, path);
+@@ -3899,9 +3900,9 @@
+ #if 0
+ 	if (strcmp(base, "rc") == 0) {
+ 		if (argc < 2) return 1;
+-		if (strcmp(argv[1], "start") == 0) return kill(1, SIGUSR2);
+-		if (strcmp(argv[1], "stop") == 0) return kill(1, SIGINT);
+-		if (strcmp(argv[1], "restart") == 0) return kill(1, SIGHUP);
++		if (strcmp(argv[1], "start") == 0) return leon_rc_signal(SIGUSR2);
++		if (strcmp(argv[1], "stop") == 0) return leon_rc_signal(SIGINT);
++		if (strcmp(argv[1], "restart") == 0) return leon_rc_signal(SIGHUP);
+ 		++argv;
+ 		--argc;
+ 		base = argv[0];
+@@ -3909,7 +3910,7 @@
+ #endif
+ 
+ #if !defined(CONFIG_BCMWL5)
+-    if (getpid() != 1)
++    if (!leon_rc_is_manager())
+     {
+ #endif
+ 
+--- a/release/src/router/rc/sched_daemon.c
++++ b/release/src/router/rc/sched_daemon.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ 
+ #include <stdlib.h>
+ #include <unistd.h>
+@@ -1093,7 +1094,7 @@
+ 
+ 					nvram_set("sys_reboot_reason", "rbt_scheduler");
+ 					logmessage("reboot scheduler", "[%s] The system is going down for reboot\n", __FUNCTION__);
+-					kill(1, SIGTERM);
++					leon_rc_signal(SIGTERM);
+ 				}
+ 			}
+ 		}
+--- a/release/src/router/rc/sdn.c
++++ b/release/src/router/rc/sdn.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ #include <rc.h>
+ 
+ #include <stdio.h>
+@@ -331,7 +332,7 @@
+ 	if (!pmtl || !config_file)
+ 		return;
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_stubby");
+ 		return;
+ 	}
+--- a/release/src/router/rc/services.c
++++ b/release/src/router/rc/services.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * Miscellaneous services
+  *
+@@ -746,7 +747,7 @@
+ 		newroot = TMP_ROOTFS_MNT_POINT;
+ 
+ #ifndef RTCONFIG_HND_ROUTER_AX_6756
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		_dprintf("%s: PID != 1\n", __func__);
+ 		return -1;
+ 	}
+@@ -1461,7 +1462,7 @@
+ #endif
+ 	TRACE_PT("begin\n");
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ #ifdef RTCONFIG_MULTILAN_CFG
+ 		char buf[32];
+ 		snprintf(buf, sizeof(buf), "start_dnsmasq %d", sdn_idx);
+@@ -2307,7 +2308,7 @@
+ {
+ 	TRACE_PT("begin\n");
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc_and_wait_2min("stop_dnsmasq");
+ 		return;
+ 	}
+@@ -2417,7 +2418,7 @@
+ 
+ 	TRACE_PT("begin\n");
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_stubby");
+ 		return;
+ 	}
+@@ -2568,7 +2569,7 @@
+ 	TRACE_PT("end\n");
+ 	return;
+ #else
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_stubby");
+ 		return;
+ 	}
+@@ -3182,7 +3183,7 @@
+ 	char unit_str[8];
+ 	char *v6plusd_argv[] = {"v6plusd", "-u", unit_str, NULL};
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		snprintf(buf, sizeof(buf), "start_v6plusd %d", unit);
+ 		notify_rc(buf);
+ 		return;
+@@ -3199,7 +3200,7 @@
+ {
+ 	char buf[64];
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		snprintf(buf, sizeof(buf), "stop_v6plusd %d", unit);
+ 		notify_rc(buf);
+ 		return;
+@@ -3222,7 +3223,7 @@
+ 	char unit_str[8];
+ 	char *ocnvcd_argv[] = {"ocnvcd", "-u", unit_str, NULL};
+ 
+-	if(getpid() != 1) {
++	if(!leon_rc_is_manager()) {
+ 		snprintf(buf, sizeof(buf), "start_ocnvcd %d", unit);
+ 		notify_rc(buf);
+ 		return;
+@@ -3239,7 +3240,7 @@
+ {
+ 	char buf[64];
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		snprintf(buf, sizeof(buf), "stop_ocnvcd %d", unit);
+ 		notify_rc(buf);
+ 		return;
+@@ -3262,7 +3263,7 @@
+ 	char unit_str[8];
+ 	char *dslited_argv[] = {"dslited", "-u", unit_str, NULL};
+ 
+-	if(getpid() != 1) {
++	if(!leon_rc_is_manager()) {
+ 		snprintf(buf, sizeof(buf), "start_dslited %d", unit);
+ 		notify_rc(buf);
+ 		return;
+@@ -3279,7 +3280,7 @@
+ {
+ 	char buf[64];
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		snprintf(buf, sizeof(buf), "stop_dslited %d", unit);
+ 		notify_rc(buf);
+ 		return;
+@@ -3353,7 +3354,7 @@
+ 	pid_t pid;
+ 	char *rdisc6_argv[] = { "rdisc6", "-r", RDISC6_RETRY_MAX, (char*) get_wan6face(), NULL };
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc_and_wait_2min("start_rdisc6");
+ 		return;
+ 	}
+@@ -7156,7 +7157,7 @@
+ 		if (!nvram_get_int("telnetd_enable"))
+ 			return 0;
+ 
+-		if (getpid() != 1) {
++		if (!leon_rc_is_manager()) {
+ 			notify_rc("start_telnetd");
+ 			return 0;
+ 		}
+@@ -7211,7 +7212,7 @@
+ void
+ stop_telnetd(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_telnetd");
+ 		return;
+ 	}
+@@ -7252,7 +7253,7 @@
+ 	char *httpd_dir;
+ #endif
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_httpd");
+ 		return;
+ 	}
+@@ -7365,7 +7366,7 @@
+ void
+ stop_httpd(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_httpd");
+ 		return;
+ 	}
+@@ -7465,7 +7466,7 @@
+ #ifdef RTCONFIG_DSL
+ void stop_spectrum(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_spectrum");
+ 		return;
+ 	}
+@@ -7476,7 +7477,7 @@
+ 
+ void start_spectrum(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_spectrum");
+ 		return;
+ 	}
+@@ -7514,7 +7515,7 @@
+ 	char *gfn_mode = "no";
+ #endif
+ 
+-	if (getpid() != 1 && getuid() != 0) {
++	if (!leon_rc_is_manager() && getuid() != 0) {
+ 		notify_rc("start_upnp");
+ 		return;
+ 	}
+@@ -7840,7 +7841,7 @@
+ 
+ void stop_upnp(void)
+ {
+-	if (getpid() != 1 && getuid() != 0) {
++	if (!leon_rc_is_manager() && getuid() != 0) {
+ 		notify_rc("stop_upnp");
+ 		return;
+ 	}
+@@ -8793,7 +8794,7 @@
+ 	}
+ #endif
+ 
+-	if (getpid()!=1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_uam_srv");
+ 		return;
+ 	}
+@@ -8821,7 +8822,7 @@
+ 
+ void stop_uam_srv()
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_uam_srv");
+ 		return;
+ 	}
+@@ -8853,7 +8854,7 @@
+ 		return;
+ 	}
+ #endif
+-	if (getpid()!=1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_dbus_daemon");
+ 		return;
+ 	}
+@@ -8882,7 +8883,7 @@
+ 		return;
+ 	}
+ #endif
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_dbus_daemon");
+ 		return;
+ 	}
+@@ -9289,7 +9290,7 @@
+ 		return;
+ 	}
+ #endif
+-	if (getpid()!=1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_bluetooth_service");
+ 		return;
+ 	}
+@@ -9910,7 +9911,7 @@
+ 	char *radiusd_argv[] = { "radiusd", "-s", "-P", NULL };
+ 
+ 	if (nvram_get_int("radius_serv_enable")) {
+-		if (getpid()!=1) {
++		if (!leon_rc_is_manager()) {
+ 			notify_rc("start_radiusd");
+ 			return;
+ 		}
+@@ -9930,7 +9931,7 @@
+ 
+ void stop_radiusd()
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_radiusd");
+ 		return;
+ 	}
+@@ -12801,7 +12802,7 @@
+ 	char *netool_argv[] = {"/sbin/netool", NULL};
+ 	pid_t pid;
+ 
+-	if(getpid() != 1) { //not rc init process
++	if(!leon_rc_is_manager()) { //not rc init process
+ 		notify_rc("start_netool");
+ 		return 0;
+ 	}
+@@ -12830,7 +12831,7 @@
+ 	if (!enb)
+ 		return;
+ 
+-	if(getpid() != 1) { //not rc init process
++	if(!leon_rc_is_manager()) { //not rc init process
+ 		notify_rc("start_nfcm");
+ 		return;
+ 	}
+@@ -12844,7 +12845,7 @@
+ 
+ void stop_nfcm()
+ {
+-	if(getpid() != 1) { //not rc init process
++	if(!leon_rc_is_manager()) { //not rc init process
+ 		notify_rc("stop_nfcm");
+ 		return;
+ 	}
+@@ -12882,7 +12883,7 @@
+ 	char *fprobe_argv[] = {"fprobe", "-i", brif, "-fip", nf_srvport, NULL};
+ 	pid_t pid;
+ 
+-	if(getpid()!=1) { //not rc init process
++	if(!leon_rc_is_manager()) { //not rc init process
+ 		notify_rc("start_fprobe");
+ 		return;
+ 	}
+@@ -12896,7 +12897,7 @@
+ 
+ void stop_fprobe(void)
+ {
+-	if(getpid()!=1) { //not rc init process
++	if(!leon_rc_is_manager()) { //not rc init process
+ 		notify_rc("stop_fprobe");
+ 		return;
+ 	}
+@@ -14544,7 +14545,7 @@
+ void
+ stop_obd(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_obd");
+ 		return;
+ 	}
+@@ -14564,7 +14565,7 @@
+ 
+ 	stop_obd();
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_obd");
+ 		return;
+ 	}
+@@ -14604,7 +14605,7 @@
+ 
+ void stop_uploader(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_uploader");
+ 		return;
+ 	}
+@@ -14625,7 +14626,7 @@
+ 
+ 	pid_t pid;
+ 	
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_uploader");
+ 		return;
+ 	} 
+@@ -14643,7 +14644,7 @@
+         char *obd_monitor_argv[] = {"obd_monitor", NULL};
+         pid_t pid;
+ 
+-        if(getpid()!=1) {
++        if(!leon_rc_is_manager()) {
+                 notify_rc("start_obd_monitor");
+                 return;
+         }
+@@ -14655,7 +14656,7 @@
+ 
+ void stop_obd_monitor(void)
+ {
+-        if(getpid()!=1) {
++        if(!leon_rc_is_manager()) {
+                 notify_rc("stop_obd_monitor");
+                 return;
+         }
+@@ -15004,7 +15005,7 @@
+ 	return 0;
+ #endif
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc_and_wait_2min("start_ledg");
+ 		return;
+ 	}
+@@ -15016,7 +15017,7 @@
+ int
+ stop_ledg(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc_and_wait_2min("stop_ledg");
+ 		return;
+ 	}
+@@ -15153,7 +15154,7 @@
+ #ifdef RTCONFIG_BCM_MFG
+ 	return;
+ #endif
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_sched_daemon");
+ 		return;
+ 	}
+@@ -15165,7 +15166,7 @@
+ void
+ stop_sched_daemon(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_sched_daemon");
+ 		return;
+ 	}
+@@ -15412,7 +15413,7 @@
+ #endif
+ 
+ 	nvram_set("sys_reboot_reason", "rc_func_fact_rst");
+-	kill(1, SIGTERM);
++	leon_rc_signal(SIGTERM);
+ }
+ 
+ #ifdef RTCONFIG_DUAL_TRX
+@@ -15910,7 +15911,7 @@
+ 		sleep(2); // wait for all httpd event done
+ 		stop_lan_port();
+ 		start_lan_port(6);
+-		kill(1, SIGTERM);
++		leon_rc_signal(SIGTERM);
+ 	}
+ 	else if(strcmp(script, "upgrade_ate") == 0) {
+ 		FILE *fp;
+@@ -16086,7 +16087,7 @@
+ 		if(ate_upgrade_reboot) {
+ 			nvram_set("sys_reboot_reason", "ate_upg_rbt");
+ 			_dprintf("[ATE] REBOOT...\n");
+-			kill(1, SIGTERM);
++			leon_rc_signal(SIGTERM);
+ 		}
+ 
+ 		goto skip;
+@@ -16274,14 +16275,14 @@
+ 						} else if(ate_upgrade_reboot)	{
+ 							nvram_set("sys_reboot_reason", "ate_upg_sw");
+ 							_dprintf("[ATE] REBOOT...\n");
+-							kill(1, SIGTERM);
++							leon_rc_signal(SIGTERM);
+ 						}
+ 					}
+ 				} else {
+ 					if(ate_upgrade_reboot) {
+ 						nvram_set("sys_reboot_reason", "ate_upg_norm");
+ 						_dprintf("[ATE] REBOOT...\n");
+-						kill(1, SIGTERM);
++						leon_rc_signal(SIGTERM);
+ 					}
+ 				}
+ 				if(stop_commit == 0)
+@@ -16289,7 +16290,7 @@
+ 			}
+ 			else {
+ 				// recover? or reboot directly
+-				//kill(1, SIGTERM);
++				//leon_rc_signal(SIGTERM);
+ 				if ((fp = fopen("/tmp/ate_upgrade_state", "w")) != NULL) {
+ 						fprintf(fp, "Can't find firmware image\n");
+ 						fclose(fp);
+@@ -16642,13 +16643,13 @@
+ 						} else {
+ 							nvram_set("sys_reboot_reason", "rc_upg_switch");
+ 							_dprintf("%s: go reboot.\n", __func__);
+-							kill(1, SIGTERM);
++							leon_rc_signal(SIGTERM);
+ 						}
+ 					}
+ 				} else {
+ 					nvram_set("sys_reboot_reason", "rc_upg_noswitch");
+ 					_dprintf("%s: go reboot.\n", __func__);
+-					kill(1, SIGTERM);
++					leon_rc_signal(SIGTERM);
+ 				}
+ 			}
+ 			else
+@@ -16657,7 +16658,7 @@
+ 				nvram_set("sys_reboot_reason", "rc_upg_fw");
+ 				_dprintf("%s: go reboot.\n", __func__);
+ 				// recover? or reboot directly
+-				kill(1, SIGTERM);
++				leon_rc_signal(SIGTERM);
+ 			}
+ 		}
+ 		if(stop_commit == 0)
+@@ -22254,7 +22255,7 @@
+ 	pid_t pid;
+ #endif
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_wlcscan");
+ 		return;
+ 	}
+@@ -22270,7 +22271,7 @@
+ void
+ stop_wlcscan(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_wlcscan");
+ 		return;
+ 	}
+@@ -22296,7 +22297,7 @@
+ 		return;
+ 	}
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_wlcconnect");
+ 		return;
+ 	}
+@@ -22316,7 +22317,7 @@
+ void
+ stop_wlcconnect(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_wlcconnect");
+ 		return;
+ 	}
+@@ -22348,7 +22349,7 @@
+ 		return;
+ 	}
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_amas_wlcconnect");
+ 		return;
+ 	}
+@@ -22362,7 +22363,7 @@
+ 
+ void stop_amas_wlcconnect(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_amas_wlcconnect");
+ 		return;
+ 	}
+@@ -22389,7 +22390,7 @@
+ 		return;
+ 	}
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_amas_ssd");
+ 		return;
+ 	}
+@@ -22403,7 +22404,7 @@
+ 
+ void stop_amas_ssd(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_amas_ssd");
+ 		return;
+ 	}
+@@ -22429,7 +22430,7 @@
+ 		return;
+ 	}
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_amas_status");
+ 		return;
+ 	}
+@@ -22443,7 +22444,7 @@
+ 
+ void stop_amas_status(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_amas_status");
+ 		return;
+ 	}
+@@ -22469,7 +22470,7 @@
+ 		return;
+ 	}
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_amas_misc");
+ 		return;
+ 	}
+@@ -22483,7 +22484,7 @@
+ 
+ void stop_amas_misc(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_amas_misc");
+ 		return;
+ 	}
+@@ -22511,7 +22512,7 @@
+ 		return;
+ 	}
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_amas_bhctrl");
+ 		return;
+ 	}
+@@ -22525,7 +22526,7 @@
+ 
+ void stop_amas_bhctrl(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_amas_bhctrl");
+ 		return;
+ 	}
+@@ -22544,7 +22545,7 @@
+ 		return;
+ 	}
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_amas_lanctrl");
+ 		return;
+ 	}
+@@ -22558,7 +22559,7 @@
+ 
+ void stop_amas_lanctrl(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_amas_lanctrl");
+ 		return;
+ 	}
+@@ -22866,7 +22867,7 @@
+ 		return;
+ 	}
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_amas_lldpd");
+ 		return;
+ 	}
+@@ -22992,7 +22993,7 @@
+ #endif
+ 		return;
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_amas_lldpd");
+ 		return;
+ 	}
+@@ -23058,7 +23059,7 @@
+ 	char *autodet_argv[] = {"autodet_plc", NULL};
+ 	pid_t pid;
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_plcdet");
+ 		return;
+ 	}
+@@ -23074,7 +23075,7 @@
+ void
+ stop_plcdet(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_plcdet");
+ 		return;
+ 	}
+@@ -23096,7 +23097,7 @@
+ 
+ 	if(debug) _dprintf("\n[%s(%d)]### mode:[%d], force:[%d]###\n\n", __FUNCTION__, __LINE__, mode, force);
+ 
+-	if(getpid() != 1) {
++	if(!leon_rc_is_manager()) {
+ 		snprintf(buf, sizeof(buf), "start_auto46det %d %d", mode, force);
+ 		notify_rc(buf);
+ 		return;
+@@ -23117,7 +23118,7 @@
+ void
+ stop_auto46det(void)
+ {
+-	if(getpid() != 1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_auto46det");
+ 		return;
+ 	}
+@@ -23134,7 +23135,7 @@
+ 	char *autodet_argv[] = {"autodet", NULL};
+ 	pid_t pid;
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_autodet");
+ 		return;
+ 	}
+@@ -23150,7 +23151,7 @@
+ void
+ stop_autodet(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_autodet");
+ 		return;
+ 	}
+@@ -23763,7 +23764,7 @@
+ 	char *autodet_argv[] = {"auto_det", NULL};
+ 	pid_t pid;
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_dsl_autodet");
+ 		return;
+ 	}
+@@ -23781,7 +23782,7 @@
+ void
+ stop_dsl_autodet(void)
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_dsl_autodet");
+ 		return;
+ 	}
+@@ -24050,7 +24051,7 @@
+ 
+ #ifdef RTCONFIG_CLOUDCHECK
+ void stop_cloudcheck(void){
+-	if(getpid() != 1){
++	if(!leon_rc_is_manager()){
+ 		notify_rc("stop_cloudcheck");
+ 		return;
+ 	}
+@@ -24062,7 +24063,7 @@
+ 	char *cmd[] = {"/bin/booster_watchdog", NULL};
+ 	pid_t pid;
+ 
+-	if(getpid() != 1){
++	if(!leon_rc_is_manager()){
+ 		notify_rc("start_cloudcheck");
+ 		return;
+ 	}
+--- a/release/src/router/rc/snmpd.c
++++ b/release/src/router/rc/snmpd.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * snmpd.c
+  *
+@@ -123,7 +124,7 @@
+ 
+ void stop_snmpd(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_snmpd");
+ 	}
+ 
+--- a/release/src/router/rc/ssh.c
++++ b/release/src/router/rc/ssh.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+ 
+ 	Tomato Firmware
+@@ -57,7 +58,7 @@
+ 	if (!nvram_get_int("sshd_enable"))
+ 		return 0;
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_sshd");
+ 		return 0;
+ 	}
+@@ -97,7 +98,7 @@
+ 
+ void stop_sshd(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_sshd");
+ 		return;
+ 	}
+--- a/release/src/router/rc/sysdeps/init-broadcom.c
++++ b/release/src/router/rc/sysdeps/init-broadcom.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+ 
+ 	Copyright 2005, Broadcom Corporation
+@@ -6836,7 +6837,7 @@
+ 		eval("rmmod", "et");
+ 
+ 		dbg("FA (hardware Flow Accelarator) cap recorded, rebooting...\n");
+-		reboot(RB_AUTOBOOT);
++		leon_rc_reboot(RB_AUTOBOOT);
+ 		sleep(1);
+ 	} else if (!cfe_nvram_get("ctf_fa_cap")) {
+ 		dbg("commit original FA cap info into cfe nvram space\n");
+@@ -6854,7 +6855,7 @@
+ 		ATE_BRCM_COMMIT();
+ 
+ 		dbg("add flag to force PCI Express Gen1 mode, rebooting...\n");
+-		reboot(RB_AUTOBOOT);
++		leon_rc_reboot(RB_AUTOBOOT);
+ 		sleep(1);
+ 	}
+ #endif
+@@ -7724,7 +7725,7 @@
+ 		for(i=0; i<n; ++i) {
+ 			if(nvram_get_hex("chiprev")>0 && chiprev_patch(nvram_safe_get("chiprev"))) {
+ 				_dprintf("\n>>> reboot due chiprev\n");
+-				reboot(RB_AUTOBOOT);
++				leon_rc_reboot(RB_AUTOBOOT);
+ 			}
+ 			sleep(1);
+ 		}
+--- a/release/src/router/rc/sysdeps/wps-broadcom.c
++++ b/release/src/router/rc/sysdeps/wps-broadcom.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * Miscellaneous services
+  *
+@@ -367,7 +368,7 @@
+ 	int band;
+ #endif
+ 
+-	if (getpid()!=1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_wps_method");
+ 		return 0;
+ 	}
+@@ -558,7 +559,7 @@
+ 	char word[256], *next;
+ #endif
+ 
+-	if (getpid()!=1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_wps_method");
+ 		return 0;
+ 	}
+--- a/release/src/router/rc/timemachine.c
++++ b/release/src/router/rc/timemachine.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * This program is free software; you can redistribute it and/or
+  * modify it under the terms of the GNU General Public License as
+@@ -107,7 +108,7 @@
+ 
+ void stop_afpd(int force)
+ {
+-	if(!force && getpid() != 1){
++	if(!force && !leon_rc_is_manager()){
+ 		notify_rc("stop_afpd");
+ 		return;
+ 	}
+@@ -134,7 +135,7 @@
+ 
+ void stop_cnid_metad(int force)
+ {
+-	if(!force && getpid() != 1){
++	if(!force && !leon_rc_is_manager()){
+ 		notify_rc("stop_cnid_metad");
+ 		return;
+ 	}
+@@ -285,7 +286,7 @@
+ 
+ void stop_avahi_daemon()
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_avahi_daemon");
+ 	}
+ 
+--- a/release/src/router/rc/udhcpc.c
++++ b/release/src/router/rc/udhcpc.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * udhcpc scripts
+  *
+@@ -2292,7 +2293,7 @@
+ #endif
+ 
+ #ifndef RT4GAC68U
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc_and_wait_2min("start_dhcp6c");
+ 		return 0;
+ 	}
+--- a/release/src/router/rc/usb.c
++++ b/release/src/router/rc/usb.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+ 
+ 	USB Support
+@@ -100,7 +101,7 @@
+ 	pid_t pid;
+ 	char *lpd_argv[] = { "lpd", NULL, NULL };
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_lpd");
+ 		return;
+ 	}
+@@ -136,7 +137,7 @@
+ void
+ stop_lpd()
+ {
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_lpd");
+ 		return;
+ 	}
+@@ -154,7 +155,7 @@
+ 	pid_t pid;
+ 	char *u2ec_argv[] = { "u2ec", NULL };
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_u2ec");
+ 		return;
+ 	}
+@@ -182,7 +183,7 @@
+ #if defined(RTCONFIG_QCA)
+ 	nvram_commit();
+ #endif
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("stop_u2ec");
+ 		return;
+ 	}
+@@ -3059,7 +3060,7 @@
+ 	pid_t pid;
+ 	char *vsftpd_argv[] = { "vsftpd", "/etc/vsftpd.conf", NULL };
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc_after_wait("start_ftpd");
+ 		return;
+ 	}
+@@ -3099,7 +3100,7 @@
+ 
+ void stop_ftpd(int force)
+ {
+-	if(!force && getpid() != 1){
++	if(!force && !leon_rc_is_manager()){
+ 		notify_rc_after_wait("stop_ftpd");
+ 		return;
+ 	}
+@@ -3121,7 +3122,7 @@
+ 	disk_info_t *disk_list, *disk_info;
+ 	partition_info_t *partition_info;
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc_after_wait("start_ftpd");
+ 		return;
+ 	}
+@@ -3178,7 +3179,7 @@
+ 
+ void stop_tftpd(int force)
+ {
+-	if(!force && getpid() != 1){
++	if(!force && !leon_rc_is_manager()){
+ 		notify_rc_after_wait("stop_tftpd");
+ 		return;
+ 	}
+@@ -3491,7 +3492,7 @@
+ 	char smbd_cmd[32];
+ #endif // !defined(RTCONFIG_TUXERA_SMBD)
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc_and_wait_2min("start_samba");
+ 		return;
+ 	}
+@@ -3718,7 +3719,7 @@
+ 
+ void stop_samba(int force)
+ {
+-	if(!force && getpid() != 1){
++	if(!force && !leon_rc_is_manager()){
+ 		notify_rc_and_wait_2min("stop_samba");
+ 		return;
+ 	}
+@@ -3851,7 +3852,7 @@
+ 	char types[5];
+ 	int j, index = 4;
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_dms");
+ 		return;
+ 	}
+@@ -4045,7 +4046,7 @@
+ 
+ void stop_dms(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_dms");
+ 		return;
+ 	}
+@@ -4149,7 +4150,7 @@
+ {
+ 	char *servername;
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_mt_daapd");
+ 		return;
+ 	}
+@@ -4207,7 +4208,7 @@
+ void
+ stop_mt_daapd(int force)
+ {
+-	if(!force && getpid() != 1){
++	if(!force && !leon_rc_is_manager()){
+ 		notify_rc("stop_mt_daapd");
+ 		return;
+ 	}
+@@ -4322,7 +4323,7 @@
+ 	char *lighttpd_monitor_argv[] = { "/usr/sbin/lighttpd-monitor", NULL };
+ #endif
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_webdav");
+ 		return;
+ 	}
+@@ -4392,7 +4393,7 @@
+ 
+ void stop_webdav(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_webdav");
+ 		return;
+ 	}
+@@ -4435,7 +4436,7 @@
+ #ifdef RTCONFIG_WEBDAV
+ void stop_all_webdav(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_webdav");
+ 		return;
+ 	}
+@@ -4475,7 +4476,7 @@
+ 	memset(buf, 0, 32);
+ 	sprintf(buf, "start_cloudsync %d", fromUI);
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc(buf);
+ 		return;
+ 	}
+@@ -4674,7 +4675,7 @@
+ 	memset(buf, 0, 32);
+ 	sprintf(buf, "stop_cloudsync %d", type);
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc(buf);
+ 		return;
+ 	}
+@@ -4804,7 +4805,7 @@
+ 
+ void start_nas_services(int force)
+ {
+-	if(!force && getpid() != 1){
++	if(!force && !leon_rc_is_manager()){
+ 		notify_rc_after_wait("start_nasapps");
+ 		return;
+ 	}
+@@ -4874,7 +4875,7 @@
+ 
+ void stop_nas_services(int force)
+ {
+-	if(!force && getpid() != 1){
++	if(!force && !leon_rc_is_manager()){
+ 		notify_rc_after_wait("stop_nasapps");
+ 		return;
+ 	}
+@@ -5494,7 +5495,7 @@
+ 	char *diskmon_argv[] = { "disk_monitor", NULL };
+ 	pid_t pid;
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_diskmon");
+ 		return;
+ 	}
+@@ -5509,7 +5510,7 @@
+ 
+ void stop_diskmon(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_diskmon");
+ 		return;
+ 	}
+--- a/release/src/router/rc/vpn.c
++++ b/release/src/router/rc/vpn.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * pptp.c
+  *
+@@ -117,7 +118,7 @@
+ 	if (!nvram_get_int("pptpd_enable"))
+ 		return;
+ 
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("start_pptpd");
+ 		return;
+ 	}
+@@ -363,7 +364,7 @@
+ 
+ void stop_pptpd(void)
+ {
+-	if (getpid() != 1) {
++	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_pptpd");
+ 		return;
+ 	}
+--- a/release/src/router/rc/wanduck.c
++++ b/release/src/router/rc/wanduck.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * This program is free software; you can redistribute it and/or
+  * modify it under the terms of the GNU General Public License as
+@@ -3151,7 +3152,7 @@
+ 				nvram_set("dhcp_end"     , "192.168.29.254");
+ 			}
+ 			nvram_commit();
+-			reboot(RB_AUTOBOOT);
++			leon_rc_reboot(RB_AUTOBOOT);
+ #endif
+ #if defined(RTCONFIG_AMAS) && defined(RTCONFIG_PRELINK)
+ 			if (isFirstUse) {
+--- a/release/src/router/rc/watchdog.c
++++ b/release/src/router/rc/watchdog.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * This program is free software; you can redistribute it and/or
+  * modify it under the terms of the GNU General Public License as
+@@ -414,7 +415,7 @@
+ {
+ 	printf("[watchdog] sys_exit");
+ 	set_action(ACT_REBOOT);
+-	kill(1, SIGTERM);
++	leon_rc_signal(SIGTERM);
+ }
+ 
+ static void
+@@ -5354,7 +5355,7 @@
+ 
+ 					nvram_set("sys_reboot_reason", "rbt_scheduler");
+ 					logmessage("reboot scheduler", "[%s] The system is going down for reboot\n", __FUNCTION__);
+-					kill(1, SIGTERM);
++					leon_rc_signal(SIGTERM);
+ 				}
+ 			}
+ 		}
+@@ -7672,7 +7673,7 @@
+ 				/* sw mode changed: restore defaults */
+ 				nvram_set("nvramver", "0");
+ 				nvram_commit();
+-				reboot(RB_AUTOBOOT);
++				leon_rc_reboot(RB_AUTOBOOT);
+ 			}
+ 		}
+ 		else flag_sw_mode = 0;
+@@ -8423,7 +8424,7 @@
+ 		if (nvram_get_int("upgrade_fw_status") == FW_INIT) {
+ 			nvram_set("sys_reboot_reason", "wdg_gone");
+ 			logmessage("watchdog02", "no wathdog, restarting");
+-			kill(1, SIGTERM);
++			leon_rc_signal(SIGTERM);
+ 		}
+ 	}
+ 	return;
+@@ -9289,7 +9290,7 @@
+ 				if (nvram_get_int("webs_state_dl_error"))
+ 				{
+ 					FAUPGRADE_DBG("error execute upgrade script");
+-					reboot(RB_AUTOBOOT);
++					leon_rc_reboot(RB_AUTOBOOT);
+ 					return;
+ 				}
+ 			}
+--- a/release/src/router/rc/wtfast.c
++++ b/release/src/router/rc/wtfast.c
+@@ -1,3 +1,4 @@
++#include "rc-bridge.h"
+ /*
+  * This program is free software; you can redistribute it and/or
+  * modify it under the terms of the GNU General Public License as
+@@ -41,7 +42,7 @@
+ 	 * and deploying new builds. :-)
+ 	 */
+ 
+-	if(getpid()!=1) {
++	if(!leon_rc_is_manager()) {
+ 		notify_rc("start_wtfast");
+ 		return;
+ 	}

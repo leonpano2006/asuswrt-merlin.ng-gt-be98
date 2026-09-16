@@ -1,0 +1,15 @@
+{
+  "status": "hardware-trial-failed-and-automatically-rolled-back",
+  "firmware_commit_performed": false,
+  "candidate_sha256": "8180acaca36b74a4c17505259ad9a76992129cceac6c753d9a017af2466bee7f",
+  "kernel_started": true,
+  "systemd_pid1_started": true,
+  "asus_rc_failed_at_kernel_seconds": 34.09,
+  "exact_rc_wait_status": "not recorded by original broker; cannot infer it directly from exit=1 of broker",
+  "fallback": "slot2 #35, committed; slot1 remains uncommitted",
+  "fallback_hardware_acceleration": true,
+  "fallback_all_four_wifi_radios": true,
+  "reproduced_compatibility_defect": "SIGCHLD handler raises unblocked SIGALRM during sysinit; non-PID-1 manager terminates",
+  "followup": "systemd-trial2-20260916 adds SIGALRM to the entry mask and logs the precise rc wait status",
+  "private_boot_log_sha256": "ff9e3a207936e1d3a047e01d7e6b3545b597f16b9f9f9d6d61e9490ed679dd4b"
+}

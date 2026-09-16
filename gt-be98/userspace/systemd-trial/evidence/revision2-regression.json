@@ -1,0 +1,18 @@
+{
+  "changed_runtime_paths": [
+    "usr/lib/aarch64-linux-gnu/libleon-rc-notify.so",
+    "usr/lib/arm-linux-gnueabi/libleon-rc-notify.so",
+    "usr/lib/arm-linux-gnueabihf/libleon-rc-notify.so",
+    "usr/libexec/leon-rc-broker",
+    "usr/sbin/init",
+    "usr/sbin/leon-rcctl",
+    "usr/sbin/rc"
+  ],
+  "before_rc_manager_sha256": "c0e45bd975adc05642c2afba9448157dff4103e71c6a7ba7fa6a8a9354e15623",
+  "after_rc_manager_sha256": "eeb10ab3b3669078c689d1ee7563720287872893c669a2d85214fc6197c8fbe4",
+  "before_test": "manager_exit=-1 manager_signal=14",
+  "after_test": "manager_exit=0 manager_signal=0",
+  "test": "tests/early-alarm.c linked to the real rc-manager.c; RPC transport stubbed; no router I/O",
+  "armel_qemu_regression": "LAB_RC_EARLY_SIGCHLD_ALARM_PASS in builds/qemu/boot-final/serial.log",
+  "static_init_note": "Static init source unchanged; rebuilding in a new checkpoint changes its embedded build provenance and build ID."
+}

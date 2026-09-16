@@ -1,0 +1,29 @@
+--- a/rom/etc/init.d/mount-fs.sh
++++ b/rom/etc/init.d/mount-fs.sh
+@@ -19,7 +19,7 @@
+ case "$1" in
+ 	start)
+ 		echo "Mounting filesystems..."
+-		/bin/mount -a
++		[ -d /run/systemd/system ] || /bin/mount -a
+ 
+ 		echo "steadystate" > /proc/bootstate/reset_reason #BCM_BOOT_REASON_WATCHDOG|BCM_BOOT_PHASE_LINUX_RUN
+ 		echo 0 		   > /proc/bootstate/boot_failed_count #reset boot failed out to 0
+@@ -37,7 +37,7 @@
+ 
+ 		# Mount /dev/pts as devpts
+ 		mkdir /dev/pts
+-		mount -t devpts devpts /dev/pts
++		[ -d /run/systemd/system ] || mount -t devpts devpts /dev/pts
+ 
+ 		# Launch mdev daemon to create dynamic device nodes
+ 		echo ">>>>> Starting mdev daemon <<<<<"
+@@ -83,7 +83,7 @@
+ 	stop)
+ 		sync
+ 		echo "Unmounting filesystems..."
+-		/bin/umount -a -l
++		[ -d /run/systemd/system ] || /bin/umount -a -l
+ 		exit 0
+ 		;;
+ 

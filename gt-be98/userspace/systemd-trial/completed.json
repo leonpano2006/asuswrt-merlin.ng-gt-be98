@@ -1,0 +1,59 @@
+{
+  "status": "physical-systemd-compatibility-trial-validated",
+  "systemd": "255.22 PID 1",
+  "kernel": "#36 / 4.19.294",
+  "kernel_changed": false,
+  "modules_unchanged": 182,
+  "candidate": "GT-BE98_leon36-systemd-trial3_zstd22.pkgtb",
+  "candidate_sha256": "06f403c0ed0592a0a87485dbfc7a9df1d19423301486f62162a387f031c683fc",
+  "image_bytes": 89119820,
+  "rootfs_compression": "zstd 22 / 1 MiB / tailends",
+  "ubi_remaining_leb": 14,
+  "rebuilt_rc_objects": 23,
+  "retained_rc_objects": 88,
+  "rebuilt_libovpn_objects": 6,
+  "fixes": [
+    "early SIGCHLD handler raises SIGALRM: block it before sysinit",
+    "libovpn uses an explicit weak manager identity helper instead of requiring PID 1"
+  ],
+  "runtime_hashes_matched": 479,
+  "asus_rc_active": true,
+  "usb_usr_local_ready": true,
+  "asus_watchdog_retained": true,
+  "systemd_failed_units": 0,
+  "hardware_acceleration_enabled": true,
+  "hardware_hits_observed_delta": 17074,
+  "hardware_bytes_observed_delta": 21872428,
+  "web_login_page_and_rc_restart_notification": true,
+  "openvpn_server1_active": true,
+  "openvpn_tun21_restored": true,
+  "network_topology_and_forwarding_match_baseline": true,
+  "docker": "29.8.0 / overlay2 / cgroupfs v1 / /usr/local",
+  "docker_tests": [
+    "default bridge DNS/HTTP/HTTPS",
+    "custom network DNS/HTTP",
+    "LAN-published HTTP port",
+    "32 MiB memory/memsw limits"
+  ],
+  "test_containers_and_networks_removed": true,
+  "firmware_commit_performed": false,
+  "booted_partition": 1,
+  "normal_reboot_partition": 2,
+  "committed_partition": 2,
+  "ram_acceptance_only": true,
+  "qemu_elapsed_seconds": 21.26,
+  "libovpn_abi": {
+    "original_exports_preserved": 102,
+    "missing_exports": [],
+    "global_object_sizes_preserved": true,
+    "manager_helper_exported_by_rc": true
+  },
+  "dependency_audit": {
+    "versioned_dependency_consumers": 758,
+    "providers": 43,
+    "libstdcxx_consumers": 2,
+    "libgcc_consumers": 70,
+    "all_required_symbols_present": true
+  },
+  "scope": "Configured service and container smoke tests; no long-duration or line-rate benchmark. ASUS rc still manages hardware services."
+}

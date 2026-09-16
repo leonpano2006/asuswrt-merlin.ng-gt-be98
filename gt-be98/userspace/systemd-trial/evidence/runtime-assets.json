@@ -1,0 +1,158 @@
+{
+  "files": {
+    "rom/etc/ld.so.preload": {
+      "bytes": 31,
+      "sha256": "6e342e1e946b63e0399edcba8662c29cad83a377c728194a24808bafb09626be"
+    },
+    "usr/lib/aarch64-linux-gnu/libleon-rc-notify.so": {
+      "bytes": 67904,
+      "sha256": "af685b5e4ed78a6f85e4b2726299d1f36a06fe37a1c892d195ab051c2eb1fd9a",
+      "elf_class": 64,
+      "needed": [
+        "libc.so.6"
+      ],
+      "build_id": "08c686e63188b297cb44da37ccc75f1235de7bc3",
+      "compiler_flags": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -Os -std=gnu11 -fPIC"
+      ]
+    },
+    "usr/lib/arm-linux-gnueabi/libcrypt.so.1": {
+      "bytes": 263860,
+      "sha256": "c51a50ce39fe06895bbe79e38cad642c75f3e1b5946fa8e42349ada2cd258d59",
+      "elf_class": 32,
+      "needed": [
+        "libc.so.6",
+        "ld-linux.so.3"
+      ],
+      "build_id": "7d635bf4999ba1575e65f62087ffe9d5aa302151",
+      "compiler_flags": [
+        "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -fno-plt -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+      ]
+    },
+    "usr/lib/arm-linux-gnueabi/libleon-rc-notify.so": {
+      "bytes": 67268,
+      "sha256": "864f3a06d74abd25498040b1ecba80c4983f5d55a52cabbbae523b1e25a45b6c",
+      "elf_class": 32,
+      "needed": [
+        "libc.so.6",
+        "ld-linux.so.3"
+      ],
+      "build_id": "4183f3762e4c305562c0b4d61910a41852b77b1f",
+      "compiler_flags": [
+        "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+      ]
+    },
+    "usr/lib/arm-linux-gnueabi/libovpn.so": {
+      "bytes": 132728,
+      "sha256": "584dc531eb84f7d86b79949393467062ab99f79be9783b9d773f6f2de0dcca89",
+      "elf_class": 32,
+      "needed": [
+        "libgcc_s.so.1",
+        "libnvram.so",
+        "libshared.so",
+        "libcrypt.so.1",
+        "libcrypto.so.1.1",
+        "libssl.so.1.1",
+        "libpthread.so.0",
+        "libc.so.6",
+        "ld-linux.so.3"
+      ],
+      "build_id": "66d0d85631e0a1829e9cc5e7be6429cec2bcf5a7",
+      "compiler_flags": [
+        "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -marm -mtls-dialect=gnu -march=armv8-a+crc+crypto -g -g -Os -Os -O2 -Os -std=gnu11 -fomit-frame-pointer -ffixed-r8 -fstack-protector-all -fPIC -fzero-init-padding-bits=all"
+      ]
+    },
+    "usr/lib/arm-linux-gnueabihf/libleon-rc-notify.so": {
+      "bytes": 67272,
+      "sha256": "341ddd264fbc2c78de2d74b80043366bfecdee48c58af8478058af7ff4576a28",
+      "elf_class": 32,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-armhf.so.3"
+      ],
+      "build_id": "bc7a7f7484bd4ce6e2ea8d9224ea677bea876f38",
+      "compiler_flags": [
+        "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=hard -mtls-dialect=gnu -mthumb -march=armv8-a+crc+crypto -g -Os -std=gnu11 -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+      ]
+    },
+    "usr/lib/systemd/system/asus-rc.service": {
+      "bytes": 513,
+      "sha256": "99d1d613b697bcd9c7a3ccd99bf6fc54fc5dbf3cb903bbf19e394ac66bd653dd"
+    },
+    "usr/libexec/leon-rc-broker": {
+      "bytes": 68184,
+      "sha256": "2d4bdc37549e6842aa94106ccb7777b3037abe73777cc95ef1328460e32c6df2",
+      "elf_class": 64,
+      "needed": [
+        "libc.so.6"
+      ],
+      "build_id": "ad44631c06bea5c4f9c0faa88650683473783068",
+      "compiler_flags": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -Os -std=gnu11"
+      ]
+    },
+    "usr/sbin/leon-rcctl": {
+      "bytes": 67952,
+      "sha256": "036f6a8d1134927a70ececae1dbabf56d2492a864ddc22273ce905e2fbde493a",
+      "elf_class": 64,
+      "needed": [
+        "libc.so.6"
+      ],
+      "build_id": "afeda738ccf89f762cebe702764580fbce4c6e89",
+      "compiler_flags": [
+        "GNU C11 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -Os -std=gnu11"
+      ]
+    },
+    "usr/sbin/rc": {
+      "bytes": 2915436,
+      "sha256": "0b5e0e761b1fa609e5e9d97dc7dba7417478237ae53a642dcc94b6598041cee0",
+      "elf_class": 32,
+      "needed": [
+        "libconn_diag.so",
+        "libnvram.so",
+        "libshared.so",
+        "libcrypt.so.1",
+        "libdl.so.2",
+        "libgen_util.so",
+        "libsys_util.so",
+        "libwlcsm.so",
+        "libbcm_flashutil.so",
+        "libbcm_util.so",
+        "libbcm_boardctl.so",
+        "libwpa_client.so",
+        "libbcm.so",
+        "libgcc_s.so.1",
+        "libcrypto.so.1.1",
+        "libssl.so.1.1",
+        "libpthread.so.0",
+        "libbwdpi.so",
+        "libdisk.so",
+        "libsqlite3.so.0",
+        "libnt.so",
+        "libwebapi.so",
+        "libcfgmnt.so",
+        "libnmpapi.so",
+        "libovpn.so",
+        "libasc.so",
+        "libletsencrypt.so",
+        "libcurl.so.4",
+        "libjson-c.so.2",
+        "libm.so.6",
+        "libamas-utils.so",
+        "liblldpctl.so.4",
+        "libjansson.so.4",
+        "libasuslog.so",
+        "libcodb.so",
+        "libc.so.6",
+        "ld-linux.so.3"
+      ],
+      "build_id": "d684706c4faeb3a2c779aa892be84f17652251ce",
+      "compiler_flags": [
+        "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -marm -mtls-dialect=gnu -march=armv8-a+crc+crypto -g -g -Os -Os -O2 -Os -std=gnu11 -fomit-frame-pointer -ffixed-r8 -fPIC -fstack-protector-all -ffunction-sections -fdata-sections -fcommon -fzero-init-padding-bits=all"
+      ]
+    }
+  },
+  "init_replaced": false,
+  "boot_unit_enabled": false,
+  "rc_retains_88_existing_objects": true
+}

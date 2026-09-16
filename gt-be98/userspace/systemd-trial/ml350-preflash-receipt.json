@@ -1,0 +1,8 @@
+{
+  "host": "ML350",
+  "path": "/home/leonpano/amng-out/systemd-trial3-20260916/systemd-trial3-preflash.tar",
+  "bytes": 368629760,
+  "sha256": "cc775490353613ebe86ea28310d430346345297e830504ff72160ee3a08e2637",
+  "verified_members": 1739,
+  "router_modified": false
+}

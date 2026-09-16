@@ -1,0 +1,10 @@
+{
+  "interface_topology_unchanged": true,
+  "forwarding_unchanged": true,
+  "vpn": [
+    "VPN_SERVER1_ERRNO=0",
+    "VPN_SERVER1_STATE=2"
+  ],
+  "topology_added": [],
+  "topology_removed": []
+}

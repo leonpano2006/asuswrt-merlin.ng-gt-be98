@@ -1,0 +1,15 @@
+[
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/wrappers/cc",
+  "-Os",
+  "-g",
+  "-Wall",
+  "-Wextra",
+  "-Werror",
+  "-frecord-gcc-switches",
+  "-Wl,--build-id=sha1",
+  "-static",
+  "-no-pie",
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src/early-init.c",
+  "-o",
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/build/early-init"
+]

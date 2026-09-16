@@ -1,0 +1,138 @@
+{
+  "commands": [
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cc",
+      "-std=gnu11",
+      "-Os",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-frecord-gcc-switches",
+      "-Wl,--build-id=sha1",
+      "-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src",
+      "-fPIC",
+      "-shared",
+      "-Wl,-soname,libleon-rc-notify.so",
+      "-ldl",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src/notify-compat.c",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src/rc-client.c",
+      "-o",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/build/armel/libleon-rc-notify.so"
+    ],
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armhf/wrappers/cc",
+      "-std=gnu11",
+      "-Os",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-frecord-gcc-switches",
+      "-Wl,--build-id=sha1",
+      "-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src",
+      "-fPIC",
+      "-shared",
+      "-Wl,-soname,libleon-rc-notify.so",
+      "-ldl",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src/notify-compat.c",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src/rc-client.c",
+      "-o",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/build/armhf/libleon-rc-notify.so"
+    ],
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/wrappers/cc",
+      "-std=gnu11",
+      "-Os",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-frecord-gcc-switches",
+      "-Wl,--build-id=sha1",
+      "-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src",
+      "-fPIC",
+      "-shared",
+      "-Wl,-soname,libleon-rc-notify.so",
+      "-ldl",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src/notify-compat.c",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src/rc-client.c",
+      "-o",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/build/aarch64/libleon-rc-notify.so"
+    ],
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/wrappers/cc",
+      "-std=gnu11",
+      "-Os",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-frecord-gcc-switches",
+      "-Wl,--build-id=sha1",
+      "-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src/rc-broker.c",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src/rc-client.c",
+      "-o",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/build/aarch64/leon-rc-broker"
+    ],
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/wrappers/cc",
+      "-std=gnu11",
+      "-Os",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-frecord-gcc-switches",
+      "-Wl,--build-id=sha1",
+      "-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src/rcctl.c",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/src/rc-client.c",
+      "-o",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-trial3-20260916/build/aarch64/leon-rcctl"
+    ]
+  ],
+  "files": {
+    "usr/libexec/leon-rc-broker": {
+      "bytes": 68184,
+      "sha256": "2d4bdc37549e6842aa94106ccb7777b3037abe73777cc95ef1328460e32c6df2"
+    },
+    "usr/sbin/rc": {
+      "bytes": 2915436,
+      "sha256": "15fad59213547fd4a202b43094fec9059f774cd25f5fb337aa8374352da95a0f"
+    },
+    "usr/sbin/leon-rcctl": {
+      "bytes": 67952,
+      "sha256": "036f6a8d1134927a70ececae1dbabf56d2492a864ddc22273ce905e2fbde493a"
+    },
+    "usr/lib/arm-linux-gnueabi/libcrypt.so.1": {
+      "bytes": 263860,
+      "sha256": "c51a50ce39fe06895bbe79e38cad642c75f3e1b5946fa8e42349ada2cd258d59"
+    },
+    "usr/lib/arm-linux-gnueabi/libovpn.so": {
+      "bytes": 132728,
+      "sha256": "584dc531eb84f7d86b79949393467062ab99f79be9783b9d773f6f2de0dcca89"
+    },
+    "usr/lib/arm-linux-gnueabi/libleon-rc-notify.so": {
+      "bytes": 67268,
+      "sha256": "864f3a06d74abd25498040b1ecba80c4983f5d55a52cabbbae523b1e25a45b6c"
+    },
+    "usr/lib/arm-linux-gnueabihf/libleon-rc-notify.so": {
+      "bytes": 67272,
+      "sha256": "341ddd264fbc2c78de2d74b80043366bfecdee48c58af8478058af7ff4576a28"
+    },
+    "usr/lib/aarch64-linux-gnu/libleon-rc-notify.so": {
+      "bytes": 67904,
+      "sha256": "af685b5e4ed78a6f85e4b2726299d1f36a06fe37a1c892d195ab051c2eb1fd9a"
+    },
+    "usr/lib/systemd/system/asus-rc.service": {
+      "bytes": 513,
+      "sha256": "99d1d613b697bcd9c7a3ccd99bf6fc54fc5dbf3cb903bbf19e394ac66bd653dd"
+    },
+    "rom/etc/ld.so.preload": {
+      "bytes": 31,
+      "sha256": "6e342e1e946b63e0399edcba8662c29cad83a377c728194a24808bafb09626be"
+    }
+  }
+}
