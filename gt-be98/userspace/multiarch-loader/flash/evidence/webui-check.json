@@ -1,0 +1,16 @@
+{
+  "method": "authenticated Chrome UI via cua_repl",
+  "pages": [
+    "Main_Login.asp",
+    "GameDashboard.asp",
+    "Tools_Sysinfo.asp"
+  ],
+  "login_passed": true,
+  "dashboard_live_traffic_updated": true,
+  "dashboard_clients": 42,
+  "system_info_rendered": true,
+  "runner": "Enabled",
+  "flow_cache": "Enabled",
+  "radios_reported": 4,
+  "settings_changed": false
+}

@@ -3,8 +3,9 @@
 The current candidate combines the verified Web UI NVRAM fix, armel directory
 migration, four Ubuntu GCC 15 library builds, and the new
 [Ubuntu-style multiarch glibc loaders](../multiarch-loader/README.md).
-It is packaged and QEMU verified, **not flashed**. The previous hardware trial
-remains recorded in `candidate.json` as `previous_hardware_trial`.
+It has passed QEMU and physical board testing and remains **uncommitted**.
+The current result is recorded as `hardware_trial`; the previous image's
+trial remains under `previous_hardware_trial` in `candidate.json`.
 
 The mandatory preparation pipeline is:
 
@@ -38,7 +39,10 @@ The 88,333,388-byte PKGTB preserves and verifies the signed #36 bootfs.
 Rootfs SHA-256 is `4f2a9673173a0c32b85a2b1256eaafab4ca96312f134df86e38ae1a58595a88e`.
 QEMU passes 312 dependency checks without cache and 312 with cache, three ABI
 probes, libc and library functional tests, legacy plugin consumers, 34 command
-checks, and the PID1 rollback guard with no cache. Actual board operation of
-these rebuilt glibc binaries remains to be tested. Do not carry forward the
-previous image's physical-test status or firmware commit state as approval of
-this new image. Recheck actual UBI capacity and slot state before any flash.
+checks, and the PID1 rollback guard with no cache. This exact image now also passes
+the physical board trial: all three glibc ABIs, both sets of 312 dependency
+checks, Web UI, four radios, Docker networking/memcg and Runner observation.
+See [the hardware record](../multiarch-loader/flash/evidence/live-summary.json).
+Slot 1 remains uncommitted; normal reboot goes to committed slot 2 / #35.
+Hardware throughput was not benchmarked. Recheck live UBI and slot state before
+any future flash; these scripts pin the historical source/target hashes.

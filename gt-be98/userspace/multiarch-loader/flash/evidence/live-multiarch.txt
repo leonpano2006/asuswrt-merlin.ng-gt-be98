@@ -1,0 +1,155 @@
+/usr/lib/aarch64-linux-gnu/libBrokenLocale.so.1: OK
+/usr/lib/aarch64-linux-gnu/libanl.so.1: OK
+/usr/lib/aarch64-linux-gnu/libc.so.6: OK
+/usr/lib/aarch64-linux-gnu/libc_malloc_debug.so.0: OK
+/usr/lib/aarch64-linux-gnu/libdl.so.2: OK
+/usr/lib/aarch64-linux-gnu/libm.so.6: OK
+/usr/lib/aarch64-linux-gnu/libmemusage.so: OK
+/usr/lib/aarch64-linux-gnu/libmvec.so.1: OK
+/usr/lib/aarch64-linux-gnu/libnsl.so.1: OK
+/usr/lib/aarch64-linux-gnu/libnss_compat.so.2: OK
+/usr/lib/aarch64-linux-gnu/libnss_db.so.2: OK
+/usr/lib/aarch64-linux-gnu/libnss_dns.so.2: OK
+/usr/lib/aarch64-linux-gnu/libnss_files.so.2: OK
+/usr/lib/aarch64-linux-gnu/libnss_hesiod.so.2: OK
+/usr/lib/aarch64-linux-gnu/libpcprofile.so: OK
+/usr/lib/aarch64-linux-gnu/libpthread.so.0: OK
+/usr/lib/aarch64-linux-gnu/libresolv.so.2: OK
+/usr/lib/aarch64-linux-gnu/librt.so.1: OK
+/usr/lib/aarch64-linux-gnu/libthread_db.so.1: OK
+/usr/lib/aarch64-linux-gnu/libutil.so.1: OK
+/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1: OK
+/usr/sbin/ldconfig: OK
+/usr/lib/arm-linux-gnueabi/libBrokenLocale.so.1: OK
+/usr/lib/arm-linux-gnueabi/libanl.so.1: OK
+/usr/lib/arm-linux-gnueabi/libc.so.6: OK
+/usr/lib/arm-linux-gnueabi/libc_malloc_debug.so.0: OK
+/usr/lib/arm-linux-gnueabi/libdl.so.2: OK
+/usr/lib/arm-linux-gnueabi/libm.so.6: OK
+/usr/lib/arm-linux-gnueabi/libmemusage.so: OK
+/usr/lib/arm-linux-gnueabi/libnsl.so.1: OK
+/usr/lib/arm-linux-gnueabi/libnss_compat.so.2: OK
+/usr/lib/arm-linux-gnueabi/libnss_db.so.2: OK
+/usr/lib/arm-linux-gnueabi/libnss_dns.so.2: OK
+/usr/lib/arm-linux-gnueabi/libnss_files.so.2: OK
+/usr/lib/arm-linux-gnueabi/libnss_hesiod.so.2: OK
+/usr/lib/arm-linux-gnueabi/libpcprofile.so: OK
+/usr/lib/arm-linux-gnueabi/libpthread.so.0: OK
+/usr/lib/arm-linux-gnueabi/libresolv.so.2: OK
+/usr/lib/arm-linux-gnueabi/librt.so.1: OK
+/usr/lib/arm-linux-gnueabi/libthread_db.so.1: OK
+/usr/lib/arm-linux-gnueabi/libutil.so.1: OK
+/usr/lib/arm-linux-gnueabi/ld-linux.so.3: OK
+/usr/lib/arm-linux-gnueabihf/libBrokenLocale.so.1: OK
+/usr/lib/arm-linux-gnueabihf/libanl.so.1: OK
+/usr/lib/arm-linux-gnueabihf/libc.so.6: OK
+/usr/lib/arm-linux-gnueabihf/libc_malloc_debug.so.0: OK
+/usr/lib/arm-linux-gnueabihf/libdl.so.2: OK
+/usr/lib/arm-linux-gnueabihf/libm.so.6: OK
+/usr/lib/arm-linux-gnueabihf/libmemusage.so: OK
+/usr/lib/arm-linux-gnueabihf/libnsl.so.1: OK
+/usr/lib/arm-linux-gnueabihf/libnss_compat.so.2: OK
+/usr/lib/arm-linux-gnueabihf/libnss_db.so.2: OK
+/usr/lib/arm-linux-gnueabihf/libnss_dns.so.2: OK
+/usr/lib/arm-linux-gnueabihf/libnss_files.so.2: OK
+/usr/lib/arm-linux-gnueabihf/libnss_hesiod.so.2: OK
+/usr/lib/arm-linux-gnueabihf/libpcprofile.so: OK
+/usr/lib/arm-linux-gnueabihf/libpthread.so.0: OK
+/usr/lib/arm-linux-gnueabihf/libresolv.so.2: OK
+/usr/lib/arm-linux-gnueabihf/librt.so.1: OK
+/usr/lib/arm-linux-gnueabihf/libthread_db.so.1: OK
+/usr/lib/arm-linux-gnueabihf/libutil.so.1: OK
+/usr/lib/arm-linux-gnueabihf/ld-linux-armhf.so.3: OK
+/usr/lib/arm-linux-gnueabi/libz.so.1: OK
+/usr/lib/arm-linux-gnueabi/libexpat.so.1.5.2: OK
+/usr/lib/arm-linux-gnueabi/libjson-c.so.2.0.2: OK
+/usr/lib/arm-linux-gnueabi/libcap-ng.so.0.0.0: OK
+/jffs/scripts/post-mount.bak-20260831: OK
+/jffs/scripts/post-mount.bak-20260904: OK
+/jffs/scripts/services-start.bak-20260904: OK
+/jffs/scripts/services-stop: OK
+/jffs/scripts/unifi-chroot: OK
+/jffs/scripts/unmount: OK
+/jffs/scripts/zswap-stat: OK
+/jffs/scripts/local-mount: OK
+/jffs/scripts/post-mount: OK
+/jffs/scripts/services-start: OK
+/jffs/scripts/firewall-start: OK
+/jffs/scripts/nat-start: OK
+/jffs/docker/config/daemon.json: OK
+/jffs/leon-webui-fix/libnvram.so: OK
+/jffs/leon-webui-fix/apply-live.sh: OK
+/jffs/leon-webui-fix/nvram-cache-repro: OK
+/jffs/leon-webui-fix/services-start.before: OK
+/jffs/leon-webui-fix/services-start.new: OK
+LIVE_ALIAS_SUMMARY removed=257 retained=32
+dl_dst_lib="lib/aarch64-linux-gnu"
+path.prefix="/usr"
+path.rtld="/lib/ld-linux-aarch64.so.1"
+path.sysconfdir="/etc"
+path.system_dirs[0x0]="/lib/aarch64-linux-gnu/"
+path.system_dirs[0x1]="/usr/lib/aarch64-linux-gnu/"
+path.system_dirs[0x2]="/lib/"
+path.system_dirs[0x3]="/usr/lib/"
+LAB_ABI_PASS bits=64 glibc=2.44 hwcap=8ff
+GLIBC_VERSION 2.44
+ABI_BITS 64 HWCAP 0x8ff HWCAP2 0x0
+PASS memory_alignment_overlap_and_allocator
+PASS pthread_tls_mutex
+PASS floating_point_libm
+PASS kernel_calls_and_numeric_resolver
+PASS gconv_utf8_utf16
+GLIBC_B53_SMOKE_COMPLETE
+LIVE_ABI_GLIBC_UBUNTU_PATHS_PASS aarch64
+dl_dst_lib="lib/arm-linux-gnueabi"
+path.prefix="/usr"
+path.rtld="/lib/ld-linux.so.3"
+path.sysconfdir="/etc"
+path.system_dirs[0x0]="/lib/arm-linux-gnueabi/"
+path.system_dirs[0x1]="/usr/lib/arm-linux-gnueabi/"
+path.system_dirs[0x2]="/lib/"
+path.system_dirs[0x3]="/usr/lib/"
+LAB_ABI_PASS bits=32 glibc=2.44 hwcap=37b0d6
+GLIBC_VERSION 2.44
+ABI_BITS 32 HWCAP 0x37b0d6 HWCAP2 0x1f
+PASS memory_alignment_overlap_and_allocator
+PASS pthread_tls_mutex
+PASS floating_point_libm
+PASS kernel_calls_and_numeric_resolver
+PASS gconv_utf8_utf16
+GLIBC_B53_SMOKE_COMPLETE
+LIVE_ABI_GLIBC_UBUNTU_PATHS_PASS armel
+dl_dst_lib="lib/arm-linux-gnueabihf"
+path.prefix="/usr"
+path.rtld="/lib/ld-linux-armhf.so.3"
+path.sysconfdir="/etc"
+path.system_dirs[0x0]="/lib/arm-linux-gnueabihf/"
+path.system_dirs[0x1]="/usr/lib/arm-linux-gnueabihf/"
+path.system_dirs[0x2]="/lib/"
+path.system_dirs[0x3]="/usr/lib/"
+LAB_ABI_PASS bits=32 glibc=2.44 hwcap=37b0d6
+GLIBC_VERSION 2.44
+ABI_BITS 32 HWCAP 0x37b0d6 HWCAP2 0x1f
+PASS memory_alignment_overlap_and_allocator
+PASS pthread_tls_mutex
+PASS floating_point_libm
+PASS kernel_calls_and_numeric_resolver
+PASS gconv_utf8_utf16
+GLIBC_B53_SMOKE_COMPLETE
+LIVE_ABI_GLIBC_UBUNTU_PATHS_PASS armhf
+LAB_MULTIARCH_LIBRARY zlib /usr/lib/arm-linux-gnueabi/libz.so.1
+LAB_MULTIARCH_LIBRARY expat /usr/lib/arm-linux-gnueabi/libexpat.so.1
+LAB_MULTIARCH_LIBRARY json-c /usr/lib/arm-linux-gnueabi/libjson-c.so.2
+LAB_MULTIARCH_LIBRARY libcap-ng /usr/lib/arm-linux-gnueabi/libcap-ng.so.0
+LAB_GCC15_LIBRARY_PROBE_PASS zlib=1.2.12 expat=expat_2.0.1 pointer=4 time=4 offset=4
+LIVE_LINKER_SUMMARY mode=no-cache count=312 failed=0
+LIVE_LINKER_SUMMARY mode=cached count=312 failed=0
+Syntax OK
+Linux strongSwan U5.9.13/K4.19.294
+University of Applied Sciences Rapperswil, Switzerland
+	libz.so.1 (libc6,soft-float) => /usr/lib/arm-linux-gnueabi/libz.so.1
+	libz.so.1 (libc6,AArch64) => /usr/lib/aarch64-linux-gnu/libz.so.1
+	libjson-c.so.2 (libc6,soft-float) => /usr/lib/arm-linux-gnueabi/libjson-c.so.2
+	libexpat.so.1 (libc6,soft-float) => /usr/lib/arm-linux-gnueabi/libexpat.so.1
+	libcap-ng.so.0 (libc6,soft-float) => /usr/lib/arm-linux-gnueabi/libcap-ng.so.0
+UBUNTU_MULTIARCH_LIVE_LIBRARIES_PASS

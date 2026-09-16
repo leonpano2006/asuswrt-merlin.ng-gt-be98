@@ -1,0 +1,8 @@
+memory.limit_in_bytes=33554432
+memory.memsw.limit_in_bytes=33554432
+memory.failcnt=0
+LIVE_DOCKER_MEMCG_LIMITS_PASS
+leon-ubuntu-multiarch-http
+leon-ubuntu-multiarch-test
+TEST_CONTAINERS_AND_NETWORK_REMOVED
+29.8.0

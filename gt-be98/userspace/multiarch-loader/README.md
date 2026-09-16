@@ -3,8 +3,9 @@
 This candidate keeps glibc **2.44**, the B53-as-Cortex-A53 CPU policy, kernel
 4.19.294 #36 and the existing three ABIs. It uses Ubuntu's multiarch loader,
 `$LIB`, ldconfig and loader-entry layout, and removes 257 unnecessary armel
-compatibility symlinks. It is packaged and QEMU verified, **not flashed**.
-The router remains on the previous hardware-tested, uncommitted image.
+compatibility symlinks. It has now passed QEMU and the physical GT-BE98 trial.
+The router is running this image in slot 1, **uncommitted**; normal reboot
+returns to committed slot 2 / kernel #35.
 
 ## Ubuntu reference and implementation
 
@@ -159,10 +160,18 @@ corrected install completed. Both failures are retained in local evidence.
 The rootfs is 75,915,264 bytes, zstd-22 with 512 KiB blocks. The signed #36
 bootfs is preserved bytewise and its signature verifies. No bootloader payload
 is selected. Against the last measured replaceable-slot capacity of 734 UBI
-blocks, reservations are 107+607, leaving 20 blocks. Capacity/slot state must
-be read again before deployment. No flash, reboot or firmware commit was
-performed for this checkpoint; QEMU does not qualify board services or Runner
-throughput for these new glibc binaries.
+blocks, reservations are 107+607, leaving 20 blocks. The capacity was reread
+before this physical trial, and all image/fallback/bootloader readbacks passed.
+The board passed three ABI libc smoke tests, 312 dependency checks without
+cache and 312 with cache, Web UI login/live data, four radios, Docker DNS/HTTP/
+HTTPS/custom networking/LAN publishing and actual memcg limits. The 257 removed
+and 32 retained entries were checked on the board. All 18 startup/config files,
+normalized firewall rules, interface membership, VPN state and module names
+match the pre-flash baseline. Runner hardware counters increased; no Runner
+flow or command-list errors occurred during observation. This was not a
+throughput benchmark. See [the hardware trial](flash/README.md) and
+[its machine-readable evidence](flash/evidence/live-summary.json). No firmware
+commit was performed.
 
 References: [Ubuntu multiarch specification](https://wiki.ubuntu.com/MultiarchSpec),
 [Ubuntu armhf libc6 layout](https://packages.ubuntu.com/resolute/armhf/libc6/filelist),

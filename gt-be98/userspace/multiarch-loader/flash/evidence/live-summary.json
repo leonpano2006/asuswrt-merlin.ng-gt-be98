@@ -1,0 +1,113 @@
+{
+  "status": "hardware-trial-verified-uncommitted",
+  "verified_at_utc": "2026-09-16T08:42:05.127827+00:00",
+  "kernel": "4.19.294 #36",
+  "image": "GT-BE98_leon36-ubuntu-multiarch_zstd22.pkgtb",
+  "image_bytes": 88333388,
+  "image_sha256": "67f896ed532531a345805dc14303b23b203d4545fb8cb11a5ab5df12d8c7a23d",
+  "rootfs_bytes": 75915264,
+  "rootfs_sha256": "4f2a9673173a0c32b85a2b1256eaafab4ca96312f134df86e38ae1a58595a88e",
+  "bootfs_readback_passed": true,
+  "rootfs_readback_passed": true,
+  "fallback_hashes_unchanged": true,
+  "bootloader_hash_unchanged": true,
+  "ubi_blocks_before_available": 21,
+  "ubi_blocks_reserved": [
+    107,
+    607
+  ],
+  "ubi_blocks_remaining": 20,
+  "booted_slot": 1,
+  "normal_reboot_slot": 2,
+  "fallback_kernel": "#35",
+  "commit_flags": [
+    0,
+    1
+  ],
+  "firmware_commit_performed": false,
+  "pid1_guard_present": true,
+  "guard_not_inherited_by_services": true,
+  "boot_logger_done_seconds": 306.464,
+  "current_boot_panic_or_loader_error": false,
+  "glibc": "2.44",
+  "runtime_files_verified": 62,
+  "removed_aliases_verified": 257,
+  "retained_aliases_verified": 32,
+  "ubuntu_loader_paths_and_LIB_match_3_abis": true,
+  "hardware_abi_probes": [
+    "aarch64",
+    "armel",
+    "armhf"
+  ],
+  "hardware_libc_smoke": [
+    "memory/allocator",
+    "pthread/TLS/mutex",
+    "libm",
+    "kernel calls/numeric resolver",
+    "staged gconv"
+  ],
+  "gconv_test_files_only_in_tmp": true,
+  "linker_checks_no_cache": 312,
+  "linker_checks_cached": 312,
+  "rebuilt_library_functional_probe_passed": true,
+  "legacy_plugin_consumers_passed": true,
+  "wireless_radios_up": 4,
+  "modules_loaded": 88,
+  "kernel_taint": 4097,
+  "br_netfilter_loaded": false,
+  "webui": {
+    "method": "authenticated Chrome UI via cua_repl",
+    "pages": [
+      "Main_Login.asp",
+      "GameDashboard.asp",
+      "Tools_Sysinfo.asp"
+    ],
+    "login_passed": true,
+    "dashboard_live_traffic_updated": true,
+    "dashboard_clients": 42,
+    "system_info_rendered": true,
+    "runner": "Enabled",
+    "flow_cache": "Enabled",
+    "radios_reported": 4,
+    "settings_changed": false
+  },
+  "docker_version": "29.8.0",
+  "docker_prefix": "/usr/local",
+  "docker_prefix_usb_bind_mount": true,
+  "docker_default_dns_http_https_passed": true,
+  "docker_custom_dns_http_passed": true,
+  "docker_lan_published_port_passed": true,
+  "docker_memcg_memory_limit_bytes": 33554432,
+  "docker_memcg_memory_plus_swap_limit_bytes": 33554432,
+  "docker_memcg_failcnt": 0,
+  "test_containers_and_network_removed": true,
+  "docker_running_as_before": true,
+  "docker_autostart_changed": false,
+  "network_rules_interface_membership_vpn_and_modules_match_baseline": true,
+  "hooks_config_files_unchanged": 18,
+  "runner_l2_l3_hardware_enabled": true,
+  "runner_flow_error_counters": [
+    0,
+    0
+  ],
+  "runner_command_list_errors": [
+    0,
+    0
+  ],
+  "hardware_l2_sample_1": {
+    "hits": 132846,
+    "bytes": 49366170
+  },
+  "hardware_l2_sample_2": {
+    "hits": 135354,
+    "bytes": 50268292
+  },
+  "runner_ip_address_table_counters_stable_during_observation": {
+    "ipv4_add_fail": 1,
+    "ipv4_del_fail": 1,
+    "ipv6_add_fail": 0,
+    "ipv6_del_fail": 1
+  },
+  "throughput_benchmark_performed": false,
+  "historical_panic_records": "Only earlier #32 boots in cumulative history; current #36 log extracted separately"
+}

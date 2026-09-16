@@ -1,0 +1,111 @@
+Wed Sep 16 08:35:18 UTC 2026
+Linux GT-AX11000-A2B0 4.19.294 #36 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026 aarch64 GNU/Linux
+153.02 456.89
+lrwxrwxrwx 1 MastermixStudios root 7 Sep 15 20:41 /bin -> usr/bin
+lrwxrwxrwx 1 MastermixStudios root 7 Sep 15 20:41 /lib -> usr/lib
+drwxr-xr-x 2 MastermixStudios root 3 Sep 15 21:01 /media
+lrwxrwxrwx 1 MastermixStudios root 7 Sep 15 21:01 /run -> var/run
+lrwxrwxrwx 1 MastermixStudios root 8 Sep 15 20:41 /sbin -> usr/sbin
+drwxr-xr-x 2 MastermixStudios root 3 Sep 15 21:01 /srv
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: First
+  Reboot Partition: Second
+
+B First  partition type           : pureUBI/GPT
+B First  partition sequence number: 47
+B First  partition image tag      : $imageversion:  $
+B First  partition commit flag    : 0
+ >Second partition type           : pureUBI/GPT
+ >Second partition sequence number: 46
+ >Second partition image tag      : $imageversion:  $
+ >Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2
+SERVICE httpd pid=4414 exe=/usr/sbin/httpd
+SERVICE httpd pid=4413 exe=/usr/sbin/httpd
+SERVICE dropbear pid=5285 exe=/usr/bin/dropbearmulti
+SERVICE dropbear pid=4824 exe=/usr/bin/dropbearmulti
+SERVICE watchdog pid=4417 exe=/usr/sbin/rc
+WIRELESS wl0 isup=1
+WIRELESS wl1 isup=1
+WIRELESS wl2 isup=1
+WIRELESS wl3 isup=1
+	Flow Refresh Timer Interval  = 10000 millisecs
+	TCP Flow Idle Timer          = 60 s
+	UDP Flow Idle Timer          = 120 s
+	L2 Flow Idle Timer           = 120 s
+	Mcast Flow Idle Timer        = 120 s
+	Other Flow Idle Timer        = 120 s
+	Pkt-HW Activate Deferral rate = 1
+	Pkt-HW Idle Deactivate = 0
+	Pkt-SW Activate Deferral count = 0
+	Flow Low Pkt Rate = 10
+	Acceleration Mode: <L2 & L3>
+	MCast Acceleration IPv4<Enabled> IPv6<Enabled>
+	IPv6 Learning <Enabled>
+	L2TP Learning <Enabled>
+	GRE Learning <Enabled>
+	4o6 Fragmentation <Enabled>
+	TCP Ack Prioritization <Enabled> 
+	ToS Multi Flow <Enabled> 
+	Notify Processing Mode <Hybrid> 
+	Rx Pkt Length Mode <Enabled>
+	OVS Flow Learning <Disabled> 
+	HW Acceleration <Enabled> 
+	Tx Thread <Enabled> 
+	Tx Thread Idle Delay <8> yield loops 
+	Flow Ucast Learning Enabled  : Max<16383>, Active<142>, Cumulative [ 356 - 214 ]
+	Flow Mcast Learning Enabled  : Max<1152>, Active<0>, Cumulative [ 0 - 0 ]
+	Pure LLC Acceleration: <Disabled>
+PKT_RUNNER[0]:
+status         : 1
+activates      : 303
+deactivates    : 179
+failures       : 0
+l3_errors      : 0
+l2_errors      : 0
+mc_errors      : 0
+hash_collision : 0
+no_free_idx    : 0
+flushes        : 0
+active         : 124
+ucast_active   : 124
+mcast_active   : 0
+max_flows      : 17408
+Flow_idx_in_use: 124
+----------------------------
+HOST_IP_ADDR_TABLE Stats:
+ipv4_add_fail  : 0
+ipv6_add_fail  : 0
+ipv4_del_fail  : 0
+ipv6_del_fail  : 1
+----------------------------
+CMDLIST Stats:
+Success        : 304
+Errors         : 0
+Unsupported    : 0
+Overflow       : 0
+Invalid Target : 0
+UBUNTU_MULTIARCH_LIVE_PATHS_SERVICES_KERNEL_FALLBACK_PASS
