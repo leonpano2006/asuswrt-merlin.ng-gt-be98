@@ -1,0 +1,484 @@
+[
+  {
+    "path": "usr/bin/busybox",
+    "symbols": [
+      "__aeabi_ldivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/bin/eapd",
+    "symbols": [
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/bin/nvram",
+    "symbols": [
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/bin/sdparm",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/bin/usbmuxd",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_ldivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.36",
+    "symbols": [
+      "__udivti3@GCC_3.0",
+      "__umodti3@GCC_3.0"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/libcharon.so.0.0.0",
+    "symbols": [
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/libipsec.so.0.0.0",
+    "symbols": [
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/libstrongswan.so.0.0.0",
+    "symbols": [
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/libtls.so.0.0.0",
+    "symbols": [
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-kernel-netlink.so",
+    "symbols": [
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pem.so",
+    "symbols": [
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pkcs7.so",
+    "symbols": [
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-stroke.so",
+    "symbols": [
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-vici.so",
+    "symbols": [
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-x509.so",
+    "symbols": [
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libasusnatnl.so",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_ldivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libavahi-common.so.3.5.4",
+    "symbols": [
+      "__aeabi_ldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libavahi-core.so.7.1.0",
+    "symbols": [
+      "__aeabi_ldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libblkid.so.1.0",
+    "symbols": [
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libcom_err.so.2.1",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libe2p.so.2.3",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libext2fs.so.2.4",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_ldivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libletsencrypt.so",
+    "symbols": [
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libpcre.so.1.0.1",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libstdc++.so.6",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_ldivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libubox.so",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libusb-1.0.so.0",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libuuid.so.1.2",
+    "symbols": [
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libxml2.so.2",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/openvpn-plugin-auth-pam.so",
+    "symbols": [
+      "__aeabi_uidiv@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/aaews",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/acs_cli2",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/acsd2",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/bsd",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/ceventc",
+    "symbols": [
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/ceventd",
+    "symbols": [
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/chilli",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/chilli_opt",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/chilli_radconfig",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/debug_monitor",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/dnsmasq",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/e2fsck",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_ldivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/eventd",
+    "symbols": [
+      "__aeabi_uidiv@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/ftpclient",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/httpd",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/inadyn",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/lpd",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/mastiff",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/miniupnpd",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/mke2fs",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/openvpn",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/phddns",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/pppd",
+    "symbols": [
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/qosmgmtd",
+    "symbols": [
+      "__aeabi_uidiv@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/rc",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_ldivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/samba_multicall",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_ldivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/stubby",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_ldivmod@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/tune2fs",
+    "symbols": [
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/uqmi",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/usbclient",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/vsftpd",
+    "symbols": [
+      "__aeabi_uidivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/wget",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5",
+      "__aeabi_idivmod@GCC_3.5",
+      "__aeabi_ldivmod@GCC_3.5",
+      "__aeabi_uidiv@GCC_3.5",
+      "__aeabi_uidivmod@GCC_3.5",
+      "__aeabi_uldivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/wlceventd",
+    "symbols": [
+      "__aeabi_uidiv@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/wlconf",
+    "symbols": [
+      "__aeabi_idivmod@GCC_3.5"
+    ]
+  },
+  {
+    "path": "usr/sbin/wps_pbcd",
+    "symbols": [
+      "__aeabi_idiv@GCC_3.5"
+    ]
+  }
+]

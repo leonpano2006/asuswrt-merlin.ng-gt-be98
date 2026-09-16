@@ -52,3 +52,8 @@ also passed Web UI, four radios, Docker networking/memcg and Runner checks.
 Those observations refer to the previous image, not a boot of this new image.
 Slot 1 remains uncommitted; normal reboot goes to committed slot 2 / #35.
 Recheck live UBI capacity and slot state before any future flash.
+
+The installed [multiarch ldd entry fix](../ldd-multiarch/README.md) is another
+external runtime dependency: `/usr/local/bin/ldd` and `/opt/bin/ldd` point to
+the existing firmware `/usr/bin/ldd`. All three ABIs and Entware programs pass;
+no firmware repack is needed and the candidate image hashes above are unchanged.

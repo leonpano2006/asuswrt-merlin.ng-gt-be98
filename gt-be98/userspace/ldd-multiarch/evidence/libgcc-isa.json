@@ -1,0 +1,30 @@
+{
+  "candidate_armel": {
+    "gcc": "15.2.0",
+    "cpu_arch": "ARMv5T",
+    "float_abi": "soft",
+    "divsi3_hardware_divide": false,
+    "udivsi3_hardware_divide": false
+  },
+  "candidate_armhf": {
+    "gcc": "15.2.0",
+    "cpu_arch": "ARMv7-A",
+    "float_abi": "hard",
+    "fpu": "VFPv3-D16",
+    "divsi3_hardware_divide": false,
+    "udivsi3_hardware_divide": false
+  },
+  "current_armel": {
+    "gcc": "10.3.0",
+    "cpu_arch": "ARMv7-A",
+    "fpu": "VFPv3",
+    "divsi3_hardware_divide": false,
+    "udivsi3_hardware_divide": false
+  },
+  "deployed_division_modulus_import_consumers": 66,
+  "performance_benchmarked": false,
+  "equal_performance_proven": false,
+  "candidate_already_hardware_compatibility_tested": true,
+  "candidate_flashed": false,
+  "reference": "https://gcc.gnu.org/onlinedocs/gccint/Libgcc.html"
+}

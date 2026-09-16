@@ -1,0 +1,149 @@
+
+libgcc-runtime-20260916/packages/runtime/usr/lib/arm-linux-gnueabi/libgcc_s.so.1:     file format elf32-littlearm
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .text:
+
+0000dd08 <__divsi3@@GCC_3.0>:
+    dd08:	e3510000 	cmp	r1, #0
+    dd0c:	0a000081 	beq	df18 <__divsi3@@GCC_3.0+0x210>
+    dd10:	e020c001 	eor	ip, r0, r1
+    dd14:	42611000 	rsbmi	r1, r1, #0
+    dd18:	e2512001 	subs	r2, r1, #1
+    dd1c:	0a000070 	beq	dee4 <__divsi3@@GCC_3.0+0x1dc>
+    dd20:	e1b03000 	movs	r3, r0
+    dd24:	42603000 	rsbmi	r3, r0, #0
+    dd28:	e1530001 	cmp	r3, r1
+    dd2c:	9a00006f 	bls	def0 <__divsi3@@GCC_3.0+0x1e8>
+    dd30:	e1110002 	tst	r1, r2
+    dd34:	0a000071 	beq	df00 <__divsi3@@GCC_3.0+0x1f8>
+    dd38:	e16f2f13 	clz	r2, r3
+    dd3c:	e16f0f11 	clz	r0, r1
+    dd40:	e0402002 	sub	r2, r0, r2
+    dd44:	e272201f 	rsbs	r2, r2, #31
+    dd48:	10822082 	addne	r2, r2, r2, lsl #1
+    dd4c:	e3a00000 	mov	r0, #0
+    dd50:	108ff102 	addne	pc, pc, r2, lsl #2
+    dd54:	e1a00000 	nop			@ (mov r0, r0)
+    dd58:	e1530f81 	cmp	r3, r1, lsl #31
+    dd5c:	e0a00000 	adc	r0, r0, r0
+    dd60:	20433f81 	subcs	r3, r3, r1, lsl #31
+    dd64:	e1530f01 	cmp	r3, r1, lsl #30
+    dd68:	e0a00000 	adc	r0, r0, r0
+    dd6c:	20433f01 	subcs	r3, r3, r1, lsl #30
+    dd70:	e1530e81 	cmp	r3, r1, lsl #29
+    dd74:	e0a00000 	adc	r0, r0, r0
+    dd78:	20433e81 	subcs	r3, r3, r1, lsl #29
+    dd7c:	e1530e01 	cmp	r3, r1, lsl #28
+    dd80:	e0a00000 	adc	r0, r0, r0
+    dd84:	20433e01 	subcs	r3, r3, r1, lsl #28
+    dd88:	e1530d81 	cmp	r3, r1, lsl #27
+    dd8c:	e0a00000 	adc	r0, r0, r0
+    dd90:	20433d81 	subcs	r3, r3, r1, lsl #27
+    dd94:	e1530d01 	cmp	r3, r1, lsl #26
+    dd98:	e0a00000 	adc	r0, r0, r0
+    dd9c:	20433d01 	subcs	r3, r3, r1, lsl #26
+    dda0:	e1530c81 	cmp	r3, r1, lsl #25
+    dda4:	e0a00000 	adc	r0, r0, r0
+    dda8:	20433c81 	subcs	r3, r3, r1, lsl #25
+    ddac:	e1530c01 	cmp	r3, r1, lsl #24
+    ddb0:	e0a00000 	adc	r0, r0, r0
+    ddb4:	20433c01 	subcs	r3, r3, r1, lsl #24
+    ddb8:	e1530b81 	cmp	r3, r1, lsl #23
+    ddbc:	e0a00000 	adc	r0, r0, r0
+    ddc0:	20433b81 	subcs	r3, r3, r1, lsl #23
+    ddc4:	e1530b01 	cmp	r3, r1, lsl #22
+    ddc8:	e0a00000 	adc	r0, r0, r0
+    ddcc:	20433b01 	subcs	r3, r3, r1, lsl #22
+    ddd0:	e1530a81 	cmp	r3, r1, lsl #21
+    ddd4:	e0a00000 	adc	r0, r0, r0
+    ddd8:	20433a81 	subcs	r3, r3, r1, lsl #21
+    dddc:	e1530a01 	cmp	r3, r1, lsl #20
+    dde0:	e0a00000 	adc	r0, r0, r0
+    dde4:	20433a01 	subcs	r3, r3, r1, lsl #20
+    dde8:	e1530981 	cmp	r3, r1, lsl #19
+    ddec:	e0a00000 	adc	r0, r0, r0
+    ddf0:	20433981 	subcs	r3, r3, r1, lsl #19
+    ddf4:	e1530901 	cmp	r3, r1, lsl #18
+    ddf8:	e0a00000 	adc	r0, r0, r0
+    ddfc:	20433901 	subcs	r3, r3, r1, lsl #18
+    de00:	e1530881 	cmp	r3, r1, lsl #17
+    de04:	e0a00000 	adc	r0, r0, r0
+    de08:	20433881 	subcs	r3, r3, r1, lsl #17
+    de0c:	e1530801 	cmp	r3, r1, lsl #16
+    de10:	e0a00000 	adc	r0, r0, r0
+    de14:	20433801 	subcs	r3, r3, r1, lsl #16
+    de18:	e1530781 	cmp	r3, r1, lsl #15
+    de1c:	e0a00000 	adc	r0, r0, r0
+    de20:	20433781 	subcs	r3, r3, r1, lsl #15
+    de24:	e1530701 	cmp	r3, r1, lsl #14
+    de28:	e0a00000 	adc	r0, r0, r0
+    de2c:	20433701 	subcs	r3, r3, r1, lsl #14
+    de30:	e1530681 	cmp	r3, r1, lsl #13
+    de34:	e0a00000 	adc	r0, r0, r0
+    de38:	20433681 	subcs	r3, r3, r1, lsl #13
+    de3c:	e1530601 	cmp	r3, r1, lsl #12
+    de40:	e0a00000 	adc	r0, r0, r0
+    de44:	20433601 	subcs	r3, r3, r1, lsl #12
+    de48:	e1530581 	cmp	r3, r1, lsl #11
+    de4c:	e0a00000 	adc	r0, r0, r0
+    de50:	20433581 	subcs	r3, r3, r1, lsl #11
+    de54:	e1530501 	cmp	r3, r1, lsl #10
+    de58:	e0a00000 	adc	r0, r0, r0
+    de5c:	20433501 	subcs	r3, r3, r1, lsl #10
+    de60:	e1530481 	cmp	r3, r1, lsl #9
+    de64:	e0a00000 	adc	r0, r0, r0
+    de68:	20433481 	subcs	r3, r3, r1, lsl #9
+    de6c:	e1530401 	cmp	r3, r1, lsl #8
+    de70:	e0a00000 	adc	r0, r0, r0
+    de74:	20433401 	subcs	r3, r3, r1, lsl #8
+    de78:	e1530381 	cmp	r3, r1, lsl #7
+    de7c:	e0a00000 	adc	r0, r0, r0
+    de80:	20433381 	subcs	r3, r3, r1, lsl #7
+    de84:	e1530301 	cmp	r3, r1, lsl #6
+    de88:	e0a00000 	adc	r0, r0, r0
+    de8c:	20433301 	subcs	r3, r3, r1, lsl #6
+    de90:	e1530281 	cmp	r3, r1, lsl #5
+    de94:	e0a00000 	adc	r0, r0, r0
+    de98:	20433281 	subcs	r3, r3, r1, lsl #5
+    de9c:	e1530201 	cmp	r3, r1, lsl #4
+    dea0:	e0a00000 	adc	r0, r0, r0
+    dea4:	20433201 	subcs	r3, r3, r1, lsl #4
+    dea8:	e1530181 	cmp	r3, r1, lsl #3
+    deac:	e0a00000 	adc	r0, r0, r0
+    deb0:	20433181 	subcs	r3, r3, r1, lsl #3
+    deb4:	e1530101 	cmp	r3, r1, lsl #2
+    deb8:	e0a00000 	adc	r0, r0, r0
+    debc:	20433101 	subcs	r3, r3, r1, lsl #2
+    dec0:	e1530081 	cmp	r3, r1, lsl #1
+    dec4:	e0a00000 	adc	r0, r0, r0
+    dec8:	20433081 	subcs	r3, r3, r1, lsl #1
+    decc:	e1530001 	cmp	r3, r1
+    ded0:	e0a00000 	adc	r0, r0, r0
+    ded4:	20433001 	subcs	r3, r3, r1
+    ded8:	e35c0000 	cmp	ip, #0
+    dedc:	42600000 	rsbmi	r0, r0, #0
+    dee0:	e12fff1e 	bx	lr
+    dee4:	e13c0000 	teq	ip, r0
+    dee8:	42600000 	rsbmi	r0, r0, #0
+    deec:	e12fff1e 	bx	lr
+    def0:	33a00000 	movcc	r0, #0
+    def4:	01a00fcc 	asreq	r0, ip, #31
+    def8:	03800001 	orreq	r0, r0, #1
+    defc:	e12fff1e 	bx	lr
+    df00:	e16f2f11 	clz	r2, r1
+    df04:	e262201f 	rsb	r2, r2, #31
+    df08:	e35c0000 	cmp	ip, #0
+    df0c:	e1a00233 	lsr	r0, r3, r2
+    df10:	42600000 	rsbmi	r0, r0, #0
+    df14:	e12fff1e 	bx	lr
+    df18:	e3500000 	cmp	r0, #0
+    df1c:	c3e00102 	mvngt	r0, #-2147483648	@ 0x80000000
+    df20:	b3a00102 	movlt	r0, #-2147483648	@ 0x80000000
+    df24:	eafffd34 	b	d3fc <__aeabi_idiv0@plt>
+
+Disassembly of section .fini:

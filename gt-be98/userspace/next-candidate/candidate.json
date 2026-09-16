@@ -204,5 +204,15 @@
     "sha256": "e1007e8210f357e1a6f7a3c8c899706644f953a84f05f5283859a948935460e0",
     "rootfs_sha256": "274ad17ea4c9878352a9648acfe8c4ce2057043b30068e0e410102df21fce3d6",
     "bootfs_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f"
-  }
+  },
+  "external_runtime_fixes": [
+    {
+      "name": "multiarch ldd through /usr/local and /opt",
+      "checkpoint": "../ldd-multiarch",
+      "record": "../ldd-multiarch/evidence/verification.json",
+      "installed_on_router": true,
+      "firmware_repack_required": false,
+      "firmware_image_changed": false
+    }
+  ]
 }

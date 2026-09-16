@@ -1,0 +1,30 @@
+{
+  "status": "installed-and-verified",
+  "cause": "/opt/bin/ldd only listed the aarch64 loader; firmware ldd already supports three ABIs",
+  "canonical": "/usr/bin/ldd",
+  "canonical_sha256": "251bf4507a2b1e6a5ad062bc88493d52f688dea5c4fcac2a199e5fc04247d732",
+  "links": {
+    "/usr/local/bin/ldd": "/usr/bin/ldd",
+    "/opt/bin/ldd": "/usr/bin/ldd"
+  },
+  "backup": "/usr/local/share/leon-backups/ldd-20260916/opt-bin-ldd",
+  "old_sha256": "af1ef718ebc9d104434124eca35a08f391af73899685dc4ca308f43685d6f5c7",
+  "cases_passed": 15,
+  "abis": [
+    "aarch64",
+    "armel",
+    "armhf"
+  ],
+  "entware_programs_passed": true,
+  "verbose_multiple_files_passed": true,
+  "missing_file_status_passed": true,
+  "fresh_login_passed": true,
+  "both_PATH_orders_passed": true,
+  "temporary_probes_removed": true,
+  "firmware_files_changed": false,
+  "libraries_changed": false,
+  "startup_profiles_changed": false,
+  "firmware_flashed": false,
+  "firmware_commit_performed": false,
+  "verification_sha256": "205c5ee068c2fa381535ca5cb765ee00884f81d57e4ba7a87dcc8ec71d59c8b6"
+}

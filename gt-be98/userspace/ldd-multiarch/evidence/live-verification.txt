@@ -1,0 +1,24 @@
+LDD_CASE_PASS /usr/bin/ldd aarch64
+LDD_CASE_PASS /usr/bin/ldd armel
+LDD_CASE_PASS /usr/bin/ldd vendor-rc
+LDD_CASE_PASS /usr/bin/ldd armhf
+LDD_CASE_PASS /usr/bin/ldd entware-aarch64
+LDD_CASE_PASS /usr/local/bin/ldd aarch64
+LDD_CASE_PASS /usr/local/bin/ldd armel
+LDD_CASE_PASS /usr/local/bin/ldd vendor-rc
+LDD_CASE_PASS /usr/local/bin/ldd armhf
+LDD_CASE_PASS /usr/local/bin/ldd entware-aarch64
+LDD_CASE_PASS /opt/bin/ldd aarch64
+LDD_CASE_PASS /opt/bin/ldd armel
+LDD_CASE_PASS /opt/bin/ldd vendor-rc
+LDD_CASE_PASS /opt/bin/ldd armhf
+LDD_CASE_PASS /opt/bin/ldd entware-aarch64
+LDD_PATH_PASS /usr/local/bin
+LDD_PATH_PASS /opt/bin
+LDD_FRESH_LOGIN_PASS
+lrwxrwxrwx 1 MastermixStudios root 12 Sep 16 12:27 /opt/bin/ldd -> /usr/bin/ldd
+lrwxrwxrwx 1 MastermixStudios root 12 Sep 16 12:27 /usr/local/bin/ldd -> /usr/bin/ldd
+251bf4507a2b1e6a5ad062bc88493d52f688dea5c4fcac2a199e5fc04247d732  /usr/bin/ldd
+251bf4507a2b1e6a5ad062bc88493d52f688dea5c4fcac2a199e5fc04247d732  /usr/local/bin/ldd
+251bf4507a2b1e6a5ad062bc88493d52f688dea5c4fcac2a199e5fc04247d732  /opt/bin/ldd
+LDD_VERIFY_COMPLETE cases=15

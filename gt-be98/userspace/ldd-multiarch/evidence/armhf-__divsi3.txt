@@ -1,0 +1,224 @@
+
+libgcc-runtime-20260916/packages/runtime/usr/lib/arm-linux-gnueabihf/libgcc_s.so.1:     file format elf32-littlearm
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .text:
+
+0000da98 <__divsi3@@GCC_3.0>:
+    da98:	2900      	cmp	r1, #0
+    da9a:	f000 813e 	beq.w	dd1a <__divsi3@@GCC_3.0+0x282>
+    da9e:	ea80 0c01 	eor.w	ip, r0, r1
+    daa2:	bf48      	it	mi
+    daa4:	4249      	negmi	r1, r1
+    daa6:	1e4a      	subs	r2, r1, #1
+    daa8:	f000 811f 	beq.w	dcea <__divsi3@@GCC_3.0+0x252>
+    daac:	0003      	movs	r3, r0
+    daae:	bf48      	it	mi
+    dab0:	4243      	negmi	r3, r0
+    dab2:	428b      	cmp	r3, r1
+    dab4:	f240 811e 	bls.w	dcf4 <__divsi3@@GCC_3.0+0x25c>
+    dab8:	4211      	tst	r1, r2
+    daba:	f000 8123 	beq.w	dd04 <__divsi3@@GCC_3.0+0x26c>
+    dabe:	fab3 f283 	clz	r2, r3
+    dac2:	fab1 f081 	clz	r0, r1
+    dac6:	eba0 0202 	sub.w	r2, r0, r2
+    daca:	f1c2 021f 	rsb	r2, r2, #31
+    dace:	a004      	add	r0, pc, #16	@ (adr r0, dae0 <__divsi3@@GCC_3.0+0x48>)
+    dad0:	eb00 1202 	add.w	r2, r0, r2, lsl #4
+    dad4:	f04f 0000 	mov.w	r0, #0
+    dad8:	4697      	mov	pc, r2
+    dada:	bf00      	nop
+    dadc:	f3af 8000 	nop.w
+    dae0:	ebb3 7fc1 	cmp.w	r3, r1, lsl #31
+    dae4:	bf00      	nop
+    dae6:	eb40 0000 	adc.w	r0, r0, r0
+    daea:	bf28      	it	cs
+    daec:	eba3 73c1 	subcs.w	r3, r3, r1, lsl #31
+    daf0:	ebb3 7f81 	cmp.w	r3, r1, lsl #30
+    daf4:	bf00      	nop
+    daf6:	eb40 0000 	adc.w	r0, r0, r0
+    dafa:	bf28      	it	cs
+    dafc:	eba3 7381 	subcs.w	r3, r3, r1, lsl #30
+    db00:	ebb3 7f41 	cmp.w	r3, r1, lsl #29
+    db04:	bf00      	nop
+    db06:	eb40 0000 	adc.w	r0, r0, r0
+    db0a:	bf28      	it	cs
+    db0c:	eba3 7341 	subcs.w	r3, r3, r1, lsl #29
+    db10:	ebb3 7f01 	cmp.w	r3, r1, lsl #28
+    db14:	bf00      	nop
+    db16:	eb40 0000 	adc.w	r0, r0, r0
+    db1a:	bf28      	it	cs
+    db1c:	eba3 7301 	subcs.w	r3, r3, r1, lsl #28
+    db20:	ebb3 6fc1 	cmp.w	r3, r1, lsl #27
+    db24:	bf00      	nop
+    db26:	eb40 0000 	adc.w	r0, r0, r0
+    db2a:	bf28      	it	cs
+    db2c:	eba3 63c1 	subcs.w	r3, r3, r1, lsl #27
+    db30:	ebb3 6f81 	cmp.w	r3, r1, lsl #26
+    db34:	bf00      	nop
+    db36:	eb40 0000 	adc.w	r0, r0, r0
+    db3a:	bf28      	it	cs
+    db3c:	eba3 6381 	subcs.w	r3, r3, r1, lsl #26
+    db40:	ebb3 6f41 	cmp.w	r3, r1, lsl #25
+    db44:	bf00      	nop
+    db46:	eb40 0000 	adc.w	r0, r0, r0
+    db4a:	bf28      	it	cs
+    db4c:	eba3 6341 	subcs.w	r3, r3, r1, lsl #25
+    db50:	ebb3 6f01 	cmp.w	r3, r1, lsl #24
+    db54:	bf00      	nop
+    db56:	eb40 0000 	adc.w	r0, r0, r0
+    db5a:	bf28      	it	cs
+    db5c:	eba3 6301 	subcs.w	r3, r3, r1, lsl #24
+    db60:	ebb3 5fc1 	cmp.w	r3, r1, lsl #23
+    db64:	bf00      	nop
+    db66:	eb40 0000 	adc.w	r0, r0, r0
+    db6a:	bf28      	it	cs
+    db6c:	eba3 53c1 	subcs.w	r3, r3, r1, lsl #23
+    db70:	ebb3 5f81 	cmp.w	r3, r1, lsl #22
+    db74:	bf00      	nop
+    db76:	eb40 0000 	adc.w	r0, r0, r0
+    db7a:	bf28      	it	cs
+    db7c:	eba3 5381 	subcs.w	r3, r3, r1, lsl #22
+    db80:	ebb3 5f41 	cmp.w	r3, r1, lsl #21
+    db84:	bf00      	nop
+    db86:	eb40 0000 	adc.w	r0, r0, r0
+    db8a:	bf28      	it	cs
+    db8c:	eba3 5341 	subcs.w	r3, r3, r1, lsl #21
+    db90:	ebb3 5f01 	cmp.w	r3, r1, lsl #20
+    db94:	bf00      	nop
+    db96:	eb40 0000 	adc.w	r0, r0, r0
+    db9a:	bf28      	it	cs
+    db9c:	eba3 5301 	subcs.w	r3, r3, r1, lsl #20
+    dba0:	ebb3 4fc1 	cmp.w	r3, r1, lsl #19
+    dba4:	bf00      	nop
+    dba6:	eb40 0000 	adc.w	r0, r0, r0
+    dbaa:	bf28      	it	cs
+    dbac:	eba3 43c1 	subcs.w	r3, r3, r1, lsl #19
+    dbb0:	ebb3 4f81 	cmp.w	r3, r1, lsl #18
+    dbb4:	bf00      	nop
+    dbb6:	eb40 0000 	adc.w	r0, r0, r0
+    dbba:	bf28      	it	cs
+    dbbc:	eba3 4381 	subcs.w	r3, r3, r1, lsl #18
+    dbc0:	ebb3 4f41 	cmp.w	r3, r1, lsl #17
+    dbc4:	bf00      	nop
+    dbc6:	eb40 0000 	adc.w	r0, r0, r0
+    dbca:	bf28      	it	cs
+    dbcc:	eba3 4341 	subcs.w	r3, r3, r1, lsl #17
+    dbd0:	ebb3 4f01 	cmp.w	r3, r1, lsl #16
+    dbd4:	bf00      	nop
+    dbd6:	eb40 0000 	adc.w	r0, r0, r0
+    dbda:	bf28      	it	cs
+    dbdc:	eba3 4301 	subcs.w	r3, r3, r1, lsl #16
+    dbe0:	ebb3 3fc1 	cmp.w	r3, r1, lsl #15
+    dbe4:	bf00      	nop
+    dbe6:	eb40 0000 	adc.w	r0, r0, r0
+    dbea:	bf28      	it	cs
+    dbec:	eba3 33c1 	subcs.w	r3, r3, r1, lsl #15
+    dbf0:	ebb3 3f81 	cmp.w	r3, r1, lsl #14
+    dbf4:	bf00      	nop
+    dbf6:	eb40 0000 	adc.w	r0, r0, r0
+    dbfa:	bf28      	it	cs
+    dbfc:	eba3 3381 	subcs.w	r3, r3, r1, lsl #14
+    dc00:	ebb3 3f41 	cmp.w	r3, r1, lsl #13
+    dc04:	bf00      	nop
+    dc06:	eb40 0000 	adc.w	r0, r0, r0
+    dc0a:	bf28      	it	cs
+    dc0c:	eba3 3341 	subcs.w	r3, r3, r1, lsl #13
+    dc10:	ebb3 3f01 	cmp.w	r3, r1, lsl #12
+    dc14:	bf00      	nop
+    dc16:	eb40 0000 	adc.w	r0, r0, r0
+    dc1a:	bf28      	it	cs
+    dc1c:	eba3 3301 	subcs.w	r3, r3, r1, lsl #12
+    dc20:	ebb3 2fc1 	cmp.w	r3, r1, lsl #11
+    dc24:	bf00      	nop
+    dc26:	eb40 0000 	adc.w	r0, r0, r0
+    dc2a:	bf28      	it	cs
+    dc2c:	eba3 23c1 	subcs.w	r3, r3, r1, lsl #11
+    dc30:	ebb3 2f81 	cmp.w	r3, r1, lsl #10
+    dc34:	bf00      	nop
+    dc36:	eb40 0000 	adc.w	r0, r0, r0
+    dc3a:	bf28      	it	cs
+    dc3c:	eba3 2381 	subcs.w	r3, r3, r1, lsl #10
+    dc40:	ebb3 2f41 	cmp.w	r3, r1, lsl #9
+    dc44:	bf00      	nop
+    dc46:	eb40 0000 	adc.w	r0, r0, r0
+    dc4a:	bf28      	it	cs
+    dc4c:	eba3 2341 	subcs.w	r3, r3, r1, lsl #9
+    dc50:	ebb3 2f01 	cmp.w	r3, r1, lsl #8
+    dc54:	bf00      	nop
+    dc56:	eb40 0000 	adc.w	r0, r0, r0
+    dc5a:	bf28      	it	cs
+    dc5c:	eba3 2301 	subcs.w	r3, r3, r1, lsl #8
+    dc60:	ebb3 1fc1 	cmp.w	r3, r1, lsl #7
+    dc64:	bf00      	nop
+    dc66:	eb40 0000 	adc.w	r0, r0, r0
+    dc6a:	bf28      	it	cs
+    dc6c:	eba3 13c1 	subcs.w	r3, r3, r1, lsl #7
+    dc70:	ebb3 1f81 	cmp.w	r3, r1, lsl #6
+    dc74:	bf00      	nop
+    dc76:	eb40 0000 	adc.w	r0, r0, r0
+    dc7a:	bf28      	it	cs
+    dc7c:	eba3 1381 	subcs.w	r3, r3, r1, lsl #6
+    dc80:	ebb3 1f41 	cmp.w	r3, r1, lsl #5
+    dc84:	bf00      	nop
+    dc86:	eb40 0000 	adc.w	r0, r0, r0
+    dc8a:	bf28      	it	cs
+    dc8c:	eba3 1341 	subcs.w	r3, r3, r1, lsl #5
+    dc90:	ebb3 1f01 	cmp.w	r3, r1, lsl #4
+    dc94:	bf00      	nop
+    dc96:	eb40 0000 	adc.w	r0, r0, r0
+    dc9a:	bf28      	it	cs
+    dc9c:	eba3 1301 	subcs.w	r3, r3, r1, lsl #4
+    dca0:	ebb3 0fc1 	cmp.w	r3, r1, lsl #3
+    dca4:	bf00      	nop
+    dca6:	eb40 0000 	adc.w	r0, r0, r0
+    dcaa:	bf28      	it	cs
+    dcac:	eba3 03c1 	subcs.w	r3, r3, r1, lsl #3
+    dcb0:	ebb3 0f81 	cmp.w	r3, r1, lsl #2
+    dcb4:	bf00      	nop
+    dcb6:	eb40 0000 	adc.w	r0, r0, r0
+    dcba:	bf28      	it	cs
+    dcbc:	eba3 0381 	subcs.w	r3, r3, r1, lsl #2
+    dcc0:	ebb3 0f41 	cmp.w	r3, r1, lsl #1
+    dcc4:	bf00      	nop
+    dcc6:	eb40 0000 	adc.w	r0, r0, r0
+    dcca:	bf28      	it	cs
+    dccc:	eba3 0341 	subcs.w	r3, r3, r1, lsl #1
+    dcd0:	ebb3 0f01 	cmp.w	r3, r1
+    dcd4:	bf00      	nop
+    dcd6:	eb40 0000 	adc.w	r0, r0, r0
+    dcda:	bf28      	it	cs
+    dcdc:	eba3 0301 	subcs.w	r3, r3, r1
+    dce0:	f1bc 0f00 	cmp.w	ip, #0
+    dce4:	bf48      	it	mi
+    dce6:	4240      	negmi	r0, r0
+    dce8:	4770      	bx	lr
+    dcea:	ea9c 0f00 	teq	ip, r0
+    dcee:	bf48      	it	mi
+    dcf0:	4240      	negmi	r0, r0
+    dcf2:	4770      	bx	lr
+    dcf4:	bf38      	it	cc
+    dcf6:	2000      	movcc	r0, #0
+    dcf8:	bf04      	itt	eq
+    dcfa:	ea4f 70ec 	moveq.w	r0, ip, asr #31
+    dcfe:	f040 0001 	orreq.w	r0, r0, #1
+    dd02:	4770      	bx	lr
+    dd04:	fab1 f281 	clz	r2, r1
+    dd08:	f1c2 021f 	rsb	r2, r2, #31
+    dd0c:	f1bc 0f00 	cmp.w	ip, #0
+    dd10:	fa23 f002 	lsr.w	r0, r3, r2
+    dd14:	bf48      	it	mi
+    dd16:	4240      	negmi	r0, r0
+    dd18:	4770      	bx	lr
+    dd1a:	2800      	cmp	r0, #0
+    dd1c:	bfc8      	it	gt
+    dd1e:	f06f 4000 	mvngt.w	r0, #2147483648	@ 0x80000000
+    dd22:	bfb8      	it	lt
+    dd24:	f04f 4000 	movlt.w	r0, #2147483648	@ 0x80000000
+    dd28:	f7ff baa2 	b.w	d270 <__aeabi_idiv0@plt>
+
+Disassembly of section .fini:

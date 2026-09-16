@@ -1,0 +1,22 @@
+[
+  {
+    "symbol": "__divsi3",
+    "instructions_lines": 55,
+    "hardware_divide_instructions": []
+  },
+  {
+    "symbol": "__udivsi3",
+    "instructions_lines": 42,
+    "hardware_divide_instructions": []
+  },
+  {
+    "symbol": "__aeabi_idivmod",
+    "instructions_lines": 8,
+    "hardware_divide_instructions": []
+  },
+  {
+    "symbol": "__aeabi_uidivmod",
+    "instructions_lines": 8,
+    "hardware_divide_instructions": []
+  }
+]
