@@ -1,0 +1,14 @@
+[
+  {
+    "command": [
+      "make",
+      "-j4",
+      "all",
+      "gcc_objdir=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/gcc-runtime/gcc",
+      "GCC_CFLAGS=-O2 -g -frecord-gcc-switches -DIN_GCC -isystem ./include",
+      "INHIBIT_LIBC_CFLAGS=",
+      "LDFLAGS=-Wl,--build-id=sha1"
+    ],
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/gcc-runtime/aarch64-linux-gnu/libgcc"
+  }
+]

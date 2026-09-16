@@ -1,0 +1,26 @@
+{
+  "source_inventory_sha256": "ead3f52c9c3a8b2dcfb953789ce361086272a182aba0da9daae793155d0dd332",
+  "output_inventory_sha256": "081b02e77524a04903e1fc47d258b7c7c5cb2111f23b638c6faffc9079ca5620",
+  "added_paths": [
+    "usr/lib/arm-linux-gnueabi/libstdc++.so.6.0.34",
+    "usr/lib/arm-linux-gnueabihf/libstdc++.so.6",
+    "usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.34"
+  ],
+  "changed_paths": [
+    "usr/lib/aarch64-linux-gnu/libgcc_s.so.1",
+    "usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.36",
+    "usr/lib/arm-linux-gnueabi/libcap-ng.so.0.0.0",
+    "usr/lib/arm-linux-gnueabi/libexpat.so.1.5.2",
+    "usr/lib/arm-linux-gnueabi/libgcc_s.so.1",
+    "usr/lib/arm-linux-gnueabi/libjson-c.so.2.0.2",
+    "usr/lib/arm-linux-gnueabi/libstdc++.so.6",
+    "usr/lib/arm-linux-gnueabi/libz.so.1",
+    "usr/lib/arm-linux-gnueabihf/libgcc_s.so.1"
+  ],
+  "all_other_paths_unchanged": true,
+  "unchanged_modules": 182,
+  "glibc_init_bootguard_unchanged": true,
+  "new_flat_library_aliases": 0,
+  "router_modified": false,
+  "firmware_commit_performed": false
+}

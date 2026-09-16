@@ -1,5 +1,5 @@
 {
-  "candidate": "gt-be98-libgcc-runtime-20260916",
+  "candidate": "gt-be98-a53-runtimes-20260916",
   "status": "candidate-packaged-qemu-and-isolated-runtime-verified",
   "base_commit": "5bcedfc400aa58e1c2183fb0ef71c99180c4ee89",
   "base_rootfs_sha256": "af038997f690e9378941810a6323f681de521cf23a85199d2f832dfbe57176f2",
@@ -198,13 +198,6 @@
       "all_other_rootfs_paths_unchanged": true
     }
   },
-  "candidate_image": {
-    "image": "../libgcc-runtime/flash/GT-BE98_leon36-libgcc15_zstd22.pkgtb",
-    "bytes": 88370252,
-    "sha256": "e1007e8210f357e1a6f7a3c8c899706644f953a84f05f5283859a948935460e0",
-    "rootfs_sha256": "274ad17ea4c9878352a9648acfe8c4ce2057043b30068e0e410102df21fce3d6",
-    "bootfs_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f"
-  },
   "external_runtime_fixes": [
     {
       "name": "multiarch ldd through /usr/local and /opt",
@@ -214,5 +207,37 @@
       "firmware_repack_required": false,
       "firmware_image_changed": false
     }
-  ]
+  ],
+  "required_a53_postprocessing": {
+    "checkpoint": "../a53-runtimes",
+    "checkpoint_files": {
+      "scripts/prepare-rootfs.py": "4845dbf9fc8f98b621a7962dea832cae18eec57376d9d516c1a57021c330fa8f",
+      "scripts/common.py": "25c1731704df89d2df58567686fa9164a5c2f1e6cefca7764f296096a295905d",
+      "configs/rootfs-policy.json": "152997d80287106c6c1fef0ebb16b17f4a371ef9e111360b7583a51786e05094"
+    },
+    "runtime_manifest_sha256": "6388fe5ceefa68c0e87acede7c4f4054538b2749b3fca2dc32f22ffa1742394f",
+    "compiler_versions": {
+      "armel": "15.2.0",
+      "armhf": "15.2.0",
+      "aarch64": "16.2.0"
+    },
+    "glibc": "2.44",
+    "runtime_libraries": 10,
+    "abi_delta": "../a53-runtimes/configs/armel-libstdcxx-abi-delta.json",
+    "firmware_hardware_boot_tested": false,
+    "validation": {
+      "record": "../a53-runtimes/evidence/verification.json",
+      "qemu_passed": true,
+      "isolated_hardware_runtime_passed": true,
+      "integrated_recipe_identical": true,
+      "firmware_hardware_boot_tested": false
+    }
+  },
+  "candidate_image": {
+    "image": "../a53-runtimes/flash/GT-BE98_leon36-a53-runtimes_zstd22.pkgtb",
+    "bytes": 89439308,
+    "sha256": "7d48c2274be8dae6179096208a738d5214b321805b6d1fa9f0736bf23eff92f9",
+    "rootfs_sha256": "68888e499d0095374266c8f2adf0be296c5370e893c81c548e7a36c1030e9216",
+    "bootfs_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f"
+  }
 }

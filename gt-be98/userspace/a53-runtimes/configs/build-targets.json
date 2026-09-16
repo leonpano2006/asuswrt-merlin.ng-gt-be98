@@ -1,0 +1,53 @@
+{
+  "armel": {
+    "abi": "armel",
+    "triplet": "arm-linux-gnueabi",
+    "sysroot": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel",
+    "flags": [
+      "-mcpu=cortex-a53+crypto",
+      "-march=armv8-a+crc+crypto",
+      "-mfpu=crypto-neon-fp-armv8",
+      "-mfloat-abi=softfp"
+    ],
+    "cc": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cc",
+    "cxx": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cxx",
+    "host_library_dir": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/lib/aarch64-linux-gnu",
+    "tools": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-",
+    "compiler_version": "15.2.0",
+    "glibc": "2.44",
+    "glibc_source_commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3"
+  },
+  "armhf": {
+    "abi": "armhf",
+    "triplet": "arm-linux-gnueabihf",
+    "sysroot": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armhf",
+    "flags": [
+      "-mcpu=cortex-a53+crypto",
+      "-march=armv8-a+crc+crypto",
+      "-mfpu=crypto-neon-fp-armv8",
+      "-mfloat-abi=hard"
+    ],
+    "cc": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armhf/wrappers/cc",
+    "cxx": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armhf/wrappers/cxx",
+    "host_library_dir": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/multiarch-loader-20260916/toolchain-armhf/usr/lib/aarch64-linux-gnu",
+    "tools": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/multiarch-loader-20260916/toolchain-armhf/usr/bin/arm-linux-gnueabihf-",
+    "compiler_version": "15.2.0",
+    "glibc": "2.44",
+    "glibc_source_commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3"
+  },
+  "aarch64": {
+    "abi": "aarch64",
+    "triplet": "aarch64-linux-gnu",
+    "sysroot": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/aarch64",
+    "flags": [
+      "-mcpu=cortex-a53+crc+crypto"
+    ],
+    "cc": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/wrappers/cc",
+    "cxx": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/wrappers/cxx",
+    "host_library_dir": null,
+    "tools": "/usr/bin/aarch64-linux-gnu-",
+    "compiler_version": "16.2.0",
+    "glibc": "2.44",
+    "glibc_source_commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "armel": {
+    "tools": {
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-gcc-15": {
+        "realpath": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-gcc-15",
+        "sha256": "e365a6b1721565fe88f9d11a9d28b144d9c12b0279c82fece55ac5c660ab2c59"
+      },
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-ld": {
+        "realpath": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-ld.bfd",
+        "sha256": "57d7460710b552742e8bf377610f8e251ee6280a09c93d1cb783b71009495b11"
+      },
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-as": {
+        "realpath": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-as",
+        "sha256": "011cbc5d1d836a5594b0eca96c1d2c4a8c8e0cda3432f69231c1400971e268a9"
+      }
+    },
+    "compiler_version_output": "arm-linux-gnueabi-gcc-15 (Ubuntu 15.2.0-16ubuntu1) 15.2.0"
+  },
+  "armhf": {
+    "tools": {
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/multiarch-loader-20260916/toolchain-armhf/usr/bin/arm-linux-gnueabihf-gcc-15": {
+        "realpath": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/multiarch-loader-20260916/toolchain-armhf/usr/bin/arm-linux-gnueabihf-gcc-15",
+        "sha256": "5e228b21a63caf49085d53ebd1e998d1eecd753ba29a1377fe06e2c7b5eafe34"
+      },
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/multiarch-loader-20260916/toolchain-armhf/usr/bin/arm-linux-gnueabihf-ld": {
+        "realpath": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/multiarch-loader-20260916/toolchain-armhf/usr/bin/arm-linux-gnueabihf-ld.bfd",
+        "sha256": "b1e147eb0c7a4760fdd6553e28d55af9b0d78194f7f2d32a1249a8df6de71db8"
+      },
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/multiarch-loader-20260916/toolchain-armhf/usr/bin/arm-linux-gnueabihf-as": {
+        "realpath": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/multiarch-loader-20260916/toolchain-armhf/usr/bin/arm-linux-gnueabihf-as",
+        "sha256": "c5840e1764e707b0e1312001851b7077e74c5878439918ebb82212a81394d90c"
+      }
+    },
+    "compiler_version_output": "arm-linux-gnueabihf-gcc-15 (Ubuntu 15.2.0-16ubuntu1) 15.2.0"
+  },
+  "aarch64": {
+    "tools": {
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/xgcc": {
+        "realpath": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/xgcc",
+        "sha256": "eefcb1122ea429b2453bc2a02d3be05e23c96a8220b59743f974b76d80c15e23"
+      },
+      "/usr/bin/aarch64-linux-gnu-ld": {
+        "realpath": "/usr/bin/aarch64-linux-gnu-ld.bfd",
+        "sha256": "1e4d3369b76845fa8e099b83513bf28f6f722e046f9b2cde1378c9e27f96d19c"
+      },
+      "/usr/bin/aarch64-linux-gnu-as": {
+        "realpath": "/usr/bin/aarch64-linux-gnu-as",
+        "sha256": "1ffda50efb6d91b6b05ef933aced099595c36577594c0296c91161f2d13db374"
+      }
+    },
+    "compiler_version_output": "xgcc (Leon USB glibc 2.44 20260914) 16.2.0"
+  }
+}

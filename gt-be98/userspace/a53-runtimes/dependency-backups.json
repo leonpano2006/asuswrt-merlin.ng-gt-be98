@@ -1,0 +1,63 @@
+{
+  "unchanged_dependencies": [
+    {
+      "checkpoint": "multiarch-loader-20260916",
+      "archive": "/home/leonpano/amng-out/multiarch-loader-20260916/multiarch-loader-backup.tar",
+      "sha256": "5abd6984235c0e509b377b1e7b49496624a2d500491bb2d3399f81c255c9f31d",
+      "provides": [
+        "prior complete image and squashfs",
+        "glibc source and staged builds",
+        "armhf compiler package archives",
+        "QEMU kernel and prior probes"
+      ]
+    },
+    {
+      "checkpoint": "armel-multiarch-20260915",
+      "archive": "/home/leonpano/amng-out/armel-multiarch-20260915/armel-multiarch-backup.tar",
+      "sha256": "422b47fa80ee39008226ecbc1e79725e16af69d4ba1b0d3b5098666d1aa4e21d",
+      "provides": [
+        "prior armel GCC 15 compiler dependencies",
+        "four rebuilt libraries and scripts"
+      ]
+    },
+    {
+      "checkpoint": "libgcc-runtime-20260916",
+      "archive": "/home/leonpano/amng-out/libgcc-runtime-20260916/libgcc-runtime-backup.tar",
+      "sha256": "b060aec1cb99c049e9c47179608af9d1eb4bee31bc87e471a90cf2df945936fd",
+      "provides": [
+        "generic runtime checkpoint used as pinned overlay input",
+        "signed Ubuntu package indices"
+      ]
+    },
+    {
+      "checkpoint": "ldd-multiarch-fix-20260916",
+      "archive": "/home/leonpano/amng-out/ldd-multiarch-fix-20260916/ldd-multiarch-backup.tar",
+      "sha256": "4bb8c2560003dc132672989920a088dab4cc9e74923b1abb7d39f4a97d39f41f",
+      "provides": [
+        "live ldd repair",
+        "CPU target audit"
+      ]
+    }
+  ],
+  "test_only_external_sdk": {
+    "compiler": "GCC 10.3.0",
+    "host": "aarch64",
+    "target": "arm-buildroot-linux-gnueabi",
+    "dgx_path": "../github-push-20260915/dependency-sdks/arm32",
+    "included_in_this_archive": false,
+    "note": "Existing SDK used only to generate backward-compatibility consumers. The final test sources, binaries and link commands are in this archive."
+  },
+  "native_compiler_dependency": {
+    "workspace_path": "gcc162-usb",
+    "compiler": "GCC 16.2.0 on aarch64",
+    "rebuild_script": "gcc162-usb/build.sh",
+    "source_sha256": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e",
+    "included_in_this_archive": [
+      "source archive",
+      "native compiler build and host math dependency build",
+      "build.sh/configure.log",
+      "native source prerequisites"
+    ],
+    "kept_separate_from_firmware_git_repository": true
+  }
+}

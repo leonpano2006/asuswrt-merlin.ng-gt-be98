@@ -1,0 +1,55 @@
+{
+  "armel": {
+    "link_map_sha256": "902d4de6d86eb75ea99b1d892cf08db201e6df5cf821e6d38e258bfae9383551",
+    "inputs": [
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel/usr/lib/arm-linux-gnueabi/crti.o",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libgcc/crtbeginS.o",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel/usr/lib/arm-linux-gnueabi/libm.so",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel/usr/lib/arm-linux-gnueabi/libc.so",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel/lib/arm-linux-gnueabi/libc.so.6",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel/usr/lib/arm-linux-gnueabi/libc_nonshared.a",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel/lib/ld-linux.so.3",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libgcc/libgcc_s.so",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libgcc/libgcc_s.so.1",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libgcc/libgcc.a",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libgcc/crtendS.o",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel/usr/lib/arm-linux-gnueabi/crtn.o"
+    ]
+  },
+  "armhf": {
+    "link_map_sha256": "eb283838e72086e4231ca22eeb1b68ad9b235f9be31591a3d14038f4a23f06ab",
+    "inputs": [
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armhf/usr/lib/arm-linux-gnueabihf/crti.o",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armhf/gcc-runtime/arm-linux-gnueabihf/libgcc/crtbeginS.o",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armhf/usr/lib/arm-linux-gnueabihf/libm.so",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armhf/usr/lib/arm-linux-gnueabihf/libc.so",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armhf/lib/arm-linux-gnueabihf/libc.so.6",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armhf/usr/lib/arm-linux-gnueabihf/libc_nonshared.a",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armhf/lib/ld-linux-armhf.so.3",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armhf/gcc-runtime/arm-linux-gnueabihf/libgcc/libgcc_s.so",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armhf/gcc-runtime/arm-linux-gnueabihf/libgcc/libgcc_s.so.1",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armhf/gcc-runtime/arm-linux-gnueabihf/libgcc/libgcc.a",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armhf/gcc-runtime/arm-linux-gnueabihf/libgcc/crtendS.o",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armhf/usr/lib/arm-linux-gnueabihf/crtn.o"
+    ]
+  },
+  "aarch64": {
+    "link_map_sha256": "baf29c7cd5148792a735a14e472707cb88cea0b0a1043db2248187eb6b502722",
+    "inputs": [
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/aarch64/usr/lib/aarch64-linux-gnu/crti.o",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/gcc-runtime/aarch64-linux-gnu/libgcc/crtbeginS.o",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/aarch64/usr/lib/aarch64-linux-gnu/libm.so",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/aarch64/lib/aarch64-linux-gnu/libm.so.6",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/aarch64/lib/aarch64-linux-gnu/libmvec.so.1",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/aarch64/usr/lib/aarch64-linux-gnu/libc.so",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/aarch64/lib/aarch64-linux-gnu/libc.so.6",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/aarch64/usr/lib/aarch64-linux-gnu/libc_nonshared.a",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/aarch64/lib/ld-linux-aarch64.so.1",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/gcc-runtime/aarch64-linux-gnu/libgcc/libgcc_s.so",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/gcc-runtime/aarch64-linux-gnu/libgcc/libgcc_s.so.1",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/gcc-runtime/aarch64-linux-gnu/libgcc/libgcc.a",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/aarch64/gcc-runtime/aarch64-linux-gnu/libgcc/crtendS.o",
+      "LOAD /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/aarch64/usr/lib/aarch64-linux-gnu/crtn.o"
+    ]
+  }
+}

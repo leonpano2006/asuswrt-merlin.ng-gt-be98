@@ -1,0 +1,11 @@
+available_eraseblocks 20
+eraseblock_size 126976
+volume ubi0_0 jffs2 300
+volume ubi0_1 metadata1 1
+volume ubi0_10 data 166
+volume ubi0_11 defaults 67
+volume ubi0_2 metadata2 1
+volume ubi0_3 bootfs1 107
+volume ubi0_4 rootfs1 607
+volume ubi0_5 bootfs2 106
+volume ubi0_6 rootfs2 605

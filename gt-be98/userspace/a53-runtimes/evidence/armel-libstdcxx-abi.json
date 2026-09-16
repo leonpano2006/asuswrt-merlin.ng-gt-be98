@@ -1,0 +1,4751 @@
+{
+  "missing": [
+    "_ZNK10__cxxabiv117__class_type_info17__find_public_srcEiPKvPKS0_S2_@CXXABI_1.3",
+    "_ZNKSs7compareISt17basic_string_viewIcSt11char_traitsIcEEEENSt9enable_ifIXsrSt6__and_IISt14is_convertibleIRKT_S3_ESt6__not_IS6_IPS8_PKSsEESB_IS6_IS9_PKcEEEE5valueEiE4typeES9_@GLIBCXX_3.4",
+    "_ZNKSs7compareISt17basic_string_viewIcSt11char_traitsIcEEEENSt9enable_ifIXsrSt6__and_IJSt14is_convertibleIRKT_S3_ESt6__not_IS6_IPS8_PKSsEESB_IS6_IS9_PKcEEEE5valueEiE4typeES9_@GLIBCXX_3.4",
+    "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareISt17basic_string_viewIcS2_EEENSt9enable_ifIXsrSt6__and_IISt14is_convertibleIRKT_S7_ESt6__not_ISA_IPSC_PKS4_EESF_ISA_ISD_PKcEEEE5valueEiE4typeESD_@GLIBCXX_3.4.21",
+    "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareISt17basic_string_viewIcS2_EEENSt9enable_ifIXsrSt6__and_IJSt14is_convertibleIRKT_S7_ESt6__not_ISA_IPSC_PKS4_EESF_ISA_ISD_PKcEEEE5valueEiE4typeESD_@GLIBCXX_3.4.21",
+    "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_@GLIBCXX_3.4.21",
+    "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLISt17basic_string_viewIcS2_EEENSt9enable_ifIXsrSt6__and_IISt14is_convertibleIRKT_S7_ESt6__not_ISA_IPSC_PKS4_EESF_ISA_ISD_PKcEEEE5valueERS4_E4typeESD_@GLIBCXX_3.4.21",
+    "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLISt17basic_string_viewIcS2_EEENSt9enable_ifIXsrSt6__and_IJSt14is_convertibleIRKT_S7_ESt6__not_ISA_IPSC_PKS4_EESF_ISA_ISD_PKcEEEE5valueERS4_E4typeESD_@GLIBCXX_3.4.21",
+    "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE12_M_constructIPKwEEvT_S8_@GLIBCXX_3.4.21",
+    "_ZNSt8auto_ptrISt12Catalog_infoED1Ev@GLIBCXX_3.4",
+    "_ZNSt8auto_ptrISt12Catalog_infoED2Ev@GLIBCXX_3.4"
+  ],
+  "changes": {
+    "_ZTINSt7__cxx1114collate_bynameIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt8numpunctIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZNSt8auto_ptrISt12Catalog_infoED1Ev@GLIBCXX_3.4": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      null
+    ],
+    "_ZTISt15basic_stringbufIcSt11char_traitsIcESaIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt10moneypunctIcLb0EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTISt23__codecvt_abstract_baseIwc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZNSt15__exception_ptr13exception_ptrC2Ev@CXXABI_1.3.3": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      }
+    ],
+    "_ZTSSt8time_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      }
+    ],
+    "_ZTISt20__codecvt_utf16_baseIDsE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt13basic_ostreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      }
+    ],
+    "_ZTINSt7__cxx118numpunctIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTINSt7__cxx1115messages_bynameIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt20__codecvt_utf16_baseIwE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 28
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 28
+      }
+    ],
+    "_ZTSSt13basic_istreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      }
+    ],
+    "_ZTSSt15time_put_bynameIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 67
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 67
+      }
+    ],
+    "_ZTSSt21__ctype_abstract_baseIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      }
+    ],
+    "_ZTISt20__codecvt_utf16_baseIwE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx119money_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 70
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 70
+      }
+    ],
+    "_ZTINSt7__cxx1115time_get_bynameIcSt19istreambuf_iteratorIcSt11char_traitsIcEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt25__codecvt_utf8_utf16_baseIDiE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 34
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 34
+      }
+    ],
+    "_ZTINSt7__cxx118messagesIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTINSt7__cxx1119basic_ostringstreamIwSt11char_traitsIwESaIwEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt10moneypunctIwLb0EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTINSt7__cxx1118basic_stringstreamIwSt11char_traitsIwESaIwEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt15numpunct_bynameIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1114collate_bynameIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTINSt7__cxx1110moneypunctIwLb1EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTSSt8messagesIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 15
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 15
+      }
+    ],
+    "_ZTISt9money_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1117moneypunct_bynameIwLb0EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      }
+    ],
+    "_ZTSSt15time_get_bynameIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 67
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 67
+      }
+    ],
+    "_ZTISt18basic_stringstreamIcSt11char_traitsIcESaIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt15basic_streambufIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 8
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 8
+      }
+    ],
+    "_ZTISt13basic_fstreamIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx118numpunctIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 25
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 25
+      }
+    ],
+    "_ZTISt8time_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTISt17moneypunct_bynameIwLb0EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1119basic_istringstreamIwSt11char_traitsIwESaIwEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      }
+    ],
+    "_ZTSNSt7__cxx118messagesIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 25
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 25
+      }
+    ],
+    "_ZTISt7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1110moneypunctIwLb0EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTINSt7__cxx119money_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTVSt7codecvtIDic11__mbstate_tE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTVSt5ctypeIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 64
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 64
+      }
+    ],
+    "_ZTSSt14basic_iostreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 40
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 40
+      }
+    ],
+    "_ZTSSt7codecvtIDsc11__mbstate_tE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      }
+    ],
+    "_ZTISt7collateIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt18basic_stringstreamIcSt11char_traitsIcESaIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 49
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 49
+      }
+    ],
+    "_ZTISt8time_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTVSt12ctype_bynameIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 48
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 48
+      }
+    ],
+    "_ZTISt15basic_stringbufIwSt11char_traitsIwESaIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt8numpunctIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 15
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 15
+      }
+    ],
+    "_ZTVSt19__codecvt_utf8_baseIwE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTSN9__gnu_cxx18stdio_sync_filebufIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 54
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 54
+      }
+    ],
+    "_ZTISt14basic_ifstreamIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt14collate_bynameIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTINSt7__cxx119money_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt25__codecvt_utf8_utf16_baseIDsE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 34
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 34
+      }
+    ],
+    "_ZTISt14basic_ofstreamIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZNSt18condition_variable4waitERSt11unique_lockISt5mutexE@GLIBCXX_3.4.11": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": true,
+        "object_size": null
+      }
+    ],
+    "_ZTINSt7__cxx1114collate_bynameIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1119basic_ostringstreamIwSt11char_traitsIwESaIwEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      }
+    ],
+    "_ZTSSt13basic_fstreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      }
+    ],
+    "_ZTSSt17moneypunct_bynameIwLb0EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      }
+    ],
+    "_ZTISt11__timepunctIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt7num_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 58
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 58
+      }
+    ],
+    "_ZTSSt11__timepunctIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 19
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 19
+      }
+    ],
+    "_ZTSN9__gnu_cxx13stdio_filebufIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 49
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 49
+      }
+    ],
+    "_ZTISt15messages_bynameIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt7codecvtIcc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 28
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 28
+      }
+    ],
+    "_ZTINSt7__cxx1115basic_stringbufIwSt11char_traitsIwESaIwEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTINSt7__cxx1115time_get_bynameIwSt19istreambuf_iteratorIwSt11char_traitsIwEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt17moneypunct_bynameIcLb1EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt12ctype_bynameIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 20
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 20
+      }
+    ],
+    "_ZTSSt7codecvtIDsDu11__mbstate_tE@GLIBCXX_3.4.26": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 30
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 30
+      }
+    ],
+    "_ZTSSt9money_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      }
+    ],
+    "_ZTISt7codecvtIcc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTINSt7__cxx118numpunctIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_@GLIBCXX_3.4.21": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      null
+    ],
+    "_ZTINSt7__cxx1115messages_bynameIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt19basic_istringstreamIcSt11char_traitsIcESaIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt18basic_stringstreamIwSt11char_traitsIwESaIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt15time_put_bynameIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 58
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 58
+      }
+    ],
+    "_ZTISt8messagesIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTSSt25__codecvt_utf8_utf16_baseIwE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 33
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 33
+      }
+    ],
+    "_ZNSt15__exception_ptr13exception_ptrD1Ev@CXXABI_1.3.3": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      }
+    ],
+    "_ZTSSt9basic_iosIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 34
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 34
+      }
+    ],
+    "_ZTINSt7__cxx118messagesIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTSSt10moneypunctIwLb0EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      }
+    ],
+    "_ZTSSt7codecvtIwc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 28
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 28
+      }
+    ],
+    "_ZTSSt5ctypeIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt25__codecvt_utf8_utf16_baseIDiE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1115numpunct_bynameIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 33
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 33
+      }
+    ],
+    "_ZTINSt7__cxx1110moneypunctIwLb0EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTISt12ctype_bynameIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt19basic_istringstreamIcSt11char_traitsIcESaIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 50
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 50
+      }
+    ],
+    "_ZTSSt7collateIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 14
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 14
+      }
+    ],
+    "_ZTISt15time_get_bynameIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx117collateIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      }
+    ],
+    "_ZTISt5ctypeIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTINSt7__cxx117collateIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt8numpunctIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt15messages_bynameIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 23
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 23
+      }
+    ],
+    "_ZTISt14codecvt_bynameIcc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt18basic_stringstreamIwSt11char_traitsIwESaIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 49
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 49
+      }
+    ],
+    "_ZNSt15__exception_ptr13exception_ptraSERKS0_@CXXABI_1.3.3": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      }
+    ],
+    "_ZTSSt14codecvt_bynameIcc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 36
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 36
+      }
+    ],
+    "_ZTSNSt7__cxx119money_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 70
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 70
+      }
+    ],
+    "_ZTSSt20__codecvt_utf16_baseIDiE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      }
+    ],
+    "_ZTSSt14basic_ifstreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 40
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 40
+      }
+    ],
+    "_ZTSSt15time_put_bynameIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 67
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 67
+      }
+    ],
+    "_ZTSSt17moneypunct_bynameIcLb1EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      }
+    ],
+    "_ZTSNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      }
+    ],
+    "_ZTINSt7__cxx118time_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTSSt14basic_ofstreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 40
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 40
+      }
+    ],
+    "_ZTISt14codecvt_bynameIwc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt21__ctype_abstract_baseIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      }
+    ],
+    "_ZTSSt8time_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      }
+    ],
+    "_ZTSSt14codecvt_bynameIwc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 36
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 36
+      }
+    ],
+    "_ZTISt15numpunct_bynameIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTINSt7__cxx1117moneypunct_bynameIcLb1EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_PS3_@GLIBCXX_3.4": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      }
+    ],
+    "_ZTSSt15time_get_bynameIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 67
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 67
+      }
+    ],
+    "_ZTVSt19__codecvt_utf8_baseIDiE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTSSt10moneypunctIcLb1EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      }
+    ],
+    "_ZTINSt7__cxx1119basic_istringstreamIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTINSt7__cxx119money_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt19__codecvt_utf8_baseIwE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt8messagesIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 15
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 15
+      }
+    ],
+    "_ZTISt13basic_filebufIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt15basic_streambufIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 41
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 41
+      }
+    ],
+    "_ZTISt19basic_istringstreamIwSt11char_traitsIwESaIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTVSt7codecvtIcc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTISt7codecvtIDiDu11__mbstate_tE@GLIBCXX_3.4.26": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx118time_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 69
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 69
+      }
+    ],
+    "_ZNSt15__exception_ptr13exception_ptrC2ERKS0_@CXXABI_1.3.3": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      }
+    ],
+    "_ZTISt9money_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt14collate_bynameIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      }
+    ],
+    "_ZTISt15basic_streambufIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 8
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 8
+      }
+    ],
+    "_ZTSSt7codecvtIDic11__mbstate_tE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      }
+    ],
+    "_ZTISt25__codecvt_utf8_utf16_baseIDsE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTVSt7codecvtIwc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTSSt15numpunct_bynameIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 23
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 23
+      }
+    ],
+    "_ZTSSt19basic_istringstreamIwSt11char_traitsIwESaIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 50
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 50
+      }
+    ],
+    "_ZTISt7num_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTVSt7codecvtIDsc11__mbstate_tE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTSNSt7__cxx1117moneypunct_bynameIcLb1EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      }
+    ],
+    "_ZNSt15__exception_ptr13exception_ptrC1Ev@CXXABI_1.3.3": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      }
+    ],
+    "_ZTISt7collateIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTIN9__gnu_cxx13stdio_filebufIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt9money_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTVSt12ctype_bynameIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 64
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 64
+      }
+    ],
+    "_ZTVSt7codecvtIDiDu11__mbstate_tE@GLIBCXX_3.4.26": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTVSt25__codecvt_utf8_utf16_baseIwE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTINSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTINSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt20__codecvt_utf16_baseIDsE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      }
+    ],
+    "_ZTSNSt7__cxx1115time_get_bynameIwSt19istreambuf_iteratorIwSt11char_traitsIwEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 77
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 77
+      }
+    ],
+    "_ZTISt9basic_iosIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt13basic_filebufIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      }
+    ],
+    "_ZTSSt8numpunctIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 15
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 15
+      }
+    ],
+    "_ZTSNSt7__cxx1115numpunct_bynameIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 33
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 33
+      }
+    ],
+    "_ZTISt8time_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1115basic_stringbufIwSt11char_traitsIwESaIwEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 56
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 56
+      }
+    ],
+    "_ZTIN9__gnu_cxx18stdio_sync_filebufIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE12_M_constructIPKwEEvT_S8_@GLIBCXX_3.4.21": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      null
+    ],
+    "_ZTVSt25__codecvt_utf8_utf16_baseIDiE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareISt17basic_string_viewIcS2_EEENSt9enable_ifIXsrSt6__and_IISt14is_convertibleIRKT_S7_ESt6__not_ISA_IPSC_PKS4_EESF_ISA_ISD_PKcEEEE5valueEiE4typeESD_@GLIBCXX_3.4.21": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      null
+    ],
+    "_ZTISt14collate_bynameIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx117collateIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      }
+    ],
+    "_ZTSNSt7__cxx1110moneypunctIcLb1EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTINSt7__cxx117collateIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZNSt8auto_ptrISt12Catalog_infoED2Ev@GLIBCXX_3.4": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      null
+    ],
+    "_ZTSSt7num_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 58
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 58
+      }
+    ],
+    "_ZTISt10moneypunctIcLb1EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTISt21__ctype_abstract_baseIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTSSt11__timepunctIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 19
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 19
+      }
+    ],
+    "_ZTISd@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTVSt19__codecvt_utf8_baseIDsE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTISi@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      }
+    ],
+    "_ZTISo@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      }
+    ],
+    "_ZTSSt12ctype_bynameIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 20
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 20
+      }
+    ],
+    "_ZTSNSt7__cxx1119basic_istringstreamIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      }
+    ],
+    "_ZNSt15__exception_ptr13exception_ptrC1ERKS0_@CXXABI_1.3.3": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      }
+    ],
+    "_ZTISt25__codecvt_utf8_utf16_baseIwE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt15time_put_bynameIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt13basic_fstreamIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      }
+    ],
+    "_ZTSSt23__codecvt_abstract_baseIcc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 45
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 45
+      }
+    ],
+    "_ZTSSt19__codecvt_utf8_baseIDiE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 28
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 28
+      }
+    ],
+    "_ZTISt10moneypunctIwLb1EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTISt8messagesIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTINSt7__cxx1115numpunct_bynameIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTINSt7__cxx1117moneypunct_bynameIcLb0EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt19__codecvt_utf8_baseIDiE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt5ctypeIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 56
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 56
+      }
+    ],
+    "_ZTSNSt7__cxx119money_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 70
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 70
+      }
+    ],
+    "_ZNSt15__exception_ptreqERKNS_13exception_ptrES2_@CXXABI_1.3.3": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      }
+    ],
+    "_ZTISt19basic_ostringstreamIcSt11char_traitsIcESaIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt23__codecvt_abstract_baseIwc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 45
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 45
+      }
+    ],
+    "_ZTISt15time_get_bynameIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZNKSs7compareISt17basic_string_viewIcSt11char_traitsIcEEEENSt9enable_ifIXsrSt6__and_IJSt14is_convertibleIRKT_S3_ESt6__not_IS6_IPS8_PKSsEESB_IS6_IS9_PKcEEEE5valueEiE4typeES9_@GLIBCXX_3.4": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      null
+    ],
+    "_ZTSSt9basic_iosIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 34
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 34
+      }
+    ],
+    "_ZTISt12ctype_bynameIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt7collateIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 14
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 14
+      }
+    ],
+    "_ZTISt5ctypeIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt14basic_iostreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTISt17moneypunct_bynameIwLb1EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt15messages_bynameIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 23
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 23
+      }
+    ],
+    "_ZTSSt9money_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      }
+    ],
+    "_ZTISt7codecvtIwc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt19basic_ostringstreamIcSt11char_traitsIcESaIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 50
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 50
+      }
+    ],
+    "_ZTVSt20__codecvt_utf16_baseIDiE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZNSt15__exception_ptrneERKNS_13exception_ptrES2_@CXXABI_1.3.3": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      }
+    ],
+    "_ZTSNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      }
+    ],
+    "_ZTISt7codecvtIDsc11__mbstate_tE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt8time_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      }
+    ],
+    "_ZTINSt7__cxx1110moneypunctIcLb1EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTINSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTVSt25__codecvt_utf8_utf16_baseIDsE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTSNSt7__cxx1117moneypunct_bynameIcLb0EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      }
+    ],
+    "_ZTISt17moneypunct_bynameIcLb0EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt14basic_ifstreamIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 40
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 40
+      }
+    ],
+    "_ZTSSt14basic_ofstreamIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 40
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 40
+      }
+    ],
+    "_ZTSNSt7__cxx1115messages_bynameIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 33
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 33
+      }
+    ],
+    "_ZTISt7codecvtIDsDu11__mbstate_tE@GLIBCXX_3.4.26": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt13basic_fstreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt19__codecvt_utf8_baseIDsE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 28
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 28
+      }
+    ],
+    "_ZTSNSt7__cxx1110moneypunctIcLb0EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTSSt14collate_bynameIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      }
+    ],
+    "_ZTISt13basic_filebufIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt19__codecvt_utf8_baseIDsE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTINSt7__cxx1117moneypunct_bynameIwLb1EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt17moneypunct_bynameIwLb1EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      }
+    ],
+    "_ZTSSt15basic_streambufIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 41
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 41
+      }
+    ],
+    "_ZTISt9money_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt19basic_ostringstreamIwSt11char_traitsIwESaIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx119money_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 70
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 70
+      }
+    ],
+    "_ZTISt7num_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZNSt15__exception_ptr13exception_ptr4swapERS0_@CXXABI_1.3.3": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      }
+    ],
+    "_ZTIN9__gnu_cxx13stdio_filebufIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt15numpunct_bynameIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 23
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 23
+      }
+    ],
+    "_ZNSt15__exception_ptr13exception_ptrD2Ev@CXXABI_1.3.3": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      }
+    ],
+    "_ZTSSt10moneypunctIwLb1EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      }
+    ],
+    "_ZTSSt17moneypunct_bynameIcLb0EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 29
+      }
+    ],
+    "_ZTVSt5ctypeIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 48
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 48
+      }
+    ],
+    "_ZTSSt15basic_stringbufIcSt11char_traitsIcESaIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 46
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 46
+      }
+    ],
+    "_ZNK10__cxxabiv117__class_type_info17__find_public_srcEiPKvPKS0_S2_@CXXABI_1.3": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      null
+    ],
+    "_ZTINSt7__cxx1115numpunct_bynameIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTVSt7codecvtIDsDu11__mbstate_tE@GLIBCXX_3.4.26": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTISt7num_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt19basic_ostringstreamIwSt11char_traitsIwESaIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 50
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 50
+      }
+    ],
+    "_ZTISt8time_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTVSt20__codecvt_utf16_baseIDsE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTIN9__gnu_cxx18stdio_sync_filebufIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1114collate_bynameIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTVSt20__codecvt_utf16_baseIwE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 44
+      }
+    ],
+    "_ZTISt14basic_ifstreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt14basic_ofstreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt20__codecvt_utf16_baseIDiE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt10moneypunctIcLb0EE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 22
+      }
+    ],
+    "_ZTISt9basic_iosIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt13basic_filebufIcSt11char_traitsIcEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      }
+    ],
+    "_ZTSNSt7__cxx1117moneypunct_bynameIwLb1EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 39
+      }
+    ],
+    "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareISt17basic_string_viewIcS2_EEENSt9enable_ifIXsrSt6__and_IJSt14is_convertibleIRKT_S7_ESt6__not_ISA_IPSC_PKS4_EESF_ISA_ISD_PKcEEEE5valueEiE4typeESD_@GLIBCXX_3.4.21": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      null
+    ],
+    "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLISt17basic_string_viewIcS2_EEENSt9enable_ifIXsrSt6__and_IISt14is_convertibleIRKT_S7_ESt6__not_ISA_IPSC_PKS4_EESF_ISA_ISD_PKcEEEE5valueERS4_E4typeESD_@GLIBCXX_3.4.21": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      null
+    ],
+    "_ZTISt21__ctype_abstract_baseIwE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTSN9__gnu_cxx18stdio_sync_filebufIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 54
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 54
+      }
+    ],
+    "_ZTSNSt7__cxx118numpunctIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 25
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 25
+      }
+    ],
+    "_ZTISt11__timepunctIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1118basic_stringstreamIwSt11char_traitsIwESaIwEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      }
+    ],
+    "_ZTINSt7__cxx1110moneypunctIcLb0EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTSNSt7__cxx118messagesIwEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 25
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 25
+      }
+    ],
+    "_ZTISt15messages_bynameIcE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1110moneypunctIwLb1EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTSSt7codecvtIDiDu11__mbstate_tE@GLIBCXX_3.4.26": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 30
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 30
+      }
+    ],
+    "_ZTISt13basic_ostreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      }
+    ],
+    "_ZTSSt19__codecvt_utf8_baseIwE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 27
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 27
+      }
+    ],
+    "_ZTINSt7__cxx118time_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTSN9__gnu_cxx13stdio_filebufIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 49
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 49
+      }
+    ],
+    "_ZTISt13basic_istreamIwSt11char_traitsIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 24
+      }
+    ],
+    "_ZNKSs7compareISt17basic_string_viewIcSt11char_traitsIcEEEENSt9enable_ifIXsrSt6__and_IISt14is_convertibleIRKT_S3_ESt6__not_IS6_IPS8_PKSsEESB_IS6_IS9_PKcEEEE5valueEiE4typeES9_@GLIBCXX_3.4": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      null
+    ],
+    "_ZTSSt9money_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      }
+    ],
+    "_ZTSNSt7__cxx1115messages_bynameIcEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 33
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 33
+      }
+    ],
+    "_ZTINSt7__cxx119money_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTINSt7__cxx1119basic_istringstreamIwSt11char_traitsIwESaIwEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSNSt7__cxx1115time_get_bynameIcSt19istreambuf_iteratorIcSt11char_traitsIcEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 77
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 77
+      }
+    ],
+    "_ZTSSd@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 3
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 3
+      }
+    ],
+    "_ZTSSt7num_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 58
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 58
+      }
+    ],
+    "_ZTSSi@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 3
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 3
+      }
+    ],
+    "_ZTSSo@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 3
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 3
+      }
+    ],
+    "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLISt17basic_string_viewIcS2_EEENSt9enable_ifIXsrSt6__and_IJSt14is_convertibleIRKT_S7_ESt6__not_ISA_IPSC_PKS4_EESF_ISA_ISD_PKcEEEE5valueERS4_E4typeESD_@GLIBCXX_3.4.21": [
+      {
+        "type": "FUNCTION",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": null
+      },
+      null
+    ],
+    "_ZTSSt8time_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 59
+      }
+    ],
+    "_ZTSSt9money_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 60
+      }
+    ],
+    "_ZTISt7codecvtIDic11__mbstate_tE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTISt23__codecvt_abstract_baseIcc11__mbstate_tE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 32
+      }
+    ],
+    "_ZTINSt7__cxx1117moneypunct_bynameIwLb0EEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 12
+      }
+    ],
+    "_ZTSSt15basic_stringbufIwSt11char_traitsIwESaIwEE@GLIBCXX_3.4": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 46
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 46
+      }
+    ],
+    "_ZTSNSt7__cxx118time_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEEE@GLIBCXX_3.4.21": [
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_GLOBAL",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 69
+      },
+      {
+        "type": "STT_OBJECT",
+        "binding": "STB_WEAK",
+        "visibility": "STV_DEFAULT",
+        "hidden_version": false,
+        "object_size": 69
+      }
+    ]
+  }
+}

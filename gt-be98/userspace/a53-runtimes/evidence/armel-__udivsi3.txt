@@ -1,0 +1,20 @@
+
+/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/packages/runtime/usr/lib/arm-linux-gnueabi/libgcc_s.so.1:     file format elf32-littlearm
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .text:
+
+0000d848 <__udivsi3@@GCC_3.0>:
+    d848:	e3510000 	cmp	r1, #0
+    d84c:	0a000001 	beq	d858 <__udivsi3@@GCC_3.0+0x10>
+    d850:	e730f110 	udiv	r0, r0, r1
+    d854:	e12fff1e 	bx	lr
+    d858:	e3500000 	cmp	r0, #0
+    d85c:	13e00000 	mvnne	r0, #0
+    d860:	eafffe6a 	b	d210 <__aeabi_idiv0@plt>
+
+Disassembly of section .fini:

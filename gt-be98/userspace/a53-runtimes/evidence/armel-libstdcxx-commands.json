@@ -1,0 +1,40 @@
+{
+  "commands": [
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sources/gcc-15.2.0/libstdc++-v3/configure",
+      "--build=aarch64-build-linux-gnu",
+      "--host=arm-linux-gnueabi",
+      "--target=arm-linux-gnueabi",
+      "--prefix=/usr",
+      "--libdir=/usr/lib/arm-linux-gnueabi",
+      "--with-gxx-include-dir=/usr/include/c++/15.2.0",
+      "--disable-multilib",
+      "--enable-shared",
+      "--enable-static",
+      "--disable-nls",
+      "--disable-libstdcxx-pch",
+      "--enable-clocale=gnu",
+      "--enable-c99",
+      "--enable-libstdcxx-time=yes",
+      "--enable-libstdcxx-threads",
+      "--enable-libstdcxx-dual-abi",
+      "--with-default-libstdcxx-abi=new",
+      "--enable-symvers=gnu",
+      "--enable-tls",
+      "--disable-werror"
+    ],
+    [
+      "make",
+      "-j3"
+    ]
+  ],
+  "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libstdc++-v3",
+  "environment": {
+    "CC": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libstdc++-v3/runtime-cc",
+    "CXX": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libstdc++-v3/runtime-cc -shared-libgcc -nostdinc++",
+    "CFLAGS": "-O2 -g -frecord-gcc-switches",
+    "CXXFLAGS": "-O2 -g -frecord-gcc-switches",
+    "LDFLAGS": "-Wl,--build-id=sha1 -Wl,-Map=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libstdc++-v3/link.map"
+  },
+  "runtime_wrapper": "#!/bin/sh\nexec /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-gcc-15 -B/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libgcc/ -L/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libgcc -Wl,-rpath-link,/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libgcc -mcpu=cortex-a53+crypto -march=armv8-a+crc+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp --sysroot=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel -B/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel/usr/lib/arm-linux-gnueabi/ -isystem /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel/usr/include -L/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel/usr/lib/arm-linux-gnueabi -Wl,-rpath-link,/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel/lib/arm-linux-gnueabi \"$@\"\n"
+}

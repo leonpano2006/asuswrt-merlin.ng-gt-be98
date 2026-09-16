@@ -1,0 +1,26 @@
+[
+  {
+    "abi": "armel",
+    "function": "__divsi3",
+    "hardware_instruction": "sdiv",
+    "verified": true
+  },
+  {
+    "abi": "armel",
+    "function": "__udivsi3",
+    "hardware_instruction": "udiv",
+    "verified": true
+  },
+  {
+    "abi": "armhf",
+    "function": "__divsi3",
+    "hardware_instruction": "sdiv",
+    "verified": true
+  },
+  {
+    "abi": "armhf",
+    "function": "__udivsi3",
+    "hardware_instruction": "udiv",
+    "verified": true
+  }
+]

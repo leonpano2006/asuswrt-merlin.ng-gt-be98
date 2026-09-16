@@ -1,0 +1,103 @@
+[
+  {
+    "command": [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sources/gcc-15.2.0/configure",
+      "--build=aarch64-unknown-linux-gnu",
+      "--host=aarch64-unknown-linux-gnu",
+      "--target=arm-linux-gnueabi",
+      "--prefix=/usr/local",
+      "--with-sysroot=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel",
+      "--with-glibc-version=2.44",
+      "--enable-languages=c,c++",
+      "--disable-bootstrap",
+      "--disable-multilib",
+      "--disable-nls",
+      "--disable-libsanitizer",
+      "--disable-werror",
+      "--enable-checking=release",
+      "--enable-threads=posix",
+      "--enable-shared",
+      "--enable-tls",
+      "--with-cpu=cortex-a53+crypto",
+      "--with-fpu=crypto-neon-fp-armv8",
+      "--with-float=softfp",
+      "--with-as=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-as",
+      "--with-ld=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-ld",
+      "--with-gmp-include=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gmp",
+      "--with-gmp-lib=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gmp/.libs",
+      "--with-mpfr-include=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/gcc-16.2.0/mpfr/src",
+      "--with-mpfr-lib=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/mpfr/src/.libs",
+      "--with-mpc-include=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/gcc-16.2.0/mpc/src",
+      "--with-mpc-lib=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/mpc/src/.libs"
+    ],
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime"
+  },
+  {
+    "command": [
+      "make",
+      "-j3",
+      "configure-gcc",
+      "all-build-libiberty",
+      "all-libiberty"
+    ],
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime"
+  },
+  {
+    "command": [
+      "make",
+      "-j3",
+      "tconfig.h",
+      "tm.h",
+      "options.h",
+      "insn-constants.h",
+      "insn-modes.h",
+      "arm-isa.h",
+      "arm-cpu.h",
+      "version.h"
+    ],
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/gcc"
+  },
+  {
+    "command": [
+      "make",
+      "-o",
+      "xgcc",
+      "-o",
+      "specs",
+      "libgcc.mvars",
+      "CFLAGS_FOR_TARGET=-O2 -g -frecord-gcc-switches",
+      "INHIBIT_LIBC_CFLAGS="
+    ],
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/gcc"
+  },
+  {
+    "command": [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sources/gcc-15.2.0/libgcc/configure",
+      "--build=aarch64-build-linux-gnu",
+      "--host=arm-linux-gnueabi",
+      "--target=arm-linux-gnueabi",
+      "--prefix=/usr",
+      "--libdir=/usr/lib/arm-linux-gnueabi",
+      "--with-sysroot=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel",
+      "--with-glibc-version=2.44",
+      "--disable-multilib",
+      "--enable-shared",
+      "--enable-threads=posix",
+      "--enable-tls",
+      "--disable-werror"
+    ],
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libgcc"
+  },
+  {
+    "command": [
+      "make",
+      "-j3",
+      "all",
+      "gcc_objdir=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/gcc",
+      "GCC_CFLAGS=-O2 -g -frecord-gcc-switches -DIN_GCC -isystem ./include",
+      "INHIBIT_LIBC_CFLAGS=",
+      "LDFLAGS=-Wl,--build-id=sha1"
+    ],
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/gcc-runtime/arm-linux-gnueabi/libgcc"
+  }
+]

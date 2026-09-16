@@ -1,0 +1,12 @@
+{
+  "ubuntu_source_authenticated": true,
+  "signing_fingerprint": "F6ECB3762474EDA9D21B7022871920D1991BC93C",
+  "release_sha256": "9e5889fd7c39f73bfad7847e355b514c600e004602fd4227c8cc53d4fd94b1c4",
+  "index_sha256": "753a8385f6d9ba145b5fa116f89f86993c62524d7e9a3f01eca0f4239b0123d1",
+  "source_package_sha256": "9a4031153201d7eb086aa28e1fa231774da3454a931be085e909b9d9fc6f4e19",
+  "gcc15_inner_archive_sha256": "438fd996826b0c82485a29da03a72d71d6e3541a83ec702df4271f6fe025d24e",
+  "gcc15_upstream_version": "15.2.0",
+  "gcc16_archive_sha256": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e",
+  "gcc16_version": "16.2.0",
+  "gcc16_existing_toolchain_dependency": true
+}

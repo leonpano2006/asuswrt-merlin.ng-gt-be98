@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare NVRAM fix, multiarch glibc, and the pinned GCC runtime overlay."""
+"""Prepare NVRAM, multiarch glibc and the pinned A53 GCC/C++/C runtimes."""
 import argparse
 import hashlib
 import json
@@ -23,6 +23,9 @@ p.add_argument('--glibc-runtime', type=Path, required=True)
 p.add_argument('--libgcc-checkpoint', type=Path,
                default=Path(__file__).resolve().parents[2]/'libgcc-runtime')
 p.add_argument('--libgcc-runtime', type=Path, required=True)
+p.add_argument('--a53-checkpoint', type=Path,
+               default=Path(__file__).resolve().parents[2]/'a53-runtimes')
+p.add_argument('--a53-runtime', type=Path, required=True)
 p.add_argument('--output', type=Path, required=True)
 p.add_argument('--report', type=Path, required=True)
 a = p.parse_args()
@@ -34,6 +37,8 @@ loader_checkpoint = a.multiarch_loader_checkpoint.resolve(strict=True)
 loader_policy = config['required_loader_postprocessing']
 gcc_checkpoint = a.libgcc_checkpoint.resolve(strict=True)
 gcc_policy = config['required_libgcc_postprocessing']
+a53_checkpoint = a.a53_checkpoint.resolve(strict=True)
+a53_policy = config['required_a53_postprocessing']
 if a.output.exists() or a.output.is_symlink() or a.report.exists():
     p.error('output and report must be new offline paths')
 for name, expected in policy['checkpoint_files'].items():
@@ -52,6 +57,11 @@ for name, expected in gcc_policy['checkpoint_files'].items():
         p.error('unreviewed libgcc checkpoint file: '+name)
 if sha(a.libgcc_runtime.parent/'runtime-manifest.json') != gcc_policy['runtime_manifest_sha256']:
     p.error('libgcc runtime differs from the tested candidate')
+for name, expected in a53_policy['checkpoint_files'].items():
+    if sha(a53_checkpoint/name) != expected:
+        p.error('unreviewed A53 checkpoint file: '+name)
+if sha(a.a53_runtime.parent/'runtime-manifest.json') != a53_policy['runtime_manifest_sha256']:
+    p.error('A53 runtime differs from the tested candidate')
 a.output.parent.mkdir(parents=True, exist_ok=True)
 with tempfile.TemporaryDirectory(prefix='candidate-base-', dir=a.output.parent) as temp:
     temp = Path(temp)
@@ -70,13 +80,17 @@ with tempfile.TemporaryDirectory(prefix='candidate-base-', dir=a.output.parent) 
                     '--output', str(temp/'loader'), '--report', str(temp/'loader.json')], check=True)
     subprocess.run([sys.executable, str(gcc_checkpoint/'scripts/prepare-rootfs.py'),
                     '--source', str(temp/'loader'), '--runtime', str(a.libgcc_runtime),
-                    '--output', str(a.output), '--report', str(temp/'libgcc.json')], check=True)
+                    '--output', str(temp/'libgcc'), '--report', str(temp/'libgcc.json')], check=True)
+    subprocess.run([sys.executable, str(a53_checkpoint/'scripts/prepare-rootfs.py'),
+                    '--source', str(temp/'libgcc'), '--runtime', str(a.a53_runtime),
+                    '--output', str(a.output), '--report', str(temp/'a53.json')], check=True)
     report = {'candidate': config['candidate'], 'status': 'complete-rootfs-prepared-for-packaging',
               'base': json.loads((temp/'base.json').read_text()),
               'migration': json.loads((temp/'migration.json').read_text()),
               'rebuilt_libraries': json.loads((temp/'libraries.json').read_text()),
               'multiarch_loader': json.loads((temp/'loader.json').read_text()),
               'libgcc_runtime': json.loads((temp/'libgcc.json').read_text()),
+              'a53_runtimes': json.loads((temp/'a53.json').read_text()),
               'firmware_packaged': False, 'router_modified': False,
               'firmware_commit_performed': False}
 a.report.parent.mkdir(parents=True, exist_ok=True)
