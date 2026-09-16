@@ -1,0 +1,1254 @@
+[
+  {
+    "path": "usr/sbin/rc",
+    "sha256": "ea27e853969d8cb252d12d69bcf2d28aff11f9f8024cdd595eca2abaa2ce754a",
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libdl.so.2",
+      "libgen_util.so",
+      "libsys_util.so",
+      "libwlcsm.so",
+      "libbcm_flashutil.so",
+      "libbcm_util.so",
+      "libbcm_boardctl.so",
+      "libwpa_client.so",
+      "libbcm.so",
+      "libgcc_s.so.1",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libbwdpi.so",
+      "libdisk.so",
+      "libsqlite3.so.0",
+      "libnt.so",
+      "libwebapi.so",
+      "libcfgmnt.so",
+      "libnmpapi.so",
+      "libpthread.so.0",
+      "libovpn.so",
+      "libasc.so",
+      "libletsencrypt.so",
+      "libcurl.so.4",
+      "libjson-c.so.2",
+      "libm.so.6",
+      "libamas-utils.so",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libasuslog.so",
+      "libcodb.so",
+      "libconn_diag.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "111785ae42d4ce61fa33949b71ff3a4e5480185e",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -marm -mtls-dialect=gnu -march=armv8-a+crc+crypto -g -g -Os -Os -O2 -Os -std=gnu11 -fomit-frame-pointer -ffixed-r8 -fPIC -fstack-protector-all -ffunction-sections -fdata-sections -fcommon -fno-strict-aliasing -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/httpd",
+    "sha256": "09c777aecef7fb42f1ba709604d2181b0af93035a785e12b69ad198ca570ec5e",
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libwlcsm.so",
+      "libbcm_flashutil.so",
+      "libgen_util.so",
+      "libsys_util.so",
+      "libbcm_util.so",
+      "libbcm_boardctl.so",
+      "libm.so.6",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libdl.so.2",
+      "libgcc_s.so.1",
+      "libdisk.so",
+      "libmssl.so",
+      "libovpn.so",
+      "libjson-c.so.2",
+      "libbwdpi.so",
+      "libbwdpi_sql.so",
+      "libsqlite3.so.0",
+      "libpthread.so.0",
+      "libnt.so",
+      "libletsencrypt.so",
+      "libcfgmnt.so",
+      "libnmpapi.so",
+      "libcodb.so",
+      "libconn_diag.so",
+      "libdns_app_client.so",
+      "libpasswd.so",
+      "libasuslog.so",
+      "libwebapi.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "ca0be556abff59fe1af42bd2b4c3f032d86f54c8",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -marm -mtls-dialect=gnu -march=armv8-a+crc+crypto -g -g -Os -Os -O2 -Os -std=gnu11 -fomit-frame-pointer -ffixed-r8 -fPIC -fstack-protector-all -fcommon -fno-strict-aliasing -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/infosvr",
+    "sha256": "1f2359c8288bbab1492f5335506ceef4673173e1f9079876db624aeed335a400",
+    "needed": [
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libgcc_s.so.1",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libjson-c.so.2",
+      "libamas-utils.so",
+      "libpthread.so.0",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "85979609802b7e7af4f33808453efbbbef0ae2ae",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -g -Os -Os -O2 -std=gnu11 -fomit-frame-pointer -ffixed-r8 -fPIC -fstack-protector-all -fno-strict-aliasing -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libshared.so",
+    "sha256": "6e604a860fc2752e28238e34c7886311d9751d5802f31fc6dda056eea6fa3b5c",
+    "needed": [
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "be2c63ba94b41eb33b4792102e704337852628fc",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -marm -mtls-dialect=gnu -march=armv8-a+crc+crypto -g -g -Os -Os -O2 -Os -std=gnu11 -fomit-frame-pointer -ffixed-r8 -fstack-protector-all -fPIC -fcommon -fno-strict-aliasing -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libovpn.so",
+    "sha256": "e8d79418b83601ecc61033818c065607c9f0ec955d5f5c05526313903addc2ff",
+    "needed": [
+      "libgcc_s.so.1",
+      "libnvram.so",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "ddab936958c07b616bb3347e894eff0b854024e9",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -marm -mtls-dialect=gnu -march=armv8-a+crc+crypto -g -g -Os -Os -O2 -Os -std=gnu11 -fomit-frame-pointer -ffixed-r8 -fstack-protector-all -fPIC -fno-strict-aliasing -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/openvpn",
+    "sha256": "ec76e27f90eb12e3fef04b96a975d87f30891b4e4e256d0b9048d93789a0a277",
+    "needed": [
+      "libcap-ng.so.0",
+      "liblzo2.so.2",
+      "liblz4.so.1",
+      "libssl.so.3",
+      "libcrypto.so.3",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "520143228aa4f0969d9112bbc040da85f30b692f",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/Tor",
+    "sha256": "7709abe1b104cc03626e5c1cf22370228e5fdd502e64fa2dc55aab684fed4186",
+    "needed": [
+      "libz.so.1",
+      "libm.so.6",
+      "libevent-2.0.so.5",
+      "libssl.so.3",
+      "libcrypto.so.3",
+      "libgcc_s.so.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "a4bc86324866cfd7f9ee4dd8d6eaa143ebb9db68",
+    "flags": [
+      "GNU C11 15.2.0 -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=2 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-all -fPIE -fasynchronous-unwind-tables -fno-strict-aliasing --param=ssp-buffer-size=1 -fzero-init-padding-bits=all",
+      "GNU C11 15.2.0 -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=2 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -fwrapv -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-all -fPIE -fasynchronous-unwind-tables -fno-strict-aliasing --param=ssp-buffer-size=1 -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/haveged",
+    "sha256": "8bf6f70885bdff86f1dd9dd50edf4eff6b17bbe3dcd18139191d3018cee062df",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "d2d732919196e04b1b2f87d70ed635ce5fe88e13",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/dnsmasq",
+    "sha256": "2b2620e745f4ced012b62aeb305632d95a5738cca01553d22f7af110fc9fb988",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "3413044f027ce271da0dbcbba446d687a2a19821",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/miniupnpd",
+    "sha256": "bd5c7b2c5d0a2dac43f945b8d74f33c618cd8df2d4deb4efe752a488c882c04b",
+    "needed": [
+      "libuuid.so.1",
+      "libip4tc.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "6dd265af7ad7775543641278584e7ebd9ee6b427",
+    "flags": [
+      "GNU C11 15.2.0 -D _FORTIFY_SOURCE=2 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -Os -std=gnu11 -fno-strict-aliasing -fno-common -fstack-protector -fPIE -ffunction-sections -fdata-sections -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/miniupnpd-igdv2",
+    "sha256": "150b8ce2e884c430b872b092fddd19708bc7cf2f2b68a74a747d5ec6fba4444c",
+    "needed": [
+      "libuuid.so.1",
+      "libip4tc.so.0",
+      "libip6tc.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "c73fce6984da750e7eea26c954113a6bcec1b537",
+    "flags": [
+      "GNU C11 15.2.0 -D _FORTIFY_SOURCE=2 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -Os -std=gnu11 -fno-strict-aliasing -fno-common -fstack-protector -fPIE -ffunction-sections -fdata-sections -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/inadyn",
+    "sha256": "fd96b4157a2a23ca7505c80424f1d8a25b43e499db6b87da198167b71cc9cc04",
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libnvram.so",
+      "libshared.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "80bbb992f2690b4067468d57ec1c46795647aa24",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all",
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu99 -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/openvpn-plugin-auth-pam.so",
+    "sha256": "bd320d8b25ad6af83334ae9251b6f9a1af92e1b220a2b6d367f30dea94dfd9d9",
+    "needed": [
+      "libpam.so.2",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "56d0023234829bd66be24d9f1321add6736e3c81",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libcrypto.so.3",
+    "sha256": "1f5aebc2871ba1707a3f284a093d2b4980d9df744c382f2906c00f136155e7b4",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "d6b0a2137f054f8d5c21f2519d915444c325c240",
+    "flags": [
+      "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -O3 -Os -fPIC -fstack-protector-strong -ffunction-sections -fdata-sections -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/libssl.so.3",
+    "sha256": "5851caaec000238a0aa5ed6a9235f545a3bcfe555a3ad57535b5d0b98d8d5812",
+    "needed": [
+      "libcrypto.so.3",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "cc5376f25e24899385a60bf35e98197ce5f6f8a8",
+    "flags": [
+      "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -O3 -Os -fPIC -fstack-protector-strong -ffunction-sections -fdata-sections -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/openssl",
+    "sha256": "8b910025fdf6d6dc67ee2516a1f0d712f92b5815f27cc4760f7ea6cc0e5dbd48",
+    "needed": [
+      "libssl.so.3",
+      "libcrypto.so.3",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "e56291edb2340e01beb806e1a167a5d51e092554",
+    "flags": [
+      "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -O3 -Os -fstack-protector-strong -ffunction-sections -fdata-sections -fstack-protector-strong -fzero-init-padding-bits=all",
+      "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -O3 -Os -fPIC -fstack-protector-strong -ffunction-sections -fdata-sections -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ossl-modules/legacy.so",
+    "sha256": "d74192ab5316d4b0c5a5d4b70159fa1301cd32ffc7de4f8b4f278b5f2ae51bf7",
+    "needed": [
+      "libcrypto.so.3",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "97dffe7d639a3debbbd1f84c3e13185f02c63b30",
+    "flags": [
+      "GNU C23 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -O3 -Os -fPIC -fstack-protector-strong -ffunction-sections -fdata-sections -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/charon",
+    "sha256": "2456be4a5454f73ad2fea4e8b56110f12004ff244102369f5a8246945221453c",
+    "needed": [
+      "libstrongswan.so.0",
+      "libcharon.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "09c879a0da092bbd965be949161b760dce6ea6e3",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/libcharon.so.0.0.0",
+    "sha256": "ad3801d5b1333e41a969f5da9a0fcb15fc692e3bca01e9f41723b27f5b6ff5c5",
+    "needed": [
+      "libstrongswan.so.0",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "d81e6bcc3d1aa51e267455bc3aea967a2702fa1b",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/libipsec.so.0.0.0",
+    "sha256": "a65658368387f4c21d4a1143796788fdb9d796599da423e3b1fe1de0c66371d3",
+    "needed": [
+      "libstrongswan.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "25f589d1836bc81ef1edaee5c6392cfd3713273d",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/libstrongswan.so.0.0.0",
+    "sha256": "bef1c80a9777bd35f4a7d69a9be7e1654ea8956ef41351e550b92f1a33013e19",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "1a6009ae35e2b45d73d372a2be02cba7bb23f0df",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/libtls.so.0.0.0",
+    "sha256": "6c2f0be950099765fcaa2c8509f0a6049509fc8386e9945cb85f381eade5c6a0",
+    "needed": [
+      "libstrongswan.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "88ed5ded8fefd975b89c4b7aafea95752e8ef487",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/libvici.so.0.0.0",
+    "sha256": "8ddad35546101706d2ca7277fba1555d8d372378584afc090aef2dd11d3a55cd",
+    "needed": [
+      "libstrongswan.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "8c4f159201546e51a0cbbd863fe2ae34858e375e",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-acert.so",
+    "sha256": "0189a09d17fcddda0edcfe83905da153b6ff181abfd3c7aa3277112cb26baf4d",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "3fb719e3f62b90e96b7b1d30dc33e1804cbc0c62",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-aes.so",
+    "sha256": "14a064f295d605a0ba7c4953f3a8af41598cfec215027ed85358931bf2e5e731",
+    "needed": [
+      "libc.so.6"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "06bb6825a7f5b40b206671f06a7ca86d9feffc67",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-agent.so",
+    "sha256": "1c89cece5ae57ae4f8601370753aefd2052eebd5ca3be260fceecb786fcf34a2",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "e90a599fbb9d9e6e491f4e3690cbfc9a0a70fe99",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-attr.so",
+    "sha256": "525af1139afd69ef4a6411bc0ee85d120d5a18b5b75ea6abcb7f0f0bda827321",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "928bf995877683a6270da013bc426c2151e371d2",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-cmac.so",
+    "sha256": "8e67899e69764e9ad824410b7873c789c827de28d0b6c1ef142f23f8b225b709",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "ce5fb6f0bf23d4c0efcc74e95fad5ed95d1dd5ab",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-constraints.so",
+    "sha256": "a3211ed5cf946c1e2af4a5f5b3f0ec57eb60055395ca7723b922eab1f64924e6",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "77628ac85ff5c4d6e4b5dc99af8330ae3b82f19c",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-counters.so",
+    "sha256": "05a40d61460272260819d283ed0ab9eb3175ea403b2c096a6e69eddcc80e6bbe",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "b7a7c9d46323680a6109d861aefde730f5a67e32",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-curve25519.so",
+    "sha256": "8e0d8031cdf055840debeb603d16d533525b947693c21113ad8f2077115afaed",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "2cb9fa4ca4d10e5fc4b259d28b8201120fedbf5d",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-des.so",
+    "sha256": "da172dac87544961b7fc443770a2f7d2f1d8eef5e9f2c5b30fe7aecfb84bb691",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "30e5b3fde30cb15b80754e79f18e58740a83694d",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-dnskey.so",
+    "sha256": "925296ccee49ed773ece11f7accf1785c05396f95ef44be62f36068327328413",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "2f11cf153a360d8de970e0647a985339f161d1d2",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-drbg.so",
+    "sha256": "de6ad88b363871b74f077bd590a3a2661b9609477e13354f273ae331e0c74120",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "bfbf288601b61136088b346019a077fe303eec67",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-eap-identity.so",
+    "sha256": "9c1151c0b59ffc03c40fccc49b051c285ab3628eba185a5abb5367b3caa8f850",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "b18ce64af1707993c7340a38c5ad675c88710e0f",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-eap-md5.so",
+    "sha256": "162ae13c317ea4304c9f5d7e35343fcb503d2f4355558462ccc12e6894845154",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "f7818d3305a3fc4119eea283fb89296bcfdee3e1",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-eap-mschapv2.so",
+    "sha256": "80c4c635f0bf57e464b3c572ec7e3bce2a8e517b5fd7f1644a6d1bd70e226e71",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "efaf746126ebf017041a515329cfbc3342dca759",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-eap-peap.so",
+    "sha256": "d936bde12ad2b65cf02dce4e33c492ee54f5635104c5eedf09c0aaffef4e1606",
+    "needed": [
+      "libtls.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "c76ab27a466c58e4c206cd8c32465e5edd37424a",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-eap-tls.so",
+    "sha256": "c11a1e983e185ffef1750a785e80c9047686e6355fd1e5fe9789a6d12703a785",
+    "needed": [
+      "libtls.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "badd27143950f9dc55d511da41d716ff137bebf4",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-fips-prf.so",
+    "sha256": "910da55190aca4f24c1e9c0feca8cb17b3252d732d9878b1cce1ddbf46e4f1ae",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "c386bc563589ec21ca17d673c74421d2fb791989",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-gcm.so",
+    "sha256": "cbddd655a3e22fbbff03f427dc89590ac13265b8aa1151bcf7cf1804e0bfaffa",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "e1605c125ed4a6df5a5616734ad13a4bc0297cf9",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-hmac.so",
+    "sha256": "f12e37e0fa51ead71c8070c6c4ba5da644248facde18b9045a5917897f2c10b1",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "ed8f7a2776d8b62bc37e4e325e65eae92835f015",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-kdf.so",
+    "sha256": "14bbe6b1e23303eadb13fa6e1f75267961b74e0f8c5308811c3cb464b03d82e3",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "188de79316f65ff79b0650d7b4c626bfbde380ce",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-kernel-netlink.so",
+    "sha256": "6836a06b0d4366daf6b1c4aee47378e2b2886018ed644c7ff1ebd432fe5dc99d",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "a17a6f22d363623ad4cb3f4e3d34da11c2348f14",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-md4.so",
+    "sha256": "119cb4c01f49316c8e4c3328c9f93d644bc7fa2ba59a0099d298d37cdcb76c85",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "c3cd1bc2dca25edcd4bfe3bee6f6dd4c64687c17",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-md5.so",
+    "sha256": "f2339ebedc56431f96605ed5a8d1f9680e28d2c2d096d478b8a88709fe3a8da7",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "1711d085ad38d15b210262e4ed7bcf27299001d0",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-nonce.so",
+    "sha256": "36b48bf6bb2c269e3e9ab8d34a02bde7ffee05f6c8fdd1deda99e158276ea8fb",
+    "needed": [
+      "libc.so.6"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "a8e2461fc9da5e67df4779fe7c2eedcf407a7a3d",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-openssl.so",
+    "sha256": "df11761afe1b781f3e0d0056c97924af7c46f36deafc03b6e11a888393efd1c8",
+    "needed": [
+      "libcrypto.so.3",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "c4f2339242e34c27040304dd939ad682e38aa964",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pem.so",
+    "sha256": "2536687bff37ca881d18aea08ceb056abc4b8059989a2257e0974b89391fa2ea",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "fba993f0aac6d761c15e63d15bfca2a226505def",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pgp.so",
+    "sha256": "19913b5b8ceac7c65380e0575eb46665233742e1e4993f61cd349ca06b29c6f7",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "30a559e256cedbedc60efa8c18efecbb71890741",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pkcs1.so",
+    "sha256": "c7b7a9ef0c5d6f6b8ef095d2b538038627f8828d9ff7ef4f9aa5d7ddbc0f31a8",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "22fe1a62e0ac8c2552521446a16238ffbefc875a",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pkcs7.so",
+    "sha256": "936ab453ae1dec6a895772d8cad3b703e52a03d35807921f71023b750340399b",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "84d44ec5d1722b924ac7b7c2cc205592d6a919d3",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pkcs8.so",
+    "sha256": "4758577d1a94ca895b600905a35a38d36ea3c5fcf67982ac59c8e055f372e785",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "844e7400e8b1411e5c8f6f69a3d058ea003bb10d",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pubkey.so",
+    "sha256": "64e9feb773499f4f1b59bb5cfc2e75a5300555d7d866e6b113fffdf270f2fbd8",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "e5c270acb842853677ea319a24c428b68eb7c2d2",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-random.so",
+    "sha256": "f39f11386ef5949749f3b83c272f43ac380a6beda7c0598a229a56926fa73ed9",
+    "needed": [
+      "libc.so.6"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "c313653141dad75b1a814d8683c60a41fa14aee0",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-resolve.so",
+    "sha256": "280207855d9be0d81da043bb031f700991eed008e2beeefcb78bd005ba9d027b",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "b6504dda8f832bae15d378fafd4cc683efba89bd",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-revocation.so",
+    "sha256": "e633685c3081191125b069011d5c486f16b7613bcf8132a1aa6d070b955931ef",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "f5ed9c6e97b83874e6aaff037d1824fbdf0788b9",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-sha1.so",
+    "sha256": "f170fb4049b9dec709adc7bd01d10bae24244468e736df3e27085cb08de4a704",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "6062e3956394745e0b2b88f46f3249dabdeb83d4",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-sha2.so",
+    "sha256": "60e0e6d25ea4cfce62f6783bccbbefb82f0ab990c055f2c4e4b5c8cdeaf5fccb",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "f68d5381988477b6263f525978e2cd9055c58579",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-socket-default.so",
+    "sha256": "cd5384913ac65a4e7cecd4f4be249de232a7c6dff47ac3207f19270271ad9f35",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "b75e050c34f455c0c541f7c7256535807a52f028",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-sshkey.so",
+    "sha256": "2b2d1b1f5f7c9183eba9255839ce80f9b8539c0e986b09be8adb389a29328750",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "b9631a103f41e4a3b3ec70f86b91b7f9a1602190",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-stroke.so",
+    "sha256": "1bf627b91cb2c45661113c2f00fc964e734dc61edb3f5162b1e8b3c34d9bdfef",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "5d38fc07051737b8983ff328150233121290e0af",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-updown.so",
+    "sha256": "6ede122c0d33ca41dcba408f5974e98b8193cb00715bd07aff2b58d7b29c22fb",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "95cee8eaf36cebaf83ba6b5300adbd2c4ff93d22",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-vici.so",
+    "sha256": "106bf52a99e8c3a9db6de11750245190b4140b8b0c6f2dc59c58b2e8238099cc",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "08ca2858a4ed96b6b33b4ab85a30f9d33c66a47d",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-x509.so",
+    "sha256": "bcb30f410434cd4cea87d1a133f469780be89911c2f1c548efef7815e39bf3cc",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "401c8d34fb9529d5a62041c488437617b5c968a0",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-xauth-generic.so",
+    "sha256": "9cad951c9931432c04b4a1e19243f79c9a62f3053f9421122cd46f57897584a8",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "f43aa66cb81df6aa9d36fbddc6af9b86735413bb",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-xcbc.so",
+    "sha256": "f61dfc86bf4aa0f1ce07cc59fc4c288d55768d30ab5313201397845140920ef6",
+    "needed": [
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "0b242f2a884b61cb4a1b0f83e92e80552f58a910",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/starter",
+    "sha256": "ead9f56dcb66de00fcc5cc7b5f72c7a10bfef02cba824e8e77be69736a92b646",
+    "needed": [
+      "libstrongswan.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "2ec7405198efcfb8dd9b15abe0313b7a47803078",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all",
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fPIC -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/stroke",
+    "sha256": "1c57fd00cda1aea36d9a3de3c192fb45755f5ff84c22f4978d796a7bbd74f7f5",
+    "needed": [
+      "libstrongswan.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "046253b605e0f51c22a654ed60d7596d4448394d",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabi/ipsec/xfrmi",
+    "sha256": "6860a8c7f930dd2f8535961865f37d0f150b6628e839d89e311807360ada122b",
+    "needed": [
+      "libstrongswan-kernel-netlink.so",
+      "libstrongswan.so.0",
+      "libcharon.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec/plugins:/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "b25d13b78593a9bdd60a24df47b7ca0d763912fc",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/charon-cmd",
+    "sha256": "09c27d2339db77c571cf9dc75575d5974dbc5498b58c9dc9497c5a0d0ef10518",
+    "needed": [
+      "libstrongswan.so.0",
+      "libcharon.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "c782ffd0eefd57274515dd89751c40d6f71852f7",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/pki",
+    "sha256": "7e49b27a9c62d4a9cbb3830ba54b2f6feb5713a6955c8b9759f7f6004e53dc2d",
+    "needed": [
+      "libstrongswan.so.0",
+      "libtls.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "32f49bd57f56477f5767080de06229db769380c7",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  },
+  {
+    "path": "usr/sbin/swanctl",
+    "sha256": "337c2e0b10f0ba97eed93050a9da135acd1b0247bb0f0bd66e92764a3943ba30",
+    "needed": [
+      "libvici.so.0",
+      "libstrongswan.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ],
+    "rpath": [
+      "/usr/lib/arm-linux-gnueabi/ipsec"
+    ],
+    "class": 32,
+    "machine": "EM_ARM",
+    "build_id": "3820a836634b9b0440d5d6c409d490d6b1fb4520",
+    "flags": [
+      "GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv8-a+crc+crypto -g -Os -std=gnu11 -ffunction-sections -fdata-sections -fstack-protector-strong -fstack-protector-strong -fzero-init-padding-bits=all"
+    ]
+  }
+]

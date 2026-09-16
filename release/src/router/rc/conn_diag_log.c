@@ -197,7 +197,7 @@ void dprintf_to_file(const char* file,const char* func, size_t line, int enable,
             }
 
 
-            int nfd = open(CONNDIAG_LOG_PATH, O_WRONLY | O_APPEND | O_CREAT);
+            int nfd = open(CONNDIAG_LOG_PATH, O_WRONLY | O_APPEND | O_CREAT, 0600);
             dprintf(nfd, WHERESTR, ts, file, func, line);
             va_start(ap, fmt);
             vdprintf(nfd, fmt, ap);
@@ -356,5 +356,4 @@ void dealloc_time_string(char* ts)
 
 
 #endif
-
 

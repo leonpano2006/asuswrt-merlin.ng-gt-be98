@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 #include <shared.h>
 #include "rc.h"
 #include "mastiff.h"
@@ -26,7 +27,7 @@ void start_aae()
 	if(nvram_get_int("aae_disable_force"))
 		return;
 
-	if( getpid()!=1 ) {
+	if( !leon_rc_is_manager() ) {
 		notify_rc("start_aae");
 		return;
 	}
@@ -41,7 +42,7 @@ void start_aae()
 
 void stop_aae()
 {
-	if( getpid()!=1 ) {
+	if( !leon_rc_is_manager() ) {
 		notify_rc("stop_aae");
 		return;
 	}
@@ -126,7 +127,7 @@ void start_mastiff()
 
 	stop_aae();
 	
-	if( getpid()!=1 ) {
+	if( !leon_rc_is_manager() ) {
 		notify_rc("start_mastiff");
 		return;
 	}
@@ -148,7 +149,7 @@ void start_mastiff()
 
 void stop_mastiff()
 {
-	if( getpid()!=1 ) {
+	if( !leon_rc_is_manager() ) {
 		notify_rc("stop_mastiff");
 		return;
 	}
@@ -230,7 +231,7 @@ int start_aaeuac_by_vpn_prof(char *type, int unit)
 
 	while(check_count>0){
 		if(f_read_string(port_path, aaeuac_port, sizeof(aaeuac_port)) > 0){
-			if(!isValid_digit_string(aaeuac_port) && atoi(aaeuac_port)<0 && atoi(aaeuac_port)>65535){
+			if(!isValid_digit_string(aaeuac_port) && safe_atoi(aaeuac_port)<0 && safe_atoi(aaeuac_port)>65535){
 				return -3;
 			}
 			break;

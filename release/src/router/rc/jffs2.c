@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 /*
 
 	Tomato Firmware
@@ -353,7 +354,7 @@ void start_jffs2(void)
 #endif
 		_dprintf("%s: rebooting because DUT had ever erased jffs2 %d times (ever %d times)\n", __func__, jffs2_auto_erase, jffs2_ever_erase);
 		logmessage("jffs2", "rebooting because DUT had ever erased jffs2 %d times (ever %d times)", jffs2_auto_erase, jffs2_ever_erase);
-		reboot(RB_AUTOBOOT);
+		leon_rc_reboot(RB_AUTOBOOT);
 		return;
 	}
 	else
@@ -441,7 +442,7 @@ void start_jffs2(void)
 		mtd_erase(JFFS2_MTD_NAME);
 		nvram_set("jffs2_clean_fs", "1");
 		nvram_commit();
-		reboot(RB_AUTOBOOT);
+		leon_rc_reboot(RB_AUTOBOOT);
 	}
 #ifdef TEST_INTEGRITY
 	int test;

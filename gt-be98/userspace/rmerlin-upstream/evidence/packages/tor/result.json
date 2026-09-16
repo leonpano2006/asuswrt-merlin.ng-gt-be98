@@ -1,0 +1,28 @@
+{
+  "package": "tor",
+  "seconds": 32.98,
+  "compiler": {
+    "abi": "armel",
+    "triplet": "arm-linux-gnueabi",
+    "sysroot": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel",
+    "flags": [
+      "-mcpu=cortex-a53+crypto",
+      "-march=armv8-a+crc+crypto",
+      "-mfpu=crypto-neon-fp-armv8",
+      "-mfloat-abi=softfp"
+    ],
+    "cc": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cc",
+    "cxx": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cxx",
+    "host_library_dir": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/lib/aarch64-linux-gnu",
+    "tools": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-",
+    "compiler_version": "15.2.0",
+    "glibc": "2.44",
+    "glibc_source_commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3"
+  },
+  "files": {
+    "src/app/tor": {
+      "sha256": "a63c47dc6154c53ce88aa6a03663d5af6d949cde9ed717e5d2d88dd8b85d2d3b",
+      "bytes": 13222664
+    }
+  }
+}

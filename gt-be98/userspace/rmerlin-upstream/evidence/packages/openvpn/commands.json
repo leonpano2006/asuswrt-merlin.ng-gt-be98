@@ -1,0 +1,44 @@
+[
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/openvpn",
+    "argv": [
+      "sh",
+      "autogen.sh"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-openvpn",
+    "argv": [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/openvpn/configure",
+      "--host=arm-linux-gnueabi",
+      "--build=aarch64-linux-gnu",
+      "--prefix=/usr",
+      "--bindir=/usr/sbin",
+      "--libdir=/usr/lib/arm-linux-gnueabi",
+      "--disable-debug",
+      "--enable-management",
+      "--disable-small",
+      "--disable-selinux",
+      "--disable-dco",
+      "--enable-plugin-auth-pam",
+      "ac_cv_lib_resolv_gethostbyname=no",
+      "--enable-iproute2"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-openvpn",
+    "argv": [
+      "make",
+      "-C",
+      "src/plugins/auth-pam",
+      "clean"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-openvpn",
+    "argv": [
+      "make",
+      "-j8"
+    ]
+  }
+]

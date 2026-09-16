@@ -239,6 +239,20 @@ var faq_index_tmp = get_faq_index(FAQ_List, current_page, 1);
 
 var secure_default = isSupport("secure_default");
 
+var get_s46_hgw_case_tmp = '<% nvram_get("wan0_s46_hgw_case"); %>';  //topology 2,3,6
+var s46_ports_check_flag_tmp = (get_s46_hgw_case_tmp == '3' || get_s46_hgw_case_tmp == '6');    //true for topology 3||6
+var get_ipv6_s46_ports_tmp = (Softwire46_support && (wan0_proto=="v6plus" || wan0_proto=="ocnvc" || wan0_proto=="v6opt"))? '<%nvram_get("ipv6_s46_ports");%>':'0';
+var array_ipv6_s46_ports_tmp = [];
+if(get_ipv6_s46_ports_tmp != "0" && get_ipv6_s46_ports_tmp != ""){
+    array_ipv6_s46_ports_tmp = get_ipv6_s46_ports_tmp.split(" ");
+}
+if (typeof s46_ports_check_flag === "undefined") {
+    s46_ports_check_flag = s46_ports_check_flag_tmp;
+}
+if (typeof array_ipv6_s46_ports === "undefined") {
+    array_ipv6_s46_ports = array_ipv6_s46_ports_tmp;
+}
+
 function initial(){	
 	//parse nvram to array
 	var parseNvramToArray = function(oriNvram) {
@@ -3028,7 +3042,7 @@ function Get_Component_reboot_schedule_ui(config){
 				</tr>
 				<script>
 					var http_enable_default = httpApi.nvramDefaultGet(["http_enable"]).http_enable;
-					if(in_territory_code("AA") || in_territory_code("SG") && http_enable_default == "2"){
+					if((in_territory_code("AA") || in_territory_code("SG") || in_territory_code("HK")) && http_enable_default == "2"){
 						document.getElementById("http_enable").options[2].text = "<#Setting_factorydefault_value#>";
 					}
 				</script>

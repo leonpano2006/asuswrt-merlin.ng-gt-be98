@@ -1,0 +1,26 @@
+{
+  "component": "shared",
+  "output": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/management-shared/libshared.so",
+  "sha256": "2e9e378b8ceb2afe88e8e939a53029a1d6ff4a6a5ce3856c00a079e1f5a05db7",
+  "compiled_sources": 53,
+  "retained_model_objects": 20,
+  "openssl_abi": "legacy 1.1, isolated from new standalone 3.5 consumers",
+  "compiler": {
+    "abi": "armel",
+    "triplet": "arm-linux-gnueabi",
+    "sysroot": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel",
+    "flags": [
+      "-mcpu=cortex-a53+crypto",
+      "-march=armv8-a+crc+crypto",
+      "-mfpu=crypto-neon-fp-armv8",
+      "-mfloat-abi=softfp"
+    ],
+    "cc": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cc",
+    "cxx": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cxx",
+    "host_library_dir": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/lib/aarch64-linux-gnu",
+    "tools": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-",
+    "compiler_version": "15.2.0",
+    "glibc": "2.44",
+    "glibc_source_commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3"
+  }
+}

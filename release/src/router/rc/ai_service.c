@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 /*
 	Services support for AI Board
 */
@@ -1237,7 +1238,7 @@ void start_ai_tftpd(void) {
 	strlcpy(username, nvram_safe_get("http_username"), sizeof(username));
 	char *tftpd_argv[] = { "in.tftpd", "-4lcvs", "-u", username, "--address", ip, tftpdir, NULL };
 	
-	if (getpid() != 1) {
+	if (!leon_rc_is_manager()) {
 		notify_rc_after_wait("start_ai_tftpd");
 		return;
 	}
@@ -1254,7 +1255,7 @@ void start_ai_tftpd(void) {
 
 void stop_ai_tftpd(int force)
 {
-	if(!force && getpid() != 1){
+	if(!force && !leon_rc_is_manager()){
 		notify_rc_after_wait("stop_ai_tftpd");
 		return;
 	}

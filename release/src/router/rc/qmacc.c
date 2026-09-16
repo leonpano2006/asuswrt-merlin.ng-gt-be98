@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 #include "rc.h"
 
 void start_qmacc(void)
@@ -7,7 +8,7 @@ void start_qmacc(void)
 
 	stop_qmacc();
 
-	if(getpid()!=1) {
+	if(!leon_rc_is_manager()) {
 		notify_rc("start_qmacc");
 		return;
 	}

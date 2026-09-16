@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 /*
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -26,6 +27,8 @@
 
 #define NTPD_PIDFILE "/var/run/ntpd.pid"
 
+static time_t bf_time = 0;
+
 int start_ntpd(void)
 {
 	char *ntpd_argv[] = { "/usr/sbin/ntp",
@@ -38,12 +41,10 @@ int start_ntpd(void)
 	int ret, index = 6;
 	pid_t pid;
 
-	if (getpid() != 1) {
+	if (!leon_rc_is_manager()) {
 		notify_rc("start_ntpd");
 		return 0;
 	}
-
-	stop_ntpd();
 
 	if (!nvram_match("ntp_server0", ""))
 		ntpd_argv[index - 1] = nvram_safe_get("ntp_server0");
@@ -59,6 +60,11 @@ int start_ntpd(void)
 		ntpd_argv[index++] = nvram_safe_get("lan_ifname");
 	}
 
+	if(nvram_get_int("ntp_ready") == 0){
+		bf_time = time( (time_t*) 0 );
+		nvram_set_int("ntp_bf_time", bf_time);
+	}
+
 	ret = _eval(ntpd_argv, NULL, 0, &pid);
 	if (ret == 0)
 		logmessage("ntpd", "Started ntpd");
@@ -68,7 +74,7 @@ int start_ntpd(void)
 
 void stop_ntpd(void)
 {
-	if (getpid() != 1) {
+	if (!leon_rc_is_manager()) {
 		notify_rc("stop_ntpd");
 		return;
 	}
@@ -81,6 +87,7 @@ void stop_ntpd(void)
 
 int ntpd_synced_main(int argc, char *argv[])
 {
+	time_t now=0;
 #if 0
 	if (argc == 2 && !strcmp(argv[1], "unsync"))
 		logmessage("ntpd", "Unable to reach ntp server so far, keep trying");
@@ -90,10 +97,9 @@ int ntpd_synced_main(int argc, char *argv[])
 		nvram_set("ntp_ready", "1");
 		logmessage("ntpd", "Initial clock set");
 /* Code from ntpclient */
-#if !defined(RPAC56) && !defined(MAPAC1300) && !defined(MAPAC2200) && !defined(VZWAC1300)
-		if(nvram_contains_word("rc_support", "defpsk"))
-			nvram_set("x_Setting", "1");
-#endif
+		now = time( (time_t*) 0 );
+		nvram_set_int("ntp_diff_ts", now-bf_time);
+		update_ntp_ts(bf_time, now-bf_time);
 #ifdef RTCONFIG_CFGSYNC
 		if (pidof("cfg_server") >= 0)
 			kill_pidfile_s("/var/run/cfg_server.pid", SIGUSR1);
@@ -124,6 +130,11 @@ int ntpd_synced_main(int argc, char *argv[])
 #endif
 #ifdef RTCONFIG_UUPLUGIN
 		exec_uu();
+#endif
+
+#ifdef RTCONFIG_BCM_AFC
+		if (IS_AFC_ENABLED())
+			kill_pidfile_s("/var/run/afc_coldreboot_monitor.pid", SIGUSR1);
 #endif
 
 		stop_ddns();

@@ -1,0 +1,16 @@
+[
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/dnsmasq",
+    "argv": [
+      "make",
+      "-j8",
+      "CC=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cc",
+      "BUILDDIR=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-dnsmasq",
+      "CFLAGS=-Os -g -frecord-gcc-switches -ffunction-sections -fdata-sections -fstack-protector-strong -std=gnu11",
+      "COPTS=-DHAVE_BROKEN_RTC -DHAVE_LEASEFILE_EXPIRE -DNO_ID -DNO_AUTH -DNO_INOTIFY -DNO_DUMPFILE -DNO_GMP -DUSE_IPV6 -DHAVE_DNSSEC -DHAVE_DNSSEC_STATIC -DNO_GOST",
+      "LDFLAGS=-Wl,--gc-sections,--build-id=sha1",
+      "nettle_cflags=-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/leon-cgroup-20260915/archive/worktree/release/src/router/nettle/include",
+      "nettle_libs=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/leon-cgroup-20260915/archive/worktree/release/src/router/nettle/lib/libhogweed.a /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/leon-cgroup-20260915/archive/worktree/release/src/router/nettle/lib/libnettle.a"
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+build/
+builds/
+source-tree/
+sources/
+saved-inputs/
+publish/
+*.tar
+*.tar.zst
+__pycache__/
+candidate/*.pkgtb

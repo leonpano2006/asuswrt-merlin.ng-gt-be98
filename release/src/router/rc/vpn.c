@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 /*
  * pptp.c
  *
@@ -117,7 +118,7 @@ void start_pptpd(void)
 	if (!nvram_get_int("pptpd_enable"))
 		return;
 
-	if (getpid() != 1) {
+	if (!leon_rc_is_manager()) {
 		notify_rc("start_pptpd");
 		return;
 	}
@@ -363,7 +364,7 @@ void start_pptpd(void)
 
 void stop_pptpd(void)
 {
-	if (getpid() != 1) {
+	if (!leon_rc_is_manager()) {
 		notify_rc("stop_pptpd");
 		return;
 	}

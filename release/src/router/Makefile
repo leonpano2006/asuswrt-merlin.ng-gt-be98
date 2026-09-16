@@ -805,8 +805,21 @@ ifeq ($(RTCONFIG_OPENSSL11),y)
 OPENSSL := openssl-1.1
 else ifeq ($(RTCONFIG_OPENSSL10),y)
 OPENSSL := openssl-1.0
+else ifeq ($(RTCONFIG_OPENSSL35),y)
+OPENSSL := openssl-3.5
 else
 $(error OpenSSL is not defined)
+endif
+
+# The retained GT-BE98 BSP needs real OpenSSL 1.1 symbols missing from the
+# upstream compatibility shim. Its modern userspace is built and staged with
+# both ABIs by gt-be98/userspace/rmerlin-upstream/scripts/replay.py.
+ifeq ($(BUILD_NAME),GT-BE98)
+ifeq ($(RTCONFIG_OPENSSL35),y)
+ifneq ($(LEON_GTBE98_SPLIT_TLS_REPLAY),1)
+$(error GT-BE98 requires the documented split-TLS replay build; the generic OpenSSL 3.5/shim image is incompatible with its retained BSP)
+endif
+endif
 endif
 
 ifeq ($(HND_ROUTER_AX_6756),y)
@@ -1105,6 +1118,11 @@ obj-$(RTCONFIG_PERMISSION_MANAGEMENT) += PMS_DBapis
 obj-$(RTCONFIG_SPEEDTEST) += curl
 
 obj-$(RTCONFIG_HNS) += hns
+obj-$(RTCONFIG_GTBOOSTER) += ark
+obj-$(RTCONFIG_GTBOOSTER) += pcre-8.31
+obj-$(RTCONFIG_GTBOOSTER) += expat-2.0.1
+obj-$(RTCONFIG_GTBOOSTER) += dbus-1.8.8
+obj-$(RTCONFIG_GTBOOSTER) += libgdbm
 
 obj-$(RTCONFIG_BWDPI) += sqlite
 obj-$(RTCONFIG_BWDPI) += bwdpi_source
@@ -3587,8 +3605,8 @@ libmnl-1.0.4-configure:
 libmnl-1.0.4-install:
 	install -D libmnl-1.0.4/src/.libs/libmnl.so.0.2.0 $(INSTALLDIR)/libmnl-1.0.4/usr/lib/libmnl.so.0.2.0
 	cd $(INSTALLDIR)/libmnl-1.0.4/usr/lib/ && \
-	ln -sf libmnl.so.0.2.0 libmnl.so && \
-	ln -sf libmnl.so.0.2.0 libmnl.so.0
+		ln -sf libmnl.so.0.2.0 libmnl.so && \
+		ln -sf libmnl.so.0.2.0 libmnl.so.0
 	$(STRIP) $(INSTALLDIR)/libmnl-1.0.4/usr/lib/libmnl.so.0.2.0
 
 libmnl-1.0.4-clean:
@@ -3781,12 +3799,58 @@ else
 HOSTCONFIG_OPENSSL:= $(HOSTCONFIG)
 endif
 
+ifeq ($(HND_ROUTER_BE_4916),y)
+ifneq (,$(filter $(ASUSWRT_BRCM_SDK_VERSION),WIFI8_SDK_20251126))
+HOSTCONFIG_OPENSSL:= linux-aarch64
+endif
+endif
+
+openssl11-compat:
+	@$(MAKE) -C $@
+
+openssl11-compat-clean:
+	@$(MAKE) -C openssl11-compat clean
+
+openssl-3.5/Makefile:
+	cd openssl-3.5 && \
+	./Configure $(HOSTCONFIG_OPENSSL) --prefix=/usr --openssldir=/etc --cross-compile-prefix=' ' \
+		$(if $(filter y,$(RTCONFIG_SFP) $(RTCONFIG_4M_SFP) $(RTCONFIG_8M_SFP)),-Os,-O2) \
+		$(if $(RTCONFIG_DEBUG),-g) \
+		-ffunction-sections -fdata-sections -Wl,--gc-sections \
+		shared $(OPENSSL_CIPHERS) no-async no-tests no-docs --api=1.1.1 \
+		no-aria no-sm2 no-sm3 no-sm4 \
+		--with-rand-seed=devrandom
+	@$(MAKE) -C openssl-3.5 depend
+	@$(MAKE) -C openssl-3.5 clean
+	@touch $@
+
+openssl-3.5: openssl-3.5/Makefile
+	$(MAKE) -C openssl-3.5 $(PARALLEL_BUILD) && $(MAKE) $@-stage
+
+openssl-3.5-clean:
+	[ ! -f openssl-3.5/Makefile ] || $(MAKE) -C openssl-3.5 clean
+	@rm -f openssl-3.5/Makefile
+
+openssl-3.5-install:
+	install -D openssl-3.5/libcrypto.so.3 $(INSTALLDIR)$(INSTALLSUBDIR)/usr/lib/libcrypto.so.3
+	install -D openssl-3.5/libssl.so.3 $(INSTALLDIR)$(INSTALLSUBDIR)/usr/lib/libssl.so.3
+	install -D openssl-3.5/apps/openssl $(INSTALLDIR)$(INSTALLSUBDIR)/usr/sbin/openssl
+	install -D openssl-3.5/providers/legacy.so $(INSTALLDIR)$(INSTALLSUBDIR)/usr/lib/ossl-modules/legacy.so
+	$(if $(RTCONFIG_DEBUG),,$(STRIP) $(INSTALLDIR)$(INSTALLSUBDIR)/usr/lib/libcrypto.so.3)
+	$(if $(RTCONFIG_DEBUG),,$(STRIP) $(INSTALLDIR)$(INSTALLSUBDIR)/usr/lib/libssl.so.3)
+	$(if $(RTCONFIG_DEBUG),,$(STRIP) $(INSTALLDIR)$(INSTALLSUBDIR)/usr/sbin/openssl)
+	$(if $(RTCONFIG_DEBUG),,$(STRIP) $(INSTALLDIR)$(INSTALLSUBDIR)/usr/lib/ossl-modules/legacy.so)
+	chmod 0500 $(INSTALLDIR)$(INSTALLSUBDIR)/usr/sbin/openssl
+	cd $(INSTALLDIR)$(INSTALLSUBDIR)/usr/lib && rm -f libcrypto.so && ln -sf libcrypto.so.3 libcrypto.so
+	cd $(INSTALLDIR)$(INSTALLSUBDIR)/usr/lib && rm -f libssl.so && ln -sf libssl.so.3 libssl.so
+
 openssl-1.1/Makefile:
 	cd openssl-1.1 && \
 	./Configure $(HOSTCONFIG_OPENSSL) --prefix=/usr --openssldir=/etc --cross-compile-prefix=' ' \
 	$(if $(filter y,$(RTCONFIG_SFP) $(RTCONFIG_4M_SFP) $(RTCONFIG_8M_SFP)),-Os,-O2) \
 	$(if $(RTCONFIG_DEBUG),-g) \
 	-ffunction-sections -fdata-sections -Wl,--gc-sections \
+	$(if $(filter $(ASUSWRT_BRCM_SDK_VERSION),WIFI8_SDK_20251126),$(if $(filter $(PROFILE_KARCH),armhfp),no-asm,)) \
 	shared $(OPENSSL_CIPHERS) no-err no-async --api=1.0.0 \
 	no-aria no-sm2 no-sm3 no-sm4 \
 	--with-rand-seed=devrandom \
@@ -3955,6 +4019,7 @@ endif
 
 rc: shared libev-4.33 $(if $(BCM_502L07P2),ethctl_lib) nvram$(BCMEX)$(EX7) libdisk $(if $(RTCONFIG_LIB_CODB),libcodb) $(if $(RTCONFIG_FBWIFI),fb_wifi) $(if $(RTCONFIG_QTN),libqcsapi_client) $(if $(CONFIG_LIBBCM),libbcm) $(if $(RTCONFIG_BWDPI),bwdpi_source) $(if $(RTCONFIG_USB_SMS_MODEM),smspdu) $(if $(RTCONFIG_OPENVPN),libvpn) $(if $(RTCONFIG_LANTIQ),libfapi-0.1) $(if $(RTCONFIG_CFGSYNC), $(CFGSYNC_PKG) $(if $(RTCONFIG_AMAS), amas-utils) $(if $(RTCONFIG_LANTIQ),hostapd-2.6)) json-c $(if $(or $(RTCONFIG_FRS_LIVE_UPDATE),$(RTCONFIG_FRS_FEEDBACK),$(RTCONFIG_URLFW),$(RTCONFIG_SOFTWIRE46)), curl) $(RC_EXT_PKG) $(if $(RTCONFIG_BRCM_HOSTAPD),wpa_supplicant-2.7) $(if $(RTCONFIG_MXL371X),mxl371x_sdk) libwebapi
 	@$(SEP)
+	$(if $(RTCONFIG_OPENSSL35),$(MAKE) -C openssl11-compat install,)
 # Dig into our collection of prebuilt objects based on model
 	@-rm -f rc/prebuild/*.o || true
 	@-cp -f rc/prebuild/$(BUILD_NAME)/* rc/prebuild/
@@ -4559,10 +4624,9 @@ iptables-1.8.10-clean:
 
 miniupnpd/config.h: shared/version.h
 ifeq ($(RTCONFIG_IGD2),y)
-	cd miniupnpd && ./configure --vendorcfg --leasefile $(if $(RTCONFIG_IPV6),--ipv6,) --igd2 --portinuse $(if $(RTCONFIG_AURASYNC),--aurasync,) $(if $(RTCONFIG_GEFORCENOW),--nvgfn) --iptablespath=$(TOP)/$(IPTABLES)
-else
-	cd miniupnpd && ./configure --vendorcfg --leasefile --portinuse $(if $(RTCONFIG_AURASYNC),--aurasync,) $(if $(RTCONFIG_GEFORCENOW),--nvgfn) --iptablespath=$(TOP)/$(IPTABLES)
+	cd miniupnpd-igdv2 && ./configure --vendorcfg --leasefile $(if $(RTCONFIG_IPV6),--ipv6,) --igd2 --portinuse $(if $(RTCONFIG_AURASYNC),--aurasync,) $(if $(RTCONFIG_GEFORCENOW),--nvgfn) --iptablespath=$(TOP)/$(IPTABLES) --disable-pppconn
 endif
+	cd miniupnpd && ./configure --vendorcfg --leasefile --portinuse $(if $(RTCONFIG_AURASYNC),--aurasync,) $(if $(RTCONFIG_GEFORCENOW),--nvgfn) --iptablespath=$(TOP)/$(IPTABLES) --disable-pppconn
 
 miniupnpd: $(IPTABLES) e2fsprogs miniupnpd/config.h
 	@$(SEP)
@@ -4573,10 +4637,23 @@ miniupnpd: $(IPTABLES) e2fsprogs miniupnpd/config.h
 	    EXTRACFLAGS="-Os $(EXTRACFLAGS) -idirafter$(KERNEL_HEADER_DIR) $(if $(or $(RTCONFIG_AURASYNC), $(RTCONFIG_GEFORCENOW)), -I$(TOP)/shared) -ffunction-sections -fdata-sections  $(if $(RTCONFIG_AUPNPC),-DASUSWRT) -I$(TOP)/e2fsprogs/lib" \
 	    LDFLAGS="$(EXTRALDFLAGS) -ffunction-sections -fdata-sections -Wl,--gc-sections -L$(IPTC_LIBDIR) -L$(TOP)/e2fsprogs/lib" \
 		LDLIBS="-Wl,--as-needed $(if $(or $(RTCONFIG_AURASYNC), $(RTCONFIG_GEFORCENOW)),-L$(TOP)/shared -lshared -L$(TOP_PLATFORM)/nvram$(BCMEX)$(EX7) -lnvram $(if $(BCM_502L07P2),-L$(TOP_PLATFORM)/ethctl_lib -lethctl)) -luuid -lrt $(IPTC_LIBS) $(if $(RTCONFIG_HND_ROUTER),-L$(TOP_PLATFORM)/wlcsm$(EXHND) -lwlcsm)"
+ifeq ($(RTCONFIG_IGD2),y)
+	cp -f ./shared/version.h miniupnpd-igdv2/.
+	PKG_CONFIG=false ARCH=$(PLATFORM) \
+	$(MAKE) -C miniupnpd-igdv2 -f Makefile $(PARALLEL_BUILD) \
+	    IPTABLESPATH=$(TOP)/$(IPTABLES) \
+	    EXTRACFLAGS="-Os $(EXTRACFLAGS) -idirafter$(KERNEL_HEADER_DIR) $(if $(or $(RTCONFIG_AURASYNC), $(RTCONFIG_GEFORCENOW)), -I$(TOP)/shared) -ffunction-sections -fdata-sections  $(if $(RTCONFIG_AUPNPC),-DASUSWRT) -I$(TOP)/e2fsprogs/lib" \
+	    LDFLAGS="$(EXTRALDFLAGS) -ffunction-sections -fdata-sections -Wl,--gc-sections -L$(IPTC_LIBDIR) -L$(TOP)/e2fsprogs/lib" \
+		LDLIBS="-Wl,--as-needed $(if $(or $(RTCONFIG_AURASYNC), $(RTCONFIG_GEFORCENOW)),-L$(TOP)/shared -lshared -L$(TOP_PLATFORM)/nvram$(BCMEX)$(EX7) -lnvram $(if $(BCM_502L07P2),-L$(TOP_PLATFORM)/ethctl_lib -lethctl)) -luuid -lrt $(IPTC_LIBS) $(if $(RTCONFIG_HND_ROUTER),-L$(TOP_PLATFORM)/wlcsm$(EXHND) -lwlcsm)"
+endif
 
 miniupnpd-clean:
 	-@$(MAKE) -C miniupnpd -f Makefile clean
 	-@rm miniupnpd/config.h
+ifeq ($(RTCONFIG_IGD2),y)
+	-@$(MAKE) -C miniupnpd-igdv2 -f Makefile clean
+	-@rm miniupnpd-igdv2/config.h
+endif
 
 miniupnpd_1.4: $(IPTABLES) shared/version.h
 	@$(SEP)
@@ -4593,6 +4670,10 @@ miniupnpd_1.4-clean:
 miniupnpd$(MUVER)-install: miniupnpd$(MUVER)
 	install -D miniupnpd$(MUVER)/miniupnpd $(INSTALLDIR)/miniupnpd$(MUVER)/usr/sbin/miniupnpd
 	$(STRIP) $(INSTALLDIR)/miniupnpd$(MUVER)/usr/sbin/miniupnpd
+ifeq ($(RTCONFIG_IGD2),y)
+	install -D miniupnpd-igdv2/miniupnpd $(INSTALLDIR)/miniupnpd$(MUVER)/usr/sbin/miniupnpd-igdv2
+	$(STRIP) $(INSTALLDIR)/miniupnpd$(MUVER)/usr/sbin/miniupnpd-igdv2
+endif
 
 miniupnpc:
 	$(MAKE) -C miniupnpc
@@ -6158,13 +6239,26 @@ lldpd-1.0.11-clean:
 	[ ! -f lldpd-1.0.11/libevent/Makefile ] || $(MAKE) -C lldpd-1.0.11/libevent clean
 	@rm -f lldpd-1.0.11/libevent/Makefile
 
+ifeq ($(HND_ROUTER_BE_4916),y)
+ifneq (,$(filter $(ASUSWRT_BRCM_SDK_VERSION),WIFI7_SDK_20250506))
+LIBEVENT_EXT_PKG += -DRTCONFIG_HND_ROUTER_BE_4916 -DWIFI7_SDK_20250506
+# LIBEVENT_EXT_PKG += -DARC4RANDOM_DISABLED
+LIBEVENT_EXT_PKG2 += ac_cv_func_arc4random=no ac_cv_func_arc4random_buf=no
+endif
+ifneq (,$(filter $(ASUSWRT_BRCM_SDK_VERSION),WIFI8_SDK_20251126))
+LIBEVENT_EXT_PKG += -DRTCONFIG_HND_ROUTER_BE_4916 -DWIFI8_SDK_20251126
+# LIBEVENT_EXT_PKG += -DARC4RANDOM_DISABLED
+LIBEVENT_EXT_PKG2 += ac_cv_func_arc4random=no ac_cv_func_arc4random_buf=no
+endif
+endif
+
 libevent-2.0.21: libevent-2.0.21/Makefile
 	$(MAKE) -C $@ $(PARALLEL_BUILD) && $(MAKE) $@-stage && sed 's|/usr/lib|$(STAGEDIR)/usr/lib|g' -i $(STAGEDIR)/usr/lib/libevent.la
 
 libevent-2.0.21/Makefile:
 	( cd libevent-2.0.21 && autoreconf -i -f ; \
-		CFLAGS="$(CFLAGS) -Os -Wall $(EXTRACFLAGS) -I$(STAGEDIR)/usr/include" \
-		LDFLAGS="-L$(STAGEDIR)/usr/lib" \
+		CFLAGS="$(CFLAGS) -Os -Wall $(EXTRACFLAGS) $(LIBEVENT_EXT_PKG) -I$(STAGEDIR)/usr/include" \
+		LDFLAGS="-L$(STAGEDIR)/usr/lib" $(LIBEVENT_EXT_PKG2) \
 		$(CONFIGURE) --prefix=/usr --bindir=/usr/sbin --libdir=/usr/lib \
 		--disable-openssl --disable-debug-mode \
 	)
@@ -7584,6 +7678,9 @@ openpam/Makefile:
 	( cd openpam ; \
 		LDFLAGS=-ldl \
 		$(CONFIGURE) \
+		--prefix=$(STAGEDIR)/usr \
+		--bindir=$(STAGEDIR)/usr/sbin \
+		--libdir=$(STAGEDIR)/usr/lib \
 		--without-doc --with-pam-unix \
 	)
 
@@ -7606,7 +7703,14 @@ easy-rsa-clean:
 easy-rsa-install:
 	@$(SEP)
 	mkdir -p $(TARGETDIR)/rom/$(EX_ROM)/easy-rsa
+ifeq ($(or $(RTCONFIG_OPENSSL30),$(RTCONFIG_OPENSSL35)),y)
+	mkdir -p $(TARGETDIR)/rom/$(EX_ROM)/easy-rsa/x509-types
+	install easy-rsa/easyrsa3/easyrsa $(TARGETDIR)/rom/$(EX_ROM)/easy-rsa
+	install easy-rsa/easyrsa3/openssl-easyrsa.cnf $(TARGETDIR)/rom/$(EX_ROM)/easy-rsa
+	install easy-rsa/easyrsa3/x509-types/* $(TARGETDIR)/rom/$(EX_ROM)/easy-rsa/x509-types
+else
 	install easy-rsa/2.0/* $(TARGETDIR)/rom/$(EX_ROM)/easy-rsa
+endif
 
 openvpn: shared $(if $(BCM_502L07P2),ethctl_lib) openssl lzo$(LZO_VER) libcap-ng openpam zlib openvpn/Makefile
 	$(MAKE) -C $@ $(PARALLEL_BUILD)
@@ -7774,7 +7878,7 @@ else
 endif
 	@touch $@
 
-lighttpd-1.4.39: shared $(if $(BCM_502L07P2),ethctl_lib) nvram$(BCMEX)$(EX7) libpasswd libdisk samba-3.5.8 pcre-8.31 libxml2 sqlite libexif openssl curl $(if $(RTCONFIG_PERMISSION_MANAGEMENT),PMS_DBapis) $(if $(filter $(BUILD_NAME),RT-BE82M GS-BE18000 GS-BE12000 GS7_PRO GT7),libhostapi,) lighttpd-1.4.39/stamp-h1
+lighttpd-1.4.39: shared $(if $(BCM_502L07P2),ethctl_lib) nvram$(BCMEX)$(EX7) libpasswd libdisk samba-3.5.8 pcre-8.31 libxml2 sqlite libexif openssl curl $(if $(RTCONFIG_PERMISSION_MANAGEMENT),PMS_DBapis) $(if $(RTCONFIG_MXL_826XX),libhostapi) lighttpd-1.4.39/stamp-h1
 	$(MAKE) -C lighttpd-1.4.39 $(PARALLEL_BUILD)
 
 lighttpd-1.4.39-install:
@@ -8015,6 +8119,9 @@ strongswan/Makefile: strongswan/configure
 	--enable-acert --enable-agent \
 	--enable-md4 \
 	--enable-eap-identity --enable-eap-md5 --enable-eap-mschapv2 --enable-eap-tls --enable-eap-peap \
+	--enable-stroke \
+	--enable-aes --enable-des --enable-fips-prf --enable-gcm \
+	--enable-curve25519 --enable-hmac --enable-md5 --enable-sha1 --enable-sha2 \
 	--enable-cmd --enable-libipsec \
 	--enable-shared --disable-static \
 	--with-ipsecdir=/usr/lib/ipsec \
@@ -8029,8 +8136,24 @@ strongswan/Makefile: strongswan/configure
 strongswan: openssl strongswan/Makefile
 	@$(SEP)
 	$(MAKE) -j 8 -C strongswan
+ifneq (,$(filter $(ASUSWRT_BRCM_SDK_VERSION),WIFI7_SDK_20250506 WIFI8_SDK_20251126))
+	@-patchelf --force-rpath --set-rpath /usr/lib/ipsec strongswan/src/libipsec/.libs/libipsec.so
+	@-sed -i '/relink_command/d' strongswan/src/libipsec/libipsec.la
+	@-patchelf --force-rpath --set-rpath /usr/lib/ipsec strongswan/src/libtls/.libs/libtls.so
+	@-sed -i '/relink_command/d' strongswan/src/libtls/libtls.la
+	@-patchelf --force-rpath --set-rpath /usr/lib/ipsec strongswan/src/libcharon/.libs/libcharon.so
+	@-sed -i '/relink_command/d' strongswan/src/libcharon/libcharon.la
+	@-patchelf --force-rpath --set-rpath /usr/lib/ipsec strongswan/src/libcharon/plugins/vici/.libs/libvici.so
+	@-sed -i '/relink_command/d' strongswan/src/libcharon/plugins/vici/libvici.la
+	@-patchelf --force-rpath --set-rpath /usr/lib/ipsec strongswan/src/libcharon/plugins/eap_tls/.libs/libstrongswan-eap-tls.so
+	@-sed -i '/relink_command/d' strongswan/src/libcharon/plugins/eap_tls/libstrongswan-eap-tls.la
+	@-patchelf --force-rpath --set-rpath /usr/lib/ipsec strongswan/src/libcharon/plugins/eap_peap/.libs/libstrongswan-eap-peap.so
+	@-sed -i '/relink_command/d' strongswan/src/libcharon/plugins/eap_peap/libstrongswan-eap-peap.la
+endif
 
 strongswan-install: strongswan
+	mkdir -p $(INSTALLDIR)/strongswan/
+	mkdir -p $(INSTALLDIR)/strongswan/etc
 	@$(SEP)
 	$(MAKE) -C strongswan install-strip DESTDIR=$(INSTALLDIR)/strongswan/ ; chmod 755 $(INSTALLDIR)/strongswan/usr/lib
 	rm -rf $(INSTALLDIR)/strongswan/usr/etc
@@ -8170,7 +8293,7 @@ curl/Makefile: curl/configure
 		--disable-doh --disable-netrc --disable-dnsshuffle \
 		--without-libpsl \
 		$(if $(RTCONFIG_TR069),--with-libssh2=$(STAGEDIR)/usr,--without-zlib) \
-		$(if $(RTCONFIG_OPENSSL11)$(RTCONFIG_OPENSSL10),--with-ssl=$(TOP)/openssl --with-ca-fallback,--without-ssl) \
+		$(if $(OPENSSL),--with-ssl=$(STAGEDIR)/usr --with-ca-fallback,--without-ssl) \
 		$(if $(RTCONFIG_MBEDTLS),--with-mbedtls=$(STAGEDIR)/usr,--without-mbedtls) \
 		$(if $(RTCONFIG_WOLFSSL),--with-wolfssl=$(STAGEDIR)/usr,--without-wolfssl) \
 		--with-ca-bundle=/etc/ssl/certs/ca-certificates.crt \
@@ -8941,10 +9064,21 @@ wget/Makefile: wget/Makefile.in
 		LDFLAGS="$(EXTRALDFLAGS) -Wl,--gc-sections -L$(STAGEDIR)/usr/lib -pthread"
 
 wget: openssl zlib wget/Makefile
+ifeq ($(AUTOMAKE_117),yes)
 	$(MAKE) -C $@ $(PARALLEL_BUILD)
+else
+	$(MAKE) -C $@ $(PARALLEL_BUILD) ACLOCAL=true \
+          AUTOMAKE=true \
+          AUTOCONF=true \
+          AUTOHEADER=true
+endif
 
 wget-clean:
+ifeq ($(AUTOMAKE_117),yes)
 	[ ! -f wget/Makefile ] || $(MAKE) -C wget distclean
+else
+	[ ! -f wget/Makefile ] || $(MAKE) -C wget clean
+endif
 	@rm -f wget/Makefile
 
 wget-install:
@@ -10500,11 +10634,7 @@ endif
 	$(MAKE) -C $(TOPX_DIR)/dtc$(DTC_VER) EXTRA_CFLAGS="-I$(TOP)/libyaml/include" LDFLAGS="-L$(TOP)/libyaml/src/.libs"
 
 fdt-install: fdt
-	@$(eval TOPX_DIR:=$(firstword $(wildcard $(TOP_PLATFORM)/fdt/dtc$(DTC_VER)) $(wildcard fdt/dtc$(DTC_VER))))
-	$(MAKE) -C $(TOPX_DIR) INSTALLDIR=$(INSTALLDIR)/fdt/dtc$(DTC_VER) install
-ifeq ($(HND_ROUTER_BE_4916),y)
-	rm -f ~/bin/dtc
-endif
+	@true
 
 # .PHONY : fdt
 
@@ -11577,7 +11707,7 @@ libimobiledevice-1.3.0/Makefile:
 	$(MAKE) libimobiledevice-1.3.0-configure
 
 libimobiledevice-1.3.0: libimobiledevice-1.3.0/Makefile
-	$(MAKE) -C $@ && $(MAKE) $@-stage
+	$(MAKE) -C $@ $(PARALLEL_BUILD) && $(MAKE) $@-stage
 
 libimobiledevice-1.3.0-install: libimobiledevice-1.3.0
 	install -D libimobiledevice-1.3.0/tools/idevicebackup $(INSTALLDIR)/libimobiledevice-1.3.0/usr/bin/idevicebackup
@@ -11729,5 +11859,3 @@ $(obj-y) $(obj-n) $(obj-clean) $(obj-install): dummy
 .PHONY: all clean distclean mrproper install package image
 .PHONY: conf mconf oldconf kconf kmconf config menuconfig oldconfig
 .PHONY: dummy libnet libpcap
-
-

@@ -1,0 +1,32 @@
+[
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/haveged",
+    "argv": [
+      "autoreconf",
+      "-if"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-haveged",
+    "argv": [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/haveged/configure",
+      "--host=arm-linux-gnueabi",
+      "--build=aarch64-linux-gnu",
+      "--prefix=/usr",
+      "--bindir=/usr/sbin",
+      "--libdir=/usr/lib/arm-linux-gnueabi",
+      "--enable-static",
+      "--disable-shared",
+      "--enable-daemon",
+      "--disable-tune",
+      "--disable-olt"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-haveged",
+    "argv": [
+      "make",
+      "-j8"
+    ]
+  }
+]

@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 /*
 
 	Tomato Firmware
@@ -57,7 +58,7 @@ int start_sshd(void)
 	if (!nvram_get_int("sshd_enable"))
 		return 0;
 
-	if (getpid() != 1) {
+	if (!leon_rc_is_manager()) {
 		notify_rc("start_sshd");
 		return 0;
 	}
@@ -97,7 +98,7 @@ int start_sshd(void)
 
 void stop_sshd(void)
 {
-	if (getpid() != 1) {
+	if (!leon_rc_is_manager()) {
 		notify_rc("stop_sshd");
 		return;
 	}

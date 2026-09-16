@@ -1,0 +1,19 @@
+{
+  "rehearsal": "upstream-v6",
+  "production_matches_tested_paths": true,
+  "image": "GT-BE98_leon36-rmerlin1029a1_zstd22.pkgtb",
+  "image_sha256": "c75e68f6c860b240a93326fef1f8049e8fee5ba3c9c73c215a99cd8ba6d87ee9",
+  "image_bytes": 90840140,
+  "rootfs_bytes": 78422016,
+  "rootfs_sha256": "2bcc94d9d325ede4e8610fa2424fb5abe85b03c46893f8c277088270c7f63714",
+  "compression": "zstd level 22, 1 MiB blocks, tailends, type/size ordering",
+  "flashed": false,
+  "image_mib": 86.632,
+  "qemu_elapsed_seconds": 107.15,
+  "reserved_blocks": [
+    107,
+    626
+  ],
+  "budget_blocks": 734,
+  "remaining_blocks": 1
+}

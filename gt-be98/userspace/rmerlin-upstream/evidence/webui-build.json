@@ -1,0 +1,16 @@
+{
+  "command": [
+    "make",
+    "-f",
+    "Makefile.build",
+    "install",
+    "BUILD_NAME=GT-BE98",
+    "HND_ROUTER=y",
+    "TOP=/home/leonpano/amng-out/rmerlin-integration-20260916/webui-build/router",
+    "SRCBASE=/home/leonpano/amng-out/rmerlin-integration-20260916/webui-build",
+    "INSTALLDIR=/home/leonpano/amng-out/rmerlin-integration-20260916/webui-build/stage"
+  ],
+  "host": "leonpano-ProLiant-ML350-Gen9",
+  "artifact_sha256": "e0c1f7c4df178f2a6067d0df74e7c522c9a3fcbfa160595be65a0753e8b0a9fc",
+  "bytes": 42680320
+}

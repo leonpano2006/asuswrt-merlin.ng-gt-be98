@@ -1,0 +1,39 @@
+[
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-tor",
+    "argv": [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/tor/configure",
+      "--host=arm-linux-gnueabi",
+      "--build=aarch64-linux-gnu",
+      "--prefix=/usr",
+      "--bindir=/usr/sbin",
+      "--libdir=/usr/lib/arm-linux-gnueabi",
+      "--with-libevent-dir=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/leon-cgroup-20260915/archive/worktree/release/src/router/libevent-2.0.21",
+      "--with-openssl-dir=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/openssl-armel",
+      "--with-zlib-dir=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/leon-cgroup-20260915/archive/worktree/release/src/router/zlib",
+      "--disable-asciidoc",
+      "--disable-manpage",
+      "--disable-html-manual",
+      "--disable-tool-name-check",
+      "--disable-unittests",
+      "--disable-lzma",
+      "--disable-zstd",
+      "--disable-seccomp",
+      "--disable-libscrypt"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-tor",
+    "argv": [
+      "make",
+      "clean"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-tor",
+    "argv": [
+      "make",
+      "-j8"
+    ]
+  }
+]

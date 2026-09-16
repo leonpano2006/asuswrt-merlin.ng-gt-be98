@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 /*
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -1058,9 +1059,9 @@ void OTSFinish(int fd, int flag)
     	shutdown(fd, 2);
     	close(fd);
 
-	//if (flag) kill(1, SIGHUP);
-	//else kill(1, SIGTERM);
-	kill(1, SIGTERM);
+	//if (flag) leon_rc_signal(SIGHUP);
+	//else leon_rc_signal(SIGTERM);
+	leon_rc_signal(SIGTERM);
 }
 
 char pdubuf[INFO_PDU_LENGTH];	

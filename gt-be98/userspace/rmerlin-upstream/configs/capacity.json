@@ -1,0 +1,15 @@
+{
+  "observed_at_utc": "2026-09-16T21:00:34.980314+00:00",
+  "booted_slot": 1,
+  "normal_reboot_slot": 2,
+  "commit_flags": [
+    0,
+    1
+  ],
+  "available_eraseblocks": 14,
+  "slot1_bootfs_blocks": 107,
+  "slot1_rootfs_blocks": 613,
+  "replaceable_total_blocks": 734,
+  "evidence": "evidence/router-readonly-capacity.txt",
+  "router_modified": false
+}

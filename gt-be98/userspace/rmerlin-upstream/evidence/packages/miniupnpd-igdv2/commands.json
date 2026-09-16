@@ -1,0 +1,29 @@
+[
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/miniupnpd-igdv2",
+    "argv": [
+      "sh",
+      "configure",
+      "--vendorcfg",
+      "--leasefile",
+      "--portinuse",
+      "--iptablespath=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/leon-cgroup-20260915/archive/worktree/release/src/router/iptables-1.4.x",
+      "--disable-pppconn",
+      "--ipv6",
+      "--igd2"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/miniupnpd-igdv2",
+    "argv": [
+      "make",
+      "-j8",
+      "CC=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cc",
+      "AR=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-ar",
+      "IPTABLESPATH=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/leon-cgroup-20260915/archive/worktree/release/src/router/iptables-1.4.x",
+      "EXTRACFLAGS=-Os -g -frecord-gcc-switches -ffunction-sections -fdata-sections -fstack-protector-strong -std=gnu11 -I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/leon-cgroup-20260915/archive/worktree/release/src/router/e2fsprogs/lib",
+      "LDFLAGS=-Wl,--gc-sections,--build-id=sha1 -L/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-service-split-20260916/build/production-rootfs/usr/lib/arm-linux-gnueabi -Wl,-rpath-link,/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-service-split-20260916/build/production-rootfs/usr/lib/arm-linux-gnueabi",
+      "LDLIBS=-Wl,--as-needed -luuid -lrt -lip4tc -lip6tc -lwlcsm"
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "path": "Changelog-3006.txt",
+    "reason": "Use current upstream release notes and retain the historical gnuton entry.",
+    "sha256": "c75ec36e2a24d6d42c51439f3997daa2d6f49e02e55b89feb83b6812ae92df1e"
+  },
+  {
+    "path": "release/src/router/openvpn/ChangeLog",
+    "reason": "Use the upstream OpenVPN 2.7.7 package changelog.",
+    "sha256": "424a5c1166e9ae721247f5fb0b84d86b3f0dea6cd380f502e2022d354714f717"
+  },
+  {
+    "path": "release/src-rt/version.conf",
+    "reason": "Identify the integration as a Leon build based on 102.9 beta1.",
+    "sha256": "a8bdd13608a54b6e16e8a7cfa8410eb9a06a68f58f64d35a8188ff921e0cbcbb"
+  },
+  {
+    "path": "release/src/router/Makefile",
+    "reason": "Retain the more complete wget autotools timestamp workaround and all automatic merges.",
+    "sha256": "c5a9441911593a7c05d407a881882d06d54d8d706c1db01563e4c02ef02edce8"
+  },
+  {
+    "path": "release/src-rt-5.04behnd.4916/kernel/linux-4.19/config_base.6a.6813",
+    "reason": "Preserve local kernel configuration and both sets of disabled pressure sensor options.",
+    "sha256": "35139f7de22f7e8ba906deb12337289995fcb21d82236d80f09ab91e3a0b241c"
+  },
+  {
+    "path": "release/src/router/www/js/asus.js",
+    "reason": "Combine GT-BE98 DWB/channel handling with upstream missing-value guards.",
+    "sha256": "a68241004ea20981e338f90d6b16adbfc254309ddde600bd5fd5e038a9185e85"
+  },
+  {
+    "path": "release/src/router/www/QoS_EZQoS.asp",
+    "reason": "Use the new QoS/HW AQM page; preserve inherited Adaptive QoS rate-field behavior only for GT-BE98.",
+    "sha256": "03ed06cdc8f1a151425b27c720e42567b66cc7ab0dc343ce01bc1845999a7f02"
+  }
+]

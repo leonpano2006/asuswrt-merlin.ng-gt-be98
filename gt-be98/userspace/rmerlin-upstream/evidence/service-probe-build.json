@@ -1,0 +1,20 @@
+[
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cc",
+  "-std=gnu11",
+  "-O2",
+  "-g",
+  "-Wall",
+  "-Wextra",
+  "-Werror",
+  "-I/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/src",
+  "-frecord-gcc-switches",
+  "-Wl,--build-id=sha1",
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/tests/service-probe.c",
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/management-rc/services.o",
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/src/rc-services.c",
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/src/rc-manager.c",
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/src/rc-client.c",
+  "-Wl,--gc-sections,--wrap=leon_rc_managed",
+  "-o",
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/probes/service-probe"
+]

@@ -1,0 +1,3551 @@
+[
+  {
+    "file": "usr/bin/afppasswd",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libatalk.so.6",
+      "libgcrypt.so.11",
+      "libgpg-error.so.0",
+      "libcrypt.so.1",
+      "libcrypto.so.1.1",
+      "libdl.so.2",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/asd",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libdl.so.2",
+      "libwlcsm.so",
+      "libpthread.so.0",
+      "libm.so.6",
+      "libcurl.so.4",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libasc.so",
+      "libjson-c.so.2",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/bp3",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libbp3hal.so",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libcjson.so.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevice_id",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicebackup",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicebackup2",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicecrashreport",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicedate",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicedebug",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicedebugserverproxy",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicediagnostics",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/ideviceenterrecovery",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/ideviceimagemounter",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/ideviceinfo",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicename",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicenotificationproxy",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicepair",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/ideviceprovision",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicescreenshot",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicesetlocation",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/idevicesyslog",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/bin/usbmuxd",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libusb-1.0.so.0",
+      "libdl.so.2",
+      "libc.so.6",
+      "ld-linux.so.3",
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0"
+    ]
+  },
+  {
+    "file": "usr/sbin/Notify_Event2NC",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libnt.so",
+      "libsqlite3.so.0",
+      "libm.so.6",
+      "libjson-c.so.2",
+      "libwlcsm.so",
+      "libnvram.so",
+      "libshared.so",
+      "libpthread.so.0",
+      "libgcc_s.so.1",
+      "libcurl.so.4",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libxml2.so.2",
+      "libws.so",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/sbin/Tor",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libz.so.1",
+      "libm.so.6",
+      "libevent-2.0.so.5",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libgcc_s.so.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/aaews",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libwlcsm.so",
+      "libasuslog.so",
+      "libcurl.so.4",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libxml2.so.2",
+      "libjson-c.so.2",
+      "libdl.so.2",
+      "librt.so.1",
+      "libnvram.so",
+      "libshared.so",
+      "libsqlite3.so.0",
+      "libnt.so",
+      "libws.so",
+      "libgcc_s.so.1",
+      "libstdc++.so.6",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/amas-utils-cli",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libjansson.so.4",
+      "libwlcsm.so",
+      "libamas-utils.so",
+      "libjson-c.so.2",
+      "libcrypto.so.1.1",
+      "libnvram.so",
+      "libshared.so",
+      "liblldpctl.so.4",
+      "libdl.so.2",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/arpstorm",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libcurl.so.4",
+      "libasc.so",
+      "libm.so.6",
+      "libshared.so",
+      "libnvram.so",
+      "libjson-c.so.2",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libwlcsm.so",
+      "libbwdpi.so",
+      "libnt.so",
+      "libsqlite3.so.0",
+      "libpthread.so.0",
+      "libcodb.so",
+      "libconn_diag.so",
+      "libnmpapi.so",
+      "libamas-utils.so",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/asusdiscovery",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libcurl.so.4",
+      "libasc.so",
+      "libm.so.6",
+      "libshared.so",
+      "libnvram.so",
+      "libjson-c.so.2",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libwlcsm.so",
+      "libbwdpi.so",
+      "libnt.so",
+      "libsqlite3.so.0",
+      "libpthread.so.0",
+      "libcodb.so",
+      "libconn_diag.so",
+      "libnmpapi.so",
+      "libamas-utils.so",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/asuswebstorage",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libshared.so",
+      "libwlcsm.so",
+      "libgcc_s.so.1",
+      "libcurl.so.4",
+      "libxml2.so.2",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libnvram.so",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/awsiot",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libwebapi.so",
+      "libsqlite3.so.0",
+      "libbwdpi.so",
+      "libbwdpi_sql.so",
+      "libcfgmnt.so",
+      "libnmpapi.so",
+      "libwlcsm.so",
+      "libmssl.so",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libdl.so.2",
+      "libdisk.so",
+      "libpthread.so.0",
+      "libjson-c.so.2",
+      "libcurl.so.4",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/cfg_client",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libjson-c.so.2",
+      "libm.so.6",
+      "libcfgmnt.so",
+      "libnmpapi.so",
+      "libamas-utils.so",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libwlcsm.so",
+      "libsqlite3.so.0",
+      "libnt.so",
+      "libwlc_nt_client.so",
+      "libasuslog.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/cfg_reportstatus",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libjson-c.so.2",
+      "libm.so.6",
+      "libcfgmnt.so",
+      "libnmpapi.so",
+      "libamas-utils.so",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libwlcsm.so",
+      "libsqlite3.so.0",
+      "libnt.so",
+      "libwlc_nt_client.so",
+      "libasuslog.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/cfg_server",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libjson-c.so.2",
+      "libm.so.6",
+      "libcfgmnt.so",
+      "libnmpapi.so",
+      "libamas-utils.so",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libwlcsm.so",
+      "libsqlite3.so.0",
+      "libnt.so",
+      "libwlc_nt_client.so",
+      "libasuslog.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/charon-cmd",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libstrongswan.so.0",
+      "libcharon.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/chilli",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libpthread.so.0",
+      "librt.so.1",
+      "libnvram.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/chilli_opt",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libpthread.so.0",
+      "librt.so.1",
+      "libnvram.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/chilli_query",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libpthread.so.0",
+      "librt.so.1",
+      "libnvram.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/chilli_radconfig",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libpthread.so.0",
+      "librt.so.1",
+      "libnvram.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/chilli_response",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libpthread.so.0",
+      "librt.so.1",
+      "libnvram.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/curl",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libcurl.so.4",
+      "libdl.so.2",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/dropbox_client",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libwlcsm.so",
+      "libshared.so",
+      "libpthread.so.0",
+      "libnvram.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/email",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libm.so.6",
+      "libnt.so",
+      "libsqlite3.so.0",
+      "libpthread.so.0",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/find_cap",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libcurl.so.4",
+      "libasc.so",
+      "libm.so.6",
+      "libshared.so",
+      "libnvram.so",
+      "libjson-c.so.2",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libwlcsm.so",
+      "libbwdpi.so",
+      "libnt.so",
+      "libsqlite3.so.0",
+      "libpthread.so.0",
+      "libcodb.so",
+      "libconn_diag.so",
+      "libnmpapi.so",
+      "libamas-utils.so",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/ftpclient",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libwlcsm.so",
+      "libpthread.so.0",
+      "libiconv.so.2",
+      "libcurl.so.4",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libxml2.so.2",
+      "libnvram.so",
+      "libshared.so",
+      "libstdc++.so.6",
+      "libm.so.6",
+      "libgcc_s.so.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/google_client",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libwlcsm.so",
+      "libgcc_s.so.1",
+      "libpthread.so.0",
+      "libnvram.so",
+      "libshared.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libm.so.6",
+      "libsmartsync_api.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/hostapd",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libnvram.so",
+      "libshared.so",
+      "librt.so.1",
+      "libceshared.so",
+      "libnl-3.so.200",
+      "libnl-genl-3.so.200",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/hostapd_cli",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libnvram.so",
+      "libshared.so",
+      "librt.so.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/httpd",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libwlcsm.so",
+      "libbcm_flashutil.so",
+      "libgen_util.so",
+      "libsys_util.so",
+      "libbcm_util.so",
+      "libbcm_boardctl.so",
+      "libm.so.6",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libdl.so.2",
+      "libgcc_s.so.1",
+      "libdisk.so",
+      "libmssl.so",
+      "libovpn.so",
+      "libjson-c.so.2",
+      "libbwdpi.so",
+      "libbwdpi_sql.so",
+      "libsqlite3.so.0",
+      "libpthread.so.0",
+      "libnt.so",
+      "libletsencrypt.so",
+      "libcfgmnt.so",
+      "libnmpapi.so",
+      "libcodb.so",
+      "libconn_diag.so",
+      "libdns_app_client.so",
+      "libpasswd.so",
+      "libasuslog.so",
+      "libwebapi.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/inadyn",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libwlcsm.so",
+      "libgcc_s.so.1",
+      "libpthread.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libnvram.so",
+      "libshared.so",
+      "libdl.so.2",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/infosvr",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libgcc_s.so.1",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libjson-c.so.2",
+      "libamas-utils.so",
+      "libpthread.so.0",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/lighttpd",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libdl.so.2",
+      "libsqlite3.so.0",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/lighttpd-arpping",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/lighttpd-monitor",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/mastiff",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libwlcsm.so",
+      "libasuslog.so",
+      "libcurl.so.4",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libxml2.so.2",
+      "libjson-c.so.2",
+      "libdl.so.2",
+      "librt.so.1",
+      "libnvram.so",
+      "libshared.so",
+      "libsqlite3.so.0",
+      "libnt.so",
+      "libws.so",
+      "libgcc_s.so.1",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/networkmap",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libcurl.so.4",
+      "libasc.so",
+      "libm.so.6",
+      "libshared.so",
+      "libnvram.so",
+      "libjson-c.so.2",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libwlcsm.so",
+      "libbwdpi.so",
+      "libnt.so",
+      "libsqlite3.so.0",
+      "libpthread.so.0",
+      "libcodb.so",
+      "libconn_diag.so",
+      "libnmpapi.so",
+      "libamas-utils.so",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/nt_center",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libnt.so",
+      "libsqlite3.so.0",
+      "libm.so.6",
+      "libjson-c.so.2",
+      "libwlcsm.so",
+      "libnvram.so",
+      "libshared.so",
+      "libpthread.so.0",
+      "libgcc_s.so.1",
+      "libcurl.so.4",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libxml2.so.2",
+      "libws.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/nt_monitor",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libnt.so",
+      "libsqlite3.so.0",
+      "libm.so.6",
+      "libjson-c.so.2",
+      "libwlcsm.so",
+      "libnvram.so",
+      "libshared.so",
+      "libpthread.so.0",
+      "libgcc_s.so.1",
+      "libcurl.so.4",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libxml2.so.2",
+      "libws.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/openssl",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libdl.so.2",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/openvpn",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpthread.so.0",
+      "libz.so.1",
+      "libgcc_s.so.1",
+      "libnsl.so.1",
+      "liblzo2.so.2",
+      "liblz4.so.1",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libdl.so.2",
+      "libcap-ng.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/pki",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libstrongswan.so.0",
+      "libtls.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/pppd",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libcrypt.so.1",
+      "libcrypto.so.1.1",
+      "libdl.so.2",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/rc",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libconn_diag.so",
+      "libnvram.so",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libdl.so.2",
+      "libgen_util.so",
+      "libsys_util.so",
+      "libwlcsm.so",
+      "libbcm_flashutil.so",
+      "libbcm_util.so",
+      "libbcm_boardctl.so",
+      "libwpa_client.so",
+      "libbcm.so",
+      "libgcc_s.so.1",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libbwdpi.so",
+      "libdisk.so",
+      "libsqlite3.so.0",
+      "libnt.so",
+      "libwebapi.so",
+      "libcfgmnt.so",
+      "libnmpapi.so",
+      "libovpn.so",
+      "libasc.so",
+      "libletsencrypt.so",
+      "libcurl.so.4",
+      "libjson-c.so.2",
+      "libm.so.6",
+      "libamas-utils.so",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libasuslog.so",
+      "libcodb.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/snmpd",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libnetsnmpagent.so.35",
+      "libnetsnmpmibs.so.35",
+      "libnetsnmp.so.35",
+      "libdl.so.2",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/sbin/stubby",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libpthread.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/swanctl",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libvici.so.0",
+      "libstrongswan.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/vsftpd",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libdisk.so",
+      "libwlcsm.so",
+      "libgcc_s.so.1",
+      "libjson-c.so.2",
+      "libnsl.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/webdav_client",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libwlcsm.so",
+      "libpthread.so.0",
+      "libnvram.so",
+      "libneon.so.27",
+      "libxml2.so.2",
+      "libshared.so",
+      "libz.so.1",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/wget",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libiconv.so.2",
+      "libpcre.so.1",
+      "libuuid.so.1",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libz.so.1",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/wpa_cli-2.7",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libshared.so",
+      "libnvram.so",
+      "librt.so.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/wpa_supplicant-2.7",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libshared.so",
+      "libnvram.so",
+      "librt.so.1",
+      "libceshared.so",
+      "libnl-3.so.200",
+      "libnl-genl-3.so.200",
+      "libdl.so.2",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/sbin/wps_pbcd",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libdl.so.2",
+      "libgen_util.so",
+      "libsys_util.so",
+      "libwlcsm.so",
+      "libbcm_flashutil.so",
+      "libbcm_util.so",
+      "libbcm_boardctl.so",
+      "libwpa_client.so",
+      "libbcm.so",
+      "libgcc_s.so.1",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libbwdpi.so",
+      "libdisk.so",
+      "libsqlite3.so.0",
+      "libnt.so",
+      "libwebapi.so",
+      "libcfgmnt.so",
+      "libnmpapi.so",
+      "libovpn.so",
+      "libasc.so",
+      "libletsencrypt.so",
+      "libcurl.so.4",
+      "libjson-c.so.2",
+      "libm.so.6",
+      "libamas-utils.so",
+      "liblldpctl.so.4",
+      "libjansson.so.4",
+      "libasuslog.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libamas-utils.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libjansson.so.4",
+      "libwlcsm.so",
+      "libjson-c.so.2",
+      "libcrypto.so.1.1",
+      "libnvram.so",
+      "libshared.so",
+      "liblldpctl.so.4",
+      "libdl.so.2",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libasc.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libdl.so.2",
+      "libwlcsm.so",
+      "libpthread.so.0",
+      "libm.so.6",
+      "libcurl.so.4",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libjson-c.so.2",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libasd.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libdl.so.2",
+      "libwlcsm.so",
+      "libpthread.so.0",
+      "libm.so.6",
+      "libcurl.so.4",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libasc.so",
+      "libjson-c.so.2",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libasusnatnl.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libnsl.so.1",
+      "librt.so.1",
+      "libpthread.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libstdc++.so.6",
+      "libshared.so",
+      "libnvram.so",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libawsiot_ipc.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libwlcsm.so",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libjson-c.so.2",
+      "libdl.so.2",
+      "libcurl.so.4",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libcurl.so.4.8.0",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libdl.so.2",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libletsencrypt.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libshared.so",
+      "libwlcsm.so",
+      "libnvram.so",
+      "libcrypt.so.1",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/liblightsql.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libsqlite3.so.0",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libmssl.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libneon.so.27.3.2",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libxml2.so.2",
+      "libdl.so.2",
+      "libgcc_s.so.1",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libnetsnmp.so.35.0.0",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libcrypto.so.1.1",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libnetsnmpagent.so.35.0.0",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libnetsnmp.so.35",
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libnetsnmpmibs.so.35.0.0",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libnetsnmpagent.so.35",
+      "libnetsnmp.so.35",
+      "libcrypto.so.1.1",
+      "libdl.so.2",
+      "libm.so.6",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libovpn.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libnvram.so",
+      "libshared.so",
+      "libcrypt.so.1",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libsmartsync_api.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libnvram.so",
+      "libshared.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libxml2.so.2",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libssl.so.1.1",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libcrypto.so.1.1",
+      "libdl.so.2",
+      "libpthread.so.0",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/libwpa_client.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libcrypto.so.1.1",
+      "libm.so.6",
+      "libssl.so.1.1",
+      "libpthread.so.0",
+      "libshared.so",
+      "libnvram.so",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_access.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_aicloud_auth.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "liblightsql.so",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_aicloud_invite.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_aicloud_sharelink.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_aidisk_access.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "liblightsql.so",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_alias.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_auth.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libcrypt.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_captive_portal_uam.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_compress.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_create_captcha_image.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_dirlisting.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_indexfile.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_query_field_json.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_redirect.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_rewrite.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_smbdav.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libsqlite3.so.0",
+      "liblightsql.so",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_staticfile.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_userdir.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_usertrack.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/mod_webdav.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1",
+      "libssl.so.1.1"
+    ],
+    "needed": [
+      "libpcre.so.1",
+      "libsqlite3.so.0",
+      "liblightsql.so",
+      "libshared.so",
+      "libnvram.so",
+      "libwlcsm.so",
+      "libpasswd.so",
+      "libcrypto.so.1.1",
+      "libssl.so.1.1",
+      "libcurl.so.4",
+      "libpthread.so.0",
+      "libdisk.so",
+      "libsmbclient.so.0",
+      "libxml2.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/charon",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libstrongswan.so.0",
+      "libcharon.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/libcharon.so.0.0.0",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libstrongswan.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/libipsec.so.0.0.0",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libstrongswan.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/libstrongswan.so.0.0.0",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/libtls.so.0.0.0",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libstrongswan.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/libvici.so.0.0.0",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libstrongswan.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/starter",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libstrongswan.so.0",
+      "libcharon.so.0",
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/stroke",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libstrongswan.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/xfrmi",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libstrongswan-kernel-netlink.so",
+      "libstrongswan.so.0",
+      "libcharon.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/netatalk/uams_dhx_passwd.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libcrypt.so.1",
+      "libcrypto.so.1.1",
+      "libdl.so.2",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/netatalk/uams_randnum.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libcrypto.so.1.1",
+      "libdl.so.2",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-acert.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-aes.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-agent.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-attr.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-cmac.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-constraints.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-counters.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-curve25519.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-des.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-dnskey.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-drbg.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-eap-identity.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-eap-md5.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-eap-mschapv2.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-eap-peap.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libtls.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-eap-tls.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libtls.so.0",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-fips-prf.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-gcm.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-hmac.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-kdf.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-kernel-netlink.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-md4.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-md5.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-nonce.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-openssl.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pem.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pgp.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pkcs1.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pkcs12.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pkcs7.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pkcs8.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pubkey.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-random.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-rc2.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-resolve.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-revocation.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-sha1.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-sha2.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-socket-default.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-sshkey.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-stroke.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-updown.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-vici.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-x509.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-xauth-generic.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6"
+    ]
+  },
+  {
+    "file": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-xcbc.so",
+    "bits": 32,
+    "machine": "EM_ARM",
+    "ssl": [
+      "libssl.so.1.1",
+      "libcrypto.so.1.1"
+    ],
+    "needed": [
+      "libgcc_s.so.1",
+      "libssl.so.1.1",
+      "libcrypto.so.1.1",
+      "libpthread.so.0",
+      "libdl.so.2",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux.so.3"
+    ]
+  }
+]

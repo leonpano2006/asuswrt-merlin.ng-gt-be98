@@ -1,0 +1,24 @@
+--- a/release/src/router/openssl11-compat/crypto_compat.c
++++ b/release/src/router/openssl11-compat/crypto_compat.c
+@@ -56,7 +56,7 @@
+  * libcrypto.so.1.1 should not see a 3.x version number.
+  */
+ #define COMPAT_OPENSSL_VERSION_NUM 0x1010100fUL
+-#define LIBCRYPTO_REAL_PATH "/usr/lib/libcrypto.so.3"
++#define LIBCRYPTO_REAL_PATH "/usr/lib/arm-linux-gnueabi/libcrypto.so.3"
+ 
+ static __attribute__((noreturn)) void compat_fatal(const char *what, const char *detail)
+ {
+--- a/release/src/router/openssl11-compat/ssl_compat.c
++++ b/release/src/router/openssl11-compat/ssl_compat.c
+@@ -28,8 +28,8 @@
+ 	_Exit(127);
+ }
+ 
+-#define LIBCRYPTO_REAL_PATH "/usr/lib/libcrypto.so.3"
+-#define LIBSSL_REAL_PATH "/usr/lib/libssl.so.3"
++#define LIBCRYPTO_REAL_PATH "/usr/lib/arm-linux-gnueabi/libcrypto.so.3"
++#define LIBSSL_REAL_PATH "/usr/lib/arm-linux-gnueabi/libssl.so.3"
+ 
+ static void *volatile ssl_handle_cache;
+ 

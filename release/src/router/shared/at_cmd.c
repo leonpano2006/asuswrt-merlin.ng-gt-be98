@@ -28,7 +28,7 @@ static inline int Gobi_AtCommand(int unit, const char *cmd, const char *file)
 	if (cmd == NULL || file == NULL)
 		return -1;
 
-	while((fd = open(lock_file, O_CREAT | O_RDWR)) < 0 || flock(fd, LOCK_EX /*| LOCK_NB*/) < 0)
+	while((fd = open(lock_file, O_CREAT | O_RDWR, 0600)) < 0 || flock(fd, LOCK_EX /*| LOCK_NB*/) < 0)
 	{
 		if(fd >= 0)
 		{
@@ -447,4 +447,3 @@ char * Gobi_BandChannel(int unit, char *line, int size)
 }
 
 #endif	/* RTCONFIG_USB_MODEM */
-

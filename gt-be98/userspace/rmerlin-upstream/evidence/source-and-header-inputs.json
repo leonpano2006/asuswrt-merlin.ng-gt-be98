@@ -1,0 +1,1729 @@
+{
+  "sources": {
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/shutils.c": {
+      "object": "shutils.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/shutils.c",
+      "sha256": "ba8a472fc69777c70f824151136de6f709b5fd18ffc560c7a1c378f97952a25a",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/defaults.c": {
+      "object": "defaults.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/defaults.c",
+      "sha256": "dffc0f92eddc6290d982206d5db3db99d2e1c2d9a39482420f0a5e2894d616de",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/model.c": {
+      "object": "model.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/model.c",
+      "sha256": "295e9c92f16b416158b4b23c80106005bb01f97a91c6085e5dbc9ae46ef9a529",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/rtstate.c": {
+      "object": "rtstate.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/rtstate.c",
+      "sha256": "c58381033e94cac0a7d7d1bf34d6f8b6127a16a067d0ff84268575d41979d4b8",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/boardapi.c": {
+      "object": "boardapi.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/boardapi.c",
+      "sha256": "91f879d43de5a3471687646d286b12c5809bf1026b069eb7dca1630daecdb383",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/network_utility.c": {
+      "object": "network_utility.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/network_utility.c",
+      "sha256": "8417f567f76d1ab7f1f31b58e311e9769f369a7a14ff1e567bb51015659313f3",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/misc.c": {
+      "object": "misc.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/misc.c",
+      "sha256": "0fea3c59f6a879259056c26e74b6bcc8735c98c612d5b2bcabe9a6c8d4e51650",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/version.c": {
+      "object": "version.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/version.c",
+      "sha256": "5b42e62f4450d081141c9aa11c74c0de78551eae33494a7db4c553cb1039180a",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/files.c": {
+      "object": "files.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/files.c",
+      "sha256": "bc6e44592a29f09d6e1e4ce76825b98d14de850ad7f41e70240ccc055b6de3db",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/strings.c": {
+      "object": "strings.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/strings.c",
+      "sha256": "de719a85bca1dca69202dda3780b0f98c28d420b88e522c573405c94d8e29ce9",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/process.c": {
+      "object": "process.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/process.c",
+      "sha256": "991bf7940b94d5665fa71d35606f7c1431973fee7032228e0668f07cd2d9614c",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/bin_sem_asus.c": {
+      "object": "bin_sem_asus.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/bin_sem_asus.c",
+      "sha256": "fba04e223e5d830ab3fde835a98d53631e26607900a63b6635152c51aaaa8824",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/semaphore.c": {
+      "object": "semaphore.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/semaphore.c",
+      "sha256": "aaf739ca918a1a6358ce5189fdcb9b63d9ae617407e06abb4d3902d8a7d2ac39",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/pids.c": {
+      "object": "pids.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/pids.c",
+      "sha256": "0e8f8fd08503a6172e33afbb9c4c2bac6b1756a9a233fb2cc0d46242ff917782",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/notify_rc.o": {
+      "object": "prebuild/notify_rc.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/notify_rc.o",
+      "sha256": "31a5f69b8ebacc6a5daade1503c30ab50cc75a94c93e601b888c4c60491faa32",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/discover.c": {
+      "object": "discover.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/discover.c",
+      "sha256": "ef888c8f33bc39decdcd33ca76f920c53bdf5ab0315f52abe0e37234968c5d07",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/base64.c": {
+      "object": "base64.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/base64.c",
+      "sha256": "9e96107d5482eec6a10b575c90209b52710a37268d1954642f87b8d0b8107e8f",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/nvparse.c": {
+      "object": "nvparse.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/nvparse.c",
+      "sha256": "bdc0f1484524bde7ec5e19405cac26c17fadbe2f164605bc30f2e9205e56a837",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/bwdpi_utils.c": {
+      "object": "bwdpi_utils.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/bwdpi_utils.c",
+      "sha256": "3711ff490f794068ef63281b4012631f053b1d3c6dc1e08359a7d486b0a842a0",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/mac_name_tbl.c": {
+      "object": "mac_name_tbl.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/mac_name_tbl.c",
+      "sha256": "e515198e38a48569a4002e75a2644d5437ce15e207c028d518eda42c61eabb5b",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/stun.c": {
+      "object": "stun.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/stun.c",
+      "sha256": "dd425b0c3e3059ec46c64c46a249a0fb3e583f4a1949dff5085a4517045cd71e",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/scripts.c": {
+      "object": "scripts.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/scripts.c",
+      "sha256": "386d4582e1d84725cd4c6ef003d5c2a07bee13f624aacac3bc5c7264c6160403",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/llist.c": {
+      "object": "llist.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/llist.c",
+      "sha256": "8f91da73481ed167a5e31cd40666586d1c5c1ac26a23ecd5efb8955cf4f38a30",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/mtlan_utils.c": {
+      "object": "mtlan_utils.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/mtlan_utils.c",
+      "sha256": "1d19f50c0bc694809297c58e9bd8f02069386609dcf929ac6e92df560665b5aa",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/amas_wgn_shared.o": {
+      "object": "prebuild/amas_wgn_shared.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/amas_wgn_shared.o",
+      "sha256": "d5903b4aee16db987118d1c598a5730c5e84c81dcaeb7c538a940268532eafdd",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/amas_apg_shared.o": {
+      "object": "prebuild/amas_apg_shared.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/amas_apg_shared.o",
+      "sha256": "a935538e69561580438489ab8ea3dea9b2dc5d8611bbbb75dd38473a55851818",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/timer_utils.c": {
+      "object": "timer_utils.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/timer_utils.c",
+      "sha256": "56f7fac7f0844738883105f67571a36626022d77644a880eebbd578ae67ee78c",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/confmtd_utils.c": {
+      "object": "confmtd_utils.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/confmtd_utils.c",
+      "sha256": "867f67c1e4c65088b2abbca300a83978304222899d8112590782a90e02896b03",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/wl.c": {
+      "object": "wl.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/wl.c",
+      "sha256": "6d7c09d92d4ba0888c70a30c781b8248de45338e1f6897b9797d8c17394c4ded",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/wl_linux.c": {
+      "object": "wl_linux.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/wl_linux.c",
+      "sha256": "0ce44cf7f89c11367f122862ec3a0a65bdd44697610de5867ea0ee3b1d0fbc32",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/broadcom/broadcom.c": {
+      "object": "broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/broadcom/broadcom.c",
+      "sha256": "7648d001d035f597f584df1eb989c59d173a88e5e71caedec5ad2abeb7439494",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/api-broadcom.o": {
+      "object": "prebuild/api-broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/api-broadcom.o",
+      "sha256": "39ddae4e2635e72e5a70ddfde6810687a8705dfb6fbb24c8a18b013b7b53abf4",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/usb.c": {
+      "object": "usb.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/usb.c",
+      "sha256": "0f5cbe7ca815d979c620428139c5c5b87e3acd20f6f6b030398f8f174997385b",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/util.c": {
+      "object": "util.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/util.c",
+      "sha256": "00d10502c36ff6b1386234b3b9fcb2edeca6f985c67319d4010f2764b43f56ba",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/linux_swap.c": {
+      "object": "linux_swap.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/linux_swap.c",
+      "sha256": "433249df473ab22e095841b2c12831cd09379ec37246027fbb64d2d0bffc2a0d",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/ext.c": {
+      "object": "ext.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/ext.c",
+      "sha256": "14d05cff0bd703886b431c8fbbfae21888ff3f02735b26749912973d5e17a2ce",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/fat.c": {
+      "object": "fat.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/fat.c",
+      "sha256": "0f8da0d550769b562b874e1f364e4a6032ed649b68e7fe7b3689d8b16f9da907",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/ntfs.c": {
+      "object": "ntfs.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/ntfs.c",
+      "sha256": "1813fa15d6423cbd0f27243a222f0abfee329bac3872e16c33b350fd9eec0ab7",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/hfs.c": {
+      "object": "hfs.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/hfs.c",
+      "sha256": "924311fd7b16fc36f6e7651b1216dac3a943d7b28a9c31bb0e6f75bd232b28ad",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/libbb/hash_md5.c": {
+      "object": "hash_md5.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/busybox/libbb/hash_md5.c",
+      "sha256": "68dce02fd1f7b139b242374b3af5d05aa43f75b55e9f778e2ff7aac475da9289",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/libbb/bb_bswap_64.c": {
+      "object": "bb_bswap_64.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/busybox/libbb/bb_bswap_64.c",
+      "sha256": "d438950e5cafdfca115b1082f106b67b291fb116af27a0794f98ceee7d32b37b",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/btrfs.c": {
+      "object": "btrfs.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/btrfs.c",
+      "sha256": "31fc0b7e3f94cee6d038962534fa594d41da6df8ca86f34c0c677bab75c754e3",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/xfs.c": {
+      "object": "xfs.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/xfs.c",
+      "sha256": "c04a01af0b7fbd9a6e5392ccc60a50a0964d58cf75ff0949a7b49c9aff0540be",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/volume_id.c": {
+      "object": "volume_id.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/volume_id.c",
+      "sha256": "9c4c1dee1fc9e07e1a73291dd5ec43d01c7ad612647ead8a4550b5fd333f06bc",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/at_cmd.c": {
+      "object": "at_cmd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/at_cmd.c",
+      "sha256": "6b6c06a677b6cd98fa75ae3d0d7ae10c0642a50d4b5111d5e65cedd1f19198e6",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/netlink.c": {
+      "object": "netlink.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/netlink.c",
+      "sha256": "818b9f5c05bf5f6f2a4d0e9f7617edfd98423cd5af6211831881607c263d3a87",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/getifaddrs.c": {
+      "object": "getifaddrs.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/getifaddrs.c",
+      "sha256": "1d69be9311220e95a26848c8f1b95b50de137716649b5b4099d37d13178dd76f",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/tcode.o": {
+      "object": "prebuild/tcode.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/tcode.o",
+      "sha256": "a2dfc0582e96fd20f2d3449f6de8eb1971a9078cb2642ff4d8e1eb9ab0117757",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/shutils_private.o": {
+      "object": "prebuild/shutils_private.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/shutils_private.o",
+      "sha256": "cb47a6e2ecf3bab24cad688f0d54cf8b3f2b2eaad23725d927487a60036256af",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/spwenc.o": {
+      "object": "prebuild/spwenc.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/spwenc.o",
+      "sha256": "6f81e07642c69c545874f6e644eff8d6e57129e6855a4f9a9966d1124737d77a",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/private.o": {
+      "object": "private.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/private.o",
+      "sha256": "ae1a7e497d8a1f3fee943d8914ce2e925684a3b849c6985ed29e6c0780b5e73d",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/wlif_utils_ax.c": {
+      "object": "wlif_utils_ax.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/wlif_utils_ax.c",
+      "sha256": "41b5d86175a06bd9d9f7701d998253acdafed0165cb32b88bd2e9678d44d352e",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/linux_timer_ax.c": {
+      "object": "linux_timer_ax.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/linux_timer_ax.c",
+      "sha256": "53ea98b95b3bb73628d0b5e48ba636ad3c0d103400bf3665f4fb37deb4b0ce71",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/UdpLib.c": {
+      "object": "UdpLib.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/UdpLib.c",
+      "sha256": "ba647b2bbe218e92ec4c4d240e5ba1ba06707d162301f79b96adb6f8e63ecf05",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/bcmutils.o": {
+      "object": "bcmutils.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/bcmutils.o",
+      "sha256": "31357b9f1de6b469dcdc79a5afa85cca0ee57f2904ffe23097a8bfac32a543db",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/bcmwifi_channels.o": {
+      "object": "bcmwifi_channels.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/bcmwifi_channels.o",
+      "sha256": "65064abbc6a924c90c9a00abe7b5879af95ace1ea6da1a7b5160eaa4cb2ab2dc",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/ethswctl.o": {
+      "object": "prebuild/ethswctl.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/ethswctl.o",
+      "sha256": "e44e9c5ba6da1d04601303af73e08559b9bc41d875aa9411e34c080dc401bf18",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/ethctl_cmd.o": {
+      "object": "prebuild/ethctl_cmd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/ethctl_cmd.o",
+      "sha256": "424a4caee66376cd9f621f02c183dc90dde70692ceb2175701f4b8da94f17d2d",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/memaccess.c": {
+      "object": "memaccess.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/memaccess.c",
+      "sha256": "22a537196fdeb077f4e7c4d4a06853f251bdb084eb9b0a8192ece047a41a5b30",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/bcm_usched.c": {
+      "object": "bcm_usched.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/bcm_usched.c",
+      "sha256": "108a4207fc31d7be44e0f9ca3bd5501ca0aa9be5203212b11e2057c684e77b7f",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/broadcom/bcm_stamon.c": {
+      "object": "bcm_stamon.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/broadcom/bcm_stamon.c",
+      "sha256": "82102406a0560cea5cb8fcca88f34c79d791104e15ee4d9c85a50abd3c4cf6db",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/amas_dwb.o": {
+      "object": "prebuild/amas_dwb.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/amas_dwb.o",
+      "sha256": "6277025f093eed49ef42ab7807a0ec711a96370abcac21905536e91bfa7799c8",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/amas_utils.o": {
+      "object": "prebuild/amas_utils.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/amas_utils.o",
+      "sha256": "4692714c3d3df632470540e5323da6aa6ac63db76bb45b7ce0aefb8bd11d2b93",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sched_v2.c": {
+      "object": "sched_v2.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/sched_v2.c",
+      "sha256": "a76dd8589943726c45f51adac280ff79210df6a27726fdbf53ef7e55ad434d90",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/bcmxtlv.o": {
+      "object": "bcmxtlv.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/bcmxtlv.o",
+      "sha256": "4a30f98bbd0424e7d52b2363777998d3ff39445e6f9ef13d9fb48bcb72069ff7",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/broadcom/rtkswitch.c": {
+      "object": "rtkswitch.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/broadcom/rtkswitch.c",
+      "sha256": "eaa753ea6693d713e414ebc4b076af0b61917d609ff744246ce6fd21f2962afb",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/sw-hw-auth/prebuild/GT-BE98/sw_auth.o": {
+      "object": "sw_auth.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/sw-hw-auth/prebuild/GT-BE98/sw_auth.o",
+      "sha256": "eb6c4408ec2701428b9f7caf85da18e6fb20c0fd63d7a7dda7568d51d644f6bc",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/sw-hw-auth/prebuild/GT-BE98/hw_auth.o": {
+      "object": "hw_auth.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/sw-hw-auth/prebuild/GT-BE98/hw_auth.o",
+      "sha256": "8a53661fe1c16375463130b154a2935c5f976a6ad7f092b39224272a6c51050f",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/aaews/prebuild/GT-BE98/aae_ipc.o": {
+      "object": "aae_ipc.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/aaews/prebuild/GT-BE98/aae_ipc.o",
+      "sha256": "431c5a917d7a5af7550eebf3b9de0211553afec680be3dc570dfc924025ba753",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/common_utils.c": {
+      "object": "common_utils.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/common_utils.c",
+      "sha256": "29bea466dab468c55cd0cece5d8cdff3ba62fae3844a09762b5f4dcb5a7c7090",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/nvpriv.o": {
+      "object": "nvpriv.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/nvpriv.o",
+      "sha256": "e9e73c3c4002f3d5ce3207e6042a7772d791b96b05e742cd5221d7f188119a1d",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/vpn_utils.c": {
+      "object": "vpn_utils.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/vpn_utils.c",
+      "sha256": "869a7d8dfe5d77018035979ab9c97a9191b68c50ec4b86320e651c313062ea56",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/uu_utils.o": {
+      "object": "prebuild/uu_utils.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/shared/prebuild/GT-BE98/uu_utils.o",
+      "sha256": "769827f06de00fc94408c1e4403e21c564f46d1a07aca88a2f382c576b9a3493",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_config.c": {
+      "object": "openvpn_config.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_config.c",
+      "sha256": "d9228c61a39aa2ef9b3e2e7279a3803f3d3c3c87a3f25cac018b6950a74f291e",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_control.c": {
+      "object": "openvpn_control.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_control.c",
+      "sha256": "5ee5ba1f5e1450994f97e35d59a8a1e036ec7f69a10d8249748cd2b744de98ae",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_setup.c": {
+      "object": "openvpn_setup.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_setup.c",
+      "sha256": "bc088132ea7ea5f7ed4ca117044545beea7c944cc092a0b214810d6a2c412983",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_options.c": {
+      "object": "openvpn_options.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_options.c",
+      "sha256": "df43e0849facc4b23642e01b35ae930a94c2e25525f79e60a1f3c688ac70b9c9",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/amvpn_routing.c": {
+      "object": "amvpn_routing.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/amvpn_routing.c",
+      "sha256": "7fbe55406429fb6c8b97693017ce8aa8b8ad8f8db292b6e4d17dcdccd6ba5122",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_utils.c": {
+      "object": "openvpn_utils.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_utils.c",
+      "sha256": "bbe8860c82d199199f90dfaab5e97484cf9a5e30e0f3ebab6e3de071f8b43fa3",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc.c": {
+      "object": "rc.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc.c",
+      "sha256": "899e9ab9a2e239dc80fb32f53faa8e09248aec6ff34c9e45530aa8bc98e050fb",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/init.c": {
+      "object": "init.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/init.c",
+      "sha256": "39c052455087a93201a09db3a043219754815ab836091fda149e91f94d4c3153",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/interface.c": {
+      "object": "interface.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/interface.c",
+      "sha256": "cb31fe46d3a1840bc20864386ac63d1eead7bdf9f4fd7e5700fc756e710e9264",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/lan.c": {
+      "object": "lan.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/lan.c",
+      "sha256": "383664aad7fcd86ee5987406d41d284ffab9995e1b814132f88ace7b973e600d",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/wireless.c": {
+      "object": "wireless.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/wireless.c",
+      "sha256": "dfece1992bd68dac3204309907520d7f3645f7bc3eae709f03afb7cd2b92401a",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/s46comm.o": {
+      "object": "s46comm.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/s46comm.o",
+      "sha256": "7cc148e8994ad6d82ba4fe270c6b016f144ef4531369903c8570ea10b08b9247",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/wan.c": {
+      "object": "wan.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/wan.c",
+      "sha256": "d15a04710eee1ad4f5a95f634bd8152505daf97f5a24eb11e92a58c9fcac5cf0",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pppd.c": {
+      "object": "pppd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pppd.c",
+      "sha256": "73dfe0d3449b50a43c07cd51e88207ab52566bc06d6f33754a97456c51519c16",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/auth.c": {
+      "object": "auth.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/auth.c",
+      "sha256": "9a97dedd517def9914366137dd7c20af31c26f19f97862b02db56dface4a5763",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/services.c": {
+      "object": "services.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/services.c",
+      "sha256": "33206d7e3663dcb9e5845389c3a5f58300ec910ec8f8644e1c2411466fec2b4f",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/firewall.c": {
+      "object": "firewall.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/firewall.c",
+      "sha256": "7fd12afef28fe528557489f85f7df55da912a14c848caaf354171bc5d06adc5e",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ppp.c": {
+      "object": "ppp.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ppp.c",
+      "sha256": "5cadba2445f29914ce1d23ee604328fe9c3c1ab3bb94ae6f41ffd114749a1ee7",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/common.c": {
+      "object": "common.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/common.c",
+      "sha256": "84aa8e560cc31cbef655cee0bfa1a90ed6be9f4f22fbb01d5ce0a26f8aba3186",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/conn_diag_log.c": {
+      "object": "conn_diag_log.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/conn_diag_log.c",
+      "sha256": "28c611269b64192103caafec8ab8a89893a09852605e386264c3aaf2bd6bc7b2",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/watchdog.c": {
+      "object": "watchdog.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/watchdog.c",
+      "sha256": "cb291fb74a2d59d6cf57f19dc28e866a5b1179f5fcedb3f98404e5f96a551bcf",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/check_watchdog.c": {
+      "object": "check_watchdog.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/check_watchdog.c",
+      "sha256": "bf2b990f3315ce0e3641e9ab88e8f5fd0a2f480103ffc8d127f7341dbee22af1",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/fwupg_flashing.c": {
+      "object": "fwupg_flashing.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/fwupg_flashing.c",
+      "sha256": "aa4ff16969bb0d7bdd0f2ae141e4dc377a9aa584d686682e755f19e3958c48a3",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ntp.c": {
+      "object": "ntp.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ntp.c",
+      "sha256": "80b35d51098bcc59fd65d245de0dc2c691489fc894c3f18ebd5b3013b8cfcf84",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/udhcpc.c": {
+      "object": "udhcpc.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/udhcpc.c",
+      "sha256": "adc64aa35a6a3f90430a6e21cd823205392d46f1b5ceabcd263944c9d5d765ab",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ate.c": {
+      "object": "ate.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ate.c",
+      "sha256": "51947e410876bbf77b4bb20ac8970b3b6dcfeba467111ba9f870215ff0773c2c",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/qos.c": {
+      "object": "qos.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/qos.c",
+      "sha256": "8926a0b67528a0a642fc9e8290546431c045344d05eb1793e4f66dcc57ffd3bb",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/format.c": {
+      "object": "format.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/format.c",
+      "sha256": "cf00faf0cb845604b43ec674f3f9fe587e7e6887a72ef9100438108f50e7ba84",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pctime.c": {
+      "object": "pctime.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pctime.c",
+      "sha256": "c76fc95e577887f78ea392b01e24dc8fbd6486fb443f438836ae7246c4f1cc30",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/netool.c": {
+      "object": "netool.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/netool.c",
+      "sha256": "a7d398e5438f4b9b8760e9b6bf9ae003860978f0e61a6ac881cbe49e9873eb71",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/linklist.c": {
+      "object": "linklist.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/linklist.c",
+      "sha256": "b10b3c42f35411d277da86de589fa1187326256efb010c61acf8b6a443376111",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/mtd.c": {
+      "object": "mtd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/mtd.c",
+      "sha256": "18653c5c18c3e558c95e4eeee77250d841976a5ab775471bbd4efbab34c22675",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sysdeps/init-broadcom.c": {
+      "object": "init-broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/sysdeps/init-broadcom.c",
+      "sha256": "1999ff9863b66fdd09715373e93004eedc7b785d5d52aa065cf24002aac138cf",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sysdeps/wps-broadcom.c": {
+      "object": "wps-broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/sysdeps/wps-broadcom.c",
+      "sha256": "bceaa62cb4a7e9cd1511bccab102fcbcb92cd1a46dfd574ceeb1982d91f853c5",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/broadcom.o": {
+      "object": "broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/broadcom.o",
+      "sha256": "58464cf629310b8bccd184b6ebc9e1750d167d03a548dcb30a446c4948d78778",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/ate-broadcom.o": {
+      "object": "ate-broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/ate-broadcom.o",
+      "sha256": "ba029843eae7213b0d18fd1e67a00b8ad6d6ad2f99fc614d7cd3a6ad359b8944",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd-broadcom.o": {
+      "object": "obd-broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd-broadcom.o",
+      "sha256": "0fc0aa89e157969c2115b4a612c7d18fa5f5497471bfc52717911eb226be24b8",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas-ssd-broadcom.o": {
+      "object": "amas-ssd-broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas-ssd-broadcom.o",
+      "sha256": "bebe978ec31ae07d5b64970d5cef822d62470358ada3a34a7ace9ce6b0a99695",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas-ssd-cd-broadcom.o": {
+      "object": "amas-ssd-cd-broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas-ssd-cd-broadcom.o",
+      "sha256": "301ead877d69206638ef2dfced0b49a64fcd8a47ac63b7b9de522cc48f05a741",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/private.o": {
+      "object": "prebuild/private.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/private.o",
+      "sha256": "d7dd69bcb219f15615e06baa6a4725d3847b39b01f1c179764c463c9c0abcd9f",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/wanduck.c": {
+      "object": "wanduck.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/wanduck.c",
+      "sha256": "3bb29def88916c4df6b2df37f51c970711a5128fcdd059beef7b4e388a970372",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/tcpcheck.c": {
+      "object": "tcpcheck.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/tcpcheck.c",
+      "sha256": "43cf11928712ddc253972ed50e3fecbb4e1e86cf3e59417aa44af0ed9cdb5cfd",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/usb.c": {
+      "object": "usb.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/usb.c",
+      "sha256": "12fb7caed4867b557b0297843b50ec558612101ddcd805d21ffb21e9be9755f7",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/usbled.c": {
+      "object": "usbled.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/usbled.c",
+      "sha256": "8267231d2a7ebd3f610f4dd22d903c0a7d4a7b040a218df6dfdbe6df1faafcf5",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/usb_devices.c": {
+      "object": "usb_devices.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/usb_devices.c",
+      "sha256": "01b88789b9e8693bfe69b42e961ca867123d525923c45b0b6631412c40ad6788",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ubifs.c": {
+      "object": "ubifs.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ubifs.c",
+      "sha256": "0bacea6445a78f037065cbfeecb0074c04c1ae4485b37565196bf0e2c9233e61",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ssh.c": {
+      "object": "ssh.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ssh.c",
+      "sha256": "d256ed705f18d6495fdadb031bd897fb276df3f65ad4a6c304ae2a8277334413",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/vpn.c": {
+      "object": "vpn.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/vpn.c",
+      "sha256": "d79ccb798a3381b4703d8afade41a2542387120f4711f333708b26218309bd94",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/snmpd.c": {
+      "object": "snmpd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/snmpd.c",
+      "sha256": "99a2a62670021f027e081bc72f5c01cc57e66150e9f3d494a76565ac2aca82e1",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ovpn.c": {
+      "object": "ovpn.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ovpn.c",
+      "sha256": "15a765e1bb8f89bb566408b7bf5c1f41267f1c9c2ad9ba1fd16a3906bc055e95",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/openvpn.c": {
+      "object": "openvpn.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/openvpn.c",
+      "sha256": "2c69e88f25b7b5a4ed16e40fb0152321c8eb253d5cbcaae9030ff539128f29ed",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/tpvpn.o": {
+      "object": "tpvpn.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/tpvpn.o",
+      "sha256": "236164ff49ee35203f264e3a67d70573dda7cdbf9524cdd2d8deb97253ea6931",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc_ipsec.c": {
+      "object": "rc_ipsec.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc_ipsec.c",
+      "sha256": "1c179654cf6de1eeb1710667f11d00f8108828cd003d217ffeebc7925d487017",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pc.c": {
+      "object": "pc.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pc.c",
+      "sha256": "17e13bb47b1c86d5d81cb09507809e149460d4ec9cae2c45e0509392bd052ab1",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_block.c": {
+      "object": "pc_block.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_block.c",
+      "sha256": "bffdceeee27e68574b340bb7eb111b4e4addedf72b969e93b2a2631d8909edb9",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_tmp.c": {
+      "object": "pc_tmp.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_tmp.c",
+      "sha256": "a780b114afef39dce4320d461b3bf0bba74b31c1f88b3ae98d15c0cd01144042",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_reward.c": {
+      "object": "pc_reward.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_reward.c",
+      "sha256": "f5d3982f90ed0d97b8984f325d7f61c2efb9da66bac3528df67e198206752232",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ic.c": {
+      "object": "ic.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ic.c",
+      "sha256": "44cecc7568d66417e690132a47ba2094ba24f9a5fd353640354cc2adabc4a252",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/frs_service.o": {
+      "object": "frs_service.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/frs_service.o",
+      "sha256": "632cbe8b190139a351ed48af6b8797bf33a46bab89ea58d59b6f726c4f49ce6e",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/asus_ddns.c": {
+      "object": "asus_ddns.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/asus_ddns.c",
+      "sha256": "9eade7262f2b35f0d6f685d25eddd1b3b1d6ce2d3def3f0bf7fc2002c027cf2b",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/arpreq.c": {
+      "object": "arpreq.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/arpreq.c",
+      "sha256": "0ae4b8bf658247f8fc995b49b573d3d39e7a3c29165c331153893c426088ae11",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/psta_monitor.o": {
+      "object": "psta_monitor.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/psta_monitor.o",
+      "sha256": "7e91a418de7b3056b366468dda31683ad37821d98effd8ae0621514bae561aee",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/nbr_monitor.c": {
+      "object": "nbr_monitor.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/nbr_monitor.c",
+      "sha256": "866f5e737c0758402a2aab7a21500e8e25dda09e434e570a1f77a9e16c954706",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd.o": {
+      "object": "obd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd.o",
+      "sha256": "bf3cabb104526e36d08ee6dfeea2391a8f663ed2659023e77dfe6b8b8e8ff2fc",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd_eth.o": {
+      "object": "obd_eth.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd_eth.o",
+      "sha256": "24583cdd5e5f80bee7e051f2cd4e2ade0ed8435207e857c32217f32d734f3fbf",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd_monitor.o": {
+      "object": "obd_monitor.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd_monitor.o",
+      "sha256": "30973d86e8a4b2d3ff1710b24b1051ac2ec4fd7ddb9f8121108a5450b6b7c551",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rmd.c": {
+      "object": "rmd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rmd.c",
+      "sha256": "88fa5a6f9399c64372d1bd88ebd9c68d650c231abd3416c16185d01bb07186b9",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/wpsaide.c": {
+      "object": "wpsaide.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/wpsaide.c",
+      "sha256": "73f4add4373433aaa81a3cd751f56bb4471ac4f5fa2653e584dfef7808342328",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/vpnc_fusion.c": {
+      "object": "vpnc_fusion.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/vpnc_fusion.c",
+      "sha256": "81970dc79ab4cbe1b8984963ecbd65cf419fae19a43f3efd7640eda7ac827dcb",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/vpnc_legacy.c": {
+      "object": "vpnc_legacy.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/vpnc_legacy.c",
+      "sha256": "43d548a41cd7e39ed5fdce759863636890e904372e0ebb86bab3126a48fb6d07",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sdn.c": {
+      "object": "sdn.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/sdn.c",
+      "sha256": "46be8ced06047da5abe7b0998a918b83a3f2a4f53420def693791bba1c92cadf",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/firewall_sdn.c": {
+      "object": "firewall_sdn.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/firewall_sdn.c",
+      "sha256": "c44bf8a50085422a0a13086ecd6956b7787731b56980a407e2e7dcda9c97690d",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/sdn-interface-broadcom.o": {
+      "object": "sdn-interface-broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/sdn-interface-broadcom.o",
+      "sha256": "ff53288434025130c87f142f1c554df5d872727d52cc9663f8a0c86631498ba5",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/timemachine.c": {
+      "object": "timemachine.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/timemachine.c",
+      "sha256": "0840762f40c96fbf758299c57aa62062d25035f24c02a932625986aa189316d4",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi.o": {
+      "object": "bwdpi.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi.o",
+      "sha256": "40d4e595f04d931e435fa8d9faf31e3b04007ce66a0f1fa32b749d47af42032b",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi_check.o": {
+      "object": "bwdpi_check.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi_check.o",
+      "sha256": "95d338086b592a424d9d1252126b983b3a36fac28bfc4f9b0a43d5515f8c9b1c",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi_wred_alive.o": {
+      "object": "bwdpi_wred_alive.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi_wred_alive.o",
+      "sha256": "5fda93fec2bca485a6975803920ebdef3cd6d96ec4d0d479e672eb4408962d12",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi_db_10.o": {
+      "object": "bwdpi_db_10.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi_db_10.o",
+      "sha256": "bd8722e2ca54d0a908d30a5c770759eb0d5f5ff11011429c957e6b267dfcce54",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/hour_monitor.c": {
+      "object": "hour_monitor.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/hour_monitor.c",
+      "sha256": "81659b51a35d8f208a98d34557fac5d6b6f8215b2aa5c711d63bc7b4624e4119",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/dns_dpi_check.o": {
+      "object": "dns_dpi_check.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/dns_dpi_check.o",
+      "sha256": "89e2527e29f3c40e3cce27c38e930c6396f08831e445098afc643360ad54db19",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_lib.o": {
+      "object": "amas_lib.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_lib.o",
+      "sha256": "86298872508f1f0be469ba0e82a707575dc70dc0993001ceaa70edd491521483",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/nt_mail.o": {
+      "object": "nt_mail.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/nt_mail.o",
+      "sha256": "e85e5d943182865f9db1e170bd0948c6a976aa6a3b1d45eb2f5c26f076343e2a",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/pwdec.o": {
+      "object": "pwdec.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/pwdec.o",
+      "sha256": "5b16bc5725ace43d5d46db4c515278167ba4a8e9d485eb5e98967985f0b1dcd5",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/v6plusd.o": {
+      "object": "v6plusd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/v6plusd.o",
+      "sha256": "2fcb0074856ae0de40cb1421b95b614fb4b897d49b46de26c6d2d19054c4431c",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/ocnvcd.o": {
+      "object": "ocnvcd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/ocnvcd.o",
+      "sha256": "f938f3a5b3758da81ab971990ee759e47ad581f80974f29c7b4717835df429d3",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/dslited.o": {
+      "object": "dslited.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/dslited.o",
+      "sha256": "858c03c35cf66edd4280c4cd14c27b693d52daa628604b39559687800a8d1899",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pressure.c": {
+      "object": "pressure.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pressure.c",
+      "sha256": "6df9fe802b3afb1ce3c3b03d46675089ee5c448eeeb3aee301ab1361cd3734e3",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/roamast.o": {
+      "object": "roamast.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/roamast.o",
+      "sha256": "29831d42be11b03e4b2c9a6f7de9e149378cb9e81a329a4d4645ed02a6f2b3c2",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/roamast-broadcom.o": {
+      "object": "roamast-broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/roamast-broadcom.o",
+      "sha256": "7d9ab8f7471c6b7930be1df47754b0974d797305952a60f3737fb17b12634342",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/tcode_rc.o": {
+      "object": "tcode_rc.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/tcode_rc.o",
+      "sha256": "7fe275f4c1260415fea8207fb2ac305daaedbdeaf6d609cacac6af00014e07cc",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/tcode_brcm.o": {
+      "object": "tcode_brcm.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/tcode_brcm.o",
+      "sha256": "3df11e7d3ac7b9da44c7f6020fc095c60048d7f341e100ef67226377a646a4be",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/agg_brcm.o": {
+      "object": "agg_brcm.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/agg_brcm.o",
+      "sha256": "22327ccf3d8ad86f0cc1a0a934b5842927028906f7414f2d30f6d1fec545ccee",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/dnsfilter.c": {
+      "object": "dnsfilter.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/dnsfilter.c",
+      "sha256": "07fbe1979eaf95f8c0a19d69a45585bfb1a51be1942cc138f0e612789f0bc0fd",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ntpd.c": {
+      "object": "ntpd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ntpd.c",
+      "sha256": "cb54a0ef608052db5750c0859999e37917fb485700c26f8621e9a9aad42bda3c",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_apg.o": {
+      "object": "amas_apg.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_apg.o",
+      "sha256": "7d7b069651829dd148dae0f9c2800a31b36fbcf77e3f871f0aabd1ceb1e70951",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/gpy211_war.o": {
+      "object": "gpy211_war.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/gpy211_war.o",
+      "sha256": "0fd8382a787e10bf3ed8a0c56a25f290d5d1ceae8f9cbd8cd166d7a6628a9810",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/natnl_api.c": {
+      "object": "natnl_api.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/natnl_api.c",
+      "sha256": "40e987e4b00e512dad2c3a067f6878baef81e80be2d74e4c04969674499d779a",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/erp_monitor.c": {
+      "object": "erp_monitor.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/erp_monitor.c",
+      "sha256": "5cb5d8f122733ef58591c20157ae81da8daba177081c9fa2d4a2c30f75f54cd9",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_wlcconnect.o": {
+      "object": "amas_wlcconnect.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_wlcconnect.o",
+      "sha256": "80b25dd8e938b09429261a20c14c6a738394c44da2b67ea3dac4df06b49154bf",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_bhctrl.o": {
+      "object": "amas_bhctrl.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_bhctrl.o",
+      "sha256": "611368754c01b6fa3af01f0e999a29b4a2f237cb5d633c93054dfc8ae638ec4f",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_status.o": {
+      "object": "amas_status.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_status.o",
+      "sha256": "88944da94b47e4ead039e0e33bbf566caf43cbe2d09f01c242c8a3ac45916c49",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_misc.o": {
+      "object": "amas_misc.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_misc.o",
+      "sha256": "a13d1853e8e2906b91d50b05a8c71aff43a562a1634fb8726b5a9daa077330d6",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_lanctrl.o": {
+      "object": "amas_lanctrl.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_lanctrl.o",
+      "sha256": "8cb675d7eb71b235e0441d115533633369f62a16b042bb24f67dbcabee020c88",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_ssd.o": {
+      "object": "amas_ssd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_ssd.o",
+      "sha256": "56d9c895e41032e973e6af00b0a171b6a6d7d11625e593d00cd682b1f3943b54",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_ipc.o": {
+      "object": "amas_ipc.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_ipc.o",
+      "sha256": "934fe13227282432037656d975df39889f155d0bc16099bdfdaddb7e03ee87c3",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_ssd_cd.o": {
+      "object": "amas_ssd_cd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_ssd_cd.o",
+      "sha256": "b1b2c7ff568b0b886c1a72cf2075cb5fc31e56fcdccdb103bb5df77f2db4b14b",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/hostapd_config_be.o": {
+      "object": "prebuild/hostapd_config_be.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/hostapd_config_be.o",
+      "sha256": "a5f8128868f3bedc234ddb44f619e88618c913c823f484c5836628c056952e53",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/conn_diag.o": {
+      "object": "conn_diag.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/conn_diag.o",
+      "sha256": "dd5849b6fc29a3ca458fc2293ab47ce649f42fecb06431f5d5cc57aecbd20b94",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/conn_diag-broadcom.o": {
+      "object": "conn_diag-broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/conn_diag-broadcom.o",
+      "sha256": "8e032b1e370cc59e0462f5fbecd8d5e7951ed62922762258efb5beb8f3a8b229",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/ledg.o": {
+      "object": "ledg.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/ledg.o",
+      "sha256": "e081ea3fcd976a4458979683de659bb3407bf9b5a63b1595a2d6989e06ba3ff4",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/rtkmonitor.o": {
+      "object": "rtkmonitor.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/rtkmonitor.o",
+      "sha256": "d6afcb85b603ac6406b0d5ffd4d195f7fa8c40d7a6fd6b8775158673cc3ceab4",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/dhcpc_vc_query.o": {
+      "object": "dhcpc_vc_query.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/dhcpc_vc_query.o",
+      "sha256": "eb53305311fcca01a6a0b9e9787f39ebc5a608ff365ae51d4e8bfd2fe601583a",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sched_daemon.c": {
+      "object": "sched_daemon.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/sched_daemon.c",
+      "sha256": "2f878ed815635ac1cb0b62a5643ec337312ce78f071462e6a34b0dc3b8d406dc",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/wireguard.c": {
+      "object": "wireguard.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/wireguard.c",
+      "sha256": "2241959aa6f52b4b0e1191f6e3331e2b320ad6d6a46390f9428012f47eaf5baf",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-client.c": {
+      "object": "rc-client.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-client.c",
+      "sha256": "1d17a4bb8bc6beaf7ecac2b8373004e43be78a2cef88a466426c2f13884f5558",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-manager.c": {
+      "object": "rc-manager.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-manager.c",
+      "sha256": "eeb10ab3b3669078c689d1ee7563720287872893c669a2d85214fc6197c8fbe4",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-legacy.c": {
+      "object": "rc-legacy.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-legacy.c",
+      "sha256": "5811abcb2425a139f080dfad8634cfaa79be8d863e5fe8e3988be44f21f5955f",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-services.c": {
+      "object": "rc-services.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-services.c",
+      "sha256": "971a7d7c894bef389d8a133b85b89567deadc9389c3f44345e9afee7eb8030ce",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/httpd.c": {
+      "object": "httpd.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/httpd.c",
+      "sha256": "eac4a50eb1d392ecae502f472027ca89ef14abd2b63a39c7bd3b427be6698dd7",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/cgi.c": {
+      "object": "cgi.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/cgi.c",
+      "sha256": "a8f509083c60180a145d667cee4cb19d98881f12666a15347e7d3a5b3d2f6ecf",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/ej.c": {
+      "object": "ej.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/ej.c",
+      "sha256": "34b91e1212afc9be5242fff0426310386f19c71e430bcdceb194d0e44cd1f2e4",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/web.c": {
+      "object": "web.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/web.c",
+      "sha256": "6e5d071c9246520a5376a5c20e8033f99301a8dd71590ebf8784e183c5c3c911",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/common.c": {
+      "object": "common.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/common.c",
+      "sha256": "a029d7bf8bb455daee4f62fa2fd3dd4e50c36a0166d329fcea5b61b138e04a79",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/nvram_f.c": {
+      "object": "nvram_f.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/nvram_f.c",
+      "sha256": "657fa7cd7c25ef2289b148d2dab68c82ed66d892fbe9130a0124fe074c0ed2fa",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/aspbw.c": {
+      "object": "aspbw.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/aspbw.c",
+      "sha256": "c7f5731b937e333644e03ceffbadcd71f479ed5fb611dfc7a90a8750afd9efdd",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/initial_web_hook.c": {
+      "object": "initial_web_hook.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/initial_web_hook.c",
+      "sha256": "094474325e893d8d86248588733175012081a52ad88f9530c2808af2aad33bda",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/apps.c": {
+      "object": "apps.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/apps.c",
+      "sha256": "e8ca95f4dc9f26ca57ce8d60d280212bd89f1ad2b38ad3fc75387d2b703ef101",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/sysinfo.c": {
+      "object": "sysinfo.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/sysinfo.c",
+      "sha256": "767d807997a6790aad8ba5637e4fefd1c5d1f4920b295965fcce6c5b1d16e231",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/data_arrays.c": {
+      "object": "data_arrays.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/data_arrays.c",
+      "sha256": "94e2922dbe9cd5399a474dc31eca783e89357ccd1a917c9eff0b4cce695b0854",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/sysdeps/web-broadcom-am.c": {
+      "object": "web-broadcom-am.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/sysdeps/web-broadcom-am.c",
+      "sha256": "9d23aea1bda134e8f45ae4d14429df6cb93eb9addd0f1e02404d300359e62b96",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/prebuild/GT-BE98/web-broadcom_private.o": {
+      "object": "prebuild/web-broadcom_private.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/prebuild/GT-BE98/web-broadcom_private.o",
+      "sha256": "d18285feda3692fcfdac32254aaa848b00928bbc57e2e8b43f4f8a7502508600",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/prebuild/GT-BE98/web-broadcom.o": {
+      "object": "prebuild/web-broadcom.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/prebuild/GT-BE98/web-broadcom.o",
+      "sha256": "43e7e39448e45f1a203cfc99e7fc04b053c20f5cdee919eb82e7285cbb54a261",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/prebuild/GT-BE98/pwenc.o": {
+      "object": "prebuild/pwenc.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/prebuild/GT-BE98/pwenc.o",
+      "sha256": "47bc8cb74854bb71a0f0d990f84c340fd776e6861b652615a26ed915a05d9422",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/libcaptcha.c": {
+      "object": "libcaptcha.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/libcaptcha.c",
+      "sha256": "5c6be9cef87b88a5ebe6a30956254322598a68a54d3d74b8fd70f4cfaaaa3efd",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/prebuild/GT-BE98/web_hook.o": {
+      "object": "prebuild/web_hook.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/httpd/prebuild/GT-BE98/web_hook.o",
+      "sha256": "bab992beda4bf30288a377c317f2c270bec09df95533e702c028742ab60402ae",
+      "prebuilt": true
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/infosvr/infosvr.c": {
+      "object": "infosvr.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/infosvr/infosvr.c",
+      "sha256": "0ecda00f75829eb61440eacceb33058677d3099ec6ca8bd033a620972700e63b",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/infosvr/common.c": {
+      "object": "common.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/infosvr/common.c",
+      "sha256": "af90a51f1682df054030fa703d4df926f583e344ab381a60066f5140c1f79adb",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/infosvr/packet.c": {
+      "object": "packet.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/infosvr/packet.c",
+      "sha256": "0275a1b1bc1a17b6c613a1d17eced86dd6774187c8d061206728bece4642f0bc",
+      "prebuilt": false
+    },
+    "rmerlin-integration-20260916/source-tree/release/src/router/infosvr/storage.c": {
+      "object": "storage.o",
+      "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/infosvr/storage.c",
+      "sha256": "10bf026967489c53d44f499d3fdf6f8bc586bc4d50779b440953af04a43397f2",
+      "prebuilt": false
+    }
+  },
+  "headers": {
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/version.c": "5b42e62f4450d081141c9aa11c74c0de78551eae33494a7db4c553cb1039180a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/shared.h": "50b7a16aa170f2b992405033d896f84d7a632fdab9f0fbbd72b449dda8d2e215",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/rtconfig.h": "c6694c1a31b68dc6177f04a3e41e4bc4de8964de27ebd19ccc5cad0537ff7747",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/rtstate.h": "8d8b7f185069ff18e7094b20d2169d03b36c5b9319e0cb3329e0724a0957ae74",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmnvram.h": "3146169ec90a3402a7ada6b457518fee969dd6d61170b49e69e2e1c369cd0fd6",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/typedefs.h": "d046de19fc9778f708ec26b61d16e1748a5a24dd0ad724d42b2e0c92243001c8",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmdefs.h": "b94e82e72347f1981dae65e442a008b3e3f9f560708070779bfb334c8f41c650",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/shared/bcmwifi/include/bcmwifi_channels.h": "a3d5ecc398d2e08d96b7deb9673f340c0524efa34ebf826999aa73e29c6eb409",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/shutils.h": "4057d6a223eeafd9b85f08bab19d32dcd61a61ddaaa7a90ea4ca67801a4e85f7",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/amas_wgn_shared.h": "a6e07228bae1c85d45f38980cda405f029da3cc3cf38a1a34ca2991703eb4c9e",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/amas_apg_shared.h": "31c71fb3e95b8c721d0796abe54aee3526e4d82aaa4b474a0ece77d387ec903d",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/network_utility.h": "e4ce63a34679244efddb9042ec87f8f4127c6876c312ea20e718f5f5ca64b8e7",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/mtlan_utils.h": "16b5e320355404d86e8127e7340bf7368cc5afc5c19053b4b209a11ccea42540",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sched_v2.h": "3d4d0a5de093fef330bce4a779d9d4e2185711c460bf48a6e60cee0cf335f084",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/vpn_utils.h": "17d8dec8adccb3a64e6a4a0ff9c9e4959f917a4d24d3529023721d95380ddef9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/model.h": "05c4414e9d7689f72d786877993129f220d7a6d1374be40f69bb3fa7d8adb458",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/version.h": "f25c8210fe62937c04cd981bfd903b1c58258fe7f06ed1966920ab7619974de9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/model.c": "295e9c92f16b416158b4b23c80106005bb01f97a91c6085e5dbc9ae46ef9a529",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmdevs.h": "51f1a790b81d2240d52ea5d85e96af004d98ca2ca6e027ff3fe1c3a858ca0ad0",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/comfw.h": "89838d3ce656d536bb7127f827efb16aa51f9898f9e264f39c1d3a48f425eb69",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/network_utility.c": "8417f567f76d1ab7f1f31b58e311e9769f369a7a14ff1e567bb51015659313f3",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/defaults.c": "dffc0f92eddc6290d982206d5db3db99d2e1c2d9a39482420f0a5e2894d616de",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/epivers.h": "db8f2c6d62cd3af283c81b61865852afb75f2cc01518400d2b1681115acaefef",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/epibsppatch.h": "6e0b5f26f99644a8e5306c833f9a20757c038cb492a769bf2d8bd739a52f8ca7",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/wlioctl/include/wlioctl.h": "19ee65cf3a12105eed043a1fbfaa38155107d657bce91dc95f67ab90c1b1de9e",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/ethernet.h": "b2d43add0a1d11da1ae9935ec30aa68cb8dfae66142bf2ff6952cb16c903b3a8",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/packed_section_start.h": "13faa848a7a75afcd883c2ef7734a83e930f4e6c0d54c7428cae0ce7e866da3f",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/packed_section_end.h": "4b4e188ea78e4bd09c16d6c8d5b3343be43d3eb3b6502c2770da37e214194dd9",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/bcmip.h": "51bcd40025135313dd8b86cda00f55255c946ec0e64a0390c2b9295790f68a42",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/bcmeth.h": "634eb924829a2751a039f66dc61391f796a1108d183f7b2c5877968c3b1d6f05",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/bcmipv6.h": "b7e89025c24456b3994cd0e0d1adb180c18ff326356f247341a0e6956d58c31a",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/bcmevent.h": "0679b06034b8a4906bf08225d385ede34a1826fa1c05717428758d0ab6228378",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/802.11.h": "b18148203d1dea27052e02766e0c7aa93401d2c698e1b90fcf76acb02cf4da03",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/wpa.h": "7f68f13fb6986fffd66b0f238a7523d10179861f38a2ac0d4a7f7dfcfe284712",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/802.11s.h": "991231c07e64526397fb15790b3a18bbf7e70fa61e14ab459133a5e026f75b58",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/802.1d.h": "6ce00ed483805122da63fd6889835573c6256474c49af4a90579c38a0029aec8",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/802.11ax.h": "bdc4ad2392f5a95114ebc920cbe23ebef00f221b75eeea71a562bd5cad7b6370",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/802.11az.h": "3c26e0e30bdbcd883fc0a3368b9f4ab7a6e048005801c948221983dac28d8e3b",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/802.11be.h": "f6e6da9749c50b3391e661712c7fa4edf4b843e9c00dcee6dd915279389776a8",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/shared/bcmwifi/include/bcmwifi_rates.h": "6dbabc9dc64046c7affd79efa3408a418940f1a8184fe9e51d8d25fecf3cfcb8",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/wlioctl/include/wlioctl_defs.h": "b8ed8e3c42466d7bbbbf3770d24c4a86dddca152d334f5b15e7cdb9ac1c00246",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/bcmcdc.h": "36196ea0d1b38c56fbeeea0b6a0dc73ac2fa3d1609317391deb43aa4ffd39587",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/boardapi.c": "91f879d43de5a3471687646d286b12c5809bf1026b069eb7dca1630daecdb383",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/opensource/include/bcm963xx/bcmnet.h": "b78b938c21b7adda2c8765ce0ed579e58df77c14bf03722ab8c3df83fecaa5f3",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/opensource/include/bcm963xx/bcmPktDma_defines.h": "40e7e64183299070b5a654334f94fe94a28e65b78e003e68e6f08c29c4b2d638",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/shared/opensource/include/bcm963xx/bcmtypes.h": "50f5f17cdb2e316f10bd8b2736ea41449668248859af270a500360a5f8d53454",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/files.c": "bc6e44592a29f09d6e1e4ce76825b98d14de850ad7f41e70240ccc055b6de3db",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/bin_sem_asus.c": "fba04e223e5d830ab3fde835a98d53631e26607900a63b6635152c51aaaa8824",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/bin_sem_asus.h": "ad822a9a1d0f6f07c26354783eca5e5fed15b36de607c82bdd9588d790272d79",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/process.c": "991bf7940b94d5665fa71d35606f7c1431973fee7032228e0668f07cd2d9614c",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/strings.c": "de719a85bca1dca69202dda3780b0f98c28d420b88e522c573405c94d8e29ce9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/rtstate.c": "c58381033e94cac0a7d7d1bf34d6f8b6127a16a067d0ff84268575d41979d4b8",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/semaphore.c": "aaf739ca918a1a6358ce5189fdcb9b63d9ae617407e06abb4d3902d8a7d2ac39",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/semaphore_mfp.h": "a44b0c4621bf30a2a3d9df0c9ac9e2d30ab1f4c1fb29bbdda53b85d6725f42fb",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/pids.c": "0e8f8fd08503a6172e33afbb9c4c2bac6b1756a9a233fb2cc0d46242ff917782",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/base64.c": "9e96107d5482eec6a10b575c90209b52710a37268d1954642f87b8d0b8107e8f",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/mac_name_tbl.c": "e515198e38a48569a4002e75a2644d5437ce15e207c028d518eda42c61eabb5b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/mac_name_tbl.h": "f7bdad29eb23efe02f25d6c1f0d00cf33e79da404797e89f899ce9117a56c7d9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/bwdpi_utils.c": "3711ff490f794068ef63281b4012631f053b1d3c6dc1e08359a7d486b0a842a0",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/stun.c": "dd425b0c3e3059ec46c64c46a249a0fb3e583f4a1949dff5085a4517045cd71e",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/stun.h": "49227e6acb97b4940fe16796f9ca29ca4614db9a5458d9df51b9a064549e8701",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/scripts.c": "386d4582e1d84725cd4c6ef003d5c2a07bee13f624aacac3bc5c7264c6160403",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/llist.c": "8f91da73481ed167a5e31cd40666586d1c5c1ac26a23ecd5efb8955cf4f38a30",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/llist.h": "7f64c3008d76944744ea437a764b5a8fa071096a3677bce1953d0991f112aa4a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/shutils.c": "ba8a472fc69777c70f824151136de6f709b5fd18ffc560c7a1c378f97952a25a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/discover.c": "ef888c8f33bc39decdcd33ca76f920c53bdf5ab0315f52abe0e37234968c5d07",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/discover.h": "757533beb4b4f25e62a2c704a0171254421794ab8ec3200440c58e8766d72204",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/timer_utils.c": "56f7fac7f0844738883105f67571a36626022d77644a880eebbd578ae67ee78c",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/timer_utils.h": "3d491b4af4edd229fd4549e5f6177a418b183c459ca4598c60ef83528b06f00a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/queue.h": "bc8c922cae430c90d00a8d384d5d7bc91a6a44e791a1da26c2b7f43d208d9fd5",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/confmtd_utils.c": "867f67c1e4c65088b2abbca300a83978304222899d8112590782a90e02896b03",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/confmtd_utils.h": "e0100aa872e3d1a16ef8f33545391e7c785b496813eafd820e2b2ce922570502",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/nvparse.c": "bdc0f1484524bde7ec5e19405cac26c17fadbe2f164605bc30f2e9205e56a837",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/netconf.h": "b2ef83991b50c584ca3125a4cc50bd902fb9cbd83255e4f6a3dc1fefbeab4a80",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/common/include/proto/ethernet.h": "b2d43add0a1d11da1ae9935ec30aa68cb8dfae66142bf2ff6952cb16c903b3a8",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/bcmconfig.h": "29857a6c5110a52da97687e7b6c91e9b1fe59a521d9a29b521752cedd480b09a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/nvparse.h": "1b25a2728e1a3f7636bfe7ab44405a4617c7e38feaa265a65747f31fe65e1aa0",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/wl.c": "6d7c09d92d4ba0888c70a30c781b8248de45338e1f6897b9797d8c17394c4ded",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmendian.h": "0c11e8a15a28ff33d7d49ee1f10f7092288509ac24d970c7b81da37da98e7adb",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmutils.h": "7b6cbc83d02dd8d5f56ef62053e53f9d61dd1c6b9d9b594d9d28ed32a76d1fd4",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmtlv.h": "5d7828ee4a18040f748e87bbefc2693b98ce2cebac53bc759ae6fd9597915d09",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/wlutils.h": "78b25a91c4307e008464829f99f57b19e2bf9de1d8ef6840edc3ebf2d60e7aa2",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmiov.h": "912c8557e87d978353340e415286464b2a33cf1a93b681bfcd965e933b470d67",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/dhdioctl.h": "1e659040354d3333b62efbdf3456f3f135a4ce1c96ccdb6f3779bd182501c131",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/wl_linux.c": "0ce44cf7f89c11367f122862ec3a0a65bdd44697610de5867ea0ee3b1d0fbc32",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/mtlan_utils.c": "1d19f50c0bc694809297c58e9bd8f02069386609dcf929ac6e92df560665b5aa",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/usb.c": "0f5cbe7ca815d979c620428139c5c5b87e3acd20f6f6b030398f8f174997385b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libdisk/disk_io_tools.h": "3327abb0c71959800b9a2da795e0b299c144d94bf5505f42ce0dfcf0a6e137a8",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/netlink.c": "818b9f5c05bf5f6f2a4d0e9f7617edfd98423cd5af6211831881607c263d3a87",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/netlink.h": "7789f9b47a13e3274bfb9202fc59c561e81b1cbd9b5d71ffdf9e4982bc7fd811",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/getifaddrs.c": "1d69be9311220e95a26848c8f1b95b50de137716649b5b4099d37d13178dd76f",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/at_cmd.c": "6b6c06a677b6cd98fa75ae3d0d7ae10c0642a50d4b5111d5e65cedd1f19198e6",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libdisk/usb_info.h": "c4dea6292b25e30694c4580de2b959c8029e3ef998694eec9de0947e2fbed3f1",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/UdpLib.c": "ba647b2bbe218e92ec4c4d240e5ba1ba06707d162301f79b96adb6f8e63ecf05",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/UdpLib.h": "c9829d147b691d397830cfc6ac35d58f6b1fad2cb88de846fa4acb2b34be9c75",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/memaccess.c": "22a537196fdeb077f4e7c4d4a06853f251bdb084eb9b0a8192ece047a41a5b30",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/opensource/include/bcm963xx/board.h": "344ea3be19da8b24e63d78f0cec54f62a2d266f1b8fd696a54709481e32b7870",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/shared/opensource/include/bcm963xx/bcm_hwdefs.h": "f1ab77270f9893f84b74dfabfb825a0f839df2cb6ea111fd4ed8d11dc3dc9e4b",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/shared/opensource/include/bcm963xx/bcmTag.h": "502f348d59f60274a78c8377a9cd4e72682331a6c75f01cbd6e8aa087700e1fd",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/opensource/include/bcm963xx/bcm_memc.h": "a02d696f1c680e84062835d888e2871cfae09944ee3439ed9aae432c8ac6b2d6",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/opensource/include/bcm963xx/bcm_dgasp.h": "24520280f099527e81b557ea8026ca47d4de5182436ecf392ad3f4a06a3134d7",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/opensource/include/bcm963xx/flash_common.h": "62c7ecd5623759cacb430782db7e07b0aca4e30724b90f4ce79398bdafb0e573",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/linux_timer_ax.c": "53ea98b95b3bb73628d0b5e48ba636ad3c0d103400bf3665f4fb37deb4b0ce71",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/bcmtimer.h": "d92b6a219634865f8a86169b3caa70d5ba6348f606815b267bd328ec4c3e844e",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/misc.c": "0fea3c59f6a879259056c26e74b6bcc8735c98c612d5b2bcabe9a6c8d4e51650",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/wlif_utils.h": "12c4147fc9f6e09dfe165448218d67832d0da7fbf19f156ddb3087b50f5698ac",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/bcm_usched.h": "4597a0dfbf2ef90771189d1b05265200d249270b1a297ef7f867ec2200dfeac1",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/wpsdefs.h": "795e73f293a2734fb2505f0913d8139060a6e190a8600549efc68b7256c22110",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/iboxcom.h": "e89eb1288f95979992e2ae8586bc48474f1d4779a609b8024cae7fb2b2b1c93c",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/bcm_usched.c": "108a4207fc31d7be44e0f9ca3bd5501ca0aa9be5203212b11e2057c684e77b7f",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/broadcom/broadcom.c": "7648d001d035f597f584df1eb989c59d173a88e5e71caedec5ad2abeb7439494",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/linux_gpio.h": "b989539cb6c1d1fdb77e7c03d9ba3e98d904785f9b67c5f22e0552b527150267",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/amas/amas_path.h": "81c3cd1727dcb5b8c07c8ceac811f44d46f7ebc5827502646a515b2c97a444c2",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/shared/bcmwifi/src/bcmwifi_channels.c": "853cf6907f69aae9058003bfc364b26a50dabdf940a71813733f65c563a0d1d4",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcm_cfg.h": "5f5848e3b55ac99886e0d2ee5255d20a2d9d6607968cc6fad0161cc71729a194",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/broadcom/bcm_stamon.c": "82102406a0560cea5cb8fcca88f34c79d791104e15ee4d9c85a50abd3c4cf6db",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/wlioctl_utils.h": "6bc9d9d616d423abe5d4a9efaf1511e794776956ef15f8f7bc3958dc625824b5",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/broadcom/bcm_stamon.h": "001ad88badc14b7540e42bf23230b226f2379ecba0764899cb4bba93a64b9918",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/shared/bcmutils.c": "993a3780ab4ce33afd16acaef80b8da6b96735f77ca7c9933f3c4b8c22953520",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmstdarg.h": "95c01df6b5fc496c1c250d35d78622861f83fe2ca45385e2d40b6fcd9afcf0d2",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/math/include/bcm_math.h": "0cb4bb2fe1f12baaa9d02d31afd23cf5be45993730e36fdde24fa85a28d1cf01",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/math/include/bcm_math32.h": "d025244b06d4b9994c4bd8ba6b81ac8b3b08171b94df7f0935112b11fc41e607",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/math/include/bcm_math64.h": "c360a36f3254ef4d036c5d8fe0185c76b04e664d6b65b6199864e1935f38f7be",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/math/include/bcm_math_defs.h": "d04ac753fc7fc6313f4664a958d8316b1301e2aaaafb19cf723ab4303d3fd24d",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/vlan.h": "8903c5edf8bf4df83b5f78dbf2d1b907970675960db2b02befd76eef7c652de4",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/components/proto/include/bcmtcp.h": "644b1d6a4cc5a1bf93a11cc122383a6dffbf5e795117f1e36da3f1b280067fd6",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/shared/bcmxtlv.c": "295f807f399215cb8862e721fe252a29d29ff60e6d666bfa78e5f9b521ff6473",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/wlif_utils_ax.c": "41b5d86175a06bd9d9f7701d998253acdafed0165cb32b88bd2e9678d44d352e",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/bcmparams.h": "319efc145716d92e30a279be03178a1108ac998e3d36c8c9f770d6d72439ea13",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/common_utils.h": "9b09f8ad20bf1f06c4fbabbb0cdb8bf27aa4f333a1a405c04feb78d34df50a7a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sched_v2.c": "a76dd8589943726c45f51adac280ff79210df6a27726fdbf53ef7e55ad434d90",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/broadcom/rtkswitch.c": "eaa753ea6693d713e414ebc4b076af0b61917d609ff744246ce6fd21f2962afb",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/common_utils.c": "29bea466dab468c55cd0cece5d8cdff3ba62fae3844a09762b5f4dcb5a7c7090",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/vpn_utils.c": "869a7d8dfe5d77018035979ab9c97a9191b68c50ec4b86320e651c313062ea56",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_config.h": "9306b1c2b66fb843e16bfd9d7f03fd3d56cdce81f454d0afe9637319174603a1",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/linux_swap.c": "433249df473ab22e095841b2c12831cd09379ec37246027fbb64d2d0bffc2a0d",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/include/autoconf.h": "9e2a60d36e5363eb6d627b893b3b16f3e2c27e07ae991b5370f4e7f70db69eca",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/volume_id_internal.h": "06cd9e7431d12636caa301c147d9886ca56a32660068d8e62233ecb9131c550e",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/include/libbb.h": "72333301e55530324f16e572302ad02da1f733678eebf1419f82d3987da407fb",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/include/platform.h": "1beaabc65974e65b1d16a39b7a0bca07436af1864635c333f524e59fb0d7859b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/include/pwd_.h": "d76a829c441a5f99a090ed2f0af2f6794575c98152ed99ed3e07e8699de2edde",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/include/grp_.h": "361d195943b469c15c19eae0f34c76c9548e046053548567893559b83f9c5529",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/include/shadow_.h": "cfd64849fce4bb11bae70644b79f290c9bef97fa55b7722713320e5e76c5f574",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/include/xatonum.h": "81ab380fe58fb73cf4b0297819356e7ff1f70259a7e6dd0293c37ab7ce9ea766",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/include/volume_id.h": "a54132ddb734f64b825119af742f33f895d6aa429da0dc0d03df56594bd481ed",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/util.c": "00d10502c36ff6b1386234b3b9fcb2edeca6f985c67319d4010f2764b43f56ba",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/ext.c": "14d05cff0bd703886b431c8fbbfae21888ff3f02735b26749912973d5e17a2ce",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/include/bb_e2fs_defs.h": "91b222d41b17adfd98fe14703477028255e68d43401d39d3fd9abe72299cedb2",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/fat.c": "0f8da0d550769b562b874e1f364e4a6032ed649b68e7fe7b3689d8b16f9da907",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/ntfs.c": "1813fa15d6423cbd0f27243a222f0abfee329bac3872e16c33b350fd9eec0ab7",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/hfs.c": "924311fd7b16fc36f6e7651b1216dac3a943d7b28a9c31bb0e6f75bd232b28ad",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/xfs.c": "c04a01af0b7fbd9a6e5392ccc60a50a0964d58cf75ff0949a7b49c9aff0540be",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/libbb/bb_bswap_64.c": "d438950e5cafdfca115b1082f106b67b291fb116af27a0794f98ceee7d32b37b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/libbb/hash_md5.c": "68dce02fd1f7b139b242374b3af5d05aa43f75b55e9f778e2ff7aac475da9289",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/libbb/hash_md5_sha.c": "b71d12bc4a94cd933b5039d27c4f743e33e27afc3bc9e6700fc8bc4343aaf97e",
+    "rmerlin-integration-20260916/source-tree/release/src/router/busybox/util-linux/volume_id/btrfs.c": "31fc0b7e3f94cee6d038962534fa594d41da6df8ca86f34c0c677bab75c754e3",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/volume_id.c": "9c4c1dee1fc9e07e1a73291dd5ec43d01c7ad612647ead8a4550b5fd333f06bc",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_utils.c": "bbe8860c82d199199f90dfaab5e97484cf9a5e30e0f3ebab6e3de071f8b43fa3",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_config.c": "d9228c61a39aa2ef9b3e2e7279a3803f3d3c3c87a3f25cac018b6950a74f291e",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_control.h": "23af539dc6407e92d2c0e64a7d5ccdc650aa909eb9d7c9311046d5f0321cbe04",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_setup.h": "1302d0bcce784902a7a1392bf988f524b11de7f796aead1a3648609634d759dc",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_options.c": "df43e0849facc4b23642e01b35ae930a94c2e25525f79e60a1f3c688ac70b9c9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_options.h": "ab471364e7d84a8e3266ccdc00e8740c742c6aee9b177763c727a3500ee9f7db",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/amvpn_routing.c": "7fbe55406429fb6c8b97693017ce8aa8b8ad8f8db292b6e4d17dcdccd6ba5122",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/amvpn_routing.h": "9d65b164b1e61bc5e7f24215813a6c0dc19a7682fdd5b1a1994304545a274356",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_control.c": "5ee5ba1f5e1450994f97e35d59a8a1e036ec7f69a10d8249748cd2b744de98ae",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/ovpn-manager.h": "c0ce5c75b25b402a5e435abf62bf06c4155ebd183d7b22aef87b8346b7143438",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_setup.c": "bc088132ea7ea5f7ed4ca117044545beea7c944cc092a0b214810d6a2c412983",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/ssl.h": "87f73a71bcd5dccf7b9dced200dc0c9e555081386d0c7916497d620e97e40553",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/e_os2.h": "87c55abdb4755ffc04cd5e35a36d8b1ff2f19f3d8b9c7ef10357a78ff887503b",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/opensslconf.h": "8bc7955927ba5e94d46f2ae9ff853f5663dafac7758cb24b0246861da75e2791",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/opensslv.h": "0ca12c2aba8bfbe24c4c06861e9d57b939c5e72d1c08f3798a442d698deb7599",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/comp.h": "98a877c62723e6042e4e4740cd1a6e7799df752d9234386d73a28a098e6eb31c",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/crypto.h": "d2cd84e695e68051fe67fa7cf901ccba4fadccc71a6b30090df20a01b91d3ec7",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/safestack.h": "57665dabb37f4f0bd853539d93c64cb8adf37fd9552dc9fad215cc8f47a991c4",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/stack.h": "45ba803bbe14007e494bb24b2ca954f6362ef700a10480efa3d2f3acb159deec",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/ossl_typ.h": "46f541a1cc49bf08908ab3bde05e2683fc56ea268ca3e7f2e27628653ecb4a14",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/cryptoerr.h": "e752d7d3da32a6c009cf264450726367fd69e7c2a4c185d580ce650021d68e7a",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/symhacks.h": "0c9e026a5932a2432e3cdf7defb789610c4272010e51e5ff0471809eabb7aa2d",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/comperr.h": "f64be205d08af2557187ec19c03678aa9e29f66e428de29cebdd62cd7c3b5515",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/bio.h": "78b055555957eec2bfb4ce5f91b27bdcfdf73128026be9ce85fcca0126fdcd3d",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/bioerr.h": "ad29fe4ef37fd7c4b256b690caf9371a74e29981f6561b94436dac54a61bf74b",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/x509.h": "f1b8b356d649da24236d5aabdfafe047b516b2008d8d5d09da5e99fbc4b4a98c",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/buffer.h": "a4fa292b903cb8c2ce1761ba4980cf5bdfb66dcadcbb5c8aecc45b012bc64c23",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/buffererr.h": "722f6ea87711b7c0cb6ee29c15762c2839e5ad17b9ef579b6e81b6121f035c30",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/evp.h": "9d963bdda81802988170663ccfcef437aea69042f42aef3a11ab4a217b800aef",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/evperr.h": "45d68b462f25239488c020bee5fbf69700b0cd7b4dc2b3ba7015bddc499476a4",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/objects.h": "4018d7c54e6f19c3230af063f4dbc8523f1450528a4af15a97a0a1ff3fb3ba38",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/obj_mac.h": "81ebca20cc370ccf72f3103d1231c6a42e064730bb22261a97d86ddd0e7bc08a",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/asn1.h": "851313b1176baa3d6896aaeeebef56216ebdd38dcdabb39b3eca36b6645352bc",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/asn1err.h": "b89b16216ddd35f028f5bfd3fe0db4f2ead6c9415e7749b7115b0393b427ef2f",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/bn.h": "8f79b29c5ad479186acaae962a598d9868dc434fd5fa49a008eecfaff1b998ca",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/bnerr.h": "8098ab9545307d6e2c9cc28ae995d6fda0e8959b6167cc03d67716b02abb27ff",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/objectserr.h": "0ec7330c122ae2b3174df95ddecea65ff661a6152cd0192529dd1411ef3f62a1",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/ec.h": "4e624064531986560789f8509dfd10bc5ed82eb65599e03ed3bfed57be6df199",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/ecerr.h": "85a3b64c0644420a18295c8001a06bad5d7c3e84d4f871c925a1b45fb89ef182",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/rsa.h": "7864e95b61605f26f15e4f8f05df45c6c8527107871f06293a6213afdae14864",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/rsaerr.h": "e032a933b1a4c13ec901d7561ad23ace01881b60cdcc86af0e4cb0a25a2a3252",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/dsa.h": "1525e5adf242643a7d36312580314f5ce61ecadf82223a49ff5c32220d78f9b9",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/dh.h": "d9052195b4448b556c72c399c1be5159be3dc9b906c65768fb720732cbf61c54",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/dherr.h": "dcc1265700e5616a715d8de85d7e7f0fca6ee67fee02a715262a2f7aa07c4238",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/dsaerr.h": "65ea8b47cb25ae82d611337cd47da7c1c5cdb9451982beec9d841413d4a923a9",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/sha.h": "0bb6745481ac56b67f450d09033e813bf8f6a5f2025e90d5eb539eab1ad5e323",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/x509err.h": "622499b9aaa546957c802da9aee36794c24c9c7d2e105ae69b47841ecdac6b7a",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/x509_vfy.h": "f621ac4c38a89bd010656ca00937773126a7ef348b29a14b04cc5ec5c095b531",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/lhash.h": "1036e20aba00e0585b96b91a00ae7792dc12501160e117d1f824833de7fe3752",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/pkcs7.h": "cdc3505c9bb9168a6fad434dd9d9a49ad630b9ae9216bd665b11051e04a709bc",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/pkcs7err.h": "ecee11e9fbddab20f78a018009e6a2daf287ff5df00679298b137fe9996d9386",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/pem.h": "32d62036d0c35d03fe7f7ddaaffe3caeafcf984ec16e4db7ed19d3e202e9d7ba",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/pemerr.h": "d91c6016f3c1ba70683b92fde55500ec334777defb6486c41b0a9c4e402aa295",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/hmac.h": "76386c2273f105f54c5749f2fc854573c371ab185f9248ce295a748e126caae8",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/async.h": "ef96c716cac393f2cd6da304af029155ecd9f021869cd5a4c341ebdf249036bc",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/asyncerr.h": "cacc9ca951aa523d3ed6b9df2366022633925a6729d30cd134a05d2ffe5fb156",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/ct.h": "b27aaf0d39609500b4fce3b3b65f6752116acb30420de1d53943074a481043f0",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/cterr.h": "ab6e70b52e341247c4b217883980ff1e98e4453d1020b0b038cdbf096c4ab8a5",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/sslerr.h": "54a3c784ebfab631d21bb9b7db3ce38167acc0299e8920b5ce6e419a3736930a",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/ssl2.h": "7fb557a32488ad44a25420abff8279abd0bd1f4ab768e73d3e1d5c2dab36c0c5",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/ssl3.h": "d04cfec2a9f9da2aa299f55884215e200b490a6e0a9423255262648bd8a6d1c0",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/tls1.h": "d4104ca8720332b9852f4725d4660a6cf77a52b587e7d96ec263e996c1d0ae2f",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/dtls1.h": "7304f17cc9998bd7c16539ae9a5ea545f2e0c64086d5e688caba104b6a7ffecc",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/srtp.h": "e50e2dd5df6a0db219091cd1c6768a6d319ef6485b16e1f361fce43067847626",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pppd.c": "73dfe0d3449b50a43c07cd51e88207ab52566bc06d6f33754a97456c51519c16",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc.h": "aba63d69d64d52050d0e477178256f095623028b5a04006838e6964098912752",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sysdeps.h": "a31bee995b38bc677facefd91306054f578836fe37c33f4e2b8b5bb60fc8057e",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/router-sysdep/bcm_flashutil/cms_image.h": "305d13c2b73034faf70c320efd7c2913b4330230e14aba0c67d58a53aeb96415",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/cms.h": "17fabfe320feec4179b243eb07dac70267081aad4c549f16dda4aa403590b8c4",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/linux/number_defs.h": "1743691cd950cced8829fb951358cb628187845426dc8e551ebbc9eba9a85549",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/linux/os_defs.h": "21e7a2adb8d247c6baec061d0b0d2f76506628fac4ba3e7900d4b5548c10d1de",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/cms_version.h": "dc62bfa22272c2a8622a5436830c480c5a9c11cb86e99600e3aca1b412c988ab",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/cms_retcodes.h": "a52b2e5d80be0cdaea582f18484708ce3b591f23da97ce2edbefa08a468bac6c",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/userspace/public/include/cms_params.h": "4897b27549993caa1ba2ac24318712343745ba0e55acdac86a60ed4d26a98509",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/router-sysdep/bcm_flashutil/bcm_imgutil_def.h": "0d6c96edec475b76618f87782e38601821a4f1d3c73fe56194d3e91879b65b38",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/router-sysdep/bcm_flashutil/bcm_imgif.h": "618d3fa974c43935444edba10438ee4505821b913fada3f82f0ba5d1645eeb38",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libletsencrypt/letsencrypt_config.h": "7ccb47bab58d599c19c9bb77a73a6318a194629b53f9bd9072cb6ff0b224a9f9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libletsencrypt/letsencrypt_control.h": "2c7cac5ac7a1bb99b65e7f487394e207d260b1e30d847c2152136551f10e4a72",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pc.h": "1862124da2776db03f27c034921720d804c160ae5fcc6022afd10f7234b42915",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ic.h": "0bfd32ef6f6294f0a850f1a2786a9427e8efa6872c8ba8a95a91b44d5ffc8aed",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sdn.h": "8820f72aabbd3438b8c73114288d3403bb1af21f049cf2728a4fe2363210e3ba",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/firewall_sdn.h": "26f26f3a4f207f8f25713aca17c1f917e8001e57e9cd8882c4dffac0f7c4f323",
+    "rmerlin-integration-20260916/source-tree/release/src/router/nt_center/lib/libnt.h": "86d8e64a7352209908344b72ad5ecaae3daaec7544eac88764f5d878e91e7199",
+    "rmerlin-integration-20260916/source-tree/release/src/router/nt_center/lib/nt_db.h": "b4927b6b8a66915e3ad00e12fe435d92bcd92a3525149144906a2e1435228790",
+    "rmerlin-integration-20260916/source-tree/release/src/router/sqlite/sqlite3.h": "1184605a375f9ccabd6efb340a3b82baf5bdd0aa1ba77e7132df35c58839b5d4",
+    "rmerlin-integration-20260916/source-tree/release/src/router/nt_center/lib/nt_common.h": "ffe03916a00b9123920646fe1efc0d64ea9d12d8b097f2e8edf05855887712f4",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/linklist.h": "fe78b3a27865a46bfa1a680c1a7d31e9585482eaef7cf78ba457399c9bb5a463",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/auth.c": "9a97dedd517def9914366137dd7c20af31c26f19f97862b02db56dface4a5763",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/wireless.c": "dfece1992bd68dac3204309907520d7f3645f7bc3eae709f03afb7cd2b92401a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/interface.c": "cb31fe46d3a1840bc20864386ac63d1eead7bdf9f4fd7e5700fc756e710e9264",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/interface.h": "beeb19148f73b94c25a573a161589b92741a68314683cd9584b5f9b72d6e48df",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ppp.c": "5cadba2445f29914ce1d23ee604328fe9c3c1ab3bb94ae6f41ffd114749a1ee7",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/conn_diag_log.c": "28c611269b64192103caafec8ab8a89893a09852605e386264c3aaf2bd6bc7b2",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/conn_diag_log.h": "1e44aa0cf94b794ca5d4636137c0406b4ff0155e5d313d651f3cb6f636fcfb75",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/common.c": "84aa8e560cc31cbef655cee0bfa1a90ed6be9f4f22fbb01d5ce0a26f8aba3186",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/mtd.h": "1261f1fe8b1099238d33852c6a1ef11ae51ccc787e490ebb71b950eb1844ebaf",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc.c": "899e9ab9a2e239dc80fb32f53faa8e09248aec6ff34c9e45530aa8bc98e050fb",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-bridge.h": "33d5198888896570ab5f693fe3b69aec67b5a361516c1f1eae0b4317ff20de06",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/conn_diag-sql.h": "eb7327b17cc70981adf8d770b12ecc1baa4d04de582da94edea30687bfb3868a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json.h": "3afeaf3fc819d3c46316ab3d9b30133f8d48724da00c2f0d2617a59bc78e2cdc",
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/bits.h": "70c6a71ce7ffaa5270140cd2882312d39cfb87cf47fdd76e8ab56b3ef68a3def",
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/debug.h": "953be7c1ee8f7756e36bf9c3c20c3d48aa04e02c93cc8b2dba4fc65dcf2fa363",
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/linkhash.h": "a4e212d017870da0b6fcb60faad85781ab3580ef08879d42c5e6415869adf59a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_object.h": "1fa963d10f5919a111b219e9cf2af53bd3c62840c503fb83fbdcf9f5914f0b7e",
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_inttypes.h": "f68206a3cb3f74b923a684f8b3d6449e5b08d68f48158388e8ea8e4e6b208323",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/json-c/json_config.h": "8d813790eeb6efec103a6b4a3e21319b61cd20ea3c39d158b9736d89bf3cba84",
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/arraylist.h": "b0d5cd2b060e1092a50b7ea01fe2bd94bac6b59948f5149e12f487fd2a8f72e3",
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_util.h": "dbe7037b01bf07222505eb0d24dadcd90675168c58b4a1d4a55f2ad3629fed82",
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_tokener.h": "c5a91185da2d3f3c2d45875fdaa189952b7d6a136db5ef85a367188b4fe464b7",
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_object_iterator.h": "1197fb5b98a3a1f9215b9ea0cd921a365357df42feee6a6670e794e78f2574e8",
+    "rmerlin-integration-20260916/source-tree/release/src/router/json-c/json_c_version.h": "774ba0ec937299092c85cb821448f82b17726cdcab91a9f4ec63f835e38c352a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libdisk/disk_initial.h": "d894e5144a3dbd087c87f887b5061fd575cdd4b41f46bd96d7b4c7ed4491a9cf",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/aae_ipc.h": "55686f51b0f0fae1c2fd64b67b93d9a0da258fd4b8bba2e3aa20159151ba9571",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/wan.c": "d15a04710eee1ad4f5a95f634bd8152505daf97f5a24eb11e92a58c9fcac5cf0",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/asus_include/bwdpi_common.h": "b0315a18b8524cf524b4d5dae48b83d272a8b2208a424c35d15a2641e0c0d5f8",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/amas_lib.h": "8e92dd9ec4c064998e2a65bb1f65c7fb77a44e13aba3bb04025710c10de3bb8d",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/ioc_mesh.h": "63f23fa2fb2f3b8e914e4056ae8beaf7780a8d540842a5b8fc5bd83b2d328493",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/include/udb/ioctl/udb_ioctl_mesh.h": "98157c99c4a5c33e5253735c83ebb9f0366ad63451ea4d403594d214c3c6bcad",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/bwdpi_source/include/udb/tmcfg_udb.h": "78eac6ead13073bd010ea287f94e3b6da0497fe05c1fdb990c959ff1c9ec1a6b",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/bwdpi_source/include/tdts/tmcfg.h": "177ab24a804dc6ea2e40d795134a98af01fe5cf6e97ef53c46866df898944504",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/conf_app.h": "adab68763e219098740480384fc5138def7bdc6978263fdaedeecb454c14abf6",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/include/udb/ioctl/udb_ioctl_common.h": "51e519ff7e2247e1107e0d637fc42104757969bef84166ea52e8c4c10cd3d7ae",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/linux/list.h": "008217e211cf3d6b17fa0419a399c3120e8f08e3146a8efd7a2d078dbeee588c",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/linux/poison.h": "e342d3a507eb5e4b4ee45f6b6e978e040a7f49dc89f6a07dc02f42d55f367441",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/ioc_common.h": "fc230745ad29823052b71a1bafd4180fb971178c841e76fdc12dae8e9f7734e0",
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_slavelist.h": "c2ab9cc347c6f034cec9b04d742a013576bdd3907b3fb6fea3fb5f4f03cef7e9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_clientlist.h": "657267852e1c791f82779c1ab089d632137ac1f4cab97557f9662f219968376a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libasuslog/libasuslog.h": "4607532a48fa5bc97e0a394bbd0de86f5305eb564ee49919f261587a4f13da99",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/check_watchdog.c": "bf2b990f3315ce0e3641e9ab88e8f5fd0a2f480103ffc8d127f7341dbee22af1",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/lan.c": "383664aad7fcd86ee5987406d41d284ffab9995e1b814132f88ace7b973e600d",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/security_ipc.h": "eddefbd44ea4ae53ccfbb6eba9353de3e8e2cf033156f35110f8e0168a4a852a",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/etioctl.h": "a0e184be1551d2cba737ac8de0aabf859bb4bf6f122d3022e3baaaee734a1456",
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_onboarding.h": "cfd5aad9c10856f9ebeea9248a0839fe976e855f23c405744deeccdc323cf314",
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_event.h": "bd3ff063db5126dc4a3296c84eb34ce13ca93b49c07e946c9a40def1622b719c",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/fwupg_flashing.c": "aa4ff16969bb0d7bdd0f2ae141e4dc377a9aa584d686682e755f19e3958c48a3",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/init.c": "39c052455087a93201a09db3a043219754815ab836091fda149e91f94d4c3153",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libdisk/disk_share.h": "9354c512f58a9ba6748ac82ec66322c5f97eeaa2131af7151d533165e8a3162b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/amas-utils/amas-utils.h": "cbcc91cbfddc92adf98e89545e3daa33154348d68601b7431d839ee9a65e2baa",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/amas/amas_cap.h": "eb9795969ef06d67445fe210f20865d370719209160127007c9606332ba123ef",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/amas/amas_dwb.h": "a5a3a158bde391cead0e074b7a0234bd9b568b9dda194aad32b84a3a12397505",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/router-sysdep/bcm_flashutil/bcm_flashutil.h": "3009bed6fb5419c6f932eb729debae4d83a24344cf6bb36b228b29ce3555eb29",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libwebapi/webapi.h": "c6753820c71e208d167d46028cddccf03f007bf4854424554837a30298e93407",
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_capability.h": "ad47ff6ccf377178db0601e3a4f8c89a8989ab9513e2334087719ee4e14d2d04",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ntp.c": "80b35d51098bcc59fd65d245de0dc2c691489fc894c3f18ebd5b3013b8cfcf84",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/watchdog.c": "cb291fb74a2d59d6cf57f19dc28e866a5b1179f5fcedb3f98404e5f96a551bcf",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/sysdeps/amas/amas_ob.h": "b89c6b43d538e7dbd0582a29974af3ee4dcc64386ef0c13750de4cc59ae1198a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/firewall.c": "7fd12afef28fe528557489f85f7df55da912a14c848caaf354171bc5d06adc5e",
+    "rmerlin-integration-20260916/source-tree/release/src/router/protect_srv/include/protect_srv.h": "c74ef19c03db5b1a2770db5f67ee16d3726ff2ab35214fbb2f9dde2377bcf47c",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pctime.c": "c76fc95e577887f78ea392b01e24dc8fbd6486fb443f438836ae7246c4f1cc30",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/format.c": "cf00faf0cb845604b43ec674f3f9fe587e7e6887a72ef9100438108f50e7ba84",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/udhcpc.c": "adc64aa35a6a3f90430a6e21cd823205392d46f1b5ceabcd263944c9d5d765ab",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/linklist.c": "b10b3c42f35411d277da86de589fa1187326256efb010c61acf8b6a443376111",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ate.c": "51947e410876bbf77b4bb20ac8970b3b6dcfeba467111ba9f870215ff0773c2c",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ate.h": "b57d39d1df1a003b4991afc107229c001d0b5195b57ed412d1d851bbadf629cd",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/netool.c": "a7d398e5438f4b9b8760e9b6bf9ae003860978f0e61a6ac881cbe49e9873eb71",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/netool.h": "17fa1b43192ff59a78ff3029aeb2061057533b8e00314ffc89a44608a2c099d9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/qos.c": "8926a0b67528a0a642fc9e8290546431c045344d05eb1793e4f66dcc57ffd3bb",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/asus_include/bwdpi.h": "0182a0a95df80b0925cb13232e7639eaee594059e5fac8d296ff73d96559812f",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/httpd.h": "8f4a57c8b8febb4f2a4cf9104ecd0441720069f62a770a3d53d2e3ee10efbf21",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/asus_include/TrendMicro.h": "585fe31a8300c04421b93e31672b2848edf501ae51310b28acb6f4586f0b85cd",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/ioc_anomaly.h": "f763655a4283de32887ed094bd90a07986b99ac0c4a11f23c320420db1931301",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/include/udb/ioctl/udb_ioctl_anomaly.h": "18a964efe53d2481ce9da116bfca9e4af85a1f075243a4525986fa6ee3145ad1",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/ioc_patrol_tq.h": "db4fc41db939f54512bc6b8080c7db8669773d3689873d101ba6b45edfb250d3",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/include/udb/ioctl/udb_ioctl_patrol_tq.h": "c0d666d471865e9da36c39b595c287bff08ba804dfe86bf0d2c063d9d00cbe78",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/ioc_qos.h": "d0e29a440946b6a1c72faaebcc078785663f8154e583450aa527b1ed0f5bb74b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/include/udb/ioctl/udb_ioctl_qos.h": "ca16a815a69ebb5eb1c0058fd11752a808320cdd190cdaec43189fe5521072fa",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/ioc_vp.h": "21e6875372b0464d7285e3a34fc146b510cd586695f7965723fd3ad0d3715f91",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/include/udb/ioctl/udb_ioctl_vp.h": "e509df275e43a7e9c0643e1000a163ee36691cf05982d78aa1e4e9b49ec35235",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/src/tdts_udb_sample/ioc_wrs.h": "ae3734627647d135b89a8e39be7df9b9b35d0fa5027e6f895868fbecbc51dea9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/include/udb/ioctl/udb_ioctl_wrs.h": "e49058c535a3fa1591f717dcd31b63d55a4a6b8fd01c85b17cf814eb64999df7",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/mtd.c": "18653c5c18c3e558c95e4eeee77250d841976a5ab775471bbd4efbab34c22675",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/include/trxhdr.h": "ceaffc1817ec6ebf3616e87da0bc09d4d90e4ce5b50edc044dccaa0b45524bbc",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/tcpcheck.c": "43cf11928712ddc253972ed50e3fecbb4e1e86cf3e59417aa44af0ed9cdb5cfd",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sysdeps/wps-broadcom.c": "bceaa62cb4a7e9cd1511bccab102fcbcb92cd1a46dfd574ceeb1982d91f853c5",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/wlscan.h": "1e9fbdb3589482567cff9e2b58e769f5a29ddcb67ab7841b04e563b08d7a96c9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/usbled.c": "8267231d2a7ebd3f610f4dd22d903c0a7d4a7b040a218df6dfdbe6df1faafcf5",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ubifs.c": "0bacea6445a78f037065cbfeecb0074c04c1ae4485b37565196bf0e2c9233e61",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ssh.c": "d256ed705f18d6495fdadb031bd897fb276df3f65ad4a6c304ae2a8277334413",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/snmpd.c": "99a2a62670021f027e081bc72f5c01cc57e66150e9f3d494a76565ac2aca82e1",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/vpn.c": "d79ccb798a3381b4703d8afade41a2542387120f4711f333708b26218309bd94",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ovpn.c": "15a765e1bb8f89bb566408b7bf5c1f41267f1c9c2ad9ba1fd16a3906bc055e95",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/openvpn.c": "2c69e88f25b7b5a4ed16e40fb0152321c8eb253d5cbcaae9030ff539128f29ed",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/wanduck.c": "3bb29def88916c4df6b2df37f51c970711a5128fcdd059beef7b4e388a970372",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/wanduck.h": "85a442f4b4c98f23e2e12179baf81ce938193c4d12e0f7805f3410a247026c76",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/notify_rc.h": "c78a07f53805481e83cad0762c84bc5a826cb697b0a25e282d6f4de81bc57440",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_block.c": "bffdceeee27e68574b340bb7eb111b4e4addedf72b969e93b2a2631d8909edb9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_block.h": "c9fa9dd81b48b21e947e3f63cd0d58e9e220c4f2688d05abf174e461370ca81e",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/usb.c": "12fb7caed4867b557b0297843b50ec558612101ddcd805d21ffb21e9be9755f7",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc_event.h": "c40e754698b0a20a4a7f1b7a8ff9d4d948258e35ae1b24065a25647027f4160c",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_tmp.c": "a780b114afef39dce4320d461b3bf0bba74b31c1f88b3ae98d15c0cd01144042",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pc.c": "17e13bb47b1c86d5d81cb09507809e149460d4ec9cae2c45e0509392bd052ab1",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_reward.c": "f5d3982f90ed0d97b8984f325d7f61c2efb9da66bac3528df67e198206752232",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/usb_devices.c": "01b88789b9e8693bfe69b42e961ca867123d525923c45b0b6631412c40ad6788",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/dongles.h": "4aeb345f44e3aa0aba581f4b8e581de56ec17bb8dd1c9a4229f51c34a78c3524",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/bcmgpio.h": "1662a6e9ff61eee1f7fc683dad25dc593712489187aac58b825c55319c089fd6",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/arpreq.c": "0ae4b8bf658247f8fc995b49b573d3d39e7a3c29165c331153893c426088ae11",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc_ipsec.c": "1c179654cf6de1eeb1710667f11d00f8108828cd003d217ffeebc7925d487017",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc_ipsec.h": "9d9a242a2959be8cade9ba90d8a02a89e4379f67b9c47facb5abd15e4f160ea3",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/asus_ddns.c": "9eade7262f2b35f0d6f685d25eddd1b3b1d6ce2d3def3f0bf7fc2002c027cf2b",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/curl-7.21.7/include/curl/curl.h": "33ecb4aab3c8053b089cec446722c81c07f3a447a3b2477b1423f06e9fb51fce",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/curl-7.21.7/include/curl/curlver.h": "61703543f3724da911315be0fba35e0b6f18a1d7e3f1c23ae64c83fc559e8e09",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/curl-7.21.7/include/curl/system.h": "643fcc9f35631031d24790494e9740eb8d3408555f2e9d59c30cbfff7f3e31c4",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/curl-7.21.7/include/curl/easy.h": "f6dac9703e0d4b091e0d2e3cc7d43009174be453ba12607f97ce2a743173d404",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/curl-7.21.7/include/curl/multi.h": "e39ef75b1a6235f242db218e2475346dd2669f53c3b71ac4288c9412042f05cf",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/curl-7.21.7/include/curl/urlapi.h": "3323c7546b9a93d4664e977b7973094a93cc31f60a1bf3073b17ae79e7ea2f09",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/curl-7.21.7/include/curl/options.h": "03a9c51b7173c8d9f3aeb1a280eedc43c66a8e4d757a0e950fcdb9ea10577e60",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/curl-7.21.7/include/curl/header.h": "7dff3bd37afb58c009f0755cc1b37401f7c409e58172eaed492c819181a86e3f",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/curl-7.21.7/include/curl/websockets.h": "e56d2099d28ecbeb5b8d0978a818e0dd76a252c5e47e614a1a86435424413314",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/curl-7.21.7/include/curl/mprintf.h": "a79657fa15db71e732bcb58bc4645ab65bdb3222767f34be5bab56aa0d4f4cc9",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/curl-7.21.7/include/curl/typecheck-gcc.h": "efb3d834c52948e010941d660e1abf82bd275b68050f0da0ef2ca238c98ebfb7",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/md5.h": "a0612a8f7e69e3bc166fc186ca44be1e5b1d020b5da8b5be021f73d48c270b82",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/nbr_monitor.c": "866f5e737c0758402a2aab7a21500e8e25dda09e434e570a1f77a9e16c954706",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ic.c": "44cecc7568d66417e690132a47ba2094ba24f9a5fd353640354cc2adabc4a252",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/wpsaide.c": "73f4add4373433aaa81a3cd751f56bb4471ac4f5fa2653e584dfef7808342328",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rmd.c": "88fa5a6f9399c64372d1bd88ebd9c68d650c231abd3416c16185d01bb07186b9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_string.h": "b350ffbf8f293d6c95fa0cde34201d8b0406bdda3759b096e00d21eb85acbd1c",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rmd.h": "1ed7c981db7a6b1b2e08218308eeb86227b16d9f0a86e27b375baed357ea7be8",
+    "rmerlin-integration-20260916/source-tree/release/src/router/sw-hw-auth/auth_common.h": "215674c30be2b0af4fb26135488600cfc583d7e193c98d777154b623e6dd8617",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/vpnc_legacy.c": "43d548a41cd7e39ed5fdce759863636890e904372e0ebb86bab3126a48fb6d07",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/hour_monitor.c": "81659b51a35d8f208a98d34557fac5d6b6f8215b2aa5c711d63bc7b4624e4119",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/timemachine.c": "0840762f40c96fbf758299c57aa62062d25035f24c02a932625986aa189316d4",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sdn.c": "46be8ced06047da5abe7b0998a918b83a3f2a4f53420def693791bba1c92cadf",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/vpnc_fusion.h": "7793dbe139f5b366a9594f2e7e628a93d8bcf5bc17ffdb1eb9d35a93f1489c18",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/dnsfilter.h": "5927b1bde14b6a35124cdfabf7af81821cc9fd7337e42c21094ba01acc2ccbe6",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/pressure.c": "6df9fe802b3afb1ce3c3b03d46675089ee5c448eeeb3aee301ab1361cd3734e3",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/firewall_sdn.c": "c44bf8a50085422a0a13086ecd6956b7787731b56980a407e2e7dcda9c97690d",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/ntpd.c": "cb54a0ef608052db5750c0859999e37917fb485700c26f8621e9a9aad42bda3c",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/vpnc_fusion.c": "81970dc79ab4cbe1b8984963ecbd65cf419fae19a43f3efd7640eda7ac827dcb",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_utils.h": "672057a1d5f4cafb1a64ba61b6abb8dc2c9bd70db87b9d3b3272528fabc933a7",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/dnsfilter.c": "07fbe1979eaf95f8c0a19d69a45585bfb1a51be1942cc138f0e612789f0bc0fd",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/natnl_api.c": "40e987e4b00e512dad2c3a067f6878baef81e80be2d74e4c04969674499d779a",
+    "rmerlin-integration-20260916/source-tree/release/src/router/aaews/mastiff.h": "2a9759a588330f128a5076ddc1315418282f198887ba6bb75876013d5246fd81",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-legacy.c": "5811abcb2425a139f080dfad8634cfaa79be8d863e5fe8e3988be44f21f5955f",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-client.c": "1d17a4bb8bc6beaf7ecac2b8373004e43be78a2cef88a466426c2f13884f5558",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-manager.c": "eeb10ab3b3669078c689d1ee7563720287872893c669a2d85214fc6197c8fbe4",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-services.c": "971a7d7c894bef389d8a133b85b89567deadc9389c3f44345e9afee7eb8030ce",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-services.h": "ef93d13fbfa2f5f248826182ab39a6a71c9d86403fadc408e18367e96a01ce43",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sched_daemon.c": "2f878ed815635ac1cb0b62a5643ec337312ce78f071462e6a34b0dc3b8d406dc",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/erp_monitor.c": "5cb5d8f122733ef58591c20157ae81da8daba177081c9fa2d4a2c30f75f54cd9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/services.c": "33206d7e3663dcb9e5845389c3a5f58300ec910ec8f8644e1c2411466fec2b4f",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/flash_mtd.h": "bb985b64c0f9297fe21e05cb72957f73c0d0a9063e8020dd302ed33c07d3b24d",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/x509v3.h": "a7e78a1858697e75940b416ba1fb6f4e135722e88c0c280af8a979975c5443da",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/conf.h": "e54341e30523dadc09d821366f5afb13c9286d540b34c1945406918ed588fa21",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/conferr.h": "abfe26485cd43a80e0c476e628979612ad28a635577baf68eee476850425a498",
+    "leon-cgroup-20260915/archive/worktree/release/src/router/openssl-1.1/include/openssl/x509v3err.h": "3d17dcca277cd6f6373a30a6e07e1a2c44024a0b980ccccc2533d78bf0c22776",
+    "rmerlin-integration-20260916/source-tree/release/src/router/nt_center/lib/nt_eInfo.h": "429a5fb3dde32498a260342bb5f9479137bad42f14dad0a4c9d81ee5db15d761",
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_lib.h": "acad5088389b3afcc1a900ac639137cc386af0abc47948508a7ac15a9fe513f3",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/wireguard.c": "2241959aa6f52b4b0e1191f6e3331e2b320ad6d6a46390f9428012f47eaf5baf",
+    "rmerlin-integration-20260916/source-tree/release/src/router/rc/sysdeps/init-broadcom.c": "1999ff9863b66fdd09715373e93004eedc7b785d5d52aa065cf24002aac138cf",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/initial_web_hook.c": "094474325e893d8d86248588733175012081a52ad88f9530c2808af2aad33bda",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/initial_web_hook.h": "19fa7a99eb352347fd67595d436470feef94b1b734eac5e3dbaa8a4ea6822263",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/common.c": "a029d7bf8bb455daee4f62fa2fd3dd4e50c36a0166d329fcea5b61b138e04a79",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/bcmnvram_f.h": "7c0a9b9af8dca4fcf3f31e402829e306ec0df15e076cf391aa1602fe5e99943b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/common.h": "4c5a54e269a292395b84c4e41cb92f250b533b7b4e9c4fa6f902cf61a295ae79",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/cgi.c": "a8f509083c60180a145d667cee4cb19d98881f12666a15347e7d3a5b3d2f6ecf",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/ej.c": "34b91e1212afc9be5242fff0426310386f19c71e430bcdceb194d0e44cd1f2e4",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/aspbw.c": "c7f5731b937e333644e03ceffbadcd71f479ed5fb611dfc7a90a8750afd9efdd",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/nvram_f.c": "657fa7cd7c25ef2289b148d2dab68c82ed66d892fbe9130a0124fe074c0ed2fa",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/apps.c": "e8ca95f4dc9f26ca57ce8d60d280212bd89f1ad2b38ad3fc75387d2b703ef101",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/apps.h": "e79e3bb8c43836b94139479360d95b5ac58cfadc36d914f241589c77bf71df7e",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/libcaptcha.c": "5c6be9cef87b88a5ebe6a30956254322598a68a54d3d74b8fd70f4cfaaaa3efd",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/sysinfo.c": "767d807997a6790aad8ba5637e4fefd1c5d1f4920b295965fcce6c5b1d16e231",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/sysinfo.h": "2f9b3258be1e94aefd04a3c028e80e34f7ce1e591f703f6586bef4074d556d40",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/sysdeps/web-broadcom-am.c": "9d23aea1bda134e8f45ae4d14429df6cb93eb9addd0f1e02404d300359e62b96",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/bcmdrivers/broadcom/net/wl/bcm96813/main/src/wl/sys/wlc_types.h": "ab14ee7a47588f532f9e0a2d8363d080b2350115baf4a5dfddb40cdf2b5afe88",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/httpd.c": "eac4a50eb1d392ecae502f472027ca89ef14abd2b63a39c7bd3b427be6698dd7",
+    "rmerlin-integration-20260916/source-tree/release/src/router/mssl/mssl.h": "f8ea7b218506c46927a6e2ff20fdf6f23c42cad26496194c4185f7bb6855fb94",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/queue.h": "fb54e4bab508c0ce4dbc433522af5460ced867da1f6c4c1eb65170594367e2f3",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/data_arrays.c": "94e2922dbe9cd5399a474dc31eca783e89357ccd1a917c9eff0b4cce695b0854",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/data_arrays.h": "01e1fa63b4012639f634f2cf2361015253ce31343623b22d1a998fbc543b65c2",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/iptraffic.h": "75d6a7411d03828f79a9d491cf40fc958cbd0f25e8363e0776b921b497b512e9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/shared/tree.h": "ad24d7e06ae7a24a85c691a4c79610506756e7924288e3086f2618a7b45b63c9",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/web.c": "6e5d071c9246520a5376a5c20e8033f99301a8dd71590ebf8784e183c5c3c911",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/timezone.h": "0ac6f0775ec1839b414badced8baae8b8b5251c71bbf5019c2f6e62fbc554a6b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/httpd/nvram_config.h": "25ded8ef4af74ea1b19d546c771294ce3db4b34f7cf935b25092d7e9e5317e20",
+    "rmerlin-integration-20260916/source-tree/release/src/router/networkmap/networkmap.h": "19143694425cf76b4ac27519bd68b77e300589b1cea5d063c4ee3469fee0240b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/networkmap/api/nmp_api.h": "6715180572ef0d2ff8a2b8299190b0c15d1bd7435ed84061736d4431197568e4",
+    "rmerlin-integration-20260916/source-tree/release/src/router/networkmap/function.h": "a7f0e02a65113682fda8a522549ef6760966d8b85d07e8fb1d1ce5e2e5a182d6",
+    "rmerlin-integration-20260916/source-tree/release/src/router/bwdpi_source/asus_include/bwdpi_sqlite.h": "6287332ac811baf4646357e49ce8dbb6b0038d59e46a0e6b493a450a18e4da3b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_param.h": "c1b6d0020aef018ae18e7b63770fcac186a43e70cf2bb5bbd9981b07bf41ddb6",
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_wevent.h": "efe5e7e0271473f6368865efd977bb0aad86eae857f499eaeea3cd4351c8647c",
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_mtlan.h": "703db53ebc2749be504b54e97dde1d2e032f28873c370ebf49e6bf839dcf3a02",
+    "rmerlin-integration-20260916/source-tree/release/src/router/cfg_mnt/cfg_centralcontrol.h": "8f931b4ba8398eb8ca66e6a9ed39f69ccfedc1360ea56de8cb478a4bc1fbedce",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libpasswd/passwd.h": "1c94f60747d895622cb0c626c2aa6d79c1d2aa3bbd393411d8971dea9059b90b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/dnsqd/dns_app_client.h": "ba01197c62a0221d296200b47bac5b03f5562e4c0853bd9a11e5360a17a7855f",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libcodb/cosql_utils.h": "f38647cd0c9dcbfc8b3193780c552caa035a554aaa71812a967517e80ae7ccb5",
+    "rmerlin-integration-20260916/source-tree/release/src/router/libcodb/codb_utils.h": "54a9ee53ac09915939a96e5a9a5bfa0417c1eeff157ad7958482151863877466",
+    "leon-cgroup-20260915/archive/worktree/release/src-rt-5.04behnd.4916/router-sysdep/bcm_flashutil/bcm_imgutil_api.h": "44facff761680060caac02a148540e49c7945b1bef3dd0bc781cd8e31c6aa7ff",
+    "rmerlin-integration-20260916/source-tree/release/src/router/infosvr/packet.c": "0275a1b1bc1a17b6c613a1d17eced86dd6774187c8d061206728bece4642f0bc",
+    "rmerlin-integration-20260916/source-tree/release/src/router/infosvr/packet.h": "ef6e03ef8c1bef1f5d169aa011c6bf8b0da04095c37e6d04b85ce3effb8e822e",
+    "rmerlin-integration-20260916/source-tree/release/src/router/infosvr/storage.c": "10bf026967489c53d44f499d3fdf6f8bc586bc4d50779b440953af04a43397f2",
+    "rmerlin-integration-20260916/source-tree/release/src/router/infosvr/common.c": "af90a51f1682df054030fa703d4df926f583e344ab381a60066f5140c1f79adb",
+    "rmerlin-integration-20260916/source-tree/release/src/router/infosvr/infosvr.c": "0ecda00f75829eb61440eacceb33058677d3099ec6ca8bd033a620972700e63b",
+    "rmerlin-integration-20260916/source-tree/release/src/router/infosvr/lp.h": "2233e5c6901a3ee059106ef06c379457ab68273dd3f71ab03c3261b2db301eb2"
+  }
+}

@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 /*
  * snmpd.c
  *
@@ -123,7 +124,7 @@ void start_snmpd(void)
 
 void stop_snmpd(void)
 {
-	if (getpid() != 1) {
+	if (!leon_rc_is_manager()) {
 		notify_rc("stop_snmpd");
 	}
 

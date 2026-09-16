@@ -1,0 +1,44 @@
+{
+  "completed_at_utc": "2026-09-16T19:59:37.262129+00:00",
+  "elapsed_seconds": 39.25,
+  "compiler": {
+    "abi": "armel",
+    "triplet": "arm-linux-gnueabi",
+    "sysroot": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/sysroots/armel",
+    "flags": [
+      "-mcpu=cortex-a53+crypto",
+      "-march=armv8-a+crc+crypto",
+      "-mfpu=crypto-neon-fp-armv8",
+      "-mfloat-abi=softfp"
+    ],
+    "cc": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cc",
+    "cxx": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cxx",
+    "host_library_dir": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/lib/aarch64-linux-gnu",
+    "tools": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armel-multiarch-20260915/toolchain/usr/bin/arm-linux-gnueabi-",
+    "compiler_version": "15.2.0",
+    "glibc": "2.44",
+    "glibc_source_commit": "2d5421ffca8893534d5e02ad38c28acd8e778fa3"
+  },
+  "source_commit": "96831be75b3b891f6aa4c608f00cc7bb2d499d67",
+  "source_version": "MAJOR=3\nMINOR=5\nPATCH=8\nPRE_RELEASE_TAG=\nBUILD_METADATA=\nRELEASE_DATE=\"25 Aug 2026\"\nSHLIB_VERSION=3\n",
+  "files": {
+    "libcrypto.so.3": {
+      "sha256": "414e4640e431277853ba354f9cf6fa0e5742a646e82bd892066b34c1ef9b96a3",
+      "bytes": 15911736
+    },
+    "libssl.so.3": {
+      "sha256": "86caa3ff27ee5f278247f2286370004ddd43a106192beede63a2961b62e8a895",
+      "bytes": 4400640
+    },
+    "apps/openssl": {
+      "sha256": "4fd2250bb0bef41884e526b04e8f83149e4133c8acc553e132691b9072f9175d",
+      "bytes": 2496096
+    },
+    "providers/legacy.so": {
+      "sha256": "93168eb4d8580e433787bb88a204e97c4ae85e9334c743a1823eb18ec945b2e3",
+      "bytes": 475456
+    }
+  },
+  "built_on": "promaxgb10-4ec1",
+  "router_modified": false
+}

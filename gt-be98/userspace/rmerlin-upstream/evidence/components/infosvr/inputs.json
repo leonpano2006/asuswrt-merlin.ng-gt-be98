@@ -1,0 +1,26 @@
+[
+  {
+    "object": "infosvr.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/infosvr/infosvr.c",
+    "sha256": "0ecda00f75829eb61440eacceb33058677d3099ec6ca8bd033a620972700e63b",
+    "prebuilt": false
+  },
+  {
+    "object": "common.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/infosvr/common.c",
+    "sha256": "af90a51f1682df054030fa703d4df926f583e344ab381a60066f5140c1f79adb",
+    "prebuilt": false
+  },
+  {
+    "object": "packet.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/infosvr/packet.c",
+    "sha256": "0275a1b1bc1a17b6c613a1d17eced86dd6774187c8d061206728bece4642f0bc",
+    "prebuilt": false
+  },
+  {
+    "object": "storage.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/infosvr/storage.c",
+    "sha256": "10bf026967489c53d44f499d3fdf6f8bc586bc4d50779b440953af04a43397f2",
+    "prebuilt": false
+  }
+]

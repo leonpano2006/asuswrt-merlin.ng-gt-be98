@@ -1,0 +1,29 @@
+{
+  "method": "V8 syntax only, ASP server tags stubbed as 0; no page code executed",
+  "results": [
+    {
+      "file": "source-tree/release/src/router/www/js/asus.js",
+      "sha256": "a68241004ea20981e338f90d6b16adbfc254309ddde600bd5fd5e038a9185e85",
+      "script_count": 1,
+      "errors": []
+    },
+    {
+      "file": "build/webui-stage/www/js/asus.js",
+      "sha256": "b2328ea780a7aeddd55aa53682a2451de1375420c6e8ace45a330b1749d27c11",
+      "script_count": 1,
+      "errors": []
+    },
+    {
+      "file": "source-tree/release/src/router/www/QoS_EZQoS.asp",
+      "sha256": "03ed06cdc8f1a151425b27c720e42567b66cc7ab0dc343ce01bc1845999a7f02",
+      "script_count": 14,
+      "errors": []
+    },
+    {
+      "file": "build/webui-stage/www/QoS_EZQoS.asp",
+      "sha256": "c280c1c26a3dc3a181e3e0c13990f6f5a191f3db53eed5b9ed104b27087a78b5",
+      "script_count": 14,
+      "errors": []
+    }
+  ]
+}

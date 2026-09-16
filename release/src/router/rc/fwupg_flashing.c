@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 /*
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -92,7 +93,7 @@ fwupg_flashing_main(int argc, char *argv[])
 
 	sleep(2);
 	printf("eval_bcm_flasher done, going reboot...\n");
-	reboot(RB_AUTOBOOT);
+	leon_rc_reboot(RB_AUTOBOOT);
 
 	return 0;
 }

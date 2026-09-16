@@ -1,0 +1,67 @@
+[
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/strongswan",
+    "argv": [
+      "autoreconf",
+      "-if"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-strongswan",
+    "argv": [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/strongswan/configure",
+      "--host=arm-linux-gnueabi",
+      "--build=aarch64-linux-gnu",
+      "--prefix=/usr",
+      "--bindir=/usr/sbin",
+      "--libdir=/usr/lib/arm-linux-gnueabi",
+      "--sysconfdir=/etc",
+      "--localstatedir=/var",
+      "--libexecdir=/usr/lib/arm-linux-gnueabi",
+      "--enable-silent-rules",
+      "--disable-gmp",
+      "--enable-openssl",
+      "--enable-acert",
+      "--enable-agent",
+      "--enable-md4",
+      "--enable-eap-identity",
+      "--enable-eap-md5",
+      "--enable-eap-mschapv2",
+      "--enable-eap-tls",
+      "--enable-eap-peap",
+      "--enable-stroke",
+      "--enable-aes",
+      "--enable-des",
+      "--enable-fips-prf",
+      "--enable-gcm",
+      "--enable-curve25519",
+      "--enable-hmac",
+      "--enable-md5",
+      "--enable-sha1",
+      "--enable-sha2",
+      "--enable-cmd",
+      "--enable-libipsec",
+      "--enable-shared",
+      "--disable-static",
+      "--with-ipsecdir=/usr/lib/arm-linux-gnueabi/ipsec",
+      "--with-strongswan-conf=/etc/strongswan.conf",
+      "--with-user=admin"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-strongswan",
+    "argv": [
+      "make",
+      "-j8",
+      "GPERF=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/host-tools/usr/bin/gperf"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/package-strongswan",
+    "argv": [
+      "make",
+      "DESTDIR=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/build/stage-strongswan",
+      "install"
+    ]
+  }
+]

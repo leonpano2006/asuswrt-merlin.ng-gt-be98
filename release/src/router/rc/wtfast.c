@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 /*
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -41,7 +42,7 @@ void start_wtfast (void)
 	 * and deploying new builds. :-)
 	 */
 
-	if(getpid()!=1) {
+	if(!leon_rc_is_manager()) {
 		notify_rc("start_wtfast");
 		return;
 	}

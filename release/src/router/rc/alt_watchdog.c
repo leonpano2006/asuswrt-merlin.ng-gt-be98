@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 #include <stdio.h>
 #include <unistd.h>
 #include <ev.h>
@@ -45,7 +46,7 @@ void alt_start_nfcm()
         return;
 #endif
 #if 0
-	if(getpid() != 1) { //not rc init process
+	if(!leon_rc_is_manager()) { //not rc init process
 		notify_rc("start_nfcm");
 		return;
 	}
@@ -61,7 +62,7 @@ void alt_start_nfcm()
 void alt_stop_nfcm()
 {
 #if 0
-	if(getpid() != 1) { //not rc init process
+	if(!leon_rc_is_manager()) { //not rc init process
 		notify_rc("stop_nfcm");
 		return;
 	}

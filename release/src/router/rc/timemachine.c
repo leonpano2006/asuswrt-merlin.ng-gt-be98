@@ -1,3 +1,4 @@
+#include "rc-bridge.h"
 /*
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -107,7 +108,7 @@ int start_afpd()
 
 void stop_afpd(int force)
 {
-	if(!force && getpid() != 1){
+	if(!force && !leon_rc_is_manager()){
 		notify_rc("stop_afpd");
 		return;
 	}
@@ -134,7 +135,7 @@ int start_cnid_metad()
 
 void stop_cnid_metad(int force)
 {
-	if(!force && getpid() != 1){
+	if(!force && !leon_rc_is_manager()){
 		notify_rc("stop_cnid_metad");
 		return;
 	}
@@ -285,7 +286,7 @@ int start_avahi_daemon()
 
 void stop_avahi_daemon()
 {
-	if (getpid() != 1) {
+	if (!leon_rc_is_manager()) {
 		notify_rc("stop_avahi_daemon");
 	}
 

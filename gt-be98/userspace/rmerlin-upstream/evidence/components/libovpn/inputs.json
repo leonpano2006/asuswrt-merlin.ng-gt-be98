@@ -1,0 +1,38 @@
+[
+  {
+    "object": "openvpn_config.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_config.c",
+    "sha256": "d9228c61a39aa2ef9b3e2e7279a3803f3d3c3c87a3f25cac018b6950a74f291e",
+    "prebuilt": false
+  },
+  {
+    "object": "openvpn_control.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_control.c",
+    "sha256": "5ee5ba1f5e1450994f97e35d59a8a1e036ec7f69a10d8249748cd2b744de98ae",
+    "prebuilt": false
+  },
+  {
+    "object": "openvpn_setup.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_setup.c",
+    "sha256": "bc088132ea7ea5f7ed4ca117044545beea7c944cc092a0b214810d6a2c412983",
+    "prebuilt": false
+  },
+  {
+    "object": "openvpn_options.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_options.c",
+    "sha256": "df43e0849facc4b23642e01b35ae930a94c2e25525f79e60a1f3c688ac70b9c9",
+    "prebuilt": false
+  },
+  {
+    "object": "amvpn_routing.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/amvpn_routing.c",
+    "sha256": "7fbe55406429fb6c8b97693017ce8aa8b8ad8f8db292b6e4d17dcdccd6ba5122",
+    "prebuilt": false
+  },
+  {
+    "object": "openvpn_utils.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/libovpn/openvpn_utils.c",
+    "sha256": "bbe8860c82d199199f90dfaab5e97484cf9a5e30e0f3ebab6e3de071f8b43fa3",
+    "prebuilt": false
+  }
+]
