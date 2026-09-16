@@ -1,0 +1,62 @@
+{
+  "status": "offline-tested candidate; not installed",
+  "phase": "first legacy service split: haveged",
+  "offline_tests_passed": true,
+  "rehearsal": "services-v5",
+  "qemu_elapsed_seconds": 94.74,
+  "checks": [
+    "LAB_SERVICE_LEGACY_AND_FORK_BOUNDARY_PASS",
+    "LAB_SERVICE_BEFORE_READY_SINGLE_OWNER_PASS",
+    "LAB_SERVICE_RECOVERY_AND_EXPLICIT_STOP_PASS",
+    "LAB_SERVICE_FAILURE_NO_LEGACY_FALLBACK_PASS",
+    "LAB_SERVICE_DUPLICATE_OWNER_REJECTED_PASS",
+    "LAB_SERVICE_MANAGER_READY_PASS",
+    "LAB_SERVICE_MANAGER_DRAIN_PASS",
+    "LAB_SERVICE_PARTOF_STOP_PASS",
+    "LAB_SERVICE_SPLIT_ALL_PASS"
+  ],
+  "production": {
+    "parent": "systemd-trial3-20260916",
+    "changed": [
+      "usr/sbin/rc"
+    ],
+    "added": [
+      "usr/lib/systemd/system/asus-haveged.service",
+      "usr/libexec/leon-haveged-check"
+    ],
+    "kernel_changed": false,
+    "modules_unchanged": 182,
+    "init_and_trial_monitor_unchanged": true,
+    "libovpn_and_notify_shim_unchanged": true,
+    "rc_sha256": "dfce4af0feb1d005d4082bd2e2d342989f4ced47944f9069a0749fe485ad094d",
+    "router_modified": false,
+    "firmware_commit_performed": false
+  },
+  "image": {
+    "rehearsal": "services-v5",
+    "production_matches_tested_paths": true,
+    "image": "GT-BE98_leon36-services1_zstd22.pkgtb",
+    "image_sha256": "7bf0363ba102a0f3822dcf8bd8208f6aaf1a7793a7212fa3fe364801fbb1164a",
+    "image_bytes": 89119820,
+    "rootfs_bytes": 76701696,
+    "rootfs_sha256": "131f41cd5768e2ab7b9df31f6ea216a1e44526d96d1b6a2650c9280543c07745",
+    "compression": "zstd level 22, 1 MiB blocks, tailends",
+    "flashed": false
+  },
+  "remaining_ubi_blocks_at_recorded_capacity": 14,
+  "rebuilt_objects": [
+    "services.o",
+    "rc-services.o"
+  ],
+  "retained_objects": 110,
+  "flashed": false,
+  "router_modified": false,
+  "firmware_commit_performed": false,
+  "limitations": [
+    "Broadcom hardware is mocked in QEMU; this service split has not run on the physical router.",
+    "Type=exec confirms exec, not completion of entropy initialization. TCG took about 14-15 seconds; normal-stop tests wait for the entropy select loop.",
+    "Stopping during that initialization can reach the existing 10-second SIGKILL fallback and mark the unit failed; an initial rehearsal recorded this.",
+    "ASUS rc still owns all hardware and other legacy services. This is not complete rc removal.",
+    "Firmware capacity and the active/committed slots must be checked again before any later flash."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "checkpoint": "systemd-trial3-20260916",
+  "github_commit": "1f9555ec5e3f3d1d9e227b894766a1bdd3ba951a",
+  "patch_order": [
+    "systemd-trial/patches/asus-rc-systemd.patch",
+    "systemd-service-split/patches/asus-rc-service-split.patch"
+  ],
+  "preflash": {
+    "host": "ML350",
+    "path": "/home/leonpano/amng-out/systemd-trial3-20260916/systemd-trial3-preflash.tar",
+    "bytes": 368629760,
+    "sha256": "cc775490353613ebe86ea28310d430346345297e830504ff72160ee3a08e2637",
+    "verified_members": 1739,
+    "router_modified": false
+  },
+  "postflash": {
+    "host": "ML350",
+    "path": "/home/leonpano/amng-out/systemd-trial3-20260916/systemd-trial3-postflash.tar",
+    "bytes": 6164480,
+    "sha256": "74e2121347d872b365340a84b5cee95a02566a93bf40cce63cfe8378f5ecc0c2",
+    "verified_members": 159
+  }
+}

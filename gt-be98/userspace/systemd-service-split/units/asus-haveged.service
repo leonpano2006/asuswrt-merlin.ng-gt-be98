@@ -1,0 +1,29 @@
+[Unit]
+Description=ASUS entropy supplement
+DefaultDependencies=no
+RequiresMountsFor=/dev /run /var
+After=systemd-journald.service
+PartOf=asus-rc.service
+Conflicts=shutdown.target
+Before=shutdown.target
+JobTimeoutSec=20
+StartLimitIntervalSec=60
+StartLimitBurst=3
+# rc starts this unit before its own READY notification. Do not add an
+# After=asus-rc.service or Requires=asus-rc.service dependency here.
+
+[Service]
+Type=exec
+ExecStartPre=/usr/libexec/leon-haveged-check
+ExecStart=/usr/sbin/haveged --Foreground -r 0 -w 1024 -d 32 -i 32
+Restart=on-failure
+RestartSec=2
+TimeoutStartSec=10
+TimeoutStopSec=10
+SuccessExitStatus=143
+KillMode=control-group
+TasksMax=infinity
+TasksAccounting=no
+MemoryAccounting=no
+StandardOutput=journal
+StandardError=journal

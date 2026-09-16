@@ -1,0 +1,17 @@
+{
+  "parent": "systemd-trial3-20260916",
+  "changed": [
+    "usr/sbin/rc"
+  ],
+  "added": [
+    "usr/lib/systemd/system/asus-haveged.service",
+    "usr/libexec/leon-haveged-check"
+  ],
+  "kernel_changed": false,
+  "modules_unchanged": 182,
+  "init_and_trial_monitor_unchanged": true,
+  "libovpn_and_notify_shim_unchanged": true,
+  "rc_sha256": "dfce4af0feb1d005d4082bd2e2d342989f4ced47944f9069a0749fe485ad094d",
+  "router_modified": false,
+  "firmware_commit_performed": false
+}
