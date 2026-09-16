@@ -1,0 +1,12 @@
+[
+  {
+    "rootfs": "multiarch-loader-20260916",
+    "returncode": 0,
+    "output": "LIBGCC_CXX_DSO_EXCEPTION_PASS compiler=15.2.0\n"
+  },
+  {
+    "rootfs": "libgcc-runtime-20260916",
+    "returncode": 0,
+    "output": "LIBGCC_CXX_DSO_EXCEPTION_PASS compiler=15.2.0\n"
+  }
+]

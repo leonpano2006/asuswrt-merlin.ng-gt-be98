@@ -1,0 +1,108 @@
+baseline.sha256: OK
+bin/exception-aarch64: OK
+bin/exception-armel: OK
+bin/exception-armel-legacy: OK
+bin/exception-armhf: OK
+bin/runtime-aarch64: OK
+bin/runtime-armel: OK
+bin/runtime-armel-legacy: OK
+bin/runtime-armhf: OK
+bin/throw-aarch64.so: OK
+bin/throw-armel-legacy.so: OK
+bin/throw-armel.so: OK
+bin/throw-armhf.so: OK
+live-isolated.bash: OK
+runtime/aarch64-linux-gnu/libgcc_s.so.1: OK
+runtime/arm-linux-gnueabi/libgcc_s.so.1: OK
+runtime/arm-linux-gnueabihf/libgcc_s.so.1: OK
+/usr/lib/arm-linux-gnueabi/libgcc_s.so.1: OK
+/usr/lib/aarch64-linux-gnu/libgcc_s.so.1: OK
+LIVE_LIBGCC_BEGIN aarch64
+LIBGCC_PROVIDER /tmp/leon-libgcc-verify-20260916/runtime/aarch64-linux-gnu/libgcc_s.so.1
+PASS unwind_backtrace frames=5
+PASS libgcc_signed_wide_division
+PASS pthread_cancel_forced_unwind_cleanup
+LIBGCC_RUNTIME_SMOKE_PASS
+LIBGCC_CXX_DSO_EXCEPTION_PASS compiler=13.3.0
+LIVE_LIBGCC_COMPLETE aarch64
+LIVE_LIBGCC_BEGIN armel
+LIBGCC_PROVIDER /tmp/leon-libgcc-verify-20260916/runtime/arm-linux-gnueabi/libgcc_s.so.1
+PASS unwind_backtrace frames=4
+PASS libgcc_signed_wide_division
+PASS pthread_cancel_forced_unwind_cleanup
+LIBGCC_RUNTIME_SMOKE_PASS
+LIBGCC_CXX_DSO_EXCEPTION_PASS compiler=15.2.0
+LIVE_LIBGCC_COMPLETE armel
+LIVE_LIBGCC_BEGIN armhf
+LIBGCC_PROVIDER /tmp/leon-libgcc-verify-20260916/runtime/arm-linux-gnueabihf/libgcc_s.so.1
+PASS unwind_backtrace frames=4
+PASS libgcc_signed_wide_division
+PASS pthread_cancel_forced_unwind_cleanup
+LIBGCC_RUNTIME_SMOKE_PASS
+LIBGCC_CXX_DSO_EXCEPTION_PASS compiler=15.2.0
+LIVE_LIBGCC_COMPLETE armhf
+LIVE_LIBGCC_BEGIN armel-legacy
+LIBGCC_PROVIDER /tmp/leon-libgcc-verify-20260916/runtime/arm-linux-gnueabi/libgcc_s.so.1
+PASS unwind_backtrace frames=4
+PASS libgcc_signed_wide_division
+PASS pthread_cancel_forced_unwind_cleanup
+LIBGCC_RUNTIME_SMOKE_PASS
+LIBGCC_CXX_DSO_EXCEPTION_PASS compiler=10.3.0
+LIVE_LIBGCC_COMPLETE armel-legacy
+/usr/lib/arm-linux-gnueabi/libgcc_s.so.1: OK
+/usr/lib/aarch64-linux-gnu/libgcc_s.so.1: OK
+	Flow Refresh Timer Interval  = 10000 millisecs
+	TCP Flow Idle Timer          = 60 s
+	UDP Flow Idle Timer          = 120 s
+	L2 Flow Idle Timer           = 120 s
+	Mcast Flow Idle Timer        = 120 s
+	Other Flow Idle Timer        = 120 s
+	Pkt-HW Activate Deferral rate = 1
+	Pkt-HW Idle Deactivate = 0
+	Pkt-SW Activate Deferral count = 0
+	Flow Low Pkt Rate = 10
+	Acceleration Mode: <L2 & L3>
+	MCast Acceleration IPv4<Enabled> IPv6<Enabled>
+	IPv6 Learning <Enabled>
+	L2TP Learning <Enabled>
+	GRE Learning <Enabled>
+	4o6 Fragmentation <Enabled>
+	TCP Ack Prioritization <Enabled> 
+	ToS Multi Flow <Enabled> 
+	Notify Processing Mode <Hybrid> 
+	Rx Pkt Length Mode <Enabled>
+	OVS Flow Learning <Disabled> 
+	HW Acceleration <Enabled> 
+	Tx Thread <Enabled> 
+	Tx Thread Idle Delay <8> yield loops 
+	Flow Ucast Learning Enabled  : Max<16383>, Active<144>, Cumulative [ 13142 - 12998 ]
+	Flow Mcast Learning Enabled  : Max<1152>, Active<0>, Cumulative [ 0 - 0 ]
+	Pure LLC Acceleration: <Disabled>
+	Flow Refresh Timer Interval  = 10000 millisecs
+	TCP Flow Idle Timer          = 60 s
+	UDP Flow Idle Timer          = 120 s
+	L2 Flow Idle Timer           = 120 s
+	Mcast Flow Idle Timer        = 120 s
+	Other Flow Idle Timer        = 120 s
+	Pkt-HW Activate Deferral rate = 1
+	Pkt-HW Idle Deactivate = 0
+	Pkt-SW Activate Deferral count = 0
+	Flow Low Pkt Rate = 10
+	Acceleration Mode: <L2 & L3>
+	MCast Acceleration IPv4<Enabled> IPv6<Enabled>
+	IPv6 Learning <Enabled>
+	L2TP Learning <Enabled>
+	GRE Learning <Enabled>
+	4o6 Fragmentation <Enabled>
+	TCP Ack Prioritization <Enabled> 
+	ToS Multi Flow <Enabled> 
+	Notify Processing Mode <Hybrid> 
+	Rx Pkt Length Mode <Enabled>
+	OVS Flow Learning <Disabled> 
+	HW Acceleration <Enabled> 
+	Tx Thread <Enabled> 
+	Tx Thread Idle Delay <8> yield loops 
+	Flow Ucast Learning Enabled  : Max<16383>, Active<144>, Cumulative [ 13142 - 12998 ]
+	Flow Mcast Learning Enabled  : Max<1152>, Active<0>, Cumulative [ 0 - 0 ]
+	Pure LLC Acceleration: <Disabled>
+LIVE_LIBGCC_ISOLATED_PASS

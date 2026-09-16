@@ -1,0 +1,62 @@
+{
+  "signature_verified": true,
+  "signing_fingerprint": "F6ECB3762474EDA9D21B7022871920D1991BC93C",
+  "release_sha256": "9e5889fd7c39f73bfad7847e355b514c600e004602fd4227c8cc53d4fd94b1c4",
+  "indices": [
+    {
+      "release_path": "main/binary-arm64/Packages.xz",
+      "bytes": 1435080,
+      "sha256": "bef71adde2ea52b690f150b86e9a0185f27fb1c245ea6067f7551c5467fa9814"
+    },
+    {
+      "release_path": "universe/binary-arm64/Packages.xz",
+      "bytes": 15394304,
+      "sha256": "753a8385f6d9ba145b5fa116f89f86993c62524d7e9a3f01eca0f4239b0123d1"
+    }
+  ],
+  "packages": [
+    {
+      "abi": "armel",
+      "package": "libgcc-s1-armel-cross",
+      "version": "15.2.0-4ubuntu4cross1",
+      "source": "gcc-15-cross-ports (10ubuntu2)",
+      "architecture": "all",
+      "filename": "pool/universe/g/gcc-15-cross-ports/libgcc-s1-armel-cross_15.2.0-4ubuntu4cross1_all.deb",
+      "bytes": 44672,
+      "sha256": "656df29ecd9d3cc4a4b654cb2723002bdbf8f510465907fc566267c30574b5a2",
+      "depends": "gcc-15-cross-base-ports (= 15.2.0-4ubuntu4cross1), libc6-armel-cross (>= 2.42)",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-15-cross-ports/libgcc-s1-armel-cross_15.2.0-4ubuntu4cross1_all.deb"
+    },
+    {
+      "abi": "armhf",
+      "package": "libgcc-s1-armhf-cross",
+      "version": "15.2.0-4ubuntu4cross1",
+      "source": "gcc-15-cross (11ubuntu2)",
+      "architecture": "all",
+      "filename": "pool/main/g/gcc-15-cross/libgcc-s1-armhf-cross_15.2.0-4ubuntu4cross1_all.deb",
+      "bytes": 40658,
+      "sha256": "4508ea6d8e22ddfb2be4486d589aabc0453efd4118228dc8935be7712f589d70",
+      "depends": "gcc-15-cross-base (>= 15.2.0-4ubuntu4), libc6-armhf-cross (>= 2.42)",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/g/gcc-15-cross/libgcc-s1-armhf-cross_15.2.0-4ubuntu4cross1_all.deb"
+    }
+  ],
+  "licenses": [
+    {
+      "abi": "armel",
+      "package": "gcc-15-cross-base-ports",
+      "version": "15.2.0-4ubuntu4cross1",
+      "filename": "pool/universe/g/gcc-15-cross-ports/gcc-15-cross-base-ports_15.2.0-4ubuntu4cross1_all.deb",
+      "sha256": "c5e0ea22bda9f2c6e3a6d1965dfcf031ee9b80cb2cbd8d71c2e69bdb2b396d49",
+      "copyright_sha256": "f5529be9ac02a2226580745380c596b3a2537f86809042ddce1b86a77a34379f"
+    },
+    {
+      "abi": "armhf",
+      "package": "gcc-15-cross-base",
+      "version": "15.2.0-4ubuntu4cross1",
+      "filename": "pool/main/g/gcc-15-cross/gcc-15-cross-base_15.2.0-4ubuntu4cross1_all.deb",
+      "sha256": "bdad44b55659c19cb7b68f0ab24b018479cc2133e4d169f3b5327366e8652d79",
+      "copyright_sha256": "f5529be9ac02a2226580745380c596b3a2537f86809042ddce1b86a77a34379f"
+    }
+  ],
+  "host_packages_installed": false
+}

@@ -1,0 +1,86 @@
+{
+  "status": "candidate-packaged-qemu-and-isolated-runtime-verified",
+  "versions": {
+    "armel": "15.2.0",
+    "armhf": "15.2.0",
+    "aarch64": "16.2.0"
+  },
+  "rootfs_changed_paths": [
+    "usr/lib/arm-linux-gnueabi/libgcc_s.so.1"
+  ],
+  "rootfs_added_paths": [
+    "usr/lib/arm-linux-gnueabihf/libgcc_s.so.1"
+  ],
+  "all_other_rootfs_paths_unchanged": true,
+  "new_flat_aliases": 0,
+  "aarch64_retained_bytewise": true,
+  "armel_old_exports_preserved": 1172,
+  "armel_new_exports": 1177,
+  "versioned_consumers_checked": 69,
+  "modules_unchanged": 182,
+  "integrated_recipe_identical": true,
+  "squashfs_matches_staging": true,
+  "inventory_sha256": "ead3f52c9c3a8b2dcfb953789ce361086272a182aba0da9daae793155d0dd332",
+  "rootfs_sha256": "274ad17ea4c9878352a9648acfe8c4ce2057043b30068e0e410102df21fce3d6",
+  "rootfs_bytes": 75952128,
+  "qemu": {
+    "kernel": "4.19.294 #36",
+    "cpu": "cortex-a53",
+    "no_cache_executables": 312,
+    "cached_executables": 312,
+    "userspace_commands": 34,
+    "glibc_abis": [
+      "aarch64",
+      "armel",
+      "armhf"
+    ],
+    "libgcc_probe_cases": [
+      "aarch64",
+      "armel",
+      "armhf",
+      "armel-legacy"
+    ],
+    "pid1_metadata_guard_passed": true,
+    "legacy_plugins_passed": true,
+    "previous_library_tests_passed": true,
+    "result": "../builds/qemu/libgcc-runtime-v3/result.json",
+    "panic": false
+  },
+  "isolated_hardware": {
+    "passed": true,
+    "probe_cases": [
+      "aarch64",
+      "armel",
+      "armhf",
+      "armel-legacy"
+    ],
+    "provider_paths": [
+      "/tmp/leon-libgcc-verify-20260916/runtime/aarch64-linux-gnu/libgcc_s.so.1",
+      "/tmp/leon-libgcc-verify-20260916/runtime/arm-linux-gnueabi/libgcc_s.so.1",
+      "/tmp/leon-libgcc-verify-20260916/runtime/arm-linux-gnueabihf/libgcc_s.so.1",
+      "/tmp/leon-libgcc-verify-20260916/runtime/arm-linux-gnueabi/libgcc_s.so.1"
+    ],
+    "installed_runtimes_unchanged": true,
+    "boot_metadata_unchanged": true,
+    "l2_l3_hw_acceleration_enabled": true,
+    "temporary_probes_removed": true,
+    "log_sha256": "f8b103b22e420d52c1254132a1d6e91caf4e01fdc5488951097d1b706c658d71",
+    "full_firmware_trial": false,
+    "throughput_benchmarked": false
+  },
+  "image": "GT-BE98_leon36-libgcc15_zstd22.pkgtb",
+  "image_bytes": 88370252,
+  "image_sha256": "e1007e8210f357e1a6f7a3c8c899706644f953a84f05f5283859a948935460e0",
+  "signed_bootfs_unchanged": true,
+  "bootfs_signature_verified": true,
+  "flash_performed": false,
+  "new_firmware_hardware_boot_tested": false,
+  "firmware_commit_performed": false,
+  "current_slot": 1,
+  "commit_flags": [
+    0,
+    1
+  ],
+  "normal_reboot_slot": 2,
+  "prior_current_image_sha256": "67f896ed532531a345805dc14303b23b203d4545fb8cb11a5ab5df12d8c7a23d"
+}

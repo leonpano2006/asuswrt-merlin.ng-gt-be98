@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare NVRAM fix, GCC 15 libraries, and Ubuntu-style multiarch glibc."""
+"""Prepare NVRAM fix, multiarch glibc, and the pinned GCC runtime overlay."""
 import argparse
 import hashlib
 import json
@@ -20,6 +20,9 @@ p.add_argument('--rebuilt', type=Path, required=True)
 p.add_argument('--multiarch-loader-checkpoint', type=Path,
                default=Path(__file__).resolve().parents[2]/'multiarch-loader')
 p.add_argument('--glibc-runtime', type=Path, required=True)
+p.add_argument('--libgcc-checkpoint', type=Path,
+               default=Path(__file__).resolve().parents[2]/'libgcc-runtime')
+p.add_argument('--libgcc-runtime', type=Path, required=True)
 p.add_argument('--output', type=Path, required=True)
 p.add_argument('--report', type=Path, required=True)
 a = p.parse_args()
@@ -29,6 +32,8 @@ policy = config['required_postprocessing']
 checkpoint = a.armel_checkpoint.resolve(strict=True)
 loader_checkpoint = a.multiarch_loader_checkpoint.resolve(strict=True)
 loader_policy = config['required_loader_postprocessing']
+gcc_checkpoint = a.libgcc_checkpoint.resolve(strict=True)
+gcc_policy = config['required_libgcc_postprocessing']
 if a.output.exists() or a.output.is_symlink() or a.report.exists():
     p.error('output and report must be new offline paths')
 for name, expected in policy['checkpoint_files'].items():
@@ -42,6 +47,11 @@ for name, expected in loader_policy['checkpoint_files'].items():
         p.error('unreviewed loader checkpoint file: '+name)
 if sha(a.glibc_runtime.parent/'runtime-manifest.json') != loader_policy['runtime_manifest_sha256']:
     p.error('glibc runtime differs from the tested candidate')
+for name, expected in gcc_policy['checkpoint_files'].items():
+    if sha(gcc_checkpoint/name) != expected:
+        p.error('unreviewed libgcc checkpoint file: '+name)
+if sha(a.libgcc_runtime.parent/'runtime-manifest.json') != gcc_policy['runtime_manifest_sha256']:
+    p.error('libgcc runtime differs from the tested candidate')
 a.output.parent.mkdir(parents=True, exist_ok=True)
 with tempfile.TemporaryDirectory(prefix='candidate-base-', dir=a.output.parent) as temp:
     temp = Path(temp)
@@ -57,12 +67,16 @@ with tempfile.TemporaryDirectory(prefix='candidate-base-', dir=a.output.parent) 
                     '--report', str(temp/'libraries.json')], check=True)
     subprocess.run([sys.executable, str(loader_checkpoint/'scripts/prepare-rootfs.py'),
                     '--source', str(temp/'armel'), '--runtime', str(a.glibc_runtime),
-                    '--output', str(a.output), '--report', str(temp/'loader.json')], check=True)
+                    '--output', str(temp/'loader'), '--report', str(temp/'loader.json')], check=True)
+    subprocess.run([sys.executable, str(gcc_checkpoint/'scripts/prepare-rootfs.py'),
+                    '--source', str(temp/'loader'), '--runtime', str(a.libgcc_runtime),
+                    '--output', str(a.output), '--report', str(temp/'libgcc.json')], check=True)
     report = {'candidate': config['candidate'], 'status': 'complete-rootfs-prepared-for-packaging',
               'base': json.loads((temp/'base.json').read_text()),
               'migration': json.loads((temp/'migration.json').read_text()),
               'rebuilt_libraries': json.loads((temp/'libraries.json').read_text()),
               'multiarch_loader': json.loads((temp/'loader.json').read_text()),
+              'libgcc_runtime': json.loads((temp/'libgcc.json').read_text()),
               'firmware_packaged': False, 'router_modified': False,
               'firmware_commit_performed': False}
 a.report.parent.mkdir(parents=True, exist_ok=True)

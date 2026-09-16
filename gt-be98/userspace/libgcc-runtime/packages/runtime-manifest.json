@@ -1,0 +1,72 @@
+[
+  {
+    "abi": "armel",
+    "path": "usr/lib/arm-linux-gnueabi/libgcc_s.so.1",
+    "input_sha256": "2f9bb7ac09ac7c5c2227772c85af7b8f540c8326d79277162c5624b38271fae0",
+    "output_sha256": "a4cbb232bde83940ccb2fa68ced39c133d14853314135e3287fd0176d5e76c33",
+    "bytes": 132768,
+    "mode": 493,
+    "action": "replace",
+    "version": "15.2.0",
+    "package": {
+      "abi": "armel",
+      "package": "libgcc-s1-armel-cross",
+      "version": "15.2.0-4ubuntu4cross1",
+      "source": "gcc-15-cross-ports (10ubuntu2)",
+      "architecture": "all",
+      "filename": "pool/universe/g/gcc-15-cross-ports/libgcc-s1-armel-cross_15.2.0-4ubuntu4cross1_all.deb",
+      "bytes": 44672,
+      "sha256": "656df29ecd9d3cc4a4b654cb2723002bdbf8f510465907fc566267c30574b5a2",
+      "depends": "gcc-15-cross-base-ports (= 15.2.0-4ubuntu4cross1), libc6-armel-cross (>= 2.42)",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/universe/g/gcc-15-cross-ports/libgcc-s1-armel-cross_15.2.0-4ubuntu4cross1_all.deb"
+    },
+    "exports_preserved": 1172,
+    "exports_total": 1177,
+    "new_exports": [
+      "GCC_14.0.0@GCC_14.0.0",
+      "__hardcfr_check@GCC_14.0.0",
+      "__strub_enter@GCC_14.0.0",
+      "__strub_leave@GCC_14.0.0",
+      "__strub_update@GCC_14.0.0"
+    ]
+  },
+  {
+    "abi": "armhf",
+    "path": "usr/lib/arm-linux-gnueabihf/libgcc_s.so.1",
+    "input_sha256": null,
+    "output_sha256": "b76f134cc64e8d5fafedc2780f479626a2c1b89707545d49ae3feb6dc1cda1ab",
+    "bytes": 132708,
+    "mode": 493,
+    "action": "add",
+    "version": "15.2.0",
+    "package": {
+      "abi": "armhf",
+      "package": "libgcc-s1-armhf-cross",
+      "version": "15.2.0-4ubuntu4cross1",
+      "source": "gcc-15-cross (11ubuntu2)",
+      "architecture": "all",
+      "filename": "pool/main/g/gcc-15-cross/libgcc-s1-armhf-cross_15.2.0-4ubuntu4cross1_all.deb",
+      "bytes": 40658,
+      "sha256": "4508ea6d8e22ddfb2be4486d589aabc0453efd4118228dc8935be7712f589d70",
+      "depends": "gcc-15-cross-base (>= 15.2.0-4ubuntu4), libc6-armhf-cross (>= 2.42)",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/g/gcc-15-cross/libgcc-s1-armhf-cross_15.2.0-4ubuntu4cross1_all.deb"
+    },
+    "exports_preserved": 0,
+    "exports_total": 1177,
+    "new_exports": null
+  },
+  {
+    "abi": "aarch64",
+    "path": "usr/lib/aarch64-linux-gnu/libgcc_s.so.1",
+    "input_sha256": "7bac6cd77e9ef947c951d46300c26691f05ab12d8ece5da2f3b30fabf679b273",
+    "output_sha256": "7bac6cd77e9ef947c951d46300c26691f05ab12d8ece5da2f3b30fabf679b273",
+    "bytes": 133560,
+    "mode": 436,
+    "action": "retain-verified",
+    "version": "16.2.0",
+    "package": null,
+    "exports_preserved": 178,
+    "exports_total": 178,
+    "new_exports": []
+  }
+]

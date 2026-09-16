@@ -1,0 +1,12 @@
+[
+  {
+    "rootfs": "multiarch-loader-20260916",
+    "returncode": -6,
+    "output": "terminate called without an active exception\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+  },
+  {
+    "rootfs": "libgcc-runtime-20260916",
+    "returncode": -6,
+    "output": "terminate called without an active exception\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+  }
+]

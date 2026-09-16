@@ -1,0 +1,730 @@
+{
+  "public_abi_preserved": true,
+  "providers": [
+    {
+      "triplet": "arm-linux-gnueabi",
+      "export_count": 1177,
+      "libc_imports_verified": [
+        "__memset_chk@GLIBC_2.4",
+        "abort@GLIBC_2.4",
+        "calloc@GLIBC_2.4",
+        "free@GLIBC_2.4",
+        "malloc@GLIBC_2.4",
+        "memcpy@GLIBC_2.4",
+        "memset@GLIBC_2.4",
+        "pthread_getspecific@GLIBC_2.34",
+        "pthread_key_create@GLIBC_2.34",
+        "pthread_mutex_lock@GLIBC_2.4",
+        "pthread_mutex_unlock@GLIBC_2.4",
+        "pthread_once@GLIBC_2.34",
+        "pthread_setspecific@GLIBC_2.34",
+        "raise@GLIBC_2.4",
+        "realloc@GLIBC_2.4"
+      ]
+    },
+    {
+      "triplet": "arm-linux-gnueabihf",
+      "export_count": 1177,
+      "libc_imports_verified": [
+        "__memset_chk@GLIBC_2.4",
+        "abort@GLIBC_2.4",
+        "calloc@GLIBC_2.4",
+        "free@GLIBC_2.4",
+        "malloc@GLIBC_2.4",
+        "memcpy@GLIBC_2.4",
+        "memset@GLIBC_2.4",
+        "pthread_getspecific@GLIBC_2.34",
+        "pthread_key_create@GLIBC_2.34",
+        "pthread_mutex_lock@GLIBC_2.4",
+        "pthread_mutex_unlock@GLIBC_2.4",
+        "pthread_once@GLIBC_2.34",
+        "pthread_setspecific@GLIBC_2.34",
+        "raise@GLIBC_2.4",
+        "realloc@GLIBC_2.4"
+      ]
+    },
+    {
+      "triplet": "aarch64-linux-gnu",
+      "export_count": 178,
+      "libc_imports_verified": [
+        "__getauxval@GLIBC_2.17",
+        "_dl_find_object@GLIBC_2.35",
+        "abort@GLIBC_2.17",
+        "calloc@GLIBC_2.17",
+        "free@GLIBC_2.17",
+        "getauxval@GLIBC_2.17",
+        "getpagesize@GLIBC_2.17",
+        "malloc@GLIBC_2.17",
+        "memcpy@GLIBC_2.17",
+        "memmove@GLIBC_2.17",
+        "memset@GLIBC_2.17",
+        "mmap@GLIBC_2.17",
+        "munmap@GLIBC_2.17",
+        "pthread_cond_broadcast@GLIBC_2.17",
+        "pthread_cond_wait@GLIBC_2.17",
+        "pthread_getspecific@GLIBC_2.34",
+        "pthread_key_create@GLIBC_2.34",
+        "pthread_mutex_lock@GLIBC_2.17",
+        "pthread_mutex_unlock@GLIBC_2.17",
+        "pthread_once@GLIBC_2.34",
+        "pthread_setspecific@GLIBC_2.34",
+        "realloc@GLIBC_2.17",
+        "strlen@GLIBC_2.17"
+      ]
+    }
+  ],
+  "consumers_checked": 69,
+  "consumers": [
+    {
+      "path": "usr/bin/busybox",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2lz@GCC_3.5",
+        "__aeabi_l2d@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/bin/eapd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/bin/nvram",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/bin/sdparm",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/bin/usbmuxd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2lz@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_l2d@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.36",
+      "triplet": "aarch64-linux-gnu",
+      "required_symbols": [
+        "_Unwind_DeleteException@GCC_3.0",
+        "_Unwind_GetDataRelBase@GCC_3.0",
+        "_Unwind_GetIPInfo@GCC_4.2.0",
+        "_Unwind_GetLanguageSpecificData@GCC_3.0",
+        "_Unwind_GetRegionStart@GCC_3.0",
+        "_Unwind_GetTextRelBase@GCC_3.0",
+        "_Unwind_RaiseException@GCC_3.0",
+        "_Unwind_Resume@GCC_3.0",
+        "_Unwind_Resume_or_Rethrow@GCC_3.3",
+        "_Unwind_SetGR@GCC_3.0",
+        "_Unwind_SetIP@GCC_3.0",
+        "__addtf3@GCC_3.0",
+        "__eqtf2@GCC_3.0",
+        "__fixunstfdi@GCC_3.0",
+        "__floatunditf@GCC_4.2.0",
+        "__getf2@GCC_3.0",
+        "__gttf2@GCC_3.0",
+        "__letf2@GCC_3.0",
+        "__lttf2@GCC_3.0",
+        "__multf3@GCC_3.0",
+        "__subtf3@GCC_3.0",
+        "__udivti3@GCC_3.0",
+        "__umodti3@GCC_3.0",
+        "__unordtf2@GCC_4.5.0"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/ipsec/libcharon.so.0.0.0",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2ulz@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/ipsec/libipsec.so.0.0.0",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/ipsec/libstrongswan.so.0.0.0",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/ipsec/libtls.so.0.0.0",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-kernel-netlink.so",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pem.so",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-pkcs7.so",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-stroke.so",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-vici.so",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2ulz@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/ipsec/plugins/libstrongswan-x509.so",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libasusnatnl.so",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2lz@GCC_3.5",
+        "__aeabi_d2ulz@GCC_3.5",
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_l2d@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5",
+        "__aeabi_unwind_cpp_pr0@GCC_3.5",
+        "__aeabi_unwind_cpp_pr1@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libavahi-common.so.3.5.4",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2lz@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libavahi-core.so.7.1.0",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2lz@GCC_3.5",
+        "__aeabi_l2d@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libblkid.so.1.0",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libcom_err.so.2.1",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libe2p.so.2.3",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libexpat.so.1.5.2",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_unwind_cpp_pr0@GCC_3.5",
+        "__aeabi_unwind_cpp_pr1@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libext2fs.so.2.4",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2ulz@GCC_3.5",
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libletsencrypt.so",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libpcre.so.1.0.1",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libstdc++.so.6",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "_Unwind_Complete@GCC_3.5",
+        "_Unwind_DeleteException@GCC_3.0",
+        "_Unwind_GetDataRelBase@GCC_3.0",
+        "_Unwind_GetLanguageSpecificData@GCC_3.0",
+        "_Unwind_GetRegionStart@GCC_3.0",
+        "_Unwind_GetTextRelBase@GCC_3.0",
+        "_Unwind_RaiseException@GCC_3.0",
+        "_Unwind_Resume@GCC_3.0",
+        "_Unwind_Resume_or_Rethrow@GCC_3.3",
+        "_Unwind_VRS_Get@GCC_3.5",
+        "_Unwind_VRS_Set@GCC_3.5",
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5",
+        "__aeabi_unwind_cpp_pr0@GCC_3.5",
+        "__aeabi_unwind_cpp_pr1@GCC_3.5",
+        "__ctzdi2@GCC_3.4",
+        "__gnu_unwind_frame@GCC_3.5",
+        "__popcountsi2@GCC_3.4"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libubox.so",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libusb-1.0.so.0",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libuuid.so.1.2",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/libxml2.so.2",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/lib/arm-linux-gnueabi/openvpn-plugin-auth-pam.so",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidiv@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/Tor",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_unwind_cpp_pr0@GCC_3.5",
+        "__aeabi_unwind_cpp_pr1@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/aaews",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/acs_cli2",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/acsd2",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/bsd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_ul2f@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/ceventc",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/ceventd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/chilli",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/chilli_opt",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/chilli_radconfig",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/debug_monitor",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/dnsmasq",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/e2fsck",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/eventd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidiv@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/ftpclient",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_unwind_cpp_pr0@GCC_3.5",
+        "__aeabi_unwind_cpp_pr1@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/google_client",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2lz@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/httpd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_ul2f@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/inadyn",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/lpd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/mastiff",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/miniupnpd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/mke2fs",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2ulz@GCC_3.5",
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/openvpn",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/phddns",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/pppd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/qosmgmtd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidiv@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/rc",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5",
+        "__aeabi_ul2f@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/samba_multicall",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2lz@GCC_3.5",
+        "__aeabi_d2ulz@GCC_3.5",
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_l2d@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5",
+        "__aeabi_ul2f@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/stubby",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/tune2fs",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2ulz@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_ul2d@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/uqmi",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/usbclient",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_ul2f@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/vsftpd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_l2d@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/wget",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_d2lz@GCC_3.5",
+        "__aeabi_idiv@GCC_3.5",
+        "__aeabi_idivmod@GCC_3.5",
+        "__aeabi_l2d@GCC_3.5",
+        "__aeabi_ldivmod@GCC_3.5",
+        "__aeabi_uidiv@GCC_3.5",
+        "__aeabi_uidivmod@GCC_3.5",
+        "__aeabi_uldivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/wlceventd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_uidiv@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/wlconf",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idivmod@GCC_3.5"
+      ]
+    },
+    {
+      "path": "usr/sbin/wps_pbcd",
+      "triplet": "arm-linux-gnueabi",
+      "required_symbols": [
+        "__aeabi_idiv@GCC_3.5"
+      ]
+    }
+  ]
+}

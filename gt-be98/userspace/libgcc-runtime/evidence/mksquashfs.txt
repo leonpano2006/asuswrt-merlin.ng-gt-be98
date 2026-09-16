@@ -1,0 +1,28 @@
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on libgcc-runtime-20260916/build/rootfs.squashfs, block size 524288.
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 524288
+	compressed data, compressed metadata, compressed fragments,
+	compressed xattrs, compressed ids
+	duplicates are removed
+Filesystem size 74170.96 Kbytes (72.43 Mbytes)
+	34.83% of uncompressed filesystem size (212960.35 Kbytes)
+Inode table size 38272 bytes (37.38 Kbytes)
+	25.10% of uncompressed inode table size (152465 bytes)
+Directory table size 46915 bytes (45.82 Kbytes)
+	48.71% of uncompressed directory table size (96313 bytes)
+Number of duplicate files found 361
+Number of inodes 4608
+Number of files 3482
+Number of fragments 206
+Number of symbolic links 810
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 316
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	root (0)
+Number of gids 1
+	root (0)

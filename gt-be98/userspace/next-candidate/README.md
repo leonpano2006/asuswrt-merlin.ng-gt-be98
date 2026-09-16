@@ -1,48 +1,54 @@
 # Next GT-BE98 userspace candidate
 
-The current candidate combines the verified Web UI NVRAM fix, armel directory
-migration, four Ubuntu GCC 15 library builds, and the new
-[Ubuntu-style multiarch glibc loaders](../multiarch-loader/README.md).
-It has passed QEMU and physical board testing and remains **uncommitted**.
-The current result is recorded as `hardware_trial`; the previous image's
-trial remains under `previous_hardware_trial` in `candidate.json`.
+The current candidate adds [GCC runtimes](../libgcc-runtime/README.md) to the
+previously hardware-tested Ubuntu-style multiarch firmware. Armel moves from
+GCC 10.3 to Ubuntu GCC 15.2, armhf gains GCC 15.2, and the existing aarch64 GCC
+16.2 library is retained. QEMU and isolated runtime probes on the router pass;
+the newly packaged complete image has not yet been flashed. The current prior
+image is under `previous_hardware_trial` in candidate.json; older trials remain
+under `earlier_hardware_trials`.
 
 The mandatory preparation pipeline is:
 
-1. Extract the exact runtime-dirs SquashFS pinned in `candidate.json`.
+1. Extract the pinned runtime-dirs SquashFS.
 2. Apply the hash-guarded NVRAM getter lifetime fix.
 3. Move armel libraries/plugins to `/usr/lib/arm-linux-gnueabi`.
-4. Overlay the tested GCC 15 zlib, Expat, json-c and libcap-ng outputs.
-5. Apply matched glibc 2.44 runtimes with Ubuntu loader/search-path semantics;
-   remove 257 migration aliases and keep 32 documented compatibility entries.
+4. Overlay tested GCC 15 zlib, Expat, json-c and libcap-ng builds.
+5. Apply glibc 2.44 with Ubuntu loader/search-path semantics; remove 257
+   migration aliases and keep 32 documented compatibility entries.
+6. Apply the pinned libgcc overlay: replace armel and add armhf only.
 
-After following both sibling checkpoints' compiler/build instructions:
+After following the three sibling checkpoints' dependency/build instructions:
 
 ```sh
 python3 scripts/prepare-rootfs.py \
   --base-squashfs /path/to/verified-runtime-dirs-rootfs.squashfs \
   --patch-script ../webui-nvram-cache/scripts/patch-nvram.py \
-  --rebuilt ../armel-multiarch/build/libraries/rebuilt \
+  --rebuilt /path/to/verified-four-library-outputs \
   --glibc-runtime ../multiarch-loader/packages/runtime \
+  --libgcc-runtime ../libgcc-runtime/packages/runtime \
   --output rootfs --report evidence/integrated-candidate.json
 ```
 
-Run after legacy installers and overlays. All checkpoint scripts, selected
-libraries and the new runtime manifest are pinned. The integrated output
-matches the independently staged and unpacked tested SquashFS. All 182 kernel
-modules, kernel #36, vendor blobs, prior GNU userspace, merged /usr, /run,
+Run after legacy installers and overlays. Scripts, selected libraries and
+runtime manifests are pinned. The full pipeline output matches both the
+independent staging tree and unpacked tested SquashFS. All 182 kernel modules,
+kernel #36, vendor components, previous GNU userspace, merged /usr, /run,
 PID1 identity/metadata guard and the Web UI fix are preserved. Systemd is not
-installed. USB `/usr/local` and Docker configuration remain the existing
+installed. USB `/usr/local` and Docker remain the existing
 [external runtime dependency](../docker-network-local/README.md).
 
-The 88,333,388-byte PKGTB preserves and verifies the signed #36 bootfs.
-Rootfs SHA-256 is `4f2a9673173a0c32b85a2b1256eaafab4ca96312f134df86e38ae1a58595a88e`.
-QEMU passes 312 dependency checks without cache and 312 with cache, three ABI
-probes, libc and library functional tests, legacy plugin consumers, 34 command
-checks, and the PID1 rollback guard with no cache. This exact image now also passes
-the physical board trial: all three glibc ABIs, both sets of 312 dependency
-checks, Web UI, four radios, Docker networking/memcg and Runner observation.
-See [the hardware record](../multiarch-loader/flash/evidence/live-summary.json).
+The 88,370,252-byte PKGTB preserves and verifies the signed #36 bootfs.
+Its SHA-256 is `e1007e8210f357e1a6f7a3c8c899706644f953a84f05f5283859a948935460e0`.
+Rootfs SHA-256 is `274ad17ea4c9878352a9648acfe8c4ce2057043b30068e0e410102df21fce3d6`.
+QEMU passes 624 dependency checks, three ABI probes, prior library/userspace
+checks, the PID1 guard and four new unwind/C++ cases including old GCC 10
+consumers. Those four runtime cases also pass in isolated temporary processes
+on the physical router. See
+[the runtime verification](../libgcc-runtime/evidence/verification.json).
+
+The [previous complete firmware trial](../multiarch-loader/flash/evidence/live-summary.json)
+also passed Web UI, four radios, Docker networking/memcg and Runner checks.
+Those observations refer to the previous image, not a boot of this new image.
 Slot 1 remains uncommitted; normal reboot goes to committed slot 2 / #35.
-Hardware throughput was not benchmarked. Recheck live UBI and slot state before
-any future flash; these scripts pin the historical source/target hashes.
+Recheck live UBI capacity and slot state before any future flash.

@@ -1,6 +1,6 @@
 {
-  "candidate": "gt-be98-ubuntu-multiarch-loader-20260916",
-  "status": "hardware-trial-verified-uncommitted",
+  "candidate": "gt-be98-libgcc-runtime-20260916",
+  "status": "candidate-packaged-qemu-and-isolated-runtime-verified",
   "base_commit": "5bcedfc400aa58e1c2183fb0ef71c99180c4ee89",
   "base_rootfs_sha256": "af038997f690e9378941810a6323f681de521cf23a85199d2f832dfbe57176f2",
   "base_rootfs_bytes": 75788288,
@@ -36,8 +36,8 @@
     "fresh_size_and_ubi_capacity_check_required": true
   },
   "firmware_packaged": true,
-  "candidate_firmware_boot_tested": true,
-  "flash_requested_by_this_checkpoint": true,
+  "candidate_firmware_boot_tested": false,
+  "flash_requested_by_this_checkpoint": false,
   "firmware_commit_requested": false,
   "required_postprocessing": {
     "name": "armel multiarch and Ubuntu GCC 15 library rebuilds",
@@ -63,10 +63,10 @@
   },
   "previous_hardware_trial": {
     "status": "hardware-trial-verified-uncommitted",
-    "record": "../armel-multiarch/flash/evidence/live-summary.json",
-    "image": "../armel-multiarch/flash/GT-BE98_leon36-armel-multiarch-gcc15_zstd22.pkgtb",
-    "image_sha256": "d20e532d4dab0777761007a967da3d897d0fa2ea3fab9fdc4b304e89f00cc364",
-    "image_bytes": 88222796,
+    "record": "../multiarch-loader/flash/evidence/live-summary.json",
+    "image": "../multiarch-loader/flash/GT-BE98_leon36-ubuntu-multiarch_zstd22.pkgtb",
+    "image_sha256": "67f896ed532531a345805dc14303b23b203d4545fb8cb11a5ab5df12d8c7a23d",
+    "image_bytes": 88333388,
     "booted_slot": 1,
     "normal_reboot_slot": 2,
     "commit_flags": [
@@ -157,24 +157,52 @@
       "firmware_commit_performed": false
     }
   },
-  "candidate_image": {
-    "name": "GT-BE98_leon36-ubuntu-multiarch_zstd22.pkgtb",
-    "bytes": 88333388,
-    "sha256": "67f896ed532531a345805dc14303b23b203d4545fb8cb11a5ab5df12d8c7a23d",
-    "hardware_boot_tested": true
+  "earlier_hardware_trials": [
+    {
+      "status": "hardware-trial-verified-uncommitted",
+      "record": "../armel-multiarch/flash/evidence/live-summary.json",
+      "image": "../armel-multiarch/flash/GT-BE98_leon36-armel-multiarch-gcc15_zstd22.pkgtb",
+      "image_sha256": "d20e532d4dab0777761007a967da3d897d0fa2ea3fab9fdc4b304e89f00cc364",
+      "image_bytes": 88222796,
+      "booted_slot": 1,
+      "normal_reboot_slot": 2,
+      "commit_flags": [
+        0,
+        1
+      ],
+      "firmware_commit_performed": false
+    }
+  ],
+  "required_libgcc_postprocessing": {
+    "checkpoint": "../libgcc-runtime",
+    "versions": {
+      "armel": "15.2.0",
+      "armhf": "15.2.0",
+      "aarch64": "16.2.0"
+    },
+    "checkpoint_files": {
+      "scripts/prepare-rootfs.py": "044ee3eff64ba3f4bde9e734c1cf9ea714a74d8a7a09829685b243982a156109",
+      "scripts/common.py": "12718a4ab1a5b8c359379cbcab3774ed6fa5a325a230eabc726ba17beec8367c",
+      "configs/runtime-policy.json": "5d9449d7cf1f745821a571c24053f821f6032515728dbdcca37993575eb932d5"
+    },
+    "runtime_manifest_sha256": "d9a85a5c22f976670e171f45fc12c5906ae200d7e05da1b0120ab1591fb57e00",
+    "baseline_source_inventory_sha256": "560901ece4b8b6d64d440a044c417babc3b4a53106236c905ea071b4c6d7f17d",
+    "aarch64_retained_bytewise": true,
+    "validation": {
+      "record": "../libgcc-runtime/evidence/verification.json",
+      "status": "candidate-packaged-qemu-and-isolated-runtime-verified",
+      "qemu_passed": true,
+      "isolated_hardware_runtime_passed": true,
+      "firmware_hardware_boot_tested": false,
+      "integrated_recipe_identical": true,
+      "all_other_rootfs_paths_unchanged": true
+    }
   },
-  "hardware_trial": {
-    "status": "hardware-trial-verified-uncommitted",
-    "record": "../multiarch-loader/flash/evidence/live-summary.json",
-    "image": "../multiarch-loader/flash/GT-BE98_leon36-ubuntu-multiarch_zstd22.pkgtb",
-    "image_sha256": "67f896ed532531a345805dc14303b23b203d4545fb8cb11a5ab5df12d8c7a23d",
-    "image_bytes": 88333388,
-    "booted_slot": 1,
-    "normal_reboot_slot": 2,
-    "commit_flags": [
-      0,
-      1
-    ],
-    "firmware_commit_performed": false
+  "candidate_image": {
+    "image": "../libgcc-runtime/flash/GT-BE98_leon36-libgcc15_zstd22.pkgtb",
+    "bytes": 88370252,
+    "sha256": "e1007e8210f357e1a6f7a3c8c899706644f953a84f05f5283859a948935460e0",
+    "rootfs_sha256": "274ad17ea4c9878352a9648acfe8c4ce2057043b30068e0e410102df21fce3d6",
+    "bootfs_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f"
   }
 }

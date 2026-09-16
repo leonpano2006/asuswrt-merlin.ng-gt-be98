@@ -1,0 +1,9 @@
+{
+  "source_inventory_sha256": "560901ece4b8b6d64d440a044c417babc3b4a53106236c905ea071b4c6d7f17d",
+  "source_squashfs_sha256": "4f2a9673173a0c32b85a2b1256eaafab4ca96312f134df86e38ae1a58595a88e",
+  "runtime_manifest_sha256": "d9a85a5c22f976670e171f45fc12c5906ae200d7e05da1b0120ab1591fb57e00",
+  "source_image_sha256": "67f896ed532531a345805dc14303b23b203d4545fb8cb11a5ab5df12d8c7a23d",
+  "libgcc_soname": "libgcc_s.so.1",
+  "glibc": "2.44",
+  "modules": 182
+}

@@ -1,0 +1,8 @@
+{
+  "base": "https://ports.ubuntu.com/ubuntu-ports/",
+  "suite": "questing",
+  "signing_fingerprint": "F6ECB3762474EDA9D21B7022871920D1991BC93C",
+  "release_sha256": "9e5889fd7c39f73bfad7847e355b514c600e004602fd4227c8cc53d4fd94b1c4",
+  "release_bytes": 274572,
+  "release_url": "https://ports.ubuntu.com/ubuntu-ports/dists/questing/InRelease"
+}

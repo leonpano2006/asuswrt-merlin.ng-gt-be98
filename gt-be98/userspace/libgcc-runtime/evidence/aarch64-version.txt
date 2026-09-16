@@ -1,0 +1,4 @@
+
+String dump of section '.comment':
+  [     0]  GCC: (GNU) 16.2.0
+
