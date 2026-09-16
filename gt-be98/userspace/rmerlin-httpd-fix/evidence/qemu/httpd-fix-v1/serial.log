@@ -1,0 +1,517 @@
+Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+Linux version 4.19.294 (docker@2fbcc3225bf9) (gcc version 10.3.0 (Buildroot 2021.02.4)) #36 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026
+Machine model: linux,dummy-virt
+earlycon: pl11 at MMIO32 0x0000000009000000 (options '')
+bootconsole [pl11] enabled
+/cpus/cpu-map: empty cluster
+uboot_max_len missing, using defaults 16384
+uboot env missing
+Failed to retrieve boot CFE version from dtb!
+BoardId [], NVRAM_ULBOARDSTUFFOPTION=0 
+size of sk_buff 576
+offset of cb in sk_buff 400
+OTP driver initcall
+OTP driver scanning DT
+Failed to find strap dts node
+Strap Register: 0xffffffff
+Broadcom IQoS v1.0 initialized
+Broadcom Logger v0.1
+skb_free_task created successfully with start budget 32, period 10ms
+[0;34mBLOG v3.0 Initialized[0m
+BLOG Rule v1.0 Initialized
+bcm_tcp_task created successfully with budget 256 ,cpumask:0x0
+blogtcp_local netdev registered successfully 
+cacheinfo: Unable to detect cache hierarchy for CPU 0
+ERROR - Invalid number of MAC addresses (0) is configured.
+zswap: default zpool zsmalloc not available
+zswap: pool creation failed
+QEMU_LAB_INIT_REACHED
+LEON_SYSTEMD_TRIAL: Offline early-init rehearsal
+LEON_SYSTEMD_EARLY_CONFIGURATION_READY
+LEON_SYSTEMD_TRIAL: Executing systemd as PID 1
+systemd 255.22-gt-be98-lab running in system mode (-PAM -AUDIT -SELINUX -APPARMOR -IMA -SMACK -SECCOMP -GCRYPT -GNUTLS -OPENSSL -ACL -BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC -KMOD -LIBCRYPTSETUP -LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB -ZSTD -BPF_FRAMEWORK -XKBCOMMON -UTMP -SYSVINIT default-hierarchy=legacy)
+Detected virtualization qemu.
+Detected architecture arm64.
+
+Welcome to [1mGT-BE98 systemd trial[0m!
+
+No hostname configured, using default hostname.
+Hostname set to <localhost>.
+[[0;32m  OK  [0m] Listening on [0;1;39mJournal Socket (/dev/log)[0m.
+[[0;32m  OK  [0m] Listening on [0;1;39mJournal Socket[0m.
+         Starting [0;1;39mASUS compatibility journal[0m...
+[[0;32m  OK  [0m] Started [0;1;39mASUS compatibility journal[0m.
+         Starting [0;1;39mOffline systemd integration checks[0m...
++ export PATH=/usr/bin:/usr/sbin:/bin:/sbin
++ export SYSTEMD_PAGER=cat SYSTEMD_COLORS=0
++ exec
++ trap echo LAB_SYSTEMD_CHECK_FAILURE; /bin/busybox poweroff -f EXIT
++ readlink /proc/1/exe
++ test /usr/lib/systemd/systemd = /usr/lib/systemd/systemd
++ test -d /run/systemd/system
++ test -S /run/systemd/private
++ echo LAB_SYSTEMD_PID1_PASS
+LAB_SYSTEMD_PID1_PASS
++ test -d /run
++ test ! -L /run
++ readlink /var/run
++ test /run = /run
++ awk $2 == "/run" && $3 == "tmpfs" {ok=1} END {exit !ok} /proc/mounts
++ echo LAB_SYSTEMD_RUN_LAYOUT_PASS
+LAB_SYSTEMD_RUN_LAYOUT_PASS
++ systemctl start leon-guard.service
+         Starting [0;1;39mOffline ARMEL trial-guard integration probe[0m...
+LEON_TRIAL: blocked automatic boot metadata write: commit
+LEON_TRIAL: blocked automatic boot metadata write: commit
+LEON_TRIAL: blocked automatic boot metadata write: setBootImageState
+LEON_TRIAL: blocked automatic boot metadata write: setImgValidStatus
+LEON_TRIAL: blocked automatic boot metadata write: setImgSeqNum
+LEON_TRIAL: blocked automatic boot metadata write: setNandMetadata
+LEON_TRIAL: blocked automatic boot metadata write: setEmmcMetadata
+LAB_SYSTEMD_ARMEL_GUARD_SERVICE_PASS
+[[0;32m  OK  [0m] Finished [0;1;39mOffline ARMEL trial-guard integration probe[0m.
++ systemctl show leon-guard.service -p ExecMainStatus --value
++ test 0 = 0
++ systemctl stop leon-guard.service
+leon-guard.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mOffline ARMEL trial-guard integration probe[0m.
++ echo LAB_SYSTEMD_TRIAL_GUARD_BOUNDARY_PASS
+LAB_SYSTEMD_TRIAL_GUARD_BOUNDARY_PASS
++ systemctl start leon-worker.service
+[0;1;38;5;185mcgroup compatibility translation between legacy and unified hierarchy settings activated. See cgroup-compat debug messages for details.[0m
+[[0;32m  OK  [0m] Started [0;1;39mRestart and cgroup integration probe[0m.
++ systemctl show leon-worker.service -p MainPID --value
++ first=228
++ test 228 -gt 1
++ systemctl is-active leon-worker.service
++ test active = active
++ systemctl restart leon-worker.service
+         Stopping [0;1;39mRestart and cgroup integration probe[0m...
+leon-worker.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mRestart and cgroup integration probe[0m.
+[[0;32m  OK  [0m] Started [0;1;39mRestart and cgroup integration probe[0m.
++ systemctl show leon-worker.service -p MainPID --value
++ second=238
++ test 238 -gt 1
++ test 228 != 238
++ echo LAB_SYSTEMD_SERVICE_RESTART_PASS
+LAB_SYSTEMD_SERVICE_RESTART_PASS
++ systemctl show leon-worker.service -p ControlGroup --value
++ cg=/system.slice/leon-worker.service
++ test -n /system.slice/leon-worker.service
++ test -d /sys/fs/cgroup/memory/system.slice/leon-worker.service
++ test -d /sys/fs/cgroup/pids/system.slice/leon-worker.service
++ cat /sys/fs/cgroup/memory/system.slice/leon-worker.service/memory.limit_in_bytes
++ test 67108864 = 67108864
++ cat /sys/fs/cgroup/pids/system.slice/leon-worker.service/pids.max
++ test 16 = 16
++ systemctl show leon-worker.service -p Delegate --value
++ test yes = yes
++ echo LAB_SYSTEMD_V1_MEMORY_PIDS_DELEGATION_PASS
+LAB_SYSTEMD_V1_MEMORY_PIDS_DELEGATION_PASS
++ systemctl kill --kill-whom=main --signal=KILL leon-worker.service
+leon-worker.service: Sent signal SIGKILL to main process 238 (sleep) on client request.
+[0;1;38;5;185mleon-worker.service: Main process exited, code=killed, status=9/KILL[0m
++ i=0
++ :
++ systemctl show leon-worker.service -p MainPID --value
+[0;1;38;5;185mleon-worker.service: Failed with result 'signal'.[0m
+leon-worker.service: Scheduled restart job, restart counter is at 1.
++ third=0
++ [ 0 -gt 1 ]
+[[0;32m  OK  [0m] Started [0;1;39mRestart and cgroup integration probe[0m.
++ i=1
++ test 1 -lt 30
++ sleep 1
++ :
++ systemctl show leon-worker.service -p MainPID --value
++ third=260
++ [ 260 -gt 1 ]
++ [ 260 != 238 ]
++ break
++ systemctl show leon-worker.service -p NRestarts --value
++ test 1 -ge 1
++ echo LAB_SYSTEMD_SERVICE_RECOVERY_PASS
+LAB_SYSTEMD_SERVICE_RECOVERY_PASS
++ systemctl stop leon-worker.service
+         Stopping [0;1;39mRestart and cgroup integration probe[0m...
+leon-worker.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mRestart and cgroup integration probe[0m.
++ systemctl show leon-worker.service -p ActiveState --value
++ test inactive = inactive
++ test ! -d /proc/260
++ echo LAB_SYSTEMD_SERVICE_STOP_PASS
+LAB_SYSTEMD_SERVICE_STOP_PASS
++ journalctl --sync
++ journalctl --no-pager -o cat -u leon-worker.service
++ grep -q LEON_WORKER_STARTED /run/leon-worker-journal.txt
++ echo LAB_SYSTEMD_JOURNAL_PASS
+LAB_SYSTEMD_JOURNAL_PASS
++ systemctl daemon-reexec
+[0;1;39mReexecuting requested from client PID 281 ('systemctl') (unit leon-check.service)...[0m
+[0;1;39mReexecuting.[0m
+systemd 255.22-gt-be98-lab running in system mode (-PAM -AUDIT -SELINUX -APPARMOR -IMA -SMACK -SECCOMP -GCRYPT -GNUTLS -OPENSSL -ACL -BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC -KMOD -LIBCRYPTSETUP -LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB -ZSTD -BPF_FRAMEWORK -XKBCOMMON -UTMP -SYSVINIT default-hierarchy=legacy)
+Detected virtualization qemu.
+Detected architecture arm64.
++ i=0
++ systemctl show --property=Version --value
+255.22-gt-be98-lab
++ readlink /proc/1/exe
++ test /usr/lib/systemd/systemd = /usr/lib/systemd/systemd
++ echo LAB_SYSTEMD_REEXEC_PASS
+LAB_SYSTEMD_REEXEC_PASS
++ echo LAB_SYSTEMD_CONFIGURATION_MOUNTS
+LAB_SYSTEMD_CONFIGURATION_MOUNTS
++ awk $5 ~ /^\/(tmp|etc)/ {print} /proc/self/mountinfo
+19 15 0:14 / /tmp rw,nosuid,relatime shared:10 - tmpfs tmpfs rw
+24 19 0:19 / /tmp/mnt rw,nosuid,relatime shared:11 - tmpfs tmpfs rw,size=128k,mode=755
++ systemctl show systemd-journald.service -p MainPID --value
++ readlink /proc/1/fd/0
++ target=/dev/null
++ readlink /proc/1/fd/1
++ target=/dev/null
++ readlink /proc/1/fd/10
++ target=anon_inode:inotify
++ readlink /proc/1/fd/12
++ target=anon_inode:[eventpoll]
++ readlink /proc/1/fd/13
++ target=/proc/1/mountinfo
++ readlink /proc/1/fd/14
++ target=anon_inode:inotify
++ readlink /proc/1/fd/15
++ target=/proc/swaps
++ readlink /proc/1/fd/16
++ target=socket:[963]
++ readlink /proc/1/fd/17
++ target=socket:[964]
++ readlink /proc/1/fd/18
++ target=anon_inode:[timerfd]
++ readlink /proc/1/fd/19
++ target=socket:[967]
++ readlink /proc/1/fd/2
++ target=/dev/null
++ readlink /proc/1/fd/20
++ target=/proc/pressure/memory
++ readlink /proc/1/fd/3
++ target=/dev/console
++ readlink /proc/1/fd/34
++ target=socket:[760]
++ readlink /proc/1/fd/36
++ target=socket:[762]
++ readlink /proc/1/fd/37
++ target=socket:[764]
++ readlink /proc/1/fd/38
++ target=socket:[765]
++ readlink /proc/1/fd/39
++ target=socket:[772]
++ readlink /proc/1/fd/4
++ target=anon_inode:[eventpoll]
++ readlink /proc/1/fd/40
++ target=socket:[770]
++ readlink /proc/1/fd/41
++ target=socket:[787]
++ readlink /proc/1/fd/42
++ target=socket:[794]
++ readlink /proc/1/fd/43
++ target=socket:[797]
++ readlink /proc/1/fd/5
++ target=anon_inode:[signalfd]
++ readlink /proc/1/fd/6
++ target=/sys/fs/cgroup/systemd
++ readlink /proc/1/fd/7
++ target=anon_inode:[timerfd]
++ readlink /proc/1/fd/8
++ target=/usr/lib/systemd/systemd-executor
++ readlink /proc/1/cwd
++ target=/
++ readlink /proc/205/fd/0
++ target=/dev/null
++ readlink /proc/205/fd/1
++ target=/dev/null
++ readlink /proc/205/fd/10
++ target=/proc/sys/kernel/hostname
++ readlink /proc/205/fd/11
++ target=anon_inode:[signalfd]
++ readlink /proc/205/fd/12
++ target=anon_inode:[signalfd]
++ readlink /proc/205/fd/13
++ target=anon_inode:[signalfd]
++ readlink /proc/205/fd/14
++ target=socket:[1256]
++ readlink /proc/205/fd/15
++ target=/proc/pressure/memory
++ readlink /proc/205/fd/16
++ target=/run/log/journal/6ba05f9749b347f487e3bd68bc9ab0bf/system.journal
++ readlink /proc/205/fd/17
++ target=anon_inode:[timerfd]
++ readlink /proc/205/fd/2
++ target=/dev/null
++ readlink /proc/205/fd/3
++ target=socket:[794]
++ readlink /proc/205/fd/4
++ target=socket:[797]
++ readlink /proc/205/fd/5
++ target=socket:[787]
++ readlink /proc/205/fd/6
++ target=/dev/kmsg
++ readlink /proc/205/fd/7
++ target=anon_inode:[eventpoll]
++ readlink /proc/205/fd/8
++ target=/dev/kmsg
++ readlink /proc/205/fd/9
++ target=socket:[1250]
++ readlink /proc/205/cwd
++ target=/
++ /rom/etc/init.d/mount-fs.sh stop
+Unmounting filesystems...
++ awk $2=="/var" && $3=="tmpfs"{ok=1}END{exit !ok} /proc/mounts
++ awk $2=="/tmp/mnt" && $3=="tmpfs"{ok=1}END{exit !ok} /proc/mounts
++ test -S /run/systemd/private
++ echo LAB_BSP_PRESERVES_SYSTEMD_MOUNTS_PASS
+LAB_BSP_PRESERVES_SYSTEMD_MOUNTS_PASS
++ /usr/libexec/leon-rc-compat-check
+LAB_RC_MULTIARCH_PRELOAD_PASS
+LAB_RC_MULTIARCH_PRELOAD_PASS
+LAB_RC_MULTIARCH_PRELOAD_PASS
+LAB_RC_ABSENT_BROKER_FAIL_CLOSED_PASS
+         Starting [0;1;39mASUS hardware and legacy service manager[0m...
+leon-rc-broker[403]: ASUS notification compatibility not loaded: Accessing a corrupted shared library
+[0;1;39masus-rc-lab.service: Main process exited, code=exited, status=10/n/a[0m
+[0;1;38;5;185masus-rc-lab.service: Failed with result 'exit-code'.[0m
+[[0;1;31mFAILED[0m] Failed to start [0;1;39mASUS hardware and legacy service manager[0m.
+See 'systemctl status asus-rc-lab.service' for details.
+Job for asus-rc-lab.service failed because the control process exited with error code.
+See "systemctl status asus-rc-lab.service" and "journalctl -xeu asus-rc-lab.service" for details.
+LAB_RC_MISSING_PRELOAD_REJECTED_PASS
+         Starting [0;1;39mASUS hardware and legacy service manager[0m...
+leon-rc-broker[417]: LAB_RC_EARLY_NOTIFICATION_QUEUED_PASS
+leon-rc-broker[413]: LEON_TRIAL: blocked automatic boot metadata write: commit
+leon-rc-broker[413]: LEON_TRIAL: blocked automatic boot metadata write: setBootImageState
+leon-rc-broker[413]: LAB_RC_EARLY_SIGCHLD_ALARM_PASS
+leon-rc-broker[413]: LAB_RC_BSP_SIGNAL_MASK_PASS
+leon-rc-broker[413]: LAB_RC_IDENTITY_GUARD_SUBREAPER_MOUNTS_PASS
+[[0;32m  OK  [0m] Started [0;1;39mASUS hardware and legacy service manager[0m.
+LAB_RC_ORIGINAL_LIBSHARED_SEVEN_APIS_PASS
+LAB_RC_AUTHORIZATION_AND_SIGNAL_SCOPE_PASS
+LAB_RC_START_STOP_RESTART_ROUTING_PASS
+LAB_RC_RETAINED_OBJECT_WRAPPERS_PASS
+LAB_RC_REBOOT_REQUEST_NO_EARLY_DRAIN_PASS
+leon-rc-broker[413]: LAB_RC_ORDERED_DRAIN_PASS
+leon-rc-broker[412]: ASUS rc exited: exit=0 signal=0 ready=1 stopping=1
+         Stopping [0;1;39mASUS hardware and legacy service manager[0m...
+asus-rc-lab.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mASUS hardware and legacy service manager[0m.
+LAB_RC_ABSENT_BROKER_FAIL_CLOSED_PASS
+         Starting [0;1;39mASUS hardware and legacy service manager[0m...
+leon-rc-broker[468]: LAB_RC_EARLY_NOTIFICATION_QUEUED_PASS
+leon-rc-broker[464]: LEON_TRIAL: blocked automatic boot metadata write: commit
+leon-rc-broker[464]: LEON_TRIAL: blocked automatic boot metadata write: setBootImageState
+leon-rc-broker[464]: LAB_RC_EARLY_SIGCHLD_ALARM_PASS
+leon-rc-broker[464]: LAB_RC_BSP_SIGNAL_MASK_PASS
+[[0;32m  OK  [0m] Started [0;1;39mASUS hardware and legacy service manager[0m.
+leon-rc-broker[464]: LAB_RC_IDENTITY_GUARD_SUBREAPER_MOUNTS_PASS
+leon-rc-broker[464]: LAB_RC_ORDERED_DRAIN_PASS
+         Stopping [0;1;39mASUS hardware and legacy service manager[0m...
+leon-rc-broker[463]: ASUS rc exited: exit=0 signal=0 ready=1 stopping=1
+asus-rc-lab.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mASUS hardware and legacy service manager[0m.
+LAB_RC_EARLY_NOTIFICATION_QUEUED_PASS
+LAB_RC_BSP_SIGNAL_MASK_PASS
+LAB_RC_IDENTITY_GUARD_SUBREAPER_MOUNTS_PASS
+LAB_RC_ORDERED_DRAIN_PASS
+         Starting [0;1;39mASUS hardware and legacy service manager[0m...
+leon-rc-broker[497]: LAB_RC_EARLY_NOTIFICATION_QUEUED_PASS
+leon-rc-broker[493]: LEON_TRIAL: blocked automatic boot metadata write: commit
+leon-rc-broker[493]: LEON_TRIAL: blocked automatic boot metadata write: setBootImageState
+leon-rc-broker[493]: LAB_RC_EARLY_SIGCHLD_ALARM_PASS
+[[0;32m  OK  [0m] leon-rc-broker[493]: LAB_RC_BSP_SIGNAL_MASK_PASS
+Started [0;1;39mASUS hardware and legacy service manager[0m.
+leon-rc-broker[493]: LAB_RC_IDENTITY_GUARD_SUBREAPER_MOUNTS_PASS
+leon-rc-broker[492]: ASUS rc exited: exit=-1 signal=9 ready=1 stopping=0
+[0;1;39masus-rc-lab.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;1;38;5;185masus-rc-lab.service: Failed with result 'exit-code'.[0m
+LAB_RC_ABSENT_BROKER_FAIL_CLOSED_PASS
+LAB_RC_CHILD_FAILURE_ISOLATED_PASS
+	/usr/$LIB/libleon-rc-notify.so => /usr/lib/arm-linux-gnueabi/libleon-rc-notify.so (0xf7b90000)
+	libnvram.so => /usr/lib/arm-linux-gnueabi/libnvram.so (0xf7b70000)
+	libshared.so => /usr/lib/arm-linux-gnueabi/libshared.so (0xf7a70000)
+	libcrypt.so.1 => /usr/lib/arm-linux-gnueabi/libcrypt.so.1 (0xf7a10000)
+	libdl.so.2 => /usr/lib/arm-linux-gnueabi/libdl.so.2 (0xf79e0000)
+	libgen_util.so => /usr/lib/arm-linux-gnueabi/libgen_util.so (0xf79c0000)
+	libsys_util.so => /usr/lib/arm-linux-gnueabi/libsys_util.so (0xf79a0000)
+	libwlcsm.so => /usr/lib/arm-linux-gnueabi/libwlcsm.so (0xf7980000)
+	libbcm_flashutil.so => /usr/lib/arm-linux-gnueabi/libbcm_flashutil.so (0xf7940000)
+	libbcm_util.so => /usr/lib/arm-linux-gnueabi/libbcm_util.so (0xf7920000)
+	libbcm_boardctl.so => /usr/lib/arm-linux-gnueabi/libbcm_boardctl.so (0xf7900000)
+	libwpa_client.so => /usr/lib/arm-linux-gnueabi/libwpa_client.so (0xf78e0000)
+	libbcm.so => /usr/lib/arm-linux-gnueabi/libbcm.so (0xf78c0000)
+	libgcc_s.so.1 => /usr/lib/arm-linux-gnueabi/libgcc_s.so.1 (0xf7880000)
+	libcrypto.so.1.1 => /usr/lib/arm-linux-gnueabi/libcrypto.so.1.1 (0xf7610000)
+	libssl.so.1.1 => /usr/lib/arm-linux-gnueabi/libssl.so.1.1 (0xf7580000)
+	libbwdpi.so => /usr/lib/arm-linux-gnueabi/libbwdpi.so (0xf7540000)
+	libdisk.so => /usr/lib/arm-linux-gnueabi/libdisk.so (0xf7510000)
+	libsqlite3.so.0 => /usr/lib/arm-linux-gnueabi/libsqlite3.so.0 (0xf73e0000)
+	libnt.so => /usr/lib/arm-linux-gnueabi/libnt.so (0xf73c0000)
+	libwebapi.so => /usr/lib/arm-linux-gnueabi/libwebapi.so (0xf7370000)
+	libcfgmnt.so => /usr/lib/arm-linux-gnueabi/libcfgmnt.so (0xf7320000)
+	libnmpapi.so => /usr/lib/arm-linux-gnueabi/libnmpapi.so (0xf7300000)
+	libpthread.so.0 => /usr/lib/arm-linux-gnueabi/libpthread.so.0 (0xf72d0000)
+	libovpn.so => /usr/lib/arm-linux-gnueabi/libovpn.so (0xf7290000)
+	libasc.so => /usr/lib/arm-linux-gnueabi/libasc.so (0xf7270000)
+	libletsencrypt.so => /usr/lib/arm-linux-gnueabi/libletsencrypt.so (0xf7250000)
+	libcurl.so.4 => /usr/lib/arm-linux-gnueabi/libcurl.so.4 (0xf71b0000)
+	libjson-c.so.2 => /usr/lib/arm-linux-gnueabi/libjson-c.so.2 (0xf7180000)
+	libm.so.6 => /usr/lib/arm-linux-gnueabi/libm.so.6 (0xf70f0000)
+	libamas-utils.so => /usr/lib/arm-linux-gnueabi/libamas-utils.so (0xf70b0000)
+	liblldpctl.so.4 => /usr/lib/arm-linux-gnueabi/liblldpctl.so.4 (0xf7080000)
+	libjansson.so.4 => /usr/lib/arm-linux-gnueabi/libjansson.so.4 (0xf7060000)
+	libasuslog.so => /usr/lib/arm-linux-gnueabi/libasuslog.so (0xf7040000)
+	libcodb.so => /usr/lib/arm-linux-gnueabi/libcodb.so (0xf7020000)
+	libconn_diag.so => /usr/lib/arm-linux-gnueabi/libconn_diag.so (0xf6ff0000)
+	libc.so.6 => /usr/lib/arm-linux-gnueabi/libc.so.6 (0xf6e60000)
+	/lib/ld-linux.so.3 (0xf7bc0000)
+	libbwdpi_sql.so => /usr/lib/arm-linux-gnueabi/libbwdpi_sql.so (0xf6e40000)
+LAB_RC_REBUILT_BINARY_RELOCATIONS_PASS
+LAB_RC_LIBCRYPT_DES_MD5_ABI_PASS
+LAB_OVPN_STOCK_MANAGER_REQUEUES_REPRODUCED
+_wlcsm_netlink_send_mesg:410 _wlcsm_init failed! 
+openvpn[520]: OpenVPN client 1 start attempt - already running.
+_wlcsm_netlink_send_mesg:410 _wlcsm_init failed! 
+openvpn[520]: OpenVPN server 1 start attempt - already running.
+LAB_OVPN_MANAGER_AND_FORK_ROLE_PASS
+LAB_OVPN_UNMODIFIED_CALLER_FALLBACK_PASS
+LAB_RC_COMPATIBILITY_ALL_PASS
+[0;1;39mReloading requested from client PID 530 ('systemctl') (unit leon-check.service)...[0m
+Reloading...
+Reloading finished in 126 ms.
+         Starting [0;1;39mASUS hardware and legacy service manager[0m...
+leon-rc-broker[533]: LAB_SERVICE_LEGACY_AND_FORK_BOUNDARY_PASS
+         Starting [0;1;39mASUS entropy supplement[0m...
+[[0;32m  OK  [0m] Started [0;1;39mASUS entropy supplement[0m.
+leon-rc-broker[533]: LAB_SERVICE_BEFORE_READY_SINGLE_OWNER_PASS
+leon-rc-broker[615]: LAB_SERVICE_ENTROPY_WAIT_SECONDS=14
+asus-haveged.service: Sent signal SIGKILL to main process 540 (haveged) on client request.
+[0;1;38;5;185masus-haveged.service: Main process exited, code=killed, status=9/KILL[0m
+[0;1;38;5;185masus-haveged.service: Failed with result 'signal'.[0m
+asus-haveged.service: Scheduled restart job, restart counter is at 1.
+         Starting [0;1;39mASUS entropy supplement[0m...
+[[0;32m  OK  [0m] Started [0;1;39mASUS entropy supplement[0m.
+leon-rc-broker[703]: LAB_SERVICE_ENTROPY_WAIT_SECONDS=15
+         Stopping [0;1;39mASUS entropy supplement[0m...
+asus-haveged.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mASUS entropy supplement[0m.
+leon-rc-broker[533]: LAB_SERVICE_RECOVERY_AND_EXPLICIT_STOP_PASS
+[0;1;39mReloading requested from client PID 713 ('systemctl') (unit asus-rc.service)...[0m
+Reloading...
+Reloading finished in 143 ms.
+systemctl[715]: Failed to start asus-haveged.service: Unit asus-haveged.service is masked.
+leon-rc-broker[533]: systemd start haveged: Input/output error
+[0;1;39mReloading requested from client PID 719 ('systemctl') (unit asus-rc.service)...[0m
+Reloading...
+Reloading finished in 140 ms.
+leon-rc-broker[533]: LAB_SERVICE_FAILURE_NO_LEGACY_FALLBACK_PASS
+leon-rc-broker[723]: haveged: command socket is listening at fd 3
+         Starting [0;1;39mASUS entropy supplement[0m...
+[0;1;39masus-haveged.service: Control process exited, code=exited, status=1/FAILURE[0m
+[0;1;38;5;185masus-haveged.service: Failed with result 'exit-code'.[0m
+[[0;1;31mFAILED[0m] Failed to start [0;1;39mASUS entropy supplement[0m.
+See 'systemctl status asus-haveged.service' for details.
+systemctl[726]: Job for asus-haveged.service failed because the control process exited with error code.
+systemctl[726]: See "systemctl status asus-haveged.service" and "journalctl -xeu asus-haveged.service" for details.
+[[0;32m  OK  [0m] Stopped [0;1;39mASUS entropy supplement[0m.
+leon-rc-broker[533]: LAB_SERVICE_DUPLICATE_OWNER_REJECTED_PASS
+         Starting [0;1;39mASUS entropy supplement[0m...
+[[0;32m  OK  [0m] Started [0;1;39mASUS entropy supplement[0m.
+leon-rc-broker[874]: LAB_SERVICE_ENTROPY_WAIT_SECONDS=15
+[[0;32m  OK  [0m] Started [0;1;39mASUS hardware and legacy service manager[0m.
+leon-rc-broker[533]: LAB_SERVICE_MANAGER_READY_PASS
+         Stopping [0;1;39mASUS entropy supplement[0m...
+         Stopping [0;1;39mASUS hardware and legacy service manager[0m...
+leon-rc-broker[533]: LAB_SERVICE_MANAGER_DRAIN_PASS
+leon-rc-broker[532]: ASUS rc exited: exit=0 signal=0 ready=1 stopping=1
+asus-rc.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mASUS hardware and legacy service manager[0m.
+asus-haveged.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mASUS entropy supplement[0m.
+LAB_SERVICE_LEGACY_AND_FORK_BOUNDARY_PASS
+LAB_SERVICE_BEFORE_READY_SINGLE_OWNER_PASS
+LAB_SERVICE_RECOVERY_AND_EXPLICIT_STOP_PASS
+LAB_SERVICE_FAILURE_NO_LEGACY_FALLBACK_PASS
+LAB_SERVICE_DUPLICATE_OWNER_REJECTED_PASS
+LAB_SERVICE_MANAGER_READY_PASS
+LAB_SERVICE_MANAGER_DRAIN_PASS
+LAB_SERVICE_PARTOF_STOP_PASS
+[0;1;39mReloading requested from client PID 906 ('systemctl') (unit leon-check.service)...[0m
+Reloading...
+Reloading finished in 124 ms.
+LAB_SERVICE_SPLIT_ALL_PASS
+LAB_UPSTREAM_EXECUTABLE_RELOCATIONS_PASS
+LAB_UPSTREAM_VERSIONS_PASS
+cert.pem: OK
+LAB_TLS35_SERVER_LEGACY11_CLIENT_PASS
+LAB_OPENVPN_CRYPTO_AND_TLSCRYPTV2_PASS
+dnsmasq: syntax check OK.
+dnsmasq[972]: warning: no upstream servers configured
+LAB_DNS_LOOPBACK_QUERY_PASS
+LAB_EASYRSA3_LAYOUT_PASS
+*** buffer overflow detected ***: terminated
+LAB_IPSEC_OLD_ETH0_OVERFLOW_REPRODUCED
+LAB_IPSEC_IFNAME_BOUNDARIES_PASS
+HTTPD_TAG_BOUNDS_PASS
+LAB_UPSTREAM_ALL_PASS
+         Starting [0;1;39mASUS hardware and legacy service manager[0m...
+leon-rc-broker[1162]: LAB_RC_EARLY_NOTIFICATION_QUEUED_PASS
+leon-rc-broker[1158]: LEON_TRIAL: blocked automatic boot metadata write: commit
+leon-rc-broker[1158]: LEON_TRIAL: blocked automatic boot metadata write: setBootImageState
+leon-rc-broker[1158]: LAB_RC_EARLY_SIGCHLD_ALARM_PASS
+leon-rc-broker[1158]: LAB_RC_BSP_SIGNAL_MASK_PASS
+leon-rc-broker[1158]: LAB_RC_IDENTITY_GUARD_SUBREAPER_MOUNTS_PASS
+[[0;32m  OK  [0m] Started [0;1;39mASUS hardware and legacy service manager[0m.
++ echo LAB_REAL_EARLY_INIT_PASS
+LAB_REAL_EARLY_INIT_PASS
++ echo LAB_SYSTEMD_ALL_PASS
+LAB_SYSTEMD_ALL_PASS
++ trap - EXIT
++ leon-rcctl poweroff
+leon-check.service: Deactivated successfully.
+[[0;32m  OK  [0m] Finished [0;1;39mOffline systemd integration checks[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mProduction early boot rehearsal[0m.
+Startup finished in 4.329s (kernel) + 1min 41.241s (userspace) = 1min 45.571s.
+[0;1;39mSystem is tainted: cgroupsv1[0m
+leon-rc-broker[1158]: LAB_RC_ORDERED_DRAIN_PASS
+         Stopping [0;1;39mASUS hardware and legacy service manager[0m...leon-rc-broker
+[1157]: ASUS rc exited: exit=0 signal=0 ready=1 stopping=1
+[0;1;39masus-rc-real-power.service: Killing process 1169 (systemctl) with signal SIGKILL.[0m
+asus-rc-real-power.service: Deactivated successfully.
+[[0;32m  OK  [0m] Stopped [0;1;39mASUS hardware and legacy service manager[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mSystem Shutdown[0m.
+         Unmounting [0;1;39m/tmp/mnt[0m...
+         Unmounting [0;1;39m/var[0m...
+tmp-mnt.mount: Deactivated successfully.
+[[0;32m  OK  [0m] Unmounted [0;1;39m/tmp/mnt[0m.
+var.mount: Deactivated successfully.
+[[0;32m  OK  [0m] Unmounted [0;1;39m/var[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mUnmount All Filesystems[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mLate Shutdown Services[0m.
+systemd-poweroff.service: Deactivated successfully.
+[[0;32m  OK  [0m] Finished [0;1;39mSystem Power Off[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mSystem Power Off[0m.
+[0;1;39mShutting down.[0m
+Syncing filesystems and block devices.
+Sending SIGTERM to remaining processes...
+Sending SIGKILL to remaining processes...
+Unmounting file systems.
+Unmounting '/tmp'.
+All filesystems unmounted.
+Deactivating swaps.
+All swaps deactivated.
+Detaching loop devices.
+All loop devices detached.
+Stopping MD devices.
+All MD devices stopped.
+Detaching DM devices.
+All DM devices detached.
+All filesystems, swaps, loop devices, MD devices and DM devices detached.
+Syncing filesystems and block devices.
+Powering off.
+reboot: Power down

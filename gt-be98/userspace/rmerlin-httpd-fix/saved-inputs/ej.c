@@ -144,13 +144,10 @@ struct REPLACE_TAG_S replace_tag_string_t[] =
 
 static char *replace_tag_string(char *desc, char *pattern, int pattern_len){
 
-	size_t pid_len = 0, get_pid_len = 0;
+	int pid_len = 0, get_pid_len = 0;
 	char target_string[256] = {0}, replace_string[256] = {0}, pattern_tmp[2048] = {0};
 	char *p_PID_STR = NULL;
 	struct REPLACE_TAG_S *p;
-
-	if (!desc || !pattern || pattern_len <= 0)
-		return desc;
 
 	for(p = &replace_tag_string_t[0]; p->org_name; p++){
 
@@ -171,37 +168,27 @@ static char *replace_tag_string(char *desc, char *pattern, int pattern_len){
 
 		pid_len = strlen(target_string);
 		get_pid_len = strlen(replace_string);
-		if (!pid_len)
-			continue;
 		memset(pattern_tmp, 0, sizeof(pattern_tmp));
 
 		char *pSrc  = desc;
 		char *pDest = &pattern_tmp[0];
-		int matched = 0;
 
 		while((p_PID_STR = strstr(pSrc, target_string)))
 		{
-			size_t prefix_len = p_PID_STR - pSrc;
-			size_t remaining = sizeof(pattern_tmp) - (pDest - pattern_tmp);
-
-			/* Keep a byte for NUL and leave the original text on overflow. */
-			if (prefix_len >= remaining || get_pid_len >= remaining - prefix_len)
-				return desc;
-			memcpy(pDest, pSrc, prefix_len);
-			pDest += prefix_len;
+			if((p_PID_STR - pSrc) > 0){
+				memcpy(pDest, pSrc, p_PID_STR - pSrc);
+				pDest[p_PID_STR - pSrc] = '\0';
+			}
+			pDest += (p_PID_STR - pSrc);
 			pSrc   =  p_PID_STR + pid_len;
 
 			memcpy(pDest, replace_string, get_pid_len);
 			pDest[get_pid_len] = '\0';
 			pDest += get_pid_len;
-			matched = 1;
 		}
-		if(matched)
+		if(pDest != pattern_tmp)
 		{
-			size_t remaining = sizeof(pattern_tmp) - (pDest - pattern_tmp);
-			if (strlcpy(pDest, pSrc, remaining) >= remaining ||
-			    strlen(pattern_tmp) >= (size_t)pattern_len)
-				return desc;
+			strlcpy(pDest, pSrc, sizeof(pattern_tmp));
 			strlcpy(pattern, pattern_tmp, pattern_len);
 			desc = pattern;
 		}

@@ -1,0 +1,7 @@
+{
+  "bytes": 251888079,
+  "sha256": "3e802cf8846c4e0be63f5eb81571841849670c620e0ce1ea393c6140565bf615",
+  "archive": "preflash-backup.tar.zst",
+  "contains_private_router_diagnostics": true,
+  "not_for_git": true
+}

@@ -1,0 +1,40 @@
+	HW Acceleration <Enabled> 
+RAM_ACCEPTANCE uid=0 mode=600
+445.53 1300.77
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: First
+  Reboot Partition: Second
+
+B First  partition type           : pureUBI/GPT
+B First  partition sequence number: 47
+B First  partition image tag      : $imageversion:  $
+B First  partition commit flag    : 0
+ >Second partition type           : pureUBI/GPT
+ >Second partition sequence number: 46
+ >Second partition image tag      : $imageversion:  $
+ >Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2
+RAM_ACCEPTED_FIRMWARE_UNCOMMITTED

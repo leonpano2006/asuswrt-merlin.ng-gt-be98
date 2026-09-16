@@ -1,0 +1,17 @@
+{
+  "signal": "SIGABRT",
+  "runtime_diagnostic": "*** buffer overflow detected ***: terminated",
+  "main_executable_return_address": "0x209c8",
+  "call_address": "0x209c4",
+  "fortified_call": "__strlcpy_chk",
+  "inlined_stack": [
+    "replace_tag_string:ej.c:191",
+    "translate_lang:ej.c:219",
+    "do_ej:ej.c:400"
+  ],
+  "source_issue": "strlcpy receives the complete 2048-byte buffer size for an interior pointer after a tag substitution",
+  "login_response_before_bytes": 9446,
+  "login_response_after_bytes": 28623,
+  "private_raw_stack_excluded": true,
+  "firmware_commit_performed": false
+}

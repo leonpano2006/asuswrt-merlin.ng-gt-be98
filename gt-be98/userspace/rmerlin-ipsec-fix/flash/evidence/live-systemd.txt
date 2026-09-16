@@ -1,0 +1,1152 @@
++ set -eu
++ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++ export SYSTEMD_PAGER=cat SYSTEMD_COLORS=0
++ SYSTEMD_PAGER=cat
++ SYSTEMD_COLORS=0
++ systemctl --version
+systemd 255 (255.22-gt-be98-lab)
+-PAM -AUDIT -SELINUX -APPARMOR -IMA -SMACK -SECCOMP -GCRYPT -GNUTLS -OPENSSL -ACL -BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC -KMOD -LIBCRYPTSETUP -LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB -ZSTD -BPF_FRAMEWORK -XKBCOMMON -UTMP -SYSVINIT default-hierarchy=legacy
+++ nvram get productid
++ test GT-BE98 = GT-BE98
++ case "$(uname -v)" in
+++ uname -v
++ grep -q root=/dev/ubiblock0_4 /proc/cmdline
+++ readlink /proc/1/exe
++ test /usr/lib/systemd/systemd = /usr/lib/systemd/systemd
++ test '!' -L /run
+++ readlink /var/run
++ test /run = /run
++ test -S /run/systemd/private
+++ bcm_bootstate
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: First
+  Reboot Partition: Second
+
+B First  partition type           : pureUBI/GPT
+B First  partition sequence number: 47
+B First  partition image tag      : $imageversion:  $
+B First  partition commit flag    : 0
+ >Second partition type           : pureUBI/GPT
+ >Second partition sequence number: 46
+ >Second partition image tag      : $imageversion:  $
+ >Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2
++ state=$'rd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\n\n  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nBOOT_SET_PART2_IMAGE\n  Booted Partition: First\n  Reboot Partition: Second\n\nB First  partition type           : pureUBI/GPT\nB First  partition sequence number: 47\nB First  partition image tag      : $imageversion:  $\nB First  partition commit flag    : 0\n >Second partition type           : pureUBI/GPT\n >Second partition sequence number: 46\n >Second partition image tag      : $imageversion:  $\n >Second partition commit flag    : 1\n\nTo set boot state usage: bcm_bootstate [state], where your state options are:\n  1 or BOOT_SET_NEW_IMAGE\n  2 or BOOT_SET_OLD_IMAGE\n  3 or BOOT_SET_NEW_IMAGE_ONCE\n  4 or BOOT_SET_OLD_IMAGE_ONCE\n  5 or BOOT_SET_PART1_IMAGE\n  6 or BOOT_SET_PART1_IMAGE_ONCE\n  7 or BOOT_SET_PART2_IMAGE\n  8 or BOOT_SET_PART2_IMAGE_ONCE\n  -------- test options --------\n  +1 ------ commit    partition 1\n  -1 ------ uncommit  partition 1\n  +2 ------ commit    partition 2\n  -2 ------ uncommit  partition 2'
++ printf '%s\n' $'rd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\n\n  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nBOOT_SET_PART2_IMAGE\n  Booted Partition: First\n  Reboot Partition: Second\n\nB First  partition type           : pureUBI/GPT\nB First  partition sequence number: 47\nB First  partition image tag      : $imageversion:  $\nB First  partition commit flag    : 0\n >Second partition type           : pureUBI/GPT\n >Second partition sequence number: 46\n >Second partition image tag      : $imageversion:  $\n >Second partition commit flag    : 1\n\nTo set boot state usage: bcm_bootstate [state], where your state options are:\n  1 or BOOT_SET_NEW_IMAGE\n  2 or BOOT_SET_OLD_IMAGE\n  3 or BOOT_SET_NEW_IMAGE_ONCE\n  4 or BOOT_SET_OLD_IMAGE_ONCE\n  5 or BOOT_SET_PART1_IMAGE\n  6 or BOOT_SET_PART1_IMAGE_ONCE\n  7 or BOOT_SET_PART2_IMAGE\n  8 or BOOT_SET_PART2_IMAGE_ONCE\n  -------- test options --------\n  +1 ------ commit    partition 1\n  -1 ------ uncommit  partition 1\n  +2 ------ commit    partition 2\n  -2 ------ uncommit  partition 2'
++ printf '%s\n' $'rd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\n\n  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nBOOT_SET_PART2_IMAGE\n  Booted Partition: First\n  Reboot Partition: Second\n\nB First  partition type           : pureUBI/GPT\nB First  partition sequence number: 47\nB First  partition image tag      : $imageversion:  $\nB First  partition commit flag    : 0\n >Second partition type           : pureUBI/GPT\n >Second partition sequence number: 46\n >Second partition image tag      : $imageversion:  $\n >Second partition commit flag    : 1\n\nTo set boot state usage: bcm_bootstate [state], where your state options are:\n  1 or BOOT_SET_NEW_IMAGE\n  2 or BOOT_SET_OLD_IMAGE\n  3 or BOOT_SET_NEW_IMAGE_ONCE\n  4 or BOOT_SET_OLD_IMAGE_ONCE\n  5 or BOOT_SET_PART1_IMAGE\n  6 or BOOT_SET_PART1_IMAGE_ONCE\n  7 or BOOT_SET_PART2_IMAGE\n  8 or BOOT_SET_PART2_IMAGE_ONCE\n  -------- test options --------\n  +1 ------ commit    partition 1\n  -1 ------ uncommit  partition 1\n  +2 ------ commit    partition 2\n  -2 ------ uncommit  partition 2'
++ grep -q 'Reboot Partition: Second'
++ printf '%s\n' $'rd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\n\n  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nBOOT_SET_PART2_IMAGE\n  Booted Partition: First\n  Reboot Partition: Second\n\nB First  partition type           : pureUBI/GPT\nB First  partition sequence number: 47\nB First  partition image tag      : $imageversion:  $\nB First  partition commit flag    : 0\n >Second partition type           : pureUBI/GPT\n >Second partition sequence number: 46\n >Second partition image tag      : $imageversion:  $\n >Second partition commit flag    : 1\n\nTo set boot state usage: bcm_bootstate [state], where your state options are:\n  1 or BOOT_SET_NEW_IMAGE\n  2 or BOOT_SET_OLD_IMAGE\n  3 or BOOT_SET_NEW_IMAGE_ONCE\n  4 or BOOT_SET_OLD_IMAGE_ONCE\n  5 or BOOT_SET_PART1_IMAGE\n  6 or BOOT_SET_PART1_IMAGE_ONCE\n  7 or BOOT_SET_PART2_IMAGE\n  8 or BOOT_SET_PART2_IMAGE_ONCE\n  -------- test options --------\n  +1 ------ commit    partition 1\n  -1 ------ uncommit  partition 1\n  +2 ------ commit    partition 2\n  -2 ------ uncommit  partition 2'
++ grep -Eq 'First +partition commit flag +: 0'
++ grep -Eq 'Second +partition commit flag +: 1'
++ printf '%s\n' $'rd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\n\n  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nrd_metadata: committed 2 valid 1,2 seq 47,46\nBOOT_SET_PART2_IMAGE\n  Booted Partition: First\n  Reboot Partition: Second\n\nB First  partition type           : pureUBI/GPT\nB First  partition sequence number: 47\nB First  partition image tag      : $imageversion:  $\nB First  partition commit flag    : 0\n >Second partition type           : pureUBI/GPT\n >Second partition sequence number: 46\n >Second partition image tag      : $imageversion:  $\n >Second partition commit flag    : 1\n\nTo set boot state usage: bcm_bootstate [state], where your state options are:\n  1 or BOOT_SET_NEW_IMAGE\n  2 or BOOT_SET_OLD_IMAGE\n  3 or BOOT_SET_NEW_IMAGE_ONCE\n  4 or BOOT_SET_OLD_IMAGE_ONCE\n  5 or BOOT_SET_PART1_IMAGE\n  6 or BOOT_SET_PART1_IMAGE_ONCE\n  7 or BOOT_SET_PART2_IMAGE\n  8 or BOOT_SET_PART2_IMAGE_ONCE\n  -------- test options --------\n  +1 ------ commit    partition 1\n  -1 ------ uncommit  partition 1\n  +2 ------ commit    partition 2\n  -2 ------ uncommit  partition 2'
++ systemctl --no-pager show asus-rc.service -p ActiveState -p SubState -p MainPID -p Result -p ControlGroup -p Delegate
+MainPID=244
+Result=success
+ControlGroup=/system.slice/asus-rc.service
+Delegate=yes
+ActiveState=active
+SubState=running
+++ systemctl is-active asus-rc.service
++ test active = active
+++ systemctl is-active leon-local-ready.service
++ test active = active
++ leon-rcctl ping
+++ systemctl show asus-rc.service -p MainPID --value
++ broker=244
++ test 244 -gt 1
++ manager=
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1/status
++ '[' 0 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/10/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/11/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/119/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/12/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/120/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/121/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/122/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/124/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1242/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/125/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/126/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/127/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/128/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/129/status
++ '[' 1 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/13/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/131/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/132/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1326/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1327/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/133/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/134/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1341/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1342/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1343/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/135/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1359/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/136/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1360/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1361/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/137/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1377/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1378/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/1379/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/138/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/139/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/14/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/140/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/15/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/16/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/17/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/172/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/173/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/174/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/175/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/176/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/18/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/19/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/2/status
++ '[' 0 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/20/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/21/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/2177/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/2179/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/22/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/2206/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/228/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/229/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/23/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/230/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/231/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/232/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/233/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/234/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/235/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/236/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/237/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/238/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/239/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/24/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/240/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/241/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/243/status
++ '[' 1 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/244/status
++ '[' 1 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/245/status
++ '[' 244 = 244 ']'
++ pid=245/status
++ pid=245
+++ readlink /proc/245/exe
++ '[' /usr/sbin/rc = /usr/sbin/rc ']'
++ manager=245
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/2465/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/2473/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/25/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/26/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/27/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/28/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/29/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/3/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/30/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/31/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/32/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/3200/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/33/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/34/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/35/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/36/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/362/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/37/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/38/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/39/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/397/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/40/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4041/status
++ '[' 1 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4042/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4044/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4053/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4054/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4055/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4079/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/41/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4144/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4247/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4331/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/44/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4439/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4441/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4442/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4443/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4450/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4461/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4468/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4469/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4491/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/45/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4529/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4530/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4531/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4532/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4533/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4534/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4536/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4586/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4587/status
++ '[' 4586 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/46/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/47/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4720/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4723/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4725/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4772/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4820/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4823/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4824/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4829/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4830/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4839/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4854/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4879/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4880/status
++ '[' 4820 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4932/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/4935/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5012/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5013/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5014/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5071/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5072/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5104/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5138/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5140/status
++ '[' 5138 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5302/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5303/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5304/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5305/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5306/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5307/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5308/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5309/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5310/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5311/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5312/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5313/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5314/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5315/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5316/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5317/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5318/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5319/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5320/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5321/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5322/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5323/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5391/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5395/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5397/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5398/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5399/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/54/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5400/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5403/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5407/status
++ '[' 5403 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5525/status
++ '[' 5407 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/554/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5540/status
++ '[' 5407 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5543/status
++ '[' 5407 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5544/status
++ '[' 5407 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5546/status
++ '[' 5407 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5550/status
++ '[' 5407 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5552/status
++ '[' 5407 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5553/status
++ '[' 5407 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5555/status
++ '[' 5407 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5557/status
++ '[' 5407 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5593/status
++ '[' 5555 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5632/status
++ '[' 5546 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5638/status
++ '[' 5546 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5826/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5863/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5864/status
++ '[' 5863 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5866/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5868/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/5872/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/6/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/607/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/632/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/633/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/634/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/646/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/647/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/648/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/649/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/658/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/664/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/665/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/684/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/685/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/7/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/7006/status
++ '[' 4932 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/7009/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/703/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/768/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/769/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/8/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/8273/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/8298/status
++ '[' 4529 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/8307/status
++ '[' 7006 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/8308/status
++ '[' 8307 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/8318/status
+++ true
++ '[' '' = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/85/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/881/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/9/status
++ '[' 2 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/945/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/949/status
++ '[' 245 = 244 ']'
++ continue
++ for status in /proc/[0-9]*/status
+++ awk '$1=="PPid:"{print $2}' /proc/999/status
++ '[' 245 = 244 ']'
++ continue
++ test -n 245
++ grep -q leon-trial-bootguard /proc/245/maps
++ for service in httpd dropbear watchdog wdtd
+++ pidof httpd
++ pids='4531 4530'
++ test -n '4531 4530'
++ for pid in $pids
+++ readlink /proc/4531/exe
++ printf 'SERVICE %s pid=%s exe=%s\n' httpd 4531 /usr/sbin/httpd
+SERVICE httpd pid=4531 exe=/usr/sbin/httpd
++ grep -q leon-trial-bootguard /proc/4531/maps
++ for pid in $pids
+++ readlink /proc/4530/exe
+SERVICE httpd pid=4530 exe=/usr/sbin/httpd
++ printf 'SERVICE %s pid=%s exe=%s\n' httpd 4530 /usr/sbin/httpd
++ grep -q leon-trial-bootguard /proc/4530/maps
++ for service in httpd dropbear watchdog wdtd
+++ pidof dropbear
++ pids='7006 4932'
++ test -n '7006 4932'
++ for pid in $pids
+++ readlink /proc/7006/exe
+SERVICE dropbear pid=7006 exe=/usr/bin/dropbearmulti
++ printf 'SERVICE %s pid=%s exe=%s\n' dropbear 7006 /usr/bin/dropbearmulti
++ grep -q leon-trial-bootguard /proc/7006/maps
++ for pid in $pids
+++ readlink /proc/4932/exe
+SERVICE dropbear pid=4932 exe=/usr/bin/dropbearmulti
++ printf 'SERVICE %s pid=%s exe=%s\n' dropbear 4932 /usr/bin/dropbearmulti
++ grep -q leon-trial-bootguard /proc/4932/maps
++ for service in httpd dropbear watchdog wdtd
+++ pidof watchdog
++ pids=4534
++ test -n 4534
++ for pid in $pids
+++ readlink /proc/4534/exe
+SERVICE watchdog pid=4534 exe=/usr/sbin/rc
++ printf 'SERVICE %s pid=%s exe=%s\n' watchdog 4534 /usr/sbin/rc
++ grep -q leon-trial-bootguard /proc/4534/maps
++ for service in httpd dropbear watchdog wdtd
+++ pidof wdtd
++ pids=945
++ test -n 945
++ for pid in $pids
+++ readlink /proc/945/exe
+SERVICE wdtd pid=945 exe=/usr/bin/wdtctl
++ printf 'SERVICE %s pid=%s exe=%s\n' wdtd 945 /usr/bin/wdtctl
++ grep -q leon-trial-bootguard /proc/945/maps
++ for iface in wl0 wl1 wl2 wl3
++ test -d /sys/class/net/wl0
+++ /usr/sbin/wl -i wl0 isup
++ test 1 = 1
++ for iface in wl0 wl1 wl2 wl3
++ test -d /sys/class/net/wl1
+++ /usr/sbin/wl -i wl1 isup
++ test 1 = 1
++ for iface in wl0 wl1 wl2 wl3
++ test -d /sys/class/net/wl2
+++ /usr/sbin/wl -i wl2 isup
++ test 1 = 1
++ for iface in wl0 wl1 wl2 wl3
++ test -d /sys/class/net/wl3
+++ /usr/sbin/wl -i wl3 isup
++ test 1 = 1
++ for module in pktrunner rdpa dhd rtl8372 btrfs
++ awk -v m=pktrunner '$1==m{ok=1}END{exit !ok}' /proc/modules
++ for module in pktrunner rdpa dhd rtl8372 btrfs
++ awk -v m=rdpa '$1==m{ok=1}END{exit !ok}' /proc/modules
++ for module in pktrunner rdpa dhd rtl8372 btrfs
++ awk -v m=dhd '$1==m{ok=1}END{exit !ok}' /proc/modules
++ for module in pktrunner rdpa dhd rtl8372 btrfs
++ awk -v m=rtl8372 '$1==m{ok=1}END{exit !ok}' /proc/modules
++ for module in pktrunner rdpa dhd rtl8372 btrfs
++ awk -v m=btrfs '$1==m{ok=1}END{exit !ok}' /proc/modules
+++ cat /proc/sys/kernel/tainted
++ test 4097 = 4097
++ /bin/fc status
++ grep 'HW Acceleration <Enabled>'
+	HW Acceleration <Enabled> 
++ /bin/fc status
++ grep 'Acceleration Mode: <L2 & L3>'
+	Acceleration Mode: <L2 & L3>
++ for controller in memory pids cpuacct devices freezer
++ test -d /sys/fs/cgroup/memory
++ for controller in memory pids cpuacct devices freezer
++ test -d /sys/fs/cgroup/pids
++ for controller in memory pids cpuacct devices freezer
++ test -d /sys/fs/cgroup/cpuacct
++ for controller in memory pids cpuacct devices freezer
++ test -d /sys/fs/cgroup/devices
++ for controller in memory pids cpuacct devices freezer
++ test -d /sys/fs/cgroup/freezer
++ awk '$2=="/usr/local" && $3=="btrfs"{ok=1}END{exit !ok}' /proc/mounts
++ awk '$2=="/jffs" && $3=="btrfs"{ok=1}END{exit !ok}' /proc/mounts
++ cat /sys/class/watchdog/watchdog0/identity /sys/class/watchdog/watchdog0/timeout
+BCM96xxx Watchdog timer
+30
++ printf 'ASUS_RC_MANAGER_PID=%s\n' 245
+ASUS_RC_MANAGER_PID=245
++ uname -a
+Linux GT-AX11000-A2B0 4.19.294 #36 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026 aarch64 GNU/Linux
++ cat /proc/uptime
+235.21 643.19
++ systemctl --failed --no-pager
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
++ journalctl --sync
+++ nvram get vpn_server1_state
++ test 2 = 2
+++ nvram get vpn_server1_errno
++ test 0 = 0
++ test -d /sys/class/net/tun21
+++ pidof vpnserver1
+SYSTEMD_PHYSICAL_BASELINE_PASS
++ test -n '5140 5138'
++ printf 'SYSTEMD_PHYSICAL_BASELINE_PASS\n'
+LIVE_SYSTEMD_STATUS=0

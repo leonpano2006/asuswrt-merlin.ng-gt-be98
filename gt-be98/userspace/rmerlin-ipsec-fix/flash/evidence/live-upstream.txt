@@ -1,0 +1,8 @@
+LIVE_UPSTREAM_EXECUTABLE_RELOCATIONS_PASS
+LIVE_UPSTREAM_VERSIONS_PASS
+cert.pem: OK
+LIVE_TLS35_SERVER_LEGACY11_CLIENT_PASS
+LIVE_OPENVPN_CRYPTO_AND_TLSCRYPTV2_PASS
+dnsmasq: syntax check OK.
+leon-rmerlin-dns-probe: /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/tests/dns-probe.c:24: main: Assertion `z>=12' failed.
+Aborted (core dumped)

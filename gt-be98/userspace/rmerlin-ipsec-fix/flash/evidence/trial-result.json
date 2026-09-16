@@ -1,0 +1,17 @@
+{
+  "image": "GT-BE98_leon36-rmerlin1029a2_zstd22.pkgtb",
+  "physical_boot_pass": true,
+  "physical_pass": false,
+  "reason": "HTTPD translation FORTIFY abort; fixed in a3",
+  "radios_up": 4,
+  "hardware_acceleration": "Enabled L2 & L3; counters advanced",
+  "systemd_pid1": true,
+  "openvpn_server_state": 2,
+  "runtime_hash_files_passed": 263,
+  "firmware_commit_performed": false,
+  "ram_diagnostic_acceptance_only": true,
+  "httpd_ram_correction_test": "rmerlin-httpd-fix-20260917",
+  "web_after_ram_fix_pass": true,
+  "docker_after_ram_fix_pass": true,
+  "returned_to_committed_slot2_for_reflash": true
+}

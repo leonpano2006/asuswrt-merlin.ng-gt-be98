@@ -1,0 +1,6 @@
+{
+  "critical_kernel_log_matches": 0,
+  "critical_journal_matches": 0,
+  "raw_logs_private": true,
+  "debug_httpd_bind_present": false
+}

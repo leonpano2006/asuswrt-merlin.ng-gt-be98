@@ -1,0 +1,7 @@
+MainPID=4034
+Result=success
+NRestarts=0
+ControlGroup=/system.slice/asus-haveged.service
+ActiveState=active
+SubState=running
+HAVEGED_SINGLE_SYSTEMD_OWNER_PASS

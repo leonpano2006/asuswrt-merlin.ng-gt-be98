@@ -1,0 +1,13 @@
+[
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/a53-runtimes-20260916/builds/armel/wrappers/cc",
+  "-shared",
+  "-fPIC",
+  "-funwind-tables",
+  "-fno-omit-frame-pointer",
+  "-g",
+  "-O1",
+  "-Wl,--build-id=sha1",
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-httpd-fix-20260917/src/abort-trace.c",
+  "-o",
+  "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-httpd-fix-20260917/build/abort-trace.so"
+]

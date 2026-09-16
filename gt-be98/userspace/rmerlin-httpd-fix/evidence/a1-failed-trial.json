@@ -1,0 +1,26 @@
+{
+  "image": "GT-BE98_leon36-rmerlin1029a1_zstd22.pkgtb",
+  "result": "boot_failed_automatically_rolled_back",
+  "fault": "30,1968,117477229,-;leon-rc-broker[239]: *** buffer overflow detected ***: terminated",
+  "fault_uptime_seconds": 117.477229,
+  "recovered_kernel": "#35",
+  "booted_slot": 2,
+  "normal_reboot_slot": 2,
+  "commit_flags": [
+    0,
+    1
+  ],
+  "rollback_hashes_unchanged": true,
+  "bootloader_hash_unchanged": true,
+  "radios_up": 4,
+  "hardware_acceleration": "Enabled L2 & L3",
+  "source_finding": {
+    "file": "release/src/router/rc/rc_ipsec.c",
+    "function": "rc_ipsec_set",
+    "old_interface_bytes": 4,
+    "observed_wan_interface": "eth0",
+    "required_bytes": 5
+  },
+  "offline_reproduction": "ARMEL GCC 15.2, glibc 2.44, FORTIFY_SOURCE=3: old copy aborts; corrected helper bounds pass",
+  "candidate_committed": false
+}

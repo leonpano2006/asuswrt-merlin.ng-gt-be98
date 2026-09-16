@@ -1,0 +1,7 @@
+LAN_PUBLISHED_PORT_PASS
+memory_limit=33554432
+memory_plus_swap_limit=33554432
+failcnt=0
+leon-rmerlin-upstream-http
+leon-rmerlin-upstream-test
+RMERLIN_MEMCG_AND_TEST_CLEANUP_PASS

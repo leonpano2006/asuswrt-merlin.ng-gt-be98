@@ -1,0 +1,9 @@
+{
+  "source_commit": "dc72164482512481a62517f0f14e86c2fa3cf776",
+  "checkpoint": "rmerlin-integration-20260916",
+  "parent_archive_sha256": "10bef9735edfaede660bae8c1af536db6e2f27663003b00c369db292cfe95f55",
+  "kernel_sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4",
+  "compiler_checkpoint": "a53-runtimes-20260916",
+  "compiler_target": "armel",
+  "toolchain_in_git": false
+}

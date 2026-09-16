@@ -2686,17 +2686,6 @@ static void _ipsec_export()
 	}
 }
 
-static int ipsec_copy_ifname(char *dst, const char *src)
-{
-	size_t len = src ? strnlen(src, IFNAMSIZ) : IFNAMSIZ;
-
-	dst[0] = '\0';
-	if (len == IFNAMSIZ)
-		return -1;
-	memcpy(dst, src, len + 1);
-	return 0;
-}
-
 void rc_ipsec_set(ipsec_conn_status_t conn_status, ipsec_prof_type_t prof_type)
 {
     static bool ipsec_start_en = FALSE;
@@ -2704,7 +2693,7 @@ void rc_ipsec_set(ipsec_conn_status_t conn_status, ipsec_prof_type_t prof_type)
     uint32_t i = 0; //, cur_bitmap_en= 0;
 	int prof_count = 0;
     FILE *fp = NULL, *fp1 = NULL;
-    char interface[IFNAMSIZ];
+    char interface[4];
 	char *argv[3];
 	int unit = 0;
 	char word[80], *next;
@@ -2803,15 +2792,14 @@ void rc_ipsec_set(ipsec_conn_status_t conn_status, ipsec_prof_type_t prof_type)
 		DBG(("rc_ipsec_down_stat>>>> 0x%x,prof_count=%d\n", pre_bitmap_en[prof_count],prof_count));
     	for(i = 0; i < MAX_PROF_NUM; i++){
 			if(0 != strlen(prof[prof_count][i].profilename)) {
-				const char *ifname = "";
 				if(strcmp(prof[prof_count][i].local_public_interface,"wan") == 0){
-					ifname = nvram_safe_get("wan0_gw_ifname");
+					strcpy(interface,nvram_safe_get("wan0_gw_ifname"));
 				}
 				else if(strcmp(prof[prof_count][i].local_public_interface,"wan2") == 0){
-					ifname = nvram_safe_get("wan1_gw_ifname");
+					strcpy(interface,nvram_safe_get("wan1_gw_ifname"));
 				}
 				else if(strcmp(prof[prof_count][i].local_public_interface,"lan") == 0) 
-					ifname = "br0";
+				strcpy(interface,"br0");
 				else if(strcmp(prof[prof_count][i].local_public_interface,"usb") == 0){ 
 					foreach(word, nvram_safe_get("wan_ifnames"), next) {
 						if (0 == strcmp(word,"usb")){
@@ -2819,11 +2807,7 @@ void rc_ipsec_set(ipsec_conn_status_t conn_status, ipsec_prof_type_t prof_type)
 						}
 						unit ++;
 					}
-					ifname = get_wan_ifname(unit);
-				}
-				if (ipsec_copy_ifname(interface, ifname)) {
-					logmessage("ipsec", "Invalid interface name length; skipping profile");
-					continue;
+					strcpy(interface,get_wan_ifname(unit));
 				}
 				if(IPSEC_CONN_EN_UP == prof[prof_count][i].ipsec_conn_en){
 					if(0 != strcmp(interface,"")){
@@ -2831,11 +2815,8 @@ void rc_ipsec_set(ipsec_conn_status_t conn_status, ipsec_prof_type_t prof_type)
 							/* Host to Net */
 							for(unit = WAN_UNIT_FIRST; unit < WAN_UNIT_MAX; ++unit){
 								sprintf(tmpStr,"wan%d_gw_ifname",unit);
-								if(0 != strlen(nvram_safe_get(tmpStr)) &&
-								   ipsec_copy_ifname(interface, nvram_safe_get(tmpStr))) {
-									logmessage("ipsec", "Invalid interface name length; skipping WAN");
-									continue;
-								}
+								if(0 != strlen(nvram_safe_get(tmpStr)))
+									strcpy(interface,nvram_safe_get(tmpStr));
 								/* moved to firewall
 								fprintf(fp1, "iptables -D INPUT -i %s --protocol esp -j ACCEPT\n", interface);
 								fprintf(fp1, "iptables -D INPUT -i %s --protocol ah -j ACCEPT\n", interface);

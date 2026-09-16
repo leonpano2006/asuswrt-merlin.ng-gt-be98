@@ -1,0 +1,63 @@
+--- a/release/src/router/httpd/ej.c
++++ b/release/src/router/httpd/ej.c
+@@ -144,10 +144,13 @@
+ 
+ static char *replace_tag_string(char *desc, char *pattern, int pattern_len){
+ 
+-	int pid_len = 0, get_pid_len = 0;
++	size_t pid_len = 0, get_pid_len = 0;
+ 	char target_string[256] = {0}, replace_string[256] = {0}, pattern_tmp[2048] = {0};
+ 	char *p_PID_STR = NULL;
+ 	struct REPLACE_TAG_S *p;
++
++	if (!desc || !pattern || pattern_len <= 0)
++		return desc;
+ 
+ 	for(p = &replace_tag_string_t[0]; p->org_name; p++){
+ 
+@@ -168,27 +171,37 @@
+ 
+ 		pid_len = strlen(target_string);
+ 		get_pid_len = strlen(replace_string);
++		if (!pid_len)
++			continue;
+ 		memset(pattern_tmp, 0, sizeof(pattern_tmp));
+ 
+ 		char *pSrc  = desc;
+ 		char *pDest = &pattern_tmp[0];
++		int matched = 0;
+ 
+ 		while((p_PID_STR = strstr(pSrc, target_string)))
+ 		{
+-			if((p_PID_STR - pSrc) > 0){
+-				memcpy(pDest, pSrc, p_PID_STR - pSrc);
+-				pDest[p_PID_STR - pSrc] = '\0';
+-			}
+-			pDest += (p_PID_STR - pSrc);
++			size_t prefix_len = p_PID_STR - pSrc;
++			size_t remaining = sizeof(pattern_tmp) - (pDest - pattern_tmp);
++
++			/* Keep a byte for NUL and leave the original text on overflow. */
++			if (prefix_len >= remaining || get_pid_len >= remaining - prefix_len)
++				return desc;
++			memcpy(pDest, pSrc, prefix_len);
++			pDest += prefix_len;
+ 			pSrc   =  p_PID_STR + pid_len;
+ 
+ 			memcpy(pDest, replace_string, get_pid_len);
+ 			pDest[get_pid_len] = '\0';
+ 			pDest += get_pid_len;
+-		}
+-		if(pDest != pattern_tmp)
++			matched = 1;
++		}
++		if(matched)
+ 		{
+-			strlcpy(pDest, pSrc, sizeof(pattern_tmp));
++			size_t remaining = sizeof(pattern_tmp) - (pDest - pattern_tmp);
++			if (strlcpy(pDest, pSrc, remaining) >= remaining ||
++			    strlen(pattern_tmp) >= (size_t)pattern_len)
++				return desc;
+ 			strlcpy(pattern, pattern_tmp, pattern_len);
+ 			desc = pattern;
+ 		}

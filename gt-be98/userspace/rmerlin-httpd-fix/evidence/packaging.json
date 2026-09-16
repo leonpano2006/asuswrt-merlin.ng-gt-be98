@@ -1,0 +1,11 @@
+{
+  "rehearsal": "httpd-fix-v1",
+  "production_matches_tested_paths": true,
+  "image": "GT-BE98_leon36-rmerlin1029a3_zstd22.pkgtb",
+  "image_sha256": "8cd5b0c8230a1c0aa5ca91a0f159351bea726ddbb90b07a19cc6d00cf372e73b",
+  "image_bytes": 90840140,
+  "rootfs_bytes": 78422016,
+  "rootfs_sha256": "f96f1f35711c3ba98a2e321c2397cdc2c09b6b28c62185c454c89893308ac61b",
+  "compression": "zstd level 22, 1 MiB blocks, tailends, type/size ordering",
+  "flashed": false
+}

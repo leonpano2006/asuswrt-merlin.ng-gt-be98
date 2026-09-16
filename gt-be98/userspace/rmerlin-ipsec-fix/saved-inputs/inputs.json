@@ -1,0 +1,674 @@
+[
+  {
+    "object": "rc.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc.c",
+    "sha256": "899e9ab9a2e239dc80fb32f53faa8e09248aec6ff34c9e45530aa8bc98e050fb",
+    "prebuilt": false
+  },
+  {
+    "object": "init.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/init.c",
+    "sha256": "39c052455087a93201a09db3a043219754815ab836091fda149e91f94d4c3153",
+    "prebuilt": false
+  },
+  {
+    "object": "interface.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/interface.c",
+    "sha256": "cb31fe46d3a1840bc20864386ac63d1eead7bdf9f4fd7e5700fc756e710e9264",
+    "prebuilt": false
+  },
+  {
+    "object": "lan.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/lan.c",
+    "sha256": "383664aad7fcd86ee5987406d41d284ffab9995e1b814132f88ace7b973e600d",
+    "prebuilt": false
+  },
+  {
+    "object": "wireless.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/wireless.c",
+    "sha256": "dfece1992bd68dac3204309907520d7f3645f7bc3eae709f03afb7cd2b92401a",
+    "prebuilt": false
+  },
+  {
+    "object": "s46comm.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/s46comm.o",
+    "sha256": "7cc148e8994ad6d82ba4fe270c6b016f144ef4531369903c8570ea10b08b9247",
+    "prebuilt": true
+  },
+  {
+    "object": "wan.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/wan.c",
+    "sha256": "d15a04710eee1ad4f5a95f634bd8152505daf97f5a24eb11e92a58c9fcac5cf0",
+    "prebuilt": false
+  },
+  {
+    "object": "pppd.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pppd.c",
+    "sha256": "73dfe0d3449b50a43c07cd51e88207ab52566bc06d6f33754a97456c51519c16",
+    "prebuilt": false
+  },
+  {
+    "object": "auth.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/auth.c",
+    "sha256": "9a97dedd517def9914366137dd7c20af31c26f19f97862b02db56dface4a5763",
+    "prebuilt": false
+  },
+  {
+    "object": "services.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/services.c",
+    "sha256": "33206d7e3663dcb9e5845389c3a5f58300ec910ec8f8644e1c2411466fec2b4f",
+    "prebuilt": false
+  },
+  {
+    "object": "firewall.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/firewall.c",
+    "sha256": "7fd12afef28fe528557489f85f7df55da912a14c848caaf354171bc5d06adc5e",
+    "prebuilt": false
+  },
+  {
+    "object": "ppp.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ppp.c",
+    "sha256": "5cadba2445f29914ce1d23ee604328fe9c3c1ab3bb94ae6f41ffd114749a1ee7",
+    "prebuilt": false
+  },
+  {
+    "object": "common.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/common.c",
+    "sha256": "84aa8e560cc31cbef655cee0bfa1a90ed6be9f4f22fbb01d5ce0a26f8aba3186",
+    "prebuilt": false
+  },
+  {
+    "object": "conn_diag_log.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/conn_diag_log.c",
+    "sha256": "28c611269b64192103caafec8ab8a89893a09852605e386264c3aaf2bd6bc7b2",
+    "prebuilt": false
+  },
+  {
+    "object": "watchdog.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/watchdog.c",
+    "sha256": "cb291fb74a2d59d6cf57f19dc28e866a5b1179f5fcedb3f98404e5f96a551bcf",
+    "prebuilt": false
+  },
+  {
+    "object": "check_watchdog.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/check_watchdog.c",
+    "sha256": "bf2b990f3315ce0e3641e9ab88e8f5fd0a2f480103ffc8d127f7341dbee22af1",
+    "prebuilt": false
+  },
+  {
+    "object": "fwupg_flashing.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/fwupg_flashing.c",
+    "sha256": "aa4ff16969bb0d7bdd0f2ae141e4dc377a9aa584d686682e755f19e3958c48a3",
+    "prebuilt": false
+  },
+  {
+    "object": "ntp.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ntp.c",
+    "sha256": "80b35d51098bcc59fd65d245de0dc2c691489fc894c3f18ebd5b3013b8cfcf84",
+    "prebuilt": false
+  },
+  {
+    "object": "udhcpc.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/udhcpc.c",
+    "sha256": "adc64aa35a6a3f90430a6e21cd823205392d46f1b5ceabcd263944c9d5d765ab",
+    "prebuilt": false
+  },
+  {
+    "object": "ate.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ate.c",
+    "sha256": "51947e410876bbf77b4bb20ac8970b3b6dcfeba467111ba9f870215ff0773c2c",
+    "prebuilt": false
+  },
+  {
+    "object": "qos.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/qos.c",
+    "sha256": "8926a0b67528a0a642fc9e8290546431c045344d05eb1793e4f66dcc57ffd3bb",
+    "prebuilt": false
+  },
+  {
+    "object": "format.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/format.c",
+    "sha256": "cf00faf0cb845604b43ec674f3f9fe587e7e6887a72ef9100438108f50e7ba84",
+    "prebuilt": false
+  },
+  {
+    "object": "pctime.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pctime.c",
+    "sha256": "c76fc95e577887f78ea392b01e24dc8fbd6486fb443f438836ae7246c4f1cc30",
+    "prebuilt": false
+  },
+  {
+    "object": "netool.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/netool.c",
+    "sha256": "a7d398e5438f4b9b8760e9b6bf9ae003860978f0e61a6ac881cbe49e9873eb71",
+    "prebuilt": false
+  },
+  {
+    "object": "linklist.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/linklist.c",
+    "sha256": "b10b3c42f35411d277da86de589fa1187326256efb010c61acf8b6a443376111",
+    "prebuilt": false
+  },
+  {
+    "object": "mtd.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/mtd.c",
+    "sha256": "18653c5c18c3e558c95e4eeee77250d841976a5ab775471bbd4efbab34c22675",
+    "prebuilt": false
+  },
+  {
+    "object": "init-broadcom.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/sysdeps/init-broadcom.c",
+    "sha256": "1999ff9863b66fdd09715373e93004eedc7b785d5d52aa065cf24002aac138cf",
+    "prebuilt": false
+  },
+  {
+    "object": "wps-broadcom.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/sysdeps/wps-broadcom.c",
+    "sha256": "bceaa62cb4a7e9cd1511bccab102fcbcb92cd1a46dfd574ceeb1982d91f853c5",
+    "prebuilt": false
+  },
+  {
+    "object": "broadcom.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/broadcom.o",
+    "sha256": "58464cf629310b8bccd184b6ebc9e1750d167d03a548dcb30a446c4948d78778",
+    "prebuilt": true
+  },
+  {
+    "object": "ate-broadcom.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/ate-broadcom.o",
+    "sha256": "ba029843eae7213b0d18fd1e67a00b8ad6d6ad2f99fc614d7cd3a6ad359b8944",
+    "prebuilt": true
+  },
+  {
+    "object": "obd-broadcom.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd-broadcom.o",
+    "sha256": "0fc0aa89e157969c2115b4a612c7d18fa5f5497471bfc52717911eb226be24b8",
+    "prebuilt": true
+  },
+  {
+    "object": "amas-ssd-broadcom.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas-ssd-broadcom.o",
+    "sha256": "bebe978ec31ae07d5b64970d5cef822d62470358ada3a34a7ace9ce6b0a99695",
+    "prebuilt": true
+  },
+  {
+    "object": "amas-ssd-cd-broadcom.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas-ssd-cd-broadcom.o",
+    "sha256": "301ead877d69206638ef2dfced0b49a64fcd8a47ac63b7b9de522cc48f05a741",
+    "prebuilt": true
+  },
+  {
+    "object": "prebuild/private.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/private.o",
+    "sha256": "d7dd69bcb219f15615e06baa6a4725d3847b39b01f1c179764c463c9c0abcd9f",
+    "prebuilt": true
+  },
+  {
+    "object": "wanduck.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/wanduck.c",
+    "sha256": "3bb29def88916c4df6b2df37f51c970711a5128fcdd059beef7b4e388a970372",
+    "prebuilt": false
+  },
+  {
+    "object": "tcpcheck.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/tcpcheck.c",
+    "sha256": "43cf11928712ddc253972ed50e3fecbb4e1e86cf3e59417aa44af0ed9cdb5cfd",
+    "prebuilt": false
+  },
+  {
+    "object": "usb.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/usb.c",
+    "sha256": "12fb7caed4867b557b0297843b50ec558612101ddcd805d21ffb21e9be9755f7",
+    "prebuilt": false
+  },
+  {
+    "object": "usbled.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/usbled.c",
+    "sha256": "8267231d2a7ebd3f610f4dd22d903c0a7d4a7b040a218df6dfdbe6df1faafcf5",
+    "prebuilt": false
+  },
+  {
+    "object": "usb_devices.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/usb_devices.c",
+    "sha256": "01b88789b9e8693bfe69b42e961ca867123d525923c45b0b6631412c40ad6788",
+    "prebuilt": false
+  },
+  {
+    "object": "ubifs.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ubifs.c",
+    "sha256": "0bacea6445a78f037065cbfeecb0074c04c1ae4485b37565196bf0e2c9233e61",
+    "prebuilt": false
+  },
+  {
+    "object": "ssh.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ssh.c",
+    "sha256": "d256ed705f18d6495fdadb031bd897fb276df3f65ad4a6c304ae2a8277334413",
+    "prebuilt": false
+  },
+  {
+    "object": "vpn.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/vpn.c",
+    "sha256": "d79ccb798a3381b4703d8afade41a2542387120f4711f333708b26218309bd94",
+    "prebuilt": false
+  },
+  {
+    "object": "snmpd.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/snmpd.c",
+    "sha256": "99a2a62670021f027e081bc72f5c01cc57e66150e9f3d494a76565ac2aca82e1",
+    "prebuilt": false
+  },
+  {
+    "object": "ovpn.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ovpn.c",
+    "sha256": "15a765e1bb8f89bb566408b7bf5c1f41267f1c9c2ad9ba1fd16a3906bc055e95",
+    "prebuilt": false
+  },
+  {
+    "object": "openvpn.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/openvpn.c",
+    "sha256": "2c69e88f25b7b5a4ed16e40fb0152321c8eb253d5cbcaae9030ff539128f29ed",
+    "prebuilt": false
+  },
+  {
+    "object": "tpvpn.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/tpvpn.o",
+    "sha256": "236164ff49ee35203f264e3a67d70573dda7cdbf9524cdd2d8deb97253ea6931",
+    "prebuilt": true
+  },
+  {
+    "object": "rc_ipsec.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc_ipsec.c",
+    "sha256": "1c179654cf6de1eeb1710667f11d00f8108828cd003d217ffeebc7925d487017",
+    "prebuilt": false
+  },
+  {
+    "object": "pc.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pc.c",
+    "sha256": "17e13bb47b1c86d5d81cb09507809e149460d4ec9cae2c45e0509392bd052ab1",
+    "prebuilt": false
+  },
+  {
+    "object": "pc_block.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_block.c",
+    "sha256": "bffdceeee27e68574b340bb7eb111b4e4addedf72b969e93b2a2631d8909edb9",
+    "prebuilt": false
+  },
+  {
+    "object": "pc_tmp.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_tmp.c",
+    "sha256": "a780b114afef39dce4320d461b3bf0bba74b31c1f88b3ae98d15c0cd01144042",
+    "prebuilt": false
+  },
+  {
+    "object": "pc_reward.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pc_reward.c",
+    "sha256": "f5d3982f90ed0d97b8984f325d7f61c2efb9da66bac3528df67e198206752232",
+    "prebuilt": false
+  },
+  {
+    "object": "ic.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ic.c",
+    "sha256": "44cecc7568d66417e690132a47ba2094ba24f9a5fd353640354cc2adabc4a252",
+    "prebuilt": false
+  },
+  {
+    "object": "frs_service.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/frs_service.o",
+    "sha256": "632cbe8b190139a351ed48af6b8797bf33a46bab89ea58d59b6f726c4f49ce6e",
+    "prebuilt": true
+  },
+  {
+    "object": "asus_ddns.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/asus_ddns.c",
+    "sha256": "9eade7262f2b35f0d6f685d25eddd1b3b1d6ce2d3def3f0bf7fc2002c027cf2b",
+    "prebuilt": false
+  },
+  {
+    "object": "arpreq.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/arpreq.c",
+    "sha256": "0ae4b8bf658247f8fc995b49b573d3d39e7a3c29165c331153893c426088ae11",
+    "prebuilt": false
+  },
+  {
+    "object": "psta_monitor.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/psta_monitor.o",
+    "sha256": "7e91a418de7b3056b366468dda31683ad37821d98effd8ae0621514bae561aee",
+    "prebuilt": true
+  },
+  {
+    "object": "nbr_monitor.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/nbr_monitor.c",
+    "sha256": "866f5e737c0758402a2aab7a21500e8e25dda09e434e570a1f77a9e16c954706",
+    "prebuilt": false
+  },
+  {
+    "object": "obd.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd.o",
+    "sha256": "bf3cabb104526e36d08ee6dfeea2391a8f663ed2659023e77dfe6b8b8e8ff2fc",
+    "prebuilt": true
+  },
+  {
+    "object": "obd_eth.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd_eth.o",
+    "sha256": "24583cdd5e5f80bee7e051f2cd4e2ade0ed8435207e857c32217f32d734f3fbf",
+    "prebuilt": true
+  },
+  {
+    "object": "obd_monitor.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/obd_monitor.o",
+    "sha256": "30973d86e8a4b2d3ff1710b24b1051ac2ec4fd7ddb9f8121108a5450b6b7c551",
+    "prebuilt": true
+  },
+  {
+    "object": "rmd.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rmd.c",
+    "sha256": "88fa5a6f9399c64372d1bd88ebd9c68d650c231abd3416c16185d01bb07186b9",
+    "prebuilt": false
+  },
+  {
+    "object": "wpsaide.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/wpsaide.c",
+    "sha256": "73f4add4373433aaa81a3cd751f56bb4471ac4f5fa2653e584dfef7808342328",
+    "prebuilt": false
+  },
+  {
+    "object": "vpnc_fusion.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/vpnc_fusion.c",
+    "sha256": "81970dc79ab4cbe1b8984963ecbd65cf419fae19a43f3efd7640eda7ac827dcb",
+    "prebuilt": false
+  },
+  {
+    "object": "vpnc_legacy.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/vpnc_legacy.c",
+    "sha256": "43d548a41cd7e39ed5fdce759863636890e904372e0ebb86bab3126a48fb6d07",
+    "prebuilt": false
+  },
+  {
+    "object": "sdn.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/sdn.c",
+    "sha256": "46be8ced06047da5abe7b0998a918b83a3f2a4f53420def693791bba1c92cadf",
+    "prebuilt": false
+  },
+  {
+    "object": "firewall_sdn.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/firewall_sdn.c",
+    "sha256": "c44bf8a50085422a0a13086ecd6956b7787731b56980a407e2e7dcda9c97690d",
+    "prebuilt": false
+  },
+  {
+    "object": "sdn-interface-broadcom.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/sdn-interface-broadcom.o",
+    "sha256": "ff53288434025130c87f142f1c554df5d872727d52cc9663f8a0c86631498ba5",
+    "prebuilt": true
+  },
+  {
+    "object": "timemachine.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/timemachine.c",
+    "sha256": "0840762f40c96fbf758299c57aa62062d25035f24c02a932625986aa189316d4",
+    "prebuilt": false
+  },
+  {
+    "object": "bwdpi.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi.o",
+    "sha256": "40d4e595f04d931e435fa8d9faf31e3b04007ce66a0f1fa32b749d47af42032b",
+    "prebuilt": true
+  },
+  {
+    "object": "bwdpi_check.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi_check.o",
+    "sha256": "95d338086b592a424d9d1252126b983b3a36fac28bfc4f9b0a43d5515f8c9b1c",
+    "prebuilt": true
+  },
+  {
+    "object": "bwdpi_wred_alive.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi_wred_alive.o",
+    "sha256": "5fda93fec2bca485a6975803920ebdef3cd6d96ec4d0d479e672eb4408962d12",
+    "prebuilt": true
+  },
+  {
+    "object": "bwdpi_db_10.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/bwdpi_db_10.o",
+    "sha256": "bd8722e2ca54d0a908d30a5c770759eb0d5f5ff11011429c957e6b267dfcce54",
+    "prebuilt": true
+  },
+  {
+    "object": "hour_monitor.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/hour_monitor.c",
+    "sha256": "81659b51a35d8f208a98d34557fac5d6b6f8215b2aa5c711d63bc7b4624e4119",
+    "prebuilt": false
+  },
+  {
+    "object": "dns_dpi_check.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/dns_dpi_check.o",
+    "sha256": "89e2527e29f3c40e3cce27c38e930c6396f08831e445098afc643360ad54db19",
+    "prebuilt": true
+  },
+  {
+    "object": "amas_lib.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_lib.o",
+    "sha256": "86298872508f1f0be469ba0e82a707575dc70dc0993001ceaa70edd491521483",
+    "prebuilt": true
+  },
+  {
+    "object": "nt_mail.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/nt_mail.o",
+    "sha256": "e85e5d943182865f9db1e170bd0948c6a976aa6a3b1d45eb2f5c26f076343e2a",
+    "prebuilt": true
+  },
+  {
+    "object": "pwdec.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/pwdec.o",
+    "sha256": "5b16bc5725ace43d5d46db4c515278167ba4a8e9d485eb5e98967985f0b1dcd5",
+    "prebuilt": true
+  },
+  {
+    "object": "v6plusd.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/v6plusd.o",
+    "sha256": "2fcb0074856ae0de40cb1421b95b614fb4b897d49b46de26c6d2d19054c4431c",
+    "prebuilt": true
+  },
+  {
+    "object": "ocnvcd.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/ocnvcd.o",
+    "sha256": "f938f3a5b3758da81ab971990ee759e47ad581f80974f29c7b4717835df429d3",
+    "prebuilt": true
+  },
+  {
+    "object": "dslited.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/dslited.o",
+    "sha256": "858c03c35cf66edd4280c4cd14c27b693d52daa628604b39559687800a8d1899",
+    "prebuilt": true
+  },
+  {
+    "object": "pressure.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/pressure.c",
+    "sha256": "6df9fe802b3afb1ce3c3b03d46675089ee5c448eeeb3aee301ab1361cd3734e3",
+    "prebuilt": false
+  },
+  {
+    "object": "roamast.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/roamast.o",
+    "sha256": "29831d42be11b03e4b2c9a6f7de9e149378cb9e81a329a4d4645ed02a6f2b3c2",
+    "prebuilt": true
+  },
+  {
+    "object": "roamast-broadcom.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/roamast-broadcom.o",
+    "sha256": "7d9ab8f7471c6b7930be1df47754b0974d797305952a60f3737fb17b12634342",
+    "prebuilt": true
+  },
+  {
+    "object": "tcode_rc.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/tcode_rc.o",
+    "sha256": "7fe275f4c1260415fea8207fb2ac305daaedbdeaf6d609cacac6af00014e07cc",
+    "prebuilt": true
+  },
+  {
+    "object": "tcode_brcm.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/tcode_brcm.o",
+    "sha256": "3df11e7d3ac7b9da44c7f6020fc095c60048d7f341e100ef67226377a646a4be",
+    "prebuilt": true
+  },
+  {
+    "object": "agg_brcm.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/agg_brcm.o",
+    "sha256": "22327ccf3d8ad86f0cc1a0a934b5842927028906f7414f2d30f6d1fec545ccee",
+    "prebuilt": true
+  },
+  {
+    "object": "dnsfilter.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/dnsfilter.c",
+    "sha256": "07fbe1979eaf95f8c0a19d69a45585bfb1a51be1942cc138f0e612789f0bc0fd",
+    "prebuilt": false
+  },
+  {
+    "object": "ntpd.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/ntpd.c",
+    "sha256": "cb54a0ef608052db5750c0859999e37917fb485700c26f8621e9a9aad42bda3c",
+    "prebuilt": false
+  },
+  {
+    "object": "amas_apg.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_apg.o",
+    "sha256": "7d7b069651829dd148dae0f9c2800a31b36fbcf77e3f871f0aabd1ceb1e70951",
+    "prebuilt": true
+  },
+  {
+    "object": "gpy211_war.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/gpy211_war.o",
+    "sha256": "0fd8382a787e10bf3ed8a0c56a25f290d5d1ceae8f9cbd8cd166d7a6628a9810",
+    "prebuilt": true
+  },
+  {
+    "object": "natnl_api.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/natnl_api.c",
+    "sha256": "40e987e4b00e512dad2c3a067f6878baef81e80be2d74e4c04969674499d779a",
+    "prebuilt": false
+  },
+  {
+    "object": "erp_monitor.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/erp_monitor.c",
+    "sha256": "5cb5d8f122733ef58591c20157ae81da8daba177081c9fa2d4a2c30f75f54cd9",
+    "prebuilt": false
+  },
+  {
+    "object": "amas_wlcconnect.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_wlcconnect.o",
+    "sha256": "80b25dd8e938b09429261a20c14c6a738394c44da2b67ea3dac4df06b49154bf",
+    "prebuilt": true
+  },
+  {
+    "object": "amas_bhctrl.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_bhctrl.o",
+    "sha256": "611368754c01b6fa3af01f0e999a29b4a2f237cb5d633c93054dfc8ae638ec4f",
+    "prebuilt": true
+  },
+  {
+    "object": "amas_status.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_status.o",
+    "sha256": "88944da94b47e4ead039e0e33bbf566caf43cbe2d09f01c242c8a3ac45916c49",
+    "prebuilt": true
+  },
+  {
+    "object": "amas_misc.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_misc.o",
+    "sha256": "a13d1853e8e2906b91d50b05a8c71aff43a562a1634fb8726b5a9daa077330d6",
+    "prebuilt": true
+  },
+  {
+    "object": "amas_lanctrl.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_lanctrl.o",
+    "sha256": "8cb675d7eb71b235e0441d115533633369f62a16b042bb24f67dbcabee020c88",
+    "prebuilt": true
+  },
+  {
+    "object": "amas_ssd.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_ssd.o",
+    "sha256": "56d9c895e41032e973e6af00b0a171b6a6d7d11625e593d00cd682b1f3943b54",
+    "prebuilt": true
+  },
+  {
+    "object": "amas_ipc.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_ipc.o",
+    "sha256": "934fe13227282432037656d975df39889f155d0bc16099bdfdaddb7e03ee87c3",
+    "prebuilt": true
+  },
+  {
+    "object": "amas_ssd_cd.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/amas_ssd_cd.o",
+    "sha256": "b1b2c7ff568b0b886c1a72cf2075cb5fc31e56fcdccdb103bb5df77f2db4b14b",
+    "prebuilt": true
+  },
+  {
+    "object": "prebuild/hostapd_config_be.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/hostapd_config_be.o",
+    "sha256": "a5f8128868f3bedc234ddb44f619e88618c913c823f484c5836628c056952e53",
+    "prebuilt": true
+  },
+  {
+    "object": "conn_diag.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/conn_diag.o",
+    "sha256": "dd5849b6fc29a3ca458fc2293ab47ce649f42fecb06431f5d5cc57aecbd20b94",
+    "prebuilt": true
+  },
+  {
+    "object": "conn_diag-broadcom.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/conn_diag-broadcom.o",
+    "sha256": "8e032b1e370cc59e0462f5fbecd8d5e7951ed62922762258efb5beb8f3a8b229",
+    "prebuilt": true
+  },
+  {
+    "object": "ledg.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/ledg.o",
+    "sha256": "e081ea3fcd976a4458979683de659bb3407bf9b5a63b1595a2d6989e06ba3ff4",
+    "prebuilt": true
+  },
+  {
+    "object": "rtkmonitor.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/rtkmonitor.o",
+    "sha256": "d6afcb85b603ac6406b0d5ffd4d195f7fa8c40d7a6fd6b8775158673cc3ceab4",
+    "prebuilt": true
+  },
+  {
+    "object": "dhcpc_vc_query.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/prebuild/GT-BE98/dhcpc_vc_query.o",
+    "sha256": "eb53305311fcca01a6a0b9e9787f39ebc5a608ff365ae51d4e8bfd2fe601583a",
+    "prebuilt": true
+  },
+  {
+    "object": "sched_daemon.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/sched_daemon.c",
+    "sha256": "2f878ed815635ac1cb0b62a5643ec337312ce78f071462e6a34b0dc3b8d406dc",
+    "prebuilt": false
+  },
+  {
+    "object": "wireguard.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/wireguard.c",
+    "sha256": "2241959aa6f52b4b0e1191f6e3331e2b320ad6d6a46390f9428012f47eaf5baf",
+    "prebuilt": false
+  },
+  {
+    "object": "rc-client.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-client.c",
+    "sha256": "1d17a4bb8bc6beaf7ecac2b8373004e43be78a2cef88a466426c2f13884f5558",
+    "prebuilt": false
+  },
+  {
+    "object": "rc-manager.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-manager.c",
+    "sha256": "eeb10ab3b3669078c689d1ee7563720287872893c669a2d85214fc6197c8fbe4",
+    "prebuilt": false
+  },
+  {
+    "object": "rc-legacy.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-legacy.c",
+    "sha256": "5811abcb2425a139f080dfad8634cfaa79be8d863e5fe8e3988be44f21f5955f",
+    "prebuilt": false
+  },
+  {
+    "object": "rc-services.o",
+    "source": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/rmerlin-integration-20260916/source-tree/release/src/router/rc/rc-services.c",
+    "sha256": "971a7d7c894bef389d8a133b85b89567deadc9389c3f44345e9afee7eb8030ce",
+    "prebuilt": false
+  }
+]

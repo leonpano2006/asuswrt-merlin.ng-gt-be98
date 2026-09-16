@@ -1,0 +1,12 @@
+{
+  "old-tag-reproducer": {
+    "exit_code": -6,
+    "stdout": "",
+    "stderr": "*** buffer overflow detected ***: terminated\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+  },
+  "tag-regression": {
+    "exit_code": 0,
+    "stdout": "HTTPD_TAG_BOUNDS_PASS\n",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "protocol": "TLSv1.3",
+  "cipher": [
+    "TLS_CHACHA20_POLY1305_SHA256",
+    "TLSv1.3",
+    256
+  ],
+  "certificate_sha256": "76e7e93c343ba9093b56659cc12ce8b8e01109ad99347dd55d27783a66376b0e",
+  "certificate_validation": "not evaluated: router local management certificate",
+  "purpose": "TLS transport and complete management page after service restart",
+  "status": 200,
+  "bytes": 28623,
+  "page_complete": true
+}

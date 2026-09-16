@@ -1,0 +1,10 @@
+{
+  "changed": [
+    "usr/sbin/rc",
+    "usr/share/leon-upstream.json"
+  ],
+  "modules_unchanged": 182,
+  "init_and_runtime_unchanged": true,
+  "parent_image": "GT-BE98_leon36-rmerlin1029a1_zstd22.pkgtb",
+  "retained_fortify": 3
+}

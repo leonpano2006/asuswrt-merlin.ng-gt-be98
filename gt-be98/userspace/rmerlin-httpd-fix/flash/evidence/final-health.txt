@@ -1,0 +1,10 @@
+firmver=3.0.0.6
+buildno=102.9
+extendno=beta1-leon1_rog
+	Acceleration Mode: <L2 & L3>
+	HW Acceleration <Enabled> 
+495.48 1479.81
+29.8.0
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.

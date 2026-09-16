@@ -1,0 +1,32 @@
+{
+  "checked_keys": [
+    "sw_mode",
+    "ctf_disable",
+    "fc_disable",
+    "runner_disable",
+    "runner_disable_force",
+    "qos_enable",
+    "qos_type",
+    "wan_ifnames",
+    "wan0_ifname",
+    "lan_ifname",
+    "lan_ifnames",
+    "wans_dualwan"
+  ],
+  "unchanged": true,
+  "values": {
+    "sw_mode": "3",
+    "ctf_disable": "",
+    "fc_disable": "0",
+    "runner_disable": "0",
+    "runner_disable_force": "",
+    "qos_enable": "0",
+    "qos_type": "1",
+    "wan_ifnames": "",
+    "wan0_ifname": "",
+    "lan_ifname": "br0",
+    "lan_ifnames": "eth0 eth1 eth2 eth3 wl0 wl1 wl2 wl3 wl0.1 wl1.1 wl2.1 wl3.1 wl3.4",
+    "wans_dualwan": "wan none"
+  },
+  "operating_mode": "AP (sw_mode=3)"
+}

@@ -2,7 +2,7 @@
 
 已直接整合 RMerlin `96831be75b3b891f6aa4c608f00cc7bb2d499d67`（3006.102.9-beta1），保留 GT-BE98 機種支援與先前的 Leon 使用者空間改造。父版本是自有分支 `15ee3e5f0cf462e2d54a6c7b23117d9936263e59`，共同祖先為 `542f71114524e009773c124a89f438d53be1c6f5`。不依賴 gnuton 發布這一輪更新；GitHub 的 fork 歸屬和既有歷史沒有重寫。
 
-這是**已完成建置、離線測試與打包的候選**，尚未刷入實機，沒有 firmware commit。Git 原碼提交與路由器的 firmware commit 是兩回事。
+**實機試刷更新：a1 已試刷，但 rc 在 IPsec 初始化觸發 buffer-overflow 檢查，裝置自行回退至 slot 2 / #35；a1 不可視為通過實機驗證。** 沒有 firmware commit，回退映像與 bootloader 雜湊未變。a2 修正 IPsec 後開機正常，再由 `rmerlin-httpd-fix-20260917` 修正網頁翻譯長度。最終 a3 已通過實機管理頁面、四組 radio、加速流量、OpenVPN 和 Docker DNS/HTTP(S)/LAN/memcg 驗證；仍僅 RAM 接受、未 firmware commit。詳見兩個後續 checkpoint；Git 原碼提交與路由器 firmware commit 是兩回事。
 
 ## 已納入
 

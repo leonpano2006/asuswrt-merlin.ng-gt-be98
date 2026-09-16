@@ -1,0 +1,33 @@
+{
+  "recorded_at_utc": "2026-09-16T22:51:09.782002+00:00",
+  "image": "GT-BE98_leon36-rmerlin1029a3_zstd22.pkgtb",
+  "image_sha256": "8cd5b0c8230a1c0aa5ca91a0f159351bea726ddbb90b07a19cc6d00cf372e73b",
+  "physical_pass": true,
+  "readback_pass": true,
+  "booted_slot": 1,
+  "normal_reboot_slot": 2,
+  "commit_flags": [
+    0,
+    1
+  ],
+  "firmware_commit_performed": false,
+  "ram_acceptance_only": true,
+  "fallback_unchanged": true,
+  "loader_unchanged": true,
+  "systemd_pid1": true,
+  "radios_up": 4,
+  "openvpn_server_state": 2,
+  "runtime_hash_files_passed": 263,
+  "web_login_and_pages_pass": true,
+  "https_management_transport_pass": true,
+  "docker_dns_http_https_custom_bridge_lan_memcg_pass": true,
+  "docker_test_resources_cleaned": true,
+  "hardware_acceleration": "Enabled L2 & L3; hardware flow counters advanced",
+  "hardware_aqm_enabled_or_tested": false,
+  "line_rate_benchmark_performed": false,
+  "operating_mode": "AP (sw_mode=3), unchanged",
+  "critical_log_matches": 0,
+  "debug_httpd_bind_present": false,
+  "upstream": "96831be75b3b891f6aa4c608f00cc7bb2d499d67",
+  "parent_source_commit": "dc72164482512481a62517f0f14e86c2fa3cf776"
+}
