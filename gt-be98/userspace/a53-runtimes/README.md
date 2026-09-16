@@ -132,6 +132,8 @@ The signed #36 bootfs is preserved bytewise and its signature verifies.
 Current UBI arithmetic reserves 107 + 615 of 734 available replacement blocks,
 leaving 12 eraseblocks; recheck before any flash.
 
-**This image has not been flashed or boot-tested as a full firmware.** QEMU
-and isolated physical-runtime tests passed. Slot 1 remains uncommitted, with
-committed slot 2 / #35 as the normal reboot target. No firmware commit occurred.
+**This image has now been flashed and verified as a full firmware on GT-BE98.**
+Installed-runtime, multiarch, Web UI, Docker networking/memcg and hardware
+acceleration checks passed; see [physical trial results](flash/README.md).
+Slot 1 remains uncommitted, with committed slot 2 / #35 as the normal reboot
+target. No firmware commit occurred.

@@ -1,0 +1,6 @@
+memory_limit=33554432
+memory_plus_swap_limit=33554432
+failcnt=0
+leon-a53-runtimes-http
+leon-a53-runtimes-test
+A53_MEMCG_AND_TEST_CLEANUP_PASS

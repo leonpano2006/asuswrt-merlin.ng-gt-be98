@@ -1,0 +1,96 @@
+{
+  "status": "hardware-trial-verified-uncommitted",
+  "verified_at_utc": "2026-09-16T12:19:09.212850+00:00",
+  "kernel": "4.19.294 #36",
+  "image": "GT-BE98_leon36-a53-runtimes_zstd22.pkgtb",
+  "image_bytes": 89439308,
+  "image_sha256": "7d48c2274be8dae6179096208a738d5214b321805b6d1fa9f0736bf23eff92f9",
+  "rootfs_bytes": 77021184,
+  "rootfs_sha256": "68888e499d0095374266c8f2adf0be296c5370e893c81c548e7a36c1030e9216",
+  "bootfs_readback_passed": true,
+  "rootfs_readback_passed": true,
+  "fallback_hashes_unchanged": true,
+  "bootloader_hash_unchanged": true,
+  "ubi_available_before": 20,
+  "ubi_reservations": [
+    107,
+    615
+  ],
+  "ubi_remaining": 12,
+  "booted_slot": 1,
+  "normal_reboot_slot": 2,
+  "fallback_kernel": "#35",
+  "commit_flags": [
+    0,
+    1
+  ],
+  "firmware_commit_performed": false,
+  "pid1_guard_present": true,
+  "guard_not_inherited_by_services": true,
+  "boot_logger_done_seconds": 306.925,
+  "critical_kernel_errors": false,
+  "glibc": "2.44",
+  "rebuilt_runtime_libraries": 10,
+  "installed_library_hashes_verified": 244,
+  "compiler_runtime_cases": 5,
+  "dual_string_abi_cxx_tests": 10,
+  "runtime_provider_paths": "installed /usr/lib/<triplet>; no LD_LIBRARY_PATH override",
+  "linker_checks_no_cache": 312,
+  "linker_checks_cached": 312,
+  "removed_aliases_verified": 257,
+  "retained_aliases_verified": 32,
+  "glibc_abis_passed": [
+    "armel",
+    "armhf",
+    "aarch64"
+  ],
+  "legacy_plugins_and_c_libraries_passed": true,
+  "ldd_armel_and_aarch64_passed": true,
+  "wireless_radios_up": 4,
+  "loaded_modules": 88,
+  "kernel_taint": 4097,
+  "webui": {
+    "method": "authenticated existing Chrome tab via cua_repl",
+    "pages": [
+      "Main_Login.asp",
+      "GameDashboard.asp",
+      "Tools_Sysinfo.asp"
+    ],
+    "login_passed": true,
+    "dashboard_live_traffic_updated": true,
+    "dashboard_clients": 39,
+    "system_info_memory_and_clients_updated": true,
+    "runner": "Enabled",
+    "flow_cache": "Enabled",
+    "wireless_radios_reported": 4,
+    "settings_changed": false
+  },
+  "docker_version": "29.8.0",
+  "docker_prefix": "/usr/local",
+  "docker_usb_bind_mount": true,
+  "docker_dns_http_https_default_and_custom_network_passed": true,
+  "docker_lan_published_port_passed": true,
+  "memcg_memory_limit": 33554432,
+  "memcg_memory_plus_swap_limit": 33554432,
+  "memcg_failcnt": 0,
+  "docker_tests_cleaned_up": true,
+  "ram_probes_removed": true,
+  "startup_files_unchanged": 18,
+  "normalized_network_and_module_baseline_unchanged": true,
+  "runner_l2_l3_hardware_enabled": true,
+  "runner_flow_and_command_errors": 0,
+  "runner_l2_samples": [
+    {
+      "hits": 217224,
+      "bytes": 81939013
+    },
+    {
+      "hits": 228554,
+      "bytes": 95491364
+    }
+  ],
+  "host_ip_table_note": "IPv4 add/delete counters each incremented once during Docker bridge testing. After cleanup, the two 20-second samples remained IPv4 add/delete 1/1 and IPv6 add/delete 0/1, matching previous trial values. These are separate from zero flow/command-list errors.",
+  "usb_ssd_speed_mbps": 5000,
+  "new_configuration_backup_exported": false,
+  "configuration_backup_used": "Previous multiarch-loader hardware backup; 18 current fingerprints match."
+}

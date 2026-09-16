@@ -4,9 +4,9 @@ The current candidate adds [Cortex-A53 runtimes](../a53-runtimes/README.md):
 libgcc and libstdc++ for armel/armhf with GCC 15.2, aarch64 with GCC 16.2,
 and the four existing armel C libraries. All are rebuilt on DGX against
 matching glibc 2.44 sysroots with CRC/Crypto enabled and retained SHA-1 Build IDs.
-QEMU and isolated runtime tests on the router pass. This complete image has
-not yet been flashed. Prior hardware trials remain separately recorded in
-`candidate.json`.
+QEMU, isolated runtime tests and the complete firmware trial on the router pass.
+See the [current physical trial](../a53-runtimes/flash/README.md). Prior hardware
+trials remain separately recorded in `candidate.json`.
 
 The mandatory preparation pipeline is:
 
@@ -51,9 +51,10 @@ internal weak inline exports are explicitly documented and unreferenced by
 firmware; external consumers of those names require separate validation.
 See [runtime verification](../a53-runtimes/evidence/verification.json).
 
-The [previous complete firmware trial](../multiarch-loader/flash/evidence/live-summary.json)
-also passed Web UI, four radios, Docker networking/memcg and Runner checks.
-Those observations refer to that earlier image, not a boot of this new image.
+The [current complete firmware trial](../a53-runtimes/flash/evidence/live-summary.json)
+passes installed-runtime, Web UI, four-radio, Docker networking/memcg and Runner
+checks. All 244 installed library hashes match, and normalized network state,
+88 loaded module names and 18 hook/config fingerprints match baseline.
 Slot 1 remains uncommitted; normal reboot goes to committed slot 2 / #35.
 Current UBI arithmetic leaves 12 eraseblocks after reserving the new payloads;
 recheck capacity and boot state immediately before any future flash.

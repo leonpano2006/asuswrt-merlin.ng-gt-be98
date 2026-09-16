@@ -1,0 +1,16 @@
+{
+  "method": "authenticated existing Chrome tab via cua_repl",
+  "pages": [
+    "Main_Login.asp",
+    "GameDashboard.asp",
+    "Tools_Sysinfo.asp"
+  ],
+  "login_passed": true,
+  "dashboard_live_traffic_updated": true,
+  "dashboard_clients": 39,
+  "system_info_memory_and_clients_updated": true,
+  "runner": "Enabled",
+  "flow_cache": "Enabled",
+  "wireless_radios_reported": 4,
+  "settings_changed": false
+}

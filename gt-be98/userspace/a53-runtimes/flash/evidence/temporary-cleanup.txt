@@ -1,0 +1,7 @@
+Docker=29.8.0
+664.69 2067.26
+  Booted Partition: First
+  Reboot Partition: Second
+B First  partition commit flag    : 0
+ >Second partition commit flag    : 1
+A53_RAM_TEST_FILES_REMOVED_ROLLBACK_PRESERVED
