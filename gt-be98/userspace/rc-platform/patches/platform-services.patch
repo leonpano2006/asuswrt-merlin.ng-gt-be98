@@ -1,0 +1,808 @@
+--- a/release/src/router/rc/services.c
++++ b/release/src/router/rc/services.c
+@@ -4179,6 +4179,8 @@
+ #ifdef RTCONFIG_WLCEVENTD
+ int start_wlceventd(void)
+ {
++	if (leon_rc_daemon_redirect("wlceventd", 1)) return 0;
++
+ 	char *ev_argv[] = {"/usr/sbin/wlceventd", NULL};
+ 	pid_t pid = 0;
+ 	int ret = 0;
+@@ -4204,13 +4206,16 @@
+ 	if (mediabridge_mode())
+ 		return ret;
+ 
+-	ret = _eval(ev_argv, NULL, 0, &pid);
++	ret = (leon_rc_managed() ? leon_rc_daemon_status("wlceventd", 1, ev_argv) : _eval(ev_argv, NULL, 0, &pid));
+ 
+ 	return ret;
+ }
+ 
+ void stop_wlceventd(void)
+ {
++	if (leon_rc_daemon_redirect("wlceventd", 0)) return;
++	if (leon_rc_daemon_status("wlceventd", 0, NULL) != 1) return;
++
+ 	killall_tk("wlceventd");
+ }
+ #endif
+@@ -4455,6 +4460,8 @@
+ int
+ start_eapd(void)
+ {
++	if (leon_rc_daemon_redirect("eapd", 1)) return 0;
++
+ 	int ret = 0;
+ 
+ 	stop_eapd();
+@@ -4463,7 +4470,7 @@
+ #ifdef RTCONFIG_PORT_BASED_VLAN
+ 		change_lan_ifnames();
+ #endif
+-		ret = eval("/bin/eapd");
++		ret = (leon_rc_managed() ? leon_rc_daemon_status("eapd", 1, (char *[]){"/bin/eapd", NULL}) : eval("/bin/eapd"));
+ 	}
+ 
+ 	return ret;
+@@ -4472,6 +4479,9 @@
+ void
+ stop_eapd(void)
+ {
++	if (leon_rc_daemon_redirect("eapd", 0)) return;
++	if (leon_rc_daemon_status("eapd", 0, NULL) != 1) return;
++
+ 	killall_tk("eapd");
+ }
+ 
+@@ -4535,6 +4545,8 @@
+ //2008.10 magic{
+ int start_networkmap(int bootwait)
+ {
++	if (leon_rc_daemon_redirect("networkmap", 1)) return 0;
++
+ 	char *networkmap_argv[] = {"networkmap", NULL, NULL};
+ 	pid_t pid;
+ 
+@@ -4562,7 +4574,7 @@
+ #ifdef RTCONFIG_BONJOUR
+ 	start_netmonitor();
+ #endif
+-	_eval(networkmap_argv, NULL, 0, &pid);
++	(leon_rc_managed() ? leon_rc_daemon_status("networkmap", 1, networkmap_argv) : _eval(networkmap_argv, NULL, 0, &pid));
+ 
+ 	return 0;
+ }
+@@ -4571,7 +4583,9 @@
+ 
+ void stop_networkmap(void)
+ {
+-	killall_tk("networkmap");
++	if (leon_rc_daemon_redirect("networkmap", 0)) return;
++
++	if (leon_rc_daemon_status("networkmap", 0, NULL) == 1) killall_tk("networkmap");
+ #ifdef RTCONFIG_BONJOUR
+ 	stop_netmonitor();
+ #endif
+@@ -4662,9 +4676,14 @@
+ 
+ void start_hotplug2(void)
+ {
++	if (leon_rc_daemon_redirect("hotplug2", 1)) return;
++
+ 	stop_hotplug2();
+ 
+-	xstart("hotplug2", "--persistent", "--no-coldplug");
++	if (leon_rc_managed()) {
++		char *args[] = {"hotplug2", "--persistent", "--no-coldplug", NULL};
++		if (leon_rc_daemon_status("hotplug2", 1, args)) return;
++	} else xstart("hotplug2", "--persistent", "--no-coldplug");
+ 	// FIXME: Don't remember exactly why I put "sleep" here -
+ 	// but it was not for a race with check_services()... - TB
+ 	sleep(1);
+@@ -4676,8 +4695,10 @@
+ 
+ void stop_hotplug2(void)
+ {
++	if (leon_rc_daemon_redirect("hotplug2", 0)) return;
++
+ 	pid_hotplug2 = -1;
+-	killall_tk("hotplug2");
++	if (leon_rc_daemon_status("hotplug2", 0, NULL) == 1) killall_tk("hotplug2");
+ }
+ 
+ #endif	/* LINUX26 */
+@@ -5916,6 +5937,8 @@
+ int
+ start_syslogd(void)
+ {
++	if (leon_rc_daemon_redirect("syslogd", 1)) return 0;
++
+ 	char syslog_path[PATH_MAX];
+ 	char syslog_addr[128];
+ #ifdef RTCONFIG_AMAS
+@@ -5995,20 +6018,26 @@
+ 	//time_zone_x_mapping();
+ 	//setenv("TZ", nvram_safe_get("time_zone_x"), 1);
+ 
+-	return _eval(syslogd_argv, NULL, 0, NULL);
++	return leon_rc_managed() ? leon_rc_daemon_status("syslogd", 1, syslogd_argv) : _eval(syslogd_argv, NULL, 0, NULL);
+ }
+ 
+ void
+ stop_syslogd(void)
+ {
++	if (leon_rc_daemon_redirect("syslogd", 0)) return;
++
+ #if defined(RTCONFIG_JFFS2LOG) && (defined(RTCONFIG_JFFS2)||defined(RTCONFIG_BRCM_NAND_JFFS2))
+ 	int running = pids("syslogd");
+ #endif
+ 
+ #if defined(RTCONFIG_JFFS2LOG) && (defined(RTCONFIG_JFFS2)||defined(RTCONFIG_BRCM_NAND_JFFS2))
+-	if (running)
+-#endif
+-		killall_tk("syslogd");
++	if (running || leon_rc_managed())
++#endif
++		{
++			int result = leon_rc_daemon_status("syslogd", 0, NULL);
++			if (result < 0) return;
++			if (result == 1) killall_tk("syslogd");
++		}
+ 
+ #if defined(RTCONFIG_JFFS2LOG) && (defined(RTCONFIG_JFFS2)||defined(RTCONFIG_BRCM_NAND_JFFS2))
+ 	char prefix[PATH_MAX];
+@@ -6033,6 +6062,8 @@
+ int
+ start_klogd(void)
+ {
++	if (leon_rc_daemon_redirect("klogd", 1)) return 0;
++
+ 	int argc;
+ 	char *klogd_argv[] = {"/sbin/klogd",
+ 		NULL, NULL,				/* -c console_loglevel */
+@@ -6046,13 +6077,15 @@
+ 		klogd_argv[argc++] = nvram_safe_get("console_loglevel");
+ 	}
+ 
+-	return _eval(klogd_argv, NULL, 0, NULL);
++	return leon_rc_managed() ? leon_rc_daemon_status("klogd", 1, klogd_argv) : _eval(klogd_argv, NULL, 0, NULL);
+ }
+ 
+ void
+ stop_klogd(void)
+ {
+-	if (pids("klogd"))
++	if (leon_rc_daemon_redirect("klogd", 0)) return;
++
++	if (leon_rc_daemon_status("klogd", 0, NULL) == 1 && pids("klogd"))
+ 		killall_tk("klogd");
+ }
+ #endif
+@@ -6428,14 +6461,16 @@
+ void
+ stop_acsd(void)
+ {
++	if (leon_rc_daemon_redirect("acsd", 0)) return;
++
+ #ifdef RTCONFIG_HND_ROUTER_AX
+ 	/* irrespective of NVRAM, try to stop all versions of acsd */
+ 	if (pidof("acsd2") > 0)
+ 		doSystem("rm /tmp/dm/%d", pidof("acsd2"));
+ 
+-	killall_tk("acsd2");
+-#endif
+-	killall_tk("acsd");
++	if (leon_rc_daemon_status("acsd2", 0, NULL) == 1) killall_tk("acsd2");
++#endif
++	if (leon_rc_daemon_status("acsd", 0, NULL) == 1) killall_tk("acsd");
+ }
+ 
+ int no_need_acsd()
+@@ -6476,6 +6511,8 @@
+ int
+ start_acsd()
+ {
++	if (leon_rc_daemon_redirect("acsd", 1)) return 0;
++
+ 	int ret = 0;
+ #if defined(RTCONFIG_BCM_7114) || defined(RTCONFIG_HND_ROUTER_AX)
+ #if defined(RTCONFIG_HND_ROUTER_AX)
+@@ -6501,11 +6538,11 @@
+ #if defined(RTCONFIG_HND_ROUTER_AX)
+ 		/* depending on NVRAM start the respective version */
+ 		if (nvram_match("acs_version", "2"))
+-			system("/usr/sbin/acsd2");
++			(leon_rc_managed() ? leon_rc_daemon_status("acsd2", 1, acsd_argv) : system("/usr/sbin/acsd2"));
+ 		/* default acsd version; to use even when the NVRAM is not set */
+ 		else
+ #endif
+-		ret = eval("/usr/sbin/acsd");
++		ret = (leon_rc_managed() ? leon_rc_daemon_status("acsd", 1, (char *[]){"/usr/sbin/acsd", NULL}) : eval("/usr/sbin/acsd"));
+ #endif
+ 	}
+ 
+@@ -7412,7 +7449,7 @@
+ 			if (nvram_get("httpds_reload_cert")) {
+ 				nvram_unset("httpds_reload_cert");
+ 			}
+-			_eval(https_argv, NULL, 0, &pid);
++			(leon_rc_managed() ? leon_rc_daemon_status("httpds", 1, https_argv) : _eval(https_argv, NULL, 0, &pid));
+ 		}
+ 
+ #ifdef RTCONFIG_IPV6
+@@ -7433,7 +7470,7 @@
+ 			if (get_pid_by_process_name(https_ipv6_argv_buf) == -1) {
+ 				if (nvram_get("httpds6_reload_cert"))
+ 					nvram_unset("httpds6_reload_cert");
+-				_eval(https_ipv6_argv, NULL, 0, &pid);
++				(leon_rc_managed() ? leon_rc_daemon_status("httpds6", 1, https_ipv6_argv) : _eval(https_ipv6_argv, NULL, 0, &pid));
+ 			}
+ 		}
+ #endif
+@@ -7460,7 +7497,7 @@
+ 		}
+ 
+ 		if(get_pid_by_process_name(httpd_argv_buf) == -1)
+-			_eval(httpd_argv, NULL, 0, &pid);
++			(leon_rc_managed() ? leon_rc_daemon_status("httpd", 1, httpd_argv) : _eval(httpd_argv, NULL, 0, &pid));
+ #if defined(RTCONFIG_ALPINE) || defined(RTCONFIG_LANTIQ)
+ 		sleep(1);
+ #endif
+@@ -7482,6 +7519,12 @@
+ 
+ 	nvram_set_int("wait_httpd", 1);
+ 
++	if (leon_rc_managed()) {
++		leon_rc_daemon_status("httpds6", 0, NULL);
++		leon_rc_daemon_status("httpds", 0, NULL);
++		leon_rc_daemon_status("httpd", 0, NULL);
++		return;
++	}
+ 	if (pids("httpd"))
+ 		killall_tk("httpd");
+ #ifdef RTCONFIG_HTTPS
+@@ -7494,6 +7537,8 @@
+ void
+ start_httpd_ipv6(void)
+ {
++	if (leon_rc_daemon_redirect("httpd6", 1)) return;
++
+ 	char *https_ipv6_argv[] = { "httpds", "-s",
+ 		NULL, NULL,	/* -i ifname */
+ 		NULL, NULL,	/* -p port */
+@@ -7507,7 +7552,9 @@
+ 	strlcpy(pif, get_wan6face(), sizeof(pif));
+ 	pid = nvram_get_int("misc_httpsport_x") ? : 8443;
+ 	snprintf(pidfile, sizeof(pidfile), "/var/run/httpd-%s-%d.pid", pif, pid);
+-	if (f_exists(pidfile)) {
++	if (leon_rc_managed()) {
++		if (leon_rc_daemon_status("httpds6", 0, NULL)) return;
++	} else if (f_exists(pidfile)) {
+ 		kill_pidfile_s(pidfile, SIGTERM);
+ 		unlink(pidfile);
+ 	}
+@@ -7526,7 +7573,7 @@
+ 		https_ipv6_argv[https_ipv6_index++] = ((pid == 8443) ? "8443" : nvram_safe_get("misc_httpsport_x"));
+ 		https_ipv6_argv[https_ipv6_index++] = "-6";
+ 		logmessage(LOGNAME, "start https:%d", pid);
+-		_eval(https_ipv6_argv, NULL, 0, &pid);
++		(leon_rc_managed() ? leon_rc_daemon_status("httpds6", 1, https_ipv6_argv) : _eval(https_ipv6_argv, NULL, 0, &pid));
+ #if defined(RTCONFIG_ALPINE) || defined(RTCONFIG_LANTIQ)
+ 		sleep(1);
+ #endif
+@@ -12918,6 +12965,8 @@
+ int
+ start_notification_center(void)
+ {
++	if (leon_rc_daemon_redirect("notification", 1)) return 0;
++
+ 	char *nt_monitor_argv[] = {"nt_monitor", NULL};
+ 	pid_t pid;
+ 
+@@ -12932,12 +12981,16 @@
+ 	am_setup_email_conf();
+ 	am_setup_email_info();
+ 
+-	return _eval(nt_monitor_argv, NULL, 0, &pid);
++	return (leon_rc_managed() ? leon_rc_daemon_status("notification", 1, nt_monitor_argv) : _eval(nt_monitor_argv, NULL, 0, &pid));
+ }
+ 
+ int
+ stop_notification_center(void)
+ {
++	if (leon_rc_daemon_redirect("notification", 0)) return 0;
++
++	int managed = leon_rc_daemon_status("notification", 0, NULL);
++	if (managed != 1) return managed;
+ 	killall_tk("nt_monitor");
+ 	killall_tk("nt_center");
+ 	return 0;
+@@ -12954,14 +13007,19 @@
+ int
+ start_ptcsrv(void)
+ {
++	if (leon_rc_daemon_redirect("protection", 1)) return 0;
++
+ 	char *ptcsrv_argv[] = {"protect_srv", NULL};
+ 	pid_t pid;
+ 
+-	return _eval(ptcsrv_argv, NULL, 0, &pid);
++	return (leon_rc_managed() ? leon_rc_daemon_status("protection", 1, ptcsrv_argv) : _eval(ptcsrv_argv, NULL, 0, &pid));
+ }
+ void
+ stop_ptcsrv(void)
+ {
++	if (leon_rc_daemon_redirect("protection", 0)) return;
++	if (leon_rc_daemon_status("protection", 0, NULL) != 1) return;
++
+ 	killall_tk("protect_srv");
+ }
+ 
+@@ -12970,6 +13028,8 @@
+ int
+ start_netool(void)
+ {
++	if (leon_rc_daemon_redirect("netool", 1)) return 0;
++
+ 	char *netool_argv[] = {"/sbin/netool", NULL};
+ 	pid_t pid;
+ 
+@@ -12978,14 +13038,19 @@
+ 		return 0;
+ 	}
+ 
+-	killall("netool", SIGTERM);
+-
+-	return _eval(netool_argv, NULL, 0, &pid);
++	if (leon_rc_managed()) {
++		if (leon_rc_daemon_status("netool", 0, NULL)) return -1;
++	} else killall("netool", SIGTERM);
++
++	return (leon_rc_managed() ? leon_rc_daemon_status("netool", 1, netool_argv) : _eval(netool_argv, NULL, 0, &pid));
+ }
+ 
+ void
+ stop_netool(void)
+ {
++	if (leon_rc_daemon_redirect("netool", 0)) return;
++	if (leon_rc_daemon_status("netool", 0, NULL) != 1) return;
++
+ 	killall_tk("netool");
+ }
+ #endif
+@@ -15512,7 +15577,8 @@
+ 	setitimer(ITIMER_REAL, &zombie_tv, NULL);
+ 
+ #ifdef LINUX26
+-	_check(pids("hotplug2"), "hotplug2", start_hotplug2);
++	if (!leon_rc_managed())
++		_check(pids("hotplug2"), "hotplug2", start_hotplug2);
+ #endif
+ #ifdef RTCONFIG_CROND
+ 	/* systemd is the only supervisor after ownership is transferred. */
+@@ -15908,6 +15974,114 @@
+ }
+ #endif	/* RTCONFIG_HTTPS */
+ 
++static int leon_dispatch_daemon(const char *script, int action)
++{
++#if !defined(RTCONFIG_RSYSLOGD)
++	if (!strcmp(script, "leon_syslogd")) {
++		if (action & RC_SERVICE_STOP) stop_syslogd();
++		if (action & RC_SERVICE_START) start_syslogd();
++		return 1;
++	}
++#endif
++#if !defined(RTCONFIG_RSYSLOGD)
++	if (!strcmp(script, "leon_klogd")) {
++		if (action & RC_SERVICE_STOP) stop_klogd();
++		if (action & RC_SERVICE_START) start_klogd();
++		return 1;
++	}
++#endif
++#if defined(CONFIG_BCMWL5)
++	if (!strcmp(script, "leon_eapd")) {
++		if (action & RC_SERVICE_STOP) stop_eapd();
++		if (action & RC_SERVICE_START) start_eapd();
++		return 1;
++	}
++#endif
++#if defined(CONFIG_BCMWL5)
++	if (!strcmp(script, "leon_acsd")) {
++		if (action & RC_SERVICE_STOP) stop_acsd();
++		if (action & RC_SERVICE_START) start_acsd();
++		return 1;
++	}
++#endif
++#if defined(BCM_BSD)
++	if (!strcmp(script, "leon_bsd")) {
++		if (action & RC_SERVICE_STOP) stop_bsd();
++		if (action & RC_SERVICE_START) start_bsd();
++		return 1;
++	}
++#endif
++#if defined(RTCONFIG_WLCEVENTD)
++	if (!strcmp(script, "leon_wlceventd")) {
++		if (action & RC_SERVICE_STOP) stop_wlceventd();
++		if (action & RC_SERVICE_START) start_wlceventd();
++		return 1;
++	}
++#endif
++#if defined(RTCONFIG_NEW_USER_LOW_RSSI)
++	if (!strcmp(script, "leon_roamast")) {
++		if (action & RC_SERVICE_STOP) stop_roamast();
++		if (action & RC_SERVICE_START) start_roamast();
++		return 1;
++	}
++#endif
++#if defined(LINUX26)
++	if (!strcmp(script, "leon_hotplug2")) {
++		if (action & RC_SERVICE_STOP) stop_hotplug2();
++		if (action & RC_SERVICE_START) start_hotplug2();
++		return 1;
++	}
++#endif
++	if (!strcmp(script, "leon_networkmap")) {
++		if (action & RC_SERVICE_STOP) stop_networkmap();
++		if (action & RC_SERVICE_START) start_networkmap(0);
++		return 1;
++	}
++#if defined(RTCONFIG_NOTIFICATION_CENTER)
++	if (!strcmp(script, "leon_notification")) {
++		if (action & RC_SERVICE_STOP) stop_notification_center();
++		if (action & RC_SERVICE_START) start_notification_center();
++		return 1;
++	}
++#endif
++#if defined(RTCONFIG_PROTECTION_SERVER)
++	if (!strcmp(script, "leon_protection")) {
++		if (action & RC_SERVICE_STOP) stop_ptcsrv();
++		if (action & RC_SERVICE_START) start_ptcsrv();
++		return 1;
++	}
++#endif
++#if defined(RTCONFIG_NETOOL)
++	if (!strcmp(script, "leon_netool")) {
++		if (action & RC_SERVICE_STOP) stop_netool();
++		if (action & RC_SERVICE_START) start_netool();
++		return 1;
++	}
++#endif
++#if defined(RTCONFIG_CFGSYNC)
++	if (!strcmp(script, "leon_cfgsync")) {
++		if (action & RC_SERVICE_STOP) stop_cfgsync();
++		if (action & RC_SERVICE_START) start_cfgsync();
++		return 1;
++	}
++#endif
++#if defined(RTCONFIG_SAMBASRV)
++	if (!strcmp(script, "leon_wsdd")) {
++		if (action & RC_SERVICE_STOP) stop_wsdd();
++		if (action & RC_SERVICE_START) start_wsdd();
++		return 1;
++	}
++#endif
++#if defined(RTCONFIG_HTTPS) && defined(RTCONFIG_IPV6)
++	if (!strcmp(script, "leon_httpd6")) {
++		if (action & RC_SERVICE_STOP) leon_rc_daemon_status("httpds6", 0, NULL);
++		if (action & RC_SERVICE_START) start_httpd_ipv6();
++		return 1;
++	}
++#endif
++	return 0;
++}
++
+ void handle_notifications(void)
+ {
+ 	char nv[256], nvtmp[32], *cmd[8], *script;
+@@ -16000,7 +16174,10 @@
+ 	}
+ #endif
+ 
+-	if (strcmp(script, "reboot") == 0 || strcmp(script,"rebootandrestore")==0) {
++	if (leon_dispatch_daemon(script, action)) {
++		/* Service ownership request handled by the rc manager. */
++	}
++	else if (strcmp(script, "reboot") == 0 || strcmp(script,"rebootandrestore")==0) {
+ 		if (wait_action_idle(10)) {
+ 			set_action(ACT_REBOOT);
+ 		}
+@@ -23750,6 +23927,8 @@
+ #ifdef BCM_BSD
+ int start_bsd(void)
+ {
++	if (leon_rc_daemon_redirect("bsd", 1)) return 0;
++
+ 	int ret = 0;
+ 
+ 	stop_bsd();
+@@ -23764,7 +23943,7 @@
+ 		ret = -1;
+ 	else {
+ #endif
+-		ret = eval("/usr/sbin/bsd");
++		ret = (leon_rc_managed() ? leon_rc_daemon_status("bsd", 1, (char *[]){"/usr/sbin/bsd", NULL}) : eval("/usr/sbin/bsd"));
+ #ifndef RTCONFIG_AMASDB
+ 	}
+ #endif
+@@ -23774,6 +23953,9 @@
+ 
+ void stop_bsd(void)
+ {
++	if (leon_rc_daemon_redirect("bsd", 0)) return;
++	if (leon_rc_daemon_status("bsd", 0, NULL) != 1) return;
++
+ 	killall_tk("bsd");
+ }
+ #endif /* BCM_BSD */
+@@ -24495,11 +24677,16 @@
+ 
+ #ifdef RTCONFIG_NEW_USER_LOW_RSSI
+ void stop_roamast(void){
++	if (leon_rc_daemon_redirect("roamast", 0)) return;
++	if (leon_rc_daemon_status("roamast", 0, NULL) != 1) return;
++
+ 	if (pids("roamast"))
+ 		killall_tk("roamast");
+ }
+ 
+ void start_roamast(void){
++	if (leon_rc_daemon_redirect("roamast", 1)) return;
++
+ 	char *cmd[] = {"roamast", NULL};
+ 	char prefix[] = "wl_XXXXX";
+ 	char tmp[32];
+@@ -24526,13 +24713,13 @@
+ 		return;
+ #endif
+ #if defined(RTCONFIG_STA_AP_BAND_BIND) || defined(RTCONFIG_FORCE_ROAMING)
+-	_eval(cmd, NULL, 0, &pid);
++	(leon_rc_managed() ? leon_rc_daemon_status("roamast", 1, cmd) : _eval(cmd, NULL, 0, &pid));
+ 	return ;
+ #endif
+ 	for (i = 0; i <= DEV_NUMIFS; i++) {
+ 		sprintf(prefix, "wl%d_", i);
+ 		if( nvram_get_int(strcat_r(prefix, "user_rssi", tmp)) != 0 ) {
+-			_eval(cmd, NULL, 0, &pid);
++			(leon_rc_managed() ? leon_rc_daemon_status("roamast", 1, cmd) : _eval(cmd, NULL, 0, &pid));
+ 			break;
+ 		}
+ 	}
+@@ -26281,6 +26468,8 @@
+ #ifdef RTCONFIG_CFGSYNC
+ int start_cfgsync(void)
+ {
++	if (leon_rc_daemon_redirect("cfgsync", 1)) return 0;
++
+ 
+ 	char *cfg_server_argv[] = {"cfg_server", NULL};
+ 	char *cfg_client_argv[] = {"cfg_client", NULL};
+@@ -26311,7 +26500,7 @@
+ 
+ 		stop_cfgsync();
+ 		nvram_set("cfg_pause", "0");
+-		ret = _eval(cfg_server_argv, NULL, 0, &pid);
++		ret = (leon_rc_managed() ? leon_rc_daemon_status("cfg-server", 1, cfg_server_argv) : _eval(cfg_server_argv, NULL, 0, &pid));
+ 	}
+ #ifdef RTCONFIG_MASTER_DET
+ 	else if (nvram_match("x_Setting", "1") &&
+@@ -26335,7 +26524,7 @@
+ 		stop_cfgsync();
+ 		nvram_set("cfg_master", "1");
+ 		nvram_commit();
+-		ret = _eval(cfg_server_argv, NULL, 0, &pid);
++		ret = (leon_rc_managed() ? leon_rc_daemon_status("cfg-server", 1, cfg_server_argv) : _eval(cfg_server_argv, NULL, 0, &pid));
+ 	}
+ #endif
+ 
+@@ -26357,7 +26546,7 @@
+ #endif
+ 		stop_cfgsync();
+ 		nvram_set("cfg_pause", "0");
+-		ret = _eval(cfg_client_argv, NULL, 0, &pid);
++		ret = (leon_rc_managed() ? leon_rc_daemon_status("cfg-client", 1, cfg_client_argv) : _eval(cfg_client_argv, NULL, 0, &pid));
+ 	}
+ #endif
+ 	return ret;
+@@ -26365,6 +26554,14 @@
+ 
+ void stop_cfgsync(void)
+ {
++	if (leon_rc_daemon_redirect("cfgsync", 0)) return;
++
++	if (leon_rc_managed()) {
++		int a = leon_rc_daemon_status("cfg-server", 0, NULL);
++		int b = leon_rc_daemon_status("cfg-client", 0, NULL);
++		if (!a && !b) unlink("/var/run/cfg_server.pid");
++		return;
++	}
+ 	unlink("/var/run/cfg_server.pid");
+ 	if (pids("cfg_server"))
+ 		killall_tk("cfg_server");
+--- a/release/src/router/rc/usb.c
++++ b/release/src/router/rc/usb.c
+@@ -6,6 +6,7 @@
+ */
+ 
+ #include <rc.h>
++#include "rc-services.h"
+ 
+ #ifdef RTCONFIG_PERMISSION_MANAGEMENT
+ #include <PMS_DBAPIs.h>
+@@ -130,7 +131,7 @@
+ 		if (is_routing_enabled())
+ 			lpd_argv[1] = nvram_safe_get("lan_ifname");
+ 		//return xstart("lpd");
+-		_eval(lpd_argv, NULL, 0, &pid);
++		(leon_rc_managed() ? leon_rc_daemon_status("lpd", 1, lpd_argv) : _eval(lpd_argv, NULL, 0, &pid));
+ 	}
+ }
+ 
+@@ -142,6 +143,10 @@
+ 		return;
+ 	}
+ 
++	if (leon_rc_managed()) {
++		if (!leon_rc_daemon_status("lpd", 0, NULL)) unlink("/var/run/lpdparent.pid");
++		return;
++	}
+ 	if (pids("lpd"))
+ 	{
+ 		killall_tk("lpd");
+@@ -174,7 +179,7 @@
+ 	if (!pids("u2ec"))
+ 	{
+ 		unlink("/var/run/u2ec.pid");
+-		_eval(u2ec_argv, NULL, 0, &pid);
++		(leon_rc_managed() ? leon_rc_daemon_status("u2ec", 1, u2ec_argv) : _eval(u2ec_argv, NULL, 0, &pid));
+ 
+ 		nvram_set("apps_u2ec_ex", "1");
+ 	}
+@@ -191,6 +196,10 @@
+ 		return;
+ 	}
+ 
++	if (leon_rc_managed()) {
++		if (!leon_rc_daemon_status("u2ec", 0, NULL)) unlink("/var/run/u2ec.pid");
++		return;
++	}
+ 	if (pids("u2ec")){
+ 		killall_tk("u2ec");
+ 		unlink("/var/run/u2ec.pid");
+@@ -3684,6 +3693,25 @@
+ 		free(nv);
+ #endif
+ 
++#if defined(RTCONFIG_SAMBA36X) && defined(RTCONFIG_HND_ROUTER_BE_4916)
++	if (leon_rc_managed()) {
++		char cpu[16] = "";
++		char *nmb[] = {"/usr/sbin/nmbd", "-D", "-s", "/etc/smb.conf", NULL};
++		char *smb[] = {"/usr/sbin/smbd", "-D", "-s", "/etc/smb.conf", NULL};
++		mkdir_if_none("/var/run/samba");
++		if (!nvram_match("stop_taskset", "1") && sysconf(_SC_NPROCESSORS_CONF) > 1)
++			snprintf(cpu, sizeof(cpu), "%ld", sysconf(_SC_NPROCESSORS_CONF) - 1);
++		if (leon_rc_daemon_status("nmbd", 1, nmb)) return;
++		if (leon_rc_daemon_cpu("smbd", smb, cpu)) {
++			leon_rc_daemon_status("nmbd", 0, NULL);
++			return;
++		}
++		start_wsdd();
++		logmessage("Samba Server", "systemd daemons are started");
++		return;
++	}
++#endif
++
+ #if defined(RTCONFIG_TUXERA_SMBD)
+ 	mkdir_if_none("/var/lib/tsmb/run");
+ 
+@@ -3746,13 +3774,17 @@
+ 
+ void stop_samba(int force)
+ {
+-	if(!force && !leon_rc_is_manager()){
++	if((leon_rc_managed() || !force) && !leon_rc_is_manager()){
+ 		notify_rc_and_wait_2min("stop_samba");
+ 		return;
+ 	}
+ 
+ 	stop_wsdd();
+-	kill_samba(SIGTERM);
++	if (leon_rc_managed()) {
++		int a = leon_rc_daemon_status("smbd", 0, NULL);
++		int b = leon_rc_daemon_status("nmbd", 0, NULL);
++		if (a || b) return;
++	} else kill_samba(SIGTERM);
+ 	/* clean up */
+ 	unlink("/var/log/smb");
+ 	unlink("/var/log/nmb");
+@@ -6066,6 +6098,8 @@
+ //#endif
+ void start_wsdd()
+ {
++	if (leon_rc_daemon_redirect("wsdd", 1)) return;
++
+ 	unsigned char ea[ETHER_ADDR_LEN];
+ 	char serial[18];
+ 	pid_t pid;
+@@ -6094,11 +6128,13 @@
+ 		system("echo $(nvram get lan_hwaddr) | md5sum | cut -b -32 > /etc/machine-id");
+ #endif
+ 
+-	_eval(wsdd_argv, NULL, 0, &pid);
++	(leon_rc_managed() ? leon_rc_daemon_status("wsdd", 1, wsdd_argv) : _eval(wsdd_argv, NULL, 0, &pid));
+ }
+ 
+ void stop_wsdd() {
+-	if (pids("wsdd2"))
++	if (leon_rc_daemon_redirect("wsdd", 0)) return;
++
++	if (leon_rc_daemon_status("wsdd", 0, NULL) == 1 && pids("wsdd2"))
+ 		killall_tk("wsdd2");
+ }
+ 
+--- a/release/src/router/rc/rc-services.c
++++ b/release/src/router/rc/rc-services.c
+@@ -136,3 +136,51 @@
+      * Repeated starts must not disconnect established sessions. */
+     return configured_unit("sshd", "asus-sshd.service", start, argv, 0);
+ }
++
++#include "leon-daemons.h"
++extern int notify_rc(const char *event);
++
++int leon_rc_daemon_redirect(const char *name, int start)
++{
++    char event[80];
++    if (!leon_rc_managed() || leon_rc_is_manager()) return 0;
++    snprintf(event, sizeof(event), "%s_leon_%s", start ? "start" : "stop", name);
++    if (notify_rc(event)) fprintf(stderr, "Cannot notify rc: %s\n", event);
++    return 1;
++}
++
++static int daemon_request(const char *name, int start, char *const argv[], const char *cpu)
++{
++    const struct leon_daemon *d = leon_daemon_find(name);
++    char unit[80], cwd[4096], *record[34];
++    int i, result;
++    if (!leon_rc_managed()) return 1;
++    if (!d) { errno = EINVAL; return -1; }
++    if (!leon_rc_is_manager() || geteuid()) { errno = EPERM; return -1; }
++    snprintf(unit, sizeof(unit), "asus-%s.service", name);
++    if (start) {
++        if (!argv || !argv[0] || !getcwd(cwd, sizeof(cwd))) return -1;
++        record[0] = cwd; record[1] = (char *)cpu;
++        record[2] = getenv("TZ") ? getenv("TZ") : "";
++        record[3] = getenv("PATH") ? getenv("PATH") : "/usr/bin:/usr/sbin:/bin:/sbin";
++        for (i=0; argv[i]; i++) {
++            if (i>=27) { errno=E2BIG; return -1; }
++            record[i+4]=argv[i];
++        }
++        record[i+4]=NULL;
++    }
++    result = configured_unit(name, unit, start, start ? record : NULL, 0);
++    if (result < 0) fprintf(stderr, "ASUS service %s %s failed: %s\n", name,
++                            start ? "start" : "stop", strerror(errno));
++    return result == 1 ? 0 : -1;
++}
++
++int leon_rc_daemon_status(const char *name, int start, char *const argv[])
++{
++    return daemon_request(name, start, argv, "");
++}
++
++int leon_rc_daemon_cpu(const char *name, char *const argv[], const char *cpu)
++{
++    return daemon_request(name, 1, argv, cpu);
++}
+--- a/release/src/router/rc/rc-services.h
++++ b/release/src/router/rc/rc-services.h
+@@ -9,4 +9,8 @@
+ int leon_rc_mdns(int start, char *const argv[]);
+ int leon_rc_ntpd(int start, char *const argv[]);
+ int leon_rc_sshd(int start, char *const argv[]);
++/* New daemon API: 1 legacy, 0 managed success, -1 managed error. */
++int leon_rc_daemon_status(const char *name, int start, char *const argv[]);
++int leon_rc_daemon_cpu(const char *name, char *const argv[], const char *cpu);
++int leon_rc_daemon_redirect(const char *name, int start);
+ #endif

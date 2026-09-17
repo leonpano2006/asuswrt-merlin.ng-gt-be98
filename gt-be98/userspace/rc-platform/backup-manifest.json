@@ -1,0 +1,26 @@
+{
+  "archive": "rc-platform-complete-v2.tar.zst",
+  "bytes": 347914236,
+  "sha256": "ba96739d3a6a06227e14d69a80f9c5121826c94988103c7b86e0b972fafe8045",
+  "contents": [
+    "README.md",
+    "result.json",
+    "scripts",
+    "configs",
+    "tests",
+    "src",
+    "units",
+    "patches",
+    "evidence",
+    "builds/qemu",
+    "saved-inputs",
+    "candidate",
+    "build/rc",
+    "build/probes",
+    "build/platform-release.squashfs",
+    "build/platform-v7/guest.cpio.gz",
+    "build/platform-v7/production-preservation.json",
+    "build/closure-guest.cpio.gz"
+  ],
+  "created_at_utc": "2026-09-17T14:00:31.757570+00:00"
+}

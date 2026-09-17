@@ -1,0 +1,13 @@
+#!/bin/busybox sh
+set -eu
+i=0
+until test "$(systemctl show asus-sshd.service -p ActiveState --value)" = inactive; do
+    i=$((i+1));test "$i" -lt 15;sleep 1
+done
+! /bin/busybox pidof dropbear
+if test -r /run/ssh-session-server; then
+    test ! -d /proc/$(cat /run/ssh-session-server)
+    # The unrelated SSH client may briefly remain as a zombie until rc reaps it.
+    c=$(cat /run/ssh-session-client)
+    if test -r /proc/$c/stat; then test "$(awk '{print $3}' /proc/$c/stat)" = Z; fi
+fi

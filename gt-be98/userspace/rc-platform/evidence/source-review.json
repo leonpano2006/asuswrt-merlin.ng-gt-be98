@@ -1,0 +1,41 @@
+{
+  "saved_base_patch_applies_exactly": true,
+  "source_whitespace_check": true,
+  "new_units": 23,
+  "files": {
+    "rc-services.c": "c9a9d8154d7296cfbc42869104bdfcb081cc954f6e607b0a00a7099abfc7697a",
+    "rc-services.h": "3d66db61469c49a4f999e6ccd8ff6ca8e7e17dd98898812e09f5a63abcd3ae5a",
+    "rc-bridge.h": "33d5198888896570ab5f693fe3b69aec67b5a361516c1f1eae0b4317ff20de06",
+    "rc-manager.c": "eeb10ab3b3669078c689d1ee7563720287872893c669a2d85214fc6197c8fbe4",
+    "rc-client.c": "1d17a4bb8bc6beaf7ecac2b8373004e43be78a2cef88a466426c2f13884f5558",
+    "services.c": "f015d9d623796d7bc970536e4519f7276950391ffdfdce94ee0a9f938d2b5a43",
+    "usb.c": "ddee092a49211a29c06041fe2cbe0e9d7a9682e41b8c85719b0ba590a9d13ed8",
+    "leon-daemon-supervisor.c": "464a69cd6b6d820f21715a3557ad2cd7c75774cda2ba7bb95d5506f780aec9c1",
+    "leon-daemons.h": "9e60883554e116efa5ac9bfed63d828e3731506f53be5ea0a7aab24c65741750"
+  },
+  "units": {
+    "asus-syslogd.service": "15f79c7eb402bd4de0e7b59ca648122ec6bdaadc93960ebccd5597356c4b4a85",
+    "asus-klogd.service": "918584945cae5e6891afd480c035820965f951663a726872e42ea15dfe775dbb",
+    "asus-eapd.service": "fd50fe133886ec6d9d5f48cf67e7b50e3d4ea0074b65cec8e12b0ae0261bc149",
+    "asus-acsd.service": "5308a0917f265dbaf5bbb7308b16b232ac58ffd224b19825e19560e7f035b7f4",
+    "asus-acsd2.service": "fe59e35ce863ccd5f8bcadd56f8729d6d89276be1eba2db77656edb4fd4aa7a2",
+    "asus-bsd.service": "8593663c1f27a27a992051caa88503807c6e6934f2a654ef9c1065d2c8ad8d10",
+    "asus-wlceventd.service": "1f8ffaa280736f011c31cb2452295f4275e803b951a6aff568830831ae7ceab1",
+    "asus-roamast.service": "48a173a7661deda9d49e76b7bffe0c9c5c98b2e5b0ff14d7f30ff3ddef8b9c6d",
+    "asus-httpd.service": "23bcc4e5ea929f382d331127f62f0e2d736e84f56248944463f17adfe580951a",
+    "asus-httpds.service": "ac3d4055dec557a84f81570760468b805ab1e826214e4ffc3252e43d45541771",
+    "asus-httpds6.service": "f039e48d169d8b7d23a1a0627a40c26dafafd1a8fcea93302083526b9fa55a92",
+    "asus-hotplug2.service": "9872b20b798c2493af463b7a557a2e00608535343261cc1d9d0fd3c801aefcc0",
+    "asus-lpd.service": "353fd619cfda9b9db566fac5c70362c901034eab0356f73f950e1913d3e752eb",
+    "asus-u2ec.service": "0b95ea790c2e1da4c350d47dcd2516332e3fda025eacdcaab36e21fefb050693",
+    "asus-nmbd.service": "7daf65802d513f75ba08d177c3244fa2b44125c0a58d4a3cd5ae88d4227a2995",
+    "asus-smbd.service": "ded053aa5fde5fba8f5cb8860645ea37d98ca05071bc68c3b7f09528e2a8cd2c",
+    "asus-wsdd.service": "0d4260f3d96242a60f29b07a9cf2124d40027e36e2df9af5323d4840f60dbe30",
+    "asus-networkmap.service": "3b3e752e4e313f530dbe0d3a13912d7bd55004e931bd05d7e69a6d34561ecf0d",
+    "asus-notification.service": "7bf0c0a12c1d4f66ea1c4dee106e291fcec82c1f29b11d15715b44a8fa37c103",
+    "asus-protection.service": "51c11ba7053c53c285163086b152d89a427ae54a6eba67a975d92813370d23a0",
+    "asus-netool.service": "54ec07e247b0092070df1768e785f093433d4981c1b23f4639b312ead043460e",
+    "asus-cfg-server.service": "0dcbfb1c4e6e18fe58befaf52d7d961f7971e614f7f85535f4fbc23f738bffd7",
+    "asus-cfg-client.service": "b4ba56dd5e27b1c0a12c02c225d6d60ce9ee15612ce6f1f600f4cc5981865d47"
+  }
+}

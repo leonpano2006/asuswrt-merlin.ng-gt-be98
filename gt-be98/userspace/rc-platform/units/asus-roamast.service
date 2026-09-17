@@ -1,0 +1,27 @@
+[Unit]
+Description=ASUS roamast daemon
+DefaultDependencies=no
+RequiresMountsFor=/run /var /tmp
+After=systemd-journald.service
+PartOf=asus-rc.service
+Conflicts=shutdown.target
+Before=shutdown.target
+JobTimeoutSec=20
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
+[Service]
+Type=notify
+Environment=HOME=/ USER=root TERM=vt100
+NotifyAccess=main
+ExecStart=/usr/libexec/leon-daemon-supervisor roamast
+Restart=on-failure
+RestartSec=2
+TimeoutStartSec=10
+TimeoutStopSec=10
+KillMode=control-group
+TasksMax=infinity
+TasksAccounting=no
+MemoryAccounting=no
+StandardOutput=journal
+StandardError=journal

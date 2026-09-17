@@ -1,0 +1,8 @@
+#!/bin/busybox sh
+set -eux
+for u in $(cat /usr/libexec/platform-unit-list); do
+ systemctl is-active --quiet asus-$u.service
+ p=$(cat /run/fixture-$u)
+ grep -q "/asus-$u.service$" /proc/$p/cgroup
+ test "$(systemctl show asus-$u.service -p MainPID --value)" != "$p"
+done

@@ -1,0 +1,163 @@
+{
+  "parent": "systemd-rc-ssh-20260917",
+  "changed": {
+    "usr/lib/systemd/system/asus-bsd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "8593663c1f27a27a992051caa88503807c6e6934f2a654ef9c1065d2c8ad8d10",
+      "bytes": 579
+    },
+    "usr/lib/systemd/system/asus-httpd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "23bcc4e5ea929f382d331127f62f0e2d736e84f56248944463f17adfe580951a",
+      "bytes": 583
+    },
+    "usr/lib/systemd/system/asus-notification.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "7bf0c0a12c1d4f66ea1c4dee106e291fcec82c1f29b11d15715b44a8fa37c103",
+      "bytes": 597
+    },
+    "usr/libexec/leon-daemon-supervisor": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "b86a89e3a889b0328f676e28403fc65858d7fa901fb7103ba9330d0df7d527ab",
+      "bytes": 67920
+    },
+    "usr/lib/systemd/system/asus-nmbd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "7daf65802d513f75ba08d177c3244fa2b44125c0a58d4a3cd5ae88d4227a2995",
+      "bytes": 581
+    },
+    "usr/lib/systemd/system/asus-wsdd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "0d4260f3d96242a60f29b07a9cf2124d40027e36e2df9af5323d4840f60dbe30",
+      "bytes": 581
+    },
+    "usr/lib/systemd/system/asus-klogd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "918584945cae5e6891afd480c035820965f951663a726872e42ea15dfe775dbb",
+      "bytes": 610
+    },
+    "usr/lib/systemd/system/asus-roamast.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "48a173a7661deda9d49e76b7bffe0c9c5c98b2e5b0ff14d7f30ff3ddef8b9c6d",
+      "bytes": 587
+    },
+    "usr/lib/systemd/system/asus-eapd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "fd50fe133886ec6d9d5f48cf67e7b50e3d4ea0074b65cec8e12b0ae0261bc149",
+      "bytes": 581
+    },
+    "usr/lib/systemd/system/asus-networkmap.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "3b3e752e4e313f530dbe0d3a13912d7bd55004e931bd05d7e69a6d34561ecf0d",
+      "bytes": 593
+    },
+    "usr/lib/systemd/system/asus-u2ec.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "0b95ea790c2e1da4c350d47dcd2516332e3fda025eacdcaab36e21fefb050693",
+      "bytes": 581
+    },
+    "usr/sbin/rc": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "3843e030af72c62f8c89ab814cf78714f81d20fd583b703e4a3fb7bad68d298e",
+      "bytes": 2718808
+    },
+    "usr/lib/systemd/system/asus-syslogd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "15f79c7eb402bd4de0e7b59ca648122ec6bdaadc93960ebccd5597356c4b4a85",
+      "bytes": 587
+    },
+    "usr/lib/systemd/system/asus-lpd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "353fd619cfda9b9db566fac5c70362c901034eab0356f73f950e1913d3e752eb",
+      "bytes": 579
+    },
+    "usr/lib/systemd/system/asus-httpds.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "ac3d4055dec557a84f81570760468b805ab1e826214e4ffc3252e43d45541771",
+      "bytes": 585
+    },
+    "usr/lib/systemd/system/asus-protection.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "51c11ba7053c53c285163086b152d89a427ae54a6eba67a975d92813370d23a0",
+      "bytes": 593
+    },
+    "usr/lib/systemd/system/asus-acsd2.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "fe59e35ce863ccd5f8bcadd56f8729d6d89276be1eba2db77656edb4fd4aa7a2",
+      "bytes": 583
+    },
+    "usr/lib/systemd/system/asus-acsd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "5308a0917f265dbaf5bbb7308b16b232ac58ffd224b19825e19560e7f035b7f4",
+      "bytes": 581
+    },
+    "usr/lib/systemd/system/asus-cfg-client.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "b4ba56dd5e27b1c0a12c02c225d6d60ce9ee15612ce6f1f600f4cc5981865d47",
+      "bytes": 593
+    },
+    "usr/share/leon-upstream.json": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "33916f38c8075bab630ff56e41866def374dac88452a6b9122b8d73edc11a057",
+      "bytes": 1941
+    },
+    "usr/lib/systemd/system/asus-hotplug2.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "9872b20b798c2493af463b7a557a2e00608535343261cc1d9d0fd3c801aefcc0",
+      "bytes": 589
+    },
+    "usr/lib/systemd/system/asus-smbd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "ded053aa5fde5fba8f5cb8860645ea37d98ca05071bc68c3b7f09528e2a8cd2c",
+      "bytes": 581
+    },
+    "usr/lib/systemd/system/asus-netool.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "54ec07e247b0092070df1768e785f093433d4981c1b23f4639b312ead043460e",
+      "bytes": 585
+    },
+    "usr/lib/systemd/system/asus-cfg-server.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "0dcbfb1c4e6e18fe58befaf52d7d961f7971e614f7f85535f4fbc23f738bffd7",
+      "bytes": 593
+    },
+    "usr/lib/systemd/system/asus-wlceventd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "1f8ffaa280736f011c31cb2452295f4275e803b951a6aff568830831ae7ceab1",
+      "bytes": 591
+    },
+    "usr/lib/systemd/system/asus-httpds6.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "f039e48d169d8b7d23a1a0627a40c26dafafd1a8fcea93302083526b9fa55a92",
+      "bytes": 587
+    }
+  },
+  "all_other_paths_identical": true,
+  "unchanged_kernel_modules": 182
+}
