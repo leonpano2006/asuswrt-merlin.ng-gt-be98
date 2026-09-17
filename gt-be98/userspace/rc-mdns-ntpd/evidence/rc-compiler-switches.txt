@@ -1,0 +1,4 @@
+
+String dump of section '.GCC.command.line':
+  [     0]  GNU C11 15.2.0 -D_FORTIFY_SOURCE=3 -mcpu=cortex-a53+crypto -mfpu=crypto-neon-fp-armv8 -mfloat-abi=softfp -marm -mtls-dialect=gnu -march=armv8-a+crc+crypto -g -g -Os -Os -O2 -Os -std=gnu11 -fomit-frame-pointer -ffixed-r8 -fPIC -fstack-protector-all -ffunction-sections -fdata-sections -fcommon -fno-strict-aliasing -fzero-init-padding-bits=all
+

@@ -1,0 +1,26 @@
+{
+  "production_revision": "mdns/ntpd with managed NTP callback and direct nested refreshes",
+  "fixture_findings": [
+    {
+      "revision": "v2",
+      "result": "failed",
+      "reason": "Hardware stub did not create the nobody group required by real Avahi; added account/group as ASUS init does."
+    },
+    {
+      "revision": "v3",
+      "result": "lifecycle checks passed; fixture corrected before acceptance",
+      "reason": "Probe inherited broker umask0077, unlike init.c umask0; Avahi could not read generated service XML. Added matching umask and explicit rejection of these warnings."
+    },
+    {
+      "revision": "v4",
+      "result": "new listener check failed; full and prior-service suites passed",
+      "reason": "BusyBox NTP listener uses the IPv6 socket table even for its dual-stack listener; check both /proc/net/udp and udp6."
+    },
+    {
+      "revision": "v5",
+      "result": "new suite passed",
+      "reason": "Real Avahi/NTP, readable XML, optional listener, lifecycle, duplicates, malformed arguments and PartOf shutdown verified."
+    }
+  ],
+  "scope": "No router service or persistent router setting modified during this development; no physical flash."
+}

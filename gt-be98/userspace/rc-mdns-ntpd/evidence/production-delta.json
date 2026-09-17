@@ -1,0 +1,43 @@
+{
+  "parent": "less-full-20260917",
+  "changed": {
+    "usr/lib/systemd/system/asus-mdns.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "4d9fe5bcf77dbe48e3a2e1808584ebaa4fd62acfb29fee8be4d80fa61a52a3c0",
+      "bytes": 600
+    },
+    "usr/libexec/leon-service-exec": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "4a5ec4a8db13e75f5c90f00ee3fd60b96929fbefffc3c349d2949df90e4bf1e2",
+      "bytes": 67920
+    },
+    "usr/share/leon-upstream.json": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "ba96dda4d647180a14d2025e8ae182752bd4e087d28ad6c0c63f29441ac9a16d",
+      "bytes": 643
+    },
+    "usr/libexec/leon-service-owner-check": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "d2224eadf0fa088d89c18dd371c31d21ac677c305754e8aecbc743cdd35aefa4",
+      "bytes": 244
+    },
+    "usr/lib/systemd/system/asus-ntpd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "5da59c1941edfb285df36f9348881df4d8bfe28e395cdbba02a98ca695be0cea",
+      "bytes": 595
+    },
+    "usr/sbin/rc": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "ca786145c19101bbfd4bb540aff3fbd3895d7dc47a2a7d476319d0a4009226a8",
+      "bytes": 2718752
+    }
+  },
+  "all_other_paths_identical": true,
+  "unchanged_kernel_modules": 182
+}

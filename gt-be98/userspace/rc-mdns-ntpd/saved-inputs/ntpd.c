@@ -1,5 +1,4 @@
 #include "rc-bridge.h"
-#include "rc-services.h"
 /*
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -38,7 +37,6 @@ int start_ntpd(void)
 		"-p", "pool.ntp.org",
 		NULL, NULL,		/* -p second_server */
 		NULL, NULL, NULL,	/* -l, -I, ifname */
-		NULL,			/* foreground in managed mode */
 		NULL };
 	int ret, index = 6;
 	pid_t pid;
@@ -67,17 +65,7 @@ int start_ntpd(void)
 		nvram_set_int("ntp_bf_time", bf_time);
 	}
 
-	if (leon_rc_managed()) {
-		ntpd_argv[index++] = "-n";
-		ntpd_argv[index] = NULL;
-		ret = leon_rc_ntpd(1, ntpd_argv);
-		if (ret < 0) {
-			perror("systemd ntpd start");
-			return -1;
-		}
-		ret = 0;
-	} else
-		ret = _eval(ntpd_argv, NULL, 0, &pid);
+	ret = _eval(ntpd_argv, NULL, 0, &pid);
 	if (ret == 0)
 		logmessage("ntpd", "Started ntpd");
 
@@ -90,11 +78,6 @@ void stop_ntpd(void)
 		notify_rc("stop_ntpd");
 		return;
 	}
-	if (leon_rc_managed()) {
-		if (leon_rc_ntpd(0, NULL) < 0)
-			perror("systemd ntpd stop");
-		return;
-	}
 
 	if (pids("ntp")) {
 		killall_tk("ntp");
@@ -105,13 +88,6 @@ void stop_ntpd(void)
 int ntpd_synced_main(int argc, char *argv[])
 {
 	time_t now=0;
-	/* Callback descendants belong to NTP's unit. Hand service side effects
-	 * back to rc, so stopping NTP cannot kill DDNS/VPN descendants. */
-	if (leon_rc_managed() && !leon_rc_is_manager()) {
-		if (argc == 2 && !strcmp(argv[1], "step"))
-			notify_rc("start_ntpd_synced");
-		return 0;
-	}
 #if 0
 	if (argc == 2 && !strcmp(argv[1], "unsync"))
 		logmessage("ntpd", "Unable to reach ntp server so far, keep trying");
@@ -142,30 +118,15 @@ int ntpd_synced_main(int argc, char *argv[])
 #endif
 
 #ifdef RTCONFIG_DNSPRIVACY
-		if (nvram_get_int("dnspriv_enable")) {
-			if (leon_rc_managed() && leon_rc_is_manager()) {
-				/* Do not enqueue into the notification being consumed. */
-#ifdef RTCONFIG_MULTILAN_CFG
-				stop_stubby(ALL_SDN);
-				start_stubby(ALL_SDN);
-#else
-				stop_stubby();
-				start_stubby();
-#endif
-			} else
-				notify_rc("restart_stubby");
-		}
+		if (nvram_get_int("dnspriv_enable"))
+			notify_rc("restart_stubby");
 #endif
 #ifdef RTCONFIG_DNSSEC
 		if (nvram_get_int("dnssec_enable"))
 			kill_pidfile_s("/var/run/dnsmasq.pid", SIGINT);
 #endif
 #ifdef RTCONFIG_DISK_MONITOR
-		if (leon_rc_managed() && leon_rc_is_manager()) {
-			stop_diskmon();
-			start_diskmon();
-		} else
-			notify_rc("restart_diskmon");
+		notify_rc("restart_diskmon");
 #endif
 #ifdef RTCONFIG_UUPLUGIN
 		exec_uu();

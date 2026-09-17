@@ -1,0 +1,26 @@
+[Unit]
+Description=ASUS multicast DNS and service discovery
+DefaultDependencies=no
+RequiresMountsFor=/run /var /tmp
+After=systemd-journald.service
+PartOf=asus-rc.service
+Conflicts=shutdown.target
+Before=shutdown.target
+JobTimeoutSec=20
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
+[Service]
+Type=exec
+ExecStartPre=/usr/libexec/leon-service-owner-check avahi-daemon
+ExecStart=/usr/libexec/leon-service-exec mdns
+Restart=always
+RestartSec=2
+TimeoutStartSec=10
+TimeoutStopSec=10
+KillMode=control-group
+TasksMax=infinity
+TasksAccounting=no
+MemoryAccounting=no
+StandardOutput=journal
+StandardError=journal

@@ -1,0 +1,60 @@
+free_lebs=0
+ubi0_3_reserved=107
+ubi0_4_reserved=627
+ubi0_5_reserved=106
+ubi0_6_reserved=605
+failed_units=0
+ 10:10:35 up  1:05,  load average: 0.48, 0.50, 0.47
+{
+  "upstream": "96831be75b3b891f6aa4c608f00cc7bb2d499d67",
+  "version": "3006.102.9-beta1-leon4",
+  "base_checkpoint": "systemd-service-split-20260916",
+  "kernel": "retained #36 4.19.294",
+  "openssl_policy": "3.5.8 standalone; real 1.1 BSP dependency closure retained",
+  "router_modified": false,
+  "flashed": false,
+  "correction": "IPsec IFNAMSIZ interface storage and HTTPD translation bounds",
+  "systemd": "257.13",
+  "service_split": [
+    "haveged",
+    "crond",
+    "infosvr"
+  ],
+  "cgroup": "hybrid; v1 cpuacct/memory/devices/freezer/pids retained"
+}
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: First
+  Reboot Partition: Second
+
+B First  partition type           : pureUBI/GPT
+B First  partition sequence number: 47
+B First  partition image tag      : $imageversion:  $
+B First  partition commit flag    : 0
+ >Second partition type           : pureUBI/GPT
+ >Second partition sequence number: 46
+ >Second partition image tag      : $imageversion:  $
+ >Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2

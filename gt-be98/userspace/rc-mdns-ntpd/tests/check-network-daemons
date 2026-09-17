@@ -1,0 +1,41 @@
+#!/bin/busybox sh
+set -eux
+for unit in mdns ntpd; do
+    i=0
+    while :; do
+        p=$(systemctl show asus-$unit.service -p MainPID --value)
+        if test "$p" -gt 1 && test -r /proc/$p/status; then
+            case "$unit" in
+                mdns) if test "$(awk '/^Uid:/{print $2}' /proc/$p/status)" != 0; then break; fi;;
+                ntpd) if test "$(/bin/busybox pidof ntp)" = "$p"; then break; fi;;
+            esac
+        fi
+        i=$((i+1)); test "$i" -lt 12; sleep 1
+    done
+    systemctl is-active --quiet asus-$unit.service
+    p=$(systemctl show asus-$unit.service -p MainPID --value)
+    test "$p" -gt 1
+    test "$(awk '/^PPid:/{print $2}' /proc/$p/status)" = 1
+    grep -q "/system.slice/asus-$unit.service$" /proc/$p/cgroup
+    test "$(stat -c %a /run/leon-rc/$unit.argv)" = 600
+    case "$unit" in
+        mdns) test "$(/bin/busybox pidof avahi-daemon)" = "$p"
+              # Avahi changes its process title; compare the real executable.
+              test "$(readlink /proc/$p/exe)" = /usr/sbin/avahi-daemon
+              test "$(awk '/^Uid:/{print $2}' /proc/$p/status)" != 0;;
+        ntpd) test "$(/bin/busybox pidof ntp)" = "$p"
+              tr '\000' '\n' < /proc/$p/cmdline > /run/ntp-command
+              grep -qx -- '-n' /run/ntp-command
+              grep -qx /sbin/ntpd_synced /run/ntp-command
+              grep -qx 127.0.0.2 /run/ntp-command
+              grep -qx 127.0.0.3 /run/ntp-command
+              if test "${1:-server}" = server; then
+                  grep -qx -- '-l' /run/ntp-command
+                  grep -qx lo /run/ntp-command
+                  grep -q ':007B ' /proc/net/udp /proc/net/udp6
+              else
+                  ! grep -qx -- '-l' /run/ntp-command
+                  ! grep -q ':007B ' /proc/net/udp /proc/net/udp6
+              fi;;
+    esac
+done

@@ -1,0 +1,17 @@
+{
+  "rehearsal": "network-services-v5",
+  "services_rehearsal": "network-services-v5-services",
+  "network_rehearsal": "network-services-v5-new",
+  "production_matches_tested_paths": true,
+  "image": "GT-BE98_leon36-systemd257-mdns-ntpd_zstd22.pkgtb",
+  "image_sha256": "563fde1342dc1ad71cd55f38c41e389c6c002835dc07899c65fe81849195991f",
+  "image_bytes": 90971212,
+  "rootfs_bytes": 78553088,
+  "rootfs_sha256": "d4c853984668552d88d9b260f2faec61e7c171e01b63f0f942daf0278edf254f",
+  "compression": "zstd level 22, 1 MiB blocks, tailends",
+  "sort_policy": {
+    "strategy": "family-name",
+    "reason": "Group by file type/ELF architecture, systemd family first, then basename; lossless fit with full less including manuals."
+  },
+  "flashed": false
+}

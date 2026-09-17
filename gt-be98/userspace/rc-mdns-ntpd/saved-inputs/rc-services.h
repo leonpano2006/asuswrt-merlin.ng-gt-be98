@@ -6,6 +6,4 @@
 int leon_rc_haveged(int start);
 int leon_rc_crond(int start);
 int leon_rc_infosvr(int start);
-int leon_rc_mdns(int start, char *const argv[]);
-int leon_rc_ntpd(int start, char *const argv[]);
 #endif

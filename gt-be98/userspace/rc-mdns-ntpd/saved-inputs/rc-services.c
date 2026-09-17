@@ -3,12 +3,8 @@
 #include "rc-bridge.h"
 #include "rc-services.h"
 #include <errno.h>
-#include <fcntl.h>
 #include <signal.h>
 #include <spawn.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <sys/wait.h>
 #include <time.h>
 #include <unistd.h>
@@ -80,52 +76,4 @@ int leon_rc_crond(int start)
 int leon_rc_infosvr(int start)
 {
     return request_unit("asus-infosvr.service", start, 0);
-}
-
-/* Preserve ASUS's argv construction without a shell or systemd expansion.
- * The broker owns /run/leon-rc (root:0700); rename publishes complete argv
- * for initial launch and later supervisor restarts. Nothing persists to USB. */
-static int configured_unit(const char *name, const char *unit, int start,
-                           char *const argv[], int restart)
-{
-    char path[96], temporary[112], data[8192];
-    size_t size = 0, len, offset;
-    int fd, error = 0, i;
-    ssize_t written;
-
-    if (start != 0 && start != 1) { errno = EINVAL; return -1; }
-    if (!leon_rc_managed()) return 0;
-    if (geteuid() != 0 || !leon_rc_is_manager()) { errno = EPERM; return -1; }
-    if (!start) return request_unit(unit, 0, restart);
-    if (!argv || !argv[0]) { errno = EINVAL; return -1; }
-    for (i = 0; argv[i]; i++) {
-        if (i >= 31) { errno = E2BIG; return -1; }
-        len = strnlen(argv[i], sizeof(data) - size);
-        if (len >= sizeof(data) - size) { errno = E2BIG; return -1; }
-        memcpy(data + size, argv[i], len + 1);
-        size += len + 1;
-    }
-    snprintf(path, sizeof(path), "/run/leon-rc/%s.argv", name);
-    snprintf(temporary, sizeof(temporary), "%s.XXXXXX", path);
-    fd = mkostemp(temporary, O_CLOEXEC);
-    if (fd < 0) return -1;
-    for (offset = 0; offset < size; offset += written) {
-        written = write(fd, data + offset, size - offset);
-        if (written < 0 && errno == EINTR) { written = 0; continue; }
-        if (written <= 0) { error = written ? errno : EIO; break; }
-    }
-    if (close(fd) && !error) error = errno;
-    if (!error && rename(temporary, path)) error = errno;
-    if (error) { unlink(temporary); errno = error; return -1; }
-    return request_unit(unit, 1, restart);
-}
-
-int leon_rc_mdns(int start, char *const argv[])
-{
-    return configured_unit("mdns", "asus-mdns.service", start, argv, 0);
-}
-
-int leon_rc_ntpd(int start, char *const argv[])
-{
-    return configured_unit("ntpd", "asus-ntpd.service", start, argv, 1);
 }

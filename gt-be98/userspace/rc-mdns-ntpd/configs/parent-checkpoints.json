@@ -1,0 +1,12 @@
+{
+  "git_parent": "849ef74df2e6f365234bb3c8f1c62ab2a8f9f526",
+  "less_full": {
+    "archive": "/home/leonpano/amng-out/less-full-20260917/less704-checkpoint.tar.zst",
+    "sha256": "c39b309d9dafd6ba519034ddad5a6da53cf59f819f9cc32a4cbe9c79ed3e66f4"
+  },
+  "systemd_upgrade": {
+    "archive": "/home/leonpano/amng-out/systemd-upgrade-20260917/preflash-final.tar.zst",
+    "sha256": "f970d0aac29f01edf5be71e617bb33a17077d1400d2668f48582821bfa60c12d"
+  },
+  "note": "Restore these checkpoints and their recorded parent dependencies. Toolchains remain in the separate toolchain repository."
+}

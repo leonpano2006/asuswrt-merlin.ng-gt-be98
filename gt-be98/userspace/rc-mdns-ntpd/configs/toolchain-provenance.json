@@ -1,0 +1,15 @@
+{
+  "armel_wrapper": {
+    "path": "a53-runtimes-20260916/builds/armel/wrappers/cc",
+    "sha256": "5d6566012ef4875c1b3201b1fb6a5474ee84297399a685c04724ffe17bd2e1f7"
+  },
+  "aarch64_wrapper": {
+    "path": "systemd-upgrade-20260917/build/cc",
+    "sha256": "de91699ef24beb7484a8cc7f86008b1d28001d7644f2da74f94a17dd55d41a91"
+  },
+  "armel_targets": {
+    "path": "a53-runtimes-20260916/configs/build-targets.json",
+    "sha256": "59b6b2f91cde8106f2320b5cca530c4d84bcffb0e577e87cc4583a93231cc84d"
+  },
+  "helper_compiler_version": "xgcc (Leon USB glibc 2.44 20260914) 16.2.0"
+}

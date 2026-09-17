@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-upgrade-20260917/build/cc",
+    "-Oz",
+    "-flto",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-D_FORTIFY_SOURCE=2",
+    "-fstack-protector-strong",
+    "-frecord-gcc-switches",
+    "-Wl,--build-id=sha1",
+    "-Wl,-z,relro,-z,now",
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-next-20260917/src/leon-service-exec.c",
+    "-o",
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-rc-next-20260917/build/rc/leon-service-exec"
+  ],
+  "sha256": "4a5ec4a8db13e75f5c90f00ee3fd60b96929fbefffc3c349d2949df90e4bf1e2"
+}

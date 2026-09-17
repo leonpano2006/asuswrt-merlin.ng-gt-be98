@@ -8413,12 +8413,6 @@ int start_mdns(void)
 		NULL
 	};
 	pid_t pid;
-	int delegated;
-
-	if (leon_rc_managed() && !leon_rc_is_manager()) {
-		notify_rc("start_mdns");
-		return 0;
-	}
 
 #ifdef RTAC68U
 	if (!hw_usb_cap())
@@ -8434,8 +8428,7 @@ int start_mdns(void)
 	mkdir_if_none(AVAHI_CONFIG_PATH);
 	mkdir_if_none(AVAHI_SERVICES_PATH);
 
-	if (generate_mdns_config() < 0 && leon_rc_managed())
-		return -1;
+	generate_mdns_config();
 #if defined(RTCONFIG_ALEXA)
 	generate_alexa_config();
 #endif
@@ -8465,31 +8458,12 @@ int start_mdns(void)
 		}
 	}
 
-	if (leon_rc_managed()) {
-		avahi_daemon_argv[0] = "/usr/sbin/avahi-daemon";
-		avahi_daemon_argv[1] = "-s"; /* Keep syslog, without daemonizing. */
-	}
-	delegated = leon_rc_mdns(1, avahi_daemon_argv);
-	if (delegated) {
-		if (delegated < 0) perror("systemd mdns start");
-		return delegated < 0 ? -1 : 0;
-	}
 	return _eval(avahi_daemon_argv, NULL, 0, &pid);
 }
 
 void stop_mdns(void)
 {
 	int i;
-	int delegated;
-	if (leon_rc_managed() && !leon_rc_is_manager()) {
-		notify_rc("stop_mdns");
-		return;
-	}
-	delegated = leon_rc_mdns(0, NULL);
-	if (delegated) {
-		if (delegated < 0) perror("systemd mdns stop");
-		return;
-	}
 	for(i = 0; i < 2 ;i++){
 		if (pids("avahi-daemon")){
 			cprintf("%s: [%d] killall-avahi-daemon\n",__FUNCTION__,i+1);
@@ -8512,10 +8486,6 @@ void restart_mdns(void)
 {
 	char afpd_service_config[80];
 	char itune_service_config[80];
-	if (leon_rc_managed() && !leon_rc_is_manager()) {
-		notify_rc("start_mdns_refresh");
-		return;
-	}
 	sprintf(afpd_service_config, "%s/%s", AVAHI_SERVICES_PATH, AVAHI_AFPD_SERVICE_FN);
 	sprintf(itune_service_config, "%s/%s", AVAHI_SERVICES_PATH, AVAHI_ITUNE_SERVICE_FN);
 
@@ -20246,11 +20216,6 @@ check_ddr_done:
 		if(action & RC_SERVICE_STOP) stop_ntpd();
 		if(action & RC_SERVICE_START) start_ntpd();
 	}
-	else if (strcmp(script, "ntpd_synced") == 0)
-	{
-		char *event_argv[] = { "ntpd_synced", "step", NULL };
-		if(action & RC_SERVICE_START) ntpd_synced_main(2, event_argv);
-	}
 #endif
 	else if (strcmp(script, "rebuild_cifs_config_and_password") ==0)
 	{
@@ -21270,10 +21235,6 @@ retry_wps_enr:
 	{
 		if(action & RC_SERVICE_STOP) stop_mdns();
 		if(action & RC_SERVICE_START) start_mdns();
-	}
-	else if (strcmp(script, "mdns_refresh") == 0)
-	{
-		if(action & RC_SERVICE_START) restart_mdns();
 	}
 #endif
 

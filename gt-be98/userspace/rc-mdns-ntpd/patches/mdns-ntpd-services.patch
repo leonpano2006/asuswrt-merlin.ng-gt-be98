@@ -1,0 +1,262 @@
+--- a/release/src/router/rc/services.c
++++ b/release/src/router/rc/services.c
+@@ -8413,6 +8413,12 @@
+ 		NULL
+ 	};
+ 	pid_t pid;
++	int delegated;
++
++	if (leon_rc_managed() && !leon_rc_is_manager()) {
++		notify_rc("start_mdns");
++		return 0;
++	}
+ 
+ #ifdef RTAC68U
+ 	if (!hw_usb_cap())
+@@ -8428,7 +8434,8 @@
+ 	mkdir_if_none(AVAHI_CONFIG_PATH);
+ 	mkdir_if_none(AVAHI_SERVICES_PATH);
+ 
+-	generate_mdns_config();
++	if (generate_mdns_config() < 0 && leon_rc_managed())
++		return -1;
+ #if defined(RTCONFIG_ALEXA)
+ 	generate_alexa_config();
+ #endif
+@@ -8458,12 +8465,31 @@
+ 		}
+ 	}
+ 
++	if (leon_rc_managed()) {
++		avahi_daemon_argv[0] = "/usr/sbin/avahi-daemon";
++		avahi_daemon_argv[1] = "-s"; /* Keep syslog, without daemonizing. */
++	}
++	delegated = leon_rc_mdns(1, avahi_daemon_argv);
++	if (delegated) {
++		if (delegated < 0) perror("systemd mdns start");
++		return delegated < 0 ? -1 : 0;
++	}
+ 	return _eval(avahi_daemon_argv, NULL, 0, &pid);
+ }
+ 
+ void stop_mdns(void)
+ {
+ 	int i;
++	int delegated;
++	if (leon_rc_managed() && !leon_rc_is_manager()) {
++		notify_rc("stop_mdns");
++		return;
++	}
++	delegated = leon_rc_mdns(0, NULL);
++	if (delegated) {
++		if (delegated < 0) perror("systemd mdns stop");
++		return;
++	}
+ 	for(i = 0; i < 2 ;i++){
+ 		if (pids("avahi-daemon")){
+ 			cprintf("%s: [%d] killall-avahi-daemon\n",__FUNCTION__,i+1);
+@@ -8486,6 +8512,10 @@
+ {
+ 	char afpd_service_config[80];
+ 	char itune_service_config[80];
++	if (leon_rc_managed() && !leon_rc_is_manager()) {
++		notify_rc("start_mdns_refresh");
++		return;
++	}
+ 	sprintf(afpd_service_config, "%s/%s", AVAHI_SERVICES_PATH, AVAHI_AFPD_SERVICE_FN);
+ 	sprintf(itune_service_config, "%s/%s", AVAHI_SERVICES_PATH, AVAHI_ITUNE_SERVICE_FN);
+ 
+@@ -20216,6 +20246,11 @@
+ 		if(action & RC_SERVICE_STOP) stop_ntpd();
+ 		if(action & RC_SERVICE_START) start_ntpd();
+ 	}
++	else if (strcmp(script, "ntpd_synced") == 0)
++	{
++		char *event_argv[] = { "ntpd_synced", "step", NULL };
++		if(action & RC_SERVICE_START) ntpd_synced_main(2, event_argv);
++	}
+ #endif
+ 	else if (strcmp(script, "rebuild_cifs_config_and_password") ==0)
+ 	{
+@@ -21235,6 +21270,10 @@
+ 	{
+ 		if(action & RC_SERVICE_STOP) stop_mdns();
+ 		if(action & RC_SERVICE_START) start_mdns();
++	}
++	else if (strcmp(script, "mdns_refresh") == 0)
++	{
++		if(action & RC_SERVICE_START) restart_mdns();
+ 	}
+ #endif
+ 
+--- a/release/src/router/rc/rc-services.c
++++ b/release/src/router/rc/rc-services.c
+@@ -3,8 +3,12 @@
+ #include "rc-bridge.h"
+ #include "rc-services.h"
+ #include <errno.h>
++#include <fcntl.h>
+ #include <signal.h>
+ #include <spawn.h>
++#include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
+ #include <sys/wait.h>
+ #include <time.h>
+ #include <unistd.h>
+@@ -77,3 +81,51 @@
+ {
+     return request_unit("asus-infosvr.service", start, 0);
+ }
++
++/* Preserve ASUS's argv construction without a shell or systemd expansion.
++ * The broker owns /run/leon-rc (root:0700); rename publishes complete argv
++ * for initial launch and later supervisor restarts. Nothing persists to USB. */
++static int configured_unit(const char *name, const char *unit, int start,
++                           char *const argv[], int restart)
++{
++    char path[96], temporary[112], data[8192];
++    size_t size = 0, len, offset;
++    int fd, error = 0, i;
++    ssize_t written;
++
++    if (start != 0 && start != 1) { errno = EINVAL; return -1; }
++    if (!leon_rc_managed()) return 0;
++    if (geteuid() != 0 || !leon_rc_is_manager()) { errno = EPERM; return -1; }
++    if (!start) return request_unit(unit, 0, restart);
++    if (!argv || !argv[0]) { errno = EINVAL; return -1; }
++    for (i = 0; argv[i]; i++) {
++        if (i >= 31) { errno = E2BIG; return -1; }
++        len = strnlen(argv[i], sizeof(data) - size);
++        if (len >= sizeof(data) - size) { errno = E2BIG; return -1; }
++        memcpy(data + size, argv[i], len + 1);
++        size += len + 1;
++    }
++    snprintf(path, sizeof(path), "/run/leon-rc/%s.argv", name);
++    snprintf(temporary, sizeof(temporary), "%s.XXXXXX", path);
++    fd = mkostemp(temporary, O_CLOEXEC);
++    if (fd < 0) return -1;
++    for (offset = 0; offset < size; offset += written) {
++        written = write(fd, data + offset, size - offset);
++        if (written < 0 && errno == EINTR) { written = 0; continue; }
++        if (written <= 0) { error = written ? errno : EIO; break; }
++    }
++    if (close(fd) && !error) error = errno;
++    if (!error && rename(temporary, path)) error = errno;
++    if (error) { unlink(temporary); errno = error; return -1; }
++    return request_unit(unit, 1, restart);
++}
++
++int leon_rc_mdns(int start, char *const argv[])
++{
++    return configured_unit("mdns", "asus-mdns.service", start, argv, 0);
++}
++
++int leon_rc_ntpd(int start, char *const argv[])
++{
++    return configured_unit("ntpd", "asus-ntpd.service", start, argv, 1);
++}
+--- a/release/src/router/rc/rc-services.h
++++ b/release/src/router/rc/rc-services.h
+@@ -6,4 +6,6 @@
+ int leon_rc_haveged(int start);
+ int leon_rc_crond(int start);
+ int leon_rc_infosvr(int start);
++int leon_rc_mdns(int start, char *const argv[]);
++int leon_rc_ntpd(int start, char *const argv[]);
+ #endif
+--- a/release/src/router/rc/ntpd.c
++++ b/release/src/router/rc/ntpd.c
+@@ -1,4 +1,5 @@
+ #include "rc-bridge.h"
++#include "rc-services.h"
+ /*
+  * This program is free software; you can redistribute it and/or
+  * modify it under the terms of the GNU General Public License as
+@@ -37,6 +38,7 @@
+ 		"-p", "pool.ntp.org",
+ 		NULL, NULL,		/* -p second_server */
+ 		NULL, NULL, NULL,	/* -l, -I, ifname */
++		NULL,			/* foreground in managed mode */
+ 		NULL };
+ 	int ret, index = 6;
+ 	pid_t pid;
+@@ -65,7 +67,17 @@
+ 		nvram_set_int("ntp_bf_time", bf_time);
+ 	}
+ 
+-	ret = _eval(ntpd_argv, NULL, 0, &pid);
++	if (leon_rc_managed()) {
++		ntpd_argv[index++] = "-n";
++		ntpd_argv[index] = NULL;
++		ret = leon_rc_ntpd(1, ntpd_argv);
++		if (ret < 0) {
++			perror("systemd ntpd start");
++			return -1;
++		}
++		ret = 0;
++	} else
++		ret = _eval(ntpd_argv, NULL, 0, &pid);
+ 	if (ret == 0)
+ 		logmessage("ntpd", "Started ntpd");
+ 
+@@ -78,6 +90,11 @@
+ 		notify_rc("stop_ntpd");
+ 		return;
+ 	}
++	if (leon_rc_managed()) {
++		if (leon_rc_ntpd(0, NULL) < 0)
++			perror("systemd ntpd stop");
++		return;
++	}
+ 
+ 	if (pids("ntp")) {
+ 		killall_tk("ntp");
+@@ -88,6 +105,13 @@
+ int ntpd_synced_main(int argc, char *argv[])
+ {
+ 	time_t now=0;
++	/* Callback descendants belong to NTP's unit. Hand service side effects
++	 * back to rc, so stopping NTP cannot kill DDNS/VPN descendants. */
++	if (leon_rc_managed() && !leon_rc_is_manager()) {
++		if (argc == 2 && !strcmp(argv[1], "step"))
++			notify_rc("start_ntpd_synced");
++		return 0;
++	}
+ #if 0
+ 	if (argc == 2 && !strcmp(argv[1], "unsync"))
+ 		logmessage("ntpd", "Unable to reach ntp server so far, keep trying");
+@@ -118,15 +142,30 @@
+ #endif
+ 
+ #ifdef RTCONFIG_DNSPRIVACY
+-		if (nvram_get_int("dnspriv_enable"))
+-			notify_rc("restart_stubby");
++		if (nvram_get_int("dnspriv_enable")) {
++			if (leon_rc_managed() && leon_rc_is_manager()) {
++				/* Do not enqueue into the notification being consumed. */
++#ifdef RTCONFIG_MULTILAN_CFG
++				stop_stubby(ALL_SDN);
++				start_stubby(ALL_SDN);
++#else
++				stop_stubby();
++				start_stubby();
++#endif
++			} else
++				notify_rc("restart_stubby");
++		}
+ #endif
+ #ifdef RTCONFIG_DNSSEC
+ 		if (nvram_get_int("dnssec_enable"))
+ 			kill_pidfile_s("/var/run/dnsmasq.pid", SIGINT);
+ #endif
+ #ifdef RTCONFIG_DISK_MONITOR
+-		notify_rc("restart_diskmon");
++		if (leon_rc_managed() && leon_rc_is_manager()) {
++			stop_diskmon();
++			start_diskmon();
++		} else
++			notify_rc("restart_diskmon");
+ #endif
+ #ifdef RTCONFIG_UUPLUGIN
+ 		exec_uu();
