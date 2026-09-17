@@ -22,7 +22,7 @@ test $((free + 107 + 627)) -ge 734
 test "$(sha256sum /dev/ubi0_5 | cut -d ' ' -f 1)" = 61403034cd7f49f25210f7e6154e421a784519b36874b618a34c0e2c3a25c291
 test "$(sha256sum /dev/ubi0_6 | cut -d ' ' -f 1)" = f6dd764de8cd5b0a5724193f771b180950c0c716f8120b9095bf54cda5cf2347
 test "$(sha256sum /dev/mtd1 | cut -d ' ' -f 1)" = 5721efb444680b250a40295fdad605f303749a0140468eba1f0f695f268517c3
-test "$(sha256sum /tmp/leon36-armhf-usb-leon6.pkgtb | cut -d ' ' -f 1)" = 6e77a91270830b034e104ad05d7329f1a113f37e56000a2c90e578fc252bf2b1
+test "$(sha256sum /tmp/leon36-armhf-usb-leon6.pkgtb | cut -d ' ' -f 1)" = 85be675ab95ae93cb6e52d82666e0e7c4f8cce131b4bf0a46c5dc56f25c7725b
 test "$(wc -c < /tmp/leon36-armhf-usb-leon6.pkgtb)" = 90877004
 /bin/fc status | grep 'HW Acceleration <Enabled>'
 echo SYSTEMD257_INACTIVE_SLOT1_FLASH_START

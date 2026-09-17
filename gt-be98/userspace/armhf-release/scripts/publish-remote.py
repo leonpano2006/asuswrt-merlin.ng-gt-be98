@@ -10,23 +10,23 @@ import tarfile
 
 r = Path(__file__).resolve().parents[1]
 repo = r.parent / 'rmerlin-integration-20260916/integration.git'
-base = '65bbcda3f4a97e4acc980b5edd925134d6894b26'
+base = 'ebb0de286eaa8c4a88fc3287e457bce25811159d'
 branch = 'refs/heads/gt-be98-systemd257-services'
 manifest = json.loads((r / 'publication-manifest.json').read_text())
 assert hashlib.sha256((r / 'publication.tar').read_bytes()).hexdigest() == manifest['tar_sha256']
-stage = r / 'reviewed-publication'
+stage = r / 'reviewed-publication-v2'
 stage.mkdir(exist_ok=False)
 with tarfile.open(r / 'publication.tar') as tar: tar.extractall(stage, filter='data')
 for name, digest in manifest['files'].items():
     assert hashlib.sha256((stage / name).read_bytes()).hexdigest() == digest, name
 assert len(manifest['files']) == sum(p.is_file() for p in stage.rglob('*'))
 prefix = 'gt-be98/userspace/armhf-release/'
-result = json.loads((stage / prefix / 'builds/qemu/armhf-usb/result.json').read_text())
+result = json.loads((stage / prefix / 'builds/qemu/armhf-usb-v2/result.json').read_text())
 assert result['guest_complete'] and not result['panic'] and 'LAB_ARMHF_ALL_PASS' in result['lab_lines']
 assert json.loads((stage / prefix / 'evidence/qemu-verification.json').read_text())['all_five_runtime_probe_sets_passed_before_and_after_cache']
-assert json.loads((stage / prefix / 'evidence/final-leon6.json').read_text())['headroom_bytes'] >= 0
+assert json.loads((stage / prefix / 'evidence/final-leon6-v2.json').read_text())['headroom_bytes'] >= 0
 
-env = dict(os.environ, GIT_INDEX_FILE=str(r / 'publication.index'), GIT_AUTHOR_NAME='leonpano2006',
+env = dict(os.environ, GIT_INDEX_FILE=str(r / 'publication-v2.index'), GIT_AUTHOR_NAME='leonpano2006',
            GIT_AUTHOR_EMAIL='leonpano20060507@gmail.com', GIT_COMMITTER_NAME='leonpano2006',
            GIT_COMMITTER_EMAIL='leonpano20060507@gmail.com', GIT_TERMINAL_PROMPT='0')
 def git(*args, input=None):
@@ -41,22 +41,12 @@ for path in sorted(p for p in stage.rglob('*') if p.is_file()):
 tree = git('write-tree')
 git('diff', '--check', base, tree)
 (r / 'publication-diff-stat.txt').write_text(git('diff', '--stat', base, tree) + '\n')
-message = """gt-be98: fit ARMHF USB and OpenSSL 4 candidate in the existing slot
+message = """gt-be98: correct leon6 OpenSSL metadata and finalize flash probes
 
-Preserve features while rebuilding ARMEL/AArch64 libstdc++ with -Oz,
-linking the full zstd CLI to the existing same-version shared library,
-and rebuilding the same SQLite CLI with -Oz/LTO. Keep all original
-runtime symbol ABIs and Cortex-A53 CRC/crypto targets with glibc 2.44.
-
-The zstd22 SquashFS fits with 104 KiB headroom after both standard
-1 MiB flasher allowances. Preserve signed bootfs, all kernel modules,
-ASUS dependency closure and committed fallback. Include actual build,
-pack, replay and flash scripts, checksums and QEMU validation receipts.
-
-Final image passes all 330 loader checks without USB and five modern/
-legacy runtime probe sets before and after ldconfig. Verify zstd full
-feature parity/cross-decode and SQLite engine behavior. Physical trial
-flash is authorized next; this commit records pre-flash validation only.
+Identify the unchanged native OpenSSL as 4.0.2 in runtime metadata.
+Repack at the same 78,458,880-byte size, rerun the complete kernel #36
+QEMU runtime/USB test and update all package hashes. Add physical
+runtime and mDNS/NTP ownership checks for the authorized trial flash.
 
 Co-authored-by: Codex <noreply@openai.com>
 """
@@ -74,6 +64,6 @@ receipt = {'commit': commit, 'parent': base, 'tree': tree, 'branch': branch,
            'router_modified': False, 'router_change': 'none in this checkpoint before publication', 'firmware_commit_performed': False,
            'original_worktree_untouched': True}
 (r / 'publication-receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
-git('bundle', 'create', str(r / 'armhf-release-since-65bbcda.bundle'), branch, '^' + base)
-git('bundle', 'verify', str(r / 'armhf-release-since-65bbcda.bundle'))
+git('bundle', 'create', str(r / 'armhf-release-since-ebb0de2.bundle'), branch, '^' + base)
+git('bundle', 'verify', str(r / 'armhf-release-since-ebb0de2.bundle'))
 print(json.dumps(receipt, indent=2))

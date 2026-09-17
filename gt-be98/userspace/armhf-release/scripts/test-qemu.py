@@ -6,8 +6,8 @@ from elftools.elf.elffile import ELFFile
 r=Path(__file__).resolve().parents[1];w=r.parent
 sys.path.insert(0,str(w/'multiarch-loader-20260916/scripts'))
 from common import inventory
-root=r/'build/rootfs';image=r/'build/final-leon6.squashfs'
-unpacked=r/'build/unpacked';assert not unpacked.exists()
+root=r/'build/rootfs';image=r/'build/final-leon6-v2.squashfs'
+unpacked=r/'build/unpacked-v2';assert not unpacked.exists()
 with (r/'evidence/unpack.log').open('w') as log:
  subprocess.run(['unsquashfs','-no-progress','-processors','4','-d',str(unpacked),str(image)],stdout=log,stderr=subprocess.STDOUT,check=True)
 assert inventory(root)==inventory(unpacked)
@@ -118,8 +118,8 @@ for ino,(name,(mode,data,major,minor)) in enumerate(entries.items(),1):
  out+=b'\0'*(-len(out)%4);out+=data;out+=b'\0'*(-len(out)%4)
 guest=r/'build/guest.cpio.gz';guest.write_bytes(gzip.compress(out,compresslevel=1,mtime=0))
 (r/'scripts/run-qemu.py').write_text((w/'rootfs-size-20260916/scripts/run-qemu.py').read_text())
-subprocess.run(['python3',str(r/'scripts/run-qemu.py'),'--label','armhf-usb','--kernel',str(w/'multiarch-loader-20260916/saved-inputs/Image36'),'--initrd',str(guest),'--complete-marker','reboot: Power down','--timeout','180'],check=True)
-result=json.loads((r/'builds/qemu/armhf-usb/result.json').read_text())
+subprocess.run(['python3',str(r/'scripts/run-qemu.py'),'--label','armhf-usb-v2','--kernel',str(w/'multiarch-loader-20260916/saved-inputs/Image36'),'--initrd',str(guest),'--complete-marker','reboot: Power down','--timeout','180'],check=True)
+result=json.loads((r/'builds/qemu/armhf-usb-v2/result.json').read_text())
 assert 'LAB_ARMHF_ALL_PASS' in result['lab_lines'] and 'LAB_ARMHF_FAILURE' not in result['lab_lines']
 (r/'evidence/qemu-verification.json').write_text(json.dumps({'rootfs_bytes_modes_links_verified':True,'loader_checks_without_usb':len(executables),'all_five_runtime_probe_sets_passed_before_and_after_cache':True,'dynamic_zstd_sqlite_dual_openssl_passed':True,'router_modified':False,'usb_filesystem_simulated_with_tmpfs':True},indent=2)+'\n')
 print('ARMHF_LINK_QEMU_PASS')

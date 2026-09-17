@@ -7,7 +7,7 @@ printf '%s\n' "$state" | grep -q 'Booted Partition: Second'
 printf '%s\n' "$state" | grep -q 'committed 2 valid 1,2 seq 47,46'
 printf '%s\n' "$state" | grep -Eq 'First +partition commit flag +: 0'
 printf '%s\n' "$state" | grep -Eq 'Second +partition commit flag +: 1'
-test "$(head -c 78458880 /dev/ubi0_4 | sha256sum | cut -d ' ' -f 1)" = 1da2575db60292fa763693f0113c83cf35c4f01d265cae38bb2f86464690efd7
+test "$(head -c 78458880 /dev/ubi0_4 | sha256sum | cut -d ' ' -f 1)" = 4200e7ea7e5340ac0407ce18c9a1ae628c9a37d2dbef665e24ae2e566331dd9c
 bcm_bootstate 6
 state=$(bcm_bootstate)
 printf '%s\n' "$state"

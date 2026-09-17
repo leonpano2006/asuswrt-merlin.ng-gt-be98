@@ -1,13 +1,13 @@
 {
   "rootfs": {
-    "label": "final-leon6",
+    "label": "final-leon6-v2",
     "command": [
       "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/sdk/lib/ld-linux-aarch64.so.1",
       "--library-path",
       "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/packer-lib:/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/sdk/lib/aarch64-linux-gnu:/lib/aarch64-linux-gnu",
       "/usr/bin/mksquashfs",
       "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/rootfs",
-      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/final-leon6.squashfs",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/final-leon6-v2.squashfs",
       "-noappend",
       "-all-root",
       "-comp",
@@ -18,7 +18,7 @@
       "1048576",
       "-tailends",
       "-sort",
-      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/final-leon6.sort",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/final-leon6-v2.sort",
       "-processors",
       "4",
       "-mem",
@@ -32,17 +32,17 @@
     "saving_vs_full_openssl_o2_bytes": 3174400,
     "slot1_limit_bytes": 78565376,
     "headroom_bytes": 106496,
-    "elapsed_seconds": 8.383262851973996,
-    "sha256": "1da2575db60292fa763693f0113c83cf35c4f01d265cae38bb2f86464690efd7",
+    "elapsed_seconds": 8.311499336967245,
+    "sha256": "4200e7ea7e5340ac0407ce18c9a1ae628c9a37d2dbef665e24ae2e566331dd9c",
     "firmware_generated": false,
     "router_modified": false
   },
   "candidate": {
     "image": "GT-BE98_leon36-systemd257-armhf-usb-leon6_zstd22.pkgtb",
     "bytes": 90877004,
-    "sha256": "6e77a91270830b034e104ad05d7329f1a113f37e56000a2c90e578fc252bf2b1",
+    "sha256": "85be675ab95ae93cb6e52d82666e0e7c4f8cce131b4bf0a46c5dc56f25c7725b",
     "original_sha256": "7d48c2274be8dae6179096208a738d5214b321805b6d1fa9f0736bf23eff92f9",
-    "rootfs_sha256": "1da2575db60292fa763693f0113c83cf35c4f01d265cae38bb2f86464690efd7",
+    "rootfs_sha256": "4200e7ea7e5340ac0407ce18c9a1ae628c9a37d2dbef665e24ae2e566331dd9c",
     "rootfs_bytes": 78458880,
     "bootfs_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
     "bootfs_bytes": 12417164,
@@ -76,7 +76,7 @@
       },
       "/images/nand_squashfs": {
         "before_sha256": "68888e499d0095374266c8f2adf0be296c5370e893c81c548e7a36c1030e9216",
-        "after_sha256": "1da2575db60292fa763693f0113c83cf35c4f01d265cae38bb2f86464690efd7",
+        "after_sha256": "4200e7ea7e5340ac0407ce18c9a1ae628c9a37d2dbef665e24ae2e566331dd9c",
         "bytes": 78458880,
         "offset": 12418124
       }
@@ -84,5 +84,6 @@
   },
   "qemu_passed": true,
   "firmware_flashed": false,
-  "firmware_committed": false
+  "firmware_committed": false,
+  "metadata_correction": "OpenSSL actual version is 4.0.2; final image supersedes initial metadata-only 4.0.0 label"
 }

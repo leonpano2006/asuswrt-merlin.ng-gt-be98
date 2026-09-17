@@ -29,7 +29,7 @@ Selected size changes (versions/features unchanged):
   benchmarks and legacy support remain enabled. No small/frugal target.
 * Existing SQLite 3.42.0 CLI rebuilt -Oz/LTO, identical engine options,
   source ID and CLI help. FTS5, RTREE, JSON, WAL and transactions retained.
-* Native OpenSSL 4.0.0 comes from the preceding full-feature -Oz/LTO
+* Native OpenSSL 4.0.2 comes from the preceding full-feature -Oz/LTO
   checkpoint; ARM32 3.5.8 and Broadcom 1.1 remain unchanged.
 
 All new C/C++ builds target Cortex-A53 CRC/crypto with glibc 2.44.

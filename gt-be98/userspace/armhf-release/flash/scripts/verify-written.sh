@@ -12,7 +12,7 @@ fallback_root=$(sha256sum /dev/ubi0_6 | cut -d ' ' -f 1)
 loader=$(sha256sum /dev/mtd1 | cut -d ' ' -f 1)
 printf 'NEW_BOOTFS=%s\nNEW_ROOTFS=%s\nFALLBACK_BOOTFS=%s\nFALLBACK_ROOTFS=%s\nLOADER=%s\n' "$boot" "$root" "$fallback_boot" "$fallback_root" "$loader"
 test "$boot" = 2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f
-test "$root" = 1da2575db60292fa763693f0113c83cf35c4f01d265cae38bb2f86464690efd7
+test "$root" = 4200e7ea7e5340ac0407ce18c9a1ae628c9a37d2dbef665e24ae2e566331dd9c
 test "$fallback_boot" = 61403034cd7f49f25210f7e6154e421a784519b36874b618a34c0e2c3a25c291
 test "$fallback_root" = f6dd764de8cd5b0a5724193f771b180950c0c716f8120b9095bf54cda5cf2347
 test "$loader" = 5721efb444680b250a40295fdad605f303749a0140468eba1f0f695f268517c3
