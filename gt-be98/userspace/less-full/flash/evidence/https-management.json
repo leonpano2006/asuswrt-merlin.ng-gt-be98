@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "port": 8443,
+  "tls": "TLSv1.3",
+  "cipher": "TLS_CHACHA20_POLY1305_SHA256",
+  "http_status": 200,
+  "certificate_trust_validated": false
+}

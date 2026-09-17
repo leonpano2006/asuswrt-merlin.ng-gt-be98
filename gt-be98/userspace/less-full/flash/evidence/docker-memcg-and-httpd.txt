@@ -1,0 +1,12 @@
+memory_limit=33554432
+memory_plus_swap_limit=33554432
+failcnt=0
+leon-rmerlin-upstream-http
+leon-rmerlin-upstream-test
+RMERLIN_MEMCG_AND_TEST_CLEANUP_PASS
+
+Done.
+HTTPD_BEFORE=4571 4570
+HTTPD_AFTER=15489 15488
+BROKER_PID=258
+SYSTEMD_REAL_HTTPD_NOTIFICATION_PASS
