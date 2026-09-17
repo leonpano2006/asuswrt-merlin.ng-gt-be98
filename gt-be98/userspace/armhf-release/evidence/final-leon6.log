@@ -1,0 +1,28 @@
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on /home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/final-leon6.squashfs, block size 1048576.
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 1048576
+	compressed data, compressed metadata, compressed fragments,
+	compressed xattrs, compressed ids
+	duplicates are removed
+Filesystem size 76617.52 Kbytes (74.82 Mbytes)
+	33.23% of uncompressed filesystem size (230539.38 Kbytes)
+Inode table size 37889 bytes (37.00 Kbytes)
+	24.66% of uncompressed inode table size (153622 bytes)
+Directory table size 50881 bytes (49.69 Kbytes)
+	45.30% of uncompressed directory table size (112327 bytes)
+Number of duplicate files found 359
+Number of inodes 4669
+Number of files 3533
+Number of fragments 171
+Number of symbolic links 810
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 326
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	root (0)
+Number of gids 1
+	root (0)

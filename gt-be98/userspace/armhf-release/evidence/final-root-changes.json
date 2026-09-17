@@ -1,0 +1,86 @@
+{
+  "changes": {
+    "usr/bin/zstd": {
+      "before": {
+        "mode": 493,
+        "kind": "file",
+        "sha256": "e7a8619c1ad3180f7d62cd686db93bfa2ac1487d1108b24afd91f18300a22022",
+        "bytes": 857872
+      },
+      "after": {
+        "mode": 493,
+        "kind": "file",
+        "sha256": "424375112717f9dc0e6de4c1af7c53ede2c81948ba18834b56102c9389a60eac",
+        "bytes": 202024
+      }
+    },
+    "usr/gnu/bin/sqlite3": {
+      "before": {
+        "mode": 493,
+        "kind": "file",
+        "sha256": "d6ba10fb2ceea6dc635f1be2ff5b7564126b2ca931b2cecb0b30c56fa2eda23f",
+        "bytes": 1525120
+      },
+      "after": {
+        "mode": 493,
+        "kind": "file",
+        "sha256": "7f6f3925ddb700ae26b853bb1eae7e543764f6f0ed46ccb9d737724dc27d32b7",
+        "bytes": 1195568
+      }
+    },
+    "usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.36": {
+      "before": {
+        "mode": 493,
+        "kind": "file",
+        "sha256": "32c00d585f230001d01f99990ee99a5ca6309e6dca7c965ac23b3518b09470a7",
+        "bytes": 2669072
+      },
+      "after": {
+        "mode": 493,
+        "kind": "file",
+        "sha256": "3b58d3a043e1247796fabb05f605ed359dcb5cb08df7a472e928ba9b28dc12be",
+        "bytes": 2135784
+      }
+    },
+    "usr/lib/arm-linux-gnueabi/libstdc++.so.6.0.34": {
+      "before": {
+        "mode": 493,
+        "kind": "file",
+        "sha256": "a9e6b4f9d18c3baf8aeba98f36dc5f6835bbf8a8470a00625a1b9186e35eb090",
+        "bytes": 2363188
+      },
+      "after": {
+        "mode": 509,
+        "kind": "file",
+        "sha256": "8f113e3fd1d43c326ac3c2664bff7c0847d43b9b460c0f52a8139a80986ca4d0",
+        "bytes": 1831916
+      }
+    },
+    "usr/share/leon-upstream.json": {
+      "before": {
+        "mode": 420,
+        "kind": "file",
+        "sha256": "ba96dda4d647180a14d2025e8ae182752bd4e087d28ad6c0c63f29441ac9a16d",
+        "bytes": 643
+      },
+      "after": {
+        "mode": 420,
+        "kind": "file",
+        "sha256": "8967c79dea415ef50b9f8d0da540f855f77ec82787d1c29751ce31208a82a0e1",
+        "bytes": 1038
+      }
+    }
+  },
+  "cxx_api": {
+    "usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.36": {
+      "old_exports": 6049,
+      "new_exports": 6062,
+      "all_original_exports_identical": true
+    },
+    "usr/lib/arm-linux-gnueabi/libstdc++.so.6.0.34": {
+      "old_exports": 5961,
+      "new_exports": 5972,
+      "all_original_exports_identical": true
+    }
+  }
+}

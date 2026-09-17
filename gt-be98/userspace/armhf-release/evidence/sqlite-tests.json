@@ -1,0 +1,7 @@
+{
+  "results": {
+    "old": "wal\n1|committed\n1|GT BE98 container network\n1\n2\n10\nok\n",
+    "new": "wal\n1|committed\n1|GT BE98 container network\n1\n2\n10\nok\n"
+  },
+  "transaction_rollback_wal_fts5_rtree_json_dbstat_integrity_reopen_passed": true
+}

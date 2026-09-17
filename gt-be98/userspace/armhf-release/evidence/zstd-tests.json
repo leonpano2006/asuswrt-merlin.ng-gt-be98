@@ -1,0 +1,56 @@
+{
+  "help_identical": true,
+  "cross_decode": [
+    {
+      "args": [
+        "-1"
+      ],
+      "encoder": "zstd",
+      "compressed_bytes": 32097
+    },
+    {
+      "args": [
+        "-1"
+      ],
+      "encoder": "original",
+      "compressed_bytes": 32097
+    },
+    {
+      "args": [
+        "--ultra",
+        "-22",
+        "-T2"
+      ],
+      "encoder": "zstd",
+      "compressed_bytes": 32087
+    },
+    {
+      "args": [
+        "--ultra",
+        "-22",
+        "-T2"
+      ],
+      "encoder": "original",
+      "compressed_bytes": 32087
+    },
+    {
+      "args": [
+        "--format=gzip",
+        "-9"
+      ],
+      "encoder": "zstd",
+      "compressed_bytes": 33401
+    },
+    {
+      "args": [
+        "--format=gzip",
+        "-9"
+      ],
+      "encoder": "original",
+      "compressed_bytes": 33401
+    }
+  ],
+  "dictionary_training_and_cross_decode": true,
+  "corruption_rejected": true,
+  "new_sha256": "424375112717f9dc0e6de4c1af7c53ede2c81948ba18834b56102c9389a60eac"
+}

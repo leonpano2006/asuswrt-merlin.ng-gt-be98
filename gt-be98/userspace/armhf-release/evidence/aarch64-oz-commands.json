@@ -1,0 +1,41 @@
+{
+  "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/aarch64-oz/libstdc++-v3",
+  "commands": [
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/gcc-16.2.0/libstdc++-v3/configure",
+      "--build=aarch64-build-linux-gnu",
+      "--host=aarch64-linux-gnu",
+      "--target=aarch64-linux-gnu",
+      "--prefix=/usr",
+      "--libdir=/usr/lib/aarch64-linux-gnu",
+      "--with-gxx-include-dir=/usr/include/c++/16.2.0",
+      "--disable-multilib",
+      "--enable-shared",
+      "--enable-static",
+      "--disable-nls",
+      "--disable-libstdcxx-pch",
+      "--enable-clocale=gnu",
+      "--enable-c99",
+      "--enable-libstdcxx-time=yes",
+      "--enable-libstdcxx-threads",
+      "--enable-libstdcxx-dual-abi",
+      "--with-default-libstdcxx-abi=new",
+      "--enable-symvers=gnu",
+      "--enable-tls",
+      "--disable-werror"
+    ],
+    [
+      "make",
+      "-j4"
+    ]
+  ],
+  "env": {
+    "CC": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/aarch64-oz/libstdc++-v3/cc",
+    "CXX": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/aarch64-oz/libstdc++-v3/cc -shared-libgcc -nostdinc++",
+    "CFLAGS": "-Oz -g -frecord-gcc-switches",
+    "CXXFLAGS": "-Oz -g -frecord-gcc-switches",
+    "LDFLAGS": "-Wl,--build-id=sha1,-z,relro,-z,now",
+    "AR": "/usr/bin/aarch64-linux-gnu-ar --plugin=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/liblto_plugin.so",
+    "RANLIB": "/usr/bin/aarch64-linux-gnu-ranlib --plugin=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/liblto_plugin.so"
+  }
+}

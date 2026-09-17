@@ -1,0 +1,88 @@
+{
+  "rootfs": {
+    "label": "final-leon6",
+    "command": [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/sdk/lib/ld-linux-aarch64.so.1",
+      "--library-path",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/packer-lib:/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/sdk/lib/aarch64-linux-gnu:/lib/aarch64-linux-gnu",
+      "/usr/bin/mksquashfs",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/rootfs",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/final-leon6.squashfs",
+      "-noappend",
+      "-all-root",
+      "-comp",
+      "zstd",
+      "-Xcompression-level",
+      "22",
+      "-b",
+      "1048576",
+      "-tailends",
+      "-sort",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/armhf-release-20260917/build/final-leon6.sort",
+      "-processors",
+      "4",
+      "-mem",
+      "512M",
+      "-no-progress",
+      "-exit-on-error",
+      "-mkfs-time",
+      "1789560000"
+    ],
+    "rootfs_bytes": 78458880,
+    "saving_vs_full_openssl_o2_bytes": 3174400,
+    "slot1_limit_bytes": 78565376,
+    "headroom_bytes": 106496,
+    "elapsed_seconds": 8.383262851973996,
+    "sha256": "1da2575db60292fa763693f0113c83cf35c4f01d265cae38bb2f86464690efd7",
+    "firmware_generated": false,
+    "router_modified": false
+  },
+  "candidate": {
+    "image": "GT-BE98_leon36-systemd257-armhf-usb-leon6_zstd22.pkgtb",
+    "bytes": 90877004,
+    "sha256": "6e77a91270830b034e104ad05d7329f1a113f37e56000a2c90e578fc252bf2b1",
+    "original_sha256": "7d48c2274be8dae6179096208a738d5214b321805b6d1fa9f0736bf23eff92f9",
+    "rootfs_sha256": "1da2575db60292fa763693f0113c83cf35c4f01d265cae38bb2f86464690efd7",
+    "rootfs_bytes": 78458880,
+    "bootfs_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+    "bootfs_bytes": 12417164,
+    "kernel_sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4",
+    "kernel_version": "#36",
+    "rootfs_compression": "zstd",
+    "rootfs_level": 22,
+    "rootfs_block_size": 1048576,
+    "rootfs_sort": "file type/ELF architecture, systemd family first, basename",
+    "tailends": true,
+    "kernel_compression": "lzo",
+    "signed_bootfs_unchanged": true,
+    "bootfs_signature_verified": true,
+    "all_other_payloads_unchanged": true,
+    "loader_update_selected": false,
+    "reserved_blocks": [
+      107,
+      627
+    ],
+    "available_blocks_input": 734,
+    "remaining_blocks": 0,
+    "target_slot": 1,
+    "commit_requested": false,
+    "capacity_observation": "router-readonly-capacity.txt: 0 free plus slot1 107+627; recheck before flashing",
+    "payloads": {
+      "/images/bootfs_6813_a0+": {
+        "before_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+        "after_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+        "bytes": 12417164,
+        "offset": 960
+      },
+      "/images/nand_squashfs": {
+        "before_sha256": "68888e499d0095374266c8f2adf0be296c5370e893c81c548e7a36c1030e9216",
+        "after_sha256": "1da2575db60292fa763693f0113c83cf35c4f01d265cae38bb2f86464690efd7",
+        "bytes": 78458880,
+        "offset": 12418124
+      }
+    }
+  },
+  "qemu_passed": true,
+  "firmware_flashed": false,
+  "firmware_committed": false
+}
