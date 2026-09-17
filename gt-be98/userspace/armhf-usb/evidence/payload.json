@@ -1,0 +1,156 @@
+{
+  "link_path": "/usr/lib/arm-linux-gnueabihf",
+  "link_target": "/tmp/mnt/JFFS/system-libs/gt-be98/8da410f090d92cff/arm-linux-gnueabihf",
+  "usb_relative": "system-libs/gt-be98/8da410f090d92cff/arm-linux-gnueabihf",
+  "tree_sha256": "8da410f090d92cff0b42894b3e06385da49f7977a33e6f4e29facedf099b372d",
+  "files": {
+    "ld-linux-armhf.so.3": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "8bd38ace9612c5c0abd2b1c6a23b7b0e81b63fb671ed29905c2363d162006afe",
+      "bytes": 133440
+    },
+    "libBrokenLocale.so.1": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "9b87d91a2c19499d84cc4f159ae0df13e8efbbd767cce9b2ec8e3942c8472dd4",
+      "bytes": 66956
+    },
+    "libanl.so.1": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "59ad53ef9cab91d4f18155bcd37e604e063b075a116133fdfd526d33f200dab9",
+      "bytes": 67100
+    },
+    "libc.so.6": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "eb94319f7eeddd8b9b227615a2f65486ac1d12034a73863e3297113847d7d7b4",
+      "bytes": 1122868
+    },
+    "libc_malloc_debug.so.0": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "8a4383650269db29f0e4e9e12b4a2782b91b9c25a05fb5c75f8cde236b67d75f",
+      "bytes": 68392
+    },
+    "libdl.so.2": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "b19c5c8a3835908425374f9cabd4440f9fca1b745a279cc6be7b3a81629f50eb",
+      "bytes": 66952
+    },
+    "libgcc_s.so.1": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "c8aeb9b9a291077ad738200b639468df3776167323aad76cb49c2be8690c4ef8",
+      "bytes": 133708
+    },
+    "libleon-rc-notify.so": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "341ddd264fbc2c78de2d74b80043366bfecdee48c58af8478058af7ff4576a28",
+      "bytes": 67272
+    },
+    "libm.so.6": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "1ace168fdb2366408111b619c3b0ade84f87d2608e92d37c652958dbc1fc45cd",
+      "bytes": 460280
+    },
+    "libmemusage.so": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "08f51c9b26153732f5eae65087c42697c7ee0414ec970e0e2d5769d68687f31c",
+      "bytes": 67112
+    },
+    "libnsl.so.1": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "cdd1183b13b574ddf35f7195f46b0ecf5f2f6fa67df2061c5fc55eb8683171df",
+      "bytes": 67384
+    },
+    "libnss_compat.so.2": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "111685874744c4f90bc04705cf9f079f926a11c55878fcc1acc24c71eca0301d",
+      "bytes": 67304
+    },
+    "libnss_db.so.2": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "1e7770dd7811cca37a44fe8bc98beb376a1ee2f570ec5012940e57537ab5e3ba",
+      "bytes": 67212
+    },
+    "libnss_dns.so.2": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "7f32d87529b03a38634ebf1cc2a26ba8dd5fac12a9c9108892f411412edc649b",
+      "bytes": 66952
+    },
+    "libnss_files.so.2": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "3feffd8f5d3cb1d6b3fae266fff2849fdea3d329114e3a38872c090afb40c93b",
+      "bytes": 66952
+    },
+    "libnss_hesiod.so.2": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "e1c9d2521b34e9e314548a77ceb3db4bc54b3b729b55bb2902d9c6d20c28ad11",
+      "bytes": 67060
+    },
+    "libpcprofile.so": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "6b394639a8bdd525d6b08c903a385bef847c8b6df5fcb46c8d753fa122a4864b",
+      "bytes": 66920
+    },
+    "libpthread.so.0": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "c55157f939b8a7b7b5aa4b04a4313cf0f12093c40fc18be31b51da65930601dd",
+      "bytes": 66952
+    },
+    "libresolv.so.2": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "9a61546879a75549df164cd988c5fb9854a4aa536d30ce2ae4ee9f7b4a8240c7",
+      "bytes": 67304
+    },
+    "librt.so.1": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "1cd20f9076f86ec02b29315052c3179190300bbebc4d7b589702711ce82e3a83",
+      "bytes": 67020
+    },
+    "libstdc++.so.6": {
+      "mode": 511,
+      "kind": "link",
+      "target": "libstdc++.so.6.0.34"
+    },
+    "libstdc++.so.6.0.34": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "51287168948f7bdca7ad5f62d5a618766b258f782f93814db1e209cdda178573",
+      "bytes": 1904436
+    },
+    "libthread_db.so.1": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "005797cf44359f2802c8bb4051f3ecf104c1d5001c024d656107412a2ecfecc7",
+      "bytes": 67316
+    },
+    "libutil.so.1": {
+      "mode": 509,
+      "kind": "file",
+      "sha256": "4a3c191762f63b39abb8ba645dd8ccc8bcf5ce40ad183644c2d2b00aa61b06f9",
+      "bytes": 66952
+    }
+  },
+  "regular_files": 23,
+  "raw_bytes": 4963844,
+  "other_firmware_paths_identical": true,
+  "local_prefix_used": false,
+  "router_modified": false
+}

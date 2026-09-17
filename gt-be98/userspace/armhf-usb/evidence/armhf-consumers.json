@@ -1,0 +1,194 @@
+[
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/ld-linux-armhf.so.3",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": []
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libBrokenLocale.so.1",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libanl.so.1",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libc.so.6",
+    "flags": "0x5000400",
+    "interp": [
+      "/lib/ld-linux-armhf.so.3"
+    ],
+    "needed": [
+      "ld-linux-armhf.so.3"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libc_malloc_debug.so.0",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux-armhf.so.3"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libdl.so.2",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libgcc_s.so.1",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libm.so.6",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libmemusage.so",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux-armhf.so.3"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libnsl.so.1",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libnss_compat.so.2",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libnss_db.so.2",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libnss_dns.so.2",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libnss_files.so.2",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libnss_hesiod.so.2",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libresolv.so.2",
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libpcprofile.so",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libpthread.so.0",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libresolv.so.2",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/librt.so.1",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux-armhf.so.3"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.34",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux-armhf.so.3",
+      "libgcc_s.so.1"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libthread_db.so.1",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libutil.so.1",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6"
+    ]
+  },
+  {
+    "path": "usr/lib/arm-linux-gnueabihf/libleon-rc-notify.so",
+    "flags": "0x5000400",
+    "interp": [],
+    "needed": [
+      "libc.so.6",
+      "ld-linux-armhf.so.3"
+    ]
+  }
+]

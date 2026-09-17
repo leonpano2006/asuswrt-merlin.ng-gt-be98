@@ -1,0 +1,17 @@
+{
+  "status": "candidate_directory_link_verified_and_USB_payload_installed_not_flashed",
+  "link_path": "/usr/lib/arm-linux-gnueabihf",
+  "link_target": "/tmp/mnt/JFFS/system-libs/gt-be98/8da410f090d92cff/arm-linux-gnueabihf",
+  "compressed_saving_from_armhf_move_bytes": 1695744,
+  "rootfs_bytes": 79257600,
+  "over_slot1_limit_bytes": 692224,
+  "usb_payload_installed": true,
+  "live_system_library_directory_replaced": false,
+  "usr_local_modified": false,
+  "firmware_flashed": false,
+  "firmware_committed": false,
+  "bootstate_unchanged": true,
+  "hardware_acceleration_enabled_before_and_after": true,
+  "live_log_sha256": "329b74b25330256bd4dbee9a9db7998bca4b52a58d75746c3d76e20e4ee08135",
+  "live_test_limit": "Explicit USB loader/library paths; global rc-notify preload still resolves through the unchanged live canonical path. The real directory symlink is tested in QEMU."
+}

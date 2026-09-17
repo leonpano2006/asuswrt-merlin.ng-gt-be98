@@ -1,0 +1,7 @@
+{
+  "rootfs_bytes_modes_links_verified": true,
+  "loader_checks_without_usb": 330,
+  "all_armhf_tests_passed": true,
+  "router_modified": false,
+  "usb_filesystem_simulated_with_tmpfs": true
+}
