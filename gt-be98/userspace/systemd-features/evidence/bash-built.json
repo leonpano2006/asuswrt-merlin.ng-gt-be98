@@ -1,0 +1,7 @@
+{
+  "name": "bash",
+  "version": "GNU bash, version 5.3.15(1)-release (aarch64-unknown-linux-gnu)\nCopyright (C) 2025 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n\nThis is free software; you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n",
+  "bytes": 1084528,
+  "sha256": "cfff7a1c689ffeb26bfe883a16c0999bf7ba2e3f2a58b3e4aafc456cadb971f7",
+  "flags": "-Oz -g -flto=4 -frecord-gcc-switches -fstack-protector-strong"
+}

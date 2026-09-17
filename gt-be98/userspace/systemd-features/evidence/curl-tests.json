@@ -1,0 +1,42 @@
+[
+  {
+    "tls": false,
+    "path": "/plain",
+    "decoded_bytes": 41000,
+    "pass": true
+  },
+  {
+    "tls": false,
+    "path": "/gzip",
+    "decoded_bytes": 41000,
+    "pass": true
+  },
+  {
+    "tls": false,
+    "path": "/zstd",
+    "decoded_bytes": 41000,
+    "pass": true
+  },
+  {
+    "tls": true,
+    "path": "/plain",
+    "decoded_bytes": 41000,
+    "pass": true
+  },
+  {
+    "tls": true,
+    "path": "/gzip",
+    "decoded_bytes": 41000,
+    "pass": true
+  },
+  {
+    "tls": true,
+    "path": "/zstd",
+    "decoded_bytes": 41000,
+    "pass": true
+  },
+  {
+    "untrusted_self_signed_certificate_rejected": true,
+    "exit_code": 60
+  }
+]

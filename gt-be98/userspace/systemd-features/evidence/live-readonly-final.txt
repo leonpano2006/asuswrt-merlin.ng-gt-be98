@@ -1,0 +1,35 @@
+sysctl is /usr/local/sbin/sysctl
+sysctl from procps-ng 4.0.7
+4.19.294
+systemd 257 (257.13-gt-be98)
+-PAM -AUDIT -SELINUX -APPARMOR -IMA +IPE -SMACK -SECCOMP -GCRYPT -GNUTLS -OPENSSL -ACL -BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC -KMOD -LIBCRYPTSETUP -LIBCRYPTSETUP_PLUGINS -LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB -ZSTD -BPF_FRAMEWORK -BTF -XKBCOMMON -UTMP -SYSVINIT -LIBARCHIVE
+/usr/lib/systemd/systemd
+{
+  "upstream": "96831be75b3b891f6aa4c608f00cc7bb2d499d67",
+  "version": "3006.102.9-beta1-leon6",
+  "base_checkpoint": "armhf-usb-20260917",
+  "kernel": "retained #36 4.19.294",
+  "openssl_policy": "ARM32 3.5.8 and 1.1 BSP closure retained; additive AArch64 OpenSSL 4.0.2",
+  "router_modified": false,
+  "flashed": false,
+  "correction": "IPsec IFNAMSIZ interface storage and HTTPD translation bounds",
+  "systemd": "257.13",
+  "service_split": [
+    "haveged",
+    "crond",
+    "infosvr",
+    "mdns",
+    "ntpd"
+  ],
+  "cgroup": "hybrid; v1 cpuacct/memory/devices/freezer/pids retained",
+  "ntp_callback": "rc manager owns synchronization side effects",
+  "armhf_external": "/tmp/mnt/JFFS/system-libs/gt-be98/8da410f090d92cff/arm-linux-gnueabihf",
+  "size_rebuilds": {
+    "aarch64_libstdc++": "16.2.0 -Oz",
+    "armel_libstdc++": "15.2.0 -Oz ARM mode softfp",
+    "zstd": "1.5.7 full CLI dynamically linked to existing libzstd",
+    "sqlite3": "3.42.0 same engine options -Oz LTO"
+  },
+  "trial": "uncommitted slot1; slot2 retained"
+}
+-rw------- 1 MastermixStudios root 108 Sep 17 13:35 /run/leon-systemd-trial/accepted

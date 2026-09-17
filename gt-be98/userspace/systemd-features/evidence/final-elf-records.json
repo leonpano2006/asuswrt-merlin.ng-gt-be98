@@ -1,0 +1,203 @@
+{
+  "usr/bin/bash": {
+    "build_id_sha1": "2640d1f7118658f3c24380ab2f0b17966b10a21b",
+    "sha256": "cfff7a1c689ffeb26bfe883a16c0999bf7ba2e3f2a58b3e4aafc456cadb971f7",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libtinfo.so.6",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/bin/iperf3": {
+    "build_id_sha1": "040fc6cc23acd668862da7a5f2c143685919bee0",
+    "sha256": "f7de0985bd14c8be6a4bbef74575cd75a57eeede9e995e28f2852779c7b71713",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/bin/journalctl": {
+    "build_id_sha1": "051c54a85a5f938e2af8bdf96dc8a3f6d117ee14",
+    "sha256": "d5d641e740dae180300a53322b12a027c0a77c89a23ed403372277b5e297bd80",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libsystemd-shared-257.so",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/bin/systemctl": {
+    "build_id_sha1": "27d2783d7f67ebd6df8056e06515ab792bdeadf5",
+    "sha256": "3b421bc115048d452699f5a66c3dabb99e9c9a1093b9d1680939abc4800f4c66",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libsystemd-shared-257.so",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/bin/systemd-notify": {
+    "build_id_sha1": "cc2a05055a851dbddd4883d3177d2cd3ce18d8e6",
+    "sha256": "f854b2142f4b494182906ee2efdc8468c0d4a587a5d8fcbe5954daf6c517ba17",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libsystemd-shared-257.so",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/bin/systemd-run": {
+    "build_id_sha1": "109951ee8a297b7297c23ea957913a836e610ab6",
+    "sha256": "79d1926e1db42e7febfa921ac4df384b85759c487b0a960201ede8faa07e5e44",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libsystemd-shared-257.so",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/gnu/bin/coreutils": {
+    "build_id_sha1": "64de1a31fe37f03fc6bd674e66495ce1cc53907e",
+    "sha256": "4deb5f83dd330dd186be6ee68f683bad29d4634b9c057f704a0b6b4e310b1dab",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libcrypto.so.4",
+      "libcap.so.2",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/lib/aarch64-linux-gnu/systemd/libsystemd-core-257.so": {
+    "build_id_sha1": "4c4fdcc802d2176fc2fef629c656944a1428c5d1",
+    "sha256": "5ee9bdd76271b36977f28c176cbaee0a01a0c01fac520aef8d0a76df5affa5ec",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libsystemd-shared-257.so",
+      "libm.so.6",
+      "libmount.so.1",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/lib/aarch64-linux-gnu/systemd/libsystemd-shared-257.so": {
+    "build_id_sha1": "2e225023b6dbd8efa40f425d2ef537a25b03c8c7",
+    "sha256": "fd2b51b8fcd66437ef6a1d5cdf729c60afce2aee1bab93acf354061e5275474c",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libblkid.so.1",
+      "libcap.so.2",
+      "libcrypt.so.2",
+      "libmount.so.1",
+      "libcrypto.so.4",
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/lib/systemd/systemd": {
+    "build_id_sha1": "8afc46c54f83d58ebcb459aadcdf04be35ceaa01",
+    "sha256": "34eae69481b8ec1d756ad995e67be0a800b50220f94adcb226ad9d9c01a875a3",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libsystemd-core-257.so",
+      "libsystemd-shared-257.so",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/lib/systemd/systemd-executor": {
+    "build_id_sha1": "1a2b5b95fc941ff2f109f9e2a5d8c41090e9c1aa",
+    "sha256": "5c051c4d6a653556bc0f53025d77200d8a67416b4a57a425bb6dac01b5f8cf25",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libsystemd-core-257.so",
+      "libsystemd-shared-257.so",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/lib/systemd/systemd-journald": {
+    "build_id_sha1": "c31d5c9459a49a92c35ea55ef77e214c2df5296c",
+    "sha256": "2cf90af51d1176f60d3d2e44e3fffa9c26e427c5d0468fa4d4b80c0eb0e8aa26",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libsystemd-shared-257.so",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/lib/systemd/systemd-shutdown": {
+    "build_id_sha1": "7176b34d7ccedcbee99ba2ce92faf4a1165739a7",
+    "sha256": "a01bb5814d81d9cacc32ed338683b8e34b0f6df1c0a710c8b223f2500d362d37",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libsystemd-shared-257.so",
+      "libmount.so.1",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/bin/systemd-creds": {
+    "build_id_sha1": "9c008bd6a3c9c09ae2052c3a69f000dc625fe706",
+    "sha256": "317a1749010bc5b09189fbd43fb7e1f4438acf1ae65095894134c54ba0fda072",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libsystemd-shared-257.so",
+      "libmount.so.1",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/lib/aarch64-linux-gnu/libcurl.so.4.8.0": {
+    "build_id_sha1": "64af70b15711a7bef265823664111c168589138e",
+    "sha256": "6966be1509f098ec2525bc37f8cc63e9cd42b969ab53451c03ff2814bb7fdf40",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libssl.so.4",
+      "libcrypto.so.4",
+      "libzstd.so.1",
+      "libz.so.1",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/lib/systemd/systemd-sysctl": {
+    "build_id_sha1": "8b8137e72a4ca9dc7c2f5cefd4d919a34a7a6369",
+    "sha256": "217f3b18aad2b472481f51fe28813de4b832113438ed31b84b7e7d131ac18905",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libsystemd-shared-257.so",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/sbin/sysctl": {
+    "build_id_sha1": "86438dff0790ccbfe8b6920e6fe7997e1225c544",
+    "sha256": "3127dca99e1134d096d1f67a8086b54267d6c252270a55f583007f46b74d711f",
+    "machine": "EM_AARCH64",
+    "mode": "0o755",
+    "needed": [
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  }
+}

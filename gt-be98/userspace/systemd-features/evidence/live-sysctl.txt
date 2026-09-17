@@ -1,0 +1,7 @@
+leon-procps-sysctl-20260917 from procps-ng 4.0.7
+bash: cannot set terminal process group (5324): Inappropriate ioctl for device
+bash: no job control in this shell
+sysctl is /usr/local/sbin/sysctl
+sysctl from procps-ng 4.0.7
+kernel.osrelease = 4.19.294
+PROCPS_SYSCTL_INSTALLED_NO_PARAMETERS_CHANGED

@@ -1,0 +1,61 @@
+{
+  "parent_commit": "ea206ced7a48e30c8be38a49217ef7e36b177aeb",
+  "required_sibling_checkpoints": [
+    "armhf-release-20260917",
+    "armhf-usb-20260917",
+    "a53-runtimes-20260916",
+    "multiarch-loader-20260916",
+    "gcc162-usb",
+    "userspace-refresh-20260917",
+    "systemd-upgrade-20260917",
+    "systemd-rc-next-20260917",
+    "systemd-lab-20260916"
+  ],
+  "files": {
+    "armhf-release-20260917/build/final-leon6-v2.squashfs": {
+      "bytes": 78458880,
+      "sha256": "4200e7ea7e5340ac0407ce18c9a1ae628c9a37d2dbef665e24ae2e566331dd9c"
+    },
+    "a53-runtimes-20260916/flash/GT-BE98_leon36-a53-runtimes_zstd22.pkgtb": {
+      "bytes": 89439308,
+      "sha256": "7d48c2274be8dae6179096208a738d5214b321805b6d1fa9f0736bf23eff92f9"
+    },
+    "multiarch-loader-20260916/saved-inputs/Image36": {
+      "bytes": 12773384,
+      "sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4"
+    },
+    "gcc162-usb/obj/gcc/xgcc": {
+      "bytes": 2717968,
+      "sha256": "eefcb1122ea429b2453bc2a02d3be05e23c96a8220b59743f974b76d80c15e23"
+    },
+    "a53-runtimes-20260916/builds/aarch64/gcc-runtime/aarch64-linux-gnu/libgcc/libgcc.a": {
+      "bytes": 7951368,
+      "sha256": "ffa6609b1a8f8e2d8c17d93cf4a9ce64f5cc75eb9daedf16357077ee325b58f7"
+    },
+    "systemd-upgrade-20260917/sources/systemd-70b5d110be7702afc4dbce012f60d49506d513da.tar.gz": {
+      "bytes": 16555832,
+      "sha256": "5adcf82e930c1554c964d07d2827095dafede19ebed0e4fd3dd028b099878253"
+    },
+    "systemd-upgrade-20260917/configs/aarch64-sysroot.ini": {
+      "bytes": 941,
+      "sha256": "00dce13d34d773e515773c545ed343880416ce792df30e63c4b2df0eb3e80fb8"
+    },
+    "systemd-upgrade-20260917/evidence/systemd-commands.json": {
+      "bytes": 3041,
+      "sha256": "3df8950bde10c93b17ee55092fc93fc6bfb78ab26a58053cac11ac822fe25168"
+    },
+    "systemd-lab-20260916/build/guard-service/guest.cpio.gz": {
+      "bytes": 77439333,
+      "sha256": "cee0bc72ccfbd2a10a73e2667afbba84f599ecdd8fc0dc159bc45c36a1bd1018"
+    },
+    "a53-runtimes-20260916/build/guest.cpio.gz": {
+      "bytes": 87434196,
+      "sha256": "4a4bebee33080471d2a204269095d7869c7c0169a4fe9d76dae8117b9d337dae"
+    },
+    "armhf-usb-20260917/evidence/payload.json": {
+      "bytes": 4676,
+      "sha256": "fddf3b86d734f11c81459a83f2e60d8acbec3e490a4863ee85eae27619b38b13"
+    }
+  },
+  "toolchain_has_separate_repository": true
+}

@@ -1,0 +1,19 @@
+{
+  "commands": [
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-features-20260917/sources/bash-5.3/configure",
+      "--build=aarch64-build-linux-gnu",
+      "--host=aarch64-linux-gnu",
+      "--prefix=/usr",
+      "--without-bash-malloc"
+    ],
+    [
+      "make",
+      "-j4",
+      "bash"
+    ]
+  ],
+  "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-features-20260917/build/bash-oz",
+  "flags": "-Oz -g -flto=4 -frecord-gcc-switches -fstack-protector-strong",
+  "ldflags": "-flto=4 -Wl,--build-id=sha1,-z,relro,-z,now"
+}

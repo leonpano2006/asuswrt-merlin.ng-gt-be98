@@ -1,0 +1,28 @@
+{
+  "archive": "systemd-features-complete.tar.zst",
+  "bytes": 416841615,
+  "sha256": "be1cba9eabe88d10bad0ac2ee66f9b41865a8a363a386048352ac3921ed125d3",
+  "contents": [
+    "README.md",
+    "result.json",
+    "scripts",
+    "configs",
+    "tests",
+    "live",
+    "evidence",
+    "builds/qemu",
+    "overlay",
+    "size-overlay",
+    "saved-inputs",
+    "candidate",
+    "sources/curl-8.22.0.tar.xz",
+    "sources/procps-ng-4.0.7.tar.xz",
+    "build/cc",
+    "build/run-target",
+    "build/features-final-v2.squashfs",
+    "build/features-v3/guest.cpio.gz",
+    "build/features-v3/production-preservation.json",
+    "build/closure-guest.cpio.gz"
+  ],
+  "created_at_utc": "2026-09-17T12:12:56.878084+00:00"
+}

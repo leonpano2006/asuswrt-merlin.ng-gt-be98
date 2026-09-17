@@ -1,0 +1,6 @@
+{
+  "version": "iperf 3.21 (cJSON 1.7.15)\nLinux promaxgb10-4ec1 7.0.0-1016-nvidia #16~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Jul 23 18:09:10 UTC 2 aarch64\nOptional features available: CPU affinity setting, IPv6 flow label, TCP congestion algorithm setting, sendfile / zerocopy, socket pacing, bind to device, support IPv4 don't fragment, POSIX threads, GSO/GRO support\n",
+  "same_optional_features": true,
+  "bytes": 135824,
+  "sha256": "f7de0985bd14c8be6a4bbef74575cd75a57eeede9e995e28f2852779c7b71713"
+}

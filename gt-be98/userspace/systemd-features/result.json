@@ -1,0 +1,33 @@
+{
+  "status": "offline-validated candidate; not flashed",
+  "version": "leon7",
+  "image": "GT-BE98_leon36-systemd257-features-leon7_zstd22.pkgtb",
+  "image_sha256": "283f2a0eb571a50e536a002934682e0bcea6949aad0a800c0df595fe55ac8da5",
+  "rootfs_bytes": 78282752,
+  "rootfs_headroom_bytes": 282624,
+  "suites": {
+    "features-v3": {
+      "passed": true,
+      "seconds": 143.19,
+      "raw_log_sha256": "b9d3daf4439ec2b0ac45d760c3410e129d917ed9d49c2805738d41094d3bb79e"
+    },
+    "services-v3": {
+      "passed": true,
+      "seconds": 96.51,
+      "raw_log_sha256": "9f2938bffd2c2dc55eca5bc79d64a404e0eebfc7bbd5febb4d4859dc4eac0d5e"
+    },
+    "network-v3": {
+      "passed": true,
+      "seconds": 66.68,
+      "raw_log_sha256": "fd608a4f93343b7eb01469f90ed7737c67e17d8ce310876aa46d9e50a304d5e1"
+    }
+  },
+  "loader_checks_without_usb": 334,
+  "five_abi_sets_before_and_after_cache": true,
+  "ordered_shutdown_before_storage_unmount": true,
+  "all_182_modules_unchanged": true,
+  "firmware_flashed": false,
+  "firmware_committed": false,
+  "live_change": "procps-ng 4.0.7 at /usr/local/sbin/sysctl; read-only checks; no parameter writes",
+  "completed_at_utc": "2026-09-17T12:11:26.650905+00:00"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "coreutils",
+  "version": "coreutils (GNU coreutils) 9.11\nCopyright (C) 2026 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by Alex Deymo.\n",
+  "bytes": 1185376,
+  "sha256": "4deb5f83dd330dd186be6ee68f683bad29d4634b9c057f704a0b6b4e310b1dab",
+  "flags": "-Oz -g -flto=4 -frecord-gcc-switches -fstack-protector-strong"
+}

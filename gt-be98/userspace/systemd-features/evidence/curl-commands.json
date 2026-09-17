@@ -1,0 +1,48 @@
+{
+  "commands": [
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-features-20260917/sources/curl-8.22.0/configure",
+      "--build=aarch64-build-linux-gnu",
+      "--host=aarch64-linux-gnu",
+      "--prefix=/usr",
+      "--libdir=/usr/lib/aarch64-linux-gnu",
+      "--enable-shared",
+      "--disable-static",
+      "--disable-manual",
+      "--disable-docs",
+      "--disable-ldap",
+      "--disable-ldaps",
+      "--without-libpsl",
+      "--without-libidn2",
+      "--without-libssh2",
+      "--without-librtmp",
+      "--without-nghttp2",
+      "--without-nghttp3",
+      "--without-ngtcp2",
+      "--without-quiche",
+      "--without-brotli",
+      "--with-openssl",
+      "--with-zlib",
+      "--with-zstd",
+      "--with-ca-bundle=/etc/ssl/certs/ca-certificates.crt",
+      "--with-ca-path=/etc/ssl/certs"
+    ],
+    [
+      "make",
+      "-j4"
+    ],
+    [
+      "make",
+      "install",
+      "DESTDIR=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-features-20260917/build/curl-hidden-install"
+    ]
+  ],
+  "env": {
+    "CC": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-features-20260917/build/cc",
+    "CFLAGS": "-Os -Oz -g -flto=4 -frecord-gcc-switches -fstack-protector-strong",
+    "LDFLAGS": "-flto=4 -Wl,--build-id=sha1,-z,relro,-z,now",
+    "PKG_CONFIG_SYSROOT_DIR": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-features-20260917/sdk",
+    "PKG_CONFIG_LIBDIR": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-features-20260917/sdk/usr/lib/aarch64-linux-gnu/pkgconfig"
+  },
+  "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-features-20260917/build/curl-hidden"
+}

@@ -1,0 +1,9 @@
+{
+  "version": "curl 8.22.0 (aarch64-unknown-linux-gnu) libcurl/8.22.0 OpenSSL/4.0.2 zlib/1.3.2 zstd/1.5.7\nRelease-Date: 2026-09-02\nProtocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns mqtt mqtts pop3 pop3s rtsp smtp smtps telnet tftp ws wss\nFeatures: alt-svc AsynchDNS HSTS HTTPS-proxy IPv6 Largefile libz SSL threadsafe UnixSockets zstd\n",
+  "files": {
+    "libcurl.so.4.8.0": {
+      "bytes": 725272,
+      "sha256": "6966be1509f098ec2525bc37f8cc63e9cd42b969ab53451c03ff2814bb7fdf40"
+    }
+  }
+}

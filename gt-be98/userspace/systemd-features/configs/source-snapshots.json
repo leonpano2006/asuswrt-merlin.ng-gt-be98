@@ -1,0 +1,17 @@
+{
+  "bash-5.3-source.tar.zst": {
+    "bytes": 6900727,
+    "sha256": "76adcc73b70b292d8c9b6c1d4a6dcf117f2d6853fe5cd2bf04d092c9cfbb8873",
+    "origin": "clean existing /home/leonpano/gcc16-a53/build/bash-5.3"
+  },
+  "coreutils-9.11-source.tar.zst": {
+    "bytes": 11729089,
+    "sha256": "86bde0f13215f07db5db7b44505cf15d426af2ead8cf67ac0c8e417f3bf9fddb",
+    "origin": "clean existing /home/leonpano/gcc16-a53/build/coreutils-9.11"
+  },
+  "iperf-3.21-source.tar.zst": {
+    "bytes": 633076,
+    "sha256": "6cb7ab00ae2fdce7495dbcf78b69adc36e45e2e7ba23e99924ef01ee82910b2e",
+    "origin": "clean existing /home/leonpano/gcc16-a53/build/iperf-3.21"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "commands": [
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-features-20260917/sources/procps-ng-4.0.7/configure",
+      "--build=aarch64-build-linux-gnu",
+      "--host=aarch64-linux-gnu",
+      "--prefix=/usr",
+      "--sbindir=/usr/sbin",
+      "--disable-nls",
+      "--without-ncurses",
+      "--without-systemd",
+      "--without-elogind"
+    ],
+    [
+      "make",
+      "-j4",
+      "src/sysctl"
+    ]
+  ],
+  "env": {
+    "CC": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-features-20260917/build/cc",
+    "CFLAGS": "-Oz -g -flto=4 -frecord-gcc-switches -fstack-protector-strong",
+    "LDFLAGS": "-flto=4 -Wl,--build-id=sha1,-z,relro,-z,now"
+  },
+  "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/systemd-features-20260917/build/procps"
+}

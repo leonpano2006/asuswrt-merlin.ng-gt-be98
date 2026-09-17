@@ -1,0 +1,17 @@
+[
+  {
+    "name": "test-openssl",
+    "exit_code": 0,
+    "seconds": 0.015835901023820043
+  },
+  {
+    "name": "test-compress",
+    "exit_code": 0,
+    "seconds": 0.015738700982183218
+  },
+  {
+    "name": "test-cryptolib",
+    "exit_code": 0,
+    "seconds": 0.003624049946665764
+  }
+]
