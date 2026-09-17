@@ -1,0 +1,7 @@
+{
+  "candidate_sha256": "7f81597418b3a3a3636d0f846664d3d8145c43627a9afa02a49bef46a63074be",
+  "status": "do not flash unchanged: known Game Dashboard SIGABRT",
+  "required_checkpoint": "httpd-dashboard-fix-20260917",
+  "required_library_sha256": "06eb9ca13f4de144c65aad7b5e013b38b5bfa128bc4b8688e474d2c6f3e7a779",
+  "action": "Stage fixed libshared.so, rebuild image, recheck capacity and runtime closure before next trial."
+}

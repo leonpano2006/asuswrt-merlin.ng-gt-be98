@@ -1,0 +1,416 @@
+{
+  "authenticated": true,
+  "pages": [
+    {
+      "path": "Main_Login.asp",
+      "status": 200,
+      "bytes": 28624,
+      "sha256": "74d98f98018c5c48bf443e44f8625e5bc9c94cfa9df0f888d8a24000507e67bb"
+    },
+    {
+      "path": "GameDashboard.asp",
+      "status": 200,
+      "bytes": 60469,
+      "sha256": "2104dcec3ea27592b30b1b505da969506715b4eb712a36f73c9496ec6cafe083"
+    },
+    {
+      "path": "index.asp",
+      "status": 200,
+      "bytes": 125131,
+      "sha256": "8f1fa145af6d8874a31e21d7cc3bbea30bfa0aa89029225465555b53506fbdf0"
+    },
+    {
+      "path": "Tools_Sysinfo.asp",
+      "status": 200,
+      "bytes": 29344,
+      "sha256": "53b765798594c6a12e31dbf365d73fdfb899515276c046dff628293c43acecaf"
+    },
+    {
+      "path": "require/modules/menuTree.js",
+      "status": 200,
+      "bytes": 27248,
+      "sha256": "c64f6231d9c0216ea87bfc0ff8b175f151ff85125e18371f9d3c66e7b3379f31"
+    },
+    {
+      "path": "require/modules/makeRequest.js",
+      "status": 200,
+      "bytes": 1450,
+      "sha256": "1e8aee29b00cfb3ac593ddc466e0e243c4a13e2b21f21d4f0abe4c7537acc776"
+    },
+    {
+      "path": "ajax_wanlink.asp",
+      "status": 200,
+      "bytes": 746,
+      "sha256": "22b025411f1a8c2408edddb3ce97bb7d38e163613558378f1633b550285e3c9e"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "cd9a635104d0e72c25b2285bfccd4595cfbb5b530d8df258b4a6de473d505128"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "f0477fc946b7d44e77c8d64bc9fc31a5f3927e52e20345853f6896f18cbceb94"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "1ff977b1c667dfec79126c07051e85999aebd29b6805477a95aaa8156bb81928"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "2e4c36145c03f1a6ffb26a2ead12bc64f4836a0ad1f82fe0825e10a6c4850aa0"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "2b19dc497b9e5c3cb276b129c214a287f16206b5781129b8824ef7dca3e1c48e"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "19e8e411b63b4bbf76efca946788e2fe60985e63f5ff326aa81639e6fec170f5"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "90a760084a02dcaf29e3854acde287990866d2f68103ece8fe1c37ac8d389c73"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "c1dd10accd7d632d86a97e31672636187f099ae783360f5fd413a594f44398e9"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "5a2f4718dca9d06ba8de41989971d14ebac72a2351a77207b56db35e37a0330b"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "e3b1e132244a66bdb2fbe40c3677985c5e85bee9cfcc776e7a6fe2ec36c2a77e"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "3d1eb84651340640ad3c2d761ba26f4109286c0380876728f45a8b9a14ec7308"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "37873e9a0c18cee95046cc6ca672f2e6dcf0385d35d89ee264a40f8a344d6b71"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "fc7bc462b961a108c5fc90071febae9cb899b55303cb60e45ad996540da77d31"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "6fd799db4ab870109d43ed45aaae241348558ebeb3cff8b4952ce4ec154fac9b"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "bfbcc6834f6e2faf60093409245244cc5b42cd2cc15ea54071a5b32d7bed7c47"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "09fddc66d1c2ff1954c3a3c5a13b3eb73e94155daf6518750ed6a77ad56a9e43"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "41d624df1771e0a9b0ac7d74c4a17329a80920aaa410e31f0b85e829d18b8335"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "2c0f616b56cd2b85baef7ba854daa5314bb68d912bec312bfdef4b415babc818"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "f4fb5f05ec1b6eb7d0dd90e85dd0aaad8f14e6d084baaddf437803987c120621"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "8871c323affa58c10dc728afa2fafb0021e3da09d34d84fd06eeb0a3aec01940"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "a1c19cff5457916d822695038e0c2bda83b10ebd7e569e91b7c2181ee77c498f"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "3f0ba55f612d232c7ef3902477ed9ed271f4743f9570a4edd342c3205aa2b026"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "10fd44e847043da70291430a35538b432b53f0df6976a44f1d5000faf778cd88"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "de3be39447eea528106088bab490ee795b96d6ac34da48e463a92ae81542283a"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "644cfd7ffc481fb20110102633e91321b58dc4bc4a1984ecca30bf1604b659a4"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "5e31c34bbcff5e606f1eb3ef8757d861765a7d9f710c84c9a2529c7f945eea90"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "2e69f6e46aa94cee03c5e7b70c6c56cf2c5e01e6a438fbd9cafefc156b179751"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "6047d8ff6662cf895a3e1a083dbf983879119597c71499f043e930d9d76791db"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "27ba9136839857a3ad72b195b8b42c008760d7a78eb3025146309dc1314db0c0"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "5ab35a44436bf82c55b37d18984b418940b15980a715cc3831ae0faf7718ad93"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "f7347ad4e70d400fb6cd889c29207c5b6f34ab817b6ed6c96a51806f31035730"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "105441ef75781a4a0d99ba336b0d055236a4e8f780d699f2b0b7a8774ee0b6c2"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "b77143b5ba33051878f85fc244f3c5d76804aae3e67cefd4f6d448950038c5f8"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "93700cb3527825beebf19fa0a2dd24aaffc28e89472d2a6e007a4e2c1d0146fd"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "6921f89ee26cb618b298b824e0be96e2d8b3e570f21365eca07b39510dc787f5"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "f4f4321a0ebb92267ba98884e08aafb238f6a49a78ff7f9a69e66f0f3418f6eb"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "e2e63f92c3c53b640bd69ccd8f0a4e1c3d3324476a8d39be90e1a4b9a0f0ec7f"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "750c6014854d7f43a2a9aac0cfd1fea2daee8bb797dcb152a867216074f1077b"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "7324357a7a2836ec27d2ae90a55eafea3358c20c4eec826730b29bc2cbea2b02"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "ce679a89f8e0ec5a10dcd309a5713ce02790aed59ab76bf71ba7f55aa089e2d0"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "dcf6f6badfe05bc9722c36eee232a2cc935de0c64581c3f7f8ef39cb87f11aec"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "65518e7dab85db4264d48cd01ac4e8ef18e7f754ec485bc80e46c10368549236"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "9618fee7b5f6cbb8a81bb154764f8b5f80cc7e251101bbe7d8423bd85f31e277"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "42aa20966c43172d256c8632175a19cae008dd7eb9576df245ef9dfafccd4d3e"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "9e0e6e14e948a2d17773e1b2d37e266aa8c66d976c41a0e22a67877a17774166"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "c1106014037ac3736f05c7264fb6ad09b3d9582a4de424876edff498b53c8840"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "b80b9331d9997ea223182dbc7c2cfe438186ec1e7a9776df0a053414ed37ad28"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "522f9e96434f1af97d5a68d7f2f21455f51d3044982afc0c1ab1bec672da324a"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "da15e3c0c0229470307aef20ff5d2cf8f6317287654276c09034ce7771ddad8f"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "9164c8dbcab3e522e86852659499cfb469760598ffd670bba27998d332932a58"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "76d6ec60def4c846925e71d63f8e353e110f1b7a3e13ad561db350b6629cf491"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "1efc33d71801c7ae83a6d5f840629a94101b98d3b16e282f312459529749b43a"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "e22fef4053da2f35f2154d54581b1f5f9d379b3d2d4f6bcef6016a303e0c1515"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "32220bd7c5c40887c48eaa34d2f8a0621dd9280a8555ed86375b88c24ba75c1c"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "68e7acb5a95d970fca1b4b9ee2ddda779397c7d7ef92b1f421b26fa4f16b624e"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "3adef33ed0eb7722f67b107e2382b8fd8515326bd1a56319ab7dc8a9b1f73db6"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "4f264ec804b32e128f3a156f549aa5b37e34b5cc6e3f80b1baaf2d9466c94e0f"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "f1e600a1eba7561a3538feb1827fb632e8b13a373790e404d30b920929746fce"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 326,
+      "sha256": "96bb20de1790d50a7db46ac60b8aa07b3f810221ff5322943971aa6cbfd939d2"
+    },
+    {
+      "path": "appGet.cgi?hook=netdev()",
+      "status": 200,
+      "bytes": 418,
+      "sha256": "a46995a0a95db5f8f9fb597c9026d2682057604f8e2abd68aba4ae880d9fadfa"
+    },
+    {
+      "path": "appGet.cgi?hook=nvram_get(productid);nvram_get(buildno);nvram_get(extendno)",
+      "status": 200,
+      "bytes": 26,
+      "sha256": "651322741e43cf89b5ca8434d41bd9d7bb5a87b16e1f04a6665e32d3e73ddf08"
+    }
+  ],
+  "version": {
+    "productid": "GT-BE98"
+  }
+}

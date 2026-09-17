@@ -1,0 +1,22 @@
+Thu Sep 17 14:48:21 UTC 2026
+ 16:48:21 up  1:40,  load average: 0.87, 1.17, 1.37
+running
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
+HTTPD_PID=27429
+f78f0000-f79af000 r-xp 00000000 00:0e 859454                             /usr/lib/arm-linux-gnueabi/libshared.so
+f79af000-f79be000 ---p 000bf000 00:0e 859454                             /usr/lib/arm-linux-gnueabi/libshared.so
+f79be000-f79c0000 r--p 000ce000 00:0e 859454                             /usr/lib/arm-linux-gnueabi/libshared.so
+f79c0000-f79cf000 rw-p 000d0000 00:0e 859454                             /usr/lib/arm-linux-gnueabi/libshared.so
+HTTPD_PID=27428
+f7c80000-f7d3f000 r-xp 00000000 00:0e 859454                             /usr/lib/arm-linux-gnueabi/libshared.so
+f7d3f000-f7d4e000 ---p 000bf000 00:0e 859454                             /usr/lib/arm-linux-gnueabi/libshared.so
+f7d4e000-f7d50000 r--p 000ce000 00:0e 859454                             /usr/lib/arm-linux-gnueabi/libshared.so
+f7d50000-f7d5f000 rw-p 000d0000 00:0e 859454                             /usr/lib/arm-linux-gnueabi/libshared.so
+wl0=1
+wl1=1
+wl2=1
+wl3=1
+	Acceleration Mode: <L2 & L3>
+	HW Acceleration <Enabled>

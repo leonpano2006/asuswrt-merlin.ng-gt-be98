@@ -1,0 +1,24 @@
+{
+  "archive": "httpd-dashboard-complete-v2.tar.zst",
+  "bytes": 2707140,
+  "sha256": "f9690c52fc9739b25a186c5a07b84c939a027f9acd85e1f4f54390efc747c9f0",
+  "contents": [
+    "README.md",
+    "result.json",
+    "scripts",
+    "tests",
+    "src",
+    "saved-inputs",
+    "patches",
+    "evidence",
+    "build"
+  ],
+  "excluded": [
+    "private process memory",
+    "credentials",
+    "tokens",
+    "NVRAM",
+    "private keys"
+  ],
+  "created_at_utc": "2026-09-17T14:50:24.280692+00:00"
+}

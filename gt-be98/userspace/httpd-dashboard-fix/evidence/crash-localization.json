@@ -1,0 +1,19 @@
+{
+  "signal": "SIGABRT",
+  "kernel_dump_marker": "===DDD===",
+  "process": "httpds",
+  "trigger": "authenticated update.cgi?output=netdev from GameDashboard.asp",
+  "old_response_bytes": 12,
+  "live_wl_ifnames": "wl0 wl1 wl2 wl3",
+  "call_chain": [
+    "do_update_cgi",
+    "ej_netdev at web.c:32742",
+    "netdev_calc at shared/misc.c:3299",
+    "__snprintf_chk"
+  ],
+  "shared_return_offset": "0x34c74",
+  "cause": "strchr(word, dot) returns NULL for wlN; subtraction from pointer to l is undefined and becomes an oversized snprintf bound on ARM32; idx can also be uninitialized",
+  "correction": "Use existing get_ifname_unit for physical and virtual interfaces, fall back to list index on invalid or out-of-range unit, and bound description output to 12 bytes",
+  "fortify_source": 3,
+  "raw_process_memory_published": false
+}

@@ -1,0 +1,9 @@
+{
+  "needed": [
+    "libpthread.so.0",
+    "libc.so.6",
+    "ld-linux.so.3"
+  ],
+  "export_count": 1459,
+  "unchanged": true
+}

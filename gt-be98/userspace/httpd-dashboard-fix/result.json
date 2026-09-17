@@ -1,0 +1,22 @@
+{
+  "status": "fixed and verified on current leon8 using RAM bind mount",
+  "library_sha256": "06eb9ca13f4de144c65aad7b5e013b38b5bfa128bc4b8688e474d2c6f3e7a779",
+  "running_httpd_pids": [
+    27428,
+    27429
+  ],
+  "source_parent": "61553213b844a0528f0c5436cfe30b4815d5b265",
+  "parser_regression_cases": 16,
+  "old_arm_reproducer_sigabrt": true,
+  "isolated_https_traffic_rounds": 20,
+  "production_https_traffic_rounds": 30,
+  "all_four_wireless_counters_present": true,
+  "browser_game_dashboard_menu_and_live_traffic": "passed",
+  "exported_abi_unchanged": true,
+  "firmware_flashed": false,
+  "firmware_committed": false,
+  "survives_reboot": false,
+  "next_firmware_requires_library_update": true,
+  "unpatched_leon9_sha256": "7f81597418b3a3a3636d0f846664d3d8145c43627a9afa02a49bef46a63074be",
+  "completed_at_utc": "2026-09-17T14:48:22.101414+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "old": {
+    "returncode": -6,
+    "stdout": "",
+    "stderr": "*** buffer overflow detected ***: terminated\nqemu: uncaught target signal 6 (Aborted) - core dumped\n"
+  },
+  "fixed": {
+    "returncode": 0,
+    "stdout": "PASS 16 physical/VIF/reordered/invalid interface cases with canaries\n",
+    "stderr": ""
+  }
+}
