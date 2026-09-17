@@ -1,0 +1,10 @@
+{
+  "candidate_sha256": "7f81597418b3a3a3636d0f846664d3d8145c43627a9afa02a49bef46a63074be",
+  "status": "do not flash unchanged: requires dashboard, AiMesh and client-table corrections",
+  "required_checkpoint": "aimesh-ui-fix-20260917",
+  "required_previous_checkpoint": "httpd-dashboard-fix-20260917",
+  "validation": "final source fixes passed offline QEMU and production RAM validation",
+  "required_httpd_sha256": "2035aca8e26a14b0823e340ac08e2eddeb13d494d2595bc54e0014d4ba73cd0b",
+  "required_rc_sha256": "cf121058ede3661d8b5a9f3bc3e8aed2850d533205b71ccf20bcf3a46c221981",
+  "required_html_sha256": "3cef091a58002ec0b1928473531d8c41355219cc5c1d20f6dc8bc4152f8e7e4c"
+}

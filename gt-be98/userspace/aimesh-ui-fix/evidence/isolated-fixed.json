@@ -1,0 +1,612 @@
+{
+  "authenticated": true,
+  "pages": [
+    {
+      "path": "Main_Login.asp",
+      "status": 200,
+      "bytes": 28626,
+      "sha256": "73537444fd5babdd75ad3e0cfed29bae4ad51c9d603aa6e570ac860fd95fe6b8"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8131,
+      "sha256": "8eb35965f5ab0fd9c7c264c126f96b70c67205bb96831e2d0615aeba57010e45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 40872,
+      "sha256": "d583cf8199327c7c52a7ec61dec3d8855006d2f3cf091490fa65ccab63772f45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 292,
+      "sha256": "fdc7185ed8ea3c4dda34aeb283fab711353553c5f763e2d138c67ea09ae461f3"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 453,
+      "sha256": "f65fcf173c1ff5fffeaf2f770bb2698b1a92c68e2dbc002b685ef2fb68423a35"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 327,
+      "sha256": "62d3bf879da755133ec8614de1a5b72fbc0c437e4783b0aedd107604b0d18662"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8131,
+      "sha256": "8eb35965f5ab0fd9c7c264c126f96b70c67205bb96831e2d0615aeba57010e45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 40876,
+      "sha256": "717ad7f0e4cb0983aa8429de8b1ac706552a39317a0b3c87f525cc539df5e5c2"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 292,
+      "sha256": "fdc7185ed8ea3c4dda34aeb283fab711353553c5f763e2d138c67ea09ae461f3"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 453,
+      "sha256": "f65fcf173c1ff5fffeaf2f770bb2698b1a92c68e2dbc002b685ef2fb68423a35"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 327,
+      "sha256": "b9062b72fd3a75b31508627d2b8d32f3051dfbecb23ef6756dfc6022afdff637"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8131,
+      "sha256": "8eb35965f5ab0fd9c7c264c126f96b70c67205bb96831e2d0615aeba57010e45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 40878,
+      "sha256": "635c763ae76f1f0995679ed914223bafa4eacef38ae74c8dbb1f5890754d0e2f"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 292,
+      "sha256": "fdc7185ed8ea3c4dda34aeb283fab711353553c5f763e2d138c67ea09ae461f3"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 453,
+      "sha256": "f65fcf173c1ff5fffeaf2f770bb2698b1a92c68e2dbc002b685ef2fb68423a35"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 327,
+      "sha256": "948bf6c8d2d936cc5303be8e95c2cb3450156712f15fb4f625fba25222bfd052"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8131,
+      "sha256": "8eb35965f5ab0fd9c7c264c126f96b70c67205bb96831e2d0615aeba57010e45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 40878,
+      "sha256": "111bf5b70762e3bcc0b9ec86ff301fcbec3ab18436024d19f62591e3f4791146"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 292,
+      "sha256": "fdc7185ed8ea3c4dda34aeb283fab711353553c5f763e2d138c67ea09ae461f3"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 453,
+      "sha256": "f65fcf173c1ff5fffeaf2f770bb2698b1a92c68e2dbc002b685ef2fb68423a35"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 327,
+      "sha256": "57d9387cec420cdf6b3e3cef39a194943a43518cd2411d97f72b51f1c63a50c1"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8131,
+      "sha256": "8eb35965f5ab0fd9c7c264c126f96b70c67205bb96831e2d0615aeba57010e45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 40880,
+      "sha256": "57ccba7dab35813870a5b5d74546e123820b7717ca755574bef679866d80ff9e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 292,
+      "sha256": "fdc7185ed8ea3c4dda34aeb283fab711353553c5f763e2d138c67ea09ae461f3"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 453,
+      "sha256": "f65fcf173c1ff5fffeaf2f770bb2698b1a92c68e2dbc002b685ef2fb68423a35"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 327,
+      "sha256": "31cd3b32e532c9da991d5379b240fb03d3d4541e2f1f80317fde319cc40046be"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8131,
+      "sha256": "8eb35965f5ab0fd9c7c264c126f96b70c67205bb96831e2d0615aeba57010e45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 40882,
+      "sha256": "62f56c4c79ff59b29ea3041fb85527e983dace34bc8a02df4e768ea682af71f2"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 292,
+      "sha256": "fdc7185ed8ea3c4dda34aeb283fab711353553c5f763e2d138c67ea09ae461f3"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 453,
+      "sha256": "f65fcf173c1ff5fffeaf2f770bb2698b1a92c68e2dbc002b685ef2fb68423a35"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 327,
+      "sha256": "7b99a1df2ffadf9d3883fecf34ea63eb35480d0ac9f0c13cdd9270adc16f017f"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8131,
+      "sha256": "8eb35965f5ab0fd9c7c264c126f96b70c67205bb96831e2d0615aeba57010e45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 40882,
+      "sha256": "98925f7fdb98984ce93218b53b103be61941d937b03c64754e6cc0a1743ceac4"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 292,
+      "sha256": "fdc7185ed8ea3c4dda34aeb283fab711353553c5f763e2d138c67ea09ae461f3"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 453,
+      "sha256": "f65fcf173c1ff5fffeaf2f770bb2698b1a92c68e2dbc002b685ef2fb68423a35"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 327,
+      "sha256": "199ce0b85aa2716c110b4093f8b800ec6ab4b6998d52a23037be39ba688ddf47"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8131,
+      "sha256": "8eb35965f5ab0fd9c7c264c126f96b70c67205bb96831e2d0615aeba57010e45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 40882,
+      "sha256": "7ba9be5f03bfde11e21afc1400e8df7ca1677a78b2db965d715784a4a9db09c2"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 292,
+      "sha256": "fdc7185ed8ea3c4dda34aeb283fab711353553c5f763e2d138c67ea09ae461f3"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 453,
+      "sha256": "f65fcf173c1ff5fffeaf2f770bb2698b1a92c68e2dbc002b685ef2fb68423a35"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 327,
+      "sha256": "1f244bc7673083b001a3035e988c25c011bb0d10ce53e063b05de3d94208f8aa"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8131,
+      "sha256": "8eb35965f5ab0fd9c7c264c126f96b70c67205bb96831e2d0615aeba57010e45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 40884,
+      "sha256": "d6ad17ca3eef0aec817b8fff6a64cae1812712e8670ce781e4b1d1df61eab362"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 292,
+      "sha256": "fdc7185ed8ea3c4dda34aeb283fab711353553c5f763e2d138c67ea09ae461f3"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 453,
+      "sha256": "f65fcf173c1ff5fffeaf2f770bb2698b1a92c68e2dbc002b685ef2fb68423a35"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 327,
+      "sha256": "280ebfe4401222b56b16eb8911dab7e555a7ebdd697078072a4b10a7199abe5c"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8131,
+      "sha256": "8eb35965f5ab0fd9c7c264c126f96b70c67205bb96831e2d0615aeba57010e45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 40885,
+      "sha256": "e9f5429dcbb16975b6d4e87290b4ac508da0f2ee1b9a74d4116b0808e1d6aeb9"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 292,
+      "sha256": "fdc7185ed8ea3c4dda34aeb283fab711353553c5f763e2d138c67ea09ae461f3"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 453,
+      "sha256": "f65fcf173c1ff5fffeaf2f770bb2698b1a92c68e2dbc002b685ef2fb68423a35"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 327,
+      "sha256": "a47f15bc38399566e4a3ef9b8e20528f24dc5f69562a29329a07f04a16a14ba4"
+    },
+    {
+      "path": "AiMesh.asp",
+      "status": 200,
+      "bytes": 5636,
+      "sha256": "e92b98d69f5d345840812ddba63e5ac21d9a125c69b782134ae7f594d11b4de9"
+    },
+    {
+      "path": "aimesh/aimesh_topology.html",
+      "status": 200,
+      "bytes": 214326,
+      "sha256": "3cbabf64814560ec3a5723c7af90d3ee2db2363493663fbb9f23dfa431c3a0bb"
+    },
+    {
+      "path": "GameDashboard.asp",
+      "status": 200,
+      "bytes": 60469,
+      "sha256": "2104dcec3ea27592b30b1b505da969506715b4eb712a36f73c9496ec6cafe083"
+    }
+  ],
+  "api_rounds": [
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 48
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 48
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 48
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 48
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 48
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 48
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 48
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 48
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 48
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 48
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    }
+  ],
+  "all_pass": true
+}

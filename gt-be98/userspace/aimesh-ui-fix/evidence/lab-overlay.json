@@ -1,0 +1,10 @@
+{
+  "purpose": "offline rehearsal only, not a firmware image",
+  "only_changed_paths": {
+    "usr/sbin/httpd": "2035aca8e26a14b0823e340ac08e2eddeb13d494d2595bc54e0014d4ba73cd0b",
+    "usr/sbin/rc": "cf121058ede3661d8b5a9f3bc3e8aed2850d533205b71ccf20bcf3a46c221981",
+    "usr/lib/arm-linux-gnueabi/libshared.so": "06eb9ca13f4de144c65aad7b5e013b38b5bfa128bc4b8688e474d2c6f3e7a779",
+    "www/aimesh/aimesh_topology.html": "3cef091a58002ec0b1928473531d8c41355219cc5c1d20f6dc8bc4152f8e7e4c"
+  },
+  "guest_sha256": "14a738ffcc80c35c7a51e0616378ab2655b9ceafc985a5191c8c14d564ba63a9"
+}

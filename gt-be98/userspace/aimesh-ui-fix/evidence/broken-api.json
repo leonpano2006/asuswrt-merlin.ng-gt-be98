@@ -1,0 +1,7 @@
+{
+  "path": "appGet.cgi?hook=get_cfg_clientlist()",
+  "bytes": 26,
+  "body": "{\n\"get_cfg_clientlist\":\n}\n",
+  "sha256": "0767cc3d60c3cb838ef36fd6082a15f41220d73c9b58a6fc80c1ccd05fb1b796",
+  "reason": "shmget EINVAL: requested 20424 bytes, existing segment 20348"
+}

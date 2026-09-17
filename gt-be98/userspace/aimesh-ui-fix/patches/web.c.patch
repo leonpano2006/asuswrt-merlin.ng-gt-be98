@@ -1,0 +1,94 @@
+--- a/release/src/router/httpd/web.c
++++ b/release/src/router/httpd/web.c
+@@ -9752,13 +9752,15 @@
+ 				if (macEntryLen) {
+ 					memset(macList, 0, sizeof(macList));
+ 					p = macList;
+-					p += snprintf(p, sizeof(macList), "[");
++					p += snprintf(p, sizeof(macList) - (size_t)(p - macList), "[");
+ 					for (j = 0; j < macEntryLen; j++) {
+ 						struct json_object *entry = json_object_array_get_idx(macEntryObj, j);
+-						if (j) p += snprintf(p, sizeof(macList), ",");
+-						p += snprintf(p, sizeof(macList), "\"%s\"", json_object_get_string(entry));
++						if (strlen(macList) + 3 + strlen(json_object_get_string(entry)) > sizeof(macList) - 2)
++							break;
++						if (j) p += snprintf(p, sizeof(macList) - (size_t)(p - macList), ",");
++						p += snprintf(p, sizeof(macList) - (size_t)(p - macList), "\"%s\"", json_object_get_string(entry));
+ 					}
+-					p += snprintf(p, sizeof(macList), "]");
++					p += snprintf(p, sizeof(macList) - (size_t)(p - macList), "]");
+ 				}
+ 			}
+ 		}
+@@ -10273,7 +10275,7 @@
+ #endif
+ #endif
+ 
+-#ifdef RTCONFIG_MLO
++#if defined(RTCONFIG_MLO) && !defined(NMP_LEGACY_CLIENT_TABLE)
+ const char *mlo_band_key[MLO_BAND_MAX] = {
+ 	[MLO_BAND_2G]	= "2G",
+ 	[MLO_BAND_5G]	= "5G1",
+@@ -10528,9 +10530,11 @@
+ #ifdef RTCONFIG_MLO
+ 			json_object_object_add(client, "mlo", json_object_new_string(mlo));
+ 
++#ifndef NMP_LEGACY_CLIENT_TABLE
+ 			struct json_object *mlo_links_obj = client_mlo_links_to_json(p_client_info_tab, i);
+ 			if (mlo_links_obj)
+ 				json_object_object_add(client, "mlo_links", mlo_links_obj);
++#endif
+ 
+ #endif
+ 			json_object_object_add(client, "type", json_object_new_string(type));
+@@ -10701,9 +10705,11 @@
+ #if defined(RTCONFIG_AMAS) || defined(RTCONFIG_WIFI_SON)
+ 			if(is_amas_support()) {
+ 
++#ifndef NMP_LEGACY_CLIENT_TABLE
+ 			if(strcmp(p_client_info_tab->is_re[i], "1") == 0) {
+ 				json_object_object_add(client, "amesh_isRe", json_object_new_string("1"));
+ 			}
++#endif
+ 
+ 			if(isMAC(p_client_info_tab->pap_mac[i]))  {
+ 				json_object_object_add(client, "amesh_isReClient", json_object_new_string("1"));
+@@ -36840,6 +36846,7 @@
+ 	if (shm_client_tbl_id == -1){
+ 		fprintf(stderr, "shmget failed\n");
+ 		file_unlock(lock);
++		websWrite(wp, "[]");
+ 		return 0;
+ 	}
+ 
+@@ -36847,6 +36854,7 @@
+ 	if (shared_client_info == (void *)-1){
+ 		fprintf(stderr, "shmat failed\n");
+ 		file_unlock(lock);
++		websWrite(wp, "[]");
+ 		return 0;
+ 	}
+ 
+@@ -37149,7 +37157,7 @@
+ 				if (macEntryLen) {
+ 					memset(macList, 0, sizeof(macList));
+ 					p = macList;
+-					p += snprintf(p, sizeof(macList), "[");
++					p += snprintf(p, sizeof(macList) - (size_t)(p - macList), "[");
+ 					for (j = 0; j < macEntryLen; j++) {
+ 						entry = json_object_array_get_idx(macEntryObj, j);
+ 						if(strlen(macList)+3+strlen(json_object_get_string(entry)) > sizeof(macList) -2)
+@@ -37157,10 +37165,10 @@
+ 							_dprintf("too many macList entries. \n");
+ 							break;
+ 						}
+-						if (j) p += snprintf(p, sizeof(macList), ",");
+-						p += snprintf(p, sizeof(macList), "\"%s\"", json_object_get_string(entry));
++						if (j) p += snprintf(p, sizeof(macList) - (size_t)(p - macList), ",");
++						p += snprintf(p, sizeof(macList) - (size_t)(p - macList), "\"%s\"", json_object_get_string(entry));
+ 					}
+-					p += snprintf(p, sizeof(macList), "]");
++					p += snprintf(p, sizeof(macList) - (size_t)(p - macList), "]");
+ 				}
+ 			}
+ 		}

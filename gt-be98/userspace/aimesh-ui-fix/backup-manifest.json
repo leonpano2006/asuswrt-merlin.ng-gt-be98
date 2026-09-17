@@ -1,0 +1,29 @@
+{
+  "archive": "aimesh-validated-v2.tar.zst",
+  "bytes": 109132918,
+  "sha256": "fba37acb3522ea7670e90963c2f6b726845e2b330eeae504b2c9cc9e57b62e19",
+  "contents": [
+    "README.md",
+    "result.json",
+    "scripts",
+    "tests",
+    "src",
+    "saved-inputs",
+    "patches",
+    "evidence",
+    "builds/qemu",
+    "build/httpd",
+    "build/rc",
+    "build/guest.cpio.gz",
+    "build/read-shm",
+    "build/aimesh_topology.html"
+  ],
+  "excluded": [
+    "private API responses",
+    "credentials",
+    "tokens",
+    "NVRAM",
+    "private keys"
+  ],
+  "created_at_utc": "2026-09-17T15:39:50.458537+00:00"
+}

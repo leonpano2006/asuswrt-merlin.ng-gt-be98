@@ -1,0 +1,50 @@
+CHECK_TIME=Thu Sep 17 15:35:43 UTC 2026
+UPTIME=8864.49 26176.93
+HTTPD_PIDS=21275 21274 21274
+CFG_SERVER_PID=4903
+BROKER_PID=258
+RADIO_0=1
+RADIO_1=1
+RADIO_2=1
+RADIO_3=1
+	Acceleration Mode: <L2 & L3>
+	HW Acceleration <Enabled>
+2035aca8e26a14b0823e340ac08e2eddeb13d494d2595bc54e0014d4ba73cd0b  /usr/sbin/httpd
+06eb9ca13f4de144c65aad7b5e013b38b5bfa128bc4b8688e474d2c6f3e7a779  /usr/lib/arm-linux-gnueabi/libshared.so
+3cef091a58002ec0b1928473531d8c41355219cc5c1d20f6dc8bc4152f8e7e4c  /www/aimesh/aimesh_topology.html
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: First
+  Reboot Partition: Second
+
+B First  partition type           : pureUBI/GPT
+B First  partition sequence number: 47
+B First  partition image tag      : $imageversion:  $
+B First  partition commit flag    : 0
+ >Second partition type           : pureUBI/GPT
+ >Second partition sequence number: 46
+ >Second partition image tag      : $imageversion:  $
+ >Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2

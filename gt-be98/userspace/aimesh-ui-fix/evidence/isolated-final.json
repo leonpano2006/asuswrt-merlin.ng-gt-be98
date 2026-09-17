@@ -1,0 +1,115 @@
+{
+  "authenticated": true,
+  "pages": [
+    {
+      "path": "Main_Login.asp",
+      "status": 200,
+      "bytes": 28619,
+      "sha256": "810a8dac2d38fc330c6078e25d6cc2329cfbd1999964b10bb22bfcc77f6af415"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8131,
+      "sha256": "8eb35965f5ab0fd9c7c264c126f96b70c67205bb96831e2d0615aeba57010e45"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 40886,
+      "sha256": "807c597a393258315a6f6f0f5b71dffb898989654c1448b7043a0761d816f2a0"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 292,
+      "sha256": "fdc7185ed8ea3c4dda34aeb283fab711353553c5f763e2d138c67ea09ae461f3"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 432,
+      "sha256": "b8d1a9c06715ac96b49da86b77886a91566af255118ecfd85a4a81ed0f29bb52"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 327,
+      "sha256": "89f7eb802f9c8eef1ac94d58213a7154f114d915a084f5046285fd87e5f8c7b3"
+    },
+    {
+      "path": "AiMesh.asp",
+      "status": 200,
+      "bytes": 5636,
+      "sha256": "e92b98d69f5d345840812ddba63e5ac21d9a125c69b782134ae7f594d11b4de9"
+    },
+    {
+      "path": "aimesh/aimesh_topology.html",
+      "status": 200,
+      "bytes": 200136,
+      "sha256": "781c8f0cf3562d1fcf469ca1843a37beb21f9e43cb0a3c55c85547d5696b4f97"
+    },
+    {
+      "path": "GameDashboard.asp",
+      "status": 200,
+      "bytes": 60469,
+      "sha256": "2104dcec3ea27592b30b1b505da969506715b4eb712a36f73c9496ec6cafe083"
+    },
+    {
+      "path": "require/modules/menuTree.js",
+      "status": 200,
+      "bytes": 27248,
+      "sha256": "402fbdb688c05962913af4f7582b4c0fa984e5518eae03b464497c802e6fbf41"
+    },
+    {
+      "path": "require/modules/makeRequest.js",
+      "status": 200,
+      "bytes": 1450,
+      "sha256": "1e8aee29b00cfb3ac593ddc466e0e243c4a13e2b21f21d4f0abe4c7537acc776"
+    }
+  ],
+  "api_rounds": [
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 48,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    }
+  ],
+  "all_pass": true
+}

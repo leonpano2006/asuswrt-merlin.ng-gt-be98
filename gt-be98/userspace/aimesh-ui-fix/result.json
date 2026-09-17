@@ -1,0 +1,32 @@
+{
+  "status": "live RAM fix validated; next firmware must be repacked",
+  "table_abi_matches_vendor": true,
+  "networkmap_abi_matches_vendor": true,
+  "application_time64_retained": true,
+  "old_mac_formatter_sigabrt_reproduced": 2,
+  "fixed_mac_formatter_cases": 18,
+  "qemu_final_all_pass": true,
+  "production_api_rounds": 20,
+  "production_browser_topology_verified": true,
+  "production_browser_labels_traditional_chinese": true,
+  "production_node_models": [
+    "GT-BE98",
+    "GT-AXE16000"
+  ],
+  "nodes_online": 2,
+  "client_list_entries_at_check": 43,
+  "regular_httpd_fix_activated": true,
+  "live_httpd_pids": [
+    21274,
+    21275
+  ],
+  "rc_broker_pid_unchanged": 258,
+  "cfg_server_pid_unchanged": 4903,
+  "radios_up": 4,
+  "hardware_l2_l3_acceleration_enabled": true,
+  "firmware_flashed": false,
+  "firmware_committed": false,
+  "fallback_partition_commit_preserved": true,
+  "parent_commit": "24de71557a7f6ff4e97d77ceddc96bf4b2dbf17a",
+  "validated_at_utc": "2026-09-17T15:39:25.719641+00:00"
+}

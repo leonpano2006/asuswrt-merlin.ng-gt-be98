@@ -1,0 +1,27 @@
+--- a/release/src/router/cfg_mnt/cfg_slavelist.h
++++ b/release/src/router/cfg_mnt/cfg_slavelist.h
+@@ -2,6 +2,15 @@
+ #define __CFG_SLAVELIST_H__
+ 
+ #include <json.h>
++#include <stdint.h>
++
++/* ARM32 cfg_server blobs publish a time32 shared-memory ABI even when
++ * a newer toolchain defaults application time_t to 64 bits. */
++#if defined(__arm__)
++typedef int32_t cm_report_time_t;
++#else
++typedef time_t cm_report_time_t;
++#endif
+ 
+ #define REPORT_TIME_INTERVAL	30
+ #define OFFLINE_THRESHOLD	(REPORT_TIME_INTERVAL * 3)
+@@ -43,7 +52,7 @@
+ 	unsigned char ipAddr[CFG_CLIENT_NUM][IP_LEN];
+ 	unsigned char macAddr[CFG_CLIENT_NUM][MAC_LEN];
+ 	unsigned char realMacAddr[CFG_CLIENT_NUM][MAC_LEN];
+-	time_t reportStartTime[CFG_CLIENT_NUM];
++	cm_report_time_t reportStartTime[CFG_CLIENT_NUM];
+ 	unsigned char papmac[CFG_CLIENT_NUM][MAC_LEN];
+ 	int papUpdate[CFG_CLIENT_NUM];
+ 	unsigned char pap2g[CFG_CLIENT_NUM][MAC_LEN];

@@ -1,0 +1,36 @@
+--- a/release/src/router/networkmap/networkmap.h
++++ b/release/src/router/networkmap/networkmap.h
+@@ -2,6 +2,12 @@
+ #define __NETWORKMAP_H__
+ 
+ #include <json.h>
++
++/* GT-BE98 currently ships the older networkmap producer from its BSP.
++ * Keep its shared-memory layout until that producer is replaced too. */
++#if defined(GTBE98)
++#define NMP_LEGACY_CLIENT_TABLE 1
++#endif
+ 
+ #ifdef RTCONFIG_MLO
+ #include "api/nmp_api.h"
+@@ -290,7 +296,10 @@
+ 	char			mlo_6G_mac[MAX_NR_CLIENT_LIST][18];
+ 	char			mlo_6G1_mac[MAX_NR_CLIENT_LIST][18];
+ 	char			mlo_all_mac[MAX_NR_CLIENT_LIST][MLO_ALL_MAC_LEN];
++
++#ifndef NMP_LEGACY_CLIENT_TABLE
+ 	mlo_link_info_t mlo_links[MAX_NR_CLIENT_LIST][MLO_BAND_MAX];
++#endif
+ #endif
+ 	unsigned char	is_wireless[MAX_NR_CLIENT_LIST];
+ 	int        		conn_ts[MAX_NR_CLIENT_LIST];		// connect  timestamp
+@@ -301,7 +310,9 @@
+ 	time_t		tstamp[MAX_NR_CLIENT_LIST];
+ #endif
+ 	char		pap_mac[MAX_NR_CLIENT_LIST][18];
++#ifndef NMP_LEGACY_CLIENT_TABLE
+ 	char		is_re[MAX_NR_CLIENT_LIST][2];
++#endif
+ 	char		guest_network[MAX_NR_CLIENT_LIST][4];
+ 	char		ssid[MAX_NR_CLIENT_LIST][32];
+ 	char 		txrate[MAX_NR_CLIENT_LIST][7];

@@ -1,0 +1,18 @@
+{
+  "vendor-time32": {
+    "layout": "time=4 table=20348 report=836 count=15652 members=65",
+    "bytes": 20348,
+    "fixture_sha256": "e3ac9b339f38059048e7fc627d07f212e289e8dd29a5537afdedc44c018e175c"
+  },
+  "broken-time64": {
+    "layout": "time=8 table=20424 report=840 count=15724 members=65",
+    "bytes": 20424,
+    "fixture_sha256": "b5d46fcb3726212b7b4aa84a329a298566893abe48572f14774af9bee968ad55"
+  },
+  "fixed-time64": {
+    "layout": "time=8 table=20348 report=836 count=15652 members=65",
+    "bytes": 20348,
+    "fixture_sha256": "e3ac9b339f38059048e7fc627d07f212e289e8dd29a5537afdedc44c018e175c"
+  },
+  "all_65_members_and_padding_match": true
+}

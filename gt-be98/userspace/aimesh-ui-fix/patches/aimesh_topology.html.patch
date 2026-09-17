@@ -1,0 +1,11 @@
+--- a/release/src/router/www/aimesh/aimesh_topology.html
++++ b/release/src/router/www/aimesh/aimesh_topology.html
+@@ -195,7 +195,7 @@
+ var AiMesh_Topology_AntDet_Desc = stringSafeGet("<#AiMesh_Topology_AntDet_Desc#>");
+ 
+ var aimesh_data = {
+-	cfg_clientlist : "", sta_binding_list_json : {}
++	cfg_clientlist : [], sta_binding_list_json : {}
+ }
+ var multi_model_icon_array = "";
+ $.getJSON("https://nw-dlcdnet.asus.com/plugin/js/extend_model_icon.json", {_: new Date().getTime()},

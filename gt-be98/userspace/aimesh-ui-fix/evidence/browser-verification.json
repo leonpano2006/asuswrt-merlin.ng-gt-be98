@@ -1,0 +1,11 @@
+{
+  "production_url": "https://192.168.100.10:8443/AiMesh.asp",
+  "normal_login_succeeded": true,
+  "topology_models_visible": [
+    "GT-BE98",
+    "GT-AXE16000"
+  ],
+  "node_detail_selection_verified": true,
+  "traditional_chinese_controls_verified": true,
+  "private_identifiers_excluded": true
+}

@@ -1,0 +1,18 @@
+{
+  "vendor": {
+    "layout": "time=4 table=322356 count=322324 members=55",
+    "bytes": 322356,
+    "fixture_sha256": "2f8d813a6492865654b539e7fc2a43b111abc98e5993497f1dd6138b6125f040"
+  },
+  "upstream": {
+    "layout": "time=8 table=384072 count=384040 members=57",
+    "bytes": 384072,
+    "fixture_sha256": "d6bd4922c6d4947f8ffdf719ff588b4178b31c8f30d575110b252b03cff72f9c"
+  },
+  "fixed": {
+    "layout": "time=8 table=322356 count=322324 members=55",
+    "bytes": 322356,
+    "fixture_sha256": "2f8d813a6492865654b539e7fc2a43b111abc98e5993497f1dd6138b6125f040"
+  },
+  "all_members_and_padding_match": true
+}
