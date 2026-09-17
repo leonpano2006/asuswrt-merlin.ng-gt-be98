@@ -1,0 +1,54 @@
+{
+  "commands": [
+    [
+      "perl",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/sources/openssl-4.0.2/Configure",
+      "linux-aarch64",
+      "--prefix=/usr",
+      "--openssldir=/usr/lib/ssl/openssl4",
+      "--libdir=lib/aarch64-linux-gnu",
+      "shared",
+      "-Oz",
+      "-flto=8",
+      "-g",
+      "-frecord-gcc-switches",
+      "-fstack-protector-strong",
+      "-Wl,--build-id=sha1,-z,relro,-z,now"
+    ],
+    [
+      "make",
+      "-j8",
+      "build_sw"
+    ]
+  ],
+  "env_overrides": {
+    "CC": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/build/cc",
+    "AR": "/usr/bin/aarch64-linux-gnu-ar --plugin=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/liblto_plugin.so",
+    "RANLIB": "/usr/bin/aarch64-linux-gnu-ranlib --plugin=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/gcc162-usb/obj/gcc/liblto_plugin.so"
+  },
+  "elapsed_seconds": 351.20368919800967,
+  "files": {
+    "usr/lib/aarch64-linux-gnu/libcrypto.so.4": {
+      "bytes": 5183880,
+      "original_bytes": 5773520,
+      "sha256": "09d51c6d9dcb247990d9fa3f9f0cecc3ad1582f6aaaf85944326bb88893b127d"
+    },
+    "usr/lib/aarch64-linux-gnu/libssl.so.4": {
+      "bytes": 934224,
+      "original_bytes": 1130616,
+      "sha256": "ca01d568566d6d34904f4d87215886eed786046dbe43503350279b7b68bf5550"
+    },
+    "usr/lib/aarch64-linux-gnu/ossl-modules/legacy.so": {
+      "bytes": 133424,
+      "original_bytes": 198744,
+      "sha256": "963bbe6a14cfcd791b8744a5c8d6df1727ebad97f593f915cf64367a86c6f791"
+    },
+    "usr/libexec/openssl4": {
+      "bytes": 886264,
+      "original_bytes": 952016,
+      "sha256": "e403467c96de5b131803cd55ac0bfc9af22efbbe0dda3f9690a7359a15d9a19b"
+    }
+  },
+  "features_disabled": [],
+  "router_modified": false
+}

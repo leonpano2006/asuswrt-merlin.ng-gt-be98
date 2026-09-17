@@ -1,0 +1,9 @@
+{
+  "contents_modes_links_preserved": true,
+  "paths": 4692,
+  "regular_files_read_by_kernel": 3556,
+  "kernel_sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4",
+  "rootfs_sha256": "1701442802875b6c080abee702667c1f268b2d800592d12720b4160172102bc0",
+  "all_hashes_passed_in_qemu": true,
+  "router_modified": false
+}

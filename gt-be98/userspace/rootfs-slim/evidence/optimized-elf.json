@@ -1,0 +1,59 @@
+{
+  "usr/libexec/openssl4": {
+    "build_id_sha1": "36be8370ffd4a0b906af9b46d777c480744a1eb8",
+    "compiler_flags": [
+      "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -O3 -Oz -O3 -Oz -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fstack-protector-strong -fltrans",
+      "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O3 -Oz -flto -fstack-protector-strong",
+      "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O3 -Oz -fPIC -flto -fstack-protector-strong",
+      ""
+    ],
+    "machine": "EM_AARCH64",
+    "needed": [
+      "libssl.so.4",
+      "libcrypto.so.4",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/lib/aarch64-linux-gnu/libcrypto.so.4": {
+    "build_id_sha1": "336d19d7c4e96beab0932f203238e5f1272fb541",
+    "compiler_flags": [
+      "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -O3 -Oz -O3 -Oz -fno-openmp -fno-openacc -fcf-protection=none -fPIC -fstack-protector-strong -fltrans",
+      "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O3 -Oz -fPIC -flto -fstack-protector-strong",
+      ""
+    ],
+    "machine": "EM_AARCH64",
+    "needed": [
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/lib/aarch64-linux-gnu/libssl.so.4": {
+    "build_id_sha1": "b17b589565e554509db1a69a1b6aa88f4310000f",
+    "compiler_flags": [
+      "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -O3 -Oz -O3 -Oz -fno-openmp -fno-openacc -fcf-protection=none -fPIC -fstack-protector-strong -fltrans",
+      "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O3 -Oz -fPIC -flto -fstack-protector-strong",
+      ""
+    ],
+    "machine": "EM_AARCH64",
+    "needed": [
+      "libcrypto.so.4",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  },
+  "usr/lib/aarch64-linux-gnu/ossl-modules/legacy.so": {
+    "build_id_sha1": "cfbfce3e51d9ef6bdb3144c86edf668e7c918c7b",
+    "compiler_flags": [
+      "GNU GIMPLE 16.2.0 -mlittle-endian -mabi=lp64 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -g -O3 -Oz -O3 -Oz -fno-openmp -fno-openacc -fcf-protection=none -fPIC -fstack-protector-strong -fltrans",
+      "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O3 -Oz -fPIC -flto -fstack-protector-strong",
+      ""
+    ],
+    "machine": "EM_AARCH64",
+    "needed": [
+      "libcrypto.so.4",
+      "libc.so.6",
+      "ld-linux-aarch64.so.1"
+    ]
+  }
+}

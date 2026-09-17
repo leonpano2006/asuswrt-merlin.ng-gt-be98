@@ -1,0 +1,32 @@
+{
+  "status": "capacity_simulation_only",
+  "files": [
+    {
+      "original_path": "/usr/sbin/Tor",
+      "usb_path": "/usr/local/libexec/firmware-optional/Tor",
+      "bytes": 3258308,
+      "sha256": "7709abe1b104cc03626e5c1cf22370228e5fdd502e64fa2dc55aab684fed4186"
+    },
+    {
+      "original_path": "/usr/sbin/ookla",
+      "usb_path": "/usr/local/libexec/firmware-optional/ookla",
+      "bytes": 2245860,
+      "sha256": "d49d6d3c8d4d49db9deb00667e3eb0eba777d0bf7daf8b7ba79f8951110ebc31"
+    },
+    {
+      "original_path": "/usr/bin/iperf3",
+      "usb_path": "/usr/local/libexec/firmware-optional/iperf3",
+      "bytes": 1065000,
+      "sha256": "98a8a676edfc6d28d638471b70c33bfb816489aa85374f44f077c28d827bc448"
+    },
+    {
+      "original_path": "/usr/gnu/bin/sqlite3",
+      "usb_path": "/usr/local/libexec/firmware-optional/sqlite3",
+      "bytes": 1525120,
+      "sha256": "d6ba10fb2ceea6dc635f1be2ff5b7564126b2ca931b2cecb0b30c56fa2eda23f"
+    }
+  ],
+  "functional_dependency_audit_complete": false,
+  "router_modified": false,
+  "warning": "USB-unavailable behavior and service ordering not implemented"
+}

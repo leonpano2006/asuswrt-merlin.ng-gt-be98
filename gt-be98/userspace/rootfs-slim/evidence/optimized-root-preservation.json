@@ -1,0 +1,11 @@
+{
+  "changed_paths": [
+    "usr/lib/aarch64-linux-gnu/libcrypto.so.4",
+    "usr/lib/aarch64-linux-gnu/libssl.so.4",
+    "usr/lib/aarch64-linux-gnu/ossl-modules/legacy.so",
+    "usr/libexec/openssl4"
+  ],
+  "other_paths_identical": true,
+  "all_modes_identical": true,
+  "router_modified": false
+}
