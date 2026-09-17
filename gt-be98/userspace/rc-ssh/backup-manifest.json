@@ -1,0 +1,28 @@
+{
+  "archive": "rc-ssh-complete-v2.tar.zst",
+  "bytes": 429049576,
+  "sha256": "ff3823e06aaacec2c6f7128be8f967fccaf399516d812dd01b261dbca521bb6f",
+  "contents": [
+    "README.md",
+    "result.json",
+    "scripts",
+    "configs",
+    "tests",
+    "src",
+    "units",
+    "patches",
+    "evidence",
+    "builds/qemu",
+    "saved-inputs",
+    "candidate",
+    "build/rc",
+    "build/probes",
+    "build/sshd-final.squashfs",
+    "build/ssh-v1/guest.cpio.gz",
+    "build/ssh-v2/guest.cpio.gz",
+    "build/ssh-v1/production-preservation.json",
+    "build/ssh-v2/production-preservation.json",
+    "build/closure-guest.cpio.gz"
+  ],
+  "created_at_utc": "2026-09-17T12:53:40.563268+00:00"
+}

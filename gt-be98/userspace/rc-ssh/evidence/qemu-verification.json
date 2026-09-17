@@ -1,0 +1,8 @@
+{
+  "rootfs_bytes_modes_links_verified": true,
+  "loader_checks_without_usb": 334,
+  "all_five_runtime_probe_sets_passed_before_and_after_cache": true,
+  "dynamic_zstd_sqlite_dual_openssl_passed": true,
+  "router_modified": false,
+  "usb_filesystem_simulated_with_tmpfs": true
+}

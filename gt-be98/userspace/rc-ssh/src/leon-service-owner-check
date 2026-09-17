@@ -1,0 +1,7 @@
+#!/bin/busybox sh
+set -eu
+case "$1" in crond|infosvr|avahi-daemon|ntp|dropbear) name=$1;; *) exit 2;; esac
+if /bin/busybox pidof "$name" >/dev/null 2>&1; then
+    echo "$name already exists outside this service; refusing a duplicate." >&2
+    exit 1
+fi

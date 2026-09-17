@@ -1,0 +1,73 @@
+--- a/release/src/router/rc/ssh.c
++++ b/release/src/router/rc/ssh.c
+@@ -1,4 +1,5 @@
+ #include "rc-bridge.h"
++#include "rc-services.h"
+ /*
+ 
+ 	Tomato Firmware
+@@ -47,8 +48,9 @@
+ 		NULL,		/* -s */
+ 		NULL, NULL,	/* -W receive_window_buffer */
+ 		NULL, NULL,	/* -a or -j -k */
++		NULL,		/* -F (systemd only) */
+ 		NULL };
+-	int index = 3;
++	int index = 3, owner;
+ 
+ 	if (nvram_get_int("sshd_port") <= 0 || nvram_get_int("sshd_port") > 65535) {
+ 		nvram_set_int("sshd_enable", 0);
+@@ -93,16 +95,32 @@
+ 		dropbear_argv[index++] = "-k";
+ 	}
+ 
++	if (leon_rc_managed()) {
++		dropbear_argv[0] = "/usr/sbin/dropbear";
++		dropbear_argv[index++] = "-F";
++		dropbear_argv[index] = NULL;
++	}
++	owner = leon_rc_sshd(1, dropbear_argv);
++	if (owner) {
++		if (owner < 0) logmessage("dropbear", "systemd start failed");
++		return owner < 0 ? -1 : 0;
++	}
+ 	return _eval(dropbear_argv, NULL, 0, NULL);
+ }
+ 
+ void stop_sshd(void)
+ {
++	int owner;
+ 	if (!leon_rc_is_manager()) {
+ 		notify_rc("stop_sshd");
+ 		return;
+ 	}
+ 
++	owner = leon_rc_sshd(0, NULL);
++	if (owner) {
++		if (owner < 0) logmessage("dropbear", "systemd stop failed");
++		return;
++	}
+ 	if (pids("dropbear"))
+ 		killall_tk("dropbear");
+ }
+--- a/release/src/router/rc/rc-services.c
++++ b/release/src/router/rc/rc-services.c
+@@ -129,3 +129,10 @@
+ {
+     return configured_unit("ntpd", "asus-ntpd.service", start, argv, 1);
+ }
++
++int leon_rc_sshd(int start, char *const argv[])
++{
++    /* ASUS applies SSH setting changes through stop_sshd()/start_sshd().
++     * Repeated starts must not disconnect established sessions. */
++    return configured_unit("sshd", "asus-sshd.service", start, argv, 0);
++}
+--- a/release/src/router/rc/rc-services.h
++++ b/release/src/router/rc/rc-services.h
+@@ -8,4 +8,5 @@
+ int leon_rc_infosvr(int start);
+ int leon_rc_mdns(int start, char *const argv[]);
+ int leon_rc_ntpd(int start, char *const argv[]);
++int leon_rc_sshd(int start, char *const argv[]);
+ #endif

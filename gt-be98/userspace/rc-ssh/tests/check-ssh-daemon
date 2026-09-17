@@ -1,0 +1,32 @@
+#!/bin/busybox sh
+set -eu
+port=$1
+policy=$2
+p=$(systemctl show asus-sshd.service -p MainPID --value)
+test "$p" -gt 1
+grep -q '/asus-sshd.service$' /proc/$p/cgroup
+tr '\000' '\n' < /proc/$p/cmdline > /run/sshd-command
+grep -qx /usr/sbin/dropbear /run/sshd-command
+grep -qx -- -F /run/sshd-command
+grep -qx -- "$port" /run/sshd-command
+if test "$policy" = strict; then
+    for arg in -s -j -k -W 65536; do grep -qx -- "$arg" /run/sshd-command; done
+    ! grep -qx -- -a /run/sshd-command
+else
+    grep -qx -- -a /run/sshd-command
+    for arg in -s -j -k -W; do ! grep -qx -- "$arg" /run/sshd-command; done
+fi
+i=0
+until timeout 8 /usr/bin/dbclient -y -i /run/ssh-test-key -p "$port" root@127.0.0.1 'echo SSH_AUTH_OK' > /run/ssh-auth-result 2>/run/ssh-auth-error; do
+    i=$((i+1));test "$i" -lt 5;sleep 1
+done
+grep -qx SSH_AUTH_OK /run/ssh-auth-result
+if test "${3:-}" = session; then
+    rm -f /run/ssh-session-server
+    /usr/bin/dbclient -y -i /run/ssh-test-key -p "$port" root@127.0.0.1 'echo $$ > /run/ssh-session-server; exec sleep 300' > /run/ssh-session-output 2>&1 &
+    echo $! > /run/ssh-session-client
+    i=0
+    until test -s /run/ssh-session-server; do i=$((i+1));test "$i" -lt 15;sleep 1;done
+    s=$(cat /run/ssh-session-server)
+    grep -q '/asus-sshd.service$' /proc/$s/cgroup
+fi

@@ -1,0 +1,37 @@
+{
+  "parent": "systemd-features-20260917",
+  "changed": {
+    "usr/share/leon-upstream.json": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "e2e9bc1936eb988b835baff44513a62525c3ffe57f55ba9cbbc78f7f840b0631",
+      "bytes": 1578
+    },
+    "usr/lib/systemd/system/asus-sshd.service": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "a457f73ba9723ac1271ab5be5951dcef65f2cad82632b76c850ebbb1fe30e089",
+      "bytes": 577
+    },
+    "usr/libexec/leon-service-exec": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "dbff3539b9fd73bbb96cb9426d9475ff74fc42d16d0c64293a6b536e751e8781",
+      "bytes": 67920
+    },
+    "usr/libexec/leon-service-owner-check": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "36e7021dbdf445b0ab8280bb791c065ae4c9ceb900d498e02f729e68f8511b89",
+      "bytes": 253
+    },
+    "usr/sbin/rc": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "0e09d9bcbc4ebd312ac8bc759f2b5ea845d74967222b7c21eaaded954df069d6",
+      "bytes": 2718752
+    }
+  },
+  "all_other_paths_identical": true,
+  "unchanged_kernel_modules": 182
+}

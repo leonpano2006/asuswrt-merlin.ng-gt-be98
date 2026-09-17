@@ -1,0 +1,38 @@
+{
+  "status": "offline-validated candidate; not flashed",
+  "version": "leon8",
+  "image": "GT-BE98_leon36-systemd257-sshd-leon8_zstd22.pkgtb",
+  "image_sha256": "4270e9a5ff1d04cee10b18cdd8721774fe47b4106218f93e941bb2b23310fe03",
+  "rootfs_bytes": 78282752,
+  "rootfs_headroom_bytes": 282624,
+  "suites": {
+    "regression-default": {
+      "passed": true,
+      "seconds": 137.59,
+      "raw_log_sha256": "328f2e7c609250e3bd01dc929c5691924dedea719a30ddd8a843d6f85e4b3726"
+    },
+    "regression-services": {
+      "passed": true,
+      "seconds": 96.33,
+      "raw_log_sha256": "88bb8615f22d2dfc13485b8111b0605b1c3eddd0984d7864ad888cbbd7eba5c1"
+    },
+    "regression-network": {
+      "passed": true,
+      "seconds": 62.68,
+      "raw_log_sha256": "21b5a8a31ba62fc098ed2e516e3f80c767aa1f125c118ea8ee9dd8628090a09e"
+    },
+    "ssh-v2": {
+      "passed": true,
+      "seconds": 58.67,
+      "raw_log_sha256": "6ef89994a394a4ed3dea83e4449abf1e4db80d8bde41228102e204ca96b03ec7"
+    }
+  },
+  "loader_checks_without_usb": 334,
+  "five_abi_sets_before_and_after_cache": true,
+  "ordered_shutdown_before_storage_unmount": true,
+  "all_182_modules_unchanged": true,
+  "firmware_flashed": false,
+  "firmware_committed": false,
+  "live_change": "none; read-only state/capacity checks only",
+  "completed_at_utc": "2026-09-17T12:51:00.374917+00:00"
+}
