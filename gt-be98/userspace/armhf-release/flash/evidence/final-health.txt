@@ -1,0 +1,15 @@
+371.35 1035.24
+4097
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
+Result=success
+NRestarts=0
+ActiveState=active
+
+Result=success
+NRestarts=0
+ActiveState=active
+RAM_ACCEPT uid=0 mode=600
+	Acceleration Mode: <L2 & L3>
+	HW Acceleration <Enabled>

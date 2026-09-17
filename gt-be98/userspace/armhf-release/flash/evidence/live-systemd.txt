@@ -1,0 +1,61 @@
+systemd 257 (257.13-gt-be98)
+-PAM -AUDIT -SELINUX -APPARMOR -IMA +IPE -SMACK -SECCOMP -GCRYPT -GNUTLS -OPENSSL -ACL -BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC -KMOD -LIBCRYPTSETUP -LIBCRYPTSETUP_PLUGINS -LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB -ZSTD -BPF_FRAMEWORK -BTF -XKBCOMMON -UTMP -SYSVINIT -LIBARCHIVE
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: First
+  Reboot Partition: Second
+
+B First  partition type           : pureUBI/GPT
+B First  partition sequence number: 47
+B First  partition image tag      : $imageversion:  $
+B First  partition commit flag    : 0
+ >Second partition type           : pureUBI/GPT
+ >Second partition sequence number: 46
+ >Second partition image tag      : $imageversion:  $
+ >Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2
+MainPID=263
+Result=success
+ControlGroup=/system.slice/asus-rc.service
+Delegate=yes
+ActiveState=active
+SubState=running
+SERVICE httpd pid=4591 exe=/usr/sbin/httpd
+SERVICE httpd pid=4590 exe=/usr/sbin/httpd
+SERVICE dropbear pid=5324 exe=/usr/bin/dropbearmulti
+SERVICE dropbear pid=4992 exe=/usr/bin/dropbearmulti
+SERVICE watchdog pid=4607 exe=/usr/sbin/rc
+SERVICE wdtd pid=967 exe=/usr/bin/wdtctl
+	HW Acceleration <Enabled>
+	Acceleration Mode: <L2 & L3>
+BCM96xxx Watchdog timer
+30
+ASUS_RC_MANAGER_PID=264
+Linux GT-AX11000-A2B0 4.19.294 #36 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026 aarch64 GNU/Linux
+158.69 460.42
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
+SYSTEMD_PHYSICAL_BASELINE_PASS

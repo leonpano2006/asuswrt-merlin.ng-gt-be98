@@ -1,0 +1,2 @@
+/tmp/mnt/JFFS/system-libs/gt-be98/8da410f090d92cff/arm-linux-gnueabihf
+LIVE_FILES_SHA256_AND_USB_MOUNT_PASS

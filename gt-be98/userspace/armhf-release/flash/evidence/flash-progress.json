@@ -1,0 +1,11 @@
+{
+  "candidate_sha256": "85be675ab95ae93cb6e52d82666e0e7c4f8cce131b4bf0a46c5dc56f25c7725b",
+  "new_rootfs_sha256": "4200e7ea7e5340ac0407ce18c9a1ae628c9a37d2dbef665e24ae2e566331dd9c",
+  "write_readback_verified": true,
+  "fallback_and_loader_unchanged": true,
+  "firmware_committed": false,
+  "trial_once_armed": true,
+  "physical_checks_pending": false,
+  "physical_checks_passed": true,
+  "ram_trial_accepted": true
+}

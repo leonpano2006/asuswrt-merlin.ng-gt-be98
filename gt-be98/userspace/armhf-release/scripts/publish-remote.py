@@ -10,11 +10,11 @@ import tarfile
 
 r = Path(__file__).resolve().parents[1]
 repo = r.parent / 'rmerlin-integration-20260916/integration.git'
-base = 'ebb0de286eaa8c4a88fc3287e457bce25811159d'
+base = '1cdad62d3ce94f9ce7525822ab05224312bd0c6e'
 branch = 'refs/heads/gt-be98-systemd257-services'
 manifest = json.loads((r / 'publication-manifest.json').read_text())
 assert hashlib.sha256((r / 'publication.tar').read_bytes()).hexdigest() == manifest['tar_sha256']
-stage = r / 'reviewed-publication-v2'
+stage = r / 'reviewed-publication-physical-v2'
 stage.mkdir(exist_ok=False)
 with tarfile.open(r / 'publication.tar') as tar: tar.extractall(stage, filter='data')
 for name, digest in manifest['files'].items():
@@ -26,7 +26,10 @@ assert result['guest_complete'] and not result['panic'] and 'LAB_ARMHF_ALL_PASS'
 assert json.loads((stage / prefix / 'evidence/qemu-verification.json').read_text())['all_five_runtime_probe_sets_passed_before_and_after_cache']
 assert json.loads((stage / prefix / 'evidence/final-leon6-v2.json').read_text())['headroom_bytes'] >= 0
 
-env = dict(os.environ, GIT_INDEX_FILE=str(r / 'publication-v2.index'), GIT_AUTHOR_NAME='leonpano2006',
+physical = json.loads((stage / prefix / 'flash/evidence/physical-receipt.json').read_text())
+assert physical['ram_trial_accepted'] and not physical['firmware_committed'] and physical['committed_partition'] == 2
+
+env = dict(os.environ, GIT_INDEX_FILE=str(r / 'publication-physical-v2.index'), GIT_AUTHOR_NAME='leonpano2006',
            GIT_AUTHOR_EMAIL='leonpano20060507@gmail.com', GIT_COMMITTER_NAME='leonpano2006',
            GIT_COMMITTER_EMAIL='leonpano20060507@gmail.com', GIT_TERMINAL_PROMPT='0')
 def git(*args, input=None):
@@ -41,12 +44,20 @@ for path in sorted(p for p in stage.rglob('*') if p.is_file()):
 tree = git('write-tree')
 git('diff', '--check', base, tree)
 (r / 'publication-diff-stat.txt').write_text(git('diff', '--stat', base, tree) + '\n')
-message = """gt-be98: correct leon6 OpenSSL metadata and finalize flash probes
+message = """gt-be98: record successful uncommitted leon6 hardware trial
 
-Identify the unchanged native OpenSSL as 4.0.2 in runtime metadata.
-Repack at the same 78,458,880-byte size, rerun the complete kernel #36
-QEMU runtime/USB test and update all package hashes. Add physical
-runtime and mDNS/NTP ownership checks for the authorized trial flash.
+Verify inactive-slot flash readback and unchanged rollback/bootloader.
+Boot leon6 #36 once with systemd and external USB ARMHF runtimes. Pass
+five modern/legacy runtime probes, authenticated web/rc restart, radios,
+OpenVPN, mDNS/NTP service ownership and exact changed-file hashes.
+
+Observe advancing hardware L2 flow counters with L2/L3 acceleration
+still enabled. Verify Docker default/custom bridge DNS, HTTP, HTTPS and
+LAN published port, then remove temporary test containers/networks.
+
+Accept only the RAM trial marker. Slot1 remains uncommitted; committed
+slot2 is still the next normal boot target. Save actual probe scripts,
+checksums and receipts; this is bounded testing, not a permanent commit.
 
 Co-authored-by: Codex <noreply@openai.com>
 """
@@ -61,9 +72,9 @@ assert git('ls-remote', 'fork', branch).split()[0] == commit
 receipt = {'commit': commit, 'parent': base, 'tree': tree, 'branch': branch,
            'repository': 'https://github.com/leonpano2006/asuswrt-merlin.ng-gt-be98',
            'files': len(manifest['files']), 'published_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-           'router_modified': False, 'router_change': 'none in this checkpoint before publication', 'firmware_commit_performed': False,
+           'router_modified': True, 'router_change': 'authorized inactive-slot flash and RAM-accepted physical trial; firmware remains uncommitted', 'firmware_commit_performed': False,
            'original_worktree_untouched': True}
 (r / 'publication-receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
-git('bundle', 'create', str(r / 'armhf-release-since-ebb0de2.bundle'), branch, '^' + base)
-git('bundle', 'verify', str(r / 'armhf-release-since-ebb0de2.bundle'))
+git('bundle', 'create', str(r / 'armhf-release-since-1cdad62.bundle'), branch, '^' + base)
+git('bundle', 'verify', str(r / 'armhf-release-since-1cdad62.bundle'))
 print(json.dumps(receipt, indent=2))

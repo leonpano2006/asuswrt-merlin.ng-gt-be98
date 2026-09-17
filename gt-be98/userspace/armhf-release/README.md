@@ -70,3 +70,33 @@ size, USB, bootloader/fallback hashes and metadata. Verify written image,
 then request PART1_IMAGE_ONCE. Do not firmware-commit. RAM acceptance
 cancels only the 900-second trial watchdog after physical checks; later
 reboot retains committed slot2 fallback.
+
+## Physical trial completed 2026-09-17
+
+Final package SHA256 is
+`85be675ab95ae93cb6e52d82666e0e7c4f8cce131b4bf0a46c5dc56f25c7725b`;
+rootfs SHA256 is
+`4200e7ea7e5340ac0407ce18c9a1ae628c9a37d2dbef665e24ae2e566331dd9c`.
+The earlier package differs only in the OpenSSL metadata label, corrected
+from 4.0.0 to the actual unchanged 4.0.2. Use the current candidate manifest.
+
+Flashed inactive slot1 while booted from committed slot2. Readback matched;
+fallback bootfs/rootfs and bootloader SHA256 unchanged. Once-only boot
+successfully reached leon6 #36 with systemd PID1. Four radios, OpenVPN,
+core services and all five runtime probe sets passed. Both new mDNS/NTP
+units are active with zero restarts, NTP synchronized, no failed units.
+Authenticated web pages and the rc HTTPD restart callback passed.
+
+L2/L3 hardware acceleration is enabled. During the observation, 79
+retained flows advanced by 18,837 hardware hits / 7,898,950 bytes.
+Docker DNS, HTTP/HTTPS, custom-network service discovery and host-to-LAN
+published port passed. Test containers/networks were removed; Docker is
+running again with no running containers, as before the maintenance.
+
+The trial is accepted ONLY in RAM (root-owned mode 0600); firmware slot1
+remains commit=0, slot2 commit=1, next normal reboot points to slot2. No
+permanent firmware commit was performed. See flash/evidence/physical-receipt.json.
+This is a successful bounded smoke test, not long-term stability evidence.
+
+Published text logs have trailing spaces trimmed. Original captured output
+is retained in armhf-release-complete.tar on DGX and ML350.

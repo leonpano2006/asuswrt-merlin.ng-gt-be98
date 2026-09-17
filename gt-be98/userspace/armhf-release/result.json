@@ -83,7 +83,97 @@
     }
   },
   "qemu_passed": true,
-  "firmware_flashed": false,
+  "firmware_flashed": true,
   "firmware_committed": false,
-  "metadata_correction": "OpenSSL actual version is 4.0.2; final image supersedes initial metadata-only 4.0.0 label"
+  "metadata_correction": "OpenSSL actual version is 4.0.2; final image supersedes initial metadata-only 4.0.0 label",
+  "physical": {
+    "verified_at_utc": "2026-09-17T11:38:33.960882+00:00",
+    "version": "3006.102.9-beta1-leon6",
+    "kernel": "4.19.294 #36",
+    "firmware_flashed": true,
+    "booted_partition": 1,
+    "committed_partition": 2,
+    "firmware_committed": false,
+    "ram_trial_accepted": true,
+    "default_next_boot_partition": 2,
+    "fallback_and_bootloader_unchanged": true,
+    "hardware_acceleration": "L2/L3 enabled; 79 advancing L2 flows, 18837 hardware hits, 7898950 bytes observed",
+    "armhf_usb_runtime_passed": true,
+    "docker_default_custom_network_dns_http_https_lan_port_passed": true,
+    "new_mdns_ntp_services_active_zero_restarts": true,
+    "failed_systemd_units": 0,
+    "all_record_markers": {
+      "verify-written.txt": [
+        "VERIFIED_NEW_IMAGE_FALLBACK_AND_LOADER"
+      ],
+      "live-systemd.txt": [
+        "SYSTEMD_PHYSICAL_BASELINE_PASS"
+      ],
+      "live-new-services.txt": [
+        "SYSTEMD257_CRON_DISCOVERY_HYBRID_AND_NATIVE_LESS_PASS"
+      ],
+      "live-mdns-ntp.txt": [
+        "LIVE_MDNS_NTP_POLICY_AND_OWNERSHIP_PASS"
+      ],
+      "live-runtime.txt": [
+        "LIVE_RUNTIME_aarch64_PASS",
+        "LIVE_RUNTIME_armel_PASS",
+        "LIVE_RUNTIME_armhf_PASS",
+        "LIVE_RUNTIME_armel-legacy_PASS",
+        "LIVE_RUNTIME_aarch64-legacy_PASS",
+        "LIVE_LEON6_RUNTIMES_AND_TOOLS_PASS"
+      ],
+      "live-files.txt": [
+        "LIVE_FILES_SHA256_AND_USB_MOUNT_PASS"
+      ],
+      "httpd-notification.txt": [
+        "SYSTEMD_REAL_HTTPD_NOTIFICATION_PASS"
+      ],
+      "acceleration-stable-flows.txt": [
+        "SYSTEMD_HARDWARE_FLOW_PROGRESS_PASS"
+      ],
+      "docker-network.txt": [
+        "HTTPS status=200 verify=0",
+        "DEFAULT_BRIDGE_DNS_HTTP_HTTPS_PASS",
+        "CUSTOM_NETWORK_DNS_HTTP_PASS",
+        "LAN_PORT_READY"
+      ],
+      "docker-cleanup.txt": [
+        "DOCKER_TEST_CLEANUP_PASS"
+      ],
+      "accept-ram.txt": [
+        "RAM_ACCEPTANCE uid=0 mode=600",
+        "RAM_ACCEPTED_FIRMWARE_UNCOMMITTED",
+        "Reboot Partition: Second"
+      ],
+      "final-health.txt": [
+        "RAM_ACCEPT uid=0 mode=600",
+        "0 loaded units listed.",
+        "HW Acceleration <Enabled>"
+      ]
+    },
+    "evidence_sha256": {
+      "acceleration-stable-flows.txt": "8c229fb9af2c798521813d51f2952fe8839be6295cd833d3289c6d3bee1c5f09",
+      "accept-ram.txt": "7b515e6af7f56bbb213bde2fc32263ca5b388d83db4f4659db6b5677615769c9",
+      "arm-once.txt": "153a991c1a2b47240759641a6346d6eb4cecf14cf574f8bd41ccf2cdfdfb0188",
+      "discovery.json": "16566eb7c4e70d86628ffe17943b7e6b75fb090bc815304676a5a9b6db4b33ae",
+      "docker-cleanup.txt": "aec54a14aa91d5b5958a84c3020bdf2128e3a1356bc9ba06e2c632a25d738c9b",
+      "docker-lan-port.json": "fd1d88d4b0c865a3b036e26584fd32ae78e5afc053bffb6d987ecb1d8c4b20a3",
+      "docker-network.txt": "bb6cb3a55cb30d793e9448bbd4a95259fc0eaa79e3c563160bf32606f80609b7",
+      "docker-start.txt": "79935cf080af5b50eedcb7a4be3a1e53da8f317a9fb9a20251153e9221fc96ab",
+      "final-health.txt": "36008e1c0bb1a0e3c8c9e6e653b0b8d1ad99ecd150c3723767cbd1ab5675ad99",
+      "flash-slot1.txt": "fcadf8b00419c97fcbc3d9ed1b699036c26701c5366236ebe8efc26d4badde24",
+      "httpd-notification.txt": "7700dca7570aa57eca934183173cdd247888bdde9f045f83f4b539c74d919597",
+      "live-files.txt": "b522a39865e813534cdfe2b17a09b712e94160bdc0bf7507ef129854cdecd47a",
+      "live-mdns-ntp.txt": "068e729c414de6ce853d152439f16cefc9777cbdac34c31af1cabccd4bb85b7c",
+      "live-new-services.txt": "0a4a846023c21a8921a88d270efc3e0734a4c9feb95d5b6959685c3f541d5948",
+      "live-runtime.txt": "df460e0dd2469345cb519e85c75c6932dd984800c3853e56de56548b13a6bd57",
+      "live-systemd.txt": "c07f1dcf27c09898bd71fe5aff9428c91f453343458e0bd98e9c0c853c893720",
+      "preflight.txt": "973cac9f20ab83aec7acdc6c0ce5856eaaed38f81927259c8d51736067138ed3",
+      "return-to-fallback.txt": "b115fb2fd6946855fc3d34bfce291ca659f028d99893f14c0a99e3c98a0aa77b",
+      "verify-written.txt": "fc0396193aded51990e4ed8dc36f8712af91c7cdb280bd494c5f194f97b04b85",
+      "web-check.json": "ea439ca157c2a74fafea5061784709f7ab0f2800a8276b69e9d9ce40bc23c83e"
+    },
+    "diagnostic_note": "Optional findmnt display was unavailable; USB Btrfs mount was subsequently asserted through /proc/mounts in live-files.txt. Runtime tests themselves passed."
+  }
 }

@@ -21,5 +21,5 @@ cmp metadata-gzip.json /usr/share/leon-upstream.json
 /usr/sbin/openssl version
 readlink /usr/lib/arm-linux-gnueabihf
 readlink -f /usr/lib/arm-linux-gnueabihf/libc.so.6
-findmnt -T /usr/lib/arm-linux-gnueabihf/libc.so.6 || true
+awk '$2=="/tmp/mnt/JFFS" && $3=="btrfs"{ok=1}END{exit !ok}' /proc/mounts
 echo LIVE_LEON6_RUNTIMES_AND_TOOLS_PASS
