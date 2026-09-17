@@ -1,0 +1,4 @@
+{
+  "strategy": "family-name",
+  "reason": "Group by file type/ELF architecture, systemd family first, then basename; lossless fit with full less including manuals."
+}

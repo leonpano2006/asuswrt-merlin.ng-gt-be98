@@ -1,0 +1,4 @@
+
+String dump of section '.GCC.command.line':
+  [     0]  GNU C23 16.2.0 -D _FORTIFY_SOURCE=2 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -Oz -flto -fstack-protector-strong
+

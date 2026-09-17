@@ -1,0 +1,16 @@
+{
+  "rehearsal": "less704-systemd257",
+  "services_rehearsal": "less704-services257",
+  "production_matches_tested_paths": true,
+  "image": "GT-BE98_leon36-systemd257-less704_zstd22.pkgtb",
+  "image_sha256": "2fc6927dddce088b2ed631bf0cf70c026a73a1e554b0c5b93e20eba3736dc38f",
+  "image_bytes": 90971212,
+  "rootfs_bytes": 78553088,
+  "rootfs_sha256": "d54468045bf1b6808282def418d1d12a7b8eff777e9401d9d7d641ce9a213be2",
+  "compression": "zstd level 22, 1 MiB blocks, tailends",
+  "sort_policy": {
+    "strategy": "family-name",
+    "reason": "Group by file type/ELF architecture, systemd family first, then basename; lossless fit with full less including manuals."
+  },
+  "flashed": false
+}

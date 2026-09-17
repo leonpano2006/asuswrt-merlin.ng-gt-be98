@@ -1,0 +1,32 @@
+{
+  "strategy": "family-name",
+  "rootfs_bytes": 78553088,
+  "sha256": "d54468045bf1b6808282def418d1d12a7b8eff777e9401d9d7d641ce9a213be2",
+  "elapsed_seconds": 10.64,
+  "command": [
+    "mksquashfs",
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/less-full-20260917/build/production-rootfs",
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/less-full-20260917/build/layout-family-name.squashfs",
+    "-noappend",
+    "-all-root",
+    "-comp",
+    "zstd",
+    "-Xcompression-level",
+    "22",
+    "-b",
+    "1048576",
+    "-tailends",
+    "-sort",
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/less-full-20260917/build/layout-family-name.sort",
+    "-processors",
+    "4",
+    "-mem",
+    "512M",
+    "-no-progress",
+    "-exit-on-error",
+    "-mkfs-time",
+    "1789560000"
+  ],
+  "reserved_blocks": 734,
+  "available_blocks": 734
+}

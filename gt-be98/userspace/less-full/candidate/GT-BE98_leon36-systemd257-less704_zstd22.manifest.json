@@ -1,0 +1,45 @@
+{
+  "image": "GT-BE98_leon36-systemd257-less704_zstd22.pkgtb",
+  "bytes": 90971212,
+  "sha256": "2fc6927dddce088b2ed631bf0cf70c026a73a1e554b0c5b93e20eba3736dc38f",
+  "original_sha256": "7d48c2274be8dae6179096208a738d5214b321805b6d1fa9f0736bf23eff92f9",
+  "rootfs_sha256": "d54468045bf1b6808282def418d1d12a7b8eff777e9401d9d7d641ce9a213be2",
+  "rootfs_bytes": 78553088,
+  "bootfs_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+  "bootfs_bytes": 12417164,
+  "kernel_sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4",
+  "kernel_version": "#36",
+  "rootfs_compression": "zstd",
+  "rootfs_level": 22,
+  "rootfs_block_size": 1048576,
+  "rootfs_sort": "file type/ELF architecture, systemd family first, basename",
+  "tailends": true,
+  "kernel_compression": "lzo",
+  "signed_bootfs_unchanged": true,
+  "bootfs_signature_verified": true,
+  "all_other_payloads_unchanged": true,
+  "loader_update_selected": false,
+  "reserved_blocks": [
+    107,
+    627
+  ],
+  "available_blocks_input": 734,
+  "remaining_blocks": 0,
+  "target_slot": 1,
+  "commit_requested": false,
+  "capacity_observation": "router-readonly-capacity.txt: 1 free plus slot1 107+626; recheck before flashing",
+  "payloads": {
+    "/images/bootfs_6813_a0+": {
+      "before_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+      "after_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+      "bytes": 12417164,
+      "offset": 960
+    },
+    "/images/nand_squashfs": {
+      "before_sha256": "68888e499d0095374266c8f2adf0be296c5370e893c81c548e7a36c1030e9216",
+      "after_sha256": "d54468045bf1b6808282def418d1d12a7b8eff777e9401d9d7d641ce9a213be2",
+      "bytes": 78553088,
+      "offset": 12418124
+    }
+  }
+}

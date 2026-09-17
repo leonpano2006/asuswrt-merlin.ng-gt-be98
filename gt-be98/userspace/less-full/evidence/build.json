@@ -1,0 +1,57 @@
+{
+  "commands": [
+    [
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/less-full-20260917/sources/less-704/configure",
+      "--prefix=/usr",
+      "--sysconfdir=/etc",
+      "--libexecdir=/usr/bin",
+      "--with-regex=posix"
+    ],
+    [
+      "make",
+      "-j8"
+    ],
+    [
+      "make",
+      "install",
+      "DESTDIR=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/less-full-20260917/stage"
+    ]
+  ],
+  "environment": {
+    "CC": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/less-full-20260917/build/cc",
+    "CFLAGS": "-Oz -flto -frecord-gcc-switches -fstack-protector-strong",
+    "CPPFLAGS": "-D_FORTIFY_SOURCE=2",
+    "LDFLAGS": "-flto -Wl,--as-needed -Wl,--build-id=sha1 -Wl,-z,relro,-z,now",
+    "SOURCE_DATE_EPOCH": "1789560000"
+  },
+  "installed": {
+    "usr/bin/less": {
+      "sha256": "855c22d703782371ca11dac723e6ff322e9df9c5cf2a5694edaa376dd5bc4427",
+      "bytes": 217968
+    },
+    "usr/bin/lesskey": {
+      "sha256": "e410a9c5574155e71aa477e24d650ddd82436a779e7252217756ec24ce2a6ba1",
+      "bytes": 67648
+    },
+    "usr/bin/lessecho": {
+      "sha256": "afe892ef898181b8b550d9c70b2b89ca1dd55307855213708b17cc7d3de32ce2",
+      "bytes": 67656
+    },
+    "usr/bin/less-osc8-open": {
+      "sha256": "67597ae3d23d064662c8ea5c8df469cc21f65dabe4832daf2e7fa92c05e6d062",
+      "bytes": 1067
+    },
+    "usr/share/man/man1/less.1": {
+      "sha256": "33cba6afb24873e00d4d4796e29dd12e9babaf305c44c87621abe5e7fcf1e0fe",
+      "bytes": 114494
+    },
+    "usr/share/man/man1/lesskey.1": {
+      "sha256": "a46db1d22eccf321cdc6a156ddd093e022a2e113d9657976d520be0c58027c08",
+      "bytes": 14628
+    },
+    "usr/share/man/man1/lessecho.1": {
+      "sha256": "ea93cf55db192386486d5eb6990b1f7169fd4c13f98f0d051d44cbe174bf6fe9",
+      "bytes": 2135
+    }
+  }
+}

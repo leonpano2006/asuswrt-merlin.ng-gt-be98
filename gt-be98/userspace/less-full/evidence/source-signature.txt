@@ -1,0 +1,12 @@
+[GNUPG:] NEWSIG
+gpg: Signature made Sun May 31 01:55:15 2026 CEST
+gpg:                using DSA key AE27252BD6846E7D6EAE1DD6F153A7C833235259
+[GNUPG:] KEY_CONSIDERED AE27252BD6846E7D6EAE1DD6F153A7C833235259 0
+[GNUPG:] SIG_ID 6LYhvdBXRS/pw5SQr/ILvnbNK8s 2026-05-30 1780185315
+[GNUPG:] GOODSIG F153A7C833235259 Mark Nudelman <markn@greenwoodsoftware.com>
+gpg: Good signature from "Mark Nudelman <markn@greenwoodsoftware.com>" [unknown]
+[GNUPG:] VALIDSIG AE27252BD6846E7D6EAE1DD6F153A7C833235259 2026-05-30 1780185315 0 4 0 17 2 00 AE27252BD6846E7D6EAE1DD6F153A7C833235259
+[GNUPG:] TRUST_UNDEFINED 0 pgp
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: AE27 252B D684 6E7D 6EAE  1DD6 F153 A7C8 3323 5259

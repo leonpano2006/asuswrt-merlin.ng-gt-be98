@@ -1,0 +1,60 @@
+[
+  {
+    "test": "direct",
+    "passed": true,
+    "pager_environment": [
+      "/usr/bin/less",
+      "LESSCHARSET=utf-8"
+    ],
+    "scroll_and_quit": true,
+    "utf8_color_regex_search": true
+  },
+  {
+    "test": "systemctl",
+    "passed": true,
+    "pager_environment": [
+      "/usr/bin/less",
+      "LESSCHARSET=utf-8",
+      "LESS=FRSXMK",
+      "LESSSECURE=1"
+    ],
+    "scroll_and_quit": true,
+    "utf8_color_regex_search": false
+  },
+  {
+    "test": "journalctl",
+    "passed": true,
+    "pager_environment": [
+      "/usr/bin/less",
+      "LESSCHARSET=utf-8",
+      "LESS=FRSXMK",
+      "LESSSECURE=1"
+    ],
+    "scroll_and_quit": true,
+    "utf8_color_regex_search": false
+  },
+  {
+    "test": "systemctl-login",
+    "passed": true,
+    "pager_environment": [
+      "/usr/bin/less",
+      "LESSCHARSET=utf-8",
+      "LESS=FRSXMK",
+      "LESSSECURE=1"
+    ],
+    "scroll_and_quit": true,
+    "utf8_color_regex_search": false
+  },
+  {
+    "test": "journalctl-login",
+    "passed": true,
+    "pager_environment": [
+      "/usr/bin/less",
+      "LESSCHARSET=utf-8",
+      "LESS=FRSXMK",
+      "LESSSECURE=1"
+    ],
+    "scroll_and_quit": true,
+    "utf8_color_regex_search": false
+  }
+]

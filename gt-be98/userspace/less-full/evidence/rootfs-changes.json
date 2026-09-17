@@ -1,0 +1,56 @@
+{
+  "parent": "systemd-upgrade-20260917",
+  "changed": {
+    "usr/share/man/man1": {
+      "mode": 509,
+      "kind": "directory"
+    },
+    "usr/share/man/man1/less.1": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "33cba6afb24873e00d4d4796e29dd12e9babaf305c44c87621abe5e7fcf1e0fe",
+      "bytes": 114494
+    },
+    "usr/bin/less": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "855c22d703782371ca11dac723e6ff322e9df9c5cf2a5694edaa376dd5bc4427",
+      "bytes": 217968
+    },
+    "usr/share/man": {
+      "mode": 509,
+      "kind": "directory"
+    },
+    "usr/bin/lesskey": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "e410a9c5574155e71aa477e24d650ddd82436a779e7252217756ec24ce2a6ba1",
+      "bytes": 67648
+    },
+    "usr/bin/lessecho": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "afe892ef898181b8b550d9c70b2b89ca1dd55307855213708b17cc7d3de32ce2",
+      "bytes": 67656
+    },
+    "usr/share/man/man1/lessecho.1": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "ea93cf55db192386486d5eb6990b1f7169fd4c13f98f0d051d44cbe174bf6fe9",
+      "bytes": 2135
+    },
+    "usr/bin/less-osc8-open": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "67597ae3d23d064662c8ea5c8df469cc21f65dabe4832daf2e7fa92c05e6d062",
+      "bytes": 1067
+    },
+    "usr/share/man/man1/lesskey.1": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "a46db1d22eccf321cdc6a156ddd093e022a2e113d9657976d520be0c58027c08",
+      "bytes": 14628
+    }
+  },
+  "all_other_paths_identical": true
+}

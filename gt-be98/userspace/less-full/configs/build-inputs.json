@@ -1,0 +1,21 @@
+{
+  "source": "https://greenwoodsoftware.com/less/less-704.tar.gz",
+  "sha256": "20a0b0a2bb2525fa53c7eee9beb854b4c9cf172eabb209af7020743547bfe9fb",
+  "signer": "AE27252BD6846E7D6EAE1DD6F153A7C833235259",
+  "compiler": "16.2.0",
+  "glibc": "2.44",
+  "cpu": "cortex-a53+crc+crypto",
+  "sdk_parent": "systemd-upgrade-20260917",
+  "terminal_library": {
+    "file": "systemd-upgrade-20260917/build/production-rootfs/usr/lib/aarch64-linux-gnu/libtinfo.so.6.6",
+    "sha256": "5bb2b95c8ef8a6880de1caf392086098e96a09323cf5b1600c80f051605c5edd",
+    "headers_package": "6.4+20240113-1ubuntu2.2",
+    "headers_sha256": {
+      "curses.h": "bbdf40f38aef4fe86814dfcbb72c5ac9c4d4a0ca066039ad2c285c058433d11c",
+      "ncurses_dll.h": "8ce112a66482f18fa5e0378b46a4f028b21a80f8e6c43815c562ad0d6b7ed727",
+      "term.h": "26e32c4d77dce42e2ad5d980346bd07671fdb14a6b1ac36af2f8ed28cd88a3b2",
+      "termcap.h": "4b4751e9b988241de5b600711b8808676f1ed634fdad60f4d398765f650b3b69",
+      "unctrl.h": "e86d00bacaa5a567dc4085e344607562d0420f4b4cf6975184d5ccfabcacf754"
+    }
+  }
+}
