@@ -1,11 +1,14 @@
 # GT-BE98 leon7: systemd features and full sysctl
 
-Candidate based on the successfully tested leon6 checkpoint (Git parent
-`ea206ced7a48e30c8be38a49217ef7e36b177aeb`). It is not flashed. Production
-continues to run leon6. The only live change in this checkpoint is the full
-procps-ng 4.0.7 sysctl at `/usr/local/sbin/sysctl`; its live tests were read-only.
-The candidate includes the same executable internally at `/usr/sbin/sysctl`.
-No kernel parameters, firmware commit flags or rollback targets were changed.
+leon7 was flashed to inactive slot1 and successfully booted once on the router.
+It builds on the tested leon6 checkpoint (Git parent
+`ea206ced7a48e30c8be38a49217ef7e36b177aeb`). The physical trial is accepted only
+in RAM: slot1 remains commit=0, slot2 remains commit=1 and the next normal
+reboot returns to slot2. No permanent firmware commit was performed.
+
+The firmware includes full procps-ng 4.0.7 sysctl at `/usr/sbin/sysctl`.
+The identical copy installed earlier at `/usr/local/sbin/sysctl` is also
+available. Live sysctl checks were read-only; no kernel parameters changed.
 
 Systemd remains 257.13 with the existing service profile and now reports
 `+OPENSSL +BLKID +CURL +ZLIB +ZSTD`. Default journal compression is zstd.
@@ -54,8 +57,8 @@ cron, haveged, infosvr, mDNS and NTP checks are retained.
 
 This is bounded compatibility testing. Kernel 4.19 remains below systemd 257's
 upstream 5.4 baseline; QEMU does not validate the physical Broadcom datapath.
-The candidate needs a separate hardware trial before acceptance. Hardware
-acceleration checks from leon6 are not claimed as leon7 physical evidence.
+The separate leon7 hardware trial is recorded below. QEMU results alone
+are not treated as physical Broadcom datapath evidence.
 
 ## Rebuild and recovery inputs
 
@@ -103,3 +106,33 @@ flash; both copies have the same hash. A future flash must first return to
 committed slot2, recheck the current slot1/rollback hashes and capacity, write
 only inactive slot1 and request a once-only boot. Nothing in this checkpoint
 commits firmware or changes rollback automatically.
+
+## Physical trial completed 2026-09-17
+
+The exact 90,700,876-byte candidate was transferred to RAM while booted from
+committed slot2 #35. The flasher wrote slot1 with 107 bootfs and 625 rootfs
+LEBs, leaving two free LEBs. Readback matched the candidate; fallback bootfs,
+fallback rootfs and bootloader hashes stayed unchanged. PART1_IMAGE_ONCE
+booted leon7 #36 with systemd 257.13-gt-be98-leon7 as PID1.
+
+All changed firmware files matched their expected SHA256. Four radios,
+OpenVPN, five modern/legacy runtime ABI probe sets, optional USB ARMHF,
+cron/infosvr/haveged/mDNS/NTP ownership and cgroup hybrid mounts passed.
+No failed units or service restarts were observed. Full sysctl read access,
+credential encrypt/decrypt and wrong-name rejection, actual zstd journal
+write/read, native OpenSSL4 TLS1.3, Bash/coreutils and iperf TCP/UDP/zero-copy
+passed on hardware. No live sysctl parameters were written.
+
+Hardware L2/L3 acceleration stayed enabled. Over a 20-second observation,
+115 of 150 retained L2 flows advanced, adding 5,010 hardware hits and
+1,834,520 bytes. Docker default/custom bridge DNS, HTTP/HTTPS and the LAN
+published port passed; temporary test containers and network were removed.
+Authenticated web pages, ASUS GETINFO and the rc HTTPD restart callback
+passed. The RAM acceptance marker is UID0 mode0600; no firmware commit.
+
+The immutable complete binary/source/SDK backup remains identified by
+backup-manifest.json. Physical evidence and the new live-test scripts are
+saved separately in the physical-trial archive on DGX and ML350. Raw logs
+are preserved there; published text logs trim trailing whitespace only.
+See flash/evidence/physical-receipt.json for hashes and exact trial scope.
+This is bounded testing, not long-term stability evidence.

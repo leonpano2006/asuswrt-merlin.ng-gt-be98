@@ -1,0 +1,4 @@
+283f2a0eb571a50e536a002934682e0bcea6949aad0a800c0df595fe55ac8da5  /tmp/leon7.pkgtb
+90700876 /tmp/leon7.pkgtb
+Filesystem                Size      Used Available Use% Mounted on
+tmpfs                   999.6M     87.9M    911.7M   9% /tmp/mnt

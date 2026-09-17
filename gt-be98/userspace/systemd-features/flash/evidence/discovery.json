@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "opcode": 31,
+  "product": "GT-BE98",
+  "bytes": 512,
+  "response_sha256": "931726aad37d65a1b99e194a1530ca78581b004b0de293da4da4fc041fea2d12",
+  "source_port": 9999,
+  "attempts": 1
+}

@@ -1,0 +1,16 @@
+{
+  "archive": "leon7-physical-trial.tar.zst",
+  "bytes": 8749675,
+  "sha256": "c74854b3df2438a8ca1134c6c82f8316f4c2723bdd77e7bc212148da12fb7fc0",
+  "base_binary_backup_sha256": "be1cba9eabe88d10bad0ac2ee66f9b41865a8a363a386048352ac3921ed125d3",
+  "contents": [
+    "README.md",
+    "result.json",
+    "scripts",
+    "flash/scripts",
+    "flash/evidence",
+    "flash/expected-files.json",
+    "flash/leon7-probes.tar",
+    "candidate/GT-BE98_leon36-systemd257-features-leon7_zstd22.manifest.json"
+  ]
+}

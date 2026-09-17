@@ -1,0 +1,75 @@
+Linux GT-AX11000-A2B0 4.19.294 #36 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026 aarch64 GNU/Linux
+systemd 257 (257.13-gt-be98-leon7)
+-PAM -AUDIT -SELINUX -APPARMOR -IMA +IPE -SMACK -SECCOMP -GCRYPT -GNUTLS +OPENSSL -ACL +BLKID +CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC -KMOD -LIBCRYPTSETUP -LIBCRYPTSETUP_PLUGINS -LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ +ZLIB +ZSTD -BPF_FRAMEWORK -BTF -XKBCOMMON -UTMP -SYSVINIT -LIBARCHIVE
+{
+  "upstream": "96831be75b3b891f6aa4c608f00cc7bb2d499d67",
+  "version": "3006.102.9-beta1-leon7",
+  "base_checkpoint": "armhf-release-20260917",
+  "kernel": "retained #36 4.19.294",
+  "openssl_policy": "ARM32 3.5.8 and 1.1 BSP closure retained; additive AArch64 OpenSSL 4.0.2",
+  "router_modified": false,
+  "flashed": false,
+  "correction": "IPsec IFNAMSIZ interface storage and HTTPD translation bounds",
+  "systemd": "257.13 with OpenSSL, curl, zstd, zlib and blkid",
+  "service_split": [
+    "haveged",
+    "crond",
+    "infosvr",
+    "mdns",
+    "ntpd"
+  ],
+  "cgroup": "hybrid; v1 cpuacct/memory/devices/freezer/pids retained",
+  "ntp_callback": "rc manager owns synchronization side effects",
+  "armhf_external": "/tmp/mnt/JFFS/system-libs/gt-be98/8da410f090d92cff/arm-linux-gnueabihf",
+  "size_rebuilds": {
+    "aarch64_libstdc++": "16.2.0 -Oz",
+    "armel_libstdc++": "15.2.0 -Oz ARM mode softfp",
+    "zstd": "1.5.7 full CLI dynamically linked to existing libzstd",
+    "sqlite3": "3.42.0 same engine options -Oz LTO",
+    "bash": "5.3.15 -Oz LTO; same features",
+    "coreutils": "9.11 -Oz LTO; same applets",
+    "libcurl": "8.22.0 -Oz LTO; upstream symbol hiding; all configured protocols retained",
+    "iperf3": "3.21 -Oz LTO; dynamic internal glibc; same optional features"
+  },
+  "trial": "uncommitted slot1; slot2 retained",
+  "sysctl": "procps-ng 4.0.7; /usr/sbin/sysctl",
+  "libcurl": "8.22.0; native AArch64; OpenSSL 4.0.2"
+}
+205.62 557.81
+/usr/lib/systemd/systemd
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: First
+  Reboot Partition: Second
+
+B First  partition type           : pureUBI/GPT
+B First  partition sequence number: 47
+B First  partition image tag      : $imageversion:  $
+B First  partition commit flag    : 0
+ >Second partition type           : pureUBI/GPT
+ >Second partition sequence number: 46
+ >Second partition image tag      : $imageversion:  $
+ >Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2

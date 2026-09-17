@@ -1,0 +1,4 @@
+leon-rmerlin-upstream-http
+leon-rmerlin-upstream-test
+Docker=29.8.0 cgroup=1 driver=overlay2
+DOCKER_TEST_CLEANUP_PASS

@@ -1,0 +1,44 @@
+{
+  "authenticated": true,
+  "pages": [
+    {
+      "path": "Main_Login.asp",
+      "status": 200,
+      "bytes": 28621,
+      "sha256": "d10f089e705b9dcfbff9ede85153460ca2210562b2dc10f484e7c2ee1d5c37ea"
+    },
+    {
+      "path": "index.asp",
+      "status": 200,
+      "bytes": 125131,
+      "sha256": "8f1fa145af6d8874a31e21d7cc3bbea30bfa0aa89029225465555b53506fbdf0"
+    },
+    {
+      "path": "Tools_Sysinfo.asp",
+      "status": 200,
+      "bytes": 29344,
+      "sha256": "53b765798594c6a12e31dbf365d73fdfb899515276c046dff628293c43acecaf"
+    },
+    {
+      "path": "Advanced_VPN_OpenVPN.asp",
+      "status": 200,
+      "bytes": 77440,
+      "sha256": "fdd66b7527182f2357ca79735ede1b90632722ed3ec3e14172cd2473e7968a08"
+    },
+    {
+      "path": "QoS_EZQoS.asp",
+      "status": 200,
+      "bytes": 87701,
+      "sha256": "2490e8b0751d329ba4e4970d03602a78ca870a8b2a39347fe3f02d9cbd4cc2df"
+    },
+    {
+      "path": "appGet.cgi?hook=nvram_get(productid);nvram_get(buildno);nvram_get(extendno)",
+      "status": 200,
+      "bytes": 26,
+      "sha256": "651322741e43cf89b5ca8434d41bd9d7bb5a87b16e1f04a6665e32d3e73ddf08"
+    }
+  ],
+  "version": {
+    "productid": "GT-BE98"
+  }
+}

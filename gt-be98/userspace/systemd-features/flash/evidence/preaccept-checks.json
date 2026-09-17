@@ -1,0 +1,47 @@
+{
+  "checks": {
+    "verify-written.txt": [
+      "VERIFIED_NEW_IMAGE_FALLBACK_AND_LOADER"
+    ],
+    "live-systemd.txt": [
+      "SYSTEMD_PHYSICAL_BASELINE_PASS"
+    ],
+    "live-new-services.txt": [
+      "SYSTEMD257_CRON_DISCOVERY_HYBRID_AND_NATIVE_LESS_PASS"
+    ],
+    "live-mdns-ntp.txt": [
+      "LIVE_MDNS_NTP_POLICY_AND_OWNERSHIP_PASS"
+    ],
+    "live-runtime.txt": [
+      "LIVE_RUNTIME_aarch64_PASS",
+      "LIVE_RUNTIME_armel_PASS",
+      "LIVE_RUNTIME_armhf_PASS",
+      "LIVE_RUNTIME_armel-legacy_PASS",
+      "LIVE_RUNTIME_aarch64-legacy_PASS",
+      "LIVE_LEON7_RUNTIMES_AND_TOOLS_PASS"
+    ],
+    "live-features.txt": [
+      "LIVE_LEON7_FEATURES_ALL_PASS",
+      "LIVE_ZSTD_JOURNAL_WRITE_READ_PASS"
+    ],
+    "live-files.txt": [
+      "LIVE_FILES_SHA256_AND_USB_MOUNT_PASS"
+    ],
+    "acceleration-stable-flows.txt": [
+      "SYSTEMD_HARDWARE_FLOW_PROGRESS_PASS"
+    ],
+    "docker-network.txt": [
+      "HTTPS status=200 verify=0",
+      "DEFAULT_BRIDGE_DNS_HTTP_HTTPS_PASS",
+      "CUSTOM_NETWORK_DNS_HTTP_PASS",
+      "LAN_PORT_READY"
+    ],
+    "docker-cleanup.txt": [
+      "DOCKER_TEST_CLEANUP_PASS"
+    ],
+    "httpd-notification.txt": [
+      "SYSTEMD_REAL_HTTPD_NOTIFICATION_PASS"
+    ]
+  },
+  "all_passed": true
+}
