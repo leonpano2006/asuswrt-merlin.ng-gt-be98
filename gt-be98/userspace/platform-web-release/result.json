@@ -1,0 +1,57 @@
+{
+  "version": "leon10",
+  "image": "GT-BE98_leon36-systemd257-platform-web-leon10_zstd22.pkgtb",
+  "image_sha256": "a238490efef12fdee0b2ba4780b2f2dd34eba338edd90e2a82b43746df6e697d",
+  "image_bytes": 90709068,
+  "rootfs_bytes": 78290944,
+  "rootfs_headroom_bytes": 274432,
+  "kernel_and_182_modules_unchanged": true,
+  "exact_five_path_delta": true,
+  "combined_fix_qemu_passed": true,
+  "six_platform_suites_retained": true,
+  "exact_image_loader_closure_checks": 335,
+  "firmware_flashed": true,
+  "firmware_committed": false,
+  "status": "physical trial accepted in RAM with recorded acsd2 startup observation",
+  "verified_at_utc": "2026-09-17T15:52:14.561700+00:00",
+  "physical_checks_passed": true,
+  "write_readback_verified": true,
+  "fallback_and_loader_unchanged": true,
+  "ram_trial_accepted": true,
+  "platform_running_service_ownership_count": 20,
+  "all_four_radios_up": true,
+  "hardware_acceleration_counters_advanced": true,
+  "hardware_hits_delta": 20431,
+  "hardware_bytes_delta": 7411023,
+  "authenticated_api_rounds": 25,
+  "browser_dashboard_and_aimesh_passed": true,
+  "mesh_node_models": [
+    "GT-BE98",
+    "GT-AXE16000"
+  ],
+  "mesh_nodes_online": 2,
+  "usb_btrfs_read_write": true,
+  "asus_syslog_pipeline": true,
+  "docker_default_and_custom_networks": true,
+  "docker_https": true,
+  "docker_lan_port": true,
+  "test_containers_removed": true,
+  "failed_systemd_units": 0,
+  "known_issues": [
+    {
+      "component": "asus-acsd2.service",
+      "observed": "One automatic restart during initial radio setup; stable supervisor PID 4327 from uptime 90.50 through at least 606.75 seconds, count remained one. All four radios up.",
+      "root_cause": "not yet proven; inspect slow vendor daemonization and supervisor handoff deadline in next candidate",
+      "live_patch_applied": false,
+      "firmware_committed": false,
+      "followup_required": true
+    }
+  ],
+  "physical_limits": [
+    "No printer attached for print-job test",
+    "No USB unplug/remount while runtime libraries are in use",
+    "No fresh AiMesh pairing or wireless roaming/line-rate performance test",
+    "No SMB authenticated file-transfer test"
+  ],
+  "completed_at_utc": "2026-09-17T16:14:16.277925+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "file": "leon10-postflash.tar.zst",
+  "bytes": 44494,
+  "sha256": "98f6ad27a9bc0a9cbaf0b01bc918989ef30d4797bab2185ba9f6cc25911253b8",
+  "contains": [
+    "README.md",
+    "result.json",
+    "KNOWN-ISSUE-acsd-startup.json",
+    "scripts",
+    "configs",
+    "evidence",
+    "flash/scripts",
+    "flash/evidence",
+    "builds/qemu",
+    "backup-receipt.json"
+  ],
+  "private_diagnostics_excluded": true
+}

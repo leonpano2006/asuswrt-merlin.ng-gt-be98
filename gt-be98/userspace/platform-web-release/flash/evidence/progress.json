@@ -1,0 +1,17 @@
+{
+  "candidate_sha256": "a238490efef12fdee0b2ba4780b2f2dd34eba338edd90e2a82b43746df6e697d",
+  "image_gate_passed": true,
+  "ml350_backup_verified": true,
+  "return_to_fallback_requested": true,
+  "firmware_flashed": true,
+  "firmware_committed": false,
+  "fallback_slot2_boot_verified": true,
+  "write_started": true,
+  "write_readback_verified": true,
+  "fallback_and_loader_unchanged": true,
+  "physical_checks_pending": false,
+  "trial_once_armed": true,
+  "trial_reboot_requested_utc": "2026-09-17T16:01:06Z",
+  "physical_checks_passed": true,
+  "ram_trial_accepted": true
+}

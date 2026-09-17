@@ -1,0 +1,1464 @@
+{
+  "authenticated": true,
+  "pages": [
+    {
+      "path": "Main_Login.asp",
+      "status": 200,
+      "bytes": 28623,
+      "sha256": "07fcfc47f8e5b24eb72e14a02bb67871a0edf84a3ebe13b38169e7a01733443a"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 36095,
+      "sha256": "cb3bacd7fc6666db3be3489d51cd0496c1a48ab30c3861d81c597ec05eb298b4"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 621,
+      "sha256": "39b847681fb1645c91c34d9b64edc91c4deb6295b6869741f0544705207f2a61"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "44d6f839f1164d766216df1b38fc4c6e95f5c417cd494d260563f6d1be31802e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37096,
+      "sha256": "20a927339a789643426f3f8237f2360c4fbeb4e91f375822d1f554a185a71aa2"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 621,
+      "sha256": "39b847681fb1645c91c34d9b64edc91c4deb6295b6869741f0544705207f2a61"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "943bbc7b8fc3cbd9bd959c8c4a153aedbb46749f1a3f797ec93ff1aa8c1514f0"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37096,
+      "sha256": "28590961dd52b9355671e8ff1974d9ee274250c20fa00f539432bf696fa08af7"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 621,
+      "sha256": "39b847681fb1645c91c34d9b64edc91c4deb6295b6869741f0544705207f2a61"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "42dc683314949031b435f89d1164e712e4064d3bac13c4dd79cd07331b630907"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37096,
+      "sha256": "16234884c0365fbc83a37051410bb18cb16e57ad3a0bca893fb88fa3c1712fd5"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 621,
+      "sha256": "39b847681fb1645c91c34d9b64edc91c4deb6295b6869741f0544705207f2a61"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "d324381070703c036d572f5bfb2b56682a2406fd59e4f1003b7535b28cdd5318"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37094,
+      "sha256": "37c262dc27a3ef86b51a1e34fbda9630ffcc80c9f534a712ec734ba220e881d9"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 621,
+      "sha256": "39b847681fb1645c91c34d9b64edc91c4deb6295b6869741f0544705207f2a61"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "8786211ca67f9de9db358925d548941e90f5f9f9577b253a6e755c1c35e70ddd"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37096,
+      "sha256": "653171531532049daa939aae64e405ed5223e9d79836067c5a64fb194e10338e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 621,
+      "sha256": "39b847681fb1645c91c34d9b64edc91c4deb6295b6869741f0544705207f2a61"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "c69fdccfbd689ae620ff23f3508a9060353b9b71cac537c5182bca937204cd1d"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37093,
+      "sha256": "b15fae9b4dca5d14f8a19538ee8f00a26b2b3e9e3d1723ef9a6daf04487dde57"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 234,
+      "sha256": "fedfaca86d636432064d3a6f6131978d18f7bf151d44f5c8ee66c8bd39360171"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 621,
+      "sha256": "39b847681fb1645c91c34d9b64edc91c4deb6295b6869741f0544705207f2a61"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "c31aaf964337d38a1e07075645cd9eeb72b8845e5b0f849331323c71686650e9"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37093,
+      "sha256": "fc3c0701b0ea9635bc3f64b1724887e03806fefb98b4aa37f7b238b1f6aadfc5"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 234,
+      "sha256": "fedfaca86d636432064d3a6f6131978d18f7bf151d44f5c8ee66c8bd39360171"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 621,
+      "sha256": "39b847681fb1645c91c34d9b64edc91c4deb6295b6869741f0544705207f2a61"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "555386cc38dbc2914d5362efb4743390c1d075c3b1bab2756a2fe665e757247d"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37096,
+      "sha256": "cbd57c8f5c46fb5bfe8a151810c572a94be2b9f527423f068e22a19bd7cf16ca"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 234,
+      "sha256": "fedfaca86d636432064d3a6f6131978d18f7bf151d44f5c8ee66c8bd39360171"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 621,
+      "sha256": "39b847681fb1645c91c34d9b64edc91c4deb6295b6869741f0544705207f2a61"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "b1720ad0cfba0c0551527f235a505ffba19f1a2c3788fc73ea75a668cc82b96d"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37096,
+      "sha256": "188ec41cea80ebb9a9332e4011b65271090c4d3e682c0faf30841af3d79f40ac"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 234,
+      "sha256": "fedfaca86d636432064d3a6f6131978d18f7bf151d44f5c8ee66c8bd39360171"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 621,
+      "sha256": "39b847681fb1645c91c34d9b64edc91c4deb6295b6869741f0544705207f2a61"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "ca23db4f9694d16988678e90f56e037721b8fb80aa8f76de32eb2c4a537b2c30"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37096,
+      "sha256": "8d5cbb08a16920d87fd3657171c3c2887f83e1291305de32ac8ca006716fee15"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 516,
+      "sha256": "729b9c2c97f81005441460dac0a099ed66309bf55c40a9bbd64e40332ed97bf1"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "6cd2df9726fa328669c561571499fe293a62e64c8836d7b7ea40a325a9d4bd24"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37103,
+      "sha256": "2b7cd7e4ea48a8a6fa9a353ee832c1107adda7881df2076836e04a88f5d47109"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 516,
+      "sha256": "729b9c2c97f81005441460dac0a099ed66309bf55c40a9bbd64e40332ed97bf1"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "88a54a75e2cfecafd0427b0e7985ef5e164052c5085400dc1057268433283e1a"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37100,
+      "sha256": "dd2770daa6a34eb9f63192c4a9d56cfd43447f87e8b4bfee57c9ba40cf88b80b"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 516,
+      "sha256": "729b9c2c97f81005441460dac0a099ed66309bf55c40a9bbd64e40332ed97bf1"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "dc5403769da995ee5d347fdb5a7227fd6ccc6eaf92978a8a713445e851a38524"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37100,
+      "sha256": "f22a22fc1c8cc7965ab54e9bcd84851de1b87d08e1913b1814a75252f4acc44f"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 516,
+      "sha256": "729b9c2c97f81005441460dac0a099ed66309bf55c40a9bbd64e40332ed97bf1"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "274bdf7f111053653ebc5931aa43b03036dd55549adffff6ab58dad61417b9e5"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37100,
+      "sha256": "4beb20fc461e5c456e99400d22a7c91570566ab2a50e5caff122c5a800b876cf"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 516,
+      "sha256": "729b9c2c97f81005441460dac0a099ed66309bf55c40a9bbd64e40332ed97bf1"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "426ae170c09ad35c1b6aa63ab4986e4ba38ecda7d7e33b0948ee77479126c9cb"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37100,
+      "sha256": "f010a71fa5632e8ab070ce1142b7e3b3665cd896487220b012a6b1210dbe2d3e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 516,
+      "sha256": "729b9c2c97f81005441460dac0a099ed66309bf55c40a9bbd64e40332ed97bf1"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "de54693c750ac5900f0d6544a3e061c47d6d85e377eaff8956257c6e07f670a0"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37100,
+      "sha256": "db24c1af745d0126637fd381c99adea4b2ce60aacf6115f1e04779c307b2242b"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 516,
+      "sha256": "729b9c2c97f81005441460dac0a099ed66309bf55c40a9bbd64e40332ed97bf1"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "52aed9b59176e76016ea2cede7d416de47d90568ddd03f548b6682fab983b35b"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37098,
+      "sha256": "a55a3c45d8d9ace95cc6f999027267e725591f08fa7fe0b5f73f48c31230e04b"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 516,
+      "sha256": "729b9c2c97f81005441460dac0a099ed66309bf55c40a9bbd64e40332ed97bf1"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "5b1dcfd3a6a6312f89fc3e1df6b25b096061258cf5cc9c16a450b3790a0cd067"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37098,
+      "sha256": "bab554b482dd9075e5c8889e38577a77b1b87b97deaa084cc907096c5e827b0e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 516,
+      "sha256": "729b9c2c97f81005441460dac0a099ed66309bf55c40a9bbd64e40332ed97bf1"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "6d4bc01b6eb00881ed41f10f7966785334a91e4258883ee63b26df050ecc8801"
+    },
+    {
+      "path": "appGet.cgi?hook=get_cfg_clientlist()",
+      "status": 200,
+      "bytes": 8115,
+      "sha256": "9dcba4a1c76ad54100fa48c62c50b958f623f0638a76f2d1e101d6470780940e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_onboardingstatus()",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "dadaaa3546ecac39dc5bdc184d932475de1017c38226288633ab81dfcb5eeebe"
+    },
+    {
+      "path": "appGet.cgi?hook=get_clientlist()",
+      "status": 200,
+      "bytes": 37098,
+      "sha256": "bab554b482dd9075e5c8889e38577a77b1b87b97deaa084cc907096c5e827b0e"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wclientlist()",
+      "status": 200,
+      "bytes": 253,
+      "sha256": "9ab68c1fb9dc4bb512f1ddfe4ffdd017ad1165042896c40b6bf2f1b3cc5867ea"
+    },
+    {
+      "path": "appGet.cgi?hook=get_wiredclientlist()",
+      "status": 200,
+      "bytes": 516,
+      "sha256": "729b9c2c97f81005441460dac0a099ed66309bf55c40a9bbd64e40332ed97bf1"
+    },
+    {
+      "path": "update.cgi?output=netdev",
+      "status": 200,
+      "bytes": 302,
+      "sha256": "c9e718b7f238cf6cd209159c27cbff8f430fd9454ca42702140a320c66e76a97"
+    },
+    {
+      "path": "AiMesh.asp",
+      "status": 200,
+      "bytes": 5636,
+      "sha256": "e92b98d69f5d345840812ddba63e5ac21d9a125c69b782134ae7f594d11b4de9"
+    },
+    {
+      "path": "aimesh/aimesh_topology.html",
+      "status": 200,
+      "bytes": 200136,
+      "sha256": "781c8f0cf3562d1fcf469ca1843a37beb21f9e43cb0a3c55c85547d5696b4f97"
+    },
+    {
+      "path": "GameDashboard.asp",
+      "status": 200,
+      "bytes": 60469,
+      "sha256": "2104dcec3ea27592b30b1b505da969506715b4eb712a36f73c9496ec6cafe083"
+    },
+    {
+      "path": "require/modules/menuTree.js",
+      "status": 200,
+      "bytes": 27248,
+      "sha256": "c64f6231d9c0216ea87bfc0ff8b175f151ff85125e18371f9d3c66e7b3379f31"
+    },
+    {
+      "path": "require/modules/makeRequest.js",
+      "status": 200,
+      "bytes": 1450,
+      "sha256": "1e8aee29b00cfb3ac593ddc466e0e243c4a13e2b21f21d4f0abe4c7537acc776"
+    }
+  ],
+  "api_rounds": [
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 43,
+        "client_count": 42
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    },
+    {
+      "get_cfg_clientlist": {
+        "type": "list",
+        "length": 2,
+        "nodes": [
+          {
+            "model": "GT-BE98",
+            "online": "1",
+            "path": "0"
+          },
+          {
+            "model": "GT-AXE16000",
+            "online": "1",
+            "path": "16"
+          }
+        ]
+      },
+      "get_onboardingstatus": {
+        "type": "dict",
+        "length": 17
+      },
+      "get_clientlist": {
+        "type": "dict",
+        "length": 44,
+        "client_count": 43
+      },
+      "get_wclientlist": {
+        "type": "dict",
+        "length": 1
+      },
+      "get_wiredclientlist": {
+        "type": "dict",
+        "length": 1
+      }
+    }
+  ],
+  "all_pass": true
+}

@@ -1,0 +1,8 @@
+{
+  "file": "leon10-preflash.tar.zst",
+  "bytes": 84530438,
+  "sha256": "0789d8da6e9f2737eb82e47b446dfe05da28d5378c89f9dc4aef41e3f5c505cb",
+  "contains": "candidate, packaging scripts/policy, verification and preflight; prior source backups retained separately",
+  "ml350_verified": true,
+  "ml350_path": "/home/leonpano/amng-out/platform-web-release-20260917/leon10-preflash.tar.zst"
+}

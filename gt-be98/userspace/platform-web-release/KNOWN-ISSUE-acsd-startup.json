@@ -1,0 +1,8 @@
+{
+  "component": "asus-acsd2.service",
+  "observed": "One automatic restart during initial radio setup; stable supervisor PID 4327 from uptime 90.50 through at least 606.75 seconds, count remained one. All four radios up.",
+  "root_cause": "not yet proven; inspect slow vendor daemonization and supervisor handoff deadline in next candidate",
+  "live_patch_applied": false,
+  "firmware_committed": false,
+  "followup_required": true
+}

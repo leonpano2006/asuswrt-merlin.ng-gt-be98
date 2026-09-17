@@ -1,0 +1,45 @@
+{
+  "image": "GT-BE98_leon36-systemd257-platform-web-leon10_zstd22.pkgtb",
+  "bytes": 90709068,
+  "sha256": "a238490efef12fdee0b2ba4780b2f2dd34eba338edd90e2a82b43746df6e697d",
+  "original_sha256": "7f81597418b3a3a3636d0f846664d3d8145c43627a9afa02a49bef46a63074be",
+  "rootfs_sha256": "138479b215627bfc69e53e5bf0d1bdbeb434363af93790ccde22998d281baf6f",
+  "rootfs_bytes": 78290944,
+  "bootfs_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+  "bootfs_bytes": 12417164,
+  "kernel_sha256": "f6b32cfe97b9e7e2b818fd5aaf5b0a029f52d62dcf086546fd65ebf60c6da3d4",
+  "kernel_version": "#36",
+  "rootfs_compression": "zstd",
+  "rootfs_level": 22,
+  "rootfs_block_size": 1048576,
+  "rootfs_sort": "file type/ELF architecture, systemd family first, basename",
+  "tailends": true,
+  "kernel_compression": "lzo",
+  "signed_bootfs_unchanged": true,
+  "bootfs_signature_verified": true,
+  "all_other_payloads_unchanged": true,
+  "loader_update_selected": false,
+  "reserved_blocks": [
+    107,
+    625
+  ],
+  "available_blocks_input": 734,
+  "remaining_blocks": 2,
+  "target_slot": 1,
+  "commit_requested": false,
+  "capacity_observation": "live-capacity.txt: 2 free plus slot1 107+625; recheck inactive slot before flashing",
+  "payloads": {
+    "/images/bootfs_6813_a0+": {
+      "before_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+      "after_sha256": "2a7c327db1a185d17ba5f7b72097abf6b6158e6f2810ed7a26873144a4a8f10f",
+      "bytes": 12417164,
+      "offset": 960
+    },
+    "/images/nand_squashfs": {
+      "before_sha256": "30ad85201252809c4cace9a217a18688cebbf48c9f66326e2de54f035d83cdc9",
+      "after_sha256": "138479b215627bfc69e53e5bf0d1bdbeb434363af93790ccde22998d281baf6f",
+      "bytes": 78290944,
+      "offset": 12418124
+    }
+  }
+}

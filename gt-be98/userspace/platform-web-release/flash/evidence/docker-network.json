@@ -1,0 +1,7 @@
+{
+  "default_bridge_dns_http_https": true,
+  "custom_bridge_dns_http": true,
+  "lan_published_port": true,
+  "memory_swap_pids_limits": true,
+  "raw_log_kept_private": true
+}

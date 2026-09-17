@@ -1,0 +1,12 @@
+{
+  "normal_browser_login": true,
+  "dashboard_live_traffic": true,
+  "aimesh_topology_rendered": true,
+  "model_nodes": [
+    "GT-BE98",
+    "GT-AXE16000"
+  ],
+  "traditional_chinese_labels": true,
+  "client_count": 43,
+  "no_settings_changed": true
+}

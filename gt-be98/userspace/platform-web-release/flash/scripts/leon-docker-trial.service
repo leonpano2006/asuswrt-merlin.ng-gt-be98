@@ -1,0 +1,24 @@
+[Unit]
+Description=Existing USB Docker installation for the current hardware trial
+DefaultDependencies=no
+RequiresMountsFor=/usr/local /jffs /run /var
+After=asus-rc.service
+PartOf=asus-rc.service
+Conflicts=shutdown.target
+Before=shutdown.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/leon-docker/dockerd.pid
+ExecStart=/usr/local/sbin/docker-start
+ExecStop=/usr/local/sbin/docker-stop
+TimeoutStartSec=45
+TimeoutStopSec=45
+KillMode=mixed
+Delegate=yes
+TasksMax=infinity
+TasksAccounting=no
+MemoryAccounting=no
+Restart=no
+StandardOutput=journal
+StandardError=journal

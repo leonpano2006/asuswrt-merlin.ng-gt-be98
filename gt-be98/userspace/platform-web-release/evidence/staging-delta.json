@@ -1,0 +1,72 @@
+{
+  "usr/lib/arm-linux-gnueabi/libshared.so": {
+    "before": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "6e604a860fc2752e28238e34c7886311d9751d5802f31fc6dda056eea6fa3b5c",
+      "bytes": 913388
+    },
+    "after": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "06eb9ca13f4de144c65aad7b5e013b38b5bfa128bc4b8688e474d2c6f3e7a779",
+      "bytes": 913388
+    }
+  },
+  "www/aimesh/aimesh_topology.html": {
+    "before": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "61be53c86b1d1e14aca24b141837c08c5d782ee5ca880cf0af7cac71d432eea7",
+      "bytes": 192800
+    },
+    "after": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "3cef091a58002ec0b1928473531d8c41355219cc5c1d20f6dc8bc4152f8e7e4c",
+      "bytes": 192800
+    }
+  },
+  "usr/share/leon-upstream.json": {
+    "before": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "33916f38c8075bab630ff56e41866def374dac88452a6b9122b8d73edc11a057",
+      "bytes": 1941
+    },
+    "after": {
+      "mode": 420,
+      "kind": "file",
+      "sha256": "ab9498eba21f952f8f8f9c7b360901fec655daf54161957fc0ad85654816fb50",
+      "bytes": 2622
+    }
+  },
+  "usr/sbin/httpd": {
+    "before": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "e1c6013f9e535cd76294a4acc814b5b985fb487e79dff60066b18d52cd8bf450",
+      "bytes": 888360
+    },
+    "after": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "2035aca8e26a14b0823e340ac08e2eddeb13d494d2595bc54e0014d4ba73cd0b",
+      "bytes": 888340
+    }
+  },
+  "usr/sbin/rc": {
+    "before": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "3843e030af72c62f8c89ab814cf78714f81d20fd583b703e4a3fb7bad68d298e",
+      "bytes": 2718808
+    },
+    "after": {
+      "mode": 493,
+      "kind": "file",
+      "sha256": "cf121058ede3661d8b5a9f3bc3e8aed2850d533205b71ccf20bcf3a46c221981",
+      "bytes": 2718808
+    }
+  }
+}
