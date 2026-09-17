@@ -1,0 +1,12 @@
+{
+  "existing_paths_changed": [],
+  "new_regular_files": [
+    "usr/lib/aarch64-linux-gnu/libcrypto.so.4",
+    "usr/lib/aarch64-linux-gnu/libssl.so.4",
+    "usr/lib/aarch64-linux-gnu/ossl-modules/legacy.so",
+    "usr/lib/ssl/openssl4/openssl.cnf",
+    "usr/libexec/openssl4"
+  ],
+  "parent": "systemd-rc-next-20260917",
+  "firmware_flashed": false
+}

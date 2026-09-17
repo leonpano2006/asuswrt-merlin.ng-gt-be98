@@ -1,0 +1,70 @@
+{
+  "files": {
+    "usr/lib/aarch64-linux-gnu/libcrypto.so.4": {
+      "bytes": 5773520,
+      "sha256": "33a58f252067e6ed7c3f04b592ee00f7bb22f7e5ee4c0545ff31349a9d49f31a",
+      "build_id_sha1": "d11c8d990d0e80a21f6df1587ac46b509069234b",
+      "compiler_flags": [
+        "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O3 -O2 -fPIC -fstack-protector-strong",
+        ""
+      ],
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ]
+    },
+    "usr/lib/aarch64-linux-gnu/libssl.so.4": {
+      "bytes": 1130616,
+      "sha256": "7eab6b9fde03e81aa9b3c8e7109c7166bd4f0dcba8aeb43844c11a695ca07df4",
+      "build_id_sha1": "967446f9587dabc1e8dac0340435118825f9e4c2",
+      "compiler_flags": [
+        "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O3 -O2 -fPIC -fstack-protector-strong",
+        ""
+      ],
+      "needed": [
+        "libcrypto.so.4",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ]
+    },
+    "usr/lib/aarch64-linux-gnu/ossl-modules/legacy.so": {
+      "bytes": 198744,
+      "sha256": "e3807d28eaa62fc8fdd492fe1d89161ed3cd7500a8eebadae8007b40477fee89",
+      "build_id_sha1": "ff8db384b9a2ee4af0611464687041696246a692",
+      "compiler_flags": [
+        "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O3 -O2 -fPIC -fstack-protector-strong",
+        ""
+      ],
+      "needed": [
+        "libcrypto.so.4",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ]
+    },
+    "usr/libexec/openssl4": {
+      "bytes": 952016,
+      "sha256": "538b828300534ae57a27aea1d399655e95091566c07eac7a0e6ae99781ea2707",
+      "build_id_sha1": "02397c153a939bb27f7afcb4b4d5916410df25c1",
+      "compiler_flags": [
+        "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O3 -O2 -fstack-protector-strong",
+        "GNU C23 16.2.0 -mcpu=cortex-a53+crc+crypto -mlittle-endian -mabi=lp64 -g -O3 -O2 -fPIC -fstack-protector-strong",
+        ""
+      ],
+      "needed": [
+        "libssl.so.4",
+        "libcrypto.so.4",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ]
+    },
+    "usr/lib/ssl/openssl4/openssl.cnf": {
+      "bytes": 12840,
+      "sha256": "33251bd9a351ff125255b070a1e25c29f47856e8932c8996e43668e1301ff8a6"
+    }
+  },
+  "bytes": 8067736,
+  "existing_production_paths_replaced": [],
+  "unversioned_runtime_library_links": [],
+  "existing_cli_and_config_unchanged": true,
+  "status": "component_overlay_not_flashed"
+}

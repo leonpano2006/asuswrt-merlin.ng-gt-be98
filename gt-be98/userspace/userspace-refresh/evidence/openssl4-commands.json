@@ -1,0 +1,35 @@
+[
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/build/openssl4",
+    "argv": [
+      "perl",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/sources/openssl-4.0.2/Configure",
+      "linux-aarch64",
+      "--prefix=/usr",
+      "--openssldir=/usr/lib/ssl/openssl4",
+      "--libdir=lib/aarch64-linux-gnu",
+      "shared",
+      "-O2",
+      "-g",
+      "-frecord-gcc-switches",
+      "-fstack-protector-strong",
+      "-Wl,--build-id=sha1,-z,relro,-z,now"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/build/openssl4",
+    "argv": [
+      "make",
+      "-j8",
+      "build_sw"
+    ]
+  },
+  {
+    "cwd": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/build/openssl4",
+    "argv": [
+      "make",
+      "DESTDIR=/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/build/openssl4-install",
+      "install_sw"
+    ]
+  }
+]

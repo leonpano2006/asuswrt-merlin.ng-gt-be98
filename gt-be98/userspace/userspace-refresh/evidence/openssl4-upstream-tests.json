@@ -1,0 +1,14 @@
+{
+  "command": [
+    "make",
+    "-j8",
+    "test",
+    "TESTS=test_evp test_evp_extra test_rand test_ec test_rsa test_x509 test_ssl_new"
+  ],
+  "exe_shell": "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/build/run-openssl-test",
+  "target_glibc": "2.44",
+  "elapsed_seconds": 9.98,
+  "exit_code": 0,
+  "router_modified": false,
+  "test_host_kernel": "7.0.0-1016-nvidia"
+}

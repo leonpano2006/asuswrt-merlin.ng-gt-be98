@@ -1,0 +1,223 @@
+{
+  "zstd": {
+    "url": "https://api.github.com/repos/facebook/zstd/releases/latest",
+    "final_url": "https://api.github.com/repos/facebook/zstd/releases/latest",
+    "path": "evidence/upstream/zstd.json",
+    "sha256": "17635ef9536f21a615ad4b0806845d3f4ae269f5ce1c41e3bc04111869c080f8",
+    "bytes": 26379,
+    "fetched_at_utc": "2026-09-17T09:28:47.102168+00:00",
+    "tag_name": "v1.5.7",
+    "published_at": "2025-02-19T21:50:11Z",
+    "prerelease": false,
+    "html_url": "https://github.com/facebook/zstd/releases/tag/v1.5.7"
+  },
+  "jq": {
+    "url": "https://api.github.com/repos/jqlang/jq/releases/latest",
+    "final_url": "https://api.github.com/repos/jqlang/jq/releases/latest",
+    "path": "evidence/upstream/jq.json",
+    "sha256": "c2531b316f7d2f9486a1af8e0cb50cbec8c36afd1cc968eecc8bb1c5304490a7",
+    "bytes": 54970,
+    "fetched_at_utc": "2026-09-17T09:28:47.304116+00:00",
+    "tag_name": "jq-1.8.2",
+    "published_at": "2026-06-20T14:11:27Z",
+    "prerelease": false,
+    "html_url": "https://github.com/jqlang/jq/releases/tag/jq-1.8.2"
+  },
+  "htop": {
+    "url": "https://api.github.com/repos/htop-dev/htop/releases/latest",
+    "final_url": "https://api.github.com/repos/htop-dev/htop/releases/latest",
+    "path": "evidence/upstream/htop.json",
+    "sha256": "5c5766478081d765d068950072f64405f66363441403384bb7379733d5205984",
+    "bytes": 5133,
+    "fetched_at_utc": "2026-09-17T09:28:47.094341+00:00",
+    "tag_name": "3.5.3",
+    "published_at": "2026-08-16T16:07:11Z",
+    "prerelease": false,
+    "html_url": "https://github.com/htop-dev/htop/releases/tag/3.5.3"
+  },
+  "iperf": {
+    "url": "https://api.github.com/repos/esnet/iperf/releases/latest",
+    "final_url": "https://api.github.com/repos/esnet/iperf/releases/latest",
+    "path": "evidence/upstream/iperf.json",
+    "sha256": "eba9847dcfaf2f8368695f3dd4916024591cee2fa436c61302d5dd568d40e519",
+    "bytes": 6923,
+    "fetched_at_utc": "2026-09-17T09:28:47.091706+00:00",
+    "tag_name": "3.21",
+    "published_at": "2026-04-09T19:22:56Z",
+    "prerelease": false,
+    "html_url": "https://github.com/esnet/iperf/releases/tag/3.21"
+  },
+  "btrfs-progs": {
+    "url": "https://api.github.com/repos/kdave/btrfs-progs/releases/latest",
+    "final_url": "https://api.github.com/repos/kdave/btrfs-progs/releases/latest",
+    "path": "evidence/upstream/btrfs-progs.json",
+    "sha256": "b223da1c6c3f603af909a1ef87781fb798cc1397f66c69b0397540fb2e359584",
+    "bytes": 14116,
+    "fetched_at_utc": "2026-09-17T09:28:47.337423+00:00",
+    "tag_name": "v7.1",
+    "published_at": "2026-07-14T22:47:41Z",
+    "prerelease": false,
+    "html_url": "https://github.com/kdave/btrfs-progs/releases/tag/v7.1"
+  },
+  "zlib": {
+    "url": "https://api.github.com/repos/madler/zlib/releases/latest",
+    "final_url": "https://api.github.com/repos/madler/zlib/releases/latest",
+    "path": "evidence/upstream/zlib.json",
+    "sha256": "c0dcd96ffc0fb3b8ede6c6cafcc5ab13f5d1a5438379ed5945edeffa17ae284f",
+    "bytes": 10824,
+    "fetched_at_utc": "2026-09-17T09:28:47.329493+00:00",
+    "tag_name": "v1.3.2",
+    "published_at": "2026-02-17T15:12:43Z",
+    "prerelease": false,
+    "html_url": "https://github.com/madler/zlib/releases/tag/v1.3.2"
+  },
+  "docker": {
+    "url": "https://api.github.com/repos/moby/moby/releases/latest",
+    "final_url": "https://api.github.com/repos/moby/moby/releases/latest",
+    "path": "evidence/upstream/docker.json",
+    "sha256": "6f510c0d3593497963fdaca10e6099d516d4f27dfb183582d47ea949b7463ba0",
+    "bytes": 3422,
+    "fetched_at_utc": "2026-09-17T09:28:47.292555+00:00",
+    "tag_name": "docker-v29.8.1",
+    "published_at": "2026-09-15T17:05:26Z",
+    "prerelease": false,
+    "html_url": "https://github.com/moby/moby/releases/tag/docker-v29.8.1"
+  },
+  "systemd": {
+    "url": "https://api.github.com/repos/systemd/systemd/releases/latest",
+    "final_url": "https://api.github.com/repos/systemd/systemd/releases/latest",
+    "path": "evidence/upstream/systemd.json",
+    "sha256": "886ce3a20f269ee33f25acf0894e84aaa0832f019ea830d1c5fafa36f80d9641",
+    "bytes": 2168,
+    "fetched_at_utc": "2026-09-17T09:28:47.473904+00:00",
+    "tag_name": "v261.3",
+    "published_at": "2026-09-10T19:49:12Z",
+    "prerelease": false,
+    "html_url": "https://github.com/systemd/systemd/releases/tag/v261.3"
+  },
+  "systemd-stable-tags": {
+    "url": "https://api.github.com/repos/systemd/systemd-stable/tags?per_page=100",
+    "final_url": "https://api.github.com/repos/systemd/systemd-stable/tags?per_page=100",
+    "path": "evidence/upstream/systemd-stable-tags.json",
+    "sha256": "24f012bc03adb1044f81ff69959c50f2fb75cfa0a944e64b7aee08a37722454c",
+    "bytes": 43207,
+    "fetched_at_utc": "2026-09-17T09:28:47.713250+00:00",
+    "257_tags": []
+  },
+  "openssl": {
+    "url": "https://www.openssl-library.org/source/",
+    "final_url": "https://www.openssl-library.org/source/",
+    "path": "evidence/upstream/openssl.txt",
+    "sha256": "7ab2764ee85ad76b7a87292226db2876508263f0c369c4cec4a054f4f6278c9e",
+    "bytes": 45873,
+    "fetched_at_utc": "2026-09-17T09:28:47.608428+00:00"
+  },
+  "curl": {
+    "url": "https://curl.se/download.html",
+    "final_url": "https://curl.se/download.html",
+    "path": "evidence/upstream/curl.txt",
+    "sha256": "53051a69b20093a99fcfc1d736daced1fc0c0eda63ae90c1b5c5ff3709ecb725",
+    "bytes": 76817,
+    "fetched_at_utc": "2026-09-17T09:28:47.440724+00:00"
+  },
+  "sqlite": {
+    "url": "https://sqlite.org/changes.html",
+    "final_url": "https://sqlite.org/changes.html",
+    "path": "evidence/upstream/sqlite.txt",
+    "sha256": "7affb06012865c2b6026630fb6e9c2307642d5930a91857068184a17a0740f41",
+    "bytes": 473582,
+    "fetched_at_utc": "2026-09-17T09:28:48.484374+00:00"
+  },
+  "nano": {
+    "url": "https://www.nano-editor.org/news.php",
+    "final_url": "https://www.nano-editor.org/news.php",
+    "path": "evidence/upstream/nano.txt",
+    "sha256": "2c9c1f92902d6cffbc3316cc2a66917474aefd8abcaf5b3a78aa2eee31ec7cb9",
+    "bytes": 52525,
+    "fetched_at_utc": "2026-09-17T09:28:47.723066+00:00"
+  },
+  "util-linux": {
+    "url": "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+    "final_url": "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/",
+    "path": "evidence/upstream/util-linux.txt",
+    "sha256": "84334953b0d94f0b364673fdb1b5666f36d8344bdccc81e1bf1066182a8b2189",
+    "bytes": 3205,
+    "fetched_at_utc": "2026-09-17T09:28:47.677652+00:00"
+  },
+  "util-linux-2.42": {
+    "url": "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.42/",
+    "final_url": "https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.42/",
+    "path": "evidence/upstream/util-linux-2.42.txt",
+    "sha256": "6e626206095fd4103f6ccb52ae9e223a368860863d5b991c17ce030d14bfee85",
+    "bytes": 5184,
+    "fetched_at_utc": "2026-09-17T09:28:47.723229+00:00"
+  },
+  "xfsprogs": {
+    "url": "https://mirrors.edge.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/",
+    "final_url": "https://mirrors.edge.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/",
+    "path": "evidence/upstream/xfsprogs.txt",
+    "sha256": "5d4a3ef731e4fdd4182900ea1a6a1dc7b9267bcf0123654dcc4945b2198ba908",
+    "bytes": 24540,
+    "fetched_at_utc": "2026-09-17T09:28:47.769519+00:00"
+  },
+  "coreutils": {
+    "url": "https://ftp.gnu.org/gnu/coreutils/",
+    "final_url": "https://ftp.gnu.org/gnu/coreutils/",
+    "path": "evidence/upstream/coreutils.txt",
+    "sha256": "be21da502d8ec822c0f6ffd9ccac3bf2ebd196c19799263f76fe94c042aeb7a9",
+    "bytes": 62727,
+    "fetched_at_utc": "2026-09-17T09:28:48.211862+00:00"
+  },
+  "findutils": {
+    "url": "https://ftp.gnu.org/gnu/findutils/",
+    "final_url": "https://ftp.gnu.org/gnu/findutils/",
+    "path": "evidence/upstream/findutils.txt",
+    "sha256": "3a2cf246508899d716f20d9b7f3066f3631f7e73bb772af91035fa953d2f2f19",
+    "bytes": 11881,
+    "fetched_at_utc": "2026-09-17T09:28:48.037896+00:00"
+  },
+  "bash-patches": {
+    "url": "https://ftp.gnu.org/gnu/bash/bash-5.3-patches/",
+    "final_url": "https://ftp.gnu.org/gnu/bash/bash-5.3-patches/",
+    "path": "evidence/upstream/bash-patches.txt",
+    "sha256": "4f3fe363b7df838018d83e48232f7e60b05dc0ebf1e8b35fcd49b6945a4f1bc1",
+    "bytes": 9000,
+    "fetched_at_utc": "2026-09-17T09:28:48.047897+00:00"
+  },
+  "socat": {
+    "url": "https://www.dest-unreach.org/socat/",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)>"
+  },
+  "openssh": {
+    "url": "https://www.openssh.com/releasenotes.html",
+    "final_url": "https://www.openssh.org/releasenotes.html",
+    "path": "evidence/upstream/openssh.txt",
+    "sha256": "0859c66fc03ecf9b46f0321197cd47fe2dd5b53bed2d17113fcfcbd06e077661",
+    "bytes": 758852,
+    "fetched_at_utc": "2026-09-17T09:28:51.373201+00:00"
+  },
+  "dropbear": {
+    "url": "https://matt.ucc.asn.au/dropbear/CHANGES",
+    "final_url": "https://matt.ucc.asn.au/dropbear/CHANGES",
+    "path": "evidence/upstream/dropbear.txt",
+    "sha256": "2c74a78408b59199267a22c837b112944f685ff4191df829e351549d1af44ab5",
+    "bytes": 83944,
+    "fetched_at_utc": "2026-09-17T09:28:49.991319+00:00"
+  },
+  "systemd261-readme": {
+    "url": "https://raw.githubusercontent.com/systemd/systemd/v261/README",
+    "final_url": "https://raw.githubusercontent.com/systemd/systemd/v261/README",
+    "path": "evidence/upstream/systemd261-readme.txt",
+    "sha256": "a2e6258fba1edee80ee83f77159659d4ca25b24af516f3f8a1ba3812f4a686d9",
+    "bytes": 22078,
+    "fetched_at_utc": "2026-09-17T09:28:48.502249+00:00"
+  },
+  "systemd258-news": {
+    "url": "https://raw.githubusercontent.com/systemd/systemd/v258/NEWS",
+    "final_url": "https://raw.githubusercontent.com/systemd/systemd/v258/NEWS",
+    "path": "evidence/upstream/systemd258-news.txt",
+    "sha256": "dc226af256654b533e909bb77eab6af6180d9636ed86dd9cc3f9184f2f0d4061",
+    "bytes": 1116221,
+    "fetched_at_utc": "2026-09-17T09:28:48.864400+00:00"
+  }
+}

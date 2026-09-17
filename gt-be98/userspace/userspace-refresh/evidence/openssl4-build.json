@@ -1,0 +1,30 @@
+{
+  "source": "OpenSSL 4.0.2 unmodified upstream",
+  "source_sha256": "736b467530f916737b7031310ccb21d8218c6229e61e8e160cd1d3458cd543a8",
+  "compiler": "16.2.0",
+  "glibc": "2.44",
+  "mcpu": "cortex-a53+crc+crypto",
+  "build_id": "GNU sha1 (identifier, not a digital signature)",
+  "elapsed_seconds": 63.05,
+  "completed_at_utc": "2026-09-17T09:32:23.369980+00:00",
+  "files": {
+    "libcrypto.so.4": {
+      "bytes": 19424600,
+      "sha256": "662af6afdaaf78982297c588f3b4448a05d6287081a3d914cec0eb519e5cdeb0"
+    },
+    "libssl.so.4": {
+      "bytes": 5461912,
+      "sha256": "a532f43a33c894db47685065f3e4255367cbf336dc8f9efd4e2a0f4d40be45b2"
+    },
+    "apps/openssl": {
+      "bytes": 2958032,
+      "sha256": "959be06c249368dbc46dc7e1bb60a4c0d71aada33e1ed0923d0d9add53b9195a"
+    },
+    "providers/legacy.so": {
+      "bytes": 530872,
+      "sha256": "bf82e9bf4702b0d9c85fe4adb16093c31eff53c3cd50a4c7fa99278febd05336"
+    }
+  },
+  "router_modified": false,
+  "tested": false
+}

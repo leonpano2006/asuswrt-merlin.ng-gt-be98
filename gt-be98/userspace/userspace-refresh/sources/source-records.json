@@ -1,0 +1,17 @@
+{
+  "openssl-4.0.2.tar.gz": {
+    "url": "https://github.com/openssl/openssl/releases/download/openssl-4.0.2/openssl-4.0.2.tar.gz",
+    "bytes": 55153883,
+    "sha256": "736b467530f916737b7031310ccb21d8218c6229e61e8e160cd1d3458cd543a8"
+  },
+  "openssl-4.0.2.tar.gz.sha256": {
+    "url": "https://github.com/openssl/openssl/releases/download/openssl-4.0.2/openssl-4.0.2.tar.gz.sha256",
+    "bytes": 87,
+    "sha256": "20cf6487d38b622b5c076ffcee6419f45e89e400bda28ca4dc47739c3d2f1d7c"
+  },
+  "systemd257-tags.json": {
+    "url": "https://api.github.com/repos/systemd/systemd-stable/git/matching-refs/tags/v257",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  }
+}

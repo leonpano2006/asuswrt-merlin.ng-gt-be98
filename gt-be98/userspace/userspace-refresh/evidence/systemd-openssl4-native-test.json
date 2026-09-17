@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/sdk/lib/ld-linux-aarch64.so.1",
+    "--library-path",
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/build/systemd-openssl4/src/shared:/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/sdk/usr/lib/aarch64-linux-gnu:/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/sdk/lib/aarch64-linux-gnu",
+    "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/build/systemd-openssl4/test-openssl"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.01,
+  "source_unmodified": true
+}

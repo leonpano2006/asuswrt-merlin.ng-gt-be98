@@ -1,0 +1,67 @@
+{
+  "status": "component_ready_not_installed_or_flashable",
+  "date": "2026-09-17",
+  "zstd": {
+    "installed": "1.5.7",
+    "latest_stable": "1.5.7",
+    "changed": false
+  },
+  "openssl4": {
+    "version": "4.0.2",
+    "architecture": "aarch64",
+    "compiler": "16.2.0",
+    "glibc": "2.44",
+    "mcpu": "cortex-a53+crc+crypto",
+    "upstream_tests": {
+      "files": 7,
+      "tests": 334,
+      "passed": true
+    },
+    "systemd257_compilation_and_native_test_passed": true,
+    "qemu_passed": true,
+    "kernel": "4.19.294 #36",
+    "qemu_initrd_sha256": "c10000e1d1878419b8939b81cbcd4ac1d87245d28072ed4c5c8b3aebea45ffda",
+    "qemu_test_seconds": 4.61
+  },
+  "systemd_decision": "retain 257.13; 261 requires >=5.10 and unified cgroup v2",
+  "size": {
+    "purpose": "measure full OpenSSL overlay on leon5; contains original systemd binaries, not compatibility probe binaries",
+    "command": [
+      "mksquashfs",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/build/size-probe-rootfs",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/build/size-probe.squashfs",
+      "-noappend",
+      "-all-root",
+      "-comp",
+      "zstd",
+      "-Xcompression-level",
+      "22",
+      "-b",
+      "1048576",
+      "-tailends",
+      "-sort",
+      "/home/leonpano/Documents/Codex/2026-09-14/gt-be98-mastermixstudios-192-168-100/userspace-refresh-20260917/build/size-probe.sort",
+      "-processors",
+      "4",
+      "-mem",
+      "512M",
+      "-no-progress",
+      "-exit-on-error",
+      "-mkfs-time",
+      "1789560000"
+    ],
+    "rootfs_bytes": 81633280,
+    "baseline_bytes": 78553088,
+    "increment_bytes": 3080192,
+    "slot1_rootfs_limit_bytes": 78565376,
+    "fits_slot1_with_original_reserves": false,
+    "over_limit_bytes": 3067904,
+    "elapsed_seconds": 10.89,
+    "sha256": "586f72c56f95c5abbd3b7b516655e4de943c5c24f666b2392036a1188376a9c4",
+    "firmware_image_generated": false,
+    "router_modified": false
+  },
+  "router_modified": false,
+  "firmware_commit_performed": false,
+  "other_updates": "UPDATES.md (audit only; not installed)"
+}
