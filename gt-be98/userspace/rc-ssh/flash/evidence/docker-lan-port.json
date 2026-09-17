@@ -1,0 +1,13 @@
+{
+  "expected_body": true,
+  "phases": {
+    "before": {
+      "status": 200,
+      "sha256": "07e20c600205b193bb14dd55685924710cb34b5afe554f2c21ee426d8f8aa937"
+    },
+    "after": {
+      "status": 200,
+      "sha256": "07e20c600205b193bb14dd55685924710cb34b5afe554f2c21ee426d8f8aa937"
+    }
+  }
+}

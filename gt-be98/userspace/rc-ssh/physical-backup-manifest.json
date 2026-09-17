@@ -1,0 +1,17 @@
+{
+  "archive": "leon8-physical-trial.tar.zst",
+  "bytes": 8706661,
+  "sha256": "12448bdae30476f5ac751a2a19bfb32170cb72dec4f1a0bdb2845bda19291189",
+  "base_binary_backup_sha256": "ff3823e06aaacec2c6f7128be8f967fccaf399516d812dd01b261dbca521bb6f",
+  "contents": [
+    "README.md",
+    "result.json",
+    "scripts",
+    "flash/scripts",
+    "flash/evidence",
+    "flash/expected-files.json",
+    "flash/required-checks.json",
+    "flash/leon8-probes.tar",
+    "candidate/GT-BE98_leon36-systemd257-sshd-leon8_zstd22.manifest.json"
+  ]
+}

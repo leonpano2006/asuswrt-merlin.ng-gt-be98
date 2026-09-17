@@ -1,0 +1,24 @@
+MainPID=6062
+Result=success
+NRestarts=0
+ControlGroup=/system.slice/asus-mdns.service
+ActiveState=active
+SubState=running
+MainPID=2491
+Result=success
+NRestarts=0
+ControlGroup=/system.slice/asus-ntpd.service
+ActiveState=active
+SubState=running
+sw_mode=3
+ntp_ready=1
+ntp_server0=pool.ntp.org
+ntp_server1=time.nist.gov
+ntpd_enable=0
+mdns_enable=Sep 17 15:09:13 GT-AX11000-A2B0 leon-service-exec[2491]: ntp: setting time to 2026-09-17 15:09:13.725845 (offset +16223476.249082s)
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
+	Acceleration Mode: <L2 & L3>
+	HW Acceleration <Enabled>
+LIVE_MDNS_NTP_POLICY_AND_OWNERSHIP_PASS

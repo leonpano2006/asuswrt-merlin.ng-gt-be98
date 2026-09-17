@@ -1,0 +1,11 @@
+MainPID=12175
+ControlGroup=/system.slice/leon-docker-trial.service
+ActiveState=active
+6:name=systemd:/system.slice/leon-docker-trial.service
+5:pids:/system.slice/leon-docker-trial.service
+4:freezer:/
+3:devices:/
+2:memory:/system.slice/leon-docker-trial.service
+1:cpuacct:/system.slice/leon-docker-trial.service
+0::/system.slice/leon-docker-trial.service
+29.8.0 overlay2 1

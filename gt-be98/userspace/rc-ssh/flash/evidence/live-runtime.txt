@@ -1,0 +1,63 @@
+LIBGCC_PROVIDER /usr/lib/aarch64-linux-gnu/libgcc_s.so.1
+PASS unwind_backtrace frames=5
+PASS libgcc_signed_wide_division
+PASS pthread_cancel_forced_unwind_cleanup
+LIBGCC_RUNTIME_SMOKE_PASS
+LIBGCC_CXX_DSO_EXCEPTION_PASS compiler=16.2.0
+LIBSTDCXX_PROVIDER /usr/lib/aarch64-linux-gnu/libstdc++.so.6
+LIBSTDCXX_SMOKE_PASS dual_abi=0 compiler=16.2.0
+LIBSTDCXX_PROVIDER /usr/lib/aarch64-linux-gnu/libstdc++.so.6
+LIBSTDCXX_SMOKE_PASS dual_abi=1 compiler=16.2.0
+LIVE_RUNTIME_aarch64_PASS
+LIBGCC_PROVIDER /usr/lib/arm-linux-gnueabi/libgcc_s.so.1
+PASS unwind_backtrace frames=4
+PASS libgcc_signed_wide_division
+PASS pthread_cancel_forced_unwind_cleanup
+LIBGCC_RUNTIME_SMOKE_PASS
+LIBGCC_CXX_DSO_EXCEPTION_PASS compiler=15.2.0
+LIBSTDCXX_PROVIDER /usr/lib/arm-linux-gnueabi/libstdc++.so.6
+LIBSTDCXX_SMOKE_PASS dual_abi=0 compiler=15.2.0
+LIBSTDCXX_PROVIDER /usr/lib/arm-linux-gnueabi/libstdc++.so.6
+LIBSTDCXX_SMOKE_PASS dual_abi=1 compiler=15.2.0
+LIVE_RUNTIME_armel_PASS
+LIBGCC_PROVIDER /lib/arm-linux-gnueabihf/libgcc_s.so.1
+PASS unwind_backtrace frames=4
+PASS libgcc_signed_wide_division
+PASS pthread_cancel_forced_unwind_cleanup
+LIBGCC_RUNTIME_SMOKE_PASS
+LIBGCC_CXX_DSO_EXCEPTION_PASS compiler=15.2.0
+LIBSTDCXX_PROVIDER /lib/arm-linux-gnueabihf/libstdc++.so.6
+LIBSTDCXX_SMOKE_PASS dual_abi=0 compiler=15.2.0
+LIBSTDCXX_PROVIDER /lib/arm-linux-gnueabihf/libstdc++.so.6
+LIBSTDCXX_SMOKE_PASS dual_abi=1 compiler=15.2.0
+LIVE_RUNTIME_armhf_PASS
+LIBGCC_PROVIDER /usr/lib/arm-linux-gnueabi/libgcc_s.so.1
+PASS unwind_backtrace frames=4
+PASS libgcc_signed_wide_division
+PASS pthread_cancel_forced_unwind_cleanup
+LIBGCC_RUNTIME_SMOKE_PASS
+LIBGCC_CXX_DSO_EXCEPTION_PASS compiler=10.3.0
+LIBSTDCXX_PROVIDER /usr/lib/arm-linux-gnueabi/libstdc++.so.6
+LIBSTDCXX_SMOKE_PASS dual_abi=0 compiler=10.3.0
+LIBSTDCXX_PROVIDER /usr/lib/arm-linux-gnueabi/libstdc++.so.6
+LIBSTDCXX_SMOKE_PASS dual_abi=1 compiler=10.3.0
+LIVE_RUNTIME_armel-legacy_PASS
+LIBGCC_PROVIDER /usr/lib/aarch64-linux-gnu/libgcc_s.so.1
+PASS unwind_backtrace frames=5
+PASS libgcc_signed_wide_division
+PASS pthread_cancel_forced_unwind_cleanup
+LIBGCC_RUNTIME_SMOKE_PASS
+LIBGCC_CXX_DSO_EXCEPTION_PASS compiler=13.3.0
+LIBSTDCXX_PROVIDER /usr/lib/aarch64-linux-gnu/libstdc++.so.6
+LIBSTDCXX_SMOKE_PASS dual_abi=0 compiler=13.3.0
+LIBSTDCXX_PROVIDER /usr/lib/aarch64-linux-gnu/libstdc++.so.6
+LIBSTDCXX_SMOKE_PASS dual_abi=1 compiler=13.3.0
+LIVE_RUNTIME_aarch64-legacy_PASS
+wal
+armhf external
+ok
+OpenSSL 4.0.2 25 Aug 2026 (Library: OpenSSL 4.0.2 25 Aug 2026)
+OpenSSL 3.5.8 25 Aug 2026 (Library: OpenSSL 3.5.8 25 Aug 2026)
+/tmp/mnt/JFFS/system-libs/gt-be98/8da410f090d92cff/arm-linux-gnueabihf
+/tmp/mnt/JFFS/system-libs/gt-be98/8da410f090d92cff/arm-linux-gnueabihf/libc.so.6
+LIVE_LEON8_RUNTIMES_AND_TOOLS_PASS

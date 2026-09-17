@@ -1,0 +1,69 @@
+Linux GT-AX11000-A2B0 4.19.294 #35 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026 aarch64 GNU/Linux
+coherent_pool=4M cpuidle_sysfs_switch pci=pcie_bus_safe console=ttyAMA0,115200  rootwait rng_core.default_quality=1024 mtdparts=brcmnand.0:2097152(loader),265289728@2097152(image) root=/dev/ubiblock0_6 ubi.mtd=image ubi.block=0,6 rootfstype=squashfs cma=168M
+192.72 531.11
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: Second
+  Reboot Partition: Second
+
+  First  partition type           : pureUBI/GPT
+  First  partition sequence number: 47
+  First  partition image tag      : $imageversion:  $
+  First  partition commit flag    : 0
+B>Second partition type           : pureUBI/GPT
+B>Second partition sequence number: 46
+B>Second partition image tag      : $imageversion:  $
+B>Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2
+2
+	Flow Refresh Timer Interval  = 10000 millisecs
+	TCP Flow Idle Timer          = 60 s
+	UDP Flow Idle Timer          = 120 s
+	L2 Flow Idle Timer           = 120 s
+	Mcast Flow Idle Timer        = 120 s
+	Other Flow Idle Timer        = 120 s
+	Pkt-HW Activate Deferral rate = 1
+	Pkt-HW Idle Deactivate = 0
+	Pkt-SW Activate Deferral count = 0
+	Flow Low Pkt Rate = 10
+	Acceleration Mode: <L2 & L3>
+	MCast Acceleration IPv4<Enabled> IPv6<Enabled>
+	IPv6 Learning <Enabled>
+	L2TP Learning <Enabled>
+	GRE Learning <Enabled>
+	4o6 Fragmentation <Enabled>
+	TCP Ack Prioritization <Enabled>
+	ToS Multi Flow <Enabled>
+	Notify Processing Mode <Hybrid>
+	Rx Pkt Length Mode <Enabled>
+	OVS Flow Learning <Disabled>
+	HW Acceleration <Enabled>
+	Tx Thread <Enabled>
+	Tx Thread Idle Delay <8> yield loops
+	Flow Ucast Learning Enabled  : Max<16383>, Active<242>, Cumulative [ 509 - 267 ]
+	Flow Mcast Learning Enabled  : Max<1152>, Active<0>, Cumulative [ 0 - 0 ]
+	Pure LLC Acceleration: <Disabled>
+Filesystem           1K-blocks      Used Available Use% Mounted on
+tmpfs                  1023540      1244   1022296   0% /tmp/mnt

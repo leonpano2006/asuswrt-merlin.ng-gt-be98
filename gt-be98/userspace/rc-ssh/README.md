@@ -1,7 +1,7 @@
 # GT-BE98 leon8: systemd supervision for SSH
 
-Offline-validated candidate, **not flashed or firmware-committed**. The router
-continues running the previously tested leon7. Parent Git commit:
+Flashed and physically verified on 2026-09-17. **The current RAM trial is
+accepted; the firmware remains uncommitted.** The router now runs leon8. Parent Git commit:
 `ce06ad849356239c49e5753ec33b1bcf2346ebe2` on our
 `gt-be98-systemd257-services` branch.
 
@@ -84,7 +84,25 @@ The first SSH test exposed the missing writable JFFS mount in the lab and
 successfully exercised the RAM host-key fallback before failing its persistent
 key assertion. `ssh-v2` adds a tmpfs JFFS simulation and passes the complete
 suite. Production files did not change between the two lab revisions.
-Actual Broadcom hardware and networking still require a later physical trial.
+Physical testing also passed: all changed-file hashes, four radios, OpenVPN,
+ASUS discovery, authenticated management pages, all runtime/feature checks and
+Docker default/custom bridge DNS/HTTP/HTTPS plus its LAN published port.
+Hardware counters advanced on 97 retained flows: 11,295 hits and 4,680,267 bytes
+in 20 seconds. No failed systemd units or unexpected service restarts remained.
+
+ASUS `start_sshd` retained the existing SSH PID. `restart_sshd` changed the main
+PID from 4987 to 16755, and a fresh authenticated SSH login succeeded. Persistent
+host keys were unchanged; authorized_keys retained both configured keys (the
+existing rc writer omits the final newline added by the services-start hook).
+
+Docker was previously a manual-start installation. To prevent the existing
+background launcher from inheriting the newly supervised SSH cgroup, physical
+testing started it in the independent **RAM-only** `leon-docker-trial.service`.
+Dockerd and the running test container retained their exact PIDs across the SSH
+restart, and the container's LAN endpoint stayed reachable. The temporary test
+container/network and uploaded test files were removed. Docker is left running;
+this RAM unit is not packaged or enabled for automatic startup. A later version
+should integrate its persistent service before changing Docker startup policy.
 
 ## Package and rollback
 
@@ -94,9 +112,14 @@ The zstd-22 rootfs is 78,282,752 bytes with 282,624 bytes (276 KiB) headroom.
 Signed bootfs is unchanged and its RSA-PSS signature was verified. Both flasher
 1 MiB reserves remain: 107 bootfs + 625 rootfs LEBs, two LEBs remaining.
 
-Live read-only checks show slot1 running uncommitted, slot2 committed, and
-sequences 47/46. No reboot, service restart, NVRAM write, firmware write or
-commit was performed for this checkpoint. Before any later flash, recheck the
-actual booted/inactive partition and capacity; the current running slot must
-not be treated as an inactive target. Preserve the existing one-shot trial and
-fallback workflow.
+The physical workflow first booted committed slot2 (#35), then flashed only
+inactive slot1. Readback matched the published image. The complete fallback
+bootfs/rootfs and bootloader hashes were unchanged. One-shot boot selected slot1,
+and the successful trial was accepted only in `/run/leon-systemd-trial/accepted`.
+Slot1 remains uncommitted, slot2 remains committed, sequences are 47/46, and the
+next normal reboot selects slot2. No bootloader update or firmware commit occurred.
+
+`flash/evidence/physical-receipt.json` and `result.json` record the completed
+hardware checks. Flash/test source and raw evidence are saved in the separate
+physical-trial backup on DGX and ML350. NVRAM and JFFS/SSH backups remain private
+under `flash/private` and are excluded from Git/publication archives.

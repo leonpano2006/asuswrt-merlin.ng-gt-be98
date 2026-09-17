@@ -1,0 +1,90 @@
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: Second
+  Reboot Partition: Second
+
+  First  partition type           : pureUBI/GPT
+  First  partition sequence number: 47
+  First  partition image tag      : $imageversion:  $
+  First  partition commit flag    : 0
+B>Second partition type           : pureUBI/GPT
+B>Second partition sequence number: 46
+B>Second partition image tag      : $imageversion:  $
+B>Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2
+	HW Acceleration <Enabled>
+SYSTEMD257_INACTIVE_SLOT1_FLASH_START
+Volume ID 3, size 107 LEBs (13586432 bytes, 12.9 MiB), LEB size 126976 bytes (124.0 KiB), static, name "bootfs1", alignment 1
+Volume ID 4, size 625 LEBs (79360000 bytes, 75.6 MiB), LEB size 126976 bytes (124.0 KiB), dynamic, name "rootfs1", alignment 1
+..............................................................................................File size 0x567fc4c (90700876)
+imgif: Enabling NAND image flashing functions!
+Flash type 0x2, flash size 0xfd00000, block size 0x20000
+rd_metadata: committed 2 valid 1,2 seq 47,46
+wr_metadata: committed 2 valid 0,2 seq 47,46
+..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................rd_metadata: committed 2 valid 0,2 seq 47,46
+wr_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+wr_metadata: committed 2 valid 1,2 seq 47,46
+
+Image flash complete, you may reboot the board
+SYSTEMD257_INACTIVE_SLOT1_FLASH_OK
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: Second
+  Reboot Partition: Second
+
+  First  partition type           : pureUBI/GPT
+  First  partition sequence number: 47
+  First  partition image tag      : $imageversion:  $
+  First  partition commit flag    : 0
+B>Second partition type           : pureUBI/GPT
+B>Second partition sequence number: 46
+B>Second partition image tag      : $imageversion:  $
+B>Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2

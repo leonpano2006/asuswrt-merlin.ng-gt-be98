@@ -1,0 +1,118 @@
+Linux GT-AX11000-A2B0 4.19.294 #36 SMP PREEMPT Fri Sep 4 10:08:56 UTC 2026 aarch64 GNU/Linux
+152.19 460.91
+{
+  "upstream": "96831be75b3b891f6aa4c608f00cc7bb2d499d67",
+  "version": "3006.102.9-beta1-leon8",
+  "base_checkpoint": "systemd-features-20260917",
+  "kernel": "retained #36 4.19.294",
+  "openssl_policy": "ARM32 3.5.8 and 1.1 BSP closure retained; additive AArch64 OpenSSL 4.0.2",
+  "router_modified": false,
+  "flashed": false,
+  "correction": "IPsec IFNAMSIZ interface storage and HTTPD translation bounds",
+  "systemd": "257.13 with OpenSSL, curl, zstd, zlib and blkid",
+  "service_split": [
+    "haveged",
+    "crond",
+    "infosvr",
+    "mdns",
+    "ntpd",
+    "sshd"
+  ],
+  "cgroup": "hybrid; v1 cpuacct/memory/devices/freezer/pids retained",
+  "ntp_callback": "rc manager owns synchronization side effects",
+  "armhf_external": "/tmp/mnt/JFFS/system-libs/gt-be98/8da410f090d92cff/arm-linux-gnueabihf",
+  "size_rebuilds": {
+    "aarch64_libstdc++": "16.2.0 -Oz",
+    "armel_libstdc++": "15.2.0 -Oz ARM mode softfp",
+    "zstd": "1.5.7 full CLI dynamically linked to existing libzstd",
+    "sqlite3": "3.42.0 same engine options -Oz LTO",
+    "bash": "5.3.15 -Oz LTO; same features",
+    "coreutils": "9.11 -Oz LTO; same applets",
+    "libcurl": "8.22.0 -Oz LTO; upstream symbol hiding; all configured protocols retained",
+    "iperf3": "3.21 -Oz LTO; dynamic internal glibc; same optional features"
+  },
+  "trial": "uncommitted slot1; slot2 retained",
+  "sysctl": "procps-ng 4.0.7; /usr/sbin/sysctl",
+  "libcurl": "8.22.0; native AArch64; OpenSSL 4.0.2",
+  "ssh_supervision": "rc configures host/auth keys and policy; systemd owns foreground Dropbear and its sessions"
+}
+/usr/lib/systemd/systemd
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: First
+  Reboot Partition: Second
+
+B First  partition type           : pureUBI/GPT
+B First  partition sequence number: 47
+B First  partition image tag      : $imageversion:  $
+B First  partition commit flag    : 0
+ >Second partition type           : pureUBI/GPT
+ >Second partition sequence number: 46
+ >Second partition image tag      : $imageversion:  $
+ >Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
+MainPID=4987
+Result=success
+NRestarts=0
+Id=asus-sshd.service
+ActiveState=active
+SubState=running
+
+MainPID=258
+Result=success
+NRestarts=0
+Id=asus-rc.service
+ActiveState=active
+SubState=running
+	Flow Refresh Timer Interval  = 10000 millisecs
+	TCP Flow Idle Timer          = 60 s
+	UDP Flow Idle Timer          = 120 s
+	L2 Flow Idle Timer           = 120 s
+	Mcast Flow Idle Timer        = 120 s
+	Other Flow Idle Timer        = 120 s
+	Pkt-HW Activate Deferral rate = 1
+	Pkt-HW Idle Deactivate = 0
+	Pkt-SW Activate Deferral count = 0
+	Flow Low Pkt Rate = 10
+	Acceleration Mode: <L2 & L3>
+	MCast Acceleration IPv4<Enabled> IPv6<Enabled>
+	IPv6 Learning <Enabled>
+	L2TP Learning <Enabled>
+	GRE Learning <Enabled>
+	4o6 Fragmentation <Enabled>
+	TCP Ack Prioritization <Enabled>
+	ToS Multi Flow <Enabled>
+	Notify Processing Mode <Hybrid>
+	Rx Pkt Length Mode <Enabled>
+	OVS Flow Learning <Disabled>
+	HW Acceleration <Enabled>
+	Tx Thread <Enabled>
+	Tx Thread Idle Delay <8> yield loops
+	Flow Ucast Learning Enabled  : Max<16383>, Active<231>, Cumulative [ 322 - 91 ]
+	Flow Mcast Learning Enabled  : Max<1152>, Active<0>, Cumulative [ 0 - 0 ]
+	Pure LLC Acceleration: <Disabled>

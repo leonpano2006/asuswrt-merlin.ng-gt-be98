@@ -1,0 +1,70 @@
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+
+  Boot image state: rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+rd_metadata: committed 2 valid 1,2 seq 47,46
+BOOT_SET_PART2_IMAGE
+  Booted Partition: First
+  Reboot Partition: Second
+
+B First  partition type           : pureUBI/GPT
+B First  partition sequence number: 47
+B First  partition image tag      : $imageversion:  $
+B First  partition commit flag    : 0
+ >Second partition type           : pureUBI/GPT
+ >Second partition sequence number: 46
+ >Second partition image tag      : $imageversion:  $
+ >Second partition commit flag    : 1
+
+To set boot state usage: bcm_bootstate [state], where your state options are:
+  1 or BOOT_SET_NEW_IMAGE
+  2 or BOOT_SET_OLD_IMAGE
+  3 or BOOT_SET_NEW_IMAGE_ONCE
+  4 or BOOT_SET_OLD_IMAGE_ONCE
+  5 or BOOT_SET_PART1_IMAGE
+  6 or BOOT_SET_PART1_IMAGE_ONCE
+  7 or BOOT_SET_PART2_IMAGE
+  8 or BOOT_SET_PART2_IMAGE_ONCE
+  -------- test options --------
+  +1 ------ commit    partition 1
+  -1 ------ uncommit  partition 1
+  +2 ------ commit    partition 2
+  -2 ------ uncommit  partition 2
+4a15e53cb87936bab51f3f82116be63790a7fb90eecdbcb4d4a6f52204e05e8d  /jffs/.ssh/authorized_keys
+f1c428a51877d3a45a75845256cdf691aed50b3a92579e743467385d9128a31a  /jffs/.ssh/dropbear_ecdsa_host_key
+e13929a4a7727d717d81511978f6989a21d75e11aa8d53750b955e71b6bd8e00  /jffs/.ssh/dropbear_ed25519_host_key
+abc0b04009af0d80947d04803e84974217405f469a3c3d76af3ce9f34829f0b5  /jffs/.ssh/dropbear_rsa_host_key
+2721c77b83f511d7f3edaedb1410007e18660d1ea59d2f876081a202334cfc51  /root/.ssh/authorized_keys
+ca786145c19101bbfd4bb540aff3fbd3895d7dc47a2a7d476319d0a4009226a8  /usr/sbin/rc
+	Flow Refresh Timer Interval  = 10000 millisecs
+	TCP Flow Idle Timer          = 60 s
+	UDP Flow Idle Timer          = 120 s
+	L2 Flow Idle Timer           = 120 s
+	Mcast Flow Idle Timer        = 120 s
+	Other Flow Idle Timer        = 120 s
+	Pkt-HW Activate Deferral rate = 1
+	Pkt-HW Idle Deactivate = 0
+	Pkt-SW Activate Deferral count = 0
+	Flow Low Pkt Rate = 10
+	Acceleration Mode: <L2 & L3>
+	MCast Acceleration IPv4<Enabled> IPv6<Enabled>
+	IPv6 Learning <Enabled>
+	L2TP Learning <Enabled>
+	GRE Learning <Enabled>
+	4o6 Fragmentation <Enabled>
+	TCP Ack Prioritization <Enabled>
+	ToS Multi Flow <Enabled>
+	Notify Processing Mode <Hybrid>
+	Rx Pkt Length Mode <Enabled>
+	OVS Flow Learning <Disabled>
+	HW Acceleration <Enabled>
+	Tx Thread <Enabled>
+	Tx Thread Idle Delay <8> yield loops
+	Flow Ucast Learning Enabled  : Max<16383>, Active<201>, Cumulative [ 1700 - 1499 ]
+	Flow Mcast Learning Enabled  : Max<1152>, Active<0>, Cumulative [ 0 - 0 ]
+	Pure LLC Acceleration: <Disabled>
+1892.71 6394.45

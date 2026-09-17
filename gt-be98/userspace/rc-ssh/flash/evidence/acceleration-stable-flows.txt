@@ -1,0 +1,3 @@
+retained_flows=241 advancing_flows=97 HW_hits_delta=11295 HW_bytes_delta=4680267
+	HW Acceleration <Enabled>
+SYSTEMD_HARDWARE_FLOW_PROGRESS_PASS
