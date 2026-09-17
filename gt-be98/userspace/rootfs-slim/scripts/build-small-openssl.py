@@ -7,7 +7,8 @@ r = Path(__file__).resolve().parents[1]
 w = r.parent
 old = w / 'userspace-refresh-20260917'
 build = r / 'build/openssl-oz-lto'
-build.mkdir(exist_ok=False)
+build.mkdir(parents=True, exist_ok=False)
+(r / 'evidence').mkdir(exist_ok=True)
 assert hashlib.sha256((old/'sources/openssl-4.0.2.tar.gz').read_bytes()).hexdigest() == '736b467530f916737b7031310ccb21d8218c6229e61e8e160cd1d3458cd543a8'
 plugin = w / 'gcc162-usb/obj/gcc/liblto_plugin.so'
 env = dict(os.environ, CC=str(old/'build/cc'), LC_ALL='C',
