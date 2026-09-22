@@ -243,7 +243,14 @@ char* FAST_FUNC strftime_YYYYMMDDHHMMSS(char *buf, unsigned len, time_t *tp)
  * typically requiring -lrt. We just skip all this mess */
 static void get_mono(struct timespec *ts)
 {
+	/* The legacy syscall writes a time32 kernel structure.  With glibc
+	 * time64, libc must translate it into the userspace struct timespec,
+	 * including on older kernels without clock_gettime64. */
+#if defined(__USE_TIME_BITS64)
+	if (clock_gettime(CLOCK_MONOTONIC, ts))
+#else
 	if (syscall(__NR_clock_gettime, CLOCK_MONOTONIC, ts))
+#endif
 		bb_error_msg_and_die("clock_gettime(MONOTONIC) failed");
 }
 unsigned long long FAST_FUNC monotonic_ns(void)

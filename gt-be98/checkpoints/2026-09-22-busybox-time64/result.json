@@ -1,0 +1,127 @@
+{
+  "date": "2026-09-22",
+  "kernel": "4.19.294 #36 aarch64",
+  "userspace": "ARM EABI soft-float, glibc 2.44, GCC 15.2.0",
+  "cause": "glibc time64 struct timespec passed to legacy time32 SYS_clock_gettime in BusyBox monotonic helpers",
+  "original_sha256": "73cc3ca6beba4672e94053551cc7c5fe2dd92698e580f91a031cbff959600b4e",
+  "fixed_sha256": "b03a42e0748b1e6363acaf18a454133548011616d7380760906c1ccd70c1fe74",
+  "build_id_sha1": "b9e460df1883f3899d8e812709a44c1e15c4dd8c",
+  "fixed_bytes": 657148,
+  "applets": 157,
+  "applet_list_unchanged": true,
+  "tests": [
+    {
+      "target": "loopback 127.0.0.1",
+      "transmitted": 5,
+      "received": 5,
+      "loss_percent": 0,
+      "rtt_ms": {
+        "min": 0.115,
+        "avg": 0.144,
+        "max": 0.165
+      }
+    },
+    {
+      "target": "gateway 192.168.100.1",
+      "transmitted": 5,
+      "received": 5,
+      "loss_percent": 0,
+      "rtt_ms": {
+        "min": 0.195,
+        "avg": 0.435,
+        "max": 0.814
+      }
+    },
+    {
+      "target": "cloudflare-anycast 1.1.1.1",
+      "transmitted": 5,
+      "received": 5,
+      "loss_percent": 0,
+      "rtt_ms": {
+        "min": 1.097,
+        "avg": 1.297,
+        "max": 1.481
+      }
+    },
+    {
+      "target": "google-anycast 8.8.8.8",
+      "transmitted": 5,
+      "received": 5,
+      "loss_percent": 0,
+      "rtt_ms": {
+        "min": 1.72,
+        "avg": 2.033,
+        "max": 2.692
+      }
+    },
+    {
+      "target": "amsterdam 194.31.140.36",
+      "transmitted": 5,
+      "received": 5,
+      "loss_percent": 0,
+      "rtt_ms": {
+        "min": 12.482,
+        "avg": 12.721,
+        "max": 12.945
+      }
+    },
+    {
+      "target": "ashburn 103.170.155.192",
+      "transmitted": 5,
+      "received": 5,
+      "loss_percent": 0,
+      "rtt_ms": {
+        "min": 93.365,
+        "avg": 93.642,
+        "max": 93.814
+      }
+    },
+    {
+      "target": "tokyo 45.249.89.6",
+      "transmitted": 5,
+      "received": 5,
+      "loss_percent": 0,
+      "rtt_ms": {
+        "min": 246.918,
+        "avg": 248.021,
+        "max": 248.624
+      }
+    },
+    {
+      "target": "sydney 103.217.254.16",
+      "transmitted": 5,
+      "received": 5,
+      "loss_percent": 0,
+      "rtt_ms": {
+        "min": 291.248,
+        "avg": 291.469,
+        "max": 291.708
+      }
+    },
+    {
+      "target": "sydney-dns syd.lg.speedypage.com",
+      "transmitted": 5,
+      "received": 5,
+      "loss_percent": 0,
+      "rtt_ms": {
+        "min": 291.225,
+        "avg": 291.39,
+        "max": 291.625
+      }
+    }
+  ],
+  "deadline_test": {
+    "ttl": 1,
+    "deadline_seconds": 3,
+    "exit_status": 1,
+    "elapsed_seconds": 3
+  },
+  "ipv6": "Disabled in all and lo; no IPv6 route; not enabled during this task",
+  "deployment": "RAM bind mount over /usr/bin/busybox with exact rc/libc/loader/hash guards; JFFS local-mount hook",
+  "reboot_test": false,
+  "undo_and_reapply_verified": true,
+  "failed_systemd_units": 0,
+  "management_http_status": 200,
+  "firmware_flash": false,
+  "boot_metadata_changed": false
+}
