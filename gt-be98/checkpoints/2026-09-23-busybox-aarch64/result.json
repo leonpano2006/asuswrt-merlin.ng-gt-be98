@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-23",
+  "busybox_version": "1.25.1 ASUS modified",
+  "architecture": "ELF64 AArch64",
+  "compiler": "GCC 16.2.0",
+  "glibc": "2.44",
+  "cpu_flags": "-mcpu=cortex-a53+crc+crypto",
+  "sha256": "2931fe7011b56e4de43bb53ae87377037bfe3779295c5baa2ca3fe4b04915f28",
+  "build_id_sha1": "a503b6657ee2dbe6f7596eaef3cd82202fcd85bf",
+  "bytes": 592528,
+  "armel_baseline_bytes": 657148,
+  "zstd22_single_file_bytes": 287648,
+  "armel_zstd22_single_file_bytes": 309843,
+  "full_firmware_size_measured": false,
+  "applets": 157,
+  "applet_list_identical": true,
+  "feature_config_identical": true,
+  "post_2038_date_passed": true,
+  "host_5gib_file_size_passed": true,
+  "router_bidirectional_cross_arch_exec_passed": true,
+  "router_all_loaded_libraries_aarch64": true,
+  "router_tests": [
+    {
+      "target": "loopback",
+      "sent": 3,
+      "received": 3,
+      "average_ms": 0.155
+    },
+    {
+      "target": "gateway",
+      "sent": 3,
+      "received": 3,
+      "average_ms": 0.417
+    },
+    {
+      "target": "Cloudflare anycast",
+      "sent": 3,
+      "received": 3,
+      "average_ms": 1.224
+    },
+    {
+      "target": "Sydney via DNS",
+      "sent": 3,
+      "received": 3,
+      "average_ms": 291.353
+    }
+  ],
+  "deadline_seconds": 3,
+  "deadline_exit_status": 1,
+  "syslog_ipc_runtime_test": "Not validated: both binaries report absent syslogd buffer",
+  "management_http_status": 200,
+  "failed_systemd_units": 0,
+  "system_busybox_replaced": false,
+  "firmware_flashed": false,
+  "router_rebooted": false,
+  "boot_metadata_changed": false,
+  "whole_firmware_64_bit": false
+}
